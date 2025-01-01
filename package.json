@@ -25,7 +25,7 @@
     "node": ">= 18"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^3.2.2",
+    "@iobroker/adapter-core": "^3.2.3",
     "easy-crc": "^1.1.0",
     "mqtt": "^5.10.3",
     "node-schedule": "^2.1.1"
