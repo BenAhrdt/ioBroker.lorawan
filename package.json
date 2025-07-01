@@ -28,7 +28,7 @@
     "@iobroker/adapter-core": "^3.2.3",
     "easy-crc": "^1.1.0",
     "lodash": "^4.17.21",
-    "mqtt": "^5.13.0",
+    "mqtt": "^5.13.1",
     "node-schedule": "^2.1.1"
   },
   "devDependencies": {
