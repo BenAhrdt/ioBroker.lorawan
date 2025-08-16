@@ -773,18 +773,17 @@
 					"lg": 3,
 					"xl": 3
 				},
-				"HABridgeDecodedl":{
+				"HABridgeDecoded":{
 					"newLine": true,
 					"hidden": "data.MQTTInstance !== `mqtt-client.${_instance}`",
 					"type": "select",
-					"label": "HABridgeDecodedl",
-					"tooltip": "HABridgeDecodedlTooltip",
+					"label": "HABridgeDecoded",
+					"tooltip": "HABridgeDecodedTooltip",
 					"options": [
-						{"label":"HABridgeDecodedlOff","value":"off"},
-						{"label":"HABridgeDecodedlPublish","value":"publish"},
-						{"label":"HABridgeDecodedlPublishSubscribe","value":"publishsubscribe"}
+						{"label":"HABridgeDecodedOff","value":"off"},
+						{"label":"HABridgeDecodedPublish","value":"publish"}
 					],
-					"default": "HABridgeDecodedlOff",
+					"default": "HABridgeDecodedOff",
 					"xs": 12,
 					"sm": 3,
 					"md": 3,

@@ -338,7 +338,11 @@
     "customDecodedJsonActive": false,
     "customConfigurationJsonActive": false,
     "customControlJsonActive": false,
-    "customJson": {}
+    "customJson": {},
+    "MQTTInstance": "",
+    "DeviceIdentifier": "DeviceIdentifierUsedDeviceId",
+    "HABridgeDecoded": "HABridgeDecodedOff",
+    "HABridgeControl": "HABridgeControlOff"
   },
   "objects": [],
   "instanceObjects": [
