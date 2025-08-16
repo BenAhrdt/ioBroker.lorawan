@@ -340,9 +340,17 @@
     "customControlJsonActive": false,
     "customJson": {},
     "MQTTInstance": "",
-    "DeviceIdentifier": "DeviceIdentifierUsedDeviceId",
-    "HABridgeDecoded": "HABridgeDecodedOff",
-    "HABridgeControl": "HABridgeControlOff"
+    "DeviceIdentifiers": [
+      {
+        "DeviceIdentifier": "usedApplicationName"
+      },
+      {
+        "DeviceIdentifier": "usedDeviceId"
+      }
+    ],
+    "separator": "space",
+    "HABridgeDecoded": "publish",
+    "HABridgeControl": "off"
   },
   "objects": [],
   "instanceObjects": [

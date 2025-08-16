@@ -755,23 +755,66 @@
                     "lg": 3,
                     "xl": 3
                 },
-				"DeviceIdentifier":{
+				"_DeviceIdentifierExampleDiscription":{
+					"newLine":true,
+					"type": "staticText",
+					"label": "_DeviceIdentifierExampleDiscription",
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"DeviceIdentifiers":{
+					"newLine": true,
+					"hidden": "data.MQTTInstance !== `mqtt-client.${_instance}`",
+					"type":"accordion",
+					"titleAttr": "DeviceIdentifier",
+					"clone": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12,
+					"items":[
+						{
+							"type": "select",
+							"attr": "DeviceIdentifier",
+							"label": "DeviceIdentifier",
+							"tooltip": "DeviceIdentifierTooltip",
+							"options": [
+								{"label":"applicationId","value":"applicationId"},
+								{"label":"applicationName","value":"applicationName"},
+								{"label":"usedApplicationName","value":"usedApplicationName"},
+								{"label":"deviceEUI","value":"deviceEUI"},
+								{"label":"deviceId","value":"deviceId"},
+								{"label":"usedDeviceId","value":"usedDeviceId"}
+							],
+							"default": "usedDeviceId",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						}
+					]
+				},
+				"separator":{
 					"newLine": true,
 					"hidden": "data.MQTTInstance !== `mqtt-client.${_instance}`",
 					"type": "select",
-					"label": "DeviceIdentifier",
-					"tooltip": "DeviceIdentifierTooltip",
+					"label": "separator",
+					"tooltip": "separatorTooltip",
 					"options": [
-						{"label":"DeviceIdentifierDeviceEUI","value":"deviceEUI"},
-						{"label":"DeviceIdentifierDeviceId","value":"deviceId"},
-						{"label":"DeviceIdentifierUsedDeviceId","value":"usedDeviceId"}
+						{"label":"space","value":"space"},
+						{"label":"underline","value":"underline"}
 					],
-					"default": "DeviceIdentifierUsedDeviceId",
+					"default": "space",
 					"xs": 12,
-					"sm": 3,
-					"md": 3,
-					"lg": 3,
-					"xl": 3
+					"sm": 2,
+					"md": 2,
+					"lg": 2,
+					"xl": 2
 				},
 				"HABridgeDecoded":{
 					"newLine": true,
@@ -783,7 +826,7 @@
 						{"label":"HABridgeDecodedOff","value":"off"},
 						{"label":"HABridgeDecodedPublish","value":"publish"}
 					],
-					"default": "HABridgeDecodedOff",
+					"default": "publish",
 					"xs": 12,
 					"sm": 3,
 					"md": 3,
@@ -800,7 +843,7 @@
 						{"label":"HABridgeControlPublish","value":"publish"},
 						{"label":"HABridgeControlPublishSubscribe","value":"publishsubscribe"}
 					],
-					"default": "HABridgeControlOff",
+					"default": "off",
 					"xs": 12,
 					"sm": 3,
 					"md": 3,
