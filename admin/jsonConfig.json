@@ -717,6 +717,98 @@
 					"xl": 2
 				}
 			}
+		},
+		"HABridge":{
+            "type": "panel",
+            "label": "HABridge",
+			"items": {
+			"customConfigHeader":{
+				"newLine": true,
+				"type": "header",
+				"text": "HaBridgeHeader",
+				"size": 3,
+				"xs": 12,
+				"sm": 12,
+				"md": 12,
+				"lg": 12,
+				"xl": 12
+				},
+				"HABridgeInformation":{
+					"newLine":true,
+					"type": "staticText",
+					"label": "HABridgeInformation",
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"MQTTInstance": {
+                    "newLine": true,
+                    "type": "instance",
+                    "label": "MQTTInstance",
+                    "adapter": "mqtt-client",
+                    "allowDeactivate": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 3,
+                    "lg": 3,
+                    "xl": 3
+                },
+				"DeviceIdentifier":{
+					"newLine": true,
+					"hidden": "data.MQTTInstance !== `mqtt-client.${_instance}`",
+					"type": "select",
+					"label": "DeviceIdentifier",
+					"tooltip": "DeviceIdentifierTooltip",
+					"options": [
+						{"label":"DeviceIdentifierDeviceEUI","value":"deviceEUI"},
+						{"label":"DeviceIdentifierDeviceId","value":"deviceId"},
+						{"label":"DeviceIdentifierUsedDeviceId","value":"usedDeviceId"}
+					],
+					"default": "DeviceIdentifierUsedDeviceId",
+					"xs": 12,
+					"sm": 3,
+					"md": 3,
+					"lg": 3,
+					"xl": 3
+				},
+				"HABridgeDecodedl":{
+					"newLine": true,
+					"hidden": "data.MQTTInstance !== `mqtt-client.${_instance}`",
+					"type": "select",
+					"label": "HABridgeDecodedl",
+					"tooltip": "HABridgeDecodedlTooltip",
+					"options": [
+						{"label":"HABridgeDecodedlOff","value":"off"},
+						{"label":"HABridgeDecodedlPublish","value":"publish"},
+						{"label":"HABridgeDecodedlPublishSubscribe","value":"publishsubscribe"}
+					],
+					"default": "HABridgeDecodedlOff",
+					"xs": 12,
+					"sm": 3,
+					"md": 3,
+					"lg": 3,
+					"xl": 3
+				},
+				"HABridgeControl":{
+					"hidden": "data.MQTTInstance !== `mqtt-client.${_instance}`",
+					"type": "select",
+					"label": "HABridgeControl",
+					"tooltip": "HABridgeControlTooltip",
+					"options": [
+						{"label":"HABridgeControlOff","value":"off"},
+						{"label":"HABridgeControlPublish","value":"publish"},
+						{"label":"HABridgeControlPublishSubscribe","value":"publishsubscribe"}
+					],
+					"default": "HABridgeControlOff",
+					"xs": 12,
+					"sm": 3,
+					"md": 3,
+					"lg": 3,
+					"xl": 3
+				}
+			}
 		}
 	}
 }
