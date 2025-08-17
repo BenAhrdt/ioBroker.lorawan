@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.10.22",
+    "version": "1.11.0",
     "news": {
+      "1.11.0": {
+        "en": "change dependencies\nAdd LoRaWAN 2 Home Assistant Bridge",
+        "de": "abhängigkeiten ändern\nLoRaWAN hinzufügen 2 Home Assistenzbrücke",
+        "ru": "изменение зависимостей\nДобавить LoRaWAN 2 Домашний помощник моста",
+        "pt": "mudar dependências\nAdicionar LoRaWAN 2 Home Assistant Bridge",
+        "nl": "afhankelijkheden wijzigen\nLoRaWAN toevoegen 2 Home Assistant Bridge",
+        "fr": "les dépendances liées au changement\nAjouter LoRaWAN 2 Home Assistant Bridge",
+        "it": "cambiamento dipendenze\nAggiungi LoRaWAN 2 Home Assistant Bridge",
+        "es": "dependencia del cambio\nAñadir LoRaWAN 2 Home Assistant Bridge",
+        "pl": "zmiany zależności\nDodaj LoRaWAN 2 Strona główna Asystent Most",
+        "uk": "зміна залежності\nДодати LoRaWAN 2 Головна Асистент міст",
+        "zh-cn": "变化的依赖关系\n添加 LORAWAN 选项 2个家庭助理桥梁"
+      },
       "1.10.22": {
         "en": "config notification and / or logging in case of connection state to LNS",
         "de": "config Benachrichtigung und / oder Protokollierung bei Verbindungszustand zu LNS",
@@ -80,19 +93,6 @@
         "pl": "profil bugfix dla dnt- lw- etrv",
         "uk": "javascript licenses api веб-сайт go1.13.8",
         "zh-cn": "dnt-lw-etrv 的错误修正配置文件"
-      },
-      "1.10.16": {
-        "en": "add profile for dnt-lw-etrv",
-        "de": "profil für dnt-lw-etrv hinzufügen",
-        "ru": "добавить профиль для dnt-lw-etrv",
-        "pt": "adicionar perfil para o dnt-lw-etrv",
-        "nl": "profiel toevoegen voor dnt-lw-etrv",
-        "fr": "ajouter un profil pour dnt-lw-etrv",
-        "it": "aggiungere il profilo per dnt-lw-etrv",
-        "es": "añadir perfil para dnt-lw-etrv",
-        "pl": "dodaj profil dla dnt- lw- etrv",
-        "uk": "додати профіль для dnt-lw-etrv",
-        "zh-cn": "为 dnt-lw- etrv 添加配置文件"
       }
     },
     "titleLang": {
