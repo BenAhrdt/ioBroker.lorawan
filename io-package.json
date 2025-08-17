@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.11.0",
+    "version": "1.11.1",
     "news": {
+      "1.11.1": {
+        "en": "add more hidden attributes to HA Bridge",
+        "de": "mehr versteckte Attribute zu HA Bridge hinzufügen",
+        "ru": "добавить больше скрытых атрибутов в HA Bridge",
+        "pt": "adicionar mais atributos ocultos à Ponte HA",
+        "nl": "voeg meer verborgen attributen toe aan HA Bridge",
+        "fr": "ajouter plus d'attributs cachés au pont HA",
+        "it": "aggiungere altri attributi nascosti a HA Bridge",
+        "es": "añadir más atributos ocultos a HA Bridge",
+        "pl": "dodaj więcej ukrytych atrybutów do HA Bridge",
+        "uk": "додати більш приховані атрибути до HA Bridge",
+        "zh-cn": "向 HA 桥添加更多隐藏属性"
+      },
       "1.11.0": {
         "en": "change dependencies\nAdd LoRaWAN 2 Home Assistant Bridge",
         "de": "abhängigkeiten ändern\nLoRaWAN hinzufügen 2 Home Assistenzbrücke",
@@ -80,19 +93,6 @@
         "pl": "dodać rolę do otworu zaworu w vicki",
         "uk": "додати роль у відкритті клапана в vicki",
         "zh-cn": "在vicki的阀门打开器中添加角色"
-      },
-      "1.10.17": {
-        "en": "bugfix profile for dnt-lw-etrv",
-        "de": "bugfix profil für dnt-lw-etrv",
-        "ru": "профиль bugfix для dnt-lw-etrv",
-        "pt": "perfil de correção de erros para o dnt-lw-etrv",
-        "nl": "bugfix-profiel voor dnt-lw-etrv",
-        "fr": "profil de bugfix pour dnt-lw-etrv",
-        "it": "profilo bugfix per dnt-lw-etrv",
-        "es": "perfil de bugfix para dnt-lw-etrv",
-        "pl": "profil bugfix dla dnt- lw- etrv",
-        "uk": "javascript licenses api веб-сайт go1.13.8",
-        "zh-cn": "dnt-lw-etrv 的错误修正配置文件"
       }
     },
     "titleLang": {
