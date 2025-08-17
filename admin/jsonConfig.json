@@ -806,6 +806,7 @@
 					"label": "separator",
 					"tooltip": "separatorTooltip",
 					"options": [
+						{"label":"no","value":"no"},
 						{"label":"space","value":"space"},
 						{"label":"underline","value":"underline"},
 						{"label":"minus","value":"minus"}
@@ -817,7 +818,7 @@
 					"lg": 2,
 					"xl": 2
 				},
-				"_spare":{
+				"_spare1":{
 					"type": "staticText",
 					"label": "",
 					"xs": 12,
@@ -826,15 +827,50 @@
 					"lg": 1,
 					"xl": 1
 				},
+				"_DeviceIdentifierConfiguredDiscription":{
+					"type": "staticText",
+					"label": "_DeviceIdentifierConfiguredDiscription",
+					"style": {"font-size":"16px", "font-weight":"bold"},
+					"xs": 12,
+					"sm": 3,
+					"md": 3,
+					"lg": 3,
+					"xl": 3
+				},
+				"_DeviceIdentifierConfigured":{
+                    "type": "textSendTo",
+					"style": {"font-size":"16px", "font-weight":"bold", "color":"blue"},
+                    "jsonData": "{\"DeviceIdentifiers\":${JSON.stringify(data.DeviceIdentifiers)},\"separator\":\"${data.separator}\"}",
+                    "command": "getTopicConfigured",
+                    "alsoDependsOn":[
+                        "DeviceIdentifiers",
+						"separator"
+                    ],
+                    "xs": 12,
+                    "sm": 6,
+                    "md": 6,
+                    "lg": 6,
+                    "xl": 6
+                },
+				"_spare2":{
+					"newLine": true,
+					"type": "staticText",
+					"label": "",
+					"xs": 12,
+					"sm": 3,
+					"md": 3,
+					"lg": 3,
+					"xl": 3
+				},
 				"_DeviceIdentifierExampleDiscription":{
 					"type": "staticText",
 					"label": "_DeviceIdentifierExampleDiscription",
 					"style": {"font-size":"16px", "font-weight":"bold"},
 					"xs": 12,
-					"sm": 2,
-					"md": 2,
-					"lg": 2,
-					"xl": 2
+					"sm": 3,
+					"md": 3,
+					"lg": 3,
+					"xl": 3
 				},
 				"_DeviceIdentifierExample":{
                     "type": "textSendTo",
@@ -846,10 +882,10 @@
 						"separator"
                     ],
                     "xs": 12,
-                    "sm": 7,
-                    "md": 7,
-                    "lg": 7,
-                    "xl": 7
+                    "sm": 6,
+                    "md": 6,
+                    "lg": 6,
+                    "xl": 6
                 },
 				"HABridgeDecoded":{
 					"newLine": true,

@@ -25,7 +25,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 -->
 ### **WORK IN PROGRESS**
 * (BenAhrdt) change dependencies
-* (BenAhrdt) Add possibility to LoRaWAN 2 HA Bridge
+* (BenAhrdt) Add LoRaWAN 2 Home Assistant Bridge
 
 ### 1.10.22 (2025-07-27)
 * (BenAhrdt) config notification and / or logging in case of connection state to LNS

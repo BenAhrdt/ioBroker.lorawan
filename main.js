@@ -865,10 +865,13 @@ class Lorawan extends utils.Adapter {
                     if (obj.callback) {
                         this.sendTo(obj.from, obj.command, result, obj.callback);
                     }
-                } else if (obj.command === 'getTopicExample') {
+                } else if (obj.command === 'getTopicConfigured') {
                     result = '';
                     let Separator = '';
                     switch (obj.message.separator) {
+                        case 'no':
+                            Separator = '';
+                            break;
                         case 'space':
                             Separator = ' ';
                             break;
@@ -883,7 +886,35 @@ class Lorawan extends utils.Adapter {
                         if (result !== '') {
                             result += Separator;
                         }
-                        result += element['DeviceIdentifier'];
+                        result += element.DeviceIdentifier;
+                    }
+                    result = `${this.messagehandler?.directoryhandler.HABridge.TopicPrefix}${result}/state`;
+                    // Send response
+                    if (obj.callback) {
+                        this.sendTo(obj.from, obj.command, result, obj.callback);
+                    }
+                } else if (obj.command === 'getTopicExample') {
+                    result = '';
+                    let Separator = '';
+                    switch (obj.message.separator) {
+                        case 'no':
+                            Separator = '';
+                            break;
+                        case 'space':
+                            Separator = ' ';
+                            break;
+                        case 'underline':
+                            Separator = '_';
+                            break;
+                        case 'minus':
+                            Separator = '-';
+                            break;
+                    }
+                    for (const element of obj.message.DeviceIdentifiers) {
+                        if (result !== '') {
+                            result += Separator;
+                        }
+                        result += this.messagehandler?.directoryhandler.HABridge.Dummy[element.DeviceIdentifier];
                     }
                     result = `${this.messagehandler?.directoryhandler.HABridge.TopicPrefix}${result}/state`;
                     // Send response
