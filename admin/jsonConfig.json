@@ -758,6 +758,7 @@
 				"_DeviceIdentifierDiscription":{
 					"newLine":true,
 					"type": "staticText",
+					"hidden": "data.MQTTInstance !== `mqtt-client.${_instance}`",
 					"label": "_DeviceIdentifierDiscription",
 					"xs": 12,
 					"sm": 12,
@@ -820,6 +821,7 @@
 				},
 				"_spare1":{
 					"type": "staticText",
+					"hidden": "data.MQTTInstance !== `mqtt-client.${_instance}`",
 					"label": "",
 					"xs": 12,
 					"sm": 1,
@@ -829,6 +831,7 @@
 				},
 				"_DeviceIdentifierConfiguredDiscription":{
 					"type": "staticText",
+					"hidden": "data.MQTTInstance !== `mqtt-client.${_instance}`",
 					"label": "_DeviceIdentifierConfiguredDiscription",
 					"style": {"font-size":"16px", "font-weight":"bold"},
 					"xs": 12,
@@ -839,6 +842,7 @@
 				},
 				"_DeviceIdentifierConfigured":{
                     "type": "textSendTo",
+					"hidden": "data.MQTTInstance !== `mqtt-client.${_instance}`",
 					"style": {"font-size":"16px", "font-weight":"bold", "color":"blue"},
                     "jsonData": "{\"DeviceIdentifiers\":${JSON.stringify(data.DeviceIdentifiers)},\"separator\":\"${data.separator}\"}",
                     "command": "getTopicConfigured",
@@ -855,6 +859,7 @@
 				"_spare2":{
 					"newLine": true,
 					"type": "staticText",
+					"hidden": "data.MQTTInstance !== `mqtt-client.${_instance}`",
 					"label": "",
 					"xs": 12,
 					"sm": 3,
@@ -864,6 +869,7 @@
 				},
 				"_DeviceIdentifierExampleDiscription":{
 					"type": "staticText",
+					"hidden": "data.MQTTInstance !== `mqtt-client.${_instance}`",
 					"label": "_DeviceIdentifierExampleDiscription",
 					"style": {"font-size":"16px", "font-weight":"bold"},
 					"xs": 12,
@@ -874,6 +880,7 @@
 				},
 				"_DeviceIdentifierExample":{
                     "type": "textSendTo",
+					"hidden": "data.MQTTInstance !== `mqtt-client.${_instance}`",
 					"style": {"font-size":"16px", "font-weight":"bold", "color":"blue"},
                     "jsonData": "{\"DeviceIdentifiers\":${JSON.stringify(data.DeviceIdentifiers)},\"separator\":\"${data.separator}\"}",
                     "command": "getTopicExample",
