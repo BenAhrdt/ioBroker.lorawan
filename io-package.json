@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.11.2",
+    "version": "1.11.3",
     "news": {
+      "1.11.3": {
+        "en": "replace german specific chars like ä => ae",
+        "de": "ä => ae",
+        "ru": "заменить немецкие специальные чары, такие как ä => ae",
+        "pt": "substituir caracteres específicos alemães como ä => ae",
+        "nl": "duitse tekens zoals ä => ae vervangen",
+        "fr": "remplacer les caractères spécifiques allemands comme ä => ae",
+        "it": "sostituire i carboni specifici tedeschi come ä => ae",
+        "es": "sustituir los charcos específicos alemanes como ä = título ae",
+        "pl": "zastąpić german specyficzne znaki jak ä = > ae",
+        "uk": "замініть німецькі спеціальні chars, такі як ä => ae",
+        "zh-cn": "替换德国特定的字符,如 ä e "
+      },
       "1.11.2": {
         "en": "swap hidden logic",
         "de": "swap versteckte logik",
@@ -80,19 +93,6 @@
         "pl": "limity obsługi wstecznej",
         "uk": "лінії обробки застібки",
         "zh-cn": "后窗体处理限制"
-      },
-      "1.10.19": {
-        "en": "improove handling of limits for downlinks",
-        "de": "unproove handhabung von grenzwerten für downlinks",
-        "ru": "импровизированная обработка лимитов для нисходящих ссылок",
-        "pt": "manipulação improvisada de limites para ligações",
-        "nl": "improove behandeling van limieten voor downlinks",
-        "fr": "d'improviser la manipulation des limites pour les liaisons descendantes",
-        "it": "gestione improvvisa dei limiti per i downlink",
-        "es": "la manipulación de los límites de los enlaces",
-        "pl": "improove obchodzenie się z limitami dla połączeń w dół",
-        "uk": "непроверта обробка лімітів для посилань",
-        "zh-cn": "下行链路限制的操作"
       }
     },
     "titleLang": {
