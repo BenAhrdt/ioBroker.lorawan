@@ -31,11 +31,11 @@
     "type": "类型",
     "typeTooltip": "选择您喜欢选择的输入类型",
     "confirmed": "确认的",
-    "confirmedTooltip": "if you like to send the download with confirmed message enable this option",
-    "front": "front value",
+    "confirmedTooltip": "如果您想发送带有确认消息的下载启用此选项",
+    "front": "前值",
     "frontTooltip": "插入前价值，将设置为下行链路（值必须在十六进制 -  exept类型字符串中）",
     "end": "最终值",
-    "endTooltip": "insert the end-value, wich will be set to the downlink (value must be in hex - exept type string)",
+    "endTooltip": "插入最终值，将设置为下行链路（值必须在十六进制 -  exept类型字符串中）",
     "lengthInByte": "状态长度（字节）",
     "lengthInByteTooltip": "在字节中插入状态的长度",
     "on": "在",
@@ -105,6 +105,7 @@
     "HABridgeControl": "控制状态",
     "HABridgeControlTooltip": "选择是否必须发布控制状态或进行订阅",
     "applicationId": "应用ID",
+    "applicationName": "申请名称",
     "usedApplicationName": "使用的应用程序名称",
     "deviceEUI": "设备EUI",
     "deviceId": "设备ID",
@@ -116,7 +117,7 @@
     "HABridgeControlPublishSubscribe": "发布和订阅",
     "space": "空间",
     "underline": "强调",
-    "applicationName": "申请名称",
     "HaBridgeHeader": "家庭助理桥",
-    "_DeviceIdentifierExampleDiscription": "主题的示例：iobroker/distinifier1识别符"
+    "_DeviceIdentifierExampleDiscription": "主题的示例：",
+    "_DeviceIdentifierDiscription": "配置标识符为状态创建MQTT主题。您可以选择由分离器隔开的多个设备标识符。"
 }

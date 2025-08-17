@@ -105,6 +105,7 @@
     "HABridgeControl": "estados de control",
     "HABridgeControlTooltip": "Elija si los estados de control deben publicarse o suscribirse",
     "applicationId": "ID de aplicación",
+    "applicationName": "Nombre de la aplicación",
     "usedApplicationName": "Nombre de la aplicación usado",
     "deviceEUI": "Dispositivo EUI",
     "deviceId": "ID de dispositivo",
@@ -116,7 +117,7 @@
     "HABridgeControlPublishSubscribe": "Publicar y suscribirse",
     "space": "espacio",
     "underline": "subrayar",
-    "applicationName": "Nombre de la aplicación",
     "HaBridgeHeader": "Puente de asistente de origen",
-    "_DeviceIdentifierExampleDiscription": "Ejemplo de tema: IOBROKER/IDIGENT1 Identifier2 Identifierx/Statename"
+    "_DeviceIdentifierExampleDiscription": "Ejemplo de tema:",
+    "_DeviceIdentifierDiscription": "Configure los identificadores para crear un tema MQTT para un estado. Puede seleccionar múltiples identificadores de dispositivo, separados por el separador."
 }

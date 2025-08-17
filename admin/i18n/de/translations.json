@@ -114,9 +114,10 @@
     "HABridgeDecodedPublish": "Publish",
     "HABridgeControlOff": "Aus",
     "HABridgeControlPublish": "Publish",
-    "HABridgeControlPublishSubscribe": "Publish & Abonieren",
+    "HABridgeControlPublishSubscribe": "Publish & Abonnieren",
     "space": "Leerzeichen",
     "underline": "Unterstrich",
     "HaBridgeHeader": "Home Assistant Bridge",
-    "_DeviceIdentifierExampleDiscription": "Beispiel für das Topic: iobroker/identifier1 identifier2 identifierx/Statename"
+    "_DeviceIdentifierExampleDiscription": "Ergebnis des konfigurierten Topics: ",
+    "_DeviceIdentifierDiscription": "Konfigurieren Sie die Gerätekennung, um ein MQTT Topic für einen State zu erstellen. Sie können mehrere Gerätekennungen auswählen, welche vom Trennzeichen getrennt sind."
 }

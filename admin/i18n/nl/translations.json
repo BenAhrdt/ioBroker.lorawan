@@ -105,6 +105,7 @@
     "HABridgeControl": "Controle -staten",
     "HABridgeControlTooltip": "Kies of de besturingsstaten moeten worden gepubliceerd, of aditional geabonneerd",
     "applicationId": "Applicaion -ID",
+    "applicationName": "Applicatienaam",
     "usedApplicationName": "Gebruikte applicatienaam",
     "deviceEUI": "Apparaat EUI",
     "deviceId": "Device ID",
@@ -116,7 +117,7 @@
     "HABridgeControlPublishSubscribe": "Publiceren en abonneren",
     "space": "ruimte",
     "underline": "onderstrepen",
-    "applicationName": "Applicatienaam",
     "HaBridgeHeader": "Home Assistant Bridge",
-    "_DeviceIdentifierExampleDiscription": "Voorbeeld van onderwerp: iOBRoker/Identifier1 Identifier2 IdentifierX/statename"
+    "_DeviceIdentifierExampleDiscription": "Voorbeeld van onderwerp:",
+    "_DeviceIdentifierDiscription": "Configureer de ID's om een MQTT -onderwerp voor een status te maken. U kunt meerdere apparaat -ID's selecteren, gescheiden door de separator."
 }

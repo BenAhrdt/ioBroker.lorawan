@@ -105,6 +105,7 @@
     "HABridgeControl": "контрольные состояния",
     "HABridgeControlTooltip": "Выберите, должны ли быть опубликованы государства управления или подписаны адекция",
     "applicationId": "Приложение идентификатор",
+    "applicationName": "Имя приложения",
     "usedApplicationName": "Используемое имя приложения",
     "deviceEUI": "Устройство EUI",
     "deviceId": "Идентификатор устройства",
@@ -116,7 +117,7 @@
     "HABridgeControlPublishSubscribe": "Публиковать и подписаться",
     "space": "космос",
     "underline": "подчеркнуть",
-    "applicationName": "Имя приложения",
     "HaBridgeHeader": "Домашний помощник моста",
-    "_DeviceIdentifierExampleDiscription": "Пример темы: IOBROKER/IDENIFIER1 Identifier2 IdentifierX/STATENAME"
+    "_DeviceIdentifierExampleDiscription": "Пример темы:",
+    "_DeviceIdentifierDiscription": "Настройте идентификаторы, чтобы создать тему MQTT для состояния. Вы можете выбрать несколько идентификаторов устройства, разделенных сепаратором."
 }

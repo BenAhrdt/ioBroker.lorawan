@@ -865,6 +865,31 @@ class Lorawan extends utils.Adapter {
                     if (obj.callback) {
                         this.sendTo(obj.from, obj.command, result, obj.callback);
                     }
+                } else if (obj.command === 'getTopicExample') {
+                    result = '';
+                    let Separator = '';
+                    switch (obj.message.separator) {
+                        case 'space':
+                            Separator = ' ';
+                            break;
+                        case 'underline':
+                            Separator = '_';
+                            break;
+                        case 'minus':
+                            Separator = '-';
+                            break;
+                    }
+                    for (const element of obj.message.DeviceIdentifiers) {
+                        if (result !== '') {
+                            result += Separator;
+                        }
+                        result += element['DeviceIdentifier'];
+                    }
+                    result = `${this.messagehandler?.directoryhandler.HABridge.TopicPrefix}${result}/state`;
+                    // Send response
+                    if (obj.callback) {
+                        this.sendTo(obj.from, obj.command, result, obj.callback);
+                    }
                 } else {
                     const result = { error: true, message: 'No message matched', received: obj.message };
                     if (obj.callback) {

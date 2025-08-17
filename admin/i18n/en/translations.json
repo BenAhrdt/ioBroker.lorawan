@@ -117,6 +117,8 @@
 	"HABridgeControlPublishSubscribe": "Publish & Subscribe",
 	"space": "space",
 	"underline": "underline",
+	"minus": "minus",
 	"HaBridgeHeader": "Home Assistant Bridge",
-	"_DeviceIdentifierExampleDiscription": "Example of Topic: iobroker/Identifier1 Identifier2 Identifierx/Statename"
+	"_DeviceIdentifierExampleDiscription": "Result of configured Topic: ",
+	"_DeviceIdentifierDiscription": "Configure the identifiers to create an MQTT topic for a state. You can select multiple device identifiers, separated by the separator."
 }

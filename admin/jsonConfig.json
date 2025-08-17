@@ -755,10 +755,10 @@
                     "lg": 3,
                     "xl": 3
                 },
-				"_DeviceIdentifierExampleDiscription":{
+				"_DeviceIdentifierDiscription":{
 					"newLine":true,
 					"type": "staticText",
-					"label": "_DeviceIdentifierExampleDiscription",
+					"label": "_DeviceIdentifierDiscription",
 					"xs": 12,
 					"sm": 12,
 					"md": 12,
@@ -807,7 +807,8 @@
 					"tooltip": "separatorTooltip",
 					"options": [
 						{"label":"space","value":"space"},
-						{"label":"underline","value":"underline"}
+						{"label":"underline","value":"underline"},
+						{"label":"minus","value":"minus"}
 					],
 					"default": "space",
 					"xs": 12,
@@ -816,6 +817,40 @@
 					"lg": 2,
 					"xl": 2
 				},
+				"_spare":{
+					"type": "staticText",
+					"label": "",
+					"xs": 12,
+					"sm": 1,
+					"md": 1,
+					"lg": 1,
+					"xl": 1
+				},
+				"_DeviceIdentifierExampleDiscription":{
+					"type": "staticText",
+					"label": "_DeviceIdentifierExampleDiscription",
+					"style": {"font-size":"16px", "font-weight":"bold"},
+					"xs": 12,
+					"sm": 2,
+					"md": 2,
+					"lg": 2,
+					"xl": 2
+				},
+				"_DeviceIdentifierExample":{
+                    "type": "textSendTo",
+					"style": {"font-size":"16px", "font-weight":"bold", "color":"blue"},
+                    "jsonData": "{\"DeviceIdentifiers\":${JSON.stringify(data.DeviceIdentifiers)},\"separator\":\"${data.separator}\"}",
+                    "command": "getTopicExample",
+                    "alsoDependsOn":[
+                        "DeviceIdentifiers",
+						"separator"
+                    ],
+                    "xs": 12,
+                    "sm": 7,
+                    "md": 7,
+                    "lg": 7,
+                    "xl": 7
+                },
 				"HABridgeDecoded":{
 					"newLine": true,
 					"hidden": "data.MQTTInstance !== `mqtt-client.${_instance}`",

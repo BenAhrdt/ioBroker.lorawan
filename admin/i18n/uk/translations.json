@@ -105,6 +105,7 @@
     "HABridgeControl": "Контрольні стани",
     "HABridgeControlTooltip": "Виберіть, якщо державні держави повинні бути опубліковані, або підписуються на Aditional",
     "applicationId": "Ідентифікатор застосування",
+    "applicationName": "Назва застосування",
     "usedApplicationName": "Використовувана назва програми",
     "deviceEUI": "Пристрій EUI",
     "deviceId": "Ідентифікатор пристрою",
@@ -116,7 +117,7 @@
     "HABridgeControlPublishSubscribe": "Опублікувати та підписатися",
     "space": "простір",
     "underline": "підкреслювати",
-    "applicationName": "Назва застосування",
     "HaBridgeHeader": "Домашній асистентський міст",
-    "_DeviceIdentifierExampleDiscription": "Приклад теми: IOBROKER/Ідентифікатор1 ідентифікатор2 ідентифікатор/stateName"
+    "_DeviceIdentifierExampleDiscription": "Приклад теми:",
+    "_DeviceIdentifierDiscription": "Налаштуйте ідентифікатори для створення теми MQTT для стану. Ви можете вибрати кілька ідентифікаторів пристроїв, розділених сепаратором."
 }

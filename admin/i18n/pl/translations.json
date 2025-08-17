@@ -105,6 +105,7 @@
     "HABridgeControl": "stany kontrolne",
     "HABridgeControlTooltip": "Wybierz, czy państwa kontrolne muszą zostać opublikowane lub subskrybowane aditujące",
     "applicationId": "Identyfikator aplikacji",
+    "applicationName": "Nazwa aplikacji",
     "usedApplicationName": "Używana nazwa aplikacji",
     "deviceEUI": "Urządzenie EUI",
     "deviceId": "Identyfikator urządzenia",
@@ -116,7 +117,7 @@
     "HABridgeControlPublishSubscribe": "Publikuj i subskrybuj",
     "space": "przestrzeń",
     "underline": "podkreślać",
-    "applicationName": "Nazwa aplikacji",
     "HaBridgeHeader": "Asystent mostu domowego",
-    "_DeviceIdentifierExampleDiscription": "Przykład tematu: IOBRoker/Identifier1 Identifier2 Identifierx/Statename"
+    "_DeviceIdentifierExampleDiscription": "Przykład tematu:",
+    "_DeviceIdentifierDiscription": "Skonfiguruj identyfikatory, aby utworzyć temat MQTT dla stanu. Możesz wybrać wiele identyfikatorów urządzeń, oddzielonych separatorem."
 }
