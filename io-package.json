@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.11.1",
+    "version": "1.11.2",
     "news": {
+      "1.11.2": {
+        "en": "swap hidden logic",
+        "de": "swap versteckte logik",
+        "ru": "обмен скрытой логикой",
+        "pt": "trocar a lógica oculta",
+        "nl": "verwissel verborgen logica",
+        "fr": "swap logique cachée",
+        "it": "swap logica nascosta",
+        "es": "swap lógica oculta",
+        "pl": "swap ukryte logiki",
+        "uk": "прихована логіка",
+        "zh-cn": "交换隐藏逻辑"
+      },
       "1.11.1": {
         "en": "add more hidden attributes to HA Bridge",
         "de": "mehr versteckte Attribute zu HA Bridge hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "improove obchodzenie się z limitami dla połączeń w dół",
         "uk": "непроверта обробка лімітів для посилань",
         "zh-cn": "下行链路限制的操作"
-      },
-      "1.10.18": {
-        "en": "add role to valve openess in vicki",
-        "de": "rolle bei ventilöffner in vicki",
-        "ru": "добавить роль клапана открывается в vicki",
-        "pt": "adicionar papel à abertura da válvula em vicki",
-        "nl": "rol toevoegen aan klepopeness in vicki",
-        "fr": "ajouter un rôle à l'ouverture de la valve dans vicki",
-        "it": "aggiungere il ruolo alla valvola apre in vicki",
-        "es": "añadir papel a la apertura de la válvula en vicki",
-        "pl": "dodać rolę do otworu zaworu w vicki",
-        "uk": "додати роль у відкритті клапана в vicki",
-        "zh-cn": "在vicki的阀门打开器中添加角色"
       }
     },
     "titleLang": {
