@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.11.4 (2025-08-23)
 * (BenAhrdt) set Custom Send payload to upper case
 
 ### 1.11.3 (2025-08-17)
