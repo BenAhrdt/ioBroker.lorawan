@@ -431,7 +431,7 @@ class Lorawan extends utils.Adapter {
                                     ];
                                 const Statevalues = state.val.split(',');
                                 const StateElements = {
-                                    PayloadInHex: Statevalues[0],
+                                    PayloadInHex: Statevalues[0].toUpperCase(),
                                     Port: Statevalues[1] ? parseInt(Statevalues[1]) : downlinkConfig.port,
                                     Confirmed: Statevalues[2]
                                         ? Statevalues[2] === 'true'
