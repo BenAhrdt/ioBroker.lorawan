@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.11.5 (2025-08-29)
 * (BenAhrdt) update Assignhandler
 * (BenAhrdt) update Core dependencies
 

@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.11.4",
+    "version": "1.11.5",
     "news": {
+      "1.11.5": {
+        "en": "update Assignhandler\nupdate Core dependencies",
+        "de": "update Assignhandler\naktualisierung Kernabhängigkeiten",
+        "ru": "обновление Assignhandler\nобновление Основные зависимости",
+        "pt": "atualizar Atribuidor\natualizar Dependências principais",
+        "nl": "opdrachtgever bijwerken\nbijwerken Kernafhankelijkheden",
+        "fr": "mettre à jour Assignhandler\nmise à jour Dépendances de base",
+        "it": "aggiornamento Assignhandler\naggiornamento Dipendenze fondamentali",
+        "es": "actualización Assignhandler\nactualización Dependencias básicas",
+        "pl": "update Assignhandler\naktualizacja Podstawowe zależności",
+        "uk": "оновлення Assignhandler\nоновлення Основні залежності",
+        "zh-cn": "更新指定手牌\n更新 核心依赖关系"
+      },
       "1.11.4": {
         "en": "set Custom Send payload to upper case",
         "de": "set Custom Payload an den oberen Fall senden",
@@ -80,19 +93,6 @@
         "pl": "powiadomienia o konfigu lub logowania w przypadku stanu połączenia z LNS",
         "uk": "конфігурація повідомлень та / або входу у разі з'єднання",
         "zh-cn": "在连接状态下与 LNS 进行配置通知和/ 或记录"
-      },
-      "1.10.21": {
-        "en": "add extSersorTemperature unit \"°C\"",
-        "de": "extSersorTemperatureinheit \"°C\" hinzufügen",
-        "ru": "добавить экстерсорный температурный блок \"°С\"",
-        "pt": "adicionar extSersorTemperature unit \"°C\"",
-        "nl": "extSersorTemperatuur-eenheid \"°C\" toevoegen",
-        "fr": "ajouter extSersorUnité de température \"°C\"",
-        "it": "aggiungere extSersorunità di temperatura \"°C\"",
-        "es": "añadir extSersorTemperatura unidad \"°C\"",
-        "pl": "dodać extSersorTemperatura jednostki \"°C\"",
-        "uk": "додати extSersorTemperature unit \"°C\"",
-        "zh-cn": "添加extSersorTemperature 单位“°C”"
       }
     },
     "titleLang": {
