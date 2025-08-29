@@ -24,6 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+* (BenAhrdt) update Assignhandler
 * (BenAhrdt) update Core dependencies
 
 ### 1.11.4 (2025-08-23)
