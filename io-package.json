@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.11.6",
+    "version": "1.11.7",
     "news": {
+      "1.11.7": {
+        "en": "more improov logging in case of deviceinformation at startup (debug)",
+        "de": "mehr improov protokollierung bei geräteinformationen beim start (debug)",
+        "ru": "более импровизированная регистрация в случае информации об устройстве при запуске (отладка)",
+        "pt": "registro mais improov em caso de informação do dispositivo na inicialização (debug)",
+        "nl": "meer improov loggen in geval van apparaatinformatie bij opstarten (debug)",
+        "fr": "l'enregistrement plus improov en cas d'information de périphérique au démarrage (debug)",
+        "it": "più improov registrazione in caso di informazioni del dispositivo all'avvio (debug)",
+        "es": "logging más improov en caso de información de dispositivo al inicio (debug)",
+        "pl": "więcej logowania improov w przypadku informacji deviceinformation at startup (debug)",
+        "uk": "більше непроваджених журналів у разі реєстрації пристрою",
+        "zh-cn": "在启动时发生设备信息( 调试) 时进行更多即兴记录"
+      },
       "1.11.6": {
         "en": "improov logging in case of deviceinformation at startup (debug)",
         "de": "improov protokollierung bei geräteinformationen beim start (debug)",
@@ -80,19 +93,6 @@
         "pl": "dodaj więcej ukrytych atrybutów do HA Bridge",
         "uk": "додати більш приховані атрибути до HA Bridge",
         "zh-cn": "向 HA 桥添加更多隐藏属性"
-      },
-      "1.11.0": {
-        "en": "change dependencies\nAdd LoRaWAN 2 Home Assistant Bridge",
-        "de": "abhängigkeiten ändern\nLoRaWAN hinzufügen 2 Home Assistenzbrücke",
-        "ru": "изменение зависимостей\nДобавить LoRaWAN 2 Домашний помощник моста",
-        "pt": "mudar dependências\nAdicionar LoRaWAN 2 Home Assistant Bridge",
-        "nl": "afhankelijkheden wijzigen\nLoRaWAN toevoegen 2 Home Assistant Bridge",
-        "fr": "les dépendances liées au changement\nAjouter LoRaWAN 2 Home Assistant Bridge",
-        "it": "cambiamento dipendenze\nAggiungi LoRaWAN 2 Home Assistant Bridge",
-        "es": "dependencia del cambio\nAñadir LoRaWAN 2 Home Assistant Bridge",
-        "pl": "zmiany zależności\nDodaj LoRaWAN 2 Strona główna Asystent Most",
-        "uk": "зміна залежності\nДодати LoRaWAN 2 Головна Асистент міст",
-        "zh-cn": "变化的依赖关系\n添加 LORAWAN 选项 2个家庭助理桥梁"
       }
     },
     "titleLang": {
