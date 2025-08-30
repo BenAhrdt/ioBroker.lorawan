@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.11.6 (2025-08-30)
 * (BenAhrdt) improov logging in case of deviceinformation at startup (debug)
 
 ### 1.11.5 (2025-08-29)

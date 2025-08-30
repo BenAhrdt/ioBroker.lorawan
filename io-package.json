@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.11.5",
+    "version": "1.11.6",
     "news": {
+      "1.11.6": {
+        "en": "improov logging in case of deviceinformation at startup (debug)",
+        "de": "improov protokollierung bei geräteinformationen beim start (debug)",
+        "ru": "импровизация регистрации в случае информации об устройстве при запуске (отладка)",
+        "pt": "registro de improov em caso de informação do dispositivo na inicialização (debug)",
+        "nl": "improov loggen in geval van apparaatinformatie bij opstarten (debug)",
+        "fr": "enregistrement improov en cas d'information de périphérique au démarrage (debug)",
+        "it": "registrazione improov in caso di informazioni del dispositivo all'avvio (debug)",
+        "es": "improov logging en caso de información de dispositivo al inicio (debug)",
+        "pl": "logowanie improov w przypadku informacji deviceinformation at startup (debug)",
+        "uk": "непродовольне залогування у разі реєстрації пристрою",
+        "zh-cn": "启动时发生设备信息时的 purroov 记录( debug)"
+      },
       "1.11.5": {
         "en": "update Assignhandler\nupdate Core dependencies",
         "de": "update Assignhandler\naktualisierung Kernabhängigkeiten",
@@ -80,19 +93,6 @@
         "pl": "zmiany zależności\nDodaj LoRaWAN 2 Strona główna Asystent Most",
         "uk": "зміна залежності\nДодати LoRaWAN 2 Головна Асистент міст",
         "zh-cn": "变化的依赖关系\n添加 LORAWAN 选项 2个家庭助理桥梁"
-      },
-      "1.10.22": {
-        "en": "config notification and / or logging in case of connection state to LNS",
-        "de": "config Benachrichtigung und / oder Protokollierung bei Verbindungszustand zu LNS",
-        "ru": "конфигурация уведомления и/или регистрации в случае состояния подключения к LNS",
-        "pt": "notificação de configuração e / ou registro em caso de estado de conexão para LNS",
-        "nl": "config notificatie en/of loggen in geval van verbindingstoestand met LNS",
-        "fr": "config notification et / ou l'enregistrement en cas d'état de connexion à LNS",
-        "it": "config notifica e / o registrazione in caso di stato di connessione a LNS",
-        "es": "config notificación y / o registro en caso de estado de conexión a LNS",
-        "pl": "powiadomienia o konfigu lub logowania w przypadku stanu połączenia z LNS",
-        "uk": "конфігурація повідомлень та / або входу у разі з'єднання",
-        "zh-cn": "在连接状态下与 LNS 进行配置通知和/ 或记录"
       }
     },
     "titleLang": {
