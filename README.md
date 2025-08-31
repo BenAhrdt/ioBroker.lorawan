@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.11.10 (2025-08-31)
 * (BenAhrdt) insert logging to object change
 
 ### 1.11.9 (2025-08-31)

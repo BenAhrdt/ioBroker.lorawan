@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.11.9",
+    "version": "1.11.10",
     "news": {
+      "1.11.10": {
+        "en": "insert logging to object change",
+        "de": "einfügen von protokollierung zur objektänderung",
+        "ru": "вставить журналирование для изменения объекта",
+        "pt": "inserir o registro à mudança de objeto",
+        "nl": "loggen toevoegen aan objectverandering",
+        "fr": "insérer l'enregistrement dans le changement d'objet",
+        "it": "inserire logging per cambiare oggetto",
+        "es": "insertar logging to object change",
+        "pl": "wpisz logowanie do zmiany obiektu",
+        "uk": "вставити заголовок до зміни об'єкта",
+        "zh-cn": "插入日志到对象更改"
+      },
       "1.11.9": {
         "en": "build Custom Config for HA Bridge",
         "de": "custom Config für HA Bridge bauen",
@@ -80,19 +93,6 @@
         "pl": "ustawiony Własny Wyślij ładunek do górnej skrzyni",
         "uk": "встановити Користувальницьке відправлення для верхнього корпусу",
         "zh-cn": "设置自定义将有效载荷发送到大写"
-      },
-      "1.11.3": {
-        "en": "replace german specific chars like ä => ae",
-        "de": "ä => ae",
-        "ru": "заменить немецкие специальные чары, такие как ä => ae",
-        "pt": "substituir caracteres específicos alemães como ä => ae",
-        "nl": "duitse tekens zoals ä => ae vervangen",
-        "fr": "remplacer les caractères spécifiques allemands comme ä => ae",
-        "it": "sostituire i carboni specifici tedeschi come ä => ae",
-        "es": "sustituir los charcos específicos alemanes como ä = título ae",
-        "pl": "zastąpić german specyficzne znaki jak ä = > ae",
-        "uk": "замініть німецькі спеціальні chars, такі як ä => ae",
-        "zh-cn": "替换德国特定的字符,如 ä e "
       }
     },
     "titleLang": {
