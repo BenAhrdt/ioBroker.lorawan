@@ -383,8 +383,11 @@ class Lorawan extends utils.Adapter {
      * @param obj value and ack of the changed object
      */
     async onObjectChange(id, obj) {
+        this.log.debug(`${id} is changed and common is ${obj.common}`);
         if (obj) {
+            this.log.debug(`object is valid`);
             if (id.startsWith(`${this.namespace}.`)) {
+                this.log.debug(`object is in namespace`);
                 // Erzeugen der HA Bridged für Control
                 await this.messagehandler?.directoryhandler.setCustomForHaBridge(id, obj.common);
             }
