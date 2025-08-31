@@ -122,5 +122,10 @@
     "minus": "Minus",
     "_DeviceIdentifierExampleDiscription": "Beispiel für konfiguriertes Topic:",
     "no": "Keins",
-    "space": "Leerzeichen"
+    "space": "Leerzeichen",
+    "HABridgeDecodedCustom": "Abhängig vom Custom",
+    "HABridgeControlCustom": "Abhängig vom Custom",
+    "_NoLoRaWAN": "Der Staat ist nicht in der rechten Lorawan -Instanz",
+    "publishTooltip": "Veröffentlichen Sie den Staat auf der Home Assistant Bridge",
+    "subscribeTooltip": "Abonnieren Sie den Staat von der Home Assistant Bridge"
 }

@@ -122,5 +122,10 @@
     "HaBridgeHeader": "Pont d'assistant à domicile",
     "_DeviceIdentifierConfiguredDiscription": "Résultat d'un sujet configuré:",
     "_DeviceIdentifierDiscription": "Configurez les identifiants pour créer un sujet MQTT pour un état. Vous pouvez sélectionner plusieurs identificateurs d'appareils, séparés par le séparateur.",
-    "_DeviceIdentifierExampleDiscription": "Exemple de sujet configuré:"
+    "_DeviceIdentifierExampleDiscription": "Exemple de sujet configuré:",
+    "HABridgeDecodedCustom": "Selon la coutume",
+    "HABridgeControlCustom": "Selon la coutume",
+    "_NoLoRaWAN": "L'État n'est pas dans l'instance de Lorawan droite",
+    "publishTooltip": "Publier le Bridge d'assistant à domicile State on Home",
+    "subscribeTooltip": "Abonnez-vous à l'État de Home Assistant Bridge"
 }

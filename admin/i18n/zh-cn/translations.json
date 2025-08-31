@@ -122,5 +122,10 @@
     "HaBridgeHeader": "家庭助理桥",
     "_DeviceIdentifierConfiguredDiscription": "配置主题的结果：",
     "_DeviceIdentifierDiscription": "配置标识符为状态创建MQTT主题。您可以选择由分离器隔开的多个设备标识符。",
-    "_DeviceIdentifierExampleDiscription": "配置主题的示例："
+    "_DeviceIdentifierExampleDiscription": "配置主题的示例：",
+    "HABridgeDecodedCustom": "取决于习俗",
+    "HABridgeControlCustom": "取决于习俗",
+    "_NoLoRaWAN": "国家不在正确的洛杉矶实例中",
+    "publishTooltip": "在家庭助理桥上发布州",
+    "subscribeTooltip": "从家庭助理桥订阅该州"
 }

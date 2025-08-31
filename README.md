@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) build Custom Config for HA Bridge
+
 ### 1.11.8 (2025-08-30)
 * (BenAhrdt) log adapterObjects at start
 

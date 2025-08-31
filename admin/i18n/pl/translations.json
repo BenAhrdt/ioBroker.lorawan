@@ -122,5 +122,10 @@
     "HaBridgeHeader": "Asystent mostu domowego",
     "_DeviceIdentifierConfiguredDiscription": "Wynik skonfigurowanego tematu:",
     "_DeviceIdentifierDiscription": "Skonfiguruj identyfikatory, aby utworzyć temat MQTT dla stanu. Możesz wybrać wiele identyfikatorów urządzeń, oddzielonych separatorem.",
-    "_DeviceIdentifierExampleDiscription": "Przykład skonfigurowany temat:"
+    "_DeviceIdentifierExampleDiscription": "Przykład skonfigurowany temat:",
+    "HABridgeDecodedCustom": "w zależności od zwyczaju",
+    "HABridgeControlCustom": "w zależności od zwyczaju",
+    "_NoLoRaWAN": "Państwo nie znajduje się we właściwej instancji Lorawan",
+    "publishTooltip": "Publikuj State on Home Assistant Bridge",
+    "subscribeTooltip": "Subskrybuj stan z Assistant Bridge"
 }

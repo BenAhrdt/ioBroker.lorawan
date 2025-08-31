@@ -122,5 +122,10 @@
     "HaBridgeHeader": "Home Assistant Bridge",
     "_DeviceIdentifierConfiguredDiscription": "Resultaat van geconfigureerd onderwerp:",
     "_DeviceIdentifierDiscription": "Configureer de ID's om een MQTT -onderwerp voor een status te maken. U kunt meerdere apparaat -ID's selecteren, gescheiden door de separator.",
-    "_DeviceIdentifierExampleDiscription": "Voorbeeld voor geconfigureerd onderwerp:"
+    "_DeviceIdentifierExampleDiscription": "Voorbeeld voor geconfigureerd onderwerp:",
+    "HABridgeDecodedCustom": "Afhankelijk van de gewoonte",
+    "HABridgeControlCustom": "Afhankelijk van de gewoonte",
+    "_NoLoRaWAN": "De staat staat niet in het juiste Lorawan -exemplaar",
+    "publishTooltip": "Publiceer de staat op Home Assistant Bridge",
+    "subscribeTooltip": "Abonneer de staat van Home Assistant Bridge"
 }

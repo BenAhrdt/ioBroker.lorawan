@@ -22,7 +22,7 @@ class Lorawan extends utils.Adapter {
         });
         this.on('ready', this.onReady.bind(this));
         this.on('stateChange', this.onStateChange.bind(this));
-        // this.on("objectChange", this.onObjectChange.bind(this));
+        this.on('objectChange', this.onObjectChange.bind(this));
         this.on('message', this.onMessage.bind(this));
         this.on('unload', this.onUnload.bind(this));
         this.on('fileChange', this.onFileChange.bind(this));
@@ -376,28 +376,26 @@ class Lorawan extends utils.Adapter {
         }
     }
 
-    // If you need to react to object changes, uncomment the following block and the corresponding line in the constructor.
-    // You also need to subscribe to the objects with `this.subscribeObjects`, similar to `this.subscribeStates`.
-    // /**
-    //  * Is called if a subscribed object changes
-    //  * @param {string} id
-    //  * @param {ioBroker.Object | null | undefined} obj
-    //  */
-    // onObjectChange(id, obj) {
-    // 	if (obj) {
-    // 		// The object was changed
-    // 		this.log.info(`object ${id} changed: ${JSON.stringify(obj)}`);
-    // 	} else {
-    // 		// The object was deleted
-    // 		this.log.info(`object ${id} deleted`);
-    // 	}
-    // }
+    /**
+     * Is called if a subscribed object changes
+     *
+     * @param id id of the changed object
+     * @param obj value and ack of the changed object
+     */
+    async onObjectChange(id, obj) {
+        if (obj) {
+            if (id.startsWith(`${this.namespace}.`)) {
+                // Erzeugen der HA Bridged für Control
+                await this.messagehandler?.directoryhandler.setCustomForHaBridge(id, obj.common);
+            }
+        }
+    }
 
     /**
      * Is called if a subscribed state changes
      *
-     * @param id id of the chaned state
-     * @param state value and ack of the chanedf state
+     * @param id id of the changed state
+     * @param state value and ack of the changed state
      */
     async onStateChange(id, state) {
         const activeFunction = 'onStateChange';

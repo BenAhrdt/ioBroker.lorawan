@@ -122,5 +122,10 @@
     "HaBridgeHeader": "Домашний помощник моста",
     "_DeviceIdentifierConfiguredDiscription": "Результат настроенной темы:",
     "_DeviceIdentifierDiscription": "Настройте идентификаторы, чтобы создать тему MQTT для состояния. Вы можете выбрать несколько идентификаторов устройства, разделенных сепаратором.",
-    "_DeviceIdentifierExampleDiscription": "Пример для настроенной темы:"
+    "_DeviceIdentifierExampleDiscription": "Пример для настроенной темы:",
+    "HABridgeDecodedCustom": "в зависимости от обычая",
+    "HABridgeControlCustom": "в зависимости от обычая",
+    "_NoLoRaWAN": "Государство не в правом экземпляре Лоравана",
+    "publishTooltip": "Публикуйте государство на домашнем помощнике моста",
+    "subscribeTooltip": "Подпишитесь на государство от домашнего помощника моста"
 }

@@ -902,9 +902,10 @@
 					"tooltip": "HABridgeDecodedTooltip",
 					"options": [
 						{"label":"HABridgeDecodedOff","value":"off"},
-						{"label":"HABridgeDecodedPublish","value":"publish"}
+						{"label":"HABridgeDecodedPublish","value":"publish"},
+						{"label":"HABridgeDecodedCustom","value":"custom"}
 					],
-					"default": "publish",
+					"default": "off",
 					"xs": 12,
 					"sm": 3,
 					"md": 3,
@@ -919,7 +920,8 @@
 					"options": [
 						{"label":"HABridgeControlOff","value":"off"},
 						{"label":"HABridgeControlPublish","value":"publish"},
-						{"label":"HABridgeControlPublishSubscribe","value":"publishsubscribe"}
+						{"label":"HABridgeControlPublishSubscribe","value":"publishsubscribe"},
+						{"label":"HABridgeControlCustom","value":"custom"}
 					],
 					"default": "off",
 					"xs": 12,

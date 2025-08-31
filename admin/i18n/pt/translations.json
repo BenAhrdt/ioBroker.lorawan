@@ -122,5 +122,10 @@
     "HaBridgeHeader": "Ponte Assistente de casa",
     "_DeviceIdentifierConfiguredDiscription": "Resultado de tópico configurado:",
     "_DeviceIdentifierDiscription": "Configure os identificadores para criar um tópico MQTT para um estado. Você pode selecionar vários identificadores de dispositivo, separados pelo separador.",
-    "_DeviceIdentifierExampleDiscription": "Exemplo para o tópico configurado:"
+    "_DeviceIdentifierExampleDiscription": "Exemplo para o tópico configurado:",
+    "HABridgeDecodedCustom": "dependendo do costume",
+    "HABridgeControlCustom": "dependendo do costume",
+    "_NoLoRaWAN": "O estado não está na instância direita de Lorawan",
+    "publishTooltip": "Publique o Estado em Home Assistant Bridge",
+    "subscribeTooltip": "Inscreva -se o estado da Home Assistant Bridge"
 }

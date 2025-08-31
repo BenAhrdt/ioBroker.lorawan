@@ -112,9 +112,11 @@
 	"usedDeviceId": "Used Device Id (common.name)",
 	"HABridgeDecodedOff": "Off",
 	"HABridgeDecodedPublish": "Publish",
+	"HABridgeDecodedCustom": "depending on custom",
 	"HABridgeControlOff": "Off",
 	"HABridgeControlPublish": "Publish",
 	"HABridgeControlPublishSubscribe": "Publish & Subscribe",
+	"HABridgeControlCustom": "depending on custom",
 	"no": "none",
 	"space": "space",
 	"underline": "underline",
@@ -122,5 +124,8 @@
 	"HaBridgeHeader": "Home Assistant Bridge",
 	"_DeviceIdentifierConfiguredDiscription": "Result of configured Topic: ",
 	"_DeviceIdentifierDiscription": "Configure the identifiers to create an MQTT topic for a state. You can select multiple device identifiers, separated by the separator.",
-	"_DeviceIdentifierExampleDiscription": "Example for configured Topic: "
+	"_DeviceIdentifierExampleDiscription": "Example for configured Topic: ",
+	"_NoLoRaWAN": "The State is not in the right LoRaWAN instance",
+	"publishTooltip": "publish the state on Home Assistant Bridge",
+	"subscribeTooltip": "subscribe the state from Home Assistant Bridge"
 }
