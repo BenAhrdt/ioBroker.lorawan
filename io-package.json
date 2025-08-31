@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.11.8",
+    "version": "1.11.9",
     "news": {
+      "1.11.9": {
+        "en": "build Custom Config for HA Bridge",
+        "de": "custom Config für HA Bridge bauen",
+        "ru": "создание пользовательской конфигурации для моста HA",
+        "pt": "construir configuração personalizada para a ponte HA",
+        "nl": "aangepaste configuratie bouwen voor HA Bridge",
+        "fr": "construisez Custom Config pour le pont HA",
+        "it": "costruire Configurazione personalizzata per HA Bridge",
+        "es": "construir Config personalizado para el puente HA",
+        "pl": "build Custom Config for HA Bridge",
+        "uk": "створення користувацького Config для HA Bridge",
+        "zh-cn": "构建 HA 桥的自定义配置"
+      },
       "1.11.8": {
         "en": "log adapterObjects at start",
         "de": "netzteil Objekte zu Beginn",
@@ -80,19 +93,6 @@
         "pl": "zastąpić german specyficzne znaki jak ä = > ae",
         "uk": "замініть німецькі спеціальні chars, такі як ä => ae",
         "zh-cn": "替换德国特定的字符,如 ä e "
-      },
-      "1.11.2": {
-        "en": "swap hidden logic",
-        "de": "swap versteckte logik",
-        "ru": "обмен скрытой логикой",
-        "pt": "trocar a lógica oculta",
-        "nl": "verwissel verborgen logica",
-        "fr": "swap logique cachée",
-        "it": "swap logica nascosta",
-        "es": "swap lógica oculta",
-        "pl": "swap ukryte logiki",
-        "uk": "прихована логіка",
-        "zh-cn": "交换隐藏逻辑"
       }
     },
     "titleLang": {
