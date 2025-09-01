@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.12.0",
+    "version": "1.12.1",
     "news": {
+      "1.12.1": {
+        "en": "remove Bug with folder / state handling",
+        "de": "entfernen Bug mit Ordner / State Handling",
+        "ru": "удалять Баг с папкой / обработка состояния",
+        "pt": "remover Erro com manipulação de pasta / estado",
+        "nl": "verwijderen Bug met map / status behandeling",
+        "fr": "supprimer Bogue avec gestion de dossier / état",
+        "it": "rimuovere Bug con cartella / gestione dello stato",
+        "es": "retirar Error con carpeta / manejo del estado",
+        "pl": "usunąć Błąd z obsługą folderu / stanu",
+        "uk": "видалення Помилки з папкою / державною обробкою",
+        "zh-cn": "删除 有文件夹/ 状态处理的错误"
+      },
       "1.12.0": {
         "en": "Custom Table for Config HA Bridge",
         "de": "Benutzerdefinierte Tisch für Config HA Bridge",
@@ -80,19 +93,6 @@
         "pl": "logowanie improov w przypadku informacji deviceinformation at startup (debug)",
         "uk": "непродовольне залогування у разі реєстрації пристрою",
         "zh-cn": "启动时发生设备信息时的 purroov 记录( debug)"
-      },
-      "1.11.5": {
-        "en": "update Assignhandler\nupdate Core dependencies",
-        "de": "update Assignhandler\naktualisierung Kernabhängigkeiten",
-        "ru": "обновление Assignhandler\nобновление Основные зависимости",
-        "pt": "atualizar Atribuidor\natualizar Dependências principais",
-        "nl": "opdrachtgever bijwerken\nbijwerken Kernafhankelijkheden",
-        "fr": "mettre à jour Assignhandler\nmise à jour Dépendances de base",
-        "it": "aggiornamento Assignhandler\naggiornamento Dipendenze fondamentali",
-        "es": "actualización Assignhandler\nactualización Dependencias básicas",
-        "pl": "update Assignhandler\naktualizacja Podstawowe zależności",
-        "uk": "оновлення Assignhandler\nоновлення Основні залежності",
-        "zh-cn": "更新指定手牌\n更新 核心依赖关系"
       }
     },
     "titleLang": {
