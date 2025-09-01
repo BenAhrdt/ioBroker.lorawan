@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.11.10",
+    "version": "1.12.0",
     "news": {
+      "1.12.0": {
+        "en": "Custom Table for Config HA Bridge",
+        "de": "Benutzerdefinierte Tisch für Config HA Bridge",
+        "ru": "Настольный стол для моста Config HA",
+        "pt": "Mesa personalizada para configuração HA Bridge",
+        "nl": "Aangepaste tabel voor Config HA Bridge",
+        "fr": "Table personnalisée pour Config HA Bridge",
+        "it": "Tabella personalizzata per Config HA Bridge",
+        "es": "Tabla personalizada para el puente Config HA",
+        "pl": "Niestandardowa tabela dla Config HA Bridge",
+        "uk": "Спеціальна таблиця для Config HA Bridge",
+        "zh-cn": "配置 HA 桥的自定义表格"
+      },
       "1.11.10": {
         "en": "insert logging to object change",
         "de": "einfügen von protokollierung zur objektänderung",
@@ -80,19 +93,6 @@
         "pl": "update Assignhandler\naktualizacja Podstawowe zależności",
         "uk": "оновлення Assignhandler\nоновлення Основні залежності",
         "zh-cn": "更新指定手牌\n更新 核心依赖关系"
-      },
-      "1.11.4": {
-        "en": "set Custom Send payload to upper case",
-        "de": "set Custom Payload an den oberen Fall senden",
-        "ru": "настройка Custom Send payload для верхнего корпуса",
-        "pt": "definir a carga de envio personalizada para maiúsculas",
-        "nl": "aangepaste lading naar hoofdletters verzenden",
-        "fr": "définir la charge utile personnalisée Envoyer à la case supérieure",
-        "it": "set Custom Invia carico utile al caso superiore",
-        "es": "set Custom Send payload to upper case",
-        "pl": "ustawiony Własny Wyślij ładunek do górnej skrzyni",
-        "uk": "встановити Користувальницьке відправлення для верхнього корпусу",
-        "zh-cn": "设置自定义将有效载荷发送到大写"
       }
     },
     "titleLang": {
