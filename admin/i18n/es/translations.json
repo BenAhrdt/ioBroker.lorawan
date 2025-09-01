@@ -127,5 +127,11 @@
     "HABridgeControlCustom": "Dependiendo de la costumbre",
     "_NoLoRaWAN": "El estado no está en la instancia correcta de Lorawan",
     "publishTooltip": "publicar el estado en el puente de asistente de origen",
-    "subscribeTooltip": "suscribir el estado desde el puente del asistente de origen"
+    "subscribeTooltip": "suscribir el estado desde el puente del asistente de origen",
+    "HaBridgeCustomHeader": "Definir el tema de los estados para el descubrimiento",
+    "HaBridgeCustomInformation": "Aquí puede definir una variedad de estados, que se establecerá un tema para HA Discovery. (Los comodines también son posibles)",
+    "Application": "Solicitud",
+    "Device": "Dispositivo",
+    "Folder": "Carpeta",
+    "State": "Estado"
 }

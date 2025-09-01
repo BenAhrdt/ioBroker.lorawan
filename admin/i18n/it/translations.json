@@ -127,5 +127,11 @@
     "HABridgeControlCustom": "a seconda dell'usanza",
     "_NoLoRaWAN": "Lo stato non è nella giusta istanza di Lorawan",
     "publishTooltip": "Pubblica lo stato su Home Assistant Bridge",
-    "subscribeTooltip": "Iscriviti allo stato da casa assistente ponte"
+    "subscribeTooltip": "Iscriviti allo stato da casa assistente ponte",
+    "HaBridgeCustomHeader": "Definisci gli stati per l'argomento di scoperta",
+    "HaBridgeCustomInformation": "Qui puoi definire una serie di stati, che sarà impostato un argomento per la scoperta di HA. (Anche i caratteri jolly sono possibili)",
+    "Application": "Applicazione",
+    "Device": "Dispositivo",
+    "Folder": "Cartella",
+    "State": "Stato"
 }

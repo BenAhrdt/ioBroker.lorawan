@@ -146,8 +146,7 @@
     "dataSource": "push",
     "blockly": true,
     "adminUI": {
-      "config": "json",
-      "custom": "json"
+      "config": "json"
     },
     "dependencies": [
       {

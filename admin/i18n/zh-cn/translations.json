@@ -127,5 +127,11 @@
     "HABridgeControlCustom": "取决于习俗",
     "_NoLoRaWAN": "国家不在正确的洛杉矶实例中",
     "publishTooltip": "在家庭助理桥上发布州",
-    "subscribeTooltip": "从家庭助理桥订阅该州"
+    "subscribeTooltip": "从家庭助理桥订阅该州",
+    "HaBridgeCustomHeader": "定义发现主题的状态",
+    "HaBridgeCustomInformation": "在这里，您可以定义一系列状态，这些状态将设置为HA发现的主题。 （通配符也是可能的）",
+    "Application": "应用",
+    "Device": "设备",
+    "Folder": "文件夹",
+    "State": "状态"
 }

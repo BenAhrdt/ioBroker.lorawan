@@ -602,7 +602,7 @@
             "type": "panel",
             "label": "customConfig",
 			"items": {
-			"customConfigHeader":{
+			"_customConfigHeader":{
 				"newLine": true,
 				"type": "header",
 				"text": "customConfigHeader",
@@ -613,7 +613,7 @@
 				"lg": 12,
 				"xl": 12
 				},
-				"customJsonInformation":{
+				"_customJsonInformation":{
 					"newLine":true,
 					"type": "staticText",
 					"label": "customJsonInformation",
@@ -722,7 +722,7 @@
             "type": "panel",
             "label": "HABridge",
 			"items": {
-			"customConfigHeader":{
+			"_HABridgeConfigHeader":{
 				"newLine": true,
 				"type": "header",
 				"text": "HaBridgeHeader",
@@ -733,7 +733,7 @@
 				"lg": 12,
 				"xl": 12
 				},
-				"HABridgeInformation":{
+				"_HABridgeInformation":{
 					"newLine":true,
 					"type": "staticText",
 					"label": "HABridgeInformation",
@@ -929,6 +929,107 @@
 					"md": 3,
 					"lg": 3,
 					"xl": 3
+				},
+				"_HABridgeCustomHeader":{
+					"newLine": true,
+					"hidden": "data.MQTTInstance === ''",
+					"type": "header",
+					"text": "HaBridgeCustomHeader",
+					"size": 3,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+					},
+				"_HaBridgeCustomInformation":{
+					"newLine":true,
+					"type": "staticText",
+					"label": "HaBridgeCustomInformation",
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"HABridgeConfig":{
+                    "newLine": true,
+					"hidden": "data.MQTTInstance === ''",
+                    "type":"table",
+                    "allowAddByFilter": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12,
+					"items":[
+						{
+							"type": "selectSendTo",
+							"attr": "Application",
+							"label": "Application",
+							"default": "No Application selected",
+							"jsonData": "{}",
+							"command": "getApplicationsForConfig",
+							"width": "15%"
+						},
+						{
+							"type": "selectSendTo",
+							"attr": "Device",
+							"label": "Device",
+							"default": "No Device selected",
+							"jsonData": "{\"application\":\"${data.Application}\"}",
+							"command": "getDevicesForConfig",
+							"alsoDependsOn":[
+                        		"Application"
+                    		],
+							"width": "15%"
+						},
+						{
+							"type": "selectSendTo",
+							"attr": "Folder",
+							"label": "Folder",
+							"default": "*",
+							"jsonData": "{}",
+							"command": "getFoldersForConfig",
+							"width": "10%"
+						},						
+						{
+							"type": "selectSendTo",
+							"attr": "State",
+							"label": "State",
+							"default": "No State selected",
+							"jsonData": "{\"application\":\"${data.Application}\",\"device\":\"${data.Device}\",\"folder\":\"${data.Folder}\"}",
+							"command": "getStatesForConfig",
+							"alsoDependsOn":[
+                        		"Application",
+								"Device",
+								"Folder"
+                    		],
+							"width": "25%"
+						},
+						{
+							"type": "checkbox",
+							"attr": "publish",
+							"label": "publish",
+							"default": true,
+							"width": "5%"
+						},
+						{
+							"type": "checkbox",
+							"attr": "subscribe",
+							"label": "subscribe",
+							"hidden": "data.Folder !== 'downlink.control'",
+							"default": true,
+							"width": "5%"
+						},
+						{
+							"type": "checkbox",
+							"attr": "exclude",
+							"label": "Exclude",
+							"default": false,
+							"width": "5%"
+						}
+					]
 				}
 			}
 		}

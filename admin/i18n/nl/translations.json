@@ -127,5 +127,11 @@
     "HABridgeControlCustom": "Afhankelijk van de gewoonte",
     "_NoLoRaWAN": "De staat staat niet in het juiste Lorawan -exemplaar",
     "publishTooltip": "Publiceer de staat op Home Assistant Bridge",
-    "subscribeTooltip": "Abonneer de staat van Home Assistant Bridge"
+    "subscribeTooltip": "Abonneer de staat van Home Assistant Bridge",
+    "HaBridgeCustomHeader": "Definieer staten voor Discovery Topic",
+    "HaBridgeCustomInformation": "Hier kunt u een scala aan staten definiëren, die een onderwerp voor HA Discovery zal worden ingesteld. (Jokertekens zijn ook mogelijk)",
+    "Application": "Sollicitatie",
+    "Device": "Apparaat",
+    "Folder": "Map",
+    "State": "Staat"
 }

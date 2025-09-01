@@ -22,7 +22,7 @@ class Lorawan extends utils.Adapter {
         });
         this.on('ready', this.onReady.bind(this));
         this.on('stateChange', this.onStateChange.bind(this));
-        this.on('objectChange', this.onObjectChange.bind(this));
+        //this.on('objectChange', this.onObjectChange.bind(this));
         this.on('message', this.onMessage.bind(this));
         this.on('unload', this.onUnload.bind(this));
         this.on('fileChange', this.onFileChange.bind(this));
@@ -69,6 +69,8 @@ class Lorawan extends utils.Adapter {
 
             //Subscribe all configuration and control states
             this.subscribeStatesAsync('*');
+            //this.subscribeObjectsAsync('*.uplink.decoded.*');
+            //this.subscribeObjectsAsync('*.downlink.control.*');
             this.log.silly(`the adapter starts with downlinkconfigs: ${JSON.stringify(this.config.downlinkConfig)}.`);
             this.log.silly(
                 `the active downlinkconfigs are: ${JSON.stringify(this.downlinkConfighandler.activeDownlinkConfigs)}`,
@@ -382,17 +384,11 @@ class Lorawan extends utils.Adapter {
      * @param id id of the changed object
      * @param obj value and ack of the changed object
      */
-    async onObjectChange(id, obj) {
-        this.log.debug(`${id} is changed and common is ${obj.common}`);
-        if (obj) {
-            this.log.debug(`object is valid`);
-            if (id.startsWith(`${this.namespace}.`)) {
-                this.log.debug(`object is in namespace`);
-                // Erzeugen der HA Bridged für Control
-                await this.messagehandler?.directoryhandler.setCustomForHaBridge(id, obj.common);
-            }
-        }
-    }
+    /*async onObjectChange(id, obj) {
+        this.log.debug(`${id} is changed into ${JSON.stringify(obj.common)}`);
+        // Erzeugen der HA Bridged für Control
+        await this.messagehandler?.directoryhandler.setCustomForHaBridge(id, obj.common);
+    }*/
 
     /**
      * Is called if a subscribed state changes
@@ -922,6 +918,112 @@ class Lorawan extends utils.Adapter {
                     if (obj.callback) {
                         this.sendTo(obj.from, obj.command, result, obj.callback);
                     }
+
+                    // send application to config
+                } else if (obj.command === 'getApplicationsForConfig') {
+                    try {
+                        let myCount = 1;
+                        const applications = [{ label: '* (Wildcard)', value: '*' }];
+                        const currentApplications = {};
+                        const adapterObjects = await this.getAdapterObjectsAsync();
+                        for (const adapterObject of Object.values(adapterObjects)) {
+                            if (adapterObject.type === 'folder' && adapterObject._id.endsWith('uplink')) {
+                                adapterObject._id = this.removeNamespace(adapterObject._id);
+                                const changeInfo = await this.getChangeInfo(adapterObject._id);
+                                const label = changeInfo?.applicationName;
+                                const value = changeInfo?.applicationId;
+                                if (!currentApplications[value]) {
+                                    currentApplications[value] = value;
+                                    applications[myCount] = { label: label, value: value };
+                                    myCount++;
+                                }
+                            }
+                        }
+                        applications.sort(this.sortByLabel);
+                        this.sendTo(obj.from, obj.command, applications, obj.callback);
+                    } catch (error) {
+                        this.log.error(error);
+                    }
+                } else if (obj.command === 'getDevicesForConfig') {
+                    try {
+                        let myCount = 1;
+                        const devices = [{ label: '* (Wildcard)', value: '*' }];
+                        const adapterObjects = await this.getAdapterObjectsAsync();
+                        for (const adapterObject of Object.values(adapterObjects)) {
+                            if (
+                                adapterObject.type === 'folder' &&
+                                (adapterObject._id.includes(obj.message.application) ||
+                                    obj.message.application === '*') &&
+                                adapterObject._id.endsWith('uplink')
+                            ) {
+                                adapterObject._id = this.removeNamespace(adapterObject._id);
+                                const changeInfo = await this.getChangeInfo(adapterObject._id);
+                                const label = changeInfo?.deviceId;
+                                const value = changeInfo?.deviceEUI;
+                                devices[myCount] = { label: label, value: value };
+                                myCount++;
+                            }
+                        }
+                        devices.sort(this.sortByLabel);
+                        this.sendTo(obj.from, obj.command, devices, obj.callback);
+                    } catch (error) {
+                        this.log.error(error);
+                    }
+                } else if (obj.command === 'getFoldersForConfig') {
+                    try {
+                        const devices = [
+                            { label: '* (Wildcard)', value: '*' },
+                            { label: 'uplink.decoded', value: 'uplink.decoded' },
+                            { label: 'downlink.control', value: 'downlink.control' },
+                        ];
+                        this.sendTo(obj.from, obj.command, devices, obj.callback);
+                    } catch (error) {
+                        this.log.error(error);
+                    }
+                } else if (obj.command === 'getStatesForConfig') {
+                    try {
+                        let myCount = 1;
+                        const states = [{ label: '* (Wildcard)', value: '*' }];
+                        const currentStates = {};
+                        const adapterObjects = await this.getAdapterObjectsAsync();
+                        for (const adapterObject of Object.values(adapterObjects)) {
+                            if (
+                                adapterObject.type === 'state' &&
+                                (adapterObject._id.includes(obj.message.application) ||
+                                    obj.message.application === '*') &&
+                                (adapterObject._id.includes(obj.message.device) || obj.message.device === '*') &&
+                                (adapterObject._id.includes(obj.message.folder) ||
+                                    (obj.message.folder === '*' &&
+                                        (adapterObject._id.includes('uplink.decoded') ||
+                                            adapterObject._id.includes('downlink.control'))))
+                            ) {
+                                adapterObject._id = this.removeNamespace(adapterObject._id);
+                                const changeInfo = await this.getChangeInfo(adapterObject._id);
+                                //if uplink decoded => changed State with folder
+                                let fullStatename = changeInfo?.changedState;
+                                if (changeInfo?.allElements.length > 6) {
+                                    fullStatename = '';
+                                    for (let i = 5; i < changeInfo?.allElements.length; i++) {
+                                        if (fullStatename !== '') {
+                                            fullStatename += '.';
+                                        }
+                                        fullStatename += changeInfo?.allElements[i];
+                                    }
+                                }
+                                const label = fullStatename;
+                                const value = fullStatename;
+                                if (!currentStates[value]) {
+                                    currentStates[value] = value;
+                                    states[myCount] = { label: label, value: value };
+                                    myCount++;
+                                }
+                            }
+                        }
+                        states.sort(this.sortByLabel);
+                        this.sendTo(obj.from, obj.command, states, obj.callback);
+                    } catch (error) {
+                        this.log.error(error);
+                    }
                 } else {
                     const result = { error: true, message: 'No message matched', received: obj.message };
                     if (obj.callback) {
@@ -932,6 +1034,13 @@ class Lorawan extends utils.Adapter {
         } catch (error) {
             this.log.error(`error at ${activeFunction}: ${error}`);
         }
+    }
+
+    sortByLabel(a, b) {
+        if (a.label < b.label) {
+            return -1;
+        }
+        return 1;
     }
 }
 

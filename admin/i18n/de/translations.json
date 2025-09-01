@@ -125,7 +125,13 @@
     "space": "Leerzeichen",
     "HABridgeDecodedCustom": "Abhängig vom Custom",
     "HABridgeControlCustom": "Abhängig vom Custom",
-    "_NoLoRaWAN": "Der Staat ist nicht in der rechten Lorawan -Instanz",
-    "publishTooltip": "Veröffentlichen Sie den Staat auf der Home Assistant Bridge",
-    "subscribeTooltip": "Abonnieren Sie den Staat von der Home Assistant Bridge"
+    "_NoLoRaWAN": "Der State ist nicht in der richtigen Lorawan - Instanz",
+    "publishTooltip": "Veröffentlichen Sie den State zur der Home Assistant Bridge",
+    "subscribeTooltip": "Abonnieren Sie den State von der Home Assistant Bridge",
+    "HaBridgeCustomHeader": "Definieren Sie ZustäStates für das HA Discovery",
+    "HaBridgeCustomInformation": "Hier können Sie ein Array von States definieren, die ein Topic für HA-Discovery festlegen. (Wildcards sind auch möglich)",
+    "Application": "Anwendung",
+    "Device": "Gerät",
+    "Folder": "Ordner",
+    "State": "State"
 }

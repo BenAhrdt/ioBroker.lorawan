@@ -127,5 +127,11 @@
     "HABridgeControlCustom": "w zależności od zwyczaju",
     "_NoLoRaWAN": "Państwo nie znajduje się we właściwej instancji Lorawan",
     "publishTooltip": "Publikuj State on Home Assistant Bridge",
-    "subscribeTooltip": "Subskrybuj stan z Assistant Bridge"
+    "subscribeTooltip": "Subskrybuj stan z Assistant Bridge",
+    "HaBridgeCustomHeader": "Zdefiniuj stany na temat odkrycia",
+    "HaBridgeCustomInformation": "Tutaj możesz zdefiniować szereg stanów, które zostaną ustanowione temat do odkrycia HA. (Dzikie są też możliwe)",
+    "Application": "Aplikacja",
+    "Device": "Urządzenie",
+    "Folder": "Falcówka",
+    "State": "Państwo"
 }

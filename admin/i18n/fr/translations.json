@@ -127,5 +127,11 @@
     "HABridgeControlCustom": "Selon la coutume",
     "_NoLoRaWAN": "L'État n'est pas dans l'instance de Lorawan droite",
     "publishTooltip": "Publier le Bridge d'assistant à domicile State on Home",
-    "subscribeTooltip": "Abonnez-vous à l'État de Home Assistant Bridge"
+    "subscribeTooltip": "Abonnez-vous à l'État de Home Assistant Bridge",
+    "HaBridgeCustomHeader": "Définir les États pour le sujet de découverte",
+    "HaBridgeCustomInformation": "Ici, vous pouvez définir un éventail d'États, qui sera défini un sujet pour HA Discovery. (Les caractères génériques sont aussi possibles)",
+    "Application": "Application",
+    "Device": "Appareil",
+    "Folder": "Dossier",
+    "State": "État"
 }

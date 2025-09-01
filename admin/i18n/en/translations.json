@@ -127,5 +127,11 @@
 	"_DeviceIdentifierExampleDiscription": "Example for configured Topic: ",
 	"_NoLoRaWAN": "The State is not in the right LoRaWAN instance",
 	"publishTooltip": "publish the state on Home Assistant Bridge",
-	"subscribeTooltip": "subscribe the state from Home Assistant Bridge"
+	"subscribeTooltip": "subscribe the state from Home Assistant Bridge",
+	"HaBridgeCustomHeader": "Define States for Discovery Topic",
+	"HaBridgeCustomInformation": "Here you can define an array of states, that will be set a Topic for HA Discovery. (Wildcards are possible too)",
+	"Application": "Application",
+	"Device": "Device",
+	"Folder": "Folder",
+	"State": "State"
 }
