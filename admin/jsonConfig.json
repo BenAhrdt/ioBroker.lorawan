@@ -957,6 +957,9 @@
 					"hidden": "data.MQTTInstance === ''",
                     "type":"table",
                     "allowAddByFilter": true,
+					"clone": true,
+					"export": true,
+					"import": true,
 					"xs": 12,
 					"sm": 12,
 					"md": 12,
@@ -970,7 +973,7 @@
 							"default": "No Application selected",
 							"jsonData": "{}",
 							"command": "getApplicationsForConfig",
-							"width": "15%"
+							"width": "20%"
 						},
 						{
 							"type": "selectSendTo",
@@ -982,7 +985,7 @@
 							"alsoDependsOn":[
                         		"Application"
                     		],
-							"width": "15%"
+							"width": "20%"
 						},
 						{
 							"type": "selectSendTo",

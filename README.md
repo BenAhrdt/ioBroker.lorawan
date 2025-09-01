@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) remove Bug with folder / state handling
+
 ### 1.12.0 (2025-09-01)
 * (BenAhrdt) Custom Table for Config HA Bridge
 
