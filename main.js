@@ -7,6 +7,7 @@
 // The adapter-core module gives you access to the core ioBroker functions
 // you need to create an adapter
 const utils = require('@iobroker/adapter-core');
+const bridgeClass = require('./lib/modules/bridge');
 const mqttClientClass = require('./lib/modules/mqttclient');
 const messagehandlerClass = require('./lib/modules/messagehandler');
 const downlinkConfighandlerClass = require('./lib/modules/downlinkConfighandler');
@@ -55,8 +56,11 @@ class Lorawan extends utils.Adapter {
             // create new messagehandler
             this.messagehandler = new messagehandlerClass(this);
 
-            // Set all mqtt clients
+            // Set mqtt client
             this.mqttClient = new mqttClientClass(this, this.config);
+
+            // declare bridge
+            this.bridge = new bridgeClass(this);
 
             // generate new configed downlinkstates on allready existing devices at adapter startup
             await this.messagehandler.generateDownlinksAndRemoveStatesAtStatup();
@@ -366,8 +370,11 @@ class Lorawan extends utils.Adapter {
                 delete this.simulation.timeout;
             }
 
-            // Clear Schedules im directoriehandler
+            // Clear Schedules in directoriehandler
             this.messagehandler?.clearAllSchedules();
+
+            // Clear Schedules in Bridge
+            this.bridge?.clearAllSchedules();
 
             // Destroy mqtt client
             this.mqttClient?.destroy();
@@ -514,6 +521,8 @@ class Lorawan extends utils.Adapter {
                         }
                         this.setState(id, state.val, true);
                     }
+                } else {
+                    await this.bridge?.publish(id, state.val);
                 }
             } else {
                 // The state was deleted

@@ -718,14 +718,14 @@
 				}
 			}
 		},
-		"HABridge":{
+		"_BridgePanel":{
             "type": "panel",
-            "label": "HABridge",
+            "label": "BridgePanel",
 			"items": {
-			"_HABridgeConfigHeader":{
+				"_BridgeConfigHeader":{
 				"newLine": true,
 				"type": "header",
-				"text": "HaBridgeHeader",
+				"text": "BridgeHeader",
 				"size": 3,
 				"xs": 12,
 				"sm": 12,
@@ -733,32 +733,157 @@
 				"lg": 12,
 				"xl": 12
 				},
-				"_HABridgeInformation":{
+				"_BridgeInformation":{
 					"newLine":true,
 					"type": "staticText",
-					"label": "HABridgeInformation",
+					"label": "BridgeInformation",
 					"xs": 12,
 					"sm": 12,
 					"md": 12,
 					"lg": 12,
 					"xl": 12
 				},
-				"MQTTInstance": {
-                    "newLine": true,
-                    "type": "instance",
-                    "label": "MQTTInstance",
-                    "adapter": "mqtt-client",
-                    "allowDeactivate": true,
+				"BridgeType":{
+					"newLine": true,
+					"type": "select",
+					"label": "BridgeType",
+					"tooltip": "BridgeTypeTooltip",
+					"options": [
+						{"label":"BridgeTypeOff","value":"off"},
+						{"label":"BridgeTypeHA","value":"HA"}
+					],
+					"default": "off",
+					"xs": 12,
+					"sm": 3,
+					"md": 3,
+					"lg": 3,
+					"xl": 3
+				},
+				"RefreshDiscoveryCronJob": {
+                    "type": "cron",
+                    "complex": true,
+                    "label": "RefreshDiscoveryCronJob",
+					"hidden": "data.BridgeType === 'off'",
+                    "tooltip": "RefreshDiscoveryCronJobTooltip",
+                    "default": "0 * * * *",
                     "xs": 12,
-                    "sm": 12,
-                    "md": 3,
-                    "lg": 3,
-                    "xl": 3
-                },
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xl": 2
+                  },
+				"_BridgeServersettingsHeader": {
+					"newLine": true,
+					"type": "header",
+					"text": "ServersettingsHeader",
+					"hidden": "data.BridgeType === 'off'",
+					"size": 3,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"_BridgeServerinformation":{
+					"newLine":true,
+					"type": "staticText",
+					"label": "Serverinformation",
+					"hidden": "data.BridgeType === 'off'",
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"BridgeipUrl":{
+					"newLine": true,
+					"type": "text",
+					"label": "ipUrl",
+					"tooltip": "ipUrlTooltip",
+					"hidden": "data.BridgeType === 'off'",
+					"default": "",
+					"xs": 12,
+					"sm": 4,
+					"md": 4,
+					"lg": 4,
+					"xl": 4
+				},
+				"Bridgeport":{
+					"type": "number",
+					"label": "port",
+					"tooltip": "portTooltip",
+					"hidden": "data.BridgeType === 'off'",
+					"default": 1883,
+					"xs": 12,
+					"sm": 1,
+					"md": 1,
+					"lg": 1,
+					"xl": 1
+				},
+				"Bridgessl":{
+					"type": "checkbox",
+					"label": "SSL",
+					"tooltip": "sslTooltip",
+					"hidden": "data.BridgeType === 'off'",
+					"default": false,
+					"xs": 12,
+					"sm": 1,
+					"md": 1,
+					"lg": 1,
+					"xl": 1
+				},
+				"_BridgeAuthenticationHeader": {
+					"newLine": true,
+					"type": "header",
+					"text": "AuthenticationHeader",
+					"hidden": "data.BridgeType === 'off'",
+					"size": 3,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"_BridgeAuthenticationInformation":{
+					"newLine":true,
+					"type": "staticText",
+					"label": "AuthenticationInformation",
+					"hidden": "data.BridgeType === 'off'",
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"Bridgeusername":{
+					"newLine":true,
+					"type": "text",
+					"label": "username",
+					"hidden": "data.BridgeType === 'off'",
+					"tooltip": "usernameTooltip",
+					"default": "",
+					"xs": 12,
+					"sm": 4,
+					"md": 4,
+					"lg": 4,
+					"xl": 4
+				},
+				"Bridgepassword":{
+					"type": "password",
+					"label": "password",
+					"hidden": "data.BridgeType === 'off'",
+					"tooltip": "passwordTooltip",
+					"default": "",
+					"xs": 12,
+					"sm": 3,
+					"md": 3,
+					"lg": 3,
+					"xl": 3
+				},
 				"_DeviceIdentifierDiscription":{
 					"newLine":true,
 					"type": "staticText",
-					"hidden": "data.MQTTInstance === ''",
+					"hidden": "data.BridgeType === 'off'",
 					"label": "_DeviceIdentifierDiscription",
 					"xs": 12,
 					"sm": 12,
@@ -768,7 +893,7 @@
 				},
 				"DeviceIdentifiers":{
 					"newLine": true,
-					"hidden": "data.MQTTInstance === ''",
+					"hidden": "data.BridgeType === 'off'",
 					"type":"accordion",
 					"titleAttr": "DeviceIdentifier",
 					"clone": true,
@@ -802,7 +927,7 @@
 				},
 				"separator":{
 					"newLine": true,
-					"hidden": "data.MQTTInstance === ''",
+					"hidden": "data.BridgeType === 'off'",
 					"type": "select",
 					"label": "separator",
 					"tooltip": "separatorTooltip",
@@ -821,7 +946,7 @@
 				},
 				"_spare1":{
 					"type": "staticText",
-					"hidden": "data.MQTTInstance === ''",
+					"hidden": "data.BridgeType === 'off'",
 					"label": "",
 					"xs": 12,
 					"sm": 1,
@@ -831,7 +956,7 @@
 				},
 				"_DeviceIdentifierConfiguredDiscription":{
 					"type": "staticText",
-					"hidden": "data.MQTTInstance === ''",
+					"hidden": "data.BridgeType === 'off'",
 					"label": "_DeviceIdentifierConfiguredDiscription",
 					"style": {"font-size":"16px", "font-weight":"bold"},
 					"xs": 12,
@@ -842,7 +967,7 @@
 				},
 				"_DeviceIdentifierConfigured":{
                     "type": "textSendTo",
-					"hidden": "data.MQTTInstance === ''",
+					"hidden": "data.BridgeType === 'off'",
 					"style": {"font-size":"16px", "font-weight":"bold", "color":"blue"},
                     "jsonData": "{\"DeviceIdentifiers\":${JSON.stringify(data.DeviceIdentifiers)},\"separator\":\"${data.separator}\"}",
                     "command": "getTopicConfigured",
@@ -859,7 +984,7 @@
 				"_spare2":{
 					"newLine": true,
 					"type": "staticText",
-					"hidden": "data.MQTTInstance === ''",
+					"hidden": "data.BridgeType === 'off'",
 					"label": "",
 					"xs": 12,
 					"sm": 3,
@@ -869,7 +994,7 @@
 				},
 				"_DeviceIdentifierExampleDiscription":{
 					"type": "staticText",
-					"hidden": "data.MQTTInstance === ''",
+					"hidden": "data.BridgeType === 'off'",
 					"label": "_DeviceIdentifierExampleDiscription",
 					"style": {"font-size":"16px", "font-weight":"bold"},
 					"xs": 12,
@@ -880,7 +1005,7 @@
 				},
 				"_DeviceIdentifierExample":{
                     "type": "textSendTo",
-					"hidden": "data.MQTTInstance === ''",
+					"hidden": "data.BridgeType === 'off'",
 					"style": {"font-size":"16px", "font-weight":"bold", "color":"blue"},
                     "jsonData": "{\"DeviceIdentifiers\":${JSON.stringify(data.DeviceIdentifiers)},\"separator\":\"${data.separator}\"}",
                     "command": "getTopicExample",
@@ -894,47 +1019,11 @@
                     "lg": 6,
                     "xl": 6
                 },
-				"HABridgeDecoded":{
+				"_BridgeStateHeader":{
 					"newLine": true,
-					"hidden": "data.MQTTInstance === ''",
-					"type": "select",
-					"label": "HABridgeDecoded",
-					"tooltip": "HABridgeDecodedTooltip",
-					"options": [
-						{"label":"HABridgeDecodedOff","value":"off"},
-						{"label":"HABridgeDecodedPublish","value":"publish"},
-						{"label":"HABridgeDecodedCustom","value":"custom"}
-					],
-					"default": "off",
-					"xs": 12,
-					"sm": 3,
-					"md": 3,
-					"lg": 3,
-					"xl": 3
-				},
-				"HABridgeControl":{
-					"hidden": "data.MQTTInstance === ''",
-					"type": "select",
-					"label": "HABridgeControl",
-					"tooltip": "HABridgeControlTooltip",
-					"options": [
-						{"label":"HABridgeControlOff","value":"off"},
-						{"label":"HABridgeControlPublish","value":"publish"},
-						{"label":"HABridgeControlPublishSubscribe","value":"publishsubscribe"},
-						{"label":"HABridgeControlCustom","value":"custom"}
-					],
-					"default": "off",
-					"xs": 12,
-					"sm": 3,
-					"md": 3,
-					"lg": 3,
-					"xl": 3
-				},
-				"_HABridgeCustomHeader":{
-					"newLine": true,
-					"hidden": "data.MQTTInstance === ''",
+					"hidden": "data.BridgeType === 'off'",
 					"type": "header",
-					"text": "HaBridgeCustomHeader",
+					"text": "BridgeStateHeader",
 					"size": 3,
 					"xs": 12,
 					"sm": 12,
@@ -942,19 +1031,20 @@
 					"lg": 12,
 					"xl": 12
 					},
-				"_HaBridgeCustomInformation":{
+				"_BridgeStateInformation":{
 					"newLine":true,
+					"hidden": "data.BridgeType === 'off'",
 					"type": "staticText",
-					"label": "HaBridgeCustomInformation",
+					"label": "BridgeStateInformation",
 					"xs": 12,
 					"sm": 12,
 					"md": 12,
 					"lg": 12,
 					"xl": 12
 				},
-				"HABridgeConfig":{
+				"BridgeStateConfig":{
                     "newLine": true,
-					"hidden": "data.MQTTInstance === ''",
+					"hidden": "data.BridgeType === 'off'",
                     "type":"table",
                     "allowAddByFilter": true,
 					"clone": true,
@@ -970,7 +1060,7 @@
 							"type": "selectSendTo",
 							"attr": "Application",
 							"label": "Application",
-							"default": "No Application selected",
+							"default": "*",
 							"jsonData": "{}",
 							"command": "getApplicationsForConfig",
 							"width": "20%"
@@ -979,7 +1069,7 @@
 							"type": "selectSendTo",
 							"attr": "Device",
 							"label": "Device",
-							"default": "No Device selected",
+							"default": "*",
 							"jsonData": "{\"application\":\"${data.Application}\"}",
 							"command": "getDevicesForConfig",
 							"alsoDependsOn":[
@@ -1022,7 +1112,7 @@
 							"attr": "subscribe",
 							"label": "subscribe",
 							"hidden": "data.Folder !== 'downlink.control'",
-							"default": true,
+							"default": false,
 							"width": "5%"
 						},
 						{

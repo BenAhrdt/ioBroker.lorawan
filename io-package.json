@@ -321,10 +321,12 @@
     }
   ],
   "encryptedNative": [
-    "password"
+    "password",
+    "Bridgepassword"
   ],
   "protectedNative": [
-    "password"
+    "password",
+    "Bridgepassword"
   ],
   "native": {
     "ipUrl": "eu1.cloud.thethings.network",
@@ -339,7 +341,13 @@
     "customConfigurationJsonActive": false,
     "customControlJsonActive": false,
     "customJson": {},
-    "MQTTInstance": "",
+    "BridgeipUrl": "192.168.2.243",
+    "Bridgeport": 1883,
+    "Bridgeusername": "mqttuser",
+    "Bridgepassword": "",
+    "Bridgessl": false,
+    "BridgeType": "off",
+    "RefreshDiscoveryCronJob": "0 * * * *",
     "DeviceIdentifiers": [
       {
         "DeviceIdentifier": "usedApplicationName"
@@ -349,8 +357,26 @@
       }
     ],
     "separator": "space",
-    "HABridgeDecoded": "publish",
-    "HABridgeControl": "off"
+    "BridgeStateConfig": [
+      {
+        "Application": "*",
+        "Device": "*",
+        "Folder": "uplink.decoded",
+        "State": "BatteryPercent",
+        "publish": true,
+        "subscribe": false,
+        "exclude": false
+      },
+      {
+        "Application": "*",
+        "Device": "*",
+        "Folder": "uplink.decoded",
+        "State": "Opened",
+        "publish": true,
+        "subscribe": false,
+        "exclude": false
+      }
+    ]
   },
   "objects": [],
   "instanceObjects": [
@@ -377,6 +403,19 @@
       "common": {
         "role": "indicator.connected",
         "name": "Device or service connected",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.bridgeConnection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Bridge connected",
         "type": "boolean",
         "read": true,
         "write": false,
