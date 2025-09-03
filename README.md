@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.13.0 (2025-09-03)
 * (BenAhrdt) Build fist Version of own Bridge MQTT Client
 
 ### 1.12.1 (2025-09-01)

@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.12.1",
+    "version": "1.13.0",
     "news": {
+      "1.13.0": {
+        "en": "Build fist Version of own Bridge MQTT Client",
+        "de": "Erstellen Sie fist Version des eigenen Bridge MQTT Client",
+        "ru": "Постройте кулак-версию собственного Bridge MQTT Client",
+        "pt": "Construir a versão do punho do próprio cliente MQTT da ponte",
+        "nl": "Bouw vuist Versie van eigen Bridge MQTT Client",
+        "fr": "Construire la première version de son propre client Bridge MQTT",
+        "it": "Creare il pugno Versione di proprio Bridge MQTT Client",
+        "es": "Construir la versión de puño propio Bridge MQTT Client",
+        "pl": "Zbuduj pięść wersja własnego klienta Bridge MQTT",
+        "uk": "Створення fist версії власного Bridge MQTT Клієнт",
+        "zh-cn": "构建自有桥 MQTT 客户端的拳头版本"
+      },
       "1.12.1": {
         "en": "remove Bug with folder / state handling",
         "de": "entfernen Bug mit Ordner / State Handling",
@@ -80,19 +93,6 @@
         "pl": "więcej logowania improov w przypadku informacji deviceinformation at startup (debug)",
         "uk": "більше непроваджених журналів у разі реєстрації пристрою",
         "zh-cn": "在启动时发生设备信息( 调试) 时进行更多即兴记录"
-      },
-      "1.11.6": {
-        "en": "improov logging in case of deviceinformation at startup (debug)",
-        "de": "improov protokollierung bei geräteinformationen beim start (debug)",
-        "ru": "импровизация регистрации в случае информации об устройстве при запуске (отладка)",
-        "pt": "registro de improov em caso de informação do dispositivo na inicialização (debug)",
-        "nl": "improov loggen in geval van apparaatinformatie bij opstarten (debug)",
-        "fr": "enregistrement improov en cas d'information de périphérique au démarrage (debug)",
-        "it": "registrazione improov in caso di informazioni del dispositivo all'avvio (debug)",
-        "es": "improov logging en caso de información de dispositivo al inicio (debug)",
-        "pl": "logowanie improov w przypadku informacji deviceinformation at startup (debug)",
-        "uk": "непродовольне залогування у разі реєстрації пристрою",
-        "zh-cn": "启动时发生设备信息时的 purroov 记录( debug)"
       }
     },
     "titleLang": {
