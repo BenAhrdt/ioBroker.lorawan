@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.13.1",
+    "version": "1.13.2",
     "news": {
+      "1.13.2": {
+        "en": "Dont check connection to Bridge if not selected\nAdd the State discovered Ids",
+        "de": "Überprüfen Sie die Verbindung zur Brücke, wenn nicht ausgewählt\nFügen Sie den Staat entdeckt Ids",
+        "ru": "Не проверяйте соединение с мостом, если оно не выбрано\nОбнаруженные государством Ids",
+        "pt": "Não verificar a ligação à Ponte se não estiver seleccionada\nAdicionar os IDs do Estado descobertos",
+        "nl": "Verbinding met brug niet controleren indien niet geselecteerd\nVoeg de Staat ontdekt Ids",
+        "fr": "Ne pas vérifier la connexion à Bridge si elle n'est pas sélectionnée\nAjouter l'État découvert Ids",
+        "it": "Non controllare la connessione a Bridge se non selezionata\nAggiungi lo Stato scoperto Ids",
+        "es": "No comprueba la conexión con Bridge si no se selecciona\nAñadir el Estado descubrió Ids",
+        "pl": "Nie sprawdzaj połączenia z mostkiem jeśli nie jest zaznaczone\nDodać Państwo odkryte Ids",
+        "uk": "Не перевірте підключення до мосту, якщо не вибрано\nДодати Державні відкриті Ids",
+        "zh-cn": "未选中时不要检查连接到桥\n添加国家发现的IDs"
+      },
       "1.13.1": {
         "en": "More Debuglogging\nGeneral Nameing in the functions\nPerformance update fpr rediscover on cron.",
         "de": "Mehr zum Debuglogging\nAllgemeine Bezeichnung in den Funktionen\nPerformance Update fpr rediscover auf cron.",
@@ -80,19 +93,6 @@
         "pl": "build Custom Config for HA Bridge",
         "uk": "створення користувацького Config для HA Bridge",
         "zh-cn": "构建 HA 桥的自定义配置"
-      },
-      "1.11.8": {
-        "en": "log adapterObjects at start",
-        "de": "netzteil Objekte zu Beginn",
-        "ru": "лог адаптер Объекты в начале",
-        "pt": "adaptador de log Objetos no início",
-        "nl": "logadapter Objecten aan het begin",
-        "fr": "adaptateur journal Objets au début",
-        "it": "adattatore di registro Oggetti all'inizio",
-        "es": "adaptador de registro Objetos al principio",
-        "pl": "adapter log Obiekty na początku",
-        "uk": "адаптер Об'єкти при старті",
-        "zh-cn": "日志适配器 起始对象"
       }
     },
     "titleLang": {
