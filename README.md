@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.13.4 (2025-09-04)
 * (BenAhrdt) Bugfixing crc in Vicki Profile => ChildLock
 
 ### 1.13.3 (2025-09-04)

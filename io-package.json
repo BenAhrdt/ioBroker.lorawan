@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.13.3",
+    "version": "1.13.4",
     "news": {
+      "1.13.4": {
+        "en": "Bugfixing crc in Vicki Profile => ChildLock",
+        "de": "Bugfixing crc in Vicki Profil => ChildLock",
+        "ru": "Bugfixing crc в профиле Вики => ChildLock",
+        "pt": "Bugfixing crc in Vicki Profile => ChildLock",
+        "nl": "Bugfixing crc in Vicki-profiel => ChildLock",
+        "fr": "Correction de bugs dans le profil Vicki => ChildLock",
+        "it": "Bugfixing crc in Vicki Profilo => ChildLock",
+        "es": "Crc de Bugfixing en Vicki Perfil = 75%Lock",
+        "pl": "Bugfining crc w profilu Vicki = > ChildLock",
+        "uk": "Виправлення кришки в Vicki Profile => Дитячий замок",
+        "zh-cn": "Vicki 配置中的错误修复 crc QQ ChildLock"
+      },
       "1.13.3": {
         "en": "Add images to the new States",
         "de": "Bild hinzugefügt für die neuen Staaten",
@@ -80,19 +93,6 @@
         "pl": "Niestandardowa tabela dla Config HA Bridge",
         "uk": "Спеціальна таблиця для Config HA Bridge",
         "zh-cn": "配置 HA 桥的自定义表格"
-      },
-      "1.11.10": {
-        "en": "insert logging to object change",
-        "de": "einfügen von protokollierung zur objektänderung",
-        "ru": "вставить журналирование для изменения объекта",
-        "pt": "inserir o registro à mudança de objeto",
-        "nl": "loggen toevoegen aan objectverandering",
-        "fr": "insérer l'enregistrement dans le changement d'objet",
-        "it": "inserire logging per cambiare oggetto",
-        "es": "insertar logging to object change",
-        "pl": "wpisz logowanie do zmiany obiektu",
-        "uk": "вставити заголовок до зміни об'єкта",
-        "zh-cn": "插入日志到对象更改"
       }
     },
     "titleLang": {
