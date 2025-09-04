@@ -417,6 +417,7 @@
         "role": "indicator.connected",
         "name": "Bridge connected",
         "type": "boolean",
+        "icon": "icons/plug.png",
         "read": true,
         "write": false,
         "def": false
@@ -430,6 +431,7 @@
         "role": "json",
         "name": "Information of all discovered States",
         "type": "json",
+        "icon": "icons/discover.png",
         "read": true,
         "write": false,
         "def": ""
@@ -443,6 +445,7 @@
         "role": "json",
         "name": "Information of all devices",
         "type": "json",
+        "icon": "icons/deviceinfo.png",
         "read": true,
         "write": false,
         "def": ""

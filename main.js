@@ -59,8 +59,10 @@ class Lorawan extends utils.Adapter {
             // Set mqtt client
             this.mqttClient = new mqttClientClass(this, this.config);
 
-            // declare bridge
-            this.bridge = new bridgeClass(this);
+            // declare bridge if configed
+            if (this.config.BridgeType !== 'off') {
+                this.bridge = new bridgeClass(this);
+            }
 
             // generate new configed downlinkstates on allready existing devices at adapter startup
             await this.messagehandler.generateDownlinksAndRemoveStatesAtStatup();

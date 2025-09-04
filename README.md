@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Add images to the new States
+
 ### 1.13.2 (2025-09-04)
 * (BenAhrdt) Dont check connection to Bridge if not selected
 * (BenAhrdt) Add the State discovered Ids
