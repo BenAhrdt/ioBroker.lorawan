@@ -77,8 +77,8 @@ class Lorawan extends utils.Adapter {
             this.subscribeStatesAsync('*');
             //this.subscribeObjectsAsync('*.uplink.decoded.*');
             //this.subscribeObjectsAsync('*.downlink.control.*');
-            this.log.silly(`the adapter starts with downlinkconfigs: ${JSON.stringify(this.config.downlinkConfig)}.`);
-            this.log.silly(
+            this.log.debug(`the adapter starts with downlinkconfigs: ${JSON.stringify(this.config.downlinkConfig)}.`);
+            this.log.debug(
                 `the active downlinkconfigs are: ${JSON.stringify(this.downlinkConfighandler.activeDownlinkConfigs)}`,
             );
             /*            
@@ -409,12 +409,12 @@ class Lorawan extends utils.Adapter {
         const activeFunction = 'onStateChange';
         try {
             if (state) {
-                //this.log.silly(`state ${id} changed: val: ${state.val} - ack: ${state.ack}`);
+                //this.log.debug(`state ${id} changed: val: ${state.val} - ack: ${state.ack}`);
                 // The state was changed => only states with ack = false will be processed, others will be ignored
                 if (!state.ack) {
                     // Check for downlink in id
                     if (id.indexOf('.downlink.control.') !== -1) {
-                        this.log.silly(`the state ${id} has changed to ${state.val}.`);
+                        this.log.debug(`the state ${id} has changed to ${state.val}.`);
                         // get information of the changing state
                         const changeInfo = await this.getChangeInfo(id, { withBestMatch: true });
                         const suffix = this.downlinkConfighandler?.getDownlinkTopicSuffix(changeInfo?.changedState);
@@ -538,7 +538,7 @@ class Lorawan extends utils.Adapter {
     async checkSendDownlinkWithUplink(id) {
         const activeFunction = 'checkSendDownlinkWithUplink';
         try {
-            this.log.silly(`Check for send downlink with uplink.`);
+            this.log.debug(`Check for send downlink with uplink.`);
             const changeInfo = await this.getChangeInfo(id, { withBestMatch: true });
             if (
                 changeInfo &&
@@ -637,7 +637,7 @@ class Lorawan extends utils.Adapter {
     async getChangeInfo(id, options) {
         const activeFunction = 'getChangeInfo';
         try {
-            this.log.silly(`changeinfo of id ${id}, will be generated.`);
+            this.log.debug(`changeinfo of id ${id}, will be generated.`);
             const changeInfo = this.getBaseDeviceInfo(id);
             const myId = `${changeInfo?.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.configuration}.devicetype`;
             // Check for changeInfo
@@ -672,7 +672,7 @@ class Lorawan extends utils.Adapter {
                     }
                 }
             }
-            this.log.silly(`changeinfo is ${JSON.stringify(changeInfo)}.`);
+            this.log.debug(`changeinfo is ${JSON.stringify(changeInfo)}.`);
             return changeInfo;
         } catch (error) {
             this.log.error(`error at ${activeFunction}: ${error}`);
@@ -681,7 +681,7 @@ class Lorawan extends utils.Adapter {
 
     removeNamespace(id) {
         if (id.indexOf(this.namespace) !== -1) {
-            this.log.silly(`namespace will be removed from id ${id}.`);
+            this.log.debug(`namespace will be removed from id ${id}.`);
             id = id.substring(this.namespace.length + 1, id.length);
         }
         return id;

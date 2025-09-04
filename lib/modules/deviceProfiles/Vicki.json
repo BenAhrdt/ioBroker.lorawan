@@ -187,7 +187,7 @@
       "deviceType": "Vicki",
       "decimalPlaces": "1",
       "lengthInByte": 2,
-      "crc": "off",
+      "crc": "noCrc",
       "swap": false,
       "limitMax": false,
       "limitMaxValue": 0,
