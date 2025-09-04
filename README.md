@@ -23,6 +23,11 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) More Debuglogging
+* (BenAhrdt) General Nameing in the functions
+* (BenAhrdt) Performance update fpr rediscover on cron.
+
 ### 1.13.0 (2025-09-03)
 * (BenAhrdt) Build fist Version of own Bridge MQTT Client
 

@@ -522,7 +522,7 @@ class Lorawan extends utils.Adapter {
                         this.setState(id, state.val, true);
                     }
                 } else {
-                    await this.bridge?.publish(id, state.val);
+                    await this.bridge?.publishId(id, state.val);
                 }
             } else {
                 // The state was deleted
