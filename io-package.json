@@ -424,6 +424,19 @@
       "native": {}
     },
     {
+      "_id": "info.discoveredIds",
+      "type": "state",
+      "common": {
+        "role": "json",
+        "name": "Information of all discovered States",
+        "type": "json",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
       "_id": "info.deviceinformations",
       "type": "state",
       "common": {
