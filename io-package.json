@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.13.0",
+    "version": "1.13.1",
     "news": {
+      "1.13.1": {
+        "en": "More Debuglogging\nGeneral Nameing in the functions\nPerformance update fpr rediscover on cron.",
+        "de": "Mehr zum Debuglogging\nAllgemeine Bezeichnung in den Funktionen\nPerformance Update fpr rediscover auf cron.",
+        "ru": "Больше Debuglogging\nОбщее наименование в функциях\nОбновление производительности fpr вновь открывается на cron.",
+        "pt": "Mais Depuração\nNomeação Geral nas funções\nAtualização de desempenho fpr redescobrir no cron.",
+        "nl": "Meer debuggen\nAlgemene naamgeving in de functies\nPrestatie-update fpr herontdekken op cron.",
+        "fr": "Plus de débogage\nNom général dans les fonctions\nMise à jour de performance fpr redécouvrir sur cron.",
+        "it": "Altre informazioni\nNome generale nelle funzioni\nAggiornamento delle prestazioni fpr riscoprire su cron.",
+        "es": "Más Debuglogging\nNombre general en las funciones\nActualización de rendimiento fpr redescover en cron.",
+        "pl": "Więcej Debuglogging\nOgólne Napisywanie w funkcjach\nAktualizacja wydajności fpr ponownie odkryć na cron.",
+        "uk": "Детальніше Debuglog\nЗагальна назва функції\nОновлення продуктивності fpr rediscover на cron.",
+        "zh-cn": "更多调试日志\n函数中的名称\n性能更新 fpr 重新发现于 cron."
+      },
       "1.13.0": {
         "en": "Build fist Version of own Bridge MQTT Client",
         "de": "Erstellen Sie fist Version des eigenen Bridge MQTT Client",
@@ -80,19 +93,6 @@
         "pl": "adapter log Obiekty na początku",
         "uk": "адаптер Об'єкти при старті",
         "zh-cn": "日志适配器 起始对象"
-      },
-      "1.11.7": {
-        "en": "more improov logging in case of deviceinformation at startup (debug)",
-        "de": "mehr improov protokollierung bei geräteinformationen beim start (debug)",
-        "ru": "более импровизированная регистрация в случае информации об устройстве при запуске (отладка)",
-        "pt": "registro mais improov em caso de informação do dispositivo na inicialização (debug)",
-        "nl": "meer improov loggen in geval van apparaatinformatie bij opstarten (debug)",
-        "fr": "l'enregistrement plus improov en cas d'information de périphérique au démarrage (debug)",
-        "it": "più improov registrazione in caso di informazioni del dispositivo all'avvio (debug)",
-        "es": "logging más improov en caso de información de dispositivo al inicio (debug)",
-        "pl": "więcej logowania improov w przypadku informacji deviceinformation at startup (debug)",
-        "uk": "більше непроваджених журналів у разі реєстрації пристрою",
-        "zh-cn": "在启动时发生设备信息( 调试) 时进行更多即兴记录"
       }
     },
     "titleLang": {
