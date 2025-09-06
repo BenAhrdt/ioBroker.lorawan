@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.13.5",
+    "version": "1.13.6",
     "news": {
+      "1.13.6": {
+        "en": "Bugfix handling in fillDownlink",
+        "de": "Bugfix Handhabung in fillDownlink",
+        "ru": "Обработка Bugfix в fillDownlink",
+        "pt": "Tratamento de erros em fillDownlink",
+        "nl": "Bugfix-verwerking in fillDownlink",
+        "fr": "Gestion du bugfix dans fillDownlink",
+        "it": "Gestione bugfix in fillDownlink",
+        "es": "Manejo de bugfix en rellenoDownlink",
+        "pl": "Obsługa Bugfix w FuelDownlink",
+        "uk": "Обробка помилок в накладціДоне посилання",
+        "zh-cn": "在 fillDownlink 中处理错误"
+      },
       "1.13.5": {
         "en": "Show discovery topic(s) & messag(es) ind array\nAdd Tab to see Discovered, Published and Subscribed Ids.\nAdd Posibility to discover climate Entity\nRetaining Discovery",
         "de": "Zeige Entdeckungsthemen & Messag(en) ind array\nFügen Sie Tab hinzu, um entdeckte, veröffentlichte und abgemeldete Ids zu sehen.\nMöglichkeit, das Klima zu entdecken\nRetaining Discovery",
@@ -80,19 +93,6 @@
         "pl": "Zbuduj pięść wersja własnego klienta Bridge MQTT",
         "uk": "Створення fist версії власного Bridge MQTT Клієнт",
         "zh-cn": "构建自有桥 MQTT 客户端的拳头版本"
-      },
-      "1.12.1": {
-        "en": "remove Bug with folder / state handling",
-        "de": "entfernen Bug mit Ordner / State Handling",
-        "ru": "удалять Баг с папкой / обработка состояния",
-        "pt": "remover Erro com manipulação de pasta / estado",
-        "nl": "verwijderen Bug met map / status behandeling",
-        "fr": "supprimer Bogue avec gestion de dossier / état",
-        "it": "rimuovere Bug con cartella / gestione dello stato",
-        "es": "retirar Error con carpeta / manejo del estado",
-        "pl": "usunąć Błąd z obsługą folderu / stanu",
-        "uk": "видалення Помилки з папкою / державною обробкою",
-        "zh-cn": "删除 有文件夹/ 状态处理的错误"
       }
     },
     "titleLang": {
