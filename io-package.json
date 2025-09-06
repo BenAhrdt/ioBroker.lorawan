@@ -149,6 +149,14 @@
       "config": "json",
       "tab": "json"
     },
+    "adminTab": {
+      "link": "jsonTab.json",
+      "singleton": false,
+      "name": {
+        "en": "LoRaWAN",
+        "de": "LoRaWAN"
+      }
+    },
     "dependencies": [
       {
         "js-controller": ">=7.0.6"

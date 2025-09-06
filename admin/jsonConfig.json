@@ -1112,7 +1112,7 @@
 							"attr": "subscribe",
 							"label": "subscribe",
 							"hidden": "data.Folder !== 'downlink.control'",
-							"default": false,
+							"default": true,
 							"width": "5%"
 						},
 						{
@@ -1390,51 +1390,6 @@
 							"xl": 4
 						}
 					]
-				},
-				"_DiscoveredIds":{
-					"type": "text",
-					"label": "_DiscoveredIds",
-					"hidden": "data.BridgeType === 'off'",
-					"defaultSendTo": "getDiscoveredIds",
-					"minRows": 30,
-					"readOnly": true,
-					"trim": false,
-					"noClearButton": true,
-					"xs": 12,
-					"sm": 12,
-					"md": 12,
-					"lg": 12,
-					"xl": 12	
-				},
-				"_PublishedIds":{
-					"type": "text",
-					"label": "_PublishedIds",
-					"hidden": "data.BridgeType === 'off'",
-					"defaultSendTo": "getPublishedIds",
-					"minRows": 30,
-					"readOnly": true,
-					"trim": false,
-					"noClearButton": true,
-					"xs": 12,
-					"sm": 12,
-					"md": 12,
-					"lg": 12,
-					"xl": 12	
-				},
-				"_SubscribedIds":{
-					"type": "text",
-					"label": "_SubscribedIds",
-					"hidden": "data.BridgeType === 'off'",
-					"defaultSendTo": "getSubscribedIds",
-					"minRows": 30,
-					"readOnly": true,
-					"trim": false,
-					"noClearButton": true,
-					"xs": 12,
-					"sm": 12,
-					"md": 12,
-					"lg": 12,
-					"xl": 12	
 				}
 			}
 		}

@@ -1,16 +1,69 @@
 {
-    "i18n": true,
-    "type": "panel",
-    "items": {
-        "option1": {
-            "type": "checkbox",
-            "label": "option1",
-            "newLine": true
+	"i18n": true,
+	"type": "tabs",
+	"tabsStyle": {
+		"width": "calc(100% - 100px)"
+	},
+	"items":{
+        "_DiscoveredIds":{
+            "type": "panel",
+            "label": "_DiscoveredIds",
+			"items": {
+                "_DiscoveredIds":{
+					"type": "text",
+					"label": "_DiscoveredIds",
+					"defaultSendTo": "getDiscoveredIds",
+					"minRows": 10,
+					"readOnly": true,
+					"trim": false,
+					"noClearButton": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12	
+				}
+            }
         },
-        "option2": {
-            "type": "text",
-            "label": "option2",
-            "newLine": true
+        "_PublishedIds":{
+            "type": "panel",
+            "label": "_PublishedIds",
+			"items": {
+				"_PublishedIds":{
+					"type": "text",
+					"label": "_PublishedIds",
+					"defaultSendTo": "getPublishedIds",
+					"minRows": 10,
+					"readOnly": true,
+					"trim": false,
+					"noClearButton": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12	
+				}
+            }
+        },
+        "_SubscribedTopics":{
+            "type": "panel",
+            "label": "_SubscribedTopics",
+			"items": {
+				"_SubscribedTopics":{
+					"type": "text",
+					"label": "_SubscribedTopics",
+					"defaultSendTo": "getSubscribedTopics",
+					"minRows": 10,
+					"readOnly": true,
+					"trim": false,
+					"noClearButton": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12	
+				}
+            }
         }
     }
 }

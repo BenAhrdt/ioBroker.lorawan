@@ -24,6 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+* (BenAhrdt) Show discovery topic(s) & messag(es) ind array
 * (BenAhrdt) Add Tab to see Discovered, Published and Subscribed Ids.
 * (BenAhrdt) Add Posibility to discover climate Entity
 * (BenAhrdt) Retaining Discovery

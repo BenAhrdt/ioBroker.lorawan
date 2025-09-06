@@ -1076,7 +1076,7 @@ class Lorawan extends utils.Adapter {
                     } catch (error) {
                         this.log.error(error);
                     }
-                } else if (obj.command === 'getSubscribedIds') {
+                } else if (obj.command === 'getSubscribedTopics') {
                     try {
                         this.sendTo(
                             obj.from,
