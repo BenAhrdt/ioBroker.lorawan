@@ -931,10 +931,21 @@ class Lorawan extends utils.Adapter {
                     }
 
                     // send application to config
-                } else if (obj.command === 'getApplicationsForConfig') {
+                } else if (
+                    obj.command === 'getApplicationsForConfig' ||
+                    obj.command === 'getApplicationsForClimateConfig' ||
+                    obj.command === 'getApplicationsForClimateModeConfig'
+                ) {
                     try {
-                        let myCount = 1;
-                        const applications = [{ label: '* (Wildcard)', value: '*' }];
+                        let myCount = 0;
+                        const applications = [];
+                        if (obj.command === 'getApplicationsForConfig') {
+                            applications[myCount] = { label: '* (Wildcard)', value: '*' };
+                            myCount++;
+                        } else if (obj.command === 'getApplicationsForClimateModeConfig') {
+                            applications[myCount] = { label: '* Not Present (Virtual)', value: 'NotPresent' };
+                            myCount++;
+                        }
                         const currentApplications = {};
                         const adapterObjects = await this.getAdapterObjectsAsync();
                         for (const adapterObject of Object.values(adapterObjects)) {
@@ -955,10 +966,14 @@ class Lorawan extends utils.Adapter {
                     } catch (error) {
                         this.log.error(error);
                     }
-                } else if (obj.command === 'getDevicesForConfig') {
+                } else if (obj.command === 'getDevicesForConfig' || obj.command === 'getDevicesForClimateConfig') {
                     try {
-                        let myCount = 1;
-                        const devices = [{ label: '* (Wildcard)', value: '*' }];
+                        let myCount = 0;
+                        const devices = [];
+                        if (obj.command === 'getDevicesForConfig') {
+                            devices[myCount] = { label: '* (Wildcard)', value: '*' };
+                            myCount++;
+                        }
                         const adapterObjects = await this.getAdapterObjectsAsync();
                         for (const adapterObject of Object.values(adapterObjects)) {
                             if (
@@ -991,10 +1006,14 @@ class Lorawan extends utils.Adapter {
                     } catch (error) {
                         this.log.error(error);
                     }
-                } else if (obj.command === 'getStatesForConfig') {
+                } else if (obj.command === 'getStatesForConfig' || obj.command === 'getStatesForClimateConfig') {
                     try {
-                        let myCount = 1;
-                        const states = [{ label: '* (Wildcard)', value: '*' }];
+                        let myCount = 0;
+                        const states = [];
+                        if (obj.command === 'getDevicesForConfig') {
+                            states[myCount] = { label: '* (Wildcard)', value: '*' };
+                            myCount++;
+                        }
                         const currentStates = {};
                         const adapterObjects = await this.getAdapterObjectsAsync();
                         for (const adapterObject of Object.values(adapterObjects)) {
@@ -1032,6 +1051,39 @@ class Lorawan extends utils.Adapter {
                         }
                         states.sort(this.sortByLabel);
                         this.sendTo(obj.from, obj.command, states, obj.callback);
+                    } catch (error) {
+                        this.log.error(error);
+                    }
+                } else if (obj.command === 'getDiscoveredIds') {
+                    try {
+                        this.sendTo(
+                            obj.from,
+                            obj.command,
+                            JSON.stringify(this.bridge?.DiscoveredIds, null, 2),
+                            obj.callback,
+                        );
+                    } catch (error) {
+                        this.log.error(error);
+                    }
+                } else if (obj.command === 'getPublishedIds') {
+                    try {
+                        this.sendTo(
+                            obj.from,
+                            obj.command,
+                            JSON.stringify(this.bridge?.PublishedIds, null, 2),
+                            obj.callback,
+                        );
+                    } catch (error) {
+                        this.log.error(error);
+                    }
+                } else if (obj.command === 'getSubscribedIds') {
+                    try {
+                        this.sendTo(
+                            obj.from,
+                            obj.command,
+                            JSON.stringify(this.bridge?.SubscribedTopics, null, 2),
+                            obj.callback,
+                        );
                     } catch (error) {
                         this.log.error(error);
                     }

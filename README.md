@@ -24,6 +24,8 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+* (BenAhrdt) Add Tab to see Discovered, Published and Subscribed Ids.
+* (BenAhrdt) Add Posibility to discover climate Entity
 * (BenAhrdt) Retaining Discovery
 
 ### 1.13.4 (2025-09-04)

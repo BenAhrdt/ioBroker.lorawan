@@ -1123,6 +1123,318 @@
 							"width": "5%"
 						}
 					]
+				},
+				"_ClimateHeader":{
+					"newLine": true,
+					"hidden": "data.BridgeType === 'off'",
+					"type": "header",
+					"text": "ClimateHeader",
+					"size": 3,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+					},
+				"_ClimateInformation":{
+					"newLine":true,
+					"hidden": "data.BridgeType === 'off'",
+					"type": "staticText",
+					"label": "ClimateInformation",
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"ClimateConfig":{
+                    "newLine": true,
+					"hidden": "data.BridgeType === 'off'",
+                    "type":"accordion",
+					"titleAttr": "ClimateName",
+					"clone": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12,
+					"items":[
+						{
+							"type": "text",
+							"attr": "ClimateName",
+							"label": "ClimateNameText",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"newLine": true,
+							"type": "staticText",
+							"attr": "_statciTextTarget",
+							"label": "ClimateTargetTemperatureText",
+							"xs": 12,
+							"sm": 12,
+							"md": 12,
+							"lg": 12,
+							"xl": 12
+						},
+						{
+							"newLine": true,
+							"type": "selectSendTo",
+							"attr": "TargetApplication",
+							"label": "Application",
+							"default": "No Application selected",
+							"jsonData": "{}",
+							"command": "getApplicationsForClimateConfig",
+							"xs": 12,
+							"sm": 3,
+							"md": 3,
+							"lg": 3,
+							"xl": 3
+						},
+						{
+							"type": "selectSendTo",
+							"attr": "TargetDevice",
+							"label": "Device",
+							"default": "No Device selected",
+							"jsonData": "{\"application\":\"${data.TargetApplication}\"}",
+							"command": "getDevicesForClimateConfig",
+							"alsoDependsOn":[
+                        		"TargetApplication"
+                    		],
+							"xs": 12,
+							"sm": 3,
+							"md": 3,
+							"lg": 3,
+							"xl": 3
+						},
+						{
+							"type": "select",
+							"attr": "TargetFolder",
+							"label": "Folder",
+							"default": "downlink.control",
+							"options": [
+								{"label":"downlink.control","value":"downlink.control"}
+							],
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},						
+						{
+							"type": "selectSendTo",
+							"attr": "TargetState",
+							"label": "State",
+							"default": "No State selected",
+							"jsonData": "{\"application\":\"${data.TargetApplication}\",\"device\":\"${data.TargetDevice}\",\"folder\":\"${data.TargetFolder}\"}",
+							"command": "getStatesForClimateConfig",
+							"alsoDependsOn":[
+                        		"TargetApplication",
+								"TargetDevice",
+								"TargetFolder"
+                    		],
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "staticText",
+							"attr": "_statciTextAct",
+							"label": "ClimateActTemperatureText",
+							"xs": 12,
+							"sm": 12,
+							"md": 12,
+							"lg": 12,
+							"xl": 12
+						},
+						{
+							"newLine": true,
+							"type": "selectSendTo",
+							"attr": "ActApplication",
+							"label": "Application",
+							"default": "No Application selected",
+							"jsonData": "{}",
+							"command": "getApplicationsForClimateConfig",
+							"xs": 12,
+							"sm": 3,
+							"md": 3,
+							"lg": 3,
+							"xl": 3
+						},
+						{
+							"type": "selectSendTo",
+							"attr": "ActDevice",
+							"label": "Device",
+							"default": "No Device selected",
+							"jsonData": "{\"application\":\"${data.ActApplication}\"}",
+							"command": "getDevicesForClimateConfig",
+							"alsoDependsOn":[
+                        		"ActApplication"
+                    		],
+							"xs": 12,
+							"sm": 3,
+							"md": 3,
+							"lg": 3,
+							"xl": 3
+						},
+						{
+							"type": "select",
+							"attr": "ActFolder",
+							"label": "Folder",
+							"default": "uplink.decoded",
+							"options": [
+								{"label":"uplink.decoded","value":"uplink.decoded"}
+							],
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},						
+						{
+							"type": "selectSendTo",
+							"attr": "ActState",
+							"label": "State",
+							"default": "No State selected",
+							"jsonData": "{\"application\":\"${data.ActApplication}\",\"device\":\"${data.ActDevice}\",\"folder\":\"${data.ActFolder}\"}",
+							"command": "getStatesForClimateConfig",
+							"alsoDependsOn":[
+                        		"ActApplication",
+								"ActDevice",
+								"ActFolder"
+                    		],
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "staticText",
+							"attr": "_statciTextMode",
+							"label": "ClimateModeTemperatureText",
+							"xs": 12,
+							"sm": 12,
+							"md": 12,
+							"lg": 12,
+							"xl": 12
+						},
+						{
+							"newLine": true,
+							"type": "selectSendTo",
+							"attr": "ModeApplication",
+							"label": "Application",
+							"default": "NotPresent",
+							"jsonData": "{}",
+							"command": "getApplicationsForClimateModeConfig",
+							"xs": 12,
+							"sm": 3,
+							"md": 3,
+							"lg": 3,
+							"xl": 3
+						},
+						{
+							"type": "selectSendTo",
+							"attr": "ModeDevice",
+							"label": "Device",
+							"default": "*",
+							"jsonData": "{\"application\":\"${data.ModeApplication}\"}",
+							"command": "getDevicesForClimateConfig",
+							"hidden": "data.ModeApplication === 'NotPresent'",
+							"alsoDependsOn":[
+                        		"ModeApplication"
+                    		],
+							"xs": 12,
+							"sm": 3,
+							"md": 3,
+							"lg": 3,
+							"xl": 3
+						},
+						{
+							"type": "select",
+							"attr": "ModeFolder",
+							"label": "Folder",
+							"default": "uplink.decoded",
+							"options": [
+								{"label":"uplink.decoded","value":"uplink.decoded"}
+							],
+							"hidden": "data.ModeApplication === 'NotPresent'",
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},						
+						{
+							"type": "selectSendTo",
+							"attr": "ModeState",
+							"label": "State",
+							"default": "No State selected",
+							"jsonData": "{\"application\":\"${data.ModeApplication}\",\"device\":\"${data.ActDevice}\",\"folder\":\"${data.ActFolder}\"}",
+							"command": "getStatesForClimateConfig",
+							"alsoDependsOn":[
+                        		"ModeApplication",
+								"ModeDevice",
+								"ModeFolder"
+                    		],
+							"hidden": "data.ModeApplication === 'NotPresent'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						}
+					]
+				},
+				"_DiscoveredIds":{
+					"type": "text",
+					"label": "_DiscoveredIds",
+					"hidden": "data.BridgeType === 'off'",
+					"defaultSendTo": "getDiscoveredIds",
+					"minRows": 30,
+					"readOnly": true,
+					"trim": false,
+					"noClearButton": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12	
+				},
+				"_PublishedIds":{
+					"type": "text",
+					"label": "_PublishedIds",
+					"hidden": "data.BridgeType === 'off'",
+					"defaultSendTo": "getPublishedIds",
+					"minRows": 30,
+					"readOnly": true,
+					"trim": false,
+					"noClearButton": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12	
+				},
+				"_SubscribedIds":{
+					"type": "text",
+					"label": "_SubscribedIds",
+					"hidden": "data.BridgeType === 'off'",
+					"defaultSendTo": "getSubscribedIds",
+					"minRows": 30,
+					"readOnly": true,
+					"trim": false,
+					"noClearButton": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12	
 				}
 			}
 		}

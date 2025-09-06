@@ -117,7 +117,7 @@
     "_NoLoRaWAN": "Der State ist nicht in der richtigen Lorawan - Instanz",
     "publishTooltip": "Veröffentlichen Sie den State zur der Bridge",
     "subscribeTooltip": "Abonnieren Sie den State von der Bridge",
-    "BridgeStateHeader": "Definieren Sie ZustäStates für das HA Discovery",
+    "BridgeStateHeader": "Definieren Sie Zustände für das HA Discovery",
     "BridgeStateInformation": "Hier können Sie ein Array von States definieren, die ein Topic für Discovery festlegen. (Wildcards sind auch möglich)",
     "Application": "Anwendung",
     "Device": "Gerät",
@@ -126,7 +126,15 @@
     "BridgeType": "Bridge Typ",
     "BridgeTypeTooltip": "Wählen Sie den Typ des Fremdsystems aus",
     "BridgeTypeOff": "aus",
-    "BridgeTypeHA": "Voldemort",
+    "BridgeTypeHA": "Home Assistant",
     "RefreshDiscoveryCronJob": "Discovery Zyklus",
-    "RefreshDiscoveryCronJobTooltip": "Stellen Sie den Cronjob für das Discovery ein"
+    "RefreshDiscoveryCronJobTooltip": "Stellen Sie den Cronjob für das Discovery ein",
+	"ClimateHeader": "Definieren Sie Zustände für eine Klima ENtität",
+	"ClimateInformation": "Hier können Sie ein Array von Klimaentitäten definieren",
+	"ClimateTargetTemperatureText": "Solltemperatur",
+	"ClimateActTemperatureText": "Isttemperatur",
+	"ClimateActModeText": "Mode",
+	"_DiscoveredIds": "Discoverd Ids",
+	"_PublishedIds": "Published Ids",
+	"_SubscribedIds": "Subscribed Ids"
 }

@@ -146,7 +146,8 @@
     "dataSource": "push",
     "blockly": true,
     "adminUI": {
-      "config": "json"
+      "config": "json",
+      "tab": "json"
     },
     "dependencies": [
       {
@@ -376,7 +377,8 @@
         "subscribe": false,
         "exclude": false
       }
-    ]
+    ],
+    "ClimateConfig": []
   },
   "objects": [],
   "instanceObjects": [

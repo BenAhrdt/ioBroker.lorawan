@@ -128,5 +128,13 @@
 	"BridgeTypeOff": "off",
 	"BridgeTypeHA": "Home Assistant",
 	"RefreshDiscoveryCronJob": "Discover Cycle",
-	"RefreshDiscoveryCronJobTooltip": "insert the cronjob for refreshing the discovery"
+	"RefreshDiscoveryCronJobTooltip": "insert the cronjob for refreshing the discovery",
+	"ClimateHeader": "Define States for Climate Entity",
+	"ClimateInformation": "Here you can define an array of Climate definitions",
+	"ClimateTargetTemperatureText": "Target Temperature",
+	"ClimateActTemperatureText": "Target Temperature",
+	"ClimateActModeText": "Target Temperature",
+	"_DiscoveredIds": "Discoverd Ids",
+	"_PublishedIds": "Published Ids",
+	"_SubscribedIds": "Subscribed Ids"
 }
