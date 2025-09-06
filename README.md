@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.13.5 (2025-09-06)
 * (BenAhrdt) Show discovery topic(s) & messag(es) ind array
 * (BenAhrdt) Add Tab to see Discovered, Published and Subscribed Ids.
 * (BenAhrdt) Add Posibility to discover climate Entity
