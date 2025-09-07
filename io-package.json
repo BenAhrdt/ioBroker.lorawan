@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.13.8",
+    "version": "1.13.9",
     "news": {
+      "1.13.9": {
+        "en": "Add time to State Information and improov translations.",
+        "de": "Fügen Sie Zeit zu staatlichen Informationen und improov Übersetzungen.",
+        "ru": "Добавьте время к государственной информации и импровизированным переводам.",
+        "pt": "Adicione tempo para Informações do Estado e traduções improvisadas.",
+        "nl": "Voeg tijd toe aan State Information en improov vertalingen.",
+        "fr": "Ajouter du temps à l'information d'état et improov traductions.",
+        "it": "Aggiungi tempo a Informazioni di Stato e traduzioni improvvisate.",
+        "es": "Añadir tiempo a Información Estatal y traducciones improvistas.",
+        "pl": "Dodaj czas do informacji państwowej i tłumaczenia improov.",
+        "uk": "Додати час до Державної інформації та імпровських перекладів.",
+        "zh-cn": "在州情资料和即兴翻译中添加时间."
+      },
       "1.13.8": {
         "en": "Add Tabfunctionality to Adapter (info to some states)",
         "de": "Fügen Sie Tabfunktionalität auf Adapter (info zu einigen Staaten) hinzu",
@@ -80,19 +93,6 @@
         "pl": "Dodaj obrazy do nowych państw",
         "uk": "Додати зображення до нових держав",
         "zh-cn": "向新国家添加图像"
-      },
-      "1.13.2": {
-        "en": "Dont check connection to Bridge if not selected\nAdd the State discovered Ids",
-        "de": "Überprüfen Sie die Verbindung zur Brücke, wenn nicht ausgewählt\nFügen Sie den Staat entdeckt Ids",
-        "ru": "Не проверяйте соединение с мостом, если оно не выбрано\nОбнаруженные государством Ids",
-        "pt": "Não verificar a ligação à Ponte se não estiver seleccionada\nAdicionar os IDs do Estado descobertos",
-        "nl": "Verbinding met brug niet controleren indien niet geselecteerd\nVoeg de Staat ontdekt Ids",
-        "fr": "Ne pas vérifier la connexion à Bridge si elle n'est pas sélectionnée\nAjouter l'État découvert Ids",
-        "it": "Non controllare la connessione a Bridge se non selezionata\nAggiungi lo Stato scoperto Ids",
-        "es": "No comprueba la conexión con Bridge si no se selecciona\nAñadir el Estado descubrió Ids",
-        "pl": "Nie sprawdzaj połączenia z mostkiem jeśli nie jest zaznaczone\nDodać Państwo odkryte Ids",
-        "uk": "Не перевірте підключення до мосту, якщо не вибрано\nДодати Державні відкриті Ids",
-        "zh-cn": "未选中时不要检查连接到桥\n添加国家发现的IDs"
       }
     },
     "titleLang": {
