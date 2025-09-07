@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.13.6",
+    "version": "1.13.7",
     "news": {
+      "1.13.7": {
+        "en": "More Informations in Tab\nAdditionals States for published ids & subscribed topics",
+        "de": "Weitere Informationen in Tab\nZusätzliche Staaten für veröffentlichte ids & abonnierte Themen",
+        "ru": "Больше информации в Tab\nДополнительные государства для опубликованных ids и подписанных тем",
+        "pt": "Mais informações na aba\nOutros Estados para ids publicados e tópicos subscritos",
+        "nl": "Meer informatie in tabblad\nAanvullende staten voor gepubliceerde id's en geabonneerde onderwerpen",
+        "fr": "Plus d'informations dans l'onglet\nAutres États pour les ids publiés et les sujets souscrits",
+        "it": "Altre informazioni in Tab\nStati addizionali per argomenti pubblicati",
+        "es": "Más información en Tab\nEstados adicionales para temas publicados y suscritos",
+        "pl": "Więcej informacji w karcie\nPaństwa korzystające z dodatków w odniesieniu do opublikowanych identyfikatorów i subskrybowanych tematów",
+        "uk": "Більше інформації в закладці\nДодаткові матеріали для опублікованих носіїв та підписаних тем",
+        "zh-cn": "标签中的更多信息\n已公布的编号和已订阅专题的补充国家"
+      },
       "1.13.6": {
         "en": "Bugfix handling in fillDownlink",
         "de": "Bugfix Handhabung in fillDownlink",
@@ -80,19 +93,6 @@
         "pl": "Więcej Debuglogging\nOgólne Napisywanie w funkcjach\nAktualizacja wydajności fpr ponownie odkryć na cron.",
         "uk": "Детальніше Debuglog\nЗагальна назва функції\nОновлення продуктивності fpr rediscover на cron.",
         "zh-cn": "更多调试日志\n函数中的名称\n性能更新 fpr 重新发现于 cron."
-      },
-      "1.13.0": {
-        "en": "Build fist Version of own Bridge MQTT Client",
-        "de": "Erstellen Sie fist Version des eigenen Bridge MQTT Client",
-        "ru": "Постройте кулак-версию собственного Bridge MQTT Client",
-        "pt": "Construir a versão do punho do próprio cliente MQTT da ponte",
-        "nl": "Bouw vuist Versie van eigen Bridge MQTT Client",
-        "fr": "Construire la première version de son propre client Bridge MQTT",
-        "it": "Creare il pugno Versione di proprio Bridge MQTT Client",
-        "es": "Construir la versión de puño propio Bridge MQTT Client",
-        "pl": "Zbuduj pięść wersja własnego klienta Bridge MQTT",
-        "uk": "Створення fist версії власного Bridge MQTT Клієнт",
-        "zh-cn": "构建自有桥 MQTT 客户端的拳头版本"
       }
     },
     "titleLang": {
