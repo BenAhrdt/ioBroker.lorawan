@@ -47,6 +47,9 @@ class Lorawan extends utils.Adapter {
     async onReady() {
         const activeFunction = 'onReady';
         try {
+            // read system translation out of i18n translation
+            this.i18nTranslation = await this.geti18nTranslation();
+
             // create downlinkConfigs
             this.downlinkConfighandler = new downlinkConfighandlerClass(this);
 
@@ -96,6 +99,19 @@ class Lorawan extends utils.Adapter {
         } catch (error) {
             this.log.error(`error at ${activeFunction}: ${error}`);
         }
+    }
+
+    async geti18nTranslation() {
+        const systemConfig = await this.getForeignObjectAsync('system.config');
+        if (systemConfig) {
+            let lang = systemConfig.common.language;
+            if (!lang) {
+                lang = 'en';
+            }
+            const translationsPath = `./admin/i18n/${lang}/translations.json`;
+            return require(translationsPath);
+        }
+        return {};
     }
 
     async startSimulation() {
@@ -524,7 +540,7 @@ class Lorawan extends utils.Adapter {
                         this.setState(id, state.val, true);
                     }
                 } else {
-                    await this.bridge?.publishId(id, state.val);
+                    await this.bridge?.publishId(await this.removeNamespace(id), state.val);
                 }
             } else {
                 // The state was deleted
@@ -1059,7 +1075,9 @@ class Lorawan extends utils.Adapter {
                         this.sendTo(
                             obj.from,
                             obj.command,
-                            JSON.stringify(this.bridge?.DiscoveredIds, null, 2),
+                            this.config.BridgeType !== 'off'
+                                ? JSON.stringify(this.bridge?.DiscoveredIds, null, 2)
+                                : this.i18nTranslation['NoBridgeConfiged'],
                             obj.callback,
                         );
                     } catch (error) {
@@ -1070,7 +1088,9 @@ class Lorawan extends utils.Adapter {
                         this.sendTo(
                             obj.from,
                             obj.command,
-                            JSON.stringify(this.bridge?.PublishedIds, null, 2),
+                            this.config.BridgeType !== 'off'
+                                ? JSON.stringify(this.bridge?.PublishedIds, null, 2)
+                                : this.i18nTranslation['NoBridgeConfiged'],
                             obj.callback,
                         );
                     } catch (error) {
@@ -1081,7 +1101,20 @@ class Lorawan extends utils.Adapter {
                         this.sendTo(
                             obj.from,
                             obj.command,
-                            JSON.stringify(this.bridge?.SubscribedTopics, null, 2),
+                            this.config.BridgeType !== 'off'
+                                ? JSON.stringify(this.bridge?.SubscribedTopics, null, 2)
+                                : this.i18nTranslation['NoBridgeConfiged'],
+                            obj.callback,
+                        );
+                    } catch (error) {
+                        this.log.error(error);
+                    }
+                } else if (obj.command === 'getDeviceinformations') {
+                    try {
+                        this.sendTo(
+                            obj.from,
+                            obj.command,
+                            JSON.stringify(this.messagehandler?.deviceinformations, null, 2),
                             obj.callback,
                         );
                     } catch (error) {

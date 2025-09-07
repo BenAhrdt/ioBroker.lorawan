@@ -128,5 +128,16 @@
     "BridgeTypeOff": "выключенный",
     "BridgeTypeHA": "Домашний помощник",
     "RefreshDiscoveryCronJob": "Откройте для себя цикл",
-    "RefreshDiscoveryCronJobTooltip": "Вставьте Cronjob для освежения открытия"
+    "RefreshDiscoveryCronJobTooltip": "Вставьте Cronjob для освежения открытия",
+    "ClimateHeader": "Определить состояния для климатической сущности",
+    "ClimateInformation": "Здесь вы можете определить множество климатических определений",
+    "ClimateNameText": "EntityName",
+    "ClimateTargetTemperatureText": "Целевая температура",
+    "ClimateActTemperatureText": "Целевая температура",
+    "ClimateModeTemperatureText": "Режим",
+    "_DiscoveredIds": "Откройте для себя идентификаторы",
+    "_PublishedIds": "Опубликованные удостоверения личности",
+    "_SubscribedTopics": "Подписываемые темы",
+    "_Deviceinformations": "DeviceInformations",
+    "NoBridgeConfiged": "Там нет моста, настроенного !!!"
 }

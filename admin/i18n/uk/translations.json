@@ -128,5 +128,16 @@
     "BridgeTypeOff": "не вистачати",
     "BridgeTypeHA": "Домашній помічник",
     "RefreshDiscoveryCronJob": "Відкрийте цикл",
-    "RefreshDiscoveryCronJobTooltip": "Вставте Кронжоб для освіжаючого відкриття"
+    "RefreshDiscoveryCronJobTooltip": "Вставте Кронжоб для освіжаючого відкриття",
+    "ClimateHeader": "Визначте стани клімату",
+    "ClimateInformation": "Тут ви можете визначити безліч визначення клімату",
+    "ClimateNameText": "EntityName",
+    "ClimateTargetTemperatureText": "Цільова температура",
+    "ClimateActTemperatureText": "Цільова температура",
+    "ClimateModeTemperatureText": "Режим",
+    "_DiscoveredIds": "Discoverd IDS",
+    "_PublishedIds": "Опубліковані посвідчення особи",
+    "_SubscribedTopics": "Підписані теми",
+    "_Deviceinformations": "Пристроїінформації",
+    "NoBridgeConfiged": "Немає мосту конфігурації !!!"
 }

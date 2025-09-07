@@ -128,5 +128,16 @@
     "BridgeTypeOff": "离开",
     "BridgeTypeHA": "家庭助理",
     "RefreshDiscoveryCronJob": "发现周期",
-    "RefreshDiscoveryCronJobTooltip": "插入Cronjob以刷新发现"
+    "RefreshDiscoveryCronJobTooltip": "插入Cronjob以刷新发现",
+    "ClimateHeader": "定义气候实体的国家",
+    "ClimateInformation": "在这里您可以定义一系列气候定义",
+    "ClimateNameText": "EntityName",
+    "ClimateTargetTemperatureText": "目标温度",
+    "ClimateActTemperatureText": "目标温度",
+    "ClimateModeTemperatureText": "模式",
+    "_DiscoveredIds": "Discoverd ID",
+    "_PublishedIds": "已发布的ID",
+    "_SubscribedTopics": "订阅主题",
+    "_Deviceinformations": "设备信息",
+    "NoBridgeConfiged": "没有桥梁配置！！！"
 }

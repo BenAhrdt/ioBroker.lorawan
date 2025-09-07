@@ -128,5 +128,16 @@
     "BridgeTypeOff": "uit",
     "BridgeTypeHA": "Thuisassistent",
     "RefreshDiscoveryCronJob": "Ontdek cyclus",
-    "RefreshDiscoveryCronJobTooltip": "Plaats de Cronjob voor het vernieuwen van de ontdekking"
+    "RefreshDiscoveryCronJobTooltip": "Plaats de Cronjob voor het vernieuwen van de ontdekking",
+    "ClimateHeader": "Definieer staten voor klimaat entiteit",
+    "ClimateInformation": "Hier kunt u een scala aan klimaatdefinities definiëren",
+    "ClimateNameText": "EntityName",
+    "ClimateTargetTemperatureText": "Doeltemperatuur",
+    "ClimateActTemperatureText": "Doeltemperatuur",
+    "ClimateModeTemperatureText": "Modus",
+    "_DiscoveredIds": "Discoverd ID's",
+    "_PublishedIds": "Gepubliceerde ID's",
+    "_SubscribedTopics": "Abonneerde onderwerpen",
+    "_Deviceinformations": "Apparaatinformaties",
+    "NoBridgeConfiged": "Er is geen brug geconfigureerd !!!"
 }

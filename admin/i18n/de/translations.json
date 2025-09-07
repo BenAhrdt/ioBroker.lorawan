@@ -129,12 +129,15 @@
     "BridgeTypeHA": "Home Assistant",
     "RefreshDiscoveryCronJob": "Discovery Zyklus",
     "RefreshDiscoveryCronJobTooltip": "Stellen Sie den Cronjob für das Discovery ein",
-	"ClimateHeader": "Definieren Sie Zustände für eine Klima ENtität",
-	"ClimateInformation": "Hier können Sie ein Array von Klimaentitäten definieren",
-	"ClimateTargetTemperatureText": "Solltemperatur",
-	"ClimateActTemperatureText": "Isttemperatur",
-	"ClimateActModeText": "Mode",
-	"_DiscoveredIds": "Discoverd Ids",
-	"_PublishedIds": "Published Ids",
-	"_SubscribedTopics": "Subscribed Topics"
+    "ClimateHeader": "Definieren Sie Zustände für eine Klima Entität",
+    "ClimateInformation": "Hier können Sie ein Array von Klimaentitäten definieren",
+    "ClimateNameText": "Entitätsname",
+    "ClimateTargetTemperatureText": "Solltemperatur",
+    "ClimateActTemperatureText": "Isttemperatur",
+    "ClimateModeTemperatureText": "Modus",
+    "_DiscoveredIds": "Discoverd Ids",
+    "_PublishedIds": "Veröffentlichte Ids",
+    "_SubscribedTopics": "Abonnierte Topics",
+    "_Deviceinformations": "Geräteinformationen",
+    "NoBridgeConfiged": "Es wurde keine Bridge Konfiguriert !!!"
 }

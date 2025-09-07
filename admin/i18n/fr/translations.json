@@ -128,5 +128,16 @@
     "BridgeTypeOff": "désactivé",
     "BridgeTypeHA": "Assistant à domicile",
     "RefreshDiscoveryCronJob": "Cycle de découverte",
-    "RefreshDiscoveryCronJobTooltip": "insérer le cronjob pour rafraîchir la découverte"
+    "RefreshDiscoveryCronJobTooltip": "insérer le cronjob pour rafraîchir la découverte",
+    "ClimateHeader": "Définir les États de l'entité climatique",
+    "ClimateInformation": "Ici, vous pouvez définir un tableau de définitions climatiques",
+    "ClimateNameText": "Entité",
+    "ClimateTargetTemperatureText": "Température cible",
+    "ClimateActTemperatureText": "Température cible",
+    "ClimateModeTemperatureText": "Mode",
+    "_DiscoveredIds": "IDS de découverte",
+    "_PublishedIds": "IDS publiés",
+    "_SubscribedTopics": "Sujets abonnés",
+    "_Deviceinformations": "Dispositif d'informations",
+    "NoBridgeConfiged": "Il n'y a pas de pont confié !!!"
 }

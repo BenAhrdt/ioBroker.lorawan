@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Add time to State Information and improov translations.
+
 ### 1.13.8 (2025-09-07)
 * (BenAhrdt) Add Tabfunctionality to Adapter (info to some states)
 

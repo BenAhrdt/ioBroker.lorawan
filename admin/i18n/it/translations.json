@@ -128,5 +128,16 @@
     "BridgeTypeOff": "spento",
     "BridgeTypeHA": "Assistente di casa",
     "RefreshDiscoveryCronJob": "Scopri il ciclo",
-    "RefreshDiscoveryCronJobTooltip": "Inserire il Cronjob per aver rinfrescato la scoperta"
+    "RefreshDiscoveryCronJobTooltip": "Inserire il Cronjob per aver rinfrescato la scoperta",
+    "ClimateHeader": "Definire gli stati per l'entità climatica",
+    "ClimateInformation": "Qui puoi definire una serie di definizioni climatiche",
+    "ClimateNameText": "EntityName",
+    "ClimateTargetTemperatureText": "Temperatura target",
+    "ClimateActTemperatureText": "Temperatura target",
+    "ClimateModeTemperatureText": "Modalità",
+    "_DiscoveredIds": "Discoverd IDS",
+    "_PublishedIds": "ID pubblicati",
+    "_SubscribedTopics": "Argomenti abbonati",
+    "_Deviceinformations": "DEVIVENZIONI",
+    "NoBridgeConfiged": "Non c'è bridge configurato !!!"
 }

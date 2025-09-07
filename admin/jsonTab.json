@@ -11,7 +11,6 @@
 			"items": {
                 "_DiscoveredIds":{
 					"type": "text",
-					"label": "_DiscoveredIds",
 					"defaultSendTo": "getDiscoveredIds",
 					"minRows": 10,
 					"readOnly": true,
@@ -31,7 +30,6 @@
 			"items": {
 				"_PublishedIds":{
 					"type": "text",
-					"label": "_PublishedIds",
 					"defaultSendTo": "getPublishedIds",
 					"minRows": 10,
 					"readOnly": true,
@@ -51,8 +49,26 @@
 			"items": {
 				"_SubscribedTopics":{
 					"type": "text",
-					"label": "_PublishedIds",
 					"defaultSendTo": "getSubscribedTopics",
+					"minRows": 10,
+					"readOnly": true,
+					"trim": false,
+					"noClearButton": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12	
+				}
+			}
+		},
+		"_Deviceinformations":{
+			"type": "panel",
+			"label": "_Deviceinformations",
+			"items": {
+				"_Deviceinformations":{
+					"type": "text",
+					"defaultSendTo": "getDeviceinformations",
 					"minRows": 10,
 					"readOnly": true,
 					"trim": false,
