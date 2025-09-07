@@ -23,6 +23,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) More Informations in Tab
+* (BenAhrdt) Additionals States for published ids & subscribed topics
+
 ### 1.13.6 (2025-09-06)
 * (BenAhrdt) Bugfix handling in fillDownlink
 

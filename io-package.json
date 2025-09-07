@@ -449,6 +449,34 @@
       "native": {}
     },
     {
+      "_id": "info.publishedIds",
+      "type": "state",
+      "common": {
+        "role": "json",
+        "name": "Information of all Published States",
+        "type": "json",
+        "icon": "icons/discover.png",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.subscribedTopics",
+      "type": "state",
+      "common": {
+        "role": "json",
+        "name": "Information of all Subscribed Topics",
+        "type": "json",
+        "icon": "icons/discover.png",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
       "_id": "info.deviceinformations",
       "type": "state",
       "common": {
