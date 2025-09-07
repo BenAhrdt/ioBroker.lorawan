@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Add Tabfunctionality to Adapter (info to some states)
+
 ### 1.13.7 (2025-09-07)
 * (BenAhrdt) More Informations in Tab
 * (BenAhrdt) Additionals States for published ids & subscribed topics

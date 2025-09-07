@@ -45,13 +45,13 @@
 				}
             }
         },
-        "_SubscribedTopics":{
-            "type": "panel",
-            "label": "_SubscribedTopics",
+		"_SubscribedTopics":{
+			"type": "panel",
+			"label": "_SubscribedTopics",
 			"items": {
 				"_SubscribedTopics":{
 					"type": "text",
-					"label": "_SubscribedTopics",
+					"label": "_PublishedIds",
 					"defaultSendTo": "getSubscribedTopics",
 					"minRows": 10,
 					"readOnly": true,
@@ -63,7 +63,7 @@
 					"lg": 12,
 					"xl": 12	
 				}
-            }
-        }
+			}
+		}
     }
 }
