@@ -139,5 +139,8 @@
     "_PublishedIds": "Опубліковані посвідчення особи",
     "_SubscribedTopics": "Підписані теми",
     "_Deviceinformations": "Пристроїінформації",
-    "NoBridgeConfiged": "Немає мосту конфігурації !!!"
+    "NoBridgeConfiged": "Немає мосту конфігурації !!!",
+    "EnableRefresh": "Циклічне відкриття",
+    "EnableRefreshTooltip": "Дозвольте відкрити в циклічному кронті",
+    "* Not Present (Virtual)": "* Немає (віртуальний)"
 }

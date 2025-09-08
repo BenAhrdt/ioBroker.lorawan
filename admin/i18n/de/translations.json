@@ -139,5 +139,8 @@
     "_PublishedIds": "Veröffentlichte Ids",
     "_SubscribedTopics": "Abonnierte Topics",
     "_Deviceinformations": "Geräteinformationen",
-    "NoBridgeConfiged": "Es wurde keine Bridge Konfiguriert !!!"
+    "NoBridgeConfiged": "Es wurde keine Bridge Konfiguriert !!!",
+    "EnableRefresh": "zyklisches Discovery",
+    "EnableRefreshTooltip": "aktivieren, um zyklisch mit einem cron zu discovern",
+    "* Not Present (Virtual)": "* Nicht vorhanden (virtuell)"
 }

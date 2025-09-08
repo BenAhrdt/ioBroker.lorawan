@@ -139,5 +139,8 @@
     "_PublishedIds": "IDS publiés",
     "_SubscribedTopics": "Sujets abonnés",
     "_Deviceinformations": "Dispositif d'informations",
-    "NoBridgeConfiged": "Il n'y a pas de pont confié !!!"
+    "NoBridgeConfiged": "Il n'y a pas de pont confié !!!",
+    "EnableRefresh": "Discover cyclique",
+    "EnableRefreshTooltip": "permettre de découvrir dans un cron cyclique",
+    "* Not Present (Virtual)": "* Pas présent (virtuel)"
 }

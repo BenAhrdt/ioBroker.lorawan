@@ -139,5 +139,8 @@
     "_PublishedIds": "Опубликованные удостоверения личности",
     "_SubscribedTopics": "Подписываемые темы",
     "_Deviceinformations": "DeviceInformations",
-    "NoBridgeConfiged": "Там нет моста, настроенного !!!"
+    "NoBridgeConfiged": "Там нет моста, настроенного !!!",
+    "EnableRefresh": "Циклическое открытие",
+    "EnableRefreshTooltip": "Позвольте обнаружить в циклическом крон",
+    "* Not Present (Virtual)": "* Нет присутствующего (виртуально)"
 }

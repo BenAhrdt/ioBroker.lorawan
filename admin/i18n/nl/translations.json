@@ -139,5 +139,8 @@
     "_PublishedIds": "Gepubliceerde ID's",
     "_SubscribedTopics": "Abonneerde onderwerpen",
     "_Deviceinformations": "Apparaatinformaties",
-    "NoBridgeConfiged": "Er is geen brug geconfigureerd !!!"
+    "NoBridgeConfiged": "Er is geen brug geconfigureerd !!!",
+    "EnableRefresh": "cyclische ontdekking",
+    "EnableRefreshTooltip": "in staat te stellen te ontdekken in een cyclische cron",
+    "* Not Present (Virtual)": "* Niet aanwezig (virtueel)"
 }

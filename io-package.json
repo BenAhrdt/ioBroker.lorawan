@@ -356,6 +356,7 @@
     "Bridgepassword": "",
     "Bridgessl": false,
     "BridgeType": "off",
+    "EnableRefresh": true,
     "RefreshDiscoveryCronJob": "0 * * * *",
     "DeviceIdentifiers": [
       {

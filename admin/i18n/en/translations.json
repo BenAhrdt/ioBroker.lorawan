@@ -139,5 +139,8 @@
 	"_PublishedIds": "Published Ids",
 	"_SubscribedTopics": "Subscribed Topics",
 	"_Deviceinformations": "Deviceinformations",
-	"NoBridgeConfiged": "There is no bridge configed !!!"
+	"NoBridgeConfiged": "There is no bridge configed !!!",
+	"EnableRefresh": "cyclic Discover",
+	"EnableRefreshTooltip": "enable to discover in a cyclic cron",
+	"* Not Present (Virtual)": "* Not Present (Virtual)"
 }

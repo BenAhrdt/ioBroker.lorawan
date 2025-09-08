@@ -139,5 +139,8 @@
     "_PublishedIds": "已发布的ID",
     "_SubscribedTopics": "订阅主题",
     "_Deviceinformations": "设备信息",
-    "NoBridgeConfiged": "没有桥梁配置！！！"
+    "NoBridgeConfiged": "没有桥梁配置！！！",
+    "EnableRefresh": "循环发现",
+    "EnableRefreshTooltip": "使能够在循环克隆中发现",
+    "* Not Present (Virtual)": "*不存在（虚拟）"
 }

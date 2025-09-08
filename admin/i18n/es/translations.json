@@ -139,5 +139,8 @@
     "_PublishedIds": "IDS publicados",
     "_SubscribedTopics": "Temas suscritos",
     "_Deviceinformations": "Información de dispositivos",
-    "NoBridgeConfiged": "¡No hay puente configurado!"
+    "NoBridgeConfiged": "¡No hay puente configurado!",
+    "EnableRefresh": "descubrimiento cíclico",
+    "EnableRefreshTooltip": "Habilitar descubrir en un cron cíclico",
+    "* Not Present (Virtual)": "* No presente (virtual)"
 }

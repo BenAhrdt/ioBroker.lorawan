@@ -139,5 +139,8 @@
     "_PublishedIds": "Opublikowane identyfikatory",
     "_SubscribedTopics": "Subskrybowane tematy",
     "_Deviceinformations": "Informacje urządzeń",
-    "NoBridgeConfiged": "Nie ma skonfigurowanego mostu !!!"
+    "NoBridgeConfiged": "Nie ma skonfigurowanego mostu !!!",
+    "EnableRefresh": "cykliczne odkrycie",
+    "EnableRefreshTooltip": "umożliwić odkrycie w cyklicznym cronie",
+    "* Not Present (Virtual)": "* Nie obecne (wirtualne)"
 }

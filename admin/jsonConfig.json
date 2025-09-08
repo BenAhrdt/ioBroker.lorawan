@@ -759,11 +759,23 @@
 					"lg": 3,
 					"xl": 3
 				},
+				"EnableRefresh":{
+					"type": "checkbox",
+					"label": "EnableRefresh",
+					"tooltip": "EnableRefreshTooltip",
+					"hidden": "data.BridgeType === 'off'",
+					"default": true,
+					"xs": 12,
+					"sm": 2,
+					"md": 2,
+					"lg": 2,
+					"xl": 2
+				},
 				"RefreshDiscoveryCronJob": {
                     "type": "cron",
                     "complex": true,
                     "label": "RefreshDiscoveryCronJob",
-					"hidden": "data.BridgeType === 'off'",
+					"hidden": "data.BridgeType === 'off' || data.EnableRefresh === false",
                     "tooltip": "RefreshDiscoveryCronJobTooltip",
                     "default": "0 * * * *",
                     "xs": 12,

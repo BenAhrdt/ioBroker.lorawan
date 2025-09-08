@@ -139,5 +139,8 @@
     "_PublishedIds": "ID pubblicati",
     "_SubscribedTopics": "Argomenti abbonati",
     "_Deviceinformations": "DEVIVENZIONI",
-    "NoBridgeConfiged": "Non c'è bridge configurato !!!"
+    "NoBridgeConfiged": "Non c'è bridge configurato !!!",
+    "EnableRefresh": "scoperta ciclica",
+    "EnableRefreshTooltip": "Abilita di scoprire in un cron ciclico",
+    "* Not Present (Virtual)": "* Non presente (virtuale)"
 }
