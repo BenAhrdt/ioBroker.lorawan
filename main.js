@@ -427,10 +427,18 @@ class Lorawan extends utils.Adapter {
             if (state) {
                 //this.log.debug(`state ${id} changed: val: ${state.val} - ack: ${state.ack}`);
                 // The state was changed => only states with ack = false will be processed, others will be ignored
+                if (id.startsWith(`${this.namespace}.info.`)) {
+                    this.log.silly(
+                        `the state ${id} has changed to ${state.val !== '' ? state.val : '""'} with ack = ${state.ack}.`,
+                    );
+                } else {
+                    this.log.debug(
+                        `the state ${id} has changed to ${state.val !== '' ? state.val : '""'} with ack = ${state.ack}.`,
+                    );
+                }
                 if (!state.ack) {
                     // Check for downlink in id
                     if (id.indexOf('.downlink.control.') !== -1) {
-                        this.log.debug(`the state ${id} has changed to ${state.val}.`);
                         // get information of the changing state
                         const changeInfo = await this.getChangeInfo(id, { withBestMatch: true });
                         const suffix = this.downlinkConfighandler?.getDownlinkTopicSuffix(changeInfo?.changedState);

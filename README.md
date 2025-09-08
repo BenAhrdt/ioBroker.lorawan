@@ -24,6 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+* (BenAhrdt) Change Timeformat in Info states and improov logging in case of Statechange
 * (BenAhrdt) Add possibility to activate / deactivate cron for cyclic discovery
 
 ### 1.13.9 (2025-09-07)
