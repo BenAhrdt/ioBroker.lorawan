@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
-* (BenAhrdt) Improov Statehandling and improov Key Length-handling
+* (BenAhrdt) Improve Statehandling and improve Key Length-handling
 
 ### 1.13.11 (2025-09-09)
 * (BenAhrdt) Bugfix selction of States and state_class
