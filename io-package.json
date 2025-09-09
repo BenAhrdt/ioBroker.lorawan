@@ -1,21 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.13.10",
+    "version": "1.13.11",
     "news": {
       "1.13.11": {
-      "en": "Bugfix selection of states and state_class",
-      "de": "Bugfix Auswahl von States und state_class",
-      "ru": "Исправлена ошибка выбора состояний и state_class",
-      "pt": "Correção de bug na seleção de estados e state_class",
-      "nl": "Bugfix selectie van states en state_class",
-      "fr": "Correction de bug sur la sélection des états et state_class",
-      "it": "Correzione bug nella selezione di stati e state_class",
-      "es": "Corrección de error en la selección de estados y state_class",
-      "pl": "Poprawka błędu przy wyborze stanów i state_class",
-      "uk": "Виправлення помилки вибору станів та state_class",
-      "zh-cn": "修复状态和 state_class 的选择错误"
-    },
+        "en": "Bugfix selection of states and state_class",
+        "de": "Bugfix Auswahl von States und state_class",
+        "ru": "Исправлена ошибка выбора состояний и state_class",
+        "pt": "Correção de bug na seleção de estados e state_class",
+        "nl": "Bugfix selectie van states en state_class",
+        "fr": "Correction de bug sur la sélection des états et state_class",
+        "it": "Correzione bug nella selezione di stati e state_class",
+        "es": "Corrección de error en la selección de estados y state_class",
+        "pl": "Poprawka błędu przy wyborze stanów i state_class",
+        "uk": "Виправлення помилки вибору станів та state_class",
+        "zh-cn": "修复状态和 state_class 的选择错误"
+      },
       "1.13.10": {
         "en": "Change time format in Info states and improve logging in case of state change\nAdd possibility to activate / deactivate cron for cyclic discovery",
         "de": "Zeitformat in Info-States ändern und Logging bei Zustandsänderung verbessern\nMöglichkeit hinzufügen, Cron für zyklische Erkennung zu aktivieren/deaktivieren",
@@ -93,19 +93,6 @@
         "pl": "Pokaż temat (y) & messag (y) ind array\nDodaj kartę, aby zobaczyć odkryte, opublikowane i subskrybowane identyfikatory.\nDodaj możliwość odkrywania podmiotu klimatu\nZachowanie Odkrycia",
         "uk": "Показати тему відкриття (s) & mesag(es) ind array\nДодати вкладку, щоб побачити Discovered, Опубліковано та підписувати Ids.\nДодати можливість відкрити клімат\nПідтримка Discovery",
         "zh-cn": "显示发现主题 & messag( es) ind 数组\n添加 Tab 以查看发现、 发布和订阅的 Ids .\n添加发现气候实体的可能性\n保留发现"
-      },
-      "1.13.4": {
-        "en": "Bugfixing crc in Vicki Profile => ChildLock",
-        "de": "Bugfixing crc in Vicki Profil => ChildLock",
-        "ru": "Bugfixing crc в профиле Вики => ChildLock",
-        "pt": "Bugfixing crc in Vicki Profile => ChildLock",
-        "nl": "Bugfixing crc in Vicki-profiel => ChildLock",
-        "fr": "Correction de bugs dans le profil Vicki => ChildLock",
-        "it": "Bugfixing crc in Vicki Profilo => ChildLock",
-        "es": "Crc de Bugfixing en Vicki Perfil = 75%Lock",
-        "pl": "Bugfining crc w profilu Vicki = > ChildLock",
-        "uk": "Виправлення кришки в Vicki Profile => Дитячий замок",
-        "zh-cn": "Vicki 配置中的错误修复 crc QQ ChildLock"
       }
     },
     "titleLang": {
