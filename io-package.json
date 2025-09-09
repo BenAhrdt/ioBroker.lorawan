@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.13.9",
+    "version": "1.13.10",
     "news": {
       "1.13.10": {
         "en": "Change time format in Info states and improve logging in case of state change\nAdd possibility to activate / deactivate cron for cyclic discovery",
@@ -93,19 +93,6 @@
         "pl": "Bugfining crc w profilu Vicki = > ChildLock",
         "uk": "Виправлення кришки в Vicki Profile => Дитячий замок",
         "zh-cn": "Vicki 配置中的错误修复 crc QQ ChildLock"
-      },
-      "1.13.3": {
-        "en": "Add images to the new States",
-        "de": "Bild hinzugefügt für die neuen Staaten",
-        "ru": "Добавить фото в новые штаты",
-        "pt": "Adicionar imagens aos novos Estados",
-        "nl": "Afbeeldingen toevoegen aan de nieuwe staten",
-        "fr": "Ajouter des images aux nouveaux États",
-        "it": "Aggiungi immagini ai nuovi Stati",
-        "es": "Añadir imágenes a los nuevos Estados",
-        "pl": "Dodaj obrazy do nowych państw",
-        "uk": "Додати зображення до нових держав",
-        "zh-cn": "向新国家添加图像"
       }
     },
     "titleLang": {
