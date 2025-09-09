@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.13.11",
     "news": {
+      "1.13.12": {
+        "en": "Improve state handling and improve key length handling",
+        "de": "Verbesserung der State-Verarbeitung und Verbesserung der Schlüssellängen-Verarbeitung",
+        "ru": "Улучшена обработка состояний и улучшена обработка длины ключа",
+        "pt": "Melhorar o manuseio de estados e o manuseio do comprimento da chave",
+        "nl": "Verbeteren van state-afhandeling en verbeteren van sleutellengte-afhandeling",
+        "fr": "Amélioration de la gestion des états et de la gestion de la longueur des clés",
+        "it": "Migliorata la gestione degli stati e la gestione della lunghezza delle chiavi",
+        "es": "Mejorar el manejo de estados y el manejo de la longitud de claves",
+        "pl": "Ulepszono obsługę stanów i obsługę długości klucza",
+        "uk": "Покращено обробку станів та обробку довжини ключа",
+        "zh-cn": "改进状态处理并改进密钥长度处理"
+      },
       "1.13.11": {
         "en": "Bugfix selection of states and state_class",
         "de": "Bugfix Auswahl von States und state_class",
