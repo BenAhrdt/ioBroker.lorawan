@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.13.12",
     "news": {
+      "1.13.13": {
+        "en": "Bugfix unit of measurement",
+        "de": "Bugfix Einheit der Messung",
+        "ru": "Исправлена ошибка единицы измерения",
+        "pt": "Correção de bug na unidade de medida",
+        "nl": "Bugfix eenheid van meting",
+        "fr": "Correction de bug sur l'unité de mesure",
+        "it": "Correzione bug unità di misura",
+        "es": "Corrección de error en la unidad de medida",
+        "pl": "Poprawka błędu jednostki miary",
+        "uk": "Виправлення помилки одиниці вимірювання",
+        "zh-cn": "修复计量单位的错误"
+      },
       "1.13.12": {
         "en": "Improve state handling and improve key length handling",
         "de": "Verbesserung der State-Verarbeitung und Verbesserung der Schlüssellängen-Verarbeitung",
