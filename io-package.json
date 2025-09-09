@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.13.12",
+    "version": "1.13.13",
     "news": {
       "1.13.13": {
         "en": "Bugfix unit of measurement",
@@ -93,19 +93,6 @@
         "pl": "Więcej informacji w karcie\nPaństwa korzystające z dodatków w odniesieniu do opublikowanych identyfikatorów i subskrybowanych tematów",
         "uk": "Більше інформації в закладці\nДодаткові матеріали для опублікованих носіїв та підписаних тем",
         "zh-cn": "标签中的更多信息\n已公布的编号和已订阅专题的补充国家"
-      },
-      "1.13.6": {
-        "en": "Bugfix handling in fillDownlink",
-        "de": "Bugfix Handhabung in fillDownlink",
-        "ru": "Обработка Bugfix в fillDownlink",
-        "pt": "Tratamento de erros em fillDownlink",
-        "nl": "Bugfix-verwerking in fillDownlink",
-        "fr": "Gestion du bugfix dans fillDownlink",
-        "it": "Gestione bugfix in fillDownlink",
-        "es": "Manejo de bugfix en rellenoDownlink",
-        "pl": "Obsługa Bugfix w FuelDownlink",
-        "uk": "Обробка помилок в накладціДоне посилання",
-        "zh-cn": "在 fillDownlink 中处理错误"
       }
     },
     "titleLang": {
