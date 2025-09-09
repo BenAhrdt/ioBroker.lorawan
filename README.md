@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Bugfix selction of States and state_class
+
 ### 1.13.10 (2025-09-09)
 * (BenAhrdt) Change Timeformat in Info states and improov logging in case of Statechange
 * (BenAhrdt) Add possibility to activate / deactivate cron for cyclic discovery

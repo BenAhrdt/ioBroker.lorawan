@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.13.10",
     "news": {
+      "1.13.11": {
+      "en": "Bugfix selection of states and state_class",
+      "de": "Bugfix Auswahl von States und state_class",
+      "ru": "Исправлена ошибка выбора состояний и state_class",
+      "pt": "Correção de bug na seleção de estados e state_class",
+      "nl": "Bugfix selectie van states en state_class",
+      "fr": "Correction de bug sur la sélection des états et state_class",
+      "it": "Correzione bug nella selezione di stati e state_class",
+      "es": "Corrección de error en la selección de estados y state_class",
+      "pl": "Poprawka błędu przy wyborze stanów i state_class",
+      "uk": "Виправлення помилки вибору станів та state_class",
+      "zh-cn": "修复状态和 state_class 的选择错误"
+    },
       "1.13.10": {
         "en": "Change time format in Info states and improve logging in case of state change\nAdd possibility to activate / deactivate cron for cyclic discovery",
         "de": "Zeitformat in Info-States ändern und Logging bei Zustandsänderung verbessern\nMöglichkeit hinzufügen, Cron für zyklische Erkennung zu aktivieren/deaktivieren",

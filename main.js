@@ -1034,7 +1034,7 @@ class Lorawan extends utils.Adapter {
                     try {
                         let myCount = 0;
                         const states = [];
-                        if (obj.command === 'getDevicesForConfig') {
+                        if (obj.command === 'getStatesForConfig') {
                             states[myCount] = { label: '* (Wildcard)', value: '*' };
                             myCount++;
                         }
