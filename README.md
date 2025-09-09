@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.13.12 (2025-09-09)
 * (BenAhrdt) Improve Statehandling and improve Key Length-handling
 
 ### 1.13.11 (2025-09-09)

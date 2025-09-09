@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.13.11",
+    "version": "1.13.12",
     "news": {
       "1.13.12": {
         "en": "Improve state handling and improve key length handling",
@@ -93,19 +93,6 @@
         "pl": "Obsługa Bugfix w FuelDownlink",
         "uk": "Обробка помилок в накладціДоне посилання",
         "zh-cn": "在 fillDownlink 中处理错误"
-      },
-      "1.13.5": {
-        "en": "Show discovery topic(s) & messag(es) ind array\nAdd Tab to see Discovered, Published and Subscribed Ids.\nAdd Posibility to discover climate Entity\nRetaining Discovery",
-        "de": "Zeige Entdeckungsthemen & Messag(en) ind array\nFügen Sie Tab hinzu, um entdeckte, veröffentlichte und abgemeldete Ids zu sehen.\nMöglichkeit, das Klima zu entdecken\nRetaining Discovery",
-        "ru": "Показать тему(ы) обнаружения и мессенджер(ы) ind array\nДобавьте вкладку, чтобы увидеть обнаруженные, опубликованные и подписанные идентификаторы.\nДобавить возможность открыть климатическую организацию\nСохранение Discovery",
-        "pt": "Mostrar o( s) tópico( s) de descoberta & messag( es) ind array\nAdicionar aba para ver IDs descobertos, publicados e assinados.\nAdicionar Possibilidade de descobrir o clima Entidade\nManter a Descoberta",
-        "nl": "Ontdekkingsonderwerp(s) & messag(es) ind-array tonen\nTabblad toevoegen om Ontdekt, Gepubliceerd en Geabonneerd Ids te zien.\nMogelijkheid toevoegen om klimaat te ontdekken Entity\nOntdekking behouden",
-        "fr": "Afficher le(s) sujet(s) de découverte et le(s) tableau(s) ind\nAjouter un onglet pour voir les idées découvertes, publiées et enregistrées.\nAjouter la possibilité de découvrir le climat Entité\nConserver la découverte",
-        "it": "Mostra argomento(i) & messag(es) ind array\nAggiungi scheda per vedere Scoperto, Pubblicato e Abbonato Ids.\nAggiungi Posibilità per scoprire il clima\nRecuperare Discovery",
-        "es": "Mostrar el tema de descubrimiento(s) & messag(es) end array\nAñadir Tab para ver Ids descubiertos, publicados y suscritos.\nAñadir Posibilidad de descubrir la Entidad climática\nRetaining Discovery",
-        "pl": "Pokaż temat (y) & messag (y) ind array\nDodaj kartę, aby zobaczyć odkryte, opublikowane i subskrybowane identyfikatory.\nDodaj możliwość odkrywania podmiotu klimatu\nZachowanie Odkrycia",
-        "uk": "Показати тему відкриття (s) & mesag(es) ind array\nДодати вкладку, щоб побачити Discovered, Опубліковано та підписувати Ids.\nДодати можливість відкрити клімат\nПідтримка Discovery",
-        "zh-cn": "显示发现主题 & messag( es) ind 数组\n添加 Tab 以查看发现、 发布和订阅的 Ids .\n添加发现气候实体的可能性\n保留发现"
       }
     },
     "titleLang": {
