@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.13.9",
     "news": {
+      "1.13.10": {
+        "en": "Change time format in Info states and improve logging in case of state change\nAdd possibility to activate / deactivate cron for cyclic discovery",
+        "de": "Zeitformat in Info-States ändern und Logging bei Zustandsänderung verbessern\nMöglichkeit hinzufügen, Cron für zyklische Erkennung zu aktivieren/deaktivieren",
+        "ru": "Изменение формата времени в информационных состояниях и улучшение логирования при изменении состояния\nДобавлена возможность включать/отключать cron для циклического обнаружения",
+        "pt": "Alterar formato de hora nos estados de informação e melhorar o registro em caso de alteração de estado\nAdicionar possibilidade de ativar/desativar cron para descoberta cíclica",
+        "nl": "Tijdformaat wijzigen in Info-states en logging verbeteren bij statuswijziging\nMogelijkheid toevoegen om cron voor cyclische detectie te activeren/deactiveren",
+        "fr": "Modifier le format de l'heure dans les états d'info et améliorer la journalisation en cas de changement d'état\nAjouter la possibilité d'activer/désactiver le cron pour la découverte cyclique",
+        "it": "Modificare il formato dell'ora negli stati Info e migliorare il logging in caso di cambiamento di stato\nAggiunta la possibilità di attivare/disattivare il cron per la scoperta ciclica",
+        "es": "Cambiar formato de hora en estados de información y mejorar el registro en caso de cambio de estado\nAgregar posibilidad de activar/desactivar cron para descubrimiento cíclico",
+        "pl": "Zmiana formatu czasu w stanach informacyjnych i ulepszenie logowania w przypadku zmiany stanu\nDodano możliwość aktywacji/dezaktywacji crona dla cyklicznego wykrywania",
+        "uk": "Зміна формату часу в інформаційних станах та покращення логування у випадку зміни стану\nДодано можливість активувати/деактивувати cron для циклічного виявлення",
+        "zh-cn": "在信息状态中更改时间格式并改进状态更改时的日志记录\n添加启用/禁用循环发现的 cron 的可能性"
+      },
       "1.13.9": {
         "en": "Add time to State Information and improov translations.",
         "de": "Fügen Sie Zeit zu staatlichen Informationen und improov Übersetzungen.",
