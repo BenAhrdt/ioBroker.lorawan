@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.13.13",
+    "version": "1.13.14",
     "news": {
       "1.13.14": {
         "en": "Add assign more device_class and state_class in case of unit",
@@ -93,19 +93,6 @@
         "pl": "Dodaj funkcje tabletu do adaptera (info do niektórych stanów)",
         "uk": "Додати табфункцію до адаптера",
         "zh-cn": "将 Tab 功能添加到适配器( 向一些状态信息)"
-      },
-      "1.13.7": {
-        "en": "More Informations in Tab\nAdditionals States for published ids & subscribed topics",
-        "de": "Weitere Informationen in Tab\nZusätzliche Staaten für veröffentlichte ids & abonnierte Themen",
-        "ru": "Больше информации в Tab\nДополнительные государства для опубликованных ids и подписанных тем",
-        "pt": "Mais informações na aba\nOutros Estados para ids publicados e tópicos subscritos",
-        "nl": "Meer informatie in tabblad\nAanvullende staten voor gepubliceerde id's en geabonneerde onderwerpen",
-        "fr": "Plus d'informations dans l'onglet\nAutres États pour les ids publiés et les sujets souscrits",
-        "it": "Altre informazioni in Tab\nStati addizionali per argomenti pubblicati",
-        "es": "Más información en Tab\nEstados adicionales para temas publicados y suscritos",
-        "pl": "Więcej informacji w karcie\nPaństwa korzystające z dodatków w odniesieniu do opublikowanych identyfikatorów i subskrybowanych tematów",
-        "uk": "Більше інформації в закладці\nДодаткові матеріали для опублікованих носіїв та підписаних тем",
-        "zh-cn": "标签中的更多信息\n已公布的编号和已订阅专题的补充国家"
       }
     },
     "titleLang": {
