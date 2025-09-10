@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Add assign more device_class and state_class in case of unit
+
 ### 1.13.13 (2025-09-09)
 * (BenAhrdt) Bugfix unit of measurement
 
