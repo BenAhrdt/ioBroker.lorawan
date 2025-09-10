@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) change topics into ste and state topic
+
 ### 1.13.14 (2025-09-10)
 * (BenAhrdt) Add assign more device_class and state_class in case of unit
 
