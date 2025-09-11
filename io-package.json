@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.14.2",
     "news": {
+      "1.14.3": {
+        "en": "Change naming of virtual ID for virtual_mode",
+        "de": "Änderung der Benennung der virtuellen ID für virtual_mode",
+        "ru": "Изменено именование виртуального ID для virtual_mode",
+        "pt": "Alterar a nomeação do ID virtual para virtual_mode",
+        "nl": "Wijzig de naamgeving van virtueel ID voor virtual_mode",
+        "fr": "Modifier la dénomination de l'ID virtuel pour virtual_mode",
+        "it": "Modifica la denominazione dell'ID virtuale per virtual_mode",
+        "es": "Cambiar la denominación del ID virtual para virtual_mode",
+        "pl": "Zmiana nazewnictwa identyfikatora wirtualnego dla virtual_mode",
+        "uk": "Зміна найменування віртуального ID для virtual_mode",
+        "zh-cn": "更改 virtual_mode 的虚拟 ID 命名"
+      },
       "1.14.2": {
         "en": "Bugfix climate current_temperature topic",
         "de": "Bugfix climate current_temperature Topic",

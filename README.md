@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Change Nameing of Virtual ID for virtual_mode
+
 ### 1.14.2 (2025-09-11)
 * (BenAhrdt) Bugfix Climate current_temperature topic
 
