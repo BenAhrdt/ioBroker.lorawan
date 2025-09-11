@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.14.1",
     "news": {
+      "1.14.2": {
+        "en": "Bugfix climate current_temperature topic",
+        "de": "Bugfix climate current_temperature Topic",
+        "ru": "Исправлена ошибка в climate current_temperature topic",
+        "pt": "Correção de bug no climate current_temperature topic",
+        "nl": "Bugfix climate current_temperature topic",
+        "fr": "Correction de bug sur le climate current_temperature topic",
+        "it": "Correzione bug climate current_temperature topic",
+        "es": "Corrección de error en climate current_temperature topic",
+        "pl": "Poprawka błędu climate current_temperature topic",
+        "uk": "Виправлення помилки в climate current_temperature topic",
+        "zh-cn": "修复 climate current_temperature topic 的错误"
+      },
       "1.14.1": {
         "en": "Bugfix unique_id of climate entities",
         "de": "Bugfix unique_id von Climate-Entities",
