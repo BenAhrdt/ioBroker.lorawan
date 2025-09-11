@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.14.0",
+    "version": "1.14.1",
     "news": {
       "1.14.1": {
         "en": "Bugfix unique_id of climate entities",
@@ -93,19 +93,6 @@
         "pl": "Zmiana formatu czasu w stanach informacyjnych i ulepszenie logowania w przypadku zmiany stanu\nDodano możliwość aktywacji/dezaktywacji crona dla cyklicznego wykrywania",
         "uk": "Зміна формату часу в інформаційних станах та покращення логування у випадку зміни стану\nДодано можливість активувати/деактивувати cron для циклічного виявлення",
         "zh-cn": "在信息状态中更改时间格式并改进状态更改时的日志记录\n添加启用/禁用循环发现的 cron 的可能性"
-      },
-      "1.13.9": {
-        "en": "Add time to State Information and improov translations.",
-        "de": "Fügen Sie Zeit zu staatlichen Informationen und improov Übersetzungen.",
-        "ru": "Добавьте время к государственной информации и импровизированным переводам.",
-        "pt": "Adicione tempo para Informações do Estado e traduções improvisadas.",
-        "nl": "Voeg tijd toe aan State Information en improov vertalingen.",
-        "fr": "Ajouter du temps à l'information d'état et improov traductions.",
-        "it": "Aggiungi tempo a Informazioni di Stato e traduzioni improvvisate.",
-        "es": "Añadir tiempo a Información Estatal y traducciones improvistas.",
-        "pl": "Dodaj czas do informacji państwowej i tłumaczenia improov.",
-        "uk": "Додати час до Державної інформації та імпровських перекладів.",
-        "zh-cn": "在州情资料和即兴翻译中添加时间."
       }
     },
     "titleLang": {
