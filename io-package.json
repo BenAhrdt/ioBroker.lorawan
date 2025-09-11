@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.13.14",
+    "version": "1.14.0",
     "news": {
       "1.14.0": {
         "en": "Normalize topics (without space, dot, ...)\nChange topics into set and state topic",
@@ -93,19 +93,6 @@
         "pl": "Dodaj czas do informacji państwowej i tłumaczenia improov.",
         "uk": "Додати час до Державної інформації та імпровських перекладів.",
         "zh-cn": "在州情资料和即兴翻译中添加时间."
-      },
-      "1.13.8": {
-        "en": "Add Tabfunctionality to Adapter (info to some states)",
-        "de": "Fügen Sie Tabfunktionalität auf Adapter (info zu einigen Staaten) hinzu",
-        "ru": "Добавить Tabfunctionality в адаптер (информация для некоторых состояний)",
-        "pt": "Adicionar tabfuncionalidade ao adaptador (info para alguns estados)",
-        "nl": "Tabfunctionaliteit toevoegen aan adapter (info naar sommige staten)",
-        "fr": "Ajouter Tabfonctionnalité à l'adaptateur (info à certains états)",
-        "it": "Aggiungi Tabfunzionalità ad Adattatore (info ad alcuni stati)",
-        "es": "Añadir Tabfunctionality to Adapter (info to some states)",
-        "pl": "Dodaj funkcje tabletu do adaptera (info do niektórych stanów)",
-        "uk": "Додати табфункцію до адаптера",
-        "zh-cn": "将 Tab 功能添加到适配器( 向一些状态信息)"
       }
     },
     "titleLang": {
