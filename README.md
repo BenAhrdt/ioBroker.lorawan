@@ -24,7 +24,8 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
-* (BenAhrdt) change topics into ste and state topic
+* (BenAhrdt) normalize topics (without space, dot ....)
+* (BenAhrdt) change topics into set and state topic
 
 ### 1.13.14 (2025-09-10)
 * (BenAhrdt) Add assign more device_class and state_class in case of unit

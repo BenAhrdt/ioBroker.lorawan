@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.13.14",
     "news": {
+      "1.14.0": {
+        "en": "Normalize topics (without space, dot, ...)\nChange topics into set and state topic",
+        "de": "Themen normalisieren (ohne Leerzeichen, Punkt ...)\nThemen in Set- und State-Topic ändern",
+        "ru": "Нормализация тем (без пробелов, точек ...)\nИзменение тем на set и state topic",
+        "pt": "Normalizar tópicos (sem espaço, ponto ...)\nAlterar tópicos para set e state topic",
+        "nl": "Normaliseer topics (zonder spatie, punt ...)\nWijzig topics in set- en state-topic",
+        "fr": "Normaliser les topics (sans espace, point ...)\nModifier les topics en set et state topic",
+        "it": "Normalizza gli argomenti (senza spazi, punti ...)\nModifica gli argomenti in set e state topic",
+        "es": "Normalizar temas (sin espacio, punto ...)\nCambiar temas a set y state topic",
+        "pl": "Normalizacja tematów (bez spacji, kropek ...)\nZmiana tematów na set i state topic",
+        "uk": "Нормалізація тем (без пробілів, крапок ...)\nЗміна тем на set та state topic",
+        "zh-cn": "规范化主题（不含空格、点等）\n将主题更改为 set 和 state topic"
+      },
       "1.13.14": {
         "en": "Add assign more device_class and state_class in case of unit",
         "de": "Zuweisung weiterer device_class und state_class im Fall von Einheiten hinzufügen",
