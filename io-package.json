@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.14.3",
     "news": {
+      "1.14.4": {
+        "en": "Return the virtual mode",
+        "de": "Rückkehr des Virtual Mode",
+        "ru": "Возврат виртуального режима",
+        "pt": "Retornar o modo virtual",
+        "nl": "Herstel de virtuele modus",
+        "fr": "Rétablir le mode virtuel",
+        "it": "Ripristino della modalità virtuale",
+        "es": "Restaurar el modo virtual",
+        "pl": "Przywrócenie trybu wirtualnego",
+        "uk": "Повернення віртуального режиму",
+        "zh-cn": "恢复虚拟模式"
+      },
       "1.14.3": {
         "en": "Change naming of virtual ID for virtual_mode",
         "de": "Änderung der Benennung der virtuellen ID für virtual_mode",
