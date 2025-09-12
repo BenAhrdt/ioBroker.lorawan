@@ -629,9 +629,11 @@ class Lorawan extends utils.Adapter {
             const idFolderLastSend = `${changeInfo.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.downlinkLastSend}`;
             const nextSend = await this.getStateAsync(`${idFolderNextSend}.hex`);
             const lastSend = this.getHexpayloadFromDownlink(message);
-            await this.setState(`${idFolderLastSend}.hex`, lastSend, true);
-            if (nextSend && lastSend === nextSend?.val) {
-                await this.setState(`${idFolderNextSend}.hex`, '0', true);
+            if (lastSend != undefined) {
+                await this.setState(`${idFolderLastSend}.hex`, lastSend, true);
+                if (nextSend && lastSend === nextSend?.val) {
+                    await this.setState(`${idFolderNextSend}.hex`, '0', true);
+                }
             }
         } catch (error) {
             this.log.error(`error at ${activeFunction}:  ${error}`);
