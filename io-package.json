@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.14.4",
     "news": {
+      "1.14.5": {
+        "en": "Save last 10 published and subscribed values",
+        "de": "Speichere die letzten 10 veröffentlichten und abonnierten Werte",
+        "ru": "Сохранение последних 10 опубликованных и подписанных значений",
+        "pt": "Salvar os últimos 10 valores publicados e subscritos",
+        "nl": "Bewaar de laatste 10 gepubliceerde en geabonneerde waarden",
+        "fr": "Sauvegarder les 10 dernières valeurs publiées et souscrites",
+        "it": "Salva gli ultimi 10 valori pubblicati e sottoscritti",
+        "es": "Guardar los últimos 10 valores publicados y suscritos",
+        "pl": "Zapisz ostatnie 10 opublikowanych i subskrybowanych wartości",
+        "uk": "Зберігати останні 10 опублікованих і підписаних значень",
+        "zh-cn": "保存最近 10 个已发布和已订阅的值"
+      },
       "1.14.4": {
         "en": "Return the virtual mode",
         "de": "Rückkehr des Virtual Mode",
