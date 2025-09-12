@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.14.5",
     "news": {
+      "1.14.6": {
+        "en": "More logging in debug mode",
+        "de": "Mehr Logging im Debug-Modus",
+        "ru": "Больше логирования в режиме отладки",
+        "pt": "Mais registros no modo de depuração",
+        "nl": "Meer logging in debugmodus",
+        "fr": "Davantage de journalisation en mode débogage",
+        "it": "Maggior logging in modalità debug",
+        "es": "Más registros en modo depuración",
+        "pl": "Więcej logowania w trybie debugowania",
+        "uk": "Більше журналювання в режимі налагодження",
+        "zh-cn": "调试模式下的更多日志记录"
+      },
       "1.14.5": {
         "en": "Save last 10 published and subscribed values",
         "de": "Speichere die letzten 10 veröffentlichten und abonnierten Werte",
