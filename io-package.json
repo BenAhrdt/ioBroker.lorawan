@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.14.5",
+    "version": "1.14.6",
     "news": {
       "1.14.6": {
         "en": "More logging in debug mode",
@@ -93,19 +93,6 @@
         "pl": "Normalizacja tematów (bez spacji, kropek ...)\nZmiana tematów na set i state topic",
         "uk": "Нормалізація тем (без пробілів, крапок ...)\nЗміна тем на set та state topic",
         "zh-cn": "规范化主题（不含空格、点等）\n将主题更改为 set 和 state topic"
-      },
-      "1.13.14": {
-        "en": "Add assign more device_class and state_class in case of unit",
-        "de": "Zuweisung weiterer device_class und state_class im Fall von Einheiten hinzufügen",
-        "ru": "Добавлено назначение дополнительных device_class и state_class в случае единиц измерения",
-        "pt": "Adicionar atribuição de mais device_class e state_class em caso de unidade",
-        "nl": "Meer device_class en state_class toewijzen in geval van eenheid",
-        "fr": "Ajouter l'attribution de plus de device_class et state_class en cas d'unité",
-        "it": "Aggiunta assegnazione di ulteriori device_class e state_class in caso di unità",
-        "es": "Agregar asignación de más device_class y state_class en caso de unidad",
-        "pl": "Dodano przypisanie większej liczby device_class i state_class w przypadku jednostki",
-        "uk": "Додано призначення більше device_class та state_class у випадку одиниці",
-        "zh-cn": "在存在单位的情况下分配更多的 device_class 和 state_class"
       }
     },
     "titleLang": {
