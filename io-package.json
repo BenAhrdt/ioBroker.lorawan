@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.14.6",
     "news": {
+      "1.14.7": {
+        "en": "Add folders for target temperature in heating events\nCorrect unit handling and max value count in tab",
+        "de": "Ordner für Solltemperatur in Heizungsevents hinzufügen\nKorrekte Einheitenbehandlung und maximale Wertanzahl im Tab",
+        "ru": "Добавлены папки для целевой температуры в событиях отопления\nИсправлена обработка единиц и максимального количества значений на вкладке",
+        "pt": "Adicionar pastas para temperatura alvo em eventos de aquecimento\nCorrigir manuseio de unidades e contagem máxima de valores na aba",
+        "nl": "Mappen toevoegen voor doeltemperatuur in verwarmingsgebeurtenissen\nCorrecte eenhedenafhandeling en maximaal aantal waarden in tabblad",
+        "fr": "Ajouter des dossiers pour la température cible dans les événements de chauffage\nCorrection de la gestion des unités et du nombre maximal de valeurs dans l'onglet",
+        "it": "Aggiunta di cartelle per la temperatura target negli eventi di riscaldamento\nCorretto il trattamento delle unità e il numero massimo di valori nella scheda",
+        "es": "Agregar carpetas para la temperatura objetivo en eventos de calefacción\nCorregir el manejo de unidades y el número máximo de valores en la pestaña",
+        "pl": "Dodano foldery dla temperatury docelowej w zdarzeniach grzewczych\nPoprawiono obsługę jednostek i maksymalną liczbę wartości w zakładce",
+        "uk": "Додано папки для цільової температури у подіях опалення\nВиправлено обробку одиниць та максимальну кількість значень у вкладці",
+        "zh-cn": "在加热事件中添加目标温度文件夹\n修复单位处理和标签中的最大值计数"
+      },
       "1.14.6": {
         "en": "More logging in debug mode",
         "de": "Mehr Logging im Debug-Modus",
