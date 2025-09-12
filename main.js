@@ -560,7 +560,8 @@ class Lorawan extends utils.Adapter {
     }
 
     async checkSendDownlinkWithUplink(id) {
-        const activeFunction = 'checkSendDownlinkWithUplink';
+        const activeFunction = 'main.js - checkSendDownlinkWithUplink';
+        this.log.debug(`Function ${activeFunction} started.`);
         try {
             this.log.debug(`Check for send downlink with uplink.`);
             const changeInfo = await this.getChangeInfo(id, { withBestMatch: true });
@@ -583,60 +584,84 @@ class Lorawan extends utils.Adapter {
                 }
             }
         } catch (error) {
-            this.log.error(`error at ${activeFunction}: ${error}`);
+            this.log.error(`error at ${activeFunction}:  ${error}`);
         }
     }
 
     async getNextSend(deviceDirectory) {
-        const idFolder = `${deviceDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.downlinkNextSend}`;
-        return await this.getStateAsync(`${idFolder}.hex`);
+        const activeFunction = 'main.js - getNextSend';
+        this.log.debug(`Function ${activeFunction} started.`);
+        try {
+            const idFolder = `${deviceDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.downlinkNextSend}`;
+            return await this.getStateAsync(`${idFolder}.hex`);
+        } catch (error) {
+            this.log.error(`error at ${activeFunction}:  ${error}`);
+        }
     }
 
     async writeNextSend(changeInfo, payloadInHex) {
-        const idFolderNextSend = `${changeInfo.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.downlinkNextSend}`;
-        if (
-            changeInfo.bestMatchForDeviceType &&
-            this.downlinkConfighandler?.activeDownlinkConfigs[changeInfo.bestMatchForDeviceType].sendWithUplink ===
-                'enabled & collect'
-        ) {
-            const nextSend = await this.getStateAsync(`${idFolderNextSend}.hex`);
-            if (nextSend?.val !== '0') {
-                payloadInHex = nextSend?.val + payloadInHex;
+        const activeFunction = 'main.js - writeNextSend';
+        this.log.debug(`Function ${activeFunction} started.`);
+        try {
+            const idFolderNextSend = `${changeInfo.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.downlinkNextSend}`;
+            if (
+                changeInfo.bestMatchForDeviceType &&
+                this.downlinkConfighandler?.activeDownlinkConfigs[changeInfo.bestMatchForDeviceType].sendWithUplink ===
+                    'enabled & collect'
+            ) {
+                const nextSend = await this.getStateAsync(`${idFolderNextSend}.hex`);
+                if (nextSend?.val !== '0') {
+                    payloadInHex = nextSend?.val + payloadInHex;
+                }
             }
+            await this.setState(`${idFolderNextSend}.hex`, payloadInHex, true);
+        } catch (error) {
+            this.log.error(`error at ${activeFunction}:  ${error}`);
         }
-        await this.setState(`${idFolderNextSend}.hex`, payloadInHex, true);
     }
 
     async sendDownlink(topic, message, changeInfo) {
-        await this.mqttClient?.publish(topic, message, {});
-        const idFolderNextSend = `${changeInfo.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.downlinkNextSend}`;
-        const idFolderLastSend = `${changeInfo.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.downlinkLastSend}`;
-        const nextSend = await this.getStateAsync(`${idFolderNextSend}.hex`);
-        const lastSend = this.getHexpayloadFromDownlink(message);
-        await this.setState(`${idFolderLastSend}.hex`, lastSend, true);
-        if (nextSend && lastSend === nextSend?.val) {
-            await this.setState(`${idFolderNextSend}.hex`, '0', true);
+        const activeFunction = 'main.js - sendDownlink';
+        this.log.debug(`Function ${activeFunction} started.`);
+        try {
+            await this.mqttClient?.publish(topic, message, {});
+            const idFolderNextSend = `${changeInfo.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.downlinkNextSend}`;
+            const idFolderLastSend = `${changeInfo.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.downlinkLastSend}`;
+            const nextSend = await this.getStateAsync(`${idFolderNextSend}.hex`);
+            const lastSend = this.getHexpayloadFromDownlink(message);
+            await this.setState(`${idFolderLastSend}.hex`, lastSend, true);
+            if (nextSend && lastSend === nextSend?.val) {
+                await this.setState(`${idFolderNextSend}.hex`, '0', true);
+            }
+        } catch (error) {
+            this.log.error(`error at ${activeFunction}:  ${error}`);
         }
     }
 
     getHexpayloadFromDownlink(downlinkmessage) {
-        let downlink = downlinkmessage;
-        if (typeof downlink === 'string') {
-            downlink = JSON.parse(downlinkmessage);
-        } else if (typeof downlink !== 'object') {
-            return 0;
-        }
-        let payload = '';
-        switch (this.config.origin) {
-            case this.origin.ttn:
-                payload = downlink.downlinks[0].frm_payload;
-                break;
+        const activeFunction = 'main.js - getHexpayloadFromDownlink';
+        this.log.debug(`Function ${activeFunction} started.`);
+        try {
+            let downlink = downlinkmessage;
+            if (typeof downlink === 'string') {
+                downlink = JSON.parse(downlinkmessage);
+            } else if (typeof downlink !== 'object') {
+                return 0;
+            }
+            let payload = '';
+            switch (this.config.origin) {
+                case this.origin.ttn:
+                    payload = downlink.downlinks[0].frm_payload;
+                    break;
 
-            case this.origin.chirpstack:
-                payload = downlink.data;
-                break;
+                case this.origin.chirpstack:
+                    payload = downlink.data;
+                    break;
+            }
+            return Buffer.from(payload, 'base64').toString('hex').toUpperCase();
+        } catch (error) {
+            this.log.error(`error at ${activeFunction}:  ${error}`);
         }
-        return Buffer.from(payload, 'base64').toString('hex').toUpperCase();
     }
 
     getBaseDeviceInfo(id) {
