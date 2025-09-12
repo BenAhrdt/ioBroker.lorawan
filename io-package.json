@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.14.4",
+    "version": "1.14.5",
     "news": {
       "1.14.5": {
         "en": "Save last 10 published and subscribed values",
@@ -93,19 +93,6 @@
         "pl": "Dodano przypisanie większej liczby device_class i state_class w przypadku jednostki",
         "uk": "Додано призначення більше device_class та state_class у випадку одиниці",
         "zh-cn": "在存在单位的情况下分配更多的 device_class 和 state_class"
-      },
-      "1.13.13": {
-        "en": "Bugfix unit of measurement",
-        "de": "Bugfix Einheit der Messung",
-        "ru": "Исправлена ошибка единицы измерения",
-        "pt": "Correção de bug na unidade de medida",
-        "nl": "Bugfix eenheid van meting",
-        "fr": "Correction de bug sur l'unité de mesure",
-        "it": "Correzione bug unità di misura",
-        "es": "Corrección de error en la unidad de medida",
-        "pl": "Poprawka błędu jednostki miary",
-        "uk": "Виправлення помилки одиниці вимірювання",
-        "zh-cn": "修复计量单位的错误"
       }
     },
     "titleLang": {
