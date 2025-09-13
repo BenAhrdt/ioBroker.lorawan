@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.14.7",
+    "version": "1.14.8",
     "news": {
       "1.14.8": {
         "en": "Add general, offline and online notifications to the discovered devices\nAdd general notifications to device called namespace of the adapter",
@@ -93,19 +93,6 @@
         "pl": "Poprawka błędu climate current_temperature topic",
         "uk": "Виправлення помилки в climate current_temperature topic",
         "zh-cn": "修复 climate current_temperature topic 的错误"
-      },
-      "1.14.1": {
-        "en": "Bugfix unique_id of climate entities",
-        "de": "Bugfix unique_id von Climate-Entities",
-        "ru": "Исправлена ошибка unique_id для climate entities",
-        "pt": "Correção de bug no unique_id de entidades de clima",
-        "nl": "Bugfix unique_id van climate entities",
-        "fr": "Correction de bug du unique_id des entités de climat",
-        "it": "Correzione bug unique_id delle entità climate",
-        "es": "Corrección de error en unique_id de entidades de clima",
-        "pl": "Poprawka błędu unique_id dla encji klimatycznych",
-        "uk": "Виправлення помилки unique_id для сутностей клімату",
-        "zh-cn": "修复气候实体的 unique_id 错误"
       }
     },
     "titleLang": {
