@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.14.7",
     "news": {
+      "1.14.8": {
+        "en": "Add general, offline and online notifications to the discovered devices\nAdd general notifications to device called namespace of the adapter",
+        "de": "Allgemeine, Offline- und Online-Benachrichtigungen zu den erkannten Geräten hinzufügen\nAllgemeine Benachrichtigungen zum Gerät namens Namespace des Adapters hinzufügen",
+        "ru": "Добавлены общие, офлайн и онлайн уведомления для обнаруженных устройств\nДобавлены общие уведомления к устройству с именем namespace адаптера",
+        "pt": "Adicionar notificações gerais, offline e online aos dispositivos descobertos\nAdicionar notificações gerais ao dispositivo chamado namespace do adaptador",
+        "nl": "Algemene, offline en online meldingen toevoegen aan de gedetecteerde apparaten\nAlgemene meldingen toevoegen aan apparaat genaamd namespace van de adapter",
+        "fr": "Ajouter des notifications générales, hors ligne et en ligne aux périphériques découverts\nAjouter des notifications générales à l'appareil appelé espace de noms de l'adaptateur",
+        "it": "Aggiungere notifiche generali, offline e online ai dispositivi scoperti\nAggiungere notifiche generali al dispositivo chiamato namespace dell'adattatore",
+        "es": "Agregar notificaciones generales, fuera de línea y en línea a los dispositivos descubiertos\nAgregar notificaciones generales al dispositivo llamado namespace del adaptador",
+        "pl": "Dodano ogólne powiadomienia offline i online do wykrytych urządzeń\nDodano ogólne powiadomienia do urządzenia o nazwie namespace adaptera",
+        "uk": "Додано загальні, офлайн та онлайн сповіщення до виявлених пристроїв\nДодано загальні сповіщення до пристрою під назвою namespace адаптера",
+        "zh-cn": "为发现的设备添加常规、离线和在线通知\n为名为适配器命名空间的设备添加常规通知"
+      },
       "1.14.7": {
         "en": "Add folders for target temperature in heating events\nCorrect unit handling and max value count in tab",
         "de": "Ordner für Solltemperatur in Heizungsevents hinzufügen\nKorrekte Einheitenbehandlung und maximale Wertanzahl im Tab",
@@ -358,6 +371,7 @@
     "BridgeType": "off",
     "EnableRefresh": true,
     "RefreshDiscoveryCronJob": "0 * * * *",
+    "BridgenotificationActivation": "notification",
     "DeviceIdentifiers": [
       {
         "DeviceIdentifier": "usedApplicationName"

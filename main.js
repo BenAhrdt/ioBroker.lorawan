@@ -383,9 +383,11 @@ class Lorawan extends utils.Adapter {
     onUnload(callback) {
         try {
             // Ausgabe der Nachrichtg, dass der Adapter beendet wird
-            const devicename = `${this.namespace}${this.bridge?.GeneralNotificationId}`;
-            if (this.bridge?.Notifications[devicename]) {
-                this.bridge?.publishId(devicename, `Connection to Bridge will be closed.`);
+            if (this.config.BridgenotificationActivation === 'notification' && this.bridge) {
+                const devicename = `${this.bridge?.Words.notification}${this.bridge?.GeneralId}`;
+                if (this.bridge?.Notifications[devicename]) {
+                    this.bridge?.publishId(devicename, `Connection to Bridge will be closed.`);
+                }
             }
 
             // clear timeout (for simulation)

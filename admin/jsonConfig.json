@@ -784,6 +784,22 @@
                     "lg": 2,
                     "xl": 2
                   },
+				"BridgenotificationActivation":{
+					"type": "select",
+					"label": "notificationActivation",
+					"hidden": "data.BridgeType === 'off'",
+					"tooltip": "notificationActivationTooltip",
+					"options": [
+						{"label":"notification","value":"notification"},
+						{"label":"no notification","value":"no notification"}
+					],
+					"default": "notification",
+					"xs": 12,
+					"sm": 3,
+					"md": 3,
+					"lg": 3,
+					"xl": 3
+				},
 				"_BridgeServersettingsHeader": {
 					"newLine": true,
 					"type": "header",

@@ -24,6 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+* (BenAhrdt) Add general, offline and online Notifications to the discovered devices
 * (BenAhrdt) Add general Notifications to device called namespace of the Adapter
 
 ### 1.14.7 (2025-09-12)
