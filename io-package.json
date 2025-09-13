@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.14.8",
     "news": {
+      "1.14.9": {
+        "en": "Notify new device discovered until adapter is running",
+        "de": "Benachrichtige über neu entdecktes Gerät, solange der Adapter läuft",
+        "ru": "Уведомление о новом обнаруженном устройстве до тех пор, пока работает адаптер",
+        "pt": "Notificar novo dispositivo descoberto enquanto o adaptador estiver em execução",
+        "nl": "Meld nieuw apparaat ontdekt zolang de adapter actief is",
+        "fr": "Notifier un nouvel appareil découvert tant que l'adaptateur est en cours d'exécution",
+        "it": "Notifica nuovo dispositivo rilevato finché l'adattatore è in esecuzione",
+        "es": "Notificar nuevo dispositivo descubierto mientras el adaptador esté en ejecución",
+        "pl": "Powiadamiaj o nowym wykrytym urządzeniu, dopóki adapter działa",
+        "uk": "Повідомляти про новий виявлений пристрій, доки працює адаптер",
+        "zh-cn": "在适配器运行期间通知发现的新设备"
+      },
       "1.14.8": {
         "en": "Add general, offline and online notifications to the discovered devices\nAdd general notifications to device called namespace of the adapter",
         "de": "Allgemeine, Offline- und Online-Benachrichtigungen zu den erkannten Geräten hinzufügen\nAllgemeine Benachrichtigungen zum Gerät namens Namespace des Adapters hinzufügen",

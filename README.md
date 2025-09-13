@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) notifi new device discovered till Adapter running
+
 ### 1.14.8 (2025-09-13)
 * (BenAhrdt) Add general, offline and online Notifications to the discovered devices
 * (BenAhrdt) Add general Notifications to device called namespace of the Adapter
