@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Add general Notifications to device called namespace of the Adapter
+
 ### 1.14.7 (2025-09-12)
 * (BenAhrdt) Add Folders for Target Temperature in Heating Events
 * (BenAhrdt) correct unit handling & Max valueCount in Tab
