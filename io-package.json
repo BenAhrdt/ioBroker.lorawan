@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.15.0",
+    "version": "1.15.1",
     "news": {
       "1.15.1": {
         "en": "Send trigger with retain = false",
@@ -93,19 +93,6 @@
         "pl": "Zapisz ostatnie 10 opublikowanych i subskrybowanych wartości",
         "uk": "Зберігати останні 10 опублікованих і підписаних значень",
         "zh-cn": "保存最近 10 个已发布和已订阅的值"
-      },
-      "1.14.4": {
-        "en": "Return the virtual mode",
-        "de": "Rückkehr des Virtual Mode",
-        "ru": "Возврат виртуального режима",
-        "pt": "Retornar o modo virtual",
-        "nl": "Herstel de virtuele modus",
-        "fr": "Rétablir le mode virtuel",
-        "it": "Ripristino della modalità virtuale",
-        "es": "Restaurar el modo virtual",
-        "pl": "Przywrócenie trybu wirtualnego",
-        "uk": "Повернення віртуального режиму",
-        "zh-cn": "恢复虚拟模式"
       }
     },
     "titleLang": {
