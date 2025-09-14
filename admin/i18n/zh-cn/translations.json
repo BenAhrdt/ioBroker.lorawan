@@ -142,5 +142,21 @@
     "NoBridgeConfiged": "没有桥梁配置！！！",
     "EnableRefresh": "循环发现",
     "EnableRefreshTooltip": "使能够在循环克隆中发现",
-    "* Not Present (Virtual)": "*不存在（虚拟）"
+    "* Not Present (Virtual)": "*不存在（虚拟）",
+    "BridgenotificationActivation": "通知激活",
+    "BridgenotificationTooltip": "激活或停用通知",
+    "BridgeDevicenotificationActivation": "设备通知激活",
+    "BridgeDevicenotificationTooltip": "激活或停用设备的通知",
+    "all notifications": "所有通知",
+    "bridge connection": "连接通知",
+    "new discover": "发现通知",
+    "device online offline": "设备状态通知",
+    "no notifications": "非专用",
+    "LoRaWAN Network Service is connected": "Lorawan网络服务已连接",
+    "LoRaWAN Network Service is disconnected": "Lorawan网络服务已断开连接",
+    "LoRaWAN device is back online": "Lorawan设备返回在线",
+    "LoRaWAN device is offline": "Lorawan设备离线",
+    "connection to bridge is activ": "连接到桥梁是激活",
+    "connection to bridge will be closed": "连接到桥梁将关闭",
+    "new device discovered": "发现了新设备"
 }

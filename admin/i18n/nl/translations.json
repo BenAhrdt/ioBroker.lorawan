@@ -142,5 +142,21 @@
     "NoBridgeConfiged": "Er is geen brug geconfigureerd !!!",
     "EnableRefresh": "cyclische ontdekking",
     "EnableRefreshTooltip": "in staat te stellen te ontdekken in een cyclische cron",
-    "* Not Present (Virtual)": "* Niet aanwezig (virtueel)"
+    "* Not Present (Virtual)": "* Niet aanwezig (virtueel)",
+    "BridgenotificationActivation": "Activering van melding",
+    "BridgenotificationTooltip": "de melding activeren of deactiveren",
+    "BridgeDevicenotificationActivation": "Activering van apparaatmeldingen",
+    "BridgeDevicenotificationTooltip": "de melding voor apparaten activeren of deactiveren",
+    "all notifications": "Alle meldingen",
+    "bridge connection": "Verbindingsmeldingen",
+    "new discover": "Ontdek meldingen",
+    "device online offline": "Apparaatstatusmeldingen",
+    "no notifications": "niet -outificaties",
+    "LoRaWAN Network Service is connected": "Lorawan Network Service is verbonden",
+    "LoRaWAN Network Service is disconnected": "Lorawan Network Service is losgekoppeld",
+    "LoRaWAN device is back online": "Lorawan -apparaat is weer online",
+    "LoRaWAN device is offline": "Lorawan -apparaat is offline",
+    "connection to bridge is activ": "Verbinding met Bridge is activ",
+    "connection to bridge will be closed": "Verbinding met Bridge wordt gesloten",
+    "new device discovered": "Nieuw apparaat ontdekt"
 }

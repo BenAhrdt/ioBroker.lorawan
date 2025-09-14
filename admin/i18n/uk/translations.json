@@ -142,5 +142,21 @@
     "NoBridgeConfiged": "Немає мосту конфігурації !!!",
     "EnableRefresh": "Циклічне відкриття",
     "EnableRefreshTooltip": "Дозвольте відкрити в циклічному кронті",
-    "* Not Present (Virtual)": "* Немає (віртуальний)"
+    "* Not Present (Virtual)": "* Немає (віртуальний)",
+    "BridgenotificationActivation": "Активація сповіщень",
+    "BridgenotificationTooltip": "активуйте або деактивувати повідомлення",
+    "BridgeDevicenotificationActivation": "Активація сповіщень пристрою",
+    "BridgeDevicenotificationTooltip": "Активуйте або деактивувати сповіщення про пристрої",
+    "all notifications": "Всі сповіщення",
+    "bridge connection": "Повідомлення про з'єднання",
+    "new discover": "Відкрийте сповіщення",
+    "device online offline": "Повідомлення про стан пристрою",
+    "no notifications": "неофіції",
+    "LoRaWAN Network Service is connected": "Служба мережі Lorawan підключена",
+    "LoRaWAN Network Service is disconnected": "Служба мережі Lorawan відключена",
+    "LoRaWAN device is back online": "Пристрій Lorawan повернувся в Інтернет",
+    "LoRaWAN device is offline": "Пристрій Lorawan офлайн",
+    "connection to bridge is activ": "Підключення до мосту активується",
+    "connection to bridge will be closed": "Підключення до мосту буде закрито",
+    "new device discovered": "Виявлений новий пристрій"
 }

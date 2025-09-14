@@ -142,5 +142,21 @@
     "NoBridgeConfiged": "¡No hay puente configurado!",
     "EnableRefresh": "descubrimiento cíclico",
     "EnableRefreshTooltip": "Habilitar descubrir en un cron cíclico",
-    "* Not Present (Virtual)": "* No presente (virtual)"
+    "* Not Present (Virtual)": "* No presente (virtual)",
+    "BridgenotificationActivation": "activación de notificación",
+    "BridgenotificationTooltip": "activar o desactivar la notificación",
+    "BridgeDevicenotificationActivation": "activación de notificación del dispositivo",
+    "BridgeDevicenotificationTooltip": "activar o desactivar la notificación de dispositivos",
+    "all notifications": "Todas las notificaciones",
+    "bridge connection": "Notificaciones de conexión",
+    "new discover": "Descubrir notificaciones",
+    "device online offline": "Notificaciones de estado del dispositivo",
+    "no notifications": "sintificaciones",
+    "LoRaWAN Network Service is connected": "El servicio de red de Lorawan está conectado",
+    "LoRaWAN Network Service is disconnected": "El servicio de la red Lorawan está desconectado",
+    "LoRaWAN device is back online": "El dispositivo Lorawan está de vuelta en línea",
+    "LoRaWAN device is offline": "El dispositivo Lorawan está fuera de línea",
+    "connection to bridge is activ": "La conexión al puente es activado",
+    "connection to bridge will be closed": "La conexión al puente se cerrará",
+    "new device discovered": "nuevo dispositivo descubierto"
 }

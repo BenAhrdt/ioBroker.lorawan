@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.14.9",
     "news": {
+      "1.14.10": {
+        "en": "Bring notification for bridge in admin\nNotify different triggers to bridge",
+        "de": "Benachrichtigung für Bridge im Admin hinzufügen\nUnterschiedliche Trigger an Bridge melden",
+        "ru": "Добавить уведомление для моста в админке\nУведомление о различных триггерах на мост",
+        "pt": "Trazer notificação para a bridge no admin\nNotificar diferentes gatilhos para a bridge",
+        "nl": "Breng melding voor bridge in admin\nMeld verschillende triggers aan bridge",
+        "fr": "Ajouter une notification pour la bridge dans l'admin\nNotifier différents déclencheurs à la bridge",
+        "it": "Porta notifica per bridge in admin\nNotifica diversi trigger al bridge",
+        "es": "Añadir notificación para bridge en el admin\nNotificar diferentes disparadores al bridge",
+        "pl": "Dodaj powiadomienie dla bridge w adminie\nPowiadamiaj o różnych wyzwalaczach do bridge",
+        "uk": "Додати сповіщення для bridge в адмінці\nПовідомляти різні тригери до bridge",
+        "zh-cn": "在管理中为桥接添加通知\n通知不同的触发器到桥接"
+      },
       "1.14.9": {
         "en": "Notify new device discovered until adapter is running",
         "de": "Benachrichtige über neu entdecktes Gerät, solange der Adapter läuft",
@@ -199,10 +212,74 @@
       },
       "categories": [
         {
+          "category": "Bridge connected",
+          "name": {
+            "en": "The desired Bridge was connected",
+            "de": "Die gewünschte Bridge wurde verbunden",
+            "ru": "Желаемый мост был подключен",
+            "pt": "A ponte desejada foi conectada",
+            "nl": "De gewenste Bridge was aangesloten",
+            "fr": "Le pont souhaité a été connecté",
+            "it": "Il Bridge desiderato è stato collegato",
+            "es": "El puente deseado estaba conectado",
+            "pl": "Połączono żądaną Bridge",
+            "uk": "З'єднано бажаний міст",
+            "zh-cn": "所期望的网桥已连接"
+          },
+          "severity": "info",
+          "description": {
+            "en": "The connection to the Bridge changed from disconnected to connected",
+            "de": "Die Verbindung zur Bridge hat sich von getrennt zu verbunden geändert",
+            "ru": "Соединение с мостом изменилось от отключенного к подключенному",
+            "pt": "A conexão com a ponte mudou de desconectada para conectada",
+            "nl": "De verbinding met de Bridge veranderde van losgekoppeld naar verbonden",
+            "fr": "La connexion au pont est passée de déconnectée à connectée",
+            "it": "Il collegamento alla Bridge è cambiato da disconnesso a collegato",
+            "es": "La conexión con el puente cambió de desconectado a conectado",
+            "pl": "Połączenie z Bridge zmieniło się z odłączonego na podłączony",
+            "uk": "З'єднання до мосту змінено з відключеного на підключений",
+            "zh-cn": "连接网桥从断开变为已连接"
+          },
+          "regex": [],
+          "limit": 1
+        },
+        {
+          "category": "Bridge disconnected",
+          "name": {
+            "en": "The desired Bridge was disconnected",
+            "de": "Die gewünschte Bridge ist nicht mehr erreichbar",
+            "ru": "Желаемый мост был отключен",
+            "pt": "A ponte desejada foi desligada",
+            "nl": "De gewenste Bridge werd afgesloten",
+            "fr": "Le pont souhaité a été déconnecté",
+            "it": "Il Bridge desiderato è stato disconnesso",
+            "es": "El puente deseado fue desconectado",
+            "pl": "Wybrana Bridge została odłączona",
+            "uk": "Відключено бажаний міст",
+            "zh-cn": "所期望的网桥已断开"
+          },
+          "severity": "alert",
+          "description": {
+            "en": "The connection to the Bridge changed from connected to disconnected",
+            "de": "Die Verbindung zur Bridge hat sich von verbunden zu getrennt geändert",
+            "ru": "Соединение с мостом изменилось от подключенного к отключенному",
+            "pt": "A conexão com a ponte mudou de conectada para desconectada",
+            "nl": "De verbinding met de Bridge veranderde van verbonden naar losgekoppeld",
+            "fr": "La connexion au pont est passée de connectée à déconnectée",
+            "it": "La connessione alla Bridge è cambiata da collegata a disconnessa",
+            "es": "La conexión con el puente cambió de conectado a desconectado",
+            "pl": "Połączenie z Bridge zmieniło się z podłączonego na odłączony",
+            "uk": "З'єднання до мосту змінено з підключеного до відключеного",
+            "zh-cn": "连接网桥从已连接变为断开"
+          },
+          "regex": [],
+          "limit": 1
+        },
+        {
           "category": "LoRaWAN Network Service connected",
           "name": {
             "en": "The desired LoRaWAN Network service was connected",
-            "de": "Der gewünschte LoRaWAN Network Service wurde verbunden",
+            "de": "Der LoRaWAN Netzwerk Service wurde verbunden",
             "ru": "Желаемый сервис LoRaWAN Network был подключен",
             "pt": "O serviço de rede LoRaWAN desejado foi conectado",
             "nl": "De gewenste LoRaWAN Network service was aangesloten",
@@ -234,7 +311,7 @@
           "category": "LoRaWAN Network Service disconnected",
           "name": {
             "en": "The desired LoRaWAN Network service was disconnected",
-            "de": "Der gewünschte LoRaWAN Network Service ist nicht mehr erreichbar",
+            "de": "Der LoRaWAN Netzwerk Service ist nicht mehr erreichbar",
             "ru": "Желаемый сервис LoRaWAN Network был отключен",
             "pt": "O serviço de rede LoRaWAN desejado foi desligado",
             "nl": "De gewenste LoRaWAN Network service werd afgesloten",
@@ -344,7 +421,7 @@
     "password": "",
     "ssl": true,
     "origin": "ttn",
-    "notificationActivation": "notification",
+    "notificationActivation": "allNotifications, brdigeConnection, newDiscover, deviceState",
     "downlinkConfig": [],
     "customDecodedJsonActive": false,
     "customConfigurationJsonActive": false,
@@ -358,7 +435,8 @@
     "BridgeType": "off",
     "EnableRefresh": true,
     "RefreshDiscoveryCronJob": "0 * * * *",
-    "BridgenotificationActivation": "notification",
+    "BridgenotificationActivation": "allNotifications, brdigeConnection, newDiscover, deviceState",
+    "BridgeDevicenotificationActivation": "allNotifications, brdigeConnection, newDiscover, deviceState",
     "DeviceIdentifiers": [
       {
         "DeviceIdentifier": "usedApplicationName"

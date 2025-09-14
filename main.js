@@ -380,16 +380,16 @@ class Lorawan extends utils.Adapter {
      *
      * @param callback function wich is called after shutdown adapter
      */
-    onUnload(callback) {
+    async onUnload(callback) {
         try {
             // Ausgabe der Nachrichtg, dass der Adapter beendet wird
-            if (this.config.BridgenotificationActivation === 'notification' && this.bridge) {
-                const devicename = `${this.bridge?.Words.notification}${this.bridge?.GeneralId}`;
-                if (this.bridge?.Notifications[devicename]) {
-                    this.bridge?.publishId(devicename, `Connection to Bridge will be closed.`);
-                }
-            }
-
+            const notificationId = `${this.bridge?.Words.notification}${this.bridge?.GeneralId}`;
+            await this.bridge?.publishNotification(
+                notificationId,
+                this.i18nTranslation['connection to bridge will be closed'],
+                this.bridge?.Notificationlevel.bridgeConnection,
+                false,
+            );
             // clear timeout (for simulation)
             if (this.simulation.timeout) {
                 this.clearTimeout(this.simulation.timeout);
@@ -401,6 +401,9 @@ class Lorawan extends utils.Adapter {
 
             // Clear Schedules in Bridge
             this.bridge?.clearAllSchedules();
+
+            // Destroy Bridged mqtt client
+            this.bridge?.bridgeMqttClient?.destroy();
 
             // Destroy mqtt client
             this.mqttClient?.destroy();

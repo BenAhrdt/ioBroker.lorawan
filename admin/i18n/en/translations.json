@@ -142,5 +142,21 @@
 	"NoBridgeConfiged": "There is no bridge configed !!!",
 	"EnableRefresh": "cyclic Discover",
 	"EnableRefreshTooltip": "enable to discover in a cyclic cron",
-	"* Not Present (Virtual)": "* Not Present (Virtual)"
+	"* Not Present (Virtual)": "* Not Present (Virtual)",
+	"BridgenotificationActivation": "notification activation",
+	"BridgenotificationTooltip": "activate or deactivate the notification",
+	"BridgeDevicenotificationActivation": "device notification activation",
+	"BridgeDevicenotificationTooltip": "activate or deactivate the notification for devices",
+	"all notifications": "all notifications",
+	"bridge connection": "connection notifications",
+	"new discover": "discover notifications",
+	"device online offline": "device state notifications",
+	"no notifications": "nonotifications",
+	"LoRaWAN Network Service is connected": "LoRaWAN Network Service is connected",
+	"LoRaWAN Network Service is disconnected": "LoRaWAN Network Service is disconnected",
+	"LoRaWAN device is back online": "The following LoRaWAN device is back online",
+	"LoRaWAN device is offline": "The following LoRaWAN device is offline",
+	"connection to bridge is activ": "connection to bridge is activ",
+	"connection to bridge will be closed": "connection to bridge will be closed",
+	"new device discovered": "new device discovered"
 }
