@@ -3,7 +3,7 @@
     "name": "lorawan",
     "version": "1.14.9",
     "news": {
-      "1.14.10": {
+      "1.15.0": {
         "en": "Bring notification for bridge in admin\nNotify different triggers to bridge",
         "de": "Benachrichtigung für Bridge im Admin hinzufügen\nUnterschiedliche Trigger an Bridge melden",
         "ru": "Добавить уведомление для моста в админке\nУведомление о различных триггерах на мост",
