@@ -3,6 +3,19 @@
     "name": "lorawan",
     "version": "1.15.0",
     "news": {
+      "1.15.1": {
+        "en": "Send trigger with retain = false",
+        "de": "Trigger mit retain = false senden",
+        "ru": "Отправка триггера с retain = false",
+        "pt": "Enviar trigger com retain = false",
+        "nl": "Verzend trigger met retain = false",
+        "fr": "Envoyer le trigger avec retain = false",
+        "it": "Invia trigger con retain = false",
+        "es": "Enviar trigger con retain = false",
+        "pl": "Wyślij trigger z retain = false",
+        "uk": "Надіслати тригер з retain = false",
+        "zh-cn": "发送带有 retain = false 的触发器"
+      },
       "1.15.0": {
         "en": "Bring notification for bridge in admin\nNotify different triggers to bridge",
         "de": "Benachrichtigung für Bridge im Admin hinzufügen\nUnterschiedliche Trigger an Bridge melden",
