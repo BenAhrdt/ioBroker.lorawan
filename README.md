@@ -23,6 +23,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Bugfix send state topics retain
+* (BenAhrdt) Bugfix with stateending
+
 ### 1.15.3 (2025-09-15)
 * (BenAhrdt) dont translate the selected state in bridge config
 
