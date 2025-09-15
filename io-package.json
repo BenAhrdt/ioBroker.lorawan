@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.15.6",
+    "version": "1.15.7",
     "news": {
+      "1.15.7": {
+        "en": "solve publishing intern",
+        "de": "Löse das Problem mit der Veröffentlichung des Praktikanten.",
+        "ru": "решить вопрос с публикацией стажера",
+        "pt": "Resolver publicação de estagiário",
+        "nl": "Oplossen van het publiceren van stages",
+        "fr": "résoudre le stage en édition",
+        "it": "risolto l'internato che pubblica",
+        "es": "Resolver publicación de interno.",
+        "pl": "rozwiązać problem stażysty ds. publikacji",
+        "uk": "вирішення питань практиканта з розміщення текстів",
+        "zh-cn": "解决发布实习生"
+      },
       "1.15.6": {
         "en": "improve handling of state device in case of subfolders",
         "de": "Verbessere die Handhabung des Gerätestatus bei Unterordnern.",
@@ -80,19 +93,6 @@
         "pl": "Wyślij trigger z retain = false",
         "uk": "Надіслати тригер з retain = false",
         "zh-cn": "发送带有 retain = false 的触发器"
-      },
-      "1.15.0": {
-        "en": "Bring notification for bridge in admin\nNotify different triggers to bridge",
-        "de": "Benachrichtigung für Bridge im Admin hinzufügen\nUnterschiedliche Trigger an Bridge melden",
-        "ru": "Добавить уведомление для моста в админке\nУведомление о различных триггерах на мост",
-        "pt": "Trazer notificação para a bridge no admin\nNotificar diferentes gatilhos para a bridge",
-        "nl": "Breng melding voor bridge in admin\nMeld verschillende triggers aan bridge",
-        "fr": "Ajouter une notification pour la bridge dans l'admin\nNotifier différents déclencheurs à la bridge",
-        "it": "Porta notifica per bridge in admin\nNotifica diversi trigger al bridge",
-        "es": "Añadir notificación para bridge en el admin\nNotificar diferentes disparadores al bridge",
-        "pl": "Dodaj powiadomienie dla bridge w adminie\nPowiadamiaj o różnych wyzwalaczach do bridge",
-        "uk": "Додати сповіщення для bridge в адмінці\nПовідомляти різні тригери до bridge",
-        "zh-cn": "在管理中为桥接添加通知\n通知不同的触发器到桥接"
       }
     },
     "titleLang": {
