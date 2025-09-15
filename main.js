@@ -386,7 +386,7 @@ class Lorawan extends utils.Adapter {
             const notificationId = `${this.bridge?.Words.notification}${this.bridge?.GeneralId}`;
             await this.bridge?.publishNotification(
                 notificationId,
-                this.i18nTranslation['connection to bridge will be closed'],
+                this.i18nTranslation['Adapter will be stoped'],
                 this.bridge?.Notificationlevel.bridgeConnection,
                 false,
             );

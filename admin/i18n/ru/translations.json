@@ -33,7 +33,7 @@
     "confirmed": "подтвержденный",
     "confirmedTooltip": "Если вы хотите отправить загрузку с подтвержденным сообщением, включите эту опцию",
     "front": "фронт",
-    "frontTooltip": "Вставьте переднюю ценность, WICH будет установлена ​​на нисходящую линейку (значение должно быть в строке HEX - Exept Type)",
+    "frontTooltip": "Вставьте переднюю ценность, Wich будет установлена ​​на нисходящую линию (значение должно быть в строке Hex - Exept Type)",
     "end": "конечное значение",
     "endTooltip": "Вставьте конечную стоимость, WICH будет установлена ​​на нисходящую линию (значение должно быть в строке HEX - Exept Type)",
     "lengthInByte": "продолжительность состояния (байт)",
@@ -154,9 +154,10 @@
     "no notifications": "Нетификации",
     "LoRaWAN Network Service is connected": "СЕВЕТЫЙ СЕВЕТ ЛОРАВАН подключен",
     "LoRaWAN Network Service is disconnected": "Сетевая служба Lorawan отключена",
-    "LoRaWAN device is back online": "Устройство Lorawan возвращается в Интернет",
-    "LoRaWAN device is offline": "Устройство Lorawan в автономном режиме",
+    "LoRaWAN device is back online": "Следующее устройство Lorawan возвращается в Интернет",
+    "LoRaWAN device is offline": "Следующее устройство Lorawan в автономном режиме",
     "connection to bridge is activ": "Соединение с мостом является активацией",
-    "connection to bridge will be closed": "Соединение с мостом будет закрыто",
-    "new device discovered": "Новое устройство обнаружено"
+    "connection to bridge is closed": "Соединение с мостом будет закрыто",
+    "new device discovered": "Новое устройство обнаружено",
+    "Adapter will be stoped": "Адаптер моста Лораван будет остановлен"
 }

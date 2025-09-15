@@ -154,9 +154,10 @@
     "no notifications": "niet -outificaties",
     "LoRaWAN Network Service is connected": "Lorawan Network Service is verbonden",
     "LoRaWAN Network Service is disconnected": "Lorawan Network Service is losgekoppeld",
-    "LoRaWAN device is back online": "Lorawan -apparaat is weer online",
-    "LoRaWAN device is offline": "Lorawan -apparaat is offline",
+    "LoRaWAN device is back online": "Het volgende Lorawan -apparaat is weer online",
+    "LoRaWAN device is offline": "Het volgende Lorawan -apparaat is offline",
     "connection to bridge is activ": "Verbinding met Bridge is activ",
-    "connection to bridge will be closed": "Verbinding met Bridge wordt gesloten",
-    "new device discovered": "Nieuw apparaat ontdekt"
+    "connection to bridge is closed": "Verbinding met Bridge wordt gesloten",
+    "new device discovered": "Nieuw apparaat ontdekt",
+    "Adapter will be stoped": "De Lorawan Bridge -adapter wordt gestopt"
 }

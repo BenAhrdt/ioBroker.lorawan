@@ -33,7 +33,7 @@
     "confirmed": "confirmé",
     "confirmedTooltip": "Si vous aimez envoyer le téléchargement avec le message confirmé, activez cette option",
     "front": "valeur avant",
-    "frontTooltip": "Insérer la valeur avant, qui sera réglée sur la liaison descendante (la valeur doit être en chaîne de type hexadécimal)",
+    "frontTooltip": "Insérez la valeur avant, qui sera réglée sur la liaison descendante (la valeur doit être en chaîne de type hexadécimal)",
     "end": "valeur finale",
     "endTooltip": "Insérer la valeur finale, qui sera définie sur la liaison descendante (la valeur doit être en chaîne de type hexadécimal)",
     "lengthInByte": "longueur d'état (octet)",
@@ -77,7 +77,7 @@
     "unused": "inutilisé",
     "downlinkConfigHeader": "Ajoutez les liaisons descendantes de votre appareil spécifiques",
     "customConfig": "\"Custom\" -konfiguation",
-    "customConfigHeader": "Ajoutez un objet personnalisé spécifique à chaque état décodé",
+    "customConfigHeader": "Ajouter un objet personnalisé spécifique à chaque état décodé",
     "customJson": "Objekt für den \"Custom\" -Bereich im \"commun\" objekt",
     "customJsonTooltip": "Fügen Sie Ein objekt Hinzu, Welches en commun. Custom Geschrieben Wird.",
     "customJsonInformation": "Avec cette fonction, il est possible d'ajouter vos propres entrées personnalisées aux états décodés. Entrez simplement le contenu JSON souhaité en fonction active.",
@@ -154,9 +154,10 @@
     "no notifications": "non-otifications",
     "LoRaWAN Network Service is connected": "Le service réseau Lorawan est connecté",
     "LoRaWAN Network Service is disconnected": "Le service réseau Lorawan est déconnecté",
-    "LoRaWAN device is back online": "L'appareil Lorawan est de retour en ligne",
-    "LoRaWAN device is offline": "Le dispositif Lorawan est hors ligne",
+    "LoRaWAN device is back online": "L'appareil Lorawan suivant est de retour en ligne",
+    "LoRaWAN device is offline": "Le dispositif Lorawan suivant est hors ligne",
     "connection to bridge is activ": "La connexion au pont est activ",
-    "connection to bridge will be closed": "La connexion au pont sera fermée",
-    "new device discovered": "Nouvel appareil découvert"
+    "connection to bridge is closed": "La connexion au pont sera fermée",
+    "new device discovered": "Nouvel appareil découvert",
+    "Adapter will be stoped": "L'adaptateur de pont Lorawan sera arrêté"
 }

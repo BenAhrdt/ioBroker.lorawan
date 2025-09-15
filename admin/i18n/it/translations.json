@@ -154,9 +154,10 @@
     "no notifications": "nonotificazioni",
     "LoRaWAN Network Service is connected": "Il servizio di rete Lorawan è connesso",
     "LoRaWAN Network Service is disconnected": "Il servizio di rete Lorawan è disconnesso",
-    "LoRaWAN device is back online": "Il dispositivo Lorawan è tornato online",
-    "LoRaWAN device is offline": "Il dispositivo Lorawan è offline",
+    "LoRaWAN device is back online": "Il seguente dispositivo Lorawan è tornato online",
+    "LoRaWAN device is offline": "Il seguente dispositivo Lorawan è offline",
     "connection to bridge is activ": "La connessione a bridge è attiva",
-    "connection to bridge will be closed": "La connessione al ponte sarà chiusa",
-    "new device discovered": "Nuovo dispositivo scoperto"
+    "connection to bridge is closed": "La connessione al ponte sarà chiusa",
+    "new device discovered": "Nuovo dispositivo scoperto",
+    "Adapter will be stoped": "L'adattatore del ponte Lorawan sarà fermato"
 }

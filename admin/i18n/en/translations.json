@@ -157,6 +157,7 @@
 	"LoRaWAN device is back online": "The following LoRaWAN device is back online",
 	"LoRaWAN device is offline": "The following LoRaWAN device is offline",
 	"connection to bridge is activ": "connection to bridge is activ",
-	"connection to bridge will be closed": "connection to bridge will be closed",
-	"new device discovered": "new device discovered"
+	"connection to bridge is closed": "connection to bridge will be closed",
+	"new device discovered": "new device discovered",
+	"Adapter will be stoped": "The LoRaWAN Bridge Adapter will be stoped"
 }

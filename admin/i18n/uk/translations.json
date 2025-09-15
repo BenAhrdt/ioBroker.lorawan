@@ -154,9 +154,10 @@
     "no notifications": "неофіції",
     "LoRaWAN Network Service is connected": "Служба мережі Lorawan підключена",
     "LoRaWAN Network Service is disconnected": "Служба мережі Lorawan відключена",
-    "LoRaWAN device is back online": "Пристрій Lorawan повернувся в Інтернет",
-    "LoRaWAN device is offline": "Пристрій Lorawan офлайн",
+    "LoRaWAN device is back online": "Наступний пристрій Lorawan повернувся в Інтернет",
+    "LoRaWAN device is offline": "Наступний пристрій Lorawan є в режимі офлайн",
     "connection to bridge is activ": "Підключення до мосту активується",
-    "connection to bridge will be closed": "Підключення до мосту буде закрито",
-    "new device discovered": "Виявлений новий пристрій"
+    "connection to bridge is closed": "Підключення до мосту буде закрито",
+    "new device discovered": "Виявлений новий пристрій",
+    "Adapter will be stoped": "Адаптер мосту Лоравана буде зупинено"
 }

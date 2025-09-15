@@ -154,9 +154,10 @@
     "no notifications": "非专用",
     "LoRaWAN Network Service is connected": "Lorawan网络服务已连接",
     "LoRaWAN Network Service is disconnected": "Lorawan网络服务已断开连接",
-    "LoRaWAN device is back online": "Lorawan设备返回在线",
-    "LoRaWAN device is offline": "Lorawan设备离线",
+    "LoRaWAN device is back online": "以下Lorawan设备返回在线",
+    "LoRaWAN device is offline": "以下Lorawan设备离线",
     "connection to bridge is activ": "连接到桥梁是激活",
-    "connection to bridge will be closed": "连接到桥梁将关闭",
-    "new device discovered": "发现了新设备"
+    "connection to bridge is closed": "连接到桥梁将关闭",
+    "new device discovered": "发现了新设备",
+    "Adapter will be stoped": "Lorawan桥适配器将停止"
 }
