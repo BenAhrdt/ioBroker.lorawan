@@ -458,7 +458,8 @@ class Lorawan extends utils.Adapter {
                             try {
                                 if (JSON.parse(state.val)) {
                                     await this.sendDownlink(downlinkTopic, state.val, changeInfo);
-                                    this.setState(id, state.val, true);
+                                    await this.bridge?.publishId(await this.removeNamespace(id), state.val, {});
+                                    await this.setState(id, state.val, true);
                                 }
                             } catch (error) {
                                 this.log.warn(`Cant send invalid downlinks. Error: ${error}`);
@@ -508,7 +509,8 @@ class Lorawan extends utils.Adapter {
                                     }
                                 }
                             }
-                            this.setState(id, state.val, true);
+                            await this.bridge?.publishId(await this.removeNamespace(id), state.val, {});
+                            await this.setState(id, state.val, true);
                         } else {
                             const downlinkTopic = this.downlinkConfighandler?.getDownlinkTopic(changeInfo, suffix);
                             const downlinkParameter = this.downlinkConfighandler?.getDownlinkParameter(changeInfo, {});
@@ -532,7 +534,8 @@ class Lorawan extends utils.Adapter {
                                         await this.sendDownlink(downlinkTopic, JSON.stringify(downlink), changeInfo);
                                     }
                                 }
-                                this.setState(id, state.val, true);
+                                await this.bridge?.publishId(await this.removeNamespace(id), state.val, {});
+                                await this.setState(id, state.val, true);
                             }
                         }
                     } else if (id.indexOf('.configuration.') !== -1) {
@@ -556,10 +559,8 @@ class Lorawan extends utils.Adapter {
                                 }
                             }
                         }
-                        this.setState(id, state.val, true);
+                        await this.setState(id, state.val, true);
                     }
-                } else {
-                    await this.bridge?.publishId(await this.removeNamespace(id), state.val, {});
                 }
             } else {
                 // The state was deleted
