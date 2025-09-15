@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.15.4",
+    "version": "1.15.5",
     "news": {
+      "1.15.5": {
+        "en": "Bugfix logging removed",
+        "de": "Fehlerbehebung beim Protokollieren entfernt",
+        "ru": "Исправлена ошибка с удалением журнала.",
+        "pt": "Correção de bug: log removido",
+        "nl": "Bugfix logging verwijderd",
+        "fr": "Correctif de bug: suppression du journalisation",
+        "it": "Rimossa la registrazione dei bugfix",
+        "es": "Corregido el registro de errores.",
+        "pl": "Usunięto logowanie błędów",
+        "uk": "Виправлено запис журналів про помилки",
+        "zh-cn": "修复了日志记录问题"
+      },
       "1.15.4": {
         "en": "Bugfix send state topics retain\nBugfix with stateending",
         "de": "Fehlerbehebung für das Beibehalten der Zustandsthemen beim Senden\nFehlerbehebung beim Zustandsende",
@@ -80,19 +93,6 @@
         "pl": "Powiadamiaj o nowym wykrytym urządzeniu, dopóki adapter działa",
         "uk": "Повідомляти про новий виявлений пристрій, доки працює адаптер",
         "zh-cn": "在适配器运行期间通知发现的新设备"
-      },
-      "1.14.8": {
-        "en": "Add general, offline and online notifications to the discovered devices\nAdd general notifications to device called namespace of the adapter",
-        "de": "Allgemeine, Offline- und Online-Benachrichtigungen zu den erkannten Geräten hinzufügen\nAllgemeine Benachrichtigungen zum Gerät namens Namespace des Adapters hinzufügen",
-        "ru": "Добавлены общие, офлайн и онлайн уведомления для обнаруженных устройств\nДобавлены общие уведомления к устройству с именем namespace адаптера",
-        "pt": "Adicionar notificações gerais, offline e online aos dispositivos descobertos\nAdicionar notificações gerais ao dispositivo chamado namespace do adaptador",
-        "nl": "Algemene, offline en online meldingen toevoegen aan de gedetecteerde apparaten\nAlgemene meldingen toevoegen aan apparaat genaamd namespace van de adapter",
-        "fr": "Ajouter des notifications générales, hors ligne et en ligne aux périphériques découverts\nAjouter des notifications générales à l'appareil appelé espace de noms de l'adaptateur",
-        "it": "Aggiungere notifiche generali, offline e online ai dispositivi scoperti\nAggiungere notifiche generali al dispositivo chiamato namespace dell'adattatore",
-        "es": "Agregar notificaciones generales, fuera de línea y en línea a los dispositivos descubiertos\nAgregar notificaciones generales al dispositivo llamado namespace del adaptador",
-        "pl": "Dodano ogólne powiadomienia offline i online do wykrytych urządzeń\nDodano ogólne powiadomienia do urządzenia o nazwie namespace adaptera",
-        "uk": "Додано загальні, офлайн та онлайн сповіщення до виявлених пристроїв\nДодано загальні сповіщення до пристрою під назвою namespace адаптера",
-        "zh-cn": "为发现的设备添加常规、离线和在线通知\n为名为适配器命名空间的设备添加常规通知"
       }
     },
     "titleLang": {
