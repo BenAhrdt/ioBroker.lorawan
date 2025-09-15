@@ -1142,6 +1142,7 @@
 							"default": "No State selected",
 							"jsonData": "{\"application\":\"${data.Application}\",\"device\":\"${data.Device}\",\"folder\":\"${data.Folder}\"}",
 							"command": "getStatesForConfig",
+							"noTranslation": true,
 							"alsoDependsOn":[
                         		"Application",
 								"Device",
@@ -1280,6 +1281,7 @@
 							"default": "No State selected",
 							"jsonData": "{\"application\":\"${data.TargetApplication}\",\"device\":\"${data.TargetDevice}\",\"folder\":\"${data.TargetFolder}\"}",
 							"command": "getStatesForClimateConfig",
+							"noTranslation": true,
 							"alsoDependsOn":[
                         		"TargetApplication",
 								"TargetDevice",
@@ -1352,6 +1354,7 @@
 							"default": "No State selected",
 							"jsonData": "{\"application\":\"${data.ActApplication}\",\"device\":\"${data.ActDevice}\",\"folder\":\"${data.ActFolder}\"}",
 							"command": "getStatesForClimateConfig",
+							"noTranslation": true,
 							"alsoDependsOn":[
                         		"ActApplication",
 								"ActDevice",
@@ -1426,6 +1429,7 @@
 							"default": "No State selected",
 							"jsonData": "{\"application\":\"${data.ModeApplication}\",\"device\":\"${data.ActDevice}\",\"folder\":\"${data.ActFolder}\"}",
 							"command": "getStatesForClimateConfig",
+							"noTranslation": true,
 							"alsoDependsOn":[
                         		"ModeApplication",
 								"ModeDevice",
