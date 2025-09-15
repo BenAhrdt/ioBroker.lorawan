@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.15.2",
+    "version": "1.15.3",
     "news": {
+      "1.15.3": {
+        "en": "dont translate the selected state in bridge config",
+        "de": "Nicht den ausgewählten Status in der Bridge-Konfiguration übersetzen.",
+        "ru": "Не переводите состояние \"selected\" в настройках моста",
+        "pt": "não traduzir o estado selecionado na configuração da ponte",
+        "nl": "'geselecteerde toestand' niet vertalen in de bridge-configuratie.",
+        "fr": "ne pas traduire l'état sélectionné dans la configuration du pont",
+        "it": "non tradurre lo stato selezionato nella configurazione del ponte",
+        "es": "no traducir el estado seleccionado en la configuración del puente",
+        "pl": "nie tłumacz stanu \"selected\" w konfiguracji mostu",
+        "uk": "не перекладайте обраний стан в конфігурації моста",
+        "zh-cn": "不要将“selected state”翻译成桥接配置"
+      },
       "1.15.2": {
         "en": "change wording of notifications\nimport diagnostic and config fpr entity_type\nchange extSernsorTemperature in ExtSernsorTemperature",
         "de": "Änderung der Benachrichtigungen\nDiagnose und konfiguriere entity_type\nÄndern von extSernsorTemperature in ExtSernsorTemperature",
@@ -80,19 +93,6 @@
         "pl": "Dodano foldery dla temperatury docelowej w zdarzeniach grzewczych\nPoprawiono obsługę jednostek i maksymalną liczbę wartości w zakładce",
         "uk": "Додано папки для цільової температури у подіях опалення\nВиправлено обробку одиниць та максимальну кількість значень у вкладці",
         "zh-cn": "在加热事件中添加目标温度文件夹\n修复单位处理和标签中的最大值计数"
-      },
-      "1.14.6": {
-        "en": "More logging in debug mode",
-        "de": "Mehr Logging im Debug-Modus",
-        "ru": "Больше логирования в режиме отладки",
-        "pt": "Mais registros no modo de depuração",
-        "nl": "Meer logging in debugmodus",
-        "fr": "Davantage de journalisation en mode débogage",
-        "it": "Maggior logging in modalità debug",
-        "es": "Más registros en modo depuración",
-        "pl": "Więcej logowania w trybie debugowania",
-        "uk": "Більше журналювання в режимі налагодження",
-        "zh-cn": "调试模式下的更多日志记录"
       }
     },
     "titleLang": {
