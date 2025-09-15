@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.15.5",
+    "version": "1.15.6",
     "news": {
+      "1.15.6": {
+        "en": "improve handling of state device in case of subfolders",
+        "de": "Verbessere die Handhabung des Gerätestatus bei Unterordnern.",
+        "ru": "Улучшено управление устройствами состояний в случае подпапок.",
+        "pt": "Melhorar o tratamento do dispositivo de estado no caso de subpastas",
+        "nl": "Verbeter de verwerking van apparaatstaten in geval van submappen.",
+        "fr": "Améliorer la gestion de l'appareil d'état en cas de sous-dossiers",
+        "it": "Migliorare la gestione del dispositivo di stato nel caso di sottocartelle",
+        "es": "Mejora en el manejo del dispositivo de estado en caso de subcarpetas",
+        "pl": "Poprawiono obsługę urządzenia stanu w przypadku podfolderów.",
+        "uk": "Поліпшено обробку пристрою стану у випадку підпапок.",
+        "zh-cn": "改进对子文件夹中状态设备的处理"
+      },
       "1.15.5": {
         "en": "Bugfix logging removed",
         "de": "Fehlerbehebung beim Protokollieren entfernt",
@@ -80,19 +93,6 @@
         "pl": "Dodaj powiadomienie dla bridge w adminie\nPowiadamiaj o różnych wyzwalaczach do bridge",
         "uk": "Додати сповіщення для bridge в адмінці\nПовідомляти різні тригери до bridge",
         "zh-cn": "在管理中为桥接添加通知\n通知不同的触发器到桥接"
-      },
-      "1.14.9": {
-        "en": "Notify new device discovered until adapter is running",
-        "de": "Benachrichtige über neu entdecktes Gerät, solange der Adapter läuft",
-        "ru": "Уведомление о новом обнаруженном устройстве до тех пор, пока работает адаптер",
-        "pt": "Notificar novo dispositivo descoberto enquanto o adaptador estiver em execução",
-        "nl": "Meld nieuw apparaat ontdekt zolang de adapter actief is",
-        "fr": "Notifier un nouvel appareil découvert tant que l'adaptateur est en cours d'exécution",
-        "it": "Notifica nuovo dispositivo rilevato finché l'adattatore è in esecuzione",
-        "es": "Notificar nuevo dispositivo descubierto mientras el adaptador esté en ejecución",
-        "pl": "Powiadamiaj o nowym wykrytym urządzeniu, dopóki adapter działa",
-        "uk": "Повідомляти про новий виявлений пристрій, доки працює адаптер",
-        "zh-cn": "在适配器运行期间通知发现的新设备"
       }
     },
     "titleLang": {
