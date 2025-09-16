@@ -383,7 +383,7 @@ class Lorawan extends utils.Adapter {
     async onUnload(callback) {
         try {
             // Ausgabe der Nachrichtg, dass der Adapter beendet wird
-            const notificationId = `${this.bridge?.Words.notification}${this.bridge?.GeneralId}`;
+            const notificationId = `${this.namespace}.${this.bridge?.Words.notification}${this.bridge?.GeneralId}`;
             await this.bridge?.publishNotification(
                 notificationId,
                 this.i18nTranslation['Adapter will be stoped'],
