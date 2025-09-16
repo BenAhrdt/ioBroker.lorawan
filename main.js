@@ -448,118 +448,151 @@ class Lorawan extends utils.Adapter {
                     );
                 }
                 if (!state.ack) {
-                    // Check for downlink in id
-                    if (id.indexOf('.downlink.control.') !== -1) {
-                        // get information of the changing state
-                        const changeInfo = await this.getChangeInfo(id, { withBestMatch: true });
-                        const suffix = this.downlinkConfighandler?.getDownlinkTopicSuffix(changeInfo?.changedState);
-                        if (changeInfo?.changedState === 'push' || changeInfo?.changedState === 'replace') {
-                            const downlinkTopic = this.downlinkConfighandler?.getDownlinkTopic(changeInfo, suffix);
-                            try {
-                                if (JSON.parse(state.val)) {
-                                    await this.sendDownlink(downlinkTopic, state.val, changeInfo);
-                                    await this.bridge?.publishId(this.removeNamespace(id), state.val, {});
+                    if (id.startsWith(this.namespace)) {
+                        // Check for downlink in id
+                        if (id.indexOf('.downlink.control.') !== -1) {
+                            // get information of the changing state
+                            const changeInfo = await this.getChangeInfo(id, { withBestMatch: true });
+                            const suffix = this.downlinkConfighandler?.getDownlinkTopicSuffix(changeInfo?.changedState);
+                            if (changeInfo?.changedState === 'push' || changeInfo?.changedState === 'replace') {
+                                const downlinkTopic = this.downlinkConfighandler?.getDownlinkTopic(changeInfo, suffix);
+                                try {
+                                    if (JSON.parse(state.val)) {
+                                        await this.sendDownlink(downlinkTopic, state.val, changeInfo);
+                                        await this.bridge?.publishId(id, state.val, {});
+                                        await this.setState(id, state.val, true);
+                                    }
+                                } catch (error) {
+                                    this.log.warn(`Cant send invalid downlinks. Error: ${error}`);
+                                }
+                            } else if (changeInfo?.changedState === 'CustomSend') {
+                                if (state.val !== '') {
+                                    const downlinkTopic = this.downlinkConfighandler?.getDownlinkTopic(
+                                        changeInfo,
+                                        suffix,
+                                    );
+                                    const downlinkConfig =
+                                        this.downlinkConfighandler?.activeDownlinkConfigs[
+                                            changeInfo.bestMatchForDeviceType
+                                        ];
+                                    const Statevalues = state.val.split(',');
+                                    const StateElements = {
+                                        PayloadInHex: Statevalues[0].toUpperCase(),
+                                        Port: Statevalues[1] ? parseInt(Statevalues[1]) : downlinkConfig.port,
+                                        Confirmed: Statevalues[2]
+                                            ? Statevalues[2] === 'true'
+                                                ? true
+                                                : false
+                                            : downlinkConfig.confirmed,
+                                        Priority: Statevalues[3] ? Statevalues[3] : downlinkConfig.priority,
+                                    };
+                                    // Query for righte type
+                                    this.log.debug('The following values are detected at input of custom send state');
+                                    for (const element of Object.values(StateElements)) {
+                                        this.log.debug(typeof element);
+                                        this.log.debug(element);
+                                    }
+                                    // Write into nextSend
+                                    await this.writeNextSend(changeInfo, StateElements.PayloadInHex);
+                                    if (
+                                        !changeInfo?.bestMatchForDeviceType ||
+                                        this.downlinkConfighandler?.activeDownlinkConfigs[
+                                            changeInfo.bestMatchForDeviceType
+                                        ].sendWithUplink === 'disabled'
+                                    ) {
+                                        const downlink = this.downlinkConfighandler?.getDownlink(
+                                            {
+                                                port: StateElements.Port,
+                                                confirmed: StateElements.Confirmed,
+                                                priority: StateElements.Priority,
+                                            },
+                                            StateElements.PayloadInHex,
+                                            changeInfo,
+                                        );
+                                        if (downlink !== undefined) {
+                                            await this.sendDownlink(
+                                                downlinkTopic,
+                                                JSON.stringify(downlink),
+                                                changeInfo,
+                                            );
+                                        }
+                                    }
+                                }
+                                await this.bridge?.publishId(id, state.val, {});
+                                await this.setState(id, state.val, true);
+                            } else {
+                                const downlinkTopic = this.downlinkConfighandler?.getDownlinkTopic(changeInfo, suffix);
+                                const downlinkParameter = this.downlinkConfighandler?.getDownlinkParameter(
+                                    changeInfo,
+                                    {},
+                                );
+                                if (downlinkParameter !== undefined) {
+                                    const payloadInHex = this.downlinkConfighandler?.calculatePayloadInHex(
+                                        downlinkParameter,
+                                        state,
+                                    );
+                                    await this.writeNextSend(changeInfo, payloadInHex);
+                                    if (
+                                        !changeInfo?.bestMatchForDeviceType ||
+                                        this.downlinkConfighandler?.activeDownlinkConfigs[
+                                            changeInfo.bestMatchForDeviceType
+                                        ].sendWithUplink === 'disabled'
+                                    ) {
+                                        const downlink = this.downlinkConfighandler?.getDownlink(
+                                            downlinkParameter,
+                                            payloadInHex,
+                                            changeInfo,
+                                        );
+                                        if (downlink !== undefined) {
+                                            await this.sendDownlink(
+                                                downlinkTopic,
+                                                JSON.stringify(downlink),
+                                                changeInfo,
+                                            );
+                                        }
+                                    }
+                                    await this.bridge?.publishId(id, state.val, {});
                                     await this.setState(id, state.val, true);
                                 }
-                            } catch (error) {
-                                this.log.warn(`Cant send invalid downlinks. Error: ${error}`);
                             }
-                        } else if (changeInfo?.changedState === 'CustomSend') {
-                            if (state.val !== '') {
-                                const downlinkTopic = this.downlinkConfighandler?.getDownlinkTopic(changeInfo, suffix);
-                                const downlinkConfig =
-                                    this.downlinkConfighandler?.activeDownlinkConfigs[
-                                        changeInfo.bestMatchForDeviceType
-                                    ];
-                                const Statevalues = state.val.split(',');
-                                const StateElements = {
-                                    PayloadInHex: Statevalues[0].toUpperCase(),
-                                    Port: Statevalues[1] ? parseInt(Statevalues[1]) : downlinkConfig.port,
-                                    Confirmed: Statevalues[2]
-                                        ? Statevalues[2] === 'true'
-                                            ? true
-                                            : false
-                                        : downlinkConfig.confirmed,
-                                    Priority: Statevalues[3] ? Statevalues[3] : downlinkConfig.priority,
-                                };
-                                // Query for righte type
-                                this.log.debug('The following values are detected at input of custom send state');
-                                for (const element of Object.values(StateElements)) {
-                                    this.log.debug(typeof element);
-                                    this.log.debug(element);
-                                }
-                                // Write into nextSend
-                                await this.writeNextSend(changeInfo, StateElements.PayloadInHex);
-                                if (
-                                    !changeInfo?.bestMatchForDeviceType ||
-                                    this.downlinkConfighandler?.activeDownlinkConfigs[changeInfo.bestMatchForDeviceType]
-                                        .sendWithUplink === 'disabled'
-                                ) {
-                                    const downlink = this.downlinkConfighandler?.getDownlink(
-                                        {
-                                            port: StateElements.Port,
-                                            confirmed: StateElements.Confirmed,
-                                            priority: StateElements.Priority,
-                                        },
-                                        StateElements.PayloadInHex,
-                                        changeInfo,
-                                    );
-                                    if (downlink !== undefined) {
-                                        await this.sendDownlink(downlinkTopic, JSON.stringify(downlink), changeInfo);
-                                    }
-                                }
-                            }
-                            await this.bridge?.publishId(this.removeNamespace(id), state.val, {});
-                            await this.setState(id, state.val, true);
-                        } else {
-                            const downlinkTopic = this.downlinkConfighandler?.getDownlinkTopic(changeInfo, suffix);
-                            const downlinkParameter = this.downlinkConfighandler?.getDownlinkParameter(changeInfo, {});
-                            if (downlinkParameter !== undefined) {
-                                const payloadInHex = this.downlinkConfighandler?.calculatePayloadInHex(
-                                    downlinkParameter,
-                                    state,
-                                );
-                                await this.writeNextSend(changeInfo, payloadInHex);
-                                if (
-                                    !changeInfo?.bestMatchForDeviceType ||
-                                    this.downlinkConfighandler?.activeDownlinkConfigs[changeInfo.bestMatchForDeviceType]
-                                        .sendWithUplink === 'disabled'
-                                ) {
-                                    const downlink = this.downlinkConfighandler?.getDownlink(
-                                        downlinkParameter,
-                                        payloadInHex,
-                                        changeInfo,
-                                    );
-                                    if (downlink !== undefined) {
-                                        await this.sendDownlink(downlinkTopic, JSON.stringify(downlink), changeInfo);
-                                    }
-                                }
-                                await this.bridge?.publishId(this.removeNamespace(id), state.val, {});
-                                await this.setState(id, state.val, true);
-                            }
-                        }
-                    } else if (id.indexOf('.configuration.') !== -1) {
-                        // State is from configuration path
-                        const changeInfo = await this.getChangeInfo(id, { withBestMatch: true });
-                        this.messagehandler?.fillWithDownlinkConfig(changeInfo?.objectStartDirectory, {});
+                        } else if (id.indexOf('.configuration.') !== -1) {
+                            // State is from configuration path
+                            const changeInfo = await this.getChangeInfo(id, { withBestMatch: true });
+                            this.messagehandler?.fillWithDownlinkConfig(changeInfo?.objectStartDirectory, {});
 
-                        // remove not configed states
-                        const adapterObjects = await this.getAdapterObjectsAsync();
-                        for (const adapterObject of Object.values(adapterObjects)) {
-                            if (
-                                adapterObject.type === 'state' &&
-                                adapterObject._id.indexOf(`${changeInfo?.objectStartDirectory}.downlink.control`) !== -1
-                            ) {
-                                const changeInfo = await this.getChangeInfo(adapterObject._id);
-                                const downlinkParameter = this.downlinkConfighandler?.getDownlinkParameter(changeInfo, {
-                                    startupCheck: true,
-                                });
-                                if (!downlinkParameter) {
-                                    await this.delObjectAsync(this.removeNamespace(adapterObject._id));
+                            // remove not configed states
+                            const adapterObjects = await this.getAdapterObjectsAsync();
+                            for (const adapterObject of Object.values(adapterObjects)) {
+                                if (
+                                    adapterObject.type === 'state' &&
+                                    adapterObject._id.indexOf(
+                                        `${changeInfo?.objectStartDirectory}.downlink.control`,
+                                    ) !== -1
+                                ) {
+                                    const changeInfo = await this.getChangeInfo(adapterObject._id);
+                                    const downlinkParameter = this.downlinkConfighandler?.getDownlinkParameter(
+                                        changeInfo,
+                                        {
+                                            startupCheck: true,
+                                        },
+                                    );
+                                    if (!downlinkParameter) {
+                                        await this.delObjectAsync(this.removeNamespace(adapterObject._id));
+                                    }
                                 }
                             }
+                            await this.setState(id, state.val, true);
                         }
-                        await this.setState(id, state.val, true);
+                    } else {
+                        // Query for 0_userdata or alias => states also publish with ack = false
+                        if (id.startsWith('0_userdata') || id.startsWith('alias')) {
+                            await this.bridge?.publishId(id, state.val, {});
+                        }
+                    }
+                } else {
+                    // Query for Namespace => Just publish foreign States with ack = true
+                    if (!id.startsWith(this.namespace)) {
+                        await this.bridge?.publishId(id, state.val, {});
                     }
                 }
             } else {
