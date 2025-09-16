@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) bugfix namespace also by calling work from directoryhandler
+
 ### 1.16.1 (2025-09-16)
 * (BenAhrdt) bugfix namespace also by notifications
 
