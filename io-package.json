@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.16.0",
+    "version": "1.16.1",
     "news": {
+      "1.16.1": {
+        "en": "bugfix namespace also by notifications",
+        "de": "Fehlerbehebung Namespace auch bei Benachrichtigungen",
+        "ru": "исправлена ошибка с пространством имён также для уведомлений",
+        "pt": "Correção de bug no namespace também por notificações.",
+        "nl": "bugfix namespace ook bij meldingen",
+        "fr": "Correction d'un bug concernant les notifications de namespace.",
+        "it": "Risolto bug anche per i namespace nelle notifiche",
+        "es": "Corrección de error en el espacio de nombres también por notificaciones.",
+        "pl": "naprawiono błąd z przestrzenią nazw również w powiadomieniach",
+        "uk": "виправлення помилки простору імен також за допомогою сповіщень",
+        "zh-cn": "修复命名空间通知问题"
+      },
       "1.16.0": {
         "en": "possibility to insert foreign states to bridge by using enum.functions.bridge",
         "de": "Möglichkeit, externe Zustände über enum.functions.bridge in die Bridge einzufügen.",
@@ -80,19 +93,6 @@
         "pl": "Naprawiono błąd z zachowaniem tematów stanów wysyłanych.\nPoprawka błędu dotycząca kończenia stanu",
         "uk": "Виправлено помилку збереження тем для відправлення стану\nВиправлено помилку з порядком стану",
         "zh-cn": "修复发送状态主题时的保留问题\n修复了和状态结尾相关的问题"
-      },
-      "1.15.3": {
-        "en": "dont translate the selected state in bridge config",
-        "de": "Nicht den ausgewählten Status in der Bridge-Konfiguration übersetzen.",
-        "ru": "Не переводите состояние \"selected\" в настройках моста",
-        "pt": "não traduzir o estado selecionado na configuração da ponte",
-        "nl": "'geselecteerde toestand' niet vertalen in de bridge-configuratie.",
-        "fr": "ne pas traduire l'état sélectionné dans la configuration du pont",
-        "it": "non tradurre lo stato selezionato nella configurazione del ponte",
-        "es": "no traducir el estado seleccionado en la configuración del puente",
-        "pl": "nie tłumacz stanu \"selected\" w konfiguracji mostu",
-        "uk": "не перекладайте обраний стан в конфігурації моста",
-        "zh-cn": "不要将“selected state”翻译成桥接配置"
       }
     },
     "titleLang": {
