@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.16.2",
+    "version": "1.16.3",
     "news": {
+      "1.16.3": {
+        "en": "nameing of foreign Devices in Bridge",
+        "de": "Benennung von fremden Geräten in der Brücke",
+        "ru": "Наименование иностранных устройств в мосту",
+        "pt": "Nomenclatura de Dispositivos Estrangeiros na Ponte",
+        "nl": "Benaming van externe apparaten in de bridge",
+        "fr": "Renommage des appareils étrangers dans le pont",
+        "it": "Nominativo dei dispositivi stranieri nel Bridge",
+        "es": "Renombrar dispositivos extranjeros en el puente",
+        "pl": "Nadanie nazw obcym urządzeniom w mostku",
+        "uk": "Перейменування зовнішніх пристроїв у мосту",
+        "zh-cn": "在网桥中给外部设备命名"
+      },
       "1.16.2": {
         "en": "bugfix namespace also by calling work from directoryhandler",
         "de": "Bug behoben: Namensraum auch durch Aufruf von \"Arbeit\" von DirectoryHandler.",
@@ -80,19 +93,6 @@
         "pl": "Poprawiono obsługę urządzenia stanu w przypadku podfolderów.",
         "uk": "Поліпшено обробку пристрою стану у випадку підпапок.",
         "zh-cn": "改进对子文件夹中状态设备的处理"
-      },
-      "1.15.5": {
-        "en": "Bugfix logging removed",
-        "de": "Fehlerbehebung beim Protokollieren entfernt",
-        "ru": "Исправлена ошибка с удалением журнала.",
-        "pt": "Correção de bug: log removido",
-        "nl": "Bugfix logging verwijderd",
-        "fr": "Correctif de bug: suppression du journalisation",
-        "it": "Rimossa la registrazione dei bugfix",
-        "es": "Corregido el registro de errores.",
-        "pl": "Usunięto logowanie błędów",
-        "uk": "Виправлено запис журналів про помилки",
-        "zh-cn": "修复了日志记录问题"
       }
     },
     "titleLang": {
