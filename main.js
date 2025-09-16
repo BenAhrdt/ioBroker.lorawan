@@ -458,7 +458,7 @@ class Lorawan extends utils.Adapter {
                             try {
                                 if (JSON.parse(state.val)) {
                                     await this.sendDownlink(downlinkTopic, state.val, changeInfo);
-                                    await this.bridge?.publishId(await this.removeNamespace(id), state.val, {});
+                                    await this.bridge?.publishId(this.removeNamespace(id), state.val, {});
                                     await this.setState(id, state.val, true);
                                 }
                             } catch (error) {
@@ -509,7 +509,7 @@ class Lorawan extends utils.Adapter {
                                     }
                                 }
                             }
-                            await this.bridge?.publishId(await this.removeNamespace(id), state.val, {});
+                            await this.bridge?.publishId(this.removeNamespace(id), state.val, {});
                             await this.setState(id, state.val, true);
                         } else {
                             const downlinkTopic = this.downlinkConfighandler?.getDownlinkTopic(changeInfo, suffix);
@@ -534,7 +534,7 @@ class Lorawan extends utils.Adapter {
                                         await this.sendDownlink(downlinkTopic, JSON.stringify(downlink), changeInfo);
                                     }
                                 }
-                                await this.bridge?.publishId(await this.removeNamespace(id), state.val, {});
+                                await this.bridge?.publishId(this.removeNamespace(id), state.val, {});
                                 await this.setState(id, state.val, true);
                             }
                         }
