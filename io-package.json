@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.15.8",
+    "version": "1.16.0",
     "news": {
+      "1.16.0": {
+        "en": "possibility to insert foreign states to bridge by using enum.functions.bridge",
+        "de": "Möglichkeit, externe Zustände über enum.functions.bridge in die Bridge einzufügen.",
+        "ru": "Возможность вставки внешних состояний в мост путем использования enum.functions.bridge",
+        "pt": "possibilidade de inserir estados estrangeiros na ponte usando enum.functions.bridge",
+        "nl": "Mogelijkheid om externe toestanden in de brug in te voegen door gebruik te maken van enum.functions.bridge.",
+        "fr": "possibilité d'insérer des états étrangers dans le pont en utilisant enum.functions.bridge",
+        "it": "Possibilità di inserire stati esterni al bridge utilizzando enum.functions.bridge",
+        "es": "Posibilidad de insertar estados extranjeros en el puente utilizando enum.functions.bridge",
+        "pl": "możliwość wstawienia stanów zewnętrznych do mostka za pomocą enum.functions.bridge",
+        "uk": "Можливість додавання зовнішніх станів до моста за допомогою enum.functions.bridge",
+        "zh-cn": "通过使用enum.functions.bridge功能，可以将外部状态插入到桥接器中。"
+      },
       "1.15.8": {
         "en": "remove await from some callings",
         "de": "Entferne das „await“ aus einigen Aufrufen.",
@@ -80,19 +93,6 @@
         "pl": "nie tłumacz stanu \"selected\" w konfiguracji mostu",
         "uk": "не перекладайте обраний стан в конфігурації моста",
         "zh-cn": "不要将“selected state”翻译成桥接配置"
-      },
-      "1.15.2": {
-        "en": "change wording of notifications\nimport diagnostic and config fpr entity_type\nchange extSernsorTemperature in ExtSernsorTemperature",
-        "de": "Änderung der Benachrichtigungen\nDiagnose und konfiguriere entity_type\nÄndern von extSernsorTemperature in ExtSernsorTemperature",
-        "ru": "изменить формулировку уведомлений\nИсправление диагностики и конфигурации для типа entity\nИзменено extSernsorTemperature на ExtSernsorTemperature",
-        "pt": "alterar a redação das notificações\nimportação de diagnóstico e configuração para o tipo de entidade\nAlterar extSernsorTemperature para ExtSernsorTemperature",
-        "nl": "wijziging van meldingen\nimport diagnose en configuratie voor entity_type\nVerander extSernsorTemperature in ExtSernsorTemperature",
-        "fr": "modifier le libellé des notifications\nImporter le diagnostic et la configuration pour le type d'entité\nChanger extSernsorTemperature en ExtSernsorTemperature",
-        "it": "modificare i testi delle notifiche\nimport diagnostiche e configurazioni per il tipo di entità\nModifica extSernsorTemperature in ExtSernsorTemperature",
-        "es": "cambiar la redacción de las notificaciones\nimportar diagnóstico y configuración para el tipo de entidad\nCambiar extSensorTemperature a ExtSensorTemperature",
-        "pl": "zmień sformułowanie powiadomień\nimport diagnostyka i konfiguracja dla entity_type\nzmień extSensorTemperature na ExtSensorTemperature",
-        "uk": "змінити формулювання сповіщень\nімпорт діагнострики та конфігурації для типу entity\nЗміна extSensorTemperature на ExtSensorTemperature",
-        "zh-cn": "更改通知内容\n为entity_type添加诊断和配置\n将\"extSensorTemperature\"更改为\"ExtSensorTemperature\""
       }
     },
     "titleLang": {

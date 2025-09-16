@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.16.0 (2025-09-16)
 * (BenAhrdt) possibility to insert foreign states to bridge by using enum.functions.bridge
 
 ### 1.15.8 (2025-09-16)
