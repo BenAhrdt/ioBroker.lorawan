@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.16.1",
+    "version": "1.16.2",
     "news": {
+      "1.16.2": {
+        "en": "bugfix namespace also by calling work from directoryhandler",
+        "de": "Bug behoben: Namensraum auch durch Aufruf von \"Arbeit\" von DirectoryHandler.",
+        "ru": "исправлена ошибка с пространством имен путем вызова работы из directoryhandler",
+        "pt": "Corrigido bug ao chamar namespace também utilizando o trabalho do directoryhandler.",
+        "nl": "Bugfix: Namespace wordt nu ook correct opgeroepen bij het gebruik van werk van DirectoryHandler.",
+        "fr": "Correction de bug du namespace également en appelant le travail du gestionnaire de répertoires.",
+        "it": "Correzione di bug anche chiamando il lavoro dal gestore della directory.",
+        "es": "Corrección de error en el espacio de nombres al llamar al trabajo desde directoryhandler",
+        "pl": "Poprawka błędu: przestrzeń nazw również wywoływana przez funkcję work z directoryhandler",
+        "uk": "виправлено помилку у просторі імен також шляхом виклику роботи з обробника директорій",
+        "zh-cn": "通过调用`directoryhandler`来修复了`namespace`问题。"
+      },
       "1.16.1": {
         "en": "bugfix namespace also by notifications",
         "de": "Fehlerbehebung Namespace auch bei Benachrichtigungen",
@@ -80,19 +93,6 @@
         "pl": "Usunięto logowanie błędów",
         "uk": "Виправлено запис журналів про помилки",
         "zh-cn": "修复了日志记录问题"
-      },
-      "1.15.4": {
-        "en": "Bugfix send state topics retain\nBugfix with stateending",
-        "de": "Fehlerbehebung für das Beibehalten der Zustandsthemen beim Senden\nFehlerbehebung beim Zustandsende",
-        "ru": "Исправлена ошибка с сохранением тем состояний при отправке\nИсправлена ошибка со stateending",
-        "pt": "Correção de bug: envio de tópicos de estado mantendo a retenção.\nCorreção de bug com stateending",
-        "nl": "Bugfix stuurstatus onderwerpen behouden\nBugfix met stateending",
-        "fr": "Correction de bug pour conserver les sujets des états envoyés\nCorrection de bug avec stateEnding",
-        "it": "Risoluzione di bug per la conservazione dei topic di invio degli stati\nCorrezione di bug con stateending.",
-        "es": "Corrección de error en la retención de temas al enviar estados\nCorrección de error con state ending",
-        "pl": "Naprawiono błąd z zachowaniem tematów stanów wysyłanych.\nPoprawka błędu dotycząca kończenia stanu",
-        "uk": "Виправлено помилку збереження тем для відправлення стану\nВиправлено помилку з порядком стану",
-        "zh-cn": "修复发送状态主题时的保留问题\n修复了和状态结尾相关的问题"
       }
     },
     "titleLang": {
