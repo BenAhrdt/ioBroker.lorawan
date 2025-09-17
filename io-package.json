@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.16.7",
+    "version": "1.16.8",
     "news": {
+      "1.16.8": {
+        "en": "Bring enum selection in config",
+        "de": "Fügen Sie die Auswahlmöglichkeit für Aufzählungen in der Konfiguration hinzu.",
+        "ru": "Добавлена возможность выбора значения из перечисления в настройках",
+        "pt": "Trazer seleção de enumeração na configuração",
+        "nl": "Breng de enum-selectie in de configuratie",
+        "fr": "Apporter la sélection d'énumération dans la configuration",
+        "it": "Porta la selezione dell'enum nella configurazione",
+        "es": "Traer selección de enum en la configuración",
+        "pl": "Przynieś wybór enum w konfiguracji",
+        "uk": "Додано вибір типу даних \"enum\" в налаштуваннях (config).",
+        "zh-cn": "在配置中添加枚举选择"
+      },
       "1.16.7": {
         "en": "Bugfix deleting discovered devices\nbuild in devug logging to find bug in devicename",
         "de": "Fehlerbehebung beim Löschen entdeckter Geräte\nFüge Debug-Logging hinzu, um Fehler im Gerätenamen zu finden.",
@@ -80,19 +93,6 @@
         "pl": "Poprawka błędu: przestrzeń nazw również wywoływana przez funkcję work z directoryhandler",
         "uk": "виправлено помилку у просторі імен також шляхом виклику роботи з обробника директорій",
         "zh-cn": "通过调用`directoryhandler`来修复了`namespace`问题。"
-      },
-      "1.16.1": {
-        "en": "bugfix namespace also by notifications",
-        "de": "Fehlerbehebung Namespace auch bei Benachrichtigungen",
-        "ru": "исправлена ошибка с пространством имён также для уведомлений",
-        "pt": "Correção de bug no namespace também por notificações.",
-        "nl": "bugfix namespace ook bij meldingen",
-        "fr": "Correction d'un bug concernant les notifications de namespace.",
-        "it": "Risolto bug anche per i namespace nelle notifiche",
-        "es": "Corrección de error en el espacio de nombres también por notificaciones.",
-        "pl": "naprawiono błąd z przestrzenią nazw również w powiadomieniach",
-        "uk": "виправлення помилки простору імен також за допомогою сповіщень",
-        "zh-cn": "修复命名空间通知问题"
       }
     },
     "titleLang": {
