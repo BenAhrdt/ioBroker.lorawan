@@ -23,7 +23,7 @@ class Lorawan extends utils.Adapter {
         });
         this.on('ready', this.onReady.bind(this));
         this.on('stateChange', this.onStateChange.bind(this));
-        //this.on('objectChange', this.onObjectChange.bind(this));
+        this.on('objectChange', this.onObjectChange.bind(this));
         this.on('message', this.onMessage.bind(this));
         this.on('unload', this.onUnload.bind(this));
         this.on('fileChange', this.onFileChange.bind(this));
@@ -77,7 +77,7 @@ class Lorawan extends utils.Adapter {
             await this.messagehandler.setCustomObjectAtStartup();
 
             //Subscribe all configuration and control states
-            this.subscribeStatesAsync('*');
+            await this.subscribeStatesAsync('*');
             //this.subscribeObjectsAsync('*.uplink.decoded.*');
             //this.subscribeObjectsAsync('*.downlink.control.*');
             this.log.debug(`the adapter starts with downlinkconfigs: ${JSON.stringify(this.config.downlinkConfig)}.`);
@@ -420,11 +420,30 @@ class Lorawan extends utils.Adapter {
      * @param id id of the changed object
      * @param obj value and ack of the changed object
      */
-    /*async onObjectChange(id, obj) {
+    async onObjectChange(id, obj) {
         this.log.debug(`${id} is changed into ${JSON.stringify(obj.common)}`);
-        // Erzeugen der HA Bridged für Control
-        await this.messagehandler?.directoryhandler.setCustomForHaBridge(id, obj.common);
-    }*/
+
+        // Only work, if bridge is activ
+        if (this.bridge) {
+            // Erzeugen der HA Bridged für Control
+            // check for new Entry
+            const members = obj.common.members;
+            for (const member of members) {
+                if (!this.bridge.ForeignBridgeMembers[member]) {
+                    await this.bridge?.discoverForeignRange(member);
+                    return;
+                }
+            }
+
+            // check for Entry removed
+            for (const member of Object.values(this.bridge.ForeignBridgeMembers)) {
+                if (!members.includes(member)) {
+                    await this.bridge.discoverForeignRange(member, true);
+                    return;
+                }
+            }
+        }
+    }
 
     /**
      * Is called if a subscribed state changes

@@ -23,6 +23,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Bridge import foreign states till Adapter is running
+* (BenAhrdt) Bridge delete foreign states till Adapter is running
+
 ### 1.16.3 (2025-09-16)
 * (BenAhrdt) nameing of foreign Devices in Bridge
 
