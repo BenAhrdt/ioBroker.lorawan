@@ -23,6 +23,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Bugfix deleting discovered devices
+* (BenAhrdt) build in devug logging to find bug in devicename
+
 ### 1.16.6 (2025-09-17)
 * (BenAhrdt) Change detection of new Discovery from LoRaWAN devices
 

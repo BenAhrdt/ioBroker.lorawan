@@ -422,26 +422,31 @@ class Lorawan extends utils.Adapter {
      */
     async onObjectChange(id, obj) {
         this.log.debug(`${id} is changed into ${JSON.stringify(obj.common)}`);
+        const activeFunction = 'main.js - onObjectChange';
+        this.log.debug(`Function ${activeFunction} started.`);
+        try {
+            // Only work, if bridge is activ
+            if (this.bridge) {
+                // Erzeugen der HA Bridged für Control
+                // check for new Entry
+                const members = obj.common.members;
+                for (const member of members) {
+                    if (!this.bridge.ForeignBridgeMembers[member]) {
+                        await this.bridge?.discoverForeignRange(member);
+                        return;
+                    }
+                }
 
-        // Only work, if bridge is activ
-        if (this.bridge) {
-            // Erzeugen der HA Bridged für Control
-            // check for new Entry
-            const members = obj.common.members;
-            for (const member of members) {
-                if (!this.bridge.ForeignBridgeMembers[member]) {
-                    await this.bridge?.discoverForeignRange(member);
-                    return;
+                // check for Entry removed
+                for (const member of Object.values(this.bridge.ForeignBridgeMembers)) {
+                    if (!members.includes(member)) {
+                        await this.bridge.discoverForeignRange(member, true);
+                        return;
+                    }
                 }
             }
-
-            // check for Entry removed
-            for (const member of Object.values(this.bridge.ForeignBridgeMembers)) {
-                if (!members.includes(member)) {
-                    await this.bridge.discoverForeignRange(member, true);
-                    return;
-                }
-            }
+        } catch (error) {
+            this.log.error(`error at ${activeFunction}:  ${error}`);
         }
     }
 
