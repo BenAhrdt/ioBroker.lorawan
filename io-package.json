@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.16.5",
+    "version": "1.16.6",
     "news": {
+      "1.16.6": {
+        "en": "Change detection of new Discovery from LoRaWAN devices",
+        "de": "Änderung der Erkennung neuer Entdeckungen von LoRaWAN-Geräten",
+        "ru": "Обнаружение изменений новых устройств LoRaWAN",
+        "pt": "Detecção de novos dispositivos LoRaWAN na Descoberta",
+        "nl": "Wijziging in detectie van nieuwe Discovery van LoRaWAN apparaten",
+        "fr": "Détection des nouvelles découvertes des dispositifs LoRaWAN",
+        "it": "Rilevamento delle nuove scoperte dei dispositivi LoRaWAN",
+        "es": "Detección de cambios de nuevos dispositivos de descubrimiento de LoRaWAN",
+        "pl": "Wykrywanie zmian w nowym Discovery urządzeń LoRaWAN",
+        "uk": "Виявлення нових пристроїв Discovery з LoRaWAN",
+        "zh-cn": "更改LoRaWAN设备的新发现检测"
+      },
       "1.16.5": {
         "en": "Bugfix in notifications to Bridge (new device dicovered) => namespace not set",
         "de": "Fehlerbehebung bei Benachrichtigungen an Bridge (neues Gerät erkannt) => Namespace nicht festgelegt",
@@ -80,19 +93,6 @@
         "pl": "możliwość wstawienia stanów zewnętrznych do mostka za pomocą enum.functions.bridge",
         "uk": "Можливість додавання зовнішніх станів до моста за допомогою enum.functions.bridge",
         "zh-cn": "通过使用enum.functions.bridge功能，可以将外部状态插入到桥接器中。"
-      },
-      "1.15.8": {
-        "en": "remove await from some callings",
-        "de": "Entferne das „await“ aus einigen Aufrufen.",
-        "ru": "Удалите ожидание (await) из некоторых вызовов",
-        "pt": "remover await de algumas chamadas",
-        "nl": "Verwijder 'await' uit enkele aanroepen.",
-        "fr": "supprimer l'attente de certains appels",
-        "it": "Rimuovere l'attesa da alcune chiamate.",
-        "es": "eliminar await de algunas llamadas",
-        "pl": "Usuń oczekiwanie (await) z niektórych wywołań.",
-        "uk": "видаліть await із деяких викликів",
-        "zh-cn": "从部分调用中删除 await"
       }
     },
     "titleLang": {
