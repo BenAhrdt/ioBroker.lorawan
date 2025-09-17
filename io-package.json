@@ -422,6 +422,7 @@
     "BridgeType": "off",
     "EnableRefresh": true,
     "RefreshDiscoveryCronJob": "0 * * * *",
+    "BridgeEnum": "",
     "BridgenotificationActivation": "allNotifications, brdigeConnection, newDiscover, deviceState",
     "BridgeDevicenotificationActivation": "allNotifications, brdigeConnection, newDiscover, deviceState",
     "DeviceIdentifiers": [

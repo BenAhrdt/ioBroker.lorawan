@@ -783,7 +783,21 @@
                     "md": 2,
                     "lg": 2,
                     "xl": 2
-                  },
+            	},				
+				"BridgeEnum": {
+					"type": "selectSendTo",
+					"label": "BridgeEnum",
+					"tooltip": "BridgeEnumTooltip",
+					"default": "",
+					"jsonData": "{}",
+					"command": "getEnums",
+					"hidden": "data.BridgeType === 'off'",
+					"xs": 12,
+					"sm": 5,
+					"md": 5,
+					"lg": 5,
+					"xl": 5
+				},
 				"BridgenotificationActivation":{
 					"newLine": true,
 					"type": "select",

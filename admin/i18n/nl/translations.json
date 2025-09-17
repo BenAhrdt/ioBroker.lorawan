@@ -159,5 +159,7 @@
     "connection to bridge is activ": "Verbinding met Bridge is activ",
     "connection to bridge is closed": "Verbinding met Bridge wordt gesloten",
     "new device discovered": "Nieuw apparaat ontdekt",
-    "Adapter will be stoped": "De Lorawan Bridge -adapter wordt gestopt"
+    "Adapter will be stoped": "De Lorawan Bridge -adapter wordt gestopt",
+    "BridgeEnum": "Brug -opsomming",
+    "BridgeEnumTooltip": "Selecteer een opsomming, dat wordt gebruikt om buitenlandse staten naar de brug te brengen"
 }

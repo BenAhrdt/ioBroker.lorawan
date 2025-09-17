@@ -159,5 +159,7 @@
     "connection to bridge is activ": "La connessione a bridge è attiva",
     "connection to bridge is closed": "La connessione al ponte sarà chiusa",
     "new device discovered": "Nuovo dispositivo scoperto",
-    "Adapter will be stoped": "L'adattatore del ponte Lorawan sarà fermato"
+    "Adapter will be stoped": "L'adattatore del ponte Lorawan sarà fermato",
+    "BridgeEnum": "Ponte enum",
+    "BridgeEnumTooltip": "Seleziona un enum, che viene utilizzato per portare stati stranieri sul ponte"
 }

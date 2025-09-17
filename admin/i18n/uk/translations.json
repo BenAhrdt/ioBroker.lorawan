@@ -159,5 +159,7 @@
     "connection to bridge is activ": "Підключення до мосту активується",
     "connection to bridge is closed": "Підключення до мосту буде закрито",
     "new device discovered": "Виявлений новий пристрій",
-    "Adapter will be stoped": "Адаптер мосту Лоравана буде зупинено"
+    "Adapter will be stoped": "Адаптер мосту Лоравана буде зупинено",
+    "BridgeEnum": "Мост",
+    "BridgeEnumTooltip": "Виберіть Enum, який використовується для залучення іноземних держав до мосту"
 }

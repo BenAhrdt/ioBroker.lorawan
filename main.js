@@ -34,6 +34,8 @@ class Lorawan extends utils.Adapter {
 
         // Simulation variables
         this.simulation = {};
+        this.mySystemConfig;
+        this.language;
     }
 
     onFileChange(_id, _fileName, _size) {
@@ -49,6 +51,10 @@ class Lorawan extends utils.Adapter {
         try {
             // read system translation out of i18n translation
             this.i18nTranslation = await this.geti18nTranslation();
+
+            // get systemconfig and configued language
+            this.mySystemConfig = await this.getForeignObjectAsync('system.config');
+            this.language = this.mySystemConfig?.common.language || 'en';
 
             // create downlinkConfigs
             this.downlinkConfighandler = new downlinkConfighandlerClass(this);
@@ -1221,6 +1227,27 @@ class Lorawan extends utils.Adapter {
                             JSON.stringify(this.messagehandler?.deviceinformations, null, 2),
                             obj.callback,
                         );
+                    } catch (error) {
+                        this.log.error(error);
+                    }
+                } else if (obj.command === 'getEnums') {
+                    try {
+                        const enums = [{ label: 'No Enum selected', value: '*' }];
+                        const enumList = await this.getEnumsAsync();
+                        for (const enumtyp of Object.values(enumList)) {
+                            for (const myEnum of Object.values(enumtyp)) {
+                                const value = myEnum._id;
+                                let label = myEnum.common.name;
+                                if (typeof label !== 'string') {
+                                    if (this.language) {
+                                        label = myEnum.common.name[this.language];
+                                    }
+                                }
+                                label += ` (${myEnum._id.substring(5, myEnum._id.length)})`;
+                                enums.push({ label: label.toString(), value: value });
+                            }
+                        }
+                        this.sendTo(obj.from, obj.command, enums, obj.callback);
                     } catch (error) {
                         this.log.error(error);
                     }

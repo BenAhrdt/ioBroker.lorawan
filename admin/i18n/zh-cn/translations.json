@@ -159,5 +159,7 @@
     "connection to bridge is activ": "连接到桥梁是激活",
     "connection to bridge is closed": "连接到桥梁将关闭",
     "new device discovered": "发现了新设备",
-    "Adapter will be stoped": "Lorawan桥适配器将停止"
+    "Adapter will be stoped": "Lorawan桥适配器将停止",
+    "BridgeEnum": "桥梁枚举",
+    "BridgeEnumTooltip": "选择一个枚举，用于将外国带到桥梁"
 }

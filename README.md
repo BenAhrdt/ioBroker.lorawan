@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Bring enum selection in config
+
 ### 1.16.7 (2025-09-17)
 * (BenAhrdt) Bugfix deleting discovered devices
 * (BenAhrdt) build in devug logging to find bug in devicename

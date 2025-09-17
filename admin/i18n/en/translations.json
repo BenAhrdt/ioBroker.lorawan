@@ -159,5 +159,7 @@
 	"connection to bridge is activ": "connection to bridge is activ",
 	"connection to bridge is closed": "connection to bridge will be closed",
 	"new device discovered": "new device discovered",
-	"Adapter will be stoped": "The LoRaWAN Bridge Adapter will be stoped"
+	"Adapter will be stoped": "The LoRaWAN Bridge Adapter will be stoped",
+	"BridgeEnum": "Bridge Enum",
+	"BridgeEnumTooltip": "Select an enum, that is used for bringing foreign states to the bridge"
 }
