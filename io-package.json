@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.16.3",
+    "version": "1.16.4",
     "news": {
+      "1.16.4": {
+        "en": "Bridge import foreign states till Adapter is running\nBridge delete foreign states till Adapter is running",
+        "de": "Brücke importiert externe Zustände, solange der Adapter läuft.\nLösche Fremdzustände aus der Datenbank, solange der Adapter aktiv ist.",
+        "ru": "Импортируйте внешние состояния моста до запуска адаптера\nУдаление внешних состояний Bridge, пока работает адаптер.",
+        "pt": "Importar estados externos da ponte até que o adaptador esteja em execução\nExcluir estados estrangeiros da ponte até que o adaptador esteja em execução",
+        "nl": "Importeer externe toestanden van de brug totdat de adapter actief is\nBridge verwijdert externe statussen zolang de adapter actief is",
+        "fr": "Importer les états étrangers du pont tant que l'adaptateur est en cours d'exécution.\nSupprimer les états étrangers du pont tant que l'adaptateur est en cours d'exécution",
+        "it": "Importa gli stati esterni del bridge finché l'adattatore è in esecuzione\nEliminazione dello stato estero del bridge fino a quando l'adattatore è in esecuzione",
+        "es": "Importar estados extranjeros del puente hasta que el adaptador esté en funcionamiento.\nEliminar estados extranjeros del puente hasta que el adaptador esté en funcionamiento",
+        "pl": "Importuj stany mostu do momentu uruchomienia adaptera.\nUsunięto stany obce do momentu uruchomienia adaptera.",
+        "uk": "Міст імпортує зовнішні стани поки адаптер працює\nВидалення зовнішніх станів у мосту доки адаптер працює.",
+        "zh-cn": "桥接器在适配器运行之前导入外部状态\n桥删除外部状态直到适配器运行"
+      },
       "1.16.3": {
         "en": "nameing of foreign Devices in Bridge",
         "de": "Benennung von fremden Geräten in der Brücke",
@@ -80,19 +93,6 @@
         "pl": "rozwiązać problem stażysty ds. publikacji",
         "uk": "вирішення питань практиканта з розміщення текстів",
         "zh-cn": "解决发布实习生"
-      },
-      "1.15.6": {
-        "en": "improve handling of state device in case of subfolders",
-        "de": "Verbessere die Handhabung des Gerätestatus bei Unterordnern.",
-        "ru": "Улучшено управление устройствами состояний в случае подпапок.",
-        "pt": "Melhorar o tratamento do dispositivo de estado no caso de subpastas",
-        "nl": "Verbeter de verwerking van apparaatstaten in geval van submappen.",
-        "fr": "Améliorer la gestion de l'appareil d'état en cas de sous-dossiers",
-        "it": "Migliorare la gestione del dispositivo di stato nel caso di sottocartelle",
-        "es": "Mejora en el manejo del dispositivo de estado en caso de subcarpetas",
-        "pl": "Poprawiono obsługę urządzenia stanu w przypadku podfolderów.",
-        "uk": "Поліпшено обробку пристрою стану у випадку підпапок.",
-        "zh-cn": "改进对子文件夹中状态设备的处理"
       }
     },
     "titleLang": {
