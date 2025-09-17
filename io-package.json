@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.16.6",
+    "version": "1.16.7",
     "news": {
+      "1.16.7": {
+        "en": "Bugfix deleting discovered devices\nbuild in devug logging to find bug in devicename",
+        "de": "Fehlerbehebung beim Löschen entdeckter Geräte\nFüge Debug-Logging hinzu, um Fehler im Gerätenamen zu finden.",
+        "ru": "Исправлена ошибка удаления обнаруженных устройств.\nДобавлена отладочная запись для поиска ошибок в имени устройства.",
+        "pt": "Correção de bug ao excluir dispositivos descobertos\nAdicionar registro de depuração para encontrar bugs no nome do dispositivo",
+        "nl": "Bugfix voor het verwijderen van ontdekte apparaten\nBouw debug logging in om bugs in apparaatnaam te vinden",
+        "fr": "Correction de bug suppression des périphériques découverts\nIntégration du journal de débogage pour trouver des bugs dans le nom du périphérique",
+        "it": "Correzione bug eliminazione dispositivi scoperti\nImplementare il logging di debug per trovare bug nel nome del dispositivo",
+        "es": "Corrección de errores al eliminar dispositivos descubiertos.\nImplementación de registro de depuración para encontrar errores en el nombre del dispositivo",
+        "pl": "Naprawiono błąd usuwania odkrytych urządzeń.\nZaimplementowano logowanie debugowania w celu znalezienia błędu w nazwie urządzenia.",
+        "uk": "Виправлено помилку видалення виявлених пристроїв.\nВбудоване відлагодження для пошуку помилки в імені пристрою.",
+        "zh-cn": "修复删除已发现设备时出现的问题\n构建调试日志以查找设备名称中的错误"
+      },
       "1.16.6": {
         "en": "Change detection of new Discovery from LoRaWAN devices",
         "de": "Änderung der Erkennung neuer Entdeckungen von LoRaWAN-Geräten",
@@ -80,19 +93,6 @@
         "pl": "naprawiono błąd z przestrzenią nazw również w powiadomieniach",
         "uk": "виправлення помилки простору імен також за допомогою сповіщень",
         "zh-cn": "修复命名空间通知问题"
-      },
-      "1.16.0": {
-        "en": "possibility to insert foreign states to bridge by using enum.functions.bridge",
-        "de": "Möglichkeit, externe Zustände über enum.functions.bridge in die Bridge einzufügen.",
-        "ru": "Возможность вставки внешних состояний в мост путем использования enum.functions.bridge",
-        "pt": "possibilidade de inserir estados estrangeiros na ponte usando enum.functions.bridge",
-        "nl": "Mogelijkheid om externe toestanden in de brug in te voegen door gebruik te maken van enum.functions.bridge.",
-        "fr": "possibilité d'insérer des états étrangers dans le pont en utilisant enum.functions.bridge",
-        "it": "Possibilità di inserire stati esterni al bridge utilizzando enum.functions.bridge",
-        "es": "Posibilidad de insertar estados extranjeros en el puente utilizando enum.functions.bridge",
-        "pl": "możliwość wstawienia stanów zewnętrznych do mostka za pomocą enum.functions.bridge",
-        "uk": "Можливість додавання зовнішніх станів до моста за допомогою enum.functions.bridge",
-        "zh-cn": "通过使用enum.functions.bridge功能，可以将外部状态插入到桥接器中。"
       }
     },
     "titleLang": {
