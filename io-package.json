@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.16.4",
+    "version": "1.16.5",
     "news": {
+      "1.16.5": {
+        "en": "Bugfix in notifications to Bridge (new device dicovered) => namespace not set",
+        "de": "Fehlerbehebung bei Benachrichtigungen an Bridge (neues Gerät erkannt) => Namespace nicht festgelegt",
+        "ru": "Исправлена ошибка в уведомлениях для моста (обнаружение нового устройства) => пространство имен не установлено",
+        "pt": "Correção de bug nas notificações para Bridge (novo dispositivo descoberto) => espaço de nomes não definido",
+        "nl": "Bugfix in meldingen naar Bridge (nieuw apparaat ontdekt) => namespace niet ingesteld",
+        "fr": "Correction de bug dans les notifications vers le pont (nouveau périphérique découvert) => espace de noms non défini",
+        "it": "Correzione di un bug nelle notifiche al Bridge (nuovo dispositivo scoperto) => namespace non impostato",
+        "es": "Corrección de error en las notificaciones al puente (nuevo dispositivo descubierto) => espacio de nombres no establecido",
+        "pl": "Poprawiono błąd w powiadomieniach do Bridge (nowe urządzenie zostało znalezione) => nie ustawiona przestrzeń nazw",
+        "uk": "Виправлено помилку у сповіщеннях до мосту (виявлено новий пристрій) => не встановлений простір імен",
+        "zh-cn": "修复了通知到桥接器的bug（发现新设备）=>命名空间未设置"
+      },
       "1.16.4": {
         "en": "Bridge import foreign states till Adapter is running\nBridge delete foreign states till Adapter is running",
         "de": "Brücke importiert externe Zustände, solange der Adapter läuft.\nLösche Fremdzustände aus der Datenbank, solange der Adapter aktiv ist.",
@@ -80,19 +93,6 @@
         "pl": "Usuń oczekiwanie (await) z niektórych wywołań.",
         "uk": "видаліть await із деяких викликів",
         "zh-cn": "从部分调用中删除 await"
-      },
-      "1.15.7": {
-        "en": "solve publishing intern",
-        "de": "Löse das Problem mit der Veröffentlichung des Praktikanten.",
-        "ru": "решить вопрос с публикацией стажера",
-        "pt": "Resolver publicação de estagiário",
-        "nl": "Oplossen van het publiceren van stages",
-        "fr": "résoudre le stage en édition",
-        "it": "risolto l'internato che pubblica",
-        "es": "Resolver publicación de interno.",
-        "pl": "rozwiązać problem stażysty ds. publikacji",
-        "uk": "вирішення питань практиканта з розміщення текстів",
-        "zh-cn": "解决发布实习生"
       }
     },
     "titleLang": {
