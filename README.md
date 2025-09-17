@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Bugfix in notifications to Bridge (new device dicovered) => namespace not set
+
 ### 1.16.4 (2025-09-17)
 * (BenAhrdt) Bridge import foreign states till Adapter is running
 * (BenAhrdt) Bridge delete foreign states till Adapter is running
