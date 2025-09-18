@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) delete devices in bridge (discover empty) after changing the device_identifier
+
 ### 1.16.11 (2025-09-18)
 * (BenAhrdt) dont use bridge enum within namespace of adapter
 * (BenAhrdt) Improve Namebuilding of foreign states to bridge

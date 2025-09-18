@@ -402,6 +402,8 @@
     "Bridgepassword"
   ],
   "native": {
+    "TopicToSend": "lora",
+    "MessageToSend": "lora",
     "ipUrl": "eu1.cloud.thethings.network",
     "port": 8883,
     "username": "",

@@ -103,7 +103,7 @@
     "applicationId": "Applikations Id",
     "applicationName": "Applikationsname",
     "usedApplicationName": "Benutzter Applikationsname (common.name)",
-    "deviceEUI": "Gerät EUI",
+    "deviceEUI": "Geräte EUI",
     "deviceId": "Geräte Id",
     "usedDeviceId": "Benutzte Geräte Id (common.name)",
     "underline": "Unterstrich",

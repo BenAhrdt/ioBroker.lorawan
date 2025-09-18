@@ -1031,7 +1031,7 @@ class Lorawan extends utils.Adapter {
                         }
                         result += element.DeviceIdentifier;
                     }
-                    result = `${this.messagehandler?.directoryhandler.HABridge.TopicPrefix}${result}/state`;
+                    result = `${this.bridge?.bridgeMqttClient.BridgePrefix}${result}/state`;
                     // Send response
                     if (obj.callback) {
                         this.sendTo(obj.from, obj.command, result, obj.callback);
@@ -1059,7 +1059,7 @@ class Lorawan extends utils.Adapter {
                         }
                         result += this.messagehandler?.directoryhandler.HABridge.Dummy[element.DeviceIdentifier];
                     }
-                    result = `${this.messagehandler?.directoryhandler.HABridge.TopicPrefix}${result}/state`;
+                    result = `${this.bridge?.bridgeMqttClient.BridgePrefix}${result}/state`;
                     // Send response
                     if (obj.callback) {
                         this.sendTo(obj.from, obj.command, result, obj.callback);
@@ -1262,7 +1262,6 @@ class Lorawan extends utils.Adapter {
                     }
                 } else if (obj.command === 'getBridgeConnection') {
                     try {
-                        this.log.error(typeof obj.message.Bridgessl);
                         let connection = false;
                         const mqttprefix = obj.message.Bridgessl ? 'mqtts://' : 'mqtt://';
                         const testclient = mqtt.connect(`${mqttprefix}${obj.message.BridgeipUrl}`, {
@@ -1287,6 +1286,14 @@ class Lorawan extends utils.Adapter {
                                 obj.callback,
                             );
                         }, 100);
+                    } catch (error) {
+                        this.log.error(error);
+                    }
+                } else if (obj.command === 'sendMQTTMessage') {
+                    try {
+                        this.log.error(typeof obj.message.Topic);
+                        this.log.error(typeof obj.message.Message);
+                        this.sendTo(obj.from, obj.command, { result: 'OK' }, obj.callback);
                     } catch (error) {
                         this.log.error(error);
                     }

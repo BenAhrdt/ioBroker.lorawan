@@ -29,6 +29,7 @@
             "label": "_PublishedIds",
 			"items": {
 				"_PublishedIds":{
+					"newLine": true,
 					"type": "text",
 					"defaultSendTo": "getPublishedIds",
 					"minRows": 10,
