@@ -441,7 +441,13 @@ class Lorawan extends utils.Adapter {
                 const members = obj.common.members;
                 for (const member of members) {
                     if (!this.bridge.ForeignBridgeMembers[member]) {
-                        await this.bridge?.discoverForeignRange(member);
+                        if (!member.startsWith(this.namespace)) {
+                            await this.bridge?.discoverForeignRange(member);
+                        } else {
+                            this.log.warn(
+                                `The bridge enum is set within adapternamespace. please remove form id: ${member}`,
+                            );
+                        }
                         return;
                     }
                 }
@@ -449,7 +455,13 @@ class Lorawan extends utils.Adapter {
                 // check for Entry removed
                 for (const member of Object.values(this.bridge.ForeignBridgeMembers)) {
                     if (!members.includes(member)) {
-                        await this.bridge.discoverForeignRange(member, true);
+                        if (!member.startsWith(this.namespace)) {
+                            await this.bridge.discoverForeignRange(member, true);
+                        } else {
+                            this.log.info(
+                                `The bridge enum on id: ${member} is set correctly removed from id in adapternamespace.`,
+                            );
+                        }
                         return;
                     }
                 }

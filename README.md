@@ -24,6 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+* (BenAhrdt) dont use bridge enum within namespace of adapter
 * (BenAhrdt) Improve Namebuilding of foreign states to bridge
 
 ### 1.16.10 (2025-09-18)
