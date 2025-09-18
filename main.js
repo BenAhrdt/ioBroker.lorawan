@@ -455,13 +455,7 @@ class Lorawan extends utils.Adapter {
                 // check for Entry removed
                 for (const member of Object.values(this.bridge.ForeignBridgeMembers)) {
                     if (!members.includes(member)) {
-                        if (!member.startsWith(this.namespace)) {
-                            await this.bridge.discoverForeignRange(member, true);
-                        } else {
-                            this.log.info(
-                                `The bridge enum on id: ${member} is set correctly removed from id in adapternamespace.`,
-                            );
-                        }
+                        await this.bridge.discoverForeignRange(member, true);
                         return;
                     }
                 }
