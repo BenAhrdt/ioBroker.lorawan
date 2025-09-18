@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.16.10 (2025-09-18)
 * (BenAhrdt) bugfix change query of Bridgeurl to LoRaWAN url
 
 ### 1.16.9 (2025-09-18)

@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.16.9",
+    "version": "1.16.10",
     "news": {
+      "1.16.10": {
+        "en": "bugfix change query of Bridgeurl to LoRaWAN url",
+        "de": "Fehlerbehebung Änderung der Abfrage von Bridge-URL zu LoRaWAN-URL",
+        "ru": "Исправлена ошибка изменения запроса с Bridgeurl на LoRaWAN url.",
+        "pt": "correção de bug: alteração da consulta do Bridgeurl para a url LoRaWAN",
+        "nl": "bugfix verander query van Bridgeurl naar LoRaWAN-url",
+        "fr": "corriger le changement de requête de Bridgeurl vers l'URL LoRaWAN",
+        "it": "Modifica del bugfix della query del Bridgeurl in indirizzo LoRaWAN.",
+        "es": "Corrección de errores: cambiar la consulta de Bridgeurl a la URL de LoRaWAN.",
+        "pl": "Naprawiono błąd zmieniający zapytanie Bridgeurl na adres url LoRaWAN",
+        "uk": "виправлення помилки зміни запиту Bridgeurl на URL протоколу LoRaWAN",
+        "zh-cn": "修复将Bridgeurl查询更改为LoRaWAN网址"
+      },
       "1.16.9": {
         "en": "bring connectiontest to bridge config\nBugfixing deaktivate LNS connection search in case of empty url\nBugfixing defaultvalues for json states.",
         "de": "Füge den Verbindungstest zur Bridge-Konfiguration hinzu.\nFehlerbehebung: Deaktivierung der LNS-Verbindungssuche im Falle einer leeren URL\nBeheben von Standardwerten für JSON-Stati.",
@@ -80,19 +93,6 @@
         "pl": "Importuj stany mostu do momentu uruchomienia adaptera.\nUsunięto stany obce do momentu uruchomienia adaptera.",
         "uk": "Міст імпортує зовнішні стани поки адаптер працює\nВидалення зовнішніх станів у мосту доки адаптер працює.",
         "zh-cn": "桥接器在适配器运行之前导入外部状态\n桥删除外部状态直到适配器运行"
-      },
-      "1.16.3": {
-        "en": "nameing of foreign Devices in Bridge",
-        "de": "Benennung von fremden Geräten in der Brücke",
-        "ru": "Наименование иностранных устройств в мосту",
-        "pt": "Nomenclatura de Dispositivos Estrangeiros na Ponte",
-        "nl": "Benaming van externe apparaten in de bridge",
-        "fr": "Renommage des appareils étrangers dans le pont",
-        "it": "Nominativo dei dispositivi stranieri nel Bridge",
-        "es": "Renombrar dispositivos extranjeros en el puente",
-        "pl": "Nadanie nazw obcym urządzeniom w mostku",
-        "uk": "Перейменування зовнішніх пристроїв у мосту",
-        "zh-cn": "在网桥中给外部设备命名"
       }
     },
     "titleLang": {
