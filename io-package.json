@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.16.11",
+    "version": "1.16.12",
     "news": {
+      "1.16.12": {
+        "en": "delete devices in bridge (discover empty) after changing the device_identifier",
+        "de": "Löschen Sie Geräte in der Brücke (entdecken leer), nachdem die Gerätekennung geändert wurde.",
+        "ru": "Удаление устройств в мосту (обнаружить пустоту) после изменения идентификатора устройства",
+        "pt": "excluir dispositivos na ponte (descoberta vazia) após alterar o device_identifier",
+        "nl": "Verwijder apparaten in de brug (ontdek leeg) na het wijzigen van de apparaat_identifier.",
+        "fr": "Supprimer les appareils dans le bridge (découverte vide) après avoir modifié l'identifiant de l'appareil",
+        "it": "Eliminare i dispositivi nel bridge (scoprire vuoto) dopo aver cambiato l'identificatore del dispositivo.",
+        "es": "eliminar dispositivos en el puente (descubrir vacío) después de cambiar el device_identifier",
+        "pl": "Usuń urządzenia z mostka (odkryj puste) po zmianie identyfikatora urządzenia",
+        "uk": "видалити пристрої у мості (відкрити порожнечу) після зміни ідентифікатора пристрою",
+        "zh-cn": "更改设备标识符后，在桥接器中删除设备（发现为空）。"
+      },
       "1.16.11": {
         "en": "dont use bridge enum within namespace of adapter\nImprove Namebuilding of foreign states to bridge",
         "de": "Verwenden Sie keine Bridge-Enum innerhalb des Namensraums des Adapters.\nVerbessern Sie den Namensaufbau ausländischer Staaten auf Bridging",
@@ -80,19 +93,6 @@
         "pl": "Wykrywanie zmian w nowym Discovery urządzeń LoRaWAN",
         "uk": "Виявлення нових пристроїв Discovery з LoRaWAN",
         "zh-cn": "更改LoRaWAN设备的新发现检测"
-      },
-      "1.16.5": {
-        "en": "Bugfix in notifications to Bridge (new device dicovered) => namespace not set",
-        "de": "Fehlerbehebung bei Benachrichtigungen an Bridge (neues Gerät erkannt) => Namespace nicht festgelegt",
-        "ru": "Исправлена ошибка в уведомлениях для моста (обнаружение нового устройства) => пространство имен не установлено",
-        "pt": "Correção de bug nas notificações para Bridge (novo dispositivo descoberto) => espaço de nomes não definido",
-        "nl": "Bugfix in meldingen naar Bridge (nieuw apparaat ontdekt) => namespace niet ingesteld",
-        "fr": "Correction de bug dans les notifications vers le pont (nouveau périphérique découvert) => espace de noms non défini",
-        "it": "Correzione di un bug nelle notifiche al Bridge (nuovo dispositivo scoperto) => namespace non impostato",
-        "es": "Corrección de error en las notificaciones al puente (nuevo dispositivo descubierto) => espacio de nombres no establecido",
-        "pl": "Poprawiono błąd w powiadomieniach do Bridge (nowe urządzenie zostało znalezione) => nie ustawiona przestrzeń nazw",
-        "uk": "Виправлено помилку у сповіщеннях до мосту (виявлено новий пристрій) => не встановлений простір імен",
-        "zh-cn": "修复了通知到桥接器的bug（发现新设备）=>命名空间未设置"
       }
     },
     "titleLang": {
