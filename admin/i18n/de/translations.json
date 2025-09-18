@@ -161,5 +161,9 @@
     "new device discovered": "Neues Gerät discovered",
     "Adapter will be stoped": "Der LoRaWAN Bridge Adapter wurde gestoppt",
     "BridgeEnum": "Bridge enum",
-    "BridgeEnumTooltip": "Wählen Sie eine enum (Kategorie) aus, die verwendet werden soll, um Adapter fremde States zur Bridge zu übertragen"
+    "BridgeEnumTooltip": "Wählen Sie eine enum (Kategorie) aus, die verwendet werden soll, um Adapter fremde States zur Bridge zu übertragen",
+    "BridgeConnectionTest": "Verbindungstest",
+    "BridgeConnectionTestTooltip": "Klicken, um einen Verbindungstest zur Bridge durchzuführen",
+    "no connection to bridge": "❌ Keine Verbindung",
+    "connection to bridge ok": "✅ Verbindung OK"
 }

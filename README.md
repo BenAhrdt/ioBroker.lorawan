@@ -23,6 +23,11 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) bring connectiontest to bridge config
+* (BenAhrdt) Bugfixing deaktivate LNS connection search in case of empty url
+* (BenAhrdt) Bugfixing defaultvalues for json states.
+
 ### 1.16.8 (2025-09-17)
 * (BenAhrdt) Bring enum selection in config
 

@@ -1,4 +1,5 @@
 'use strict';
+const mqtt = require('mqtt');
 
 /*
  * Created with @iobroker/create-adapter v2.6.0
@@ -65,8 +66,10 @@ class Lorawan extends utils.Adapter {
             // create new messagehandler
             this.messagehandler = new messagehandlerClass(this);
 
-            // Set mqtt client
-            this.mqttClient = new mqttClientClass(this, this.config);
+            // Set mqtt client => just declare, if a url is set
+            if (this.config.BridgeipUrl !== '') {
+                this.mqttClient = new mqttClientClass(this, this.config);
+            }
 
             // declare bridge if configed
             if (this.config.BridgeType !== 'off') {
@@ -1248,6 +1251,36 @@ class Lorawan extends utils.Adapter {
                             }
                         }
                         this.sendTo(obj.from, obj.command, enums, obj.callback);
+                    } catch (error) {
+                        this.log.error(error);
+                    }
+                } else if (obj.command === 'getBridgeConnection') {
+                    try {
+                        this.log.error(typeof obj.message.Bridgessl);
+                        let connection = false;
+                        const mqttprefix = obj.message.Bridgessl ? 'mqtts://' : 'mqtt://';
+                        const testclient = mqtt.connect(`${mqttprefix}${obj.message.BridgeipUrl}`, {
+                            port: obj.message.Bridgeport,
+                            username: obj.message.Bridgeusername,
+                            password: obj.message.Bridgepassword,
+                            clientId: `iobroker_${this.namespace}.bridgeTest`,
+                        });
+                        testclient.on('connect', async () => {
+                            connection = true;
+                        });
+                        setTimeout(() => {
+                            testclient.end();
+                            this.sendTo(
+                                obj.from,
+                                obj.command,
+                                {
+                                    result: connection
+                                        ? this.i18nTranslation['connection to bridge ok']
+                                        : this.i18nTranslation['no connection to bridge'],
+                                },
+                                obj.callback,
+                            );
+                        }, 100);
                     } catch (error) {
                         this.log.error(error);
                     }

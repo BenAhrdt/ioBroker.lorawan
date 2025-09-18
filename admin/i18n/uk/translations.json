@@ -161,5 +161,9 @@
     "new device discovered": "Виявлений новий пристрій",
     "Adapter will be stoped": "Адаптер мосту Лоравана буде зупинено",
     "BridgeEnum": "Мост",
-    "BridgeEnumTooltip": "Виберіть Enum, який використовується для залучення іноземних держав до мосту"
+    "BridgeEnumTooltip": "Виберіть Enum, який використовується для залучення іноземних держав до мосту",
+    "BridgeConnectionTest": "з'єднання",
+    "BridgeConnectionTestTooltip": "cklick ця кнопка, щоб перевірити підключення до вашого мосту",
+    "no connection to bridge": "❌ Немає з'єднання",
+    "connection to bridge ok": "✅ з'єднання добре"
 }

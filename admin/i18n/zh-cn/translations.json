@@ -161,5 +161,9 @@
     "new device discovered": "发现了新设备",
     "Adapter will be stoped": "Lorawan桥适配器将停止",
     "BridgeEnum": "桥梁枚举",
-    "BridgeEnumTooltip": "选择一个枚举，用于将外国带到桥梁"
+    "BridgeEnumTooltip": "选择一个枚举，用于将外国带到桥梁",
+    "BridgeConnectionTest": "连接测试",
+    "BridgeConnectionTestTooltip": "cklick此按钮，检查连接到您的桥梁",
+    "no connection to bridge": "❌没有连接",
+    "connection to bridge ok": "✅连接确定"
 }

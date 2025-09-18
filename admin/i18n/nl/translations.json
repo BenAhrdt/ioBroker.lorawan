@@ -161,5 +161,9 @@
     "new device discovered": "Nieuw apparaat ontdekt",
     "Adapter will be stoped": "De Lorawan Bridge -adapter wordt gestopt",
     "BridgeEnum": "Brug -opsomming",
-    "BridgeEnumTooltip": "Selecteer een opsomming, dat wordt gebruikt om buitenlandse staten naar de brug te brengen"
+    "BridgeEnumTooltip": "Selecteer een opsomming, dat wordt gebruikt om buitenlandse staten naar de brug te brengen",
+    "BridgeConnectionTest": "Verbindingstest",
+    "BridgeConnectionTestTooltip": "Cklick deze knop, om te controleren op de verbinding met uw brug",
+    "no connection to bridge": "❌ Geen verbinding",
+    "connection to bridge ok": "✅ Verbinding OK"
 }

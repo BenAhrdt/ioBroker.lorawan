@@ -512,7 +512,7 @@
         "icon": "icons/discover.png",
         "read": true,
         "write": false,
-        "def": ""
+        "def": "{}"
       },
       "native": {}
     },
@@ -526,7 +526,7 @@
         "icon": "icons/discover.png",
         "read": true,
         "write": false,
-        "def": ""
+        "def": "{}"
       },
       "native": {}
     },
@@ -540,7 +540,7 @@
         "icon": "icons/discover.png",
         "read": true,
         "write": false,
-        "def": ""
+        "def": "{}"
       },
       "native": {}
     },
@@ -554,7 +554,7 @@
         "icon": "icons/deviceinfo.png",
         "read": true,
         "write": false,
-        "def": ""
+        "def": "{}"
       },
       "native": {}
     }

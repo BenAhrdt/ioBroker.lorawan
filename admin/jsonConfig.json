@@ -943,6 +943,30 @@
 					"lg": 3,
 					"xl": 3
 				},
+				"_Sparepart":{
+					"type": "staticText",
+					"label": "",
+					"xs": 1,
+					"sm": 1,
+					"md": 1,
+					"lg": 1,
+					"xl": 1
+				},
+				"_BridgeConnectionTest":{
+					"type": "sendTo",
+					"label": "BridgeConnectionTest",
+					"hidden": "data.BridgeType === 'off'",
+					"tooltip": "BridgeConnectionTestTooltip",
+					"showProcess": false,
+                    "variant": "contained",
+					"jsonData": "{\"BridgeipUrl\":\"${data.BridgeipUrl}\",\"Bridgeport\":${data.Bridgeport},\"Bridgessl\":${data.Bridgessl},\"Bridgeusername\":\"${data.Bridgeusername}\",\"Bridgepassword\":\"${data.Bridgepassword}\"}",
+                    "command": "getBridgeConnection",
+					"xs": 12,
+					"sm": 3,
+					"md": 3,
+					"lg": 3,
+					"xl": 3
+				},
 				"_DeviceIdentifierDiscription":{
 					"newLine":true,
 					"type": "staticText",
@@ -1441,7 +1465,7 @@
 							"attr": "ModeState",
 							"label": "State",
 							"default": "No State selected",
-							"jsonData": "{\"application\":\"${data.ModeApplication}\",\"device\":\"${data.ActDevice}\",\"folder\":\"${data.ActFolder}\"}",
+							"jsonData": "{\"application\":\"${data.ModeApplication}\",\"device\":\"${data.ModeDevice}\",\"folder\":\"${data.ModeFolder}\"}",
 							"command": "getStatesForClimateConfig",
 							"noTranslation": true,
 							"alsoDependsOn":[

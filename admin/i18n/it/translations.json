@@ -161,5 +161,9 @@
     "new device discovered": "Nuovo dispositivo scoperto",
     "Adapter will be stoped": "L'adattatore del ponte Lorawan sarà fermato",
     "BridgeEnum": "Ponte enum",
-    "BridgeEnumTooltip": "Seleziona un enum, che viene utilizzato per portare stati stranieri sul ponte"
+    "BridgeEnumTooltip": "Seleziona un enum, che viene utilizzato per portare stati stranieri sul ponte",
+    "BridgeConnectionTest": "ConnectionTest",
+    "BridgeConnectionTestTooltip": "cklick questo pulsante, per controllare la connessione al tuo ponte",
+    "no connection to bridge": "❌ Nessuna connessione",
+    "connection to bridge ok": "✅ connessione ok"
 }

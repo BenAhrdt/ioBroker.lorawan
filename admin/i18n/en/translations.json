@@ -161,5 +161,9 @@
 	"new device discovered": "new device discovered",
 	"Adapter will be stoped": "The LoRaWAN Bridge Adapter will be stoped",
 	"BridgeEnum": "Bridge Enum",
-	"BridgeEnumTooltip": "Select an enum, that is used for bringing foreign states to the bridge"
+	"BridgeEnumTooltip": "Select an enum, that is used for bringing foreign states to the bridge",
+	"BridgeConnectionTest": "connectiontest",
+	"BridgeConnectionTestTooltip": "cklick this button, to check to connection to your bridge",
+	"no connection to bridge": "❌ no connection",
+	"connection to bridge ok": "✅ connection OK"
 }

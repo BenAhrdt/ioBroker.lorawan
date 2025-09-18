@@ -161,5 +161,9 @@
     "new device discovered": "Новое устройство обнаружено",
     "Adapter will be stoped": "Адаптер моста Лораван будет остановлен",
     "BridgeEnum": "Мост enum",
-    "BridgeEnumTooltip": "Выберите перечисление, которое используется для привлечения иностранных государств на мост"
+    "BridgeEnumTooltip": "Выберите перечисление, которое используется для привлечения иностранных государств на мост",
+    "BridgeConnectionTest": "ConnectionTest",
+    "BridgeConnectionTestTooltip": "Cklick эта кнопка, чтобы проверить подключение к мосту",
+    "no connection to bridge": "❌ Нет соединения",
+    "connection to bridge ok": "✅ Соединение ОК"
 }

@@ -161,5 +161,9 @@
     "new device discovered": "nuevo dispositivo descubierto",
     "Adapter will be stoped": "El adaptador del puente Lorawan se detendrá",
     "BridgeEnum": "Enum de puente",
-    "BridgeEnumTooltip": "Seleccione una enumación, que se usa para llevar estados extranjeros al puente"
+    "BridgeEnumTooltip": "Seleccione una enumación, que se usa para llevar estados extranjeros al puente",
+    "BridgeConnectionTest": "ConnectionTest",
+    "BridgeConnectionTestTooltip": "Cklick este botón, para verificar la conexión a su puente",
+    "no connection to bridge": "❌ Sin conexión",
+    "connection to bridge ok": "✅ Conexión OK"
 }
