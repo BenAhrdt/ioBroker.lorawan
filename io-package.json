@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.16.10",
+    "version": "1.16.11",
     "news": {
+      "1.16.11": {
+        "en": "dont use bridge enum within namespace of adapter\nImprove Namebuilding of foreign states to bridge",
+        "de": "Verwenden Sie keine Bridge-Enum innerhalb des Namensraums des Adapters.\nVerbessern Sie den Namensaufbau ausländischer Staaten auf Bridging",
+        "ru": "не используйте перечисление bridge в пространстве имен адаптера\nУлучшено построение имен иностранных государств для функции bridge.",
+        "pt": "Não use a enumeração de ponte dentro do namespace do adaptador.\nMelhorar a construção de nomes de estados estrangeiros para ponte",
+        "nl": "Gebruik geen brugenum binnen de namespace van de adapter.\nVerbeter de naamopbouw van buitenlandse staten naar brug",
+        "fr": "Ne pas utiliser l'énumération pont (bridge enum) à l'intérieur de l'espace de noms de l'adaptateur.\nAmélioration de la construction du nom des états étrangers pour les ponts.",
+        "it": "Non utilizzare l'enumerazione del ponte all'interno dello spazio dei nomi dell'adattatore.\nMiglioramento del nome delle costruzioni degli stati stranieri per rendere più coerente",
+        "es": "no use el enum de puente dentro del espacio de nombres del adaptador\nMejorar la construcción de nombres de estados extranjeros para la conexión.",
+        "pl": "Nie używaj typu enum bridge w przestrzeni nazw adaptera.\nPoprawiono nazewnictwo zagranicznych stanów, aby ułatwić ich identyfikację.",
+        "uk": "не використовуйте перелік `bridge` в межах простору імен адаптера\nПокращено назви зовнішніх держав для зручності.",
+        "zh-cn": "在适配器的命名空间中不要使用桥接枚举。\n改进外国状态的名称构建以弥合差异"
+      },
       "1.16.10": {
         "en": "bugfix change query of Bridgeurl to LoRaWAN url",
         "de": "Fehlerbehebung Änderung der Abfrage von Bridge-URL zu LoRaWAN-URL",
@@ -80,19 +93,6 @@
         "pl": "Poprawiono błąd w powiadomieniach do Bridge (nowe urządzenie zostało znalezione) => nie ustawiona przestrzeń nazw",
         "uk": "Виправлено помилку у сповіщеннях до мосту (виявлено новий пристрій) => не встановлений простір імен",
         "zh-cn": "修复了通知到桥接器的bug（发现新设备）=>命名空间未设置"
-      },
-      "1.16.4": {
-        "en": "Bridge import foreign states till Adapter is running\nBridge delete foreign states till Adapter is running",
-        "de": "Brücke importiert externe Zustände, solange der Adapter läuft.\nLösche Fremdzustände aus der Datenbank, solange der Adapter aktiv ist.",
-        "ru": "Импортируйте внешние состояния моста до запуска адаптера\nУдаление внешних состояний Bridge, пока работает адаптер.",
-        "pt": "Importar estados externos da ponte até que o adaptador esteja em execução\nExcluir estados estrangeiros da ponte até que o adaptador esteja em execução",
-        "nl": "Importeer externe toestanden van de brug totdat de adapter actief is\nBridge verwijdert externe statussen zolang de adapter actief is",
-        "fr": "Importer les états étrangers du pont tant que l'adaptateur est en cours d'exécution.\nSupprimer les états étrangers du pont tant que l'adaptateur est en cours d'exécution",
-        "it": "Importa gli stati esterni del bridge finché l'adattatore è in esecuzione\nEliminazione dello stato estero del bridge fino a quando l'adattatore è in esecuzione",
-        "es": "Importar estados extranjeros del puente hasta que el adaptador esté en funcionamiento.\nEliminar estados extranjeros del puente hasta que el adaptador esté en funcionamiento",
-        "pl": "Importuj stany mostu do momentu uruchomienia adaptera.\nUsunięto stany obce do momentu uruchomienia adaptera.",
-        "uk": "Міст імпортує зовнішні стани поки адаптер працює\nВидалення зовнішніх станів у мосту доки адаптер працює.",
-        "zh-cn": "桥接器在适配器运行之前导入外部状态\n桥删除外部状态直到适配器运行"
       }
     },
     "titleLang": {
