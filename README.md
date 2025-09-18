@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.16.9 (2025-09-18)
 * (BenAhrdt) bring connectiontest to bridge config
 * (BenAhrdt) Bugfixing deaktivate LNS connection search in case of empty url
 * (BenAhrdt) Bugfixing defaultvalues for json states.

@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.16.8",
+    "version": "1.16.9",
     "news": {
+      "1.16.9": {
+        "en": "bring connectiontest to bridge config\nBugfixing deaktivate LNS connection search in case of empty url\nBugfixing defaultvalues for json states.",
+        "de": "Füge den Verbindungstest zur Bridge-Konfiguration hinzu.\nFehlerbehebung: Deaktivierung der LNS-Verbindungssuche im Falle einer leeren URL\nBeheben von Standardwerten für JSON-Stati.",
+        "ru": "Добавить тест соединения в настройки моста.\nИсправлена ошибка, отключающая поиск подключения LNS в случае пустого URL-адреса.\nИсправление ошибок значений по умолчанию для состояний JSON.",
+        "pt": "Adicionar teste de conexão à configuração da ponte\nCorreção de bug: desativar a busca de conexão LNS no caso de URL vazia\nCorreção de bug nos valores padrão para estados json.",
+        "nl": "Voeg de verbindingstest toe aan de bridge-configuratie.\nBugfix: deactiveer LNS-verbinding zoeken in geval van een lege URL.\nOplossing van standaardwaarden voor json-stateno.",
+        "fr": "ajouter le test de connexion à la configuration du pont\nCorrection de bugs: désactivation de la recherche de connexion LNS en cas d'URL vide\nCorrection de bugs pour les valeurs par défaut des états JSON.",
+        "it": "portare il test di connessione alla configurazione del bridge\nCorrezione di bug: disattivata la ricerca della connessione LNS in caso di URL vuoto\nCorrezione dei valori predefiniti per gli stati JSON.",
+        "es": "agregar prueba de conexión a la configuración del puente\nCorrección de errores: desactivar la búsqueda de conexión LNS en caso de URL vacía\nCorrección de errores en los valores predeterminados para los estados JSON.",
+        "pl": "Dodaj test połączenia do konfiguracji mostka\nNaprawiono problem z deaktywacją wyszukiwania połączenia LNS w przypadku pustego adresu URL.\nNaprawiono wartości domyślne dla stanów typu json.",
+        "uk": "Додайте перевірку з'єднання до налаштувань моста.\nВиправлення помилки в деактивації пошуку підключення LNS у випадку порожнього URL\nВиправлення значень за замовчуванням для станів JSON.",
+        "zh-cn": "将连接测试添加到桥接器配置\n修复Bug：如果URL为空，则禁用LNS连接搜索。\n修复了JSON状态的默认值。"
+      },
       "1.16.8": {
         "en": "Bring enum selection in config",
         "de": "Fügen Sie die Auswahlmöglichkeit für Aufzählungen in der Konfiguration hinzu.",
@@ -80,19 +93,6 @@
         "pl": "Nadanie nazw obcym urządzeniom w mostku",
         "uk": "Перейменування зовнішніх пристроїв у мосту",
         "zh-cn": "在网桥中给外部设备命名"
-      },
-      "1.16.2": {
-        "en": "bugfix namespace also by calling work from directoryhandler",
-        "de": "Bug behoben: Namensraum auch durch Aufruf von \"Arbeit\" von DirectoryHandler.",
-        "ru": "исправлена ошибка с пространством имен путем вызова работы из directoryhandler",
-        "pt": "Corrigido bug ao chamar namespace também utilizando o trabalho do directoryhandler.",
-        "nl": "Bugfix: Namespace wordt nu ook correct opgeroepen bij het gebruik van werk van DirectoryHandler.",
-        "fr": "Correction de bug du namespace également en appelant le travail du gestionnaire de répertoires.",
-        "it": "Correzione di bug anche chiamando il lavoro dal gestore della directory.",
-        "es": "Corrección de error en el espacio de nombres al llamar al trabajo desde directoryhandler",
-        "pl": "Poprawka błędu: przestrzeń nazw również wywoływana przez funkcję work z directoryhandler",
-        "uk": "виправлено помилку у просторі імен також шляхом виклику роботи з обробника директорій",
-        "zh-cn": "通过调用`directoryhandler`来修复了`namespace`问题。"
       }
     },
     "titleLang": {
