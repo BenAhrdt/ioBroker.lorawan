@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.1",
+    "version": "1.17.2",
     "news": {
+      "1.17.2": {
+        "en": "Bugfix nameing of foreign states",
+        "de": "Behebung der Benennung von ausländischen Bundesländern",
+        "ru": "Исправлена ошибка в именовании иностранных государств.",
+        "pt": "Correção de nomeação de estados estrangeiros",
+        "nl": "Bugfix benoemen van buitenlandse staten",
+        "fr": "Correction de la dénomination des états étrangers",
+        "it": "Correzione bug nel nome dei stati stranieri",
+        "es": "Corrección de nombres de estados extranjeros",
+        "pl": "Naprawiono nazewnictwo stanów obcych.",
+        "uk": "Виправлено назву іноземних країн",
+        "zh-cn": "修复外州命名错误"
+      },
       "1.17.1": {
         "en": "Bugfix xs in jsonconfig",
         "de": "Fehlerbehebung bei xs in jsonconfig",
@@ -80,19 +93,6 @@
         "pl": "Dodaj test połączenia do konfiguracji mostka\nNaprawiono problem z deaktywacją wyszukiwania połączenia LNS w przypadku pustego adresu URL.\nNaprawiono wartości domyślne dla stanów typu json.",
         "uk": "Додайте перевірку з'єднання до налаштувань моста.\nВиправлення помилки в деактивації пошуку підключення LNS у випадку порожнього URL\nВиправлення значень за замовчуванням для станів JSON.",
         "zh-cn": "将连接测试添加到桥接器配置\n修复Bug：如果URL为空，则禁用LNS连接搜索。\n修复了JSON状态的默认值。"
-      },
-      "1.16.8": {
-        "en": "Bring enum selection in config",
-        "de": "Fügen Sie die Auswahlmöglichkeit für Aufzählungen in der Konfiguration hinzu.",
-        "ru": "Добавлена возможность выбора значения из перечисления в настройках",
-        "pt": "Trazer seleção de enumeração na configuração",
-        "nl": "Breng de enum-selectie in de configuratie",
-        "fr": "Apporter la sélection d'énumération dans la configuration",
-        "it": "Porta la selezione dell'enum nella configurazione",
-        "es": "Traer selección de enum en la configuración",
-        "pl": "Przynieś wybór enum w konfiguracji",
-        "uk": "Додано вибір типу даних \"enum\" в налаштуваннях (config).",
-        "zh-cn": "在配置中添加枚举选择"
       }
     },
     "titleLang": {
