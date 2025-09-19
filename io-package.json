@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.3",
+    "version": "1.17.4",
     "news": {
+      "1.17.4": {
+        "en": "More debuglogging for Foreign Climate error",
+        "de": "Mehr Debug-Logging für Fehler bei Fremdklima.",
+        "ru": "Больше отладочного журналирования для ошибки внешнего климата",
+        "pt": "Mais debuglogging para erro de Clima Estrangeiro",
+        "nl": "Meer debuglogging voor fouten in het buitenlandse klimaatsysteem",
+        "fr": "Plus de debuglogging pour l'erreur Foreign Climate",
+        "it": "Maggiori dettagli di debug per gli errori relativi al sistema di climatizzazione esterno",
+        "es": "Más depuración para el error de Clima Externo",
+        "pl": "Więcej debugowania dla błędu Foreign Climate",
+        "uk": "Більше відладки для помилки зовнішнього клімату",
+        "zh-cn": "为外部气候错误添加更多的调试日志记录"
+      },
       "1.17.3": {
         "en": "Bugfix calling Foreign climate ids",
         "de": "Fehlerbehebung beim Aufrufen von Fremdklima-IDs.",
@@ -80,19 +93,6 @@
         "pl": "Nie używaj typu enum bridge w przestrzeni nazw adaptera.\nPoprawiono nazewnictwo zagranicznych stanów, aby ułatwić ich identyfikację.",
         "uk": "не використовуйте перелік `bridge` в межах простору імен адаптера\nПокращено назви зовнішніх держав для зручності.",
         "zh-cn": "在适配器的命名空间中不要使用桥接枚举。\n改进外国状态的名称构建以弥合差异"
-      },
-      "1.16.10": {
-        "en": "bugfix change query of Bridgeurl to LoRaWAN url",
-        "de": "Fehlerbehebung Änderung der Abfrage von Bridge-URL zu LoRaWAN-URL",
-        "ru": "Исправлена ошибка изменения запроса с Bridgeurl на LoRaWAN url.",
-        "pt": "correção de bug: alteração da consulta do Bridgeurl para a url LoRaWAN",
-        "nl": "bugfix verander query van Bridgeurl naar LoRaWAN-url",
-        "fr": "corriger le changement de requête de Bridgeurl vers l'URL LoRaWAN",
-        "it": "Modifica del bugfix della query del Bridgeurl in indirizzo LoRaWAN.",
-        "es": "Corrección de errores: cambiar la consulta de Bridgeurl a la URL de LoRaWAN.",
-        "pl": "Naprawiono błąd zmieniający zapytanie Bridgeurl na adres url LoRaWAN",
-        "uk": "виправлення помилки зміни запиту Bridgeurl на URL протоколу LoRaWAN",
-        "zh-cn": "修复将Bridgeurl查询更改为LoRaWAN网址"
       }
     },
     "titleLang": {
