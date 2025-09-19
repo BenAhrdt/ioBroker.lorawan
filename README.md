@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Bugfix calling Foreign climate ids
+
 ### 1.17.2 (2025-09-19)
 * (BenAhrdt) Bugfix nameing of foreign states
 
