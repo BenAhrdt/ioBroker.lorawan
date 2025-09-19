@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.2",
+    "version": "1.17.3",
     "news": {
+      "1.17.3": {
+        "en": "Bugfix calling Foreign climate ids",
+        "de": "Fehlerbehebung beim Aufrufen von Fremdklima-IDs.",
+        "ru": "Исправлена ошибка при вызове иностранных идентификаторов климата",
+        "pt": "Correção de bug ao chamar ids de clima estrangeiros",
+        "nl": "Bugfix voor het oproepen van vreemde klimaat-id's",
+        "fr": "Correction de bug pour l'appel des identifiants de climatisation étrangers",
+        "it": "Correzione bug nella chiamata degli ID di climi stranieri",
+        "es": "Corregido el problema al llamar a los identificadores climáticos extranjeros",
+        "pl": "Naprawiono błąd związany z wywoływaniem identyfikatorów obcych dla klimatyzacji.",
+        "uk": "Виправлена помилка при виклику іноземних ідентифікаторів клімату",
+        "zh-cn": "修复调用Foreign climate ids时的错误"
+      },
       "1.17.2": {
         "en": "Bugfix nameing of foreign states",
         "de": "Behebung der Benennung von ausländischen Bundesländern",
@@ -80,19 +93,6 @@
         "pl": "Naprawiono błąd zmieniający zapytanie Bridgeurl na adres url LoRaWAN",
         "uk": "виправлення помилки зміни запиту Bridgeurl на URL протоколу LoRaWAN",
         "zh-cn": "修复将Bridgeurl查询更改为LoRaWAN网址"
-      },
-      "1.16.9": {
-        "en": "bring connectiontest to bridge config\nBugfixing deaktivate LNS connection search in case of empty url\nBugfixing defaultvalues for json states.",
-        "de": "Füge den Verbindungstest zur Bridge-Konfiguration hinzu.\nFehlerbehebung: Deaktivierung der LNS-Verbindungssuche im Falle einer leeren URL\nBeheben von Standardwerten für JSON-Stati.",
-        "ru": "Добавить тест соединения в настройки моста.\nИсправлена ошибка, отключающая поиск подключения LNS в случае пустого URL-адреса.\nИсправление ошибок значений по умолчанию для состояний JSON.",
-        "pt": "Adicionar teste de conexão à configuração da ponte\nCorreção de bug: desativar a busca de conexão LNS no caso de URL vazia\nCorreção de bug nos valores padrão para estados json.",
-        "nl": "Voeg de verbindingstest toe aan de bridge-configuratie.\nBugfix: deactiveer LNS-verbinding zoeken in geval van een lege URL.\nOplossing van standaardwaarden voor json-stateno.",
-        "fr": "ajouter le test de connexion à la configuration du pont\nCorrection de bugs: désactivation de la recherche de connexion LNS en cas d'URL vide\nCorrection de bugs pour les valeurs par défaut des états JSON.",
-        "it": "portare il test di connessione alla configurazione del bridge\nCorrezione di bug: disattivata la ricerca della connessione LNS in caso di URL vuoto\nCorrezione dei valori predefiniti per gli stati JSON.",
-        "es": "agregar prueba de conexión a la configuración del puente\nCorrección de errores: desactivar la búsqueda de conexión LNS en caso de URL vacía\nCorrección de errores en los valores predeterminados para los estados JSON.",
-        "pl": "Dodaj test połączenia do konfiguracji mostka\nNaprawiono problem z deaktywacją wyszukiwania połączenia LNS w przypadku pustego adresu URL.\nNaprawiono wartości domyślne dla stanów typu json.",
-        "uk": "Додайте перевірку з'єднання до налаштувань моста.\nВиправлення помилки в деактивації пошуку підключення LNS у випадку порожнього URL\nВиправлення значень за замовчуванням для станів JSON.",
-        "zh-cn": "将连接测试添加到桥接器配置\n修复Bug：如果URL为空，则禁用LNS连接搜索。\n修复了JSON状态的默认值。"
       }
     },
     "titleLang": {
