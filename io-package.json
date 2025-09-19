@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.6",
+    "version": "1.17.7",
     "news": {
+      "1.17.7": {
+        "en": "Virtal Mode for Foreign climate entities available",
+        "de": "Virtueller Modus für externe Klima-Entitäten verfügbar",
+        "ru": "Доступен виртуальный режим для иностранных сущностей климата",
+        "pt": "Modo virtual para entidades de clima estrangeiras disponível.",
+        "nl": "Virtuele Modus voor Externe klimaatentiteiten beschikbaar",
+        "fr": "Mode virtuel pour les entités climatiques étrangères disponible",
+        "it": "Modalità virtuale per le entità di clima estere disponibile",
+        "es": "Modo virtual para entidades de clima extranjeras disponible.",
+        "pl": "Dostępny tryb wirtualny dla zagranicznych jednostek klimatyzacyjnych.",
+        "uk": "Доступний режим віртуальних сутностей для зовнішнього клімату",
+        "zh-cn": "可用于外部气候实体的虚拟模式"
+      },
       "1.17.6": {
         "en": "Check foreign state id in climate improved",
         "de": "Überprüfen von ausländischen Status-IDs in der verbesserten Klimasteuerung",
@@ -80,19 +93,6 @@
         "pl": "Poprawiony błąd xs w jsonconfig",
         "uk": "Виправлено помилку xs в jsonconfig",
         "zh-cn": "修复jsonconfig中的xs bug"
-      },
-      "1.17.0": {
-        "en": "Add Climate Entity configuration to foreign states",
-        "de": "Fügen Sie die Konfiguration der Klima-Entität für externe Zustände hinzu",
-        "ru": "Добавлена конфигурация Climate Entity для внешних состояний",
-        "pt": "Adicionar configuração da entidade climática para estados estrangeiros",
-        "nl": "Voeg configuratie toe voor Klimaat Entiteit voor externe staten",
-        "fr": "Ajouter la configuration de l'entité de climatisation pour les états étrangers",
-        "it": "Aggiunta configurazione dell'entità Clima agli stati stranieri",
-        "es": "Agregar configuración de entidad de clima para estados extranjeros",
-        "pl": "Dodaj konfigurację encji klimatycznych do stanów obcych.",
-        "uk": "Додати конфігурацію сутності клімату до зовнішніх станів.",
-        "zh-cn": "将\"Climate Entity\"配置添加到外部状态。"
       }
     },
     "titleLang": {
