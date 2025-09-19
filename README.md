@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.17.0 (2025-09-19)
 * (BenAhrdt) Add Climate Entity configuration to foreign states
 
 ### 1.16.12 (2025-09-18)

@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.16.12",
+    "version": "1.17.0",
     "news": {
+      "1.17.0": {
+        "en": "Add Climate Entity configuration to foreign states",
+        "de": "Fügen Sie die Konfiguration der Klima-Entität für externe Zustände hinzu",
+        "ru": "Добавлена конфигурация Climate Entity для внешних состояний",
+        "pt": "Adicionar configuração da entidade climática para estados estrangeiros",
+        "nl": "Voeg configuratie toe voor Klimaat Entiteit voor externe staten",
+        "fr": "Ajouter la configuration de l'entité de climatisation pour les états étrangers",
+        "it": "Aggiunta configurazione dell'entità Clima agli stati stranieri",
+        "es": "Agregar configuración de entidad de clima para estados extranjeros",
+        "pl": "Dodaj konfigurację encji klimatycznych do stanów obcych.",
+        "uk": "Додати конфігурацію сутності клімату до зовнішніх станів.",
+        "zh-cn": "将\"Climate Entity\"配置添加到外部状态。"
+      },
       "1.16.12": {
         "en": "delete devices in bridge (discover empty) after changing the device_identifier",
         "de": "Löschen Sie Geräte in der Brücke (entdecken leer), nachdem die Gerätekennung geändert wurde.",
@@ -80,19 +93,6 @@
         "pl": "Naprawiono błąd usuwania odkrytych urządzeń.\nZaimplementowano logowanie debugowania w celu znalezienia błędu w nazwie urządzenia.",
         "uk": "Виправлено помилку видалення виявлених пристроїв.\nВбудоване відлагодження для пошуку помилки в імені пристрою.",
         "zh-cn": "修复删除已发现设备时出现的问题\n构建调试日志以查找设备名称中的错误"
-      },
-      "1.16.6": {
-        "en": "Change detection of new Discovery from LoRaWAN devices",
-        "de": "Änderung der Erkennung neuer Entdeckungen von LoRaWAN-Geräten",
-        "ru": "Обнаружение изменений новых устройств LoRaWAN",
-        "pt": "Detecção de novos dispositivos LoRaWAN na Descoberta",
-        "nl": "Wijziging in detectie van nieuwe Discovery van LoRaWAN apparaten",
-        "fr": "Détection des nouvelles découvertes des dispositifs LoRaWAN",
-        "it": "Rilevamento delle nuove scoperte dei dispositivi LoRaWAN",
-        "es": "Detección de cambios de nuevos dispositivos de descubrimiento de LoRaWAN",
-        "pl": "Wykrywanie zmian w nowym Discovery urządzeń LoRaWAN",
-        "uk": "Виявлення нових пристроїв Discovery з LoRaWAN",
-        "zh-cn": "更改LoRaWAN设备的新发现检测"
       }
     },
     "titleLang": {
