@@ -174,5 +174,7 @@
     "BridgeForeignHeader": "Definicja mostu enum",
     "_BridgeEnumDiscription": "Zdefiniuj enum THA jest używany do ustawiania stanów na most.\nNazwa urządzenia podąża za tymi priorytetami:\n1. DeviceName\n2. Nazwa kanału\n3. Przestrzeń nazw państwa",
     "ClimateForeignHeader": "Zdefiniuj stany dla jednostki klimatycznej",
-    "ClimateForeignInformation": "Tutaj możesz zdefiniować szereg definicji klimatycznych"
+    "ClimateForeignInformation": "Tutaj możesz zdefiniować szereg definicji klimatycznych",
+    "VirtualMode": "Tryb wirtualny",
+    "VirtualModeTooltip": "Aktywuj, jeśli identyfikator trybu nie jest obecny"
 }

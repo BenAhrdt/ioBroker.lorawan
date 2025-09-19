@@ -174,5 +174,7 @@
     "BridgeForeignHeader": "Définition de l'énumération du pont",
     "_BridgeEnumDiscription": "Définir une enum Tha est utilisée pour mettre les états dans le pont.\nLe nom de l'appareil suit ces priorités:\n1. Devicename\n2. ChannelName\n3. Espace de noms de l'État",
     "ClimateForeignHeader": "Définir les États de l'entité climatique",
-    "ClimateForeignInformation": "Ici, vous pouvez définir un tableau de définitions climatiques"
+    "ClimateForeignInformation": "Ici, vous pouvez définir un tableau de définitions climatiques",
+    "VirtualMode": "Mode virtuel",
+    "VirtualModeTooltip": "Activer, si un ID de mode n'est pas présent"
 }

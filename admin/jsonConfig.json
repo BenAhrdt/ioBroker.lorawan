@@ -1559,6 +1559,18 @@
 							"xl": 4
 						},
 						{
+							"type": "checkbox",
+							"attr": "VirtualMode",
+							"label": "VirtualMode",
+							"tooltip": "VirtualModeTooltip",
+							"default": false,
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},
+						{
 							"newLine": true,
 							"type": "staticText",
 							"attr": "_statciTextTarget",
@@ -1593,6 +1605,7 @@
 							"type": "objectId",
 							"attr": "ModeId",
 							"label": "ModeId",
+							"hidden": "data.VirtualMode === true",
 							"xs": 12,
 							"sm": 4,
 							"md": 4,

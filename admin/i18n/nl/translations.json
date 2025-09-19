@@ -174,5 +174,7 @@
     "BridgeForeignHeader": "Definitie van bridge enum",
     "_BridgeEnumDiscription": "Definieer een enum die wordt gebruikt voor het instellen van staten in brug.\nDe naam van het apparaat volgt deze prioriteiten:\n1. Devicename\n2. ChannelName\n3. Naamruimte van de staat",
     "ClimateForeignHeader": "Definieer staten voor klimaat entiteit",
-    "ClimateForeignInformation": "Hier kunt u een scala aan klimaatdefinities definiëren"
+    "ClimateForeignInformation": "Hier kunt u een scala aan klimaatdefinities definiëren",
+    "VirtualMode": "Virtuele modus",
+    "VirtualModeTooltip": "Activeer, als een modus -ID niet aanwezig is"
 }

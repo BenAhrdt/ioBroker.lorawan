@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Virtal Mode for Foreign climate entities available
+
 ### 1.17.6 (2025-09-19)
 * (BenAhrdt) Check foreign state id in climate improved
 

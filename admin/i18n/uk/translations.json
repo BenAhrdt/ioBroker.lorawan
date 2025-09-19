@@ -174,5 +174,7 @@
     "BridgeForeignHeader": "Визначення мосту Enum",
     "_BridgeEnumDiscription": "Визначте Enum tha використовується для встановлення станів у міст.\nНазва пристрою виконує ці пріоритети:\n1.\n2.\n3. Державний простір імен",
     "ClimateForeignHeader": "Визначте стани клімату",
-    "ClimateForeignInformation": "Тут ви можете визначити безліч визначення клімату"
+    "ClimateForeignInformation": "Тут ви можете визначити безліч визначення клімату",
+    "VirtualMode": "Віртуальний режим",
+    "VirtualModeTooltip": "Активуйте, якщо ідентифікатор режиму немає"
 }

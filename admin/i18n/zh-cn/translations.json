@@ -174,5 +174,7 @@
     "BridgeForeignHeader": "桥梁枚举的定义",
     "_BridgeEnumDiscription": "定义枚举用于将状态设置为桥梁。\n该设备的名称遵循此优先级：\n1。devicename\n2。频道名称\n3。状态名称空间",
     "ClimateForeignHeader": "定义气候实体的国家",
-    "ClimateForeignInformation": "在这里您可以定义一系列气候定义"
+    "ClimateForeignInformation": "在这里您可以定义一系列气候定义",
+    "VirtualMode": "虚拟模式",
+    "VirtualModeTooltip": "激活，如果不存在模式ID"
 }

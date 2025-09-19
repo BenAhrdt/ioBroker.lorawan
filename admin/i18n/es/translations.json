@@ -174,5 +174,7 @@
     "BridgeForeignHeader": "Definición de puente enum",
     "_BridgeEnumDiscription": "Definir un enum que se usa para establecer estados en puente.\nEl nombre del dispositivo está siguiendo estas prioridades:\n1.\n2. Nombre de canal\n3. Espacio de nombres de estado",
     "ClimateForeignHeader": "Definir estados para la entidad climática",
-    "ClimateForeignInformation": "Aquí puedes definir una variedad de definiciones climáticas"
+    "ClimateForeignInformation": "Aquí puedes definir una variedad de definiciones climáticas",
+    "VirtualMode": "Modo virtual",
+    "VirtualModeTooltip": "Activar, si no está presente una identificación de modo"
 }

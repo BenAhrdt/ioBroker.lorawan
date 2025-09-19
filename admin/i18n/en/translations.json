@@ -174,5 +174,7 @@
 	"BridgeForeignHeader": "Select of Bridge Enum",
 	"_BridgeEnumDiscription": "Select a Enum tha is used for setting states into Bridge.\nThe name of the device is following this priorities:\n1. Devicename\n2. Channelname\n3. Namespace of state",
 	"ClimateForeignHeader": "Define States for Climate Entity",
-	"ClimateForeignInformation": "Here you can define an array of Climate definitions"
+	"ClimateForeignInformation": "Here you can define an array of Climate definitions",
+	"VirtualMode": "Virtual Mode",
+	"VirtualModeTooltip": "Activate, if a mode id is not present"
 }

@@ -174,5 +174,7 @@
     "BridgeForeignHeader": "Wählen der Bridge Enum",
     "_BridgeEnumDiscription": "Wählen Sie eine Enumm (Kategorie) aus, die zum aktivieren der State in die Bridge verwendet wird.\nDer Name des Geräts erfolgt nach folgenden Prioritäten:\n1. Gerätename\n2. Channelname\n1. Namespace des States",
     "ClimateForeignHeader": "Definieren Sie Zustände für eine Klima Entität",
-    "ClimateForeignInformation": "Hier können Sie ein Array von Klimaentitäten definieren"
+    "ClimateForeignInformation": "Hier können Sie ein Array von Klimaentitäten definieren",
+    "VirtualMode": "Virtueller Modus",
+    "VirtualModeTooltip": "Aktivieren Sie diese Option, wenn kein Modus als State vorhanden ist."
 }
