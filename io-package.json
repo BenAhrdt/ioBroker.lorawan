@@ -456,7 +456,8 @@
         "exclude": false
       }
     ],
-    "ClimateConfig": []
+    "ClimateConfig": [],
+    "ClimateForeignConfig": []
   },
   "objects": [],
   "instanceObjects": [

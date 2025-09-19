@@ -165,5 +165,14 @@
     "BridgeConnectionTest": "连接测试",
     "BridgeConnectionTestTooltip": "cklick此按钮，检查连接到您的桥梁",
     "no connection to bridge": "❌没有连接",
-    "connection to bridge ok": "✅连接确定"
+    "connection to bridge ok": "✅连接确定",
+    "BridgeLoRaPanel": "桥梁洛万",
+    "BridgeLoRaConfigHeader": "洛万桥的索位",
+    "BridgeForeignPanel": "外国桥梁",
+    "BridgeForeignConfigHeader": "外国的设置",
+    "BridgeLoRaHeader": "设备Indetifier的定义",
+    "BridgeForeignHeader": "桥梁枚举的定义",
+    "_BridgeEnumDiscription": "定义枚举用于将状态设置为桥梁。\n该设备的名称遵循此优先级：\n1。devicename\n2。频道名称\n3。状态名称空间",
+    "ClimateForeignHeader": "定义气候实体的国家",
+    "ClimateForeignInformation": "在这里您可以定义一系列气候定义"
 }

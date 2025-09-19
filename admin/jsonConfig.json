@@ -784,20 +784,6 @@
                     "lg": 2,
                     "xl": 2
             	},				
-				"BridgeEnum": {
-					"type": "selectSendTo",
-					"label": "BridgeEnum",
-					"tooltip": "BridgeEnumTooltip",
-					"default": "",
-					"jsonData": "{}",
-					"command": "getEnums",
-					"hidden": "data.BridgeType === 'off'",
-					"xs": 12,
-					"sm": 5,
-					"md": 5,
-					"lg": 5,
-					"xl": 5
-				},
 				"BridgenotificationActivation":{
 					"newLine": true,
 					"type": "select",
@@ -966,11 +952,28 @@
 					"md": 3,
 					"lg": 3,
 					"xl": 3
+				}
+			}
+		},
+		"_BridgeLoRaPanel":{
+			"type": "panel",
+			"label": "BridgeLoRaPanel",
+			"hidden": "data.BridgeType === 'off'",
+			"items": {
+				"_BridgeLoRaConfigHeader":{
+				"newLine": true,
+				"type": "header",
+				"text": "BridgeLoRaHeader",
+				"size": 3,
+				"xs": 12,
+				"sm": 12,
+				"md": 12,
+				"lg": 12,
+				"xl": 12
 				},
 				"_DeviceIdentifierDiscription":{
 					"newLine":true,
 					"type": "staticText",
-					"hidden": "data.BridgeType === 'off'",
 					"label": "_DeviceIdentifierDiscription",
 					"xs": 12,
 					"sm": 12,
@@ -980,7 +983,6 @@
 				},
 				"DeviceIdentifiers":{
 					"newLine": true,
-					"hidden": "data.BridgeType === 'off'",
 					"type":"accordion",
 					"titleAttr": "DeviceIdentifier",
 					"clone": true,
@@ -1014,7 +1016,6 @@
 				},
 				"separator":{
 					"newLine": true,
-					"hidden": "data.BridgeType === 'off'",
 					"type": "select",
 					"label": "separator",
 					"tooltip": "separatorTooltip",
@@ -1033,7 +1034,6 @@
 				},
 				"_spare1":{
 					"type": "staticText",
-					"hidden": "data.BridgeType === 'off'",
 					"label": "",
 					"xs": 12,
 					"sm": 1,
@@ -1043,7 +1043,6 @@
 				},
 				"_DeviceIdentifierConfiguredDiscription":{
 					"type": "staticText",
-					"hidden": "data.BridgeType === 'off'",
 					"label": "_DeviceIdentifierConfiguredDiscription",
 					"style": {"font-size":"16px", "font-weight":"bold"},
 					"xs": 12,
@@ -1054,7 +1053,6 @@
 				},
 				"_DeviceIdentifierConfigured":{
                     "type": "textSendTo",
-					"hidden": "data.BridgeType === 'off'",
 					"style": {"font-size":"16px", "font-weight":"bold", "color":"blue"},
                     "jsonData": "{\"DeviceIdentifiers\":${JSON.stringify(data.DeviceIdentifiers)},\"separator\":\"${data.separator}\"}",
                     "command": "getTopicConfigured",
@@ -1071,7 +1069,6 @@
 				"_spare2":{
 					"newLine": true,
 					"type": "staticText",
-					"hidden": "data.BridgeType === 'off'",
 					"label": "",
 					"xs": 12,
 					"sm": 3,
@@ -1081,7 +1078,6 @@
 				},
 				"_DeviceIdentifierExampleDiscription":{
 					"type": "staticText",
-					"hidden": "data.BridgeType === 'off'",
 					"label": "_DeviceIdentifierExampleDiscription",
 					"style": {"font-size":"16px", "font-weight":"bold"},
 					"xs": 12,
@@ -1092,7 +1088,6 @@
 				},
 				"_DeviceIdentifierExample":{
                     "type": "textSendTo",
-					"hidden": "data.BridgeType === 'off'",
 					"style": {"font-size":"16px", "font-weight":"bold", "color":"blue"},
                     "jsonData": "{\"DeviceIdentifiers\":${JSON.stringify(data.DeviceIdentifiers)},\"separator\":\"${data.separator}\"}",
                     "command": "getTopicExample",
@@ -1108,7 +1103,6 @@
                 },
 				"_BridgeStateHeader":{
 					"newLine": true,
-					"hidden": "data.BridgeType === 'off'",
 					"type": "header",
 					"text": "BridgeStateHeader",
 					"size": 3,
@@ -1120,7 +1114,6 @@
 					},
 				"_BridgeStateInformation":{
 					"newLine":true,
-					"hidden": "data.BridgeType === 'off'",
 					"type": "staticText",
 					"label": "BridgeStateInformation",
 					"xs": 12,
@@ -1131,7 +1124,6 @@
 				},
 				"BridgeStateConfig":{
                     "newLine": true,
-					"hidden": "data.BridgeType === 'off'",
                     "type":"table",
                     "allowAddByFilter": true,
 					"clone": true,
@@ -1214,7 +1206,6 @@
 				},
 				"_ClimateHeader":{
 					"newLine": true,
-					"hidden": "data.BridgeType === 'off'",
 					"type": "header",
 					"text": "ClimateHeader",
 					"size": 3,
@@ -1226,7 +1217,6 @@
 					},
 				"_ClimateInformation":{
 					"newLine":true,
-					"hidden": "data.BridgeType === 'off'",
 					"type": "staticText",
 					"label": "ClimateInformation",
 					"xs": 12,
@@ -1237,7 +1227,6 @@
 				},
 				"ClimateConfig":{
                     "newLine": true,
-					"hidden": "data.BridgeType === 'off'",
                     "type":"accordion",
 					"titleAttr": "ClimateName",
 					"clone": true,
@@ -1251,6 +1240,9 @@
 							"type": "text",
 							"attr": "ClimateName",
 							"label": "ClimateNameText",
+							"validator": "if(data.ClimateName === ''){return false;}else{return true;}",
+							"validatorNoSaveOnError": true,
+							"default": "Climate Name",
 							"xs": 12,
 							"sm": 4,
 							"md": 4,
@@ -1435,7 +1427,6 @@
 							"default": "*",
 							"jsonData": "{\"application\":\"${data.ModeApplication}\"}",
 							"command": "getDevicesForClimateConfig",
-							"hidden": "data.ModeApplication === 'NotPresent'",
 							"alsoDependsOn":[
                         		"ModeApplication"
                     		],
@@ -1453,7 +1444,6 @@
 							"options": [
 								{"label":"uplink.decoded","value":"uplink.decoded"}
 							],
-							"hidden": "data.ModeApplication === 'NotPresent'",
 							"xs": 12,
 							"sm": 2,
 							"md": 2,
@@ -1473,7 +1463,136 @@
 								"ModeDevice",
 								"ModeFolder"
                     		],
-							"hidden": "data.ModeApplication === 'NotPresent'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						}
+					]
+				}
+			}
+		},
+		"_BridgeForeignPanel":{
+			"type": "panel",
+			"label": "BridgeForeignPanel",
+			"hidden": "data.BridgeType === 'off'",
+			"items": {
+				"_BridgeForeignConfigHeader":{
+				"newLine": true,
+				"type": "header",
+				"text": "BridgeForeignHeader",
+				"size": 3,
+				"xs": 12,
+				"sm": 12,
+				"md": 12,
+				"lg": 12,
+				"xl": 12
+				},
+				"_BridgeEnumDiscription":{
+					"newLine":true,
+					"type": "staticText",
+					"label": "_BridgeEnumDiscription",
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"BridgeEnum": {
+					"newLine": true,
+					"type": "selectSendTo",
+					"label": "BridgeEnum",
+					"tooltip": "BridgeEnumTooltip",
+					"default": "",
+					"jsonData": "{}",
+					"command": "getEnums",
+					"xs": 12,
+					"sm": 5,
+					"md": 5,
+					"lg": 5,
+					"xl": 5
+				},
+				"_ClimateForeignHeader":{
+					"newLine": true,
+					"type": "header",
+					"text": "ClimateForeignHeader",
+					"size": 3,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+					},
+				"_ClimateForeignInformation":{
+					"newLine":true,
+					"type": "staticText",
+					"label": "ClimateForeignInformation",
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"ClimateForeignConfig":{
+                    "newLine": true,
+                    "type":"accordion",
+					"titleAttr": "ClimateName",
+					"clone": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12,
+					"items":[
+						{
+							"type": "text",
+							"attr": "ClimateName",
+							"label": "ClimateNameText",
+							"validator": "if(data.ClimateName === ''){return false;}else{return true;}",
+							"validatorNoSaveOnError": true,
+							"default": "Climate Name",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"newLine": true,
+							"type": "staticText",
+							"attr": "_statciTextTarget",
+							"label": "ClimateTargetTemperatureText",
+							"xs": 12,
+							"sm": 12,
+							"md": 12,
+							"lg": 12,
+							"xl": 12
+						},
+						{
+							"type": "objectId",
+							"attr": "TargetId",
+							"label": "TargetId",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "ActId",
+							"label": "ActId",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "ModeId",
+							"label": "ModeId",
 							"xs": 12,
 							"sm": 4,
 							"md": 4,

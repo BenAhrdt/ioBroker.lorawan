@@ -33,7 +33,7 @@
     "confirmed": "confirmé",
     "confirmedTooltip": "Si vous aimez envoyer le téléchargement avec le message confirmé, activez cette option",
     "front": "valeur avant",
-    "frontTooltip": "Insérez la valeur avant, qui sera réglée sur la liaison descendante (la valeur doit être en chaîne de type hexadécimal)",
+    "frontTooltip": "Insérer la valeur avant, qui sera réglée sur la liaison descendante (la valeur doit être en chaîne de type hexadécimal)",
     "end": "valeur finale",
     "endTooltip": "Insérer la valeur finale, qui sera définie sur la liaison descendante (la valeur doit être en chaîne de type hexadécimal)",
     "lengthInByte": "longueur d'état (octet)",
@@ -165,5 +165,14 @@
     "BridgeConnectionTest": "connexion",
     "BridgeConnectionTestTooltip": "CKlick ce bouton, pour vérifier la connexion à votre pont",
     "no connection to bridge": "❌ Pas de connexion",
-    "connection to bridge ok": "✅ Connexion OK"
+    "connection to bridge ok": "✅ Connexion OK",
+    "BridgeLoRaPanel": "Bridge Lorawan",
+    "BridgeLoRaConfigHeader": "Settigs pour le pont Lorawan",
+    "BridgeForeignPanel": "Pont à l'étranger",
+    "BridgeForeignConfigHeader": "Paramètres pour les États étrangers",
+    "BridgeLoRaHeader": "Définition de l'appareil indiquant",
+    "BridgeForeignHeader": "Définition de l'énumération du pont",
+    "_BridgeEnumDiscription": "Définir une enum Tha est utilisée pour mettre les états dans le pont.\nLe nom de l'appareil suit ces priorités:\n1. Devicename\n2. ChannelName\n3. Espace de noms de l'État",
+    "ClimateForeignHeader": "Définir les États de l'entité climatique",
+    "ClimateForeignInformation": "Ici, vous pouvez définir un tableau de définitions climatiques"
 }

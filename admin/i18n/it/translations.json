@@ -165,5 +165,14 @@
     "BridgeConnectionTest": "ConnectionTest",
     "BridgeConnectionTestTooltip": "cklick questo pulsante, per controllare la connessione al tuo ponte",
     "no connection to bridge": "❌ Nessuna connessione",
-    "connection to bridge ok": "✅ connessione ok"
+    "connection to bridge ok": "✅ connessione ok",
+    "BridgeLoRaPanel": "Bridge Lorawan",
+    "BridgeLoRaConfigHeader": "Settigs per il ponte di Lorawan",
+    "BridgeForeignPanel": "Ponte straniero",
+    "BridgeForeignConfigHeader": "Impostazioni per gli stati stranieri",
+    "BridgeLoRaHeader": "Definizione di DisponiveIdEtifier",
+    "BridgeForeignHeader": "Definizione Bridge Enum",
+    "_BridgeEnumDiscription": "Definire un enum tha viene utilizzato per impostare gli stati nel ponte.\nIl nome del dispositivo sta seguendo queste priorità:\n1. Devicename\n2. CANALENAME\n3. Spazio dei nomi di stato",
+    "ClimateForeignHeader": "Definire gli stati per l'entità climatica",
+    "ClimateForeignInformation": "Qui puoi definire una serie di definizioni climatiche"
 }

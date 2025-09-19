@@ -165,5 +165,14 @@
     "BridgeConnectionTest": "Verbindungstest",
     "BridgeConnectionTestTooltip": "Klicken, um einen Verbindungstest zur Bridge durchzuführen",
     "no connection to bridge": "❌ Keine Verbindung",
-    "connection to bridge ok": "✅ Verbindung OK"
+    "connection to bridge ok": "✅ Verbindung OK",
+    "BridgeLoRaPanel": "Bridge LoRaWAN",
+    "BridgeLoRaConfigHeader": "Einstellungen für die Lorawan Bridge",
+    "BridgeForeignPanel": "Bridge fremde States",
+    "BridgeForeignConfigHeader": "Einstellungen für fremede States",
+    "BridgeLoRaHeader": "Definition der Gerätekennung",
+    "BridgeForeignHeader": "Wählen der Bridge Enum",
+    "_BridgeEnumDiscription": "Wählen Sie eine Enumm (Kategorie) aus, die zum aktivieren der State in die Bridge verwendet wird.\nDer Name des Geräts erfolgt nach folgenden Prioritäten:\n1. Gerätename\n2. Channelname\n1. Namespace des States",
+    "ClimateForeignHeader": "Definieren Sie Zustände für eine Klima Entität",
+    "ClimateForeignInformation": "Hier können Sie ein Array von Klimaentitäten definieren"
 }

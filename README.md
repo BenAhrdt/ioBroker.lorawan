@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Add Climate Entity configuration to foreign states
+
 ### 1.16.12 (2025-09-18)
 * (BenAhrdt) delete devices in bridge (discover empty) after changing the device_identifier
 

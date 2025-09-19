@@ -33,7 +33,7 @@
     "confirmed": "подтвержденный",
     "confirmedTooltip": "Если вы хотите отправить загрузку с подтвержденным сообщением, включите эту опцию",
     "front": "фронт",
-    "frontTooltip": "Вставьте переднюю ценность, Wich будет установлена ​​на нисходящую линию (значение должно быть в строке Hex - Exept Type)",
+    "frontTooltip": "Вставьте переднюю ценность, WICH будет установлена ​​на нисходящую линейку (значение должно быть в строке HEX - Exept Type)",
     "end": "конечное значение",
     "endTooltip": "Вставьте конечную стоимость, WICH будет установлена ​​на нисходящую линию (значение должно быть в строке HEX - Exept Type)",
     "lengthInByte": "продолжительность состояния (байт)",
@@ -165,5 +165,14 @@
     "BridgeConnectionTest": "ConnectionTest",
     "BridgeConnectionTestTooltip": "Cklick эта кнопка, чтобы проверить подключение к мосту",
     "no connection to bridge": "❌ Нет соединения",
-    "connection to bridge ok": "✅ Соединение ОК"
+    "connection to bridge ok": "✅ Соединение ОК",
+    "BridgeLoRaPanel": "Мост Лораван",
+    "BridgeLoRaConfigHeader": "Поселения для моста Лоравана",
+    "BridgeForeignPanel": "Мост иностранный",
+    "BridgeForeignConfigHeader": "Настройки для иностранных государств",
+    "BridgeLoRaHeader": "Определение устройства Indetifier",
+    "BridgeForeignHeader": "Определение мостового перечисления",
+    "_BridgeEnumDiscription": "Определите enum THA, используется для положения состояний в мост.\nНазвание устройства следует этим приоритетам:\n1. DeviceName\n2. ChannelName\n3. Пространство государства имен",
+    "ClimateForeignHeader": "Определить состояния для климатической сущности",
+    "ClimateForeignInformation": "Здесь вы можете определить множество климатических определений"
 }

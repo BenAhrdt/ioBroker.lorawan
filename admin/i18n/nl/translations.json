@@ -165,5 +165,14 @@
     "BridgeConnectionTest": "Verbindingstest",
     "BridgeConnectionTestTooltip": "Cklick deze knop, om te controleren op de verbinding met uw brug",
     "no connection to bridge": "❌ Geen verbinding",
-    "connection to bridge ok": "✅ Verbinding OK"
+    "connection to bridge ok": "✅ Verbinding OK",
+    "BridgeLoRaPanel": "Bridge Lorawan",
+    "BridgeLoRaConfigHeader": "Vestigt zich voor de Lorawan -brug",
+    "BridgeForeignPanel": "Brug buitenlands",
+    "BridgeForeignConfigHeader": "Instellingen voor de buitenlandse staten",
+    "BridgeLoRaHeader": "Definitie van apparaatIndetifier",
+    "BridgeForeignHeader": "Definitie van bridge enum",
+    "_BridgeEnumDiscription": "Definieer een enum die wordt gebruikt voor het instellen van staten in brug.\nDe naam van het apparaat volgt deze prioriteiten:\n1. Devicename\n2. ChannelName\n3. Naamruimte van de staat",
+    "ClimateForeignHeader": "Definieer staten voor klimaat entiteit",
+    "ClimateForeignInformation": "Hier kunt u een scala aan klimaatdefinities definiëren"
 }

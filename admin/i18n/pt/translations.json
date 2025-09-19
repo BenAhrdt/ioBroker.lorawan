@@ -131,7 +131,7 @@
     "RefreshDiscoveryCronJobTooltip": "Insira o Cronjob para refrescar a descoberta",
     "ClimateHeader": "Definir estados para a entidade climática",
     "ClimateInformation": "Aqui você pode definir uma variedade de definições climáticas",
-    "ClimateNameText": "EntityName",
+    "ClimateNameText": "Entityname",
     "ClimateTargetTemperatureText": "Temperatura alvo",
     "ClimateActTemperatureText": "Temperatura alvo",
     "ClimateModeTemperatureText": "Modo",
@@ -165,5 +165,14 @@
     "BridgeConnectionTest": "ConnectionTest",
     "BridgeConnectionTestTooltip": "Cklick este botão, para verificar a conexão com sua ponte",
     "no connection to bridge": "❌ Sem conexão",
-    "connection to bridge ok": "✅ Conexão OK"
+    "connection to bridge ok": "✅ Conexão OK",
+    "BridgeLoRaPanel": "Bridge Lorawan",
+    "BridgeLoRaConfigHeader": "Assentamentos para a ponte Lorawan",
+    "BridgeForeignPanel": "Ponte estrangeira",
+    "BridgeForeignConfigHeader": "Configurações para os estados estrangeiros",
+    "BridgeLoRaHeader": "Definição de DeviceIndetifier",
+    "BridgeForeignHeader": "Definição de Enum Bridge",
+    "_BridgeEnumDiscription": "Defina uma enumeração que é usada para definir estados em ponte.\nO nome do dispositivo está seguindo essas prioridades:\n1. DeviceName\n2. Nome do canal\n3. Namespace of State",
+    "ClimateForeignHeader": "Definir estados para a entidade climática",
+    "ClimateForeignInformation": "Aqui você pode definir uma variedade de definições climáticas"
 }
