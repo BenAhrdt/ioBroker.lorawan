@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.0",
+    "version": "1.17.1",
     "news": {
+      "1.17.1": {
+        "en": "Bugfix xs in jsonconfig",
+        "de": "Fehlerbehebung bei xs in jsonconfig",
+        "ru": "Исправлена ошибка xs в jsonconfig",
+        "pt": "Correção de bug xs no jsonconfig",
+        "nl": "Bugfix xs in jsonconfig",
+        "fr": "Correction de bug xs dans jsonconfig",
+        "it": "Corretto bug xs in jsonconfig",
+        "es": "Corrección de error xs en jsonconfig",
+        "pl": "Poprawiony błąd xs w jsonconfig",
+        "uk": "Виправлено помилку xs в jsonconfig",
+        "zh-cn": "修复jsonconfig中的xs bug"
+      },
       "1.17.0": {
         "en": "Add Climate Entity configuration to foreign states",
         "de": "Fügen Sie die Konfiguration der Klima-Entität für externe Zustände hinzu",
@@ -80,19 +93,6 @@
         "pl": "Przynieś wybór enum w konfiguracji",
         "uk": "Додано вибір типу даних \"enum\" в налаштуваннях (config).",
         "zh-cn": "在配置中添加枚举选择"
-      },
-      "1.16.7": {
-        "en": "Bugfix deleting discovered devices\nbuild in devug logging to find bug in devicename",
-        "de": "Fehlerbehebung beim Löschen entdeckter Geräte\nFüge Debug-Logging hinzu, um Fehler im Gerätenamen zu finden.",
-        "ru": "Исправлена ошибка удаления обнаруженных устройств.\nДобавлена отладочная запись для поиска ошибок в имени устройства.",
-        "pt": "Correção de bug ao excluir dispositivos descobertos\nAdicionar registro de depuração para encontrar bugs no nome do dispositivo",
-        "nl": "Bugfix voor het verwijderen van ontdekte apparaten\nBouw debug logging in om bugs in apparaatnaam te vinden",
-        "fr": "Correction de bug suppression des périphériques découverts\nIntégration du journal de débogage pour trouver des bugs dans le nom du périphérique",
-        "it": "Correzione bug eliminazione dispositivi scoperti\nImplementare il logging di debug per trovare bug nel nome del dispositivo",
-        "es": "Corrección de errores al eliminar dispositivos descubiertos.\nImplementación de registro de depuración para encontrar errores en el nombre del dispositivo",
-        "pl": "Naprawiono błąd usuwania odkrytych urządzeń.\nZaimplementowano logowanie debugowania w celu znalezienia błędu w nazwie urządzenia.",
-        "uk": "Виправлено помилку видалення виявлених пристроїв.\nВбудоване відлагодження для пошуку помилки в імені пристрою.",
-        "zh-cn": "修复删除已发现设备时出现的问题\n构建调试日志以查找设备名称中的错误"
       }
     },
     "titleLang": {

@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.17.1 (2025-09-19)
 * (BenAhrdt) Bugfix xs in jsonconfig
 
 ### 1.17.0 (2025-09-19)
