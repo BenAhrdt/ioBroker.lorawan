@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.4",
+    "version": "1.17.5",
     "news": {
+      "1.17.5": {
+        "en": "Improve quere for foreign states in discover foreign climate",
+        "de": "Verbessern Sie die Abfrage für ausländische Staaten in der Entdecken-Fremdes-Klima-Funktion.",
+        "ru": "Улучшена обработка запросов для иностранных стран при обнаружении климата в других странах.",
+        "pt": "Melhorada a consulta para estados estrangeiros no descobrimento do clima estrangeiro.",
+        "nl": "Verbeter query voor buitenlandse staten in het ontdekken van het buitenlandse klimaat",
+        "fr": "Amélioration de la requête pour les états étrangers dans la découverte du climat étranger",
+        "it": "Migliorata la richiesta per gli stati esteri nella scoperta del clima estero",
+        "es": "Mejorar la consulta para estados extranjeros en descubrir clima extranjero",
+        "pl": "Popraw zapytanie o stany zagraniczne w odkrywaniu zagranicznego klimatu",
+        "uk": "Покращено запит для іноземних держав у відкритті зовнішнього клімату",
+        "zh-cn": "改进了外国气候的查询。"
+      },
       "1.17.4": {
         "en": "More debuglogging for Foreign Climate error",
         "de": "Mehr Debug-Logging für Fehler bei Fremdklima.",
@@ -80,19 +93,6 @@
         "pl": "Usuń urządzenia z mostka (odkryj puste) po zmianie identyfikatora urządzenia",
         "uk": "видалити пристрої у мості (відкрити порожнечу) після зміни ідентифікатора пристрою",
         "zh-cn": "更改设备标识符后，在桥接器中删除设备（发现为空）。"
-      },
-      "1.16.11": {
-        "en": "dont use bridge enum within namespace of adapter\nImprove Namebuilding of foreign states to bridge",
-        "de": "Verwenden Sie keine Bridge-Enum innerhalb des Namensraums des Adapters.\nVerbessern Sie den Namensaufbau ausländischer Staaten auf Bridging",
-        "ru": "не используйте перечисление bridge в пространстве имен адаптера\nУлучшено построение имен иностранных государств для функции bridge.",
-        "pt": "Não use a enumeração de ponte dentro do namespace do adaptador.\nMelhorar a construção de nomes de estados estrangeiros para ponte",
-        "nl": "Gebruik geen brugenum binnen de namespace van de adapter.\nVerbeter de naamopbouw van buitenlandse staten naar brug",
-        "fr": "Ne pas utiliser l'énumération pont (bridge enum) à l'intérieur de l'espace de noms de l'adaptateur.\nAmélioration de la construction du nom des états étrangers pour les ponts.",
-        "it": "Non utilizzare l'enumerazione del ponte all'interno dello spazio dei nomi dell'adattatore.\nMiglioramento del nome delle costruzioni degli stati stranieri per rendere più coerente",
-        "es": "no use el enum de puente dentro del espacio de nombres del adaptador\nMejorar la construcción de nombres de estados extranjeros para la conexión.",
-        "pl": "Nie używaj typu enum bridge w przestrzeni nazw adaptera.\nPoprawiono nazewnictwo zagranicznych stanów, aby ułatwić ich identyfikację.",
-        "uk": "не використовуйте перелік `bridge` в межах простору імен адаптера\nПокращено назви зовнішніх держав для зручності.",
-        "zh-cn": "在适配器的命名空间中不要使用桥接枚举。\n改进外国状态的名称构建以弥合差异"
       }
     },
     "titleLang": {
