@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.5",
+    "version": "1.17.6",
     "news": {
+      "1.17.6": {
+        "en": "Check foreign state id in climate improved",
+        "de": "Überprüfen von ausländischen Status-IDs in der verbesserten Klimasteuerung",
+        "ru": "Проверка идентификатора иностранного состояния в улучшенном режиме климата",
+        "pt": "Verificar id do estado estrangeiro na melhoria do clima.",
+        "nl": "Controleer het buitenlandse statuselement in de verbeterde klimaat instellingen.",
+        "fr": "Vérifier l'identifiant de l'état étranger amélioré dans le système de climatisation",
+        "it": "Controllato l'ID dello stato estero in clima migliorato",
+        "es": "Comprobación de la identificación del estado extranjero en clima mejorado",
+        "pl": "Sprawdź poprawność identyfikatora stanu zagranicznego w ulepszonym module klimatyzacji",
+        "uk": "Перевірено зовнішній ідентифікатор стану в кліматі покращений",
+        "zh-cn": "改进了气候模块中检查外部状态id"
+      },
       "1.17.5": {
         "en": "Improve quere for foreign states in discover foreign climate",
         "de": "Verbessern Sie die Abfrage für ausländische Staaten in der Entdecken-Fremdes-Klima-Funktion.",
@@ -80,19 +93,6 @@
         "pl": "Dodaj konfigurację encji klimatycznych do stanów obcych.",
         "uk": "Додати конфігурацію сутності клімату до зовнішніх станів.",
         "zh-cn": "将\"Climate Entity\"配置添加到外部状态。"
-      },
-      "1.16.12": {
-        "en": "delete devices in bridge (discover empty) after changing the device_identifier",
-        "de": "Löschen Sie Geräte in der Brücke (entdecken leer), nachdem die Gerätekennung geändert wurde.",
-        "ru": "Удаление устройств в мосту (обнаружить пустоту) после изменения идентификатора устройства",
-        "pt": "excluir dispositivos na ponte (descoberta vazia) após alterar o device_identifier",
-        "nl": "Verwijder apparaten in de brug (ontdek leeg) na het wijzigen van de apparaat_identifier.",
-        "fr": "Supprimer les appareils dans le bridge (découverte vide) après avoir modifié l'identifiant de l'appareil",
-        "it": "Eliminare i dispositivi nel bridge (scoprire vuoto) dopo aver cambiato l'identificatore del dispositivo.",
-        "es": "eliminar dispositivos en el puente (descubrir vacío) después de cambiar el device_identifier",
-        "pl": "Usuń urządzenia z mostka (odkryj puste) po zmianie identyfikatora urządzenia",
-        "uk": "видалити пристрої у мості (відкрити порожнечу) після зміни ідентифікатора пристрою",
-        "zh-cn": "更改设备标识符后，在桥接器中删除设备（发现为空）。"
       }
     },
     "titleLang": {
