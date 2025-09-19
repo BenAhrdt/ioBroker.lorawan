@@ -932,7 +932,7 @@
 				"_Sparepart":{
 					"type": "staticText",
 					"label": "",
-					"xs": 1,
+					"xs": 12,
 					"sm": 1,
 					"md": 1,
 					"lg": 1,
