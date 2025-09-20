@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) normalize [] () & {} into _
+
 ### 1.17.7 (2025-09-19)
 * (BenAhrdt) Virtal Mode for Foreign climate entities available
 
