@@ -429,9 +429,6 @@
     "BridgeDevicenotificationActivation": "allNotifications, brdigeConnection, newDiscover, deviceState",
     "DeviceIdentifiers": [
       {
-        "DeviceIdentifier": "usedApplicationName"
-      },
-      {
         "DeviceIdentifier": "usedDeviceId"
       }
     ],
