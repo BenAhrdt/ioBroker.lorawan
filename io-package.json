@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.8",
+    "version": "1.17.9",
     "news": {
+      "1.17.9": {
+        "en": "setdefault defiveidentifier for lorawan bridge function to used Device Id",
+        "de": "Setzen Sie den Standardgerätekennzeichner für die LoRaWAN-Bridge-Funktion auf die Verwendung der Geräte-ID.",
+        "ru": "Установите идентификатор устройства по умолчанию для функции моста LoRaWAN, чтобы использовать идентификатор устройства.",
+        "pt": "Defina o identificador padrão do dispositivo para a função de ponte LoRaWAN usando o ID do dispositivo.",
+        "nl": "Stel standaard apparaatidentificatie in voor LoRaWAN Bridge-functie om het apparaat-ID te gebruiken",
+        "fr": "Définir l'identifiant par défaut du périphérique pour la fonction de pont LoRaWAN pour utiliser l'identifiant du périphérique.",
+        "it": "Impostare l'identificatore predefinito del dispositivo per la funzione del ponte LoRaWAN in modo da utilizzare l'ID del dispositivo.",
+        "es": "Establecer el identificador predeterminado del dispositivo para la función de puente LoRaWAN para usar el ID del dispositivo",
+        "pl": "Ustaw domyślny identyfikator urządzenia dla funkcji mostka LoRaWAN na użyty identyfikator urządzenia",
+        "uk": "Встановлено значення за замовчуванням ідентифікатора пристрою для функції моста LoRaWAN на Device Id.",
+        "zh-cn": "将LoRaWAN桥接功能的setdefault设备标识符设置为使用设备ID。"
+      },
       "1.17.8": {
         "en": "normalize [] () & {} into _",
         "de": "normalize [] () & {} into _",
@@ -80,19 +93,6 @@
         "pl": "Naprawiono błąd związany z wywoływaniem identyfikatorów obcych dla klimatyzacji.",
         "uk": "Виправлена помилка при виклику іноземних ідентифікаторів клімату",
         "zh-cn": "修复调用Foreign climate ids时的错误"
-      },
-      "1.17.2": {
-        "en": "Bugfix nameing of foreign states",
-        "de": "Behebung der Benennung von ausländischen Bundesländern",
-        "ru": "Исправлена ошибка в именовании иностранных государств.",
-        "pt": "Correção de nomeação de estados estrangeiros",
-        "nl": "Bugfix benoemen van buitenlandse staten",
-        "fr": "Correction de la dénomination des états étrangers",
-        "it": "Correzione bug nel nome dei stati stranieri",
-        "es": "Corrección de nombres de estados extranjeros",
-        "pl": "Naprawiono nazewnictwo stanów obcych.",
-        "uk": "Виправлено назву іноземних країн",
-        "zh-cn": "修复外州命名错误"
       }
     },
     "titleLang": {
