@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.7",
+    "version": "1.17.8",
     "news": {
+      "1.17.8": {
+        "en": "normalize [] () & {} into _",
+        "de": "normalize [] () & {} into _",
+        "ru": "Нормализовать [] () & {} в _",
+        "pt": "Normalizar [] () & {} para _",
+        "nl": "normalize [] () & {} into _",
+        "fr": "normaliser [] () & {} en _",
+        "it": "normalizzare [] () & {} in _",
+        "es": "Normalizar [] () & {} en _.",
+        "pl": "zamień [] () & {} na _",
+        "uk": "нормалізувати [] () & {} у _",
+        "zh-cn": "将[]（）和{}转换为_"
+      },
       "1.17.7": {
         "en": "Virtal Mode for Foreign climate entities available",
         "de": "Virtueller Modus für externe Klima-Entitäten verfügbar",
@@ -80,19 +93,6 @@
         "pl": "Naprawiono nazewnictwo stanów obcych.",
         "uk": "Виправлено назву іноземних країн",
         "zh-cn": "修复外州命名错误"
-      },
-      "1.17.1": {
-        "en": "Bugfix xs in jsonconfig",
-        "de": "Fehlerbehebung bei xs in jsonconfig",
-        "ru": "Исправлена ошибка xs в jsonconfig",
-        "pt": "Correção de bug xs no jsonconfig",
-        "nl": "Bugfix xs in jsonconfig",
-        "fr": "Correction de bug xs dans jsonconfig",
-        "it": "Corretto bug xs in jsonconfig",
-        "es": "Corrección de error xs en jsonconfig",
-        "pl": "Poprawiony błąd xs w jsonconfig",
-        "uk": "Виправлено помилку xs в jsonconfig",
-        "zh-cn": "修复jsonconfig中的xs bug"
       }
     },
     "titleLang": {
