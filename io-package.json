@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.10",
+    "version": "1.17.11",
     "news": {
+      "1.17.11": {
+        "en": "dont fillDownlinks in case of not implemented messagetype\ntype of json ids changed to string",
+        "de": "nicht ausfüllen Downlinks bei nicht implementiertem Nachrichtentyp\nart der json ids geändert in string",
+        "ru": "не заполнять Downlinks в случае нереализованного типа сообщения\nтип json ids изменили на строку",
+        "pt": "não preencher Links para baixo em caso de tipo de mensagem não implementado\no tipo de ids json mudou para string",
+        "nl": "vullen Downlinks in geval van niet geïmplementeerd berichttype\ntype json-id's veranderd in string",
+        "fr": "ne pas remplir Liens vers le bas en cas de type de message non mis en œuvre\ntype d'ids de json changé en chaîne",
+        "it": "non riempire Downlinks in caso di messaggio non implementato\ntipo di json ids cambiato in stringa",
+        "es": "no te llenes Enlaces descendentes en caso de no aplicar el tipo de mensaje\ntipo json ids cambiados a cadena",
+        "pl": "nie wypełniaj Downlinks w przypadku niewdrożonego rodzaju wiadomości\nrodzaj idów json zmienionych na ciąg",
+        "uk": "не заповнити Попередження у разі невиконання типу повідомлення\nтип json ids змінився на рядок",
+        "zh-cn": "不填满 未执行消息类型时的下行链接\n更改为字符串的 json id 类型"
+      },
       "1.17.10": {
         "en": "Update topics und qnique ids",
         "de": "Update-Themen und qnique ids",
@@ -80,19 +93,6 @@
         "pl": "Popraw zapytanie o stany zagraniczne w odkrywaniu zagranicznego klimatu",
         "uk": "Покращено запит для іноземних держав у відкритті зовнішнього клімату",
         "zh-cn": "改进了外国气候的查询。"
-      },
-      "1.17.4": {
-        "en": "More debuglogging for Foreign Climate error",
-        "de": "Mehr Debug-Logging für Fehler bei Fremdklima.",
-        "ru": "Больше отладочного журналирования для ошибки внешнего климата",
-        "pt": "Mais debuglogging para erro de Clima Estrangeiro",
-        "nl": "Meer debuglogging voor fouten in het buitenlandse klimaatsysteem",
-        "fr": "Plus de debuglogging pour l'erreur Foreign Climate",
-        "it": "Maggiori dettagli di debug per gli errori relativi al sistema di climatizzazione esterno",
-        "es": "Más depuración para el error de Clima Externo",
-        "pl": "Więcej debugowania dla błędu Foreign Climate",
-        "uk": "Більше відладки для помилки зовнішнього клімату",
-        "zh-cn": "为外部气候错误添加更多的调试日志记录"
       }
     },
     "titleLang": {
