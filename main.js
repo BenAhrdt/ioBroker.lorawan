@@ -1,5 +1,6 @@
 'use strict';
 const mqtt = require('mqtt');
+const crypto = require('crypto');
 
 /*
  * Created with @iobroker/create-adapter v2.6.0
@@ -108,6 +109,13 @@ class Lorawan extends utils.Adapter {
         } catch (error) {
             this.log.error(`error at ${activeFunction}: ${error}`);
         }
+    }
+
+    createHash(plainText, salt) {
+        return crypto
+            .createHash('sha256')
+            .update(plainText + salt)
+            .digest('hex');
     }
 
     async geti18nTranslation() {
@@ -397,7 +405,6 @@ class Lorawan extends utils.Adapter {
                 notificationId,
                 this.i18nTranslation['Adapter will be stoped'],
                 this.bridge?.Notificationlevel.bridgeConnection,
-                false,
             );
             // clear timeout (for simulation)
             if (this.simulation.timeout) {
@@ -620,6 +627,24 @@ class Lorawan extends utils.Adapter {
                                     }
                                 }
                             }
+                            await this.setState(id, state.val, true);
+                        } else if (id.endsWith('.bridge.send')) {
+                            const topic = await this.getStateAsync(`${this.namespace}.bridge.topic`);
+                            const payload = await this.getStateAsync(`${this.namespace}.bridge.payload`);
+                            if (topic && payload) {
+                                await this.bridge?.bridgeMqttClient.publish(topic.val, payload.val, {});
+
+                                await this.setState(`${this.namespace}.bridge.topic`, topic.val, true);
+                                await this.setState(`${this.namespace}.bridge.payload`, payload.val, true);
+                            }
+                            await this.setState(id, state.val, true);
+                        } else if (id.endsWith('.bridge.notification')) {
+                            let notificationId = `${this.namespace}.${this.bridge?.Words.notification}${this.bridge?.GeneralId}`;
+                            await this.bridge?.publishNotification(
+                                notificationId,
+                                state.val,
+                                this.config.BridgenotificationActivation,
+                            );
                             await this.setState(id, state.val, true);
                         }
                     } else {
@@ -1314,6 +1339,15 @@ class Lorawan extends utils.Adapter {
             return -1;
         }
         return 1;
+    }
+
+    async getConnectionInfo() {
+        if (this.config.ipUrl === '' || this.mqttClient?.internalConnectionstate) {
+            if (this.config.BridgeType === 'off' || this.bridge?.bridgeMqttClient?.internalConnectionstate) {
+                return true;
+            }
+        }
+        return false;
     }
 }
 

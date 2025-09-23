@@ -426,7 +426,6 @@
     "RefreshDiscoveryCronJob": "0 * * * *",
     "BridgeEnum": "",
     "BridgenotificationActivation": "allNotifications, brdigeConnection, newDiscover, deviceState",
-    "BridgeDevicenotificationActivation": "allNotifications, brdigeConnection, newDiscover, deviceState",
     "DeviceIdentifiers": [
       {
         "DeviceIdentifier": "usedDeviceId"
@@ -555,6 +554,26 @@
         "read": true,
         "write": false,
         "def": "{}"
+      },
+      "native": {}
+    },
+    {
+      "_id": "bridge",
+      "type": "channel",
+      "common": {
+        "name": "Bridge messaging"
+      },
+      "native": {}
+    },
+    {
+      "_id": "bridge.notification",
+      "type": "state",
+      "common": {
+        "type": "string",
+        "name": "message to bridge",
+        "read": true,
+        "write": true,
+        "def": ""
       },
       "native": {}
     }

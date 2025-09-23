@@ -804,23 +804,6 @@
 					"lg": 3,
 					"xl": 3
 				},
-				"BridgeDevicenotificationActivation":{
-					"type": "select",
-					"label": "BridgeDevicenotificationActivation",
-					"hidden": "data.BridgeType === 'off'",
-					"tooltip": "BridgeDevicenotificationActivationTooltip",
-					"options": [
-						{"label":"all notifications","value":"allNotifications, bridgeConnection, newDiscover, deviceState"},
-						{"label":"device online offline","value":"deviceState"},
-						{"label":"no notifications","value":"noNotifications"}
-					],
-					"default": "allNotifications, bridgeConnection, newDiscover, deviceState",
-					"xs": 12,
-					"sm": 3,
-					"md": 3,
-					"lg": 3,
-					"xl": 3
-				},
 				"_BridgeServersettingsHeader": {
 					"newLine": true,
 					"type": "header",

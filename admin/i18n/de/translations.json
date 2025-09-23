@@ -145,8 +145,6 @@
     "* Not Present (Virtual)": "* Nicht vorhanden (virtuell)",
     "BridgenotificationActivation": "Benachrichtigungsaktivierung",
     "BridgenotificationTooltip": "Aktivieren oder deaktivieren Sie die Benachrichtigung",
-    "BridgeDevicenotificationActivation": "Gerätebenachrichtigungsaktivierung",
-    "BridgeDevicenotificationTooltip": "Aktivieren oder deaktivieren Sie die Benachrichtigung für Geräte",
     "all notifications": "Alle Benachrichtigungen",
     "bridge connection": "Verbindungsbenachrichtigungen",
     "new discover": "Discover Benachrichtigungen",
