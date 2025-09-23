@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.9",
+    "version": "1.17.10",
     "news": {
+      "1.17.10": {
+        "en": "Update topics und qnique ids",
+        "de": "Update-Themen und qnique ids",
+        "ru": "Обновление тем und qnique ids",
+        "pt": "Atualizar tópicos e IDs do qnique",
+        "nl": "Onderwerpen en qnique-id's bijwerken",
+        "fr": "Mettre à jour les sujets et les ids qnique",
+        "it": "Aggiornare gli argomenti und qnique ids",
+        "es": "Actualizar temas und qnique ids",
+        "pl": "Aktualizacja tematów i idów qnique",
+        "uk": "Оновлення тем und qnique ids",
+        "zh-cn": "更新主题 und qnique ids"
+      },
       "1.17.9": {
         "en": "setdefault defiveidentifier for lorawan bridge function to used Device Id",
         "de": "Setzen Sie den Standardgerätekennzeichner für die LoRaWAN-Bridge-Funktion auf die Verwendung der Geräte-ID.",
@@ -80,19 +93,6 @@
         "pl": "Więcej debugowania dla błędu Foreign Climate",
         "uk": "Більше відладки для помилки зовнішнього клімату",
         "zh-cn": "为外部气候错误添加更多的调试日志记录"
-      },
-      "1.17.3": {
-        "en": "Bugfix calling Foreign climate ids",
-        "de": "Fehlerbehebung beim Aufrufen von Fremdklima-IDs.",
-        "ru": "Исправлена ошибка при вызове иностранных идентификаторов климата",
-        "pt": "Correção de bug ao chamar ids de clima estrangeiros",
-        "nl": "Bugfix voor het oproepen van vreemde klimaat-id's",
-        "fr": "Correction de bug pour l'appel des identifiants de climatisation étrangers",
-        "it": "Correzione bug nella chiamata degli ID di climi stranieri",
-        "es": "Corregido el problema al llamar a los identificadores climáticos extranjeros",
-        "pl": "Naprawiono błąd związany z wywoływaniem identyfikatorów obcych dla klimatyzacji.",
-        "uk": "Виправлена помилка при виклику іноземних ідентифікаторів клімату",
-        "zh-cn": "修复调用Foreign climate ids时的错误"
       }
     },
     "titleLang": {
