@@ -23,6 +23,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) dont fillDownlinks in case of not implemented messagetype
+* (BenAhrdt) type of json ids changed to string
+
 ### 1.17.10 (2025-09-23)
 * (BenAhrdt) Update topics und qnique ids
 

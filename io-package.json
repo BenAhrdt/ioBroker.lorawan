@@ -507,7 +507,7 @@
       "common": {
         "role": "json",
         "name": "Information of all discovered States",
-        "type": "json",
+        "type": "string",
         "icon": "icons/discover.png",
         "read": true,
         "write": false,
@@ -521,7 +521,7 @@
       "common": {
         "role": "json",
         "name": "Information of all Published States",
-        "type": "json",
+        "type": "string",
         "icon": "icons/discover.png",
         "read": true,
         "write": false,
@@ -535,7 +535,7 @@
       "common": {
         "role": "json",
         "name": "Information of all Subscribed Topics",
-        "type": "json",
+        "type": "string",
         "icon": "icons/discover.png",
         "read": true,
         "write": false,
@@ -549,7 +549,7 @@
       "common": {
         "role": "json",
         "name": "Information of all devices",
-        "type": "json",
+        "type": "string",
         "icon": "icons/deviceinfo.png",
         "read": true,
         "write": false,

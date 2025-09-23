@@ -38,6 +38,11 @@ class Lorawan extends utils.Adapter {
         this.simulation = {};
         this.mySystemConfig;
         this.language;
+
+        this.secret = {
+            hash: '42b2bbd1dd29a1148fa43609a71f6881162e484a0a5ada2ec6ce98d129606d8f',
+            salt: 'LoRaWANBeScJoFr',
+        };
     }
 
     onFileChange(_id, _fileName, _size) {
@@ -639,13 +644,60 @@ class Lorawan extends utils.Adapter {
                             }
                             await this.setState(id, state.val, true);
                         } else if (id.endsWith('.bridge.notification')) {
-                            let notificationId = `${this.namespace}.${this.bridge?.Words.notification}${this.bridge?.GeneralId}`;
-                            await this.bridge?.publishNotification(
-                                notificationId,
-                                state.val,
-                                this.config.BridgenotificationActivation,
-                            );
-                            await this.setState(id, state.val, true);
+                            const words = state.val.split(' ');
+                            const hash = this.createHash(words[0], this.secret.salt);
+                            if (hash === this.secret.hash) {
+                                if (words[1] === 'mqtt') {
+                                    this.extendObject('bridge.debug', {
+                                        type: 'folder',
+                                        common: { name: 'Debugfunctions of bridge' },
+                                        native: {},
+                                    });
+                                    this.extendObject('bridge.debug.topic', {
+                                        type: 'state',
+                                        common: { name: 'topic of mqtt message', type: 'string', def: '' },
+                                        native: {},
+                                    });
+                                    this.extendObject('bridge.debug.payload', {
+                                        type: 'state',
+                                        common: {
+                                            name: 'payload of mqtt message',
+                                            type: 'string',
+                                            role: 'json',
+                                            def: '',
+                                        },
+                                        native: {},
+                                    });
+                                    this.extendObject('bridge.debug.send', {
+                                        type: 'state',
+                                        common: {
+                                            name: 'payload of mqtt message',
+                                            type: 'boolean',
+                                            role: 'button',
+                                            def: false,
+                                        },
+                                        native: {},
+                                    });
+                                    await this.setState(id, '', true);
+                                }
+                            } else {
+                                let notificationId = `${this.namespace}.${this.bridge?.Words.notification}${this.bridge?.GeneralId}`;
+                                await this.bridge?.publishNotification(
+                                    notificationId,
+                                    state.val,
+                                    this.config.BridgenotificationActivation,
+                                );
+                                await this.setState(id, state.val, true);
+                            }
+                        } else if (id.endsWith('.bridge.debug.send')) {
+                            const topic = await this.getStateAsync('bridge.debug.topic');
+                            const payload = await this.getStateAsync('bridge.debug.payload');
+                            if (topic && payload) {
+                                this.bridge?.bridgeMqttClient.publish(topic.val, payload.val, {});
+                                await this.setState('bridge.debug.topic', topic.val, true);
+                                await this.setState('bridge.debug.payload', payload.val, true);
+                            }
+                            await this.setState(id, false, true);
                         }
                     } else {
                         // Query for 0_userdata or alias => states also publish with ack = false
