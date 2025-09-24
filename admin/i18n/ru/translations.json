@@ -174,5 +174,13 @@
     "ClimateForeignHeader": "Определить состояния для климатической сущности",
     "ClimateForeignInformation": "Здесь вы можете определить множество климатических определений",
     "VirtualMode": "Виртуальный режим",
-    "VirtualModeTooltip": "Активируйте, если идентификатор режима отсутствует"
+    "VirtualModeTooltip": "Активируйте, если идентификатор режима отсутствует",
+    "HumidifierHeader": "Определите государства для увлажнительного сущности",
+    "HumidifierInformation": "Здесь вы можете определить массив определений увлажнителя",
+    "HumidifierNameText": "EntityName",
+    "Humidifier": "Увлажнитель",
+    "WithAct": "с Act-государством",
+    "HumidifierOnOffText": "ВКЛ / OFF",
+    "HumidifierTargetText": "Целевая влажность",
+    "HumidifierActText": "Фактическая влажность"
 }

@@ -174,5 +174,13 @@
     "ClimateForeignHeader": "Definieren Sie Zustände für eine Klima Entität",
     "ClimateForeignInformation": "Hier können Sie ein Array von Klimaentitäten definieren",
     "VirtualMode": "Virtueller Modus",
-    "VirtualModeTooltip": "Aktivieren Sie diese Option, wenn kein Modus als State vorhanden ist."
+    "VirtualModeTooltip": "Aktivieren Sie diese Option, wenn kein Modus als State vorhanden ist.",
+    "HumidifierHeader": "Definieren Sie Zustände für eine Luftbefeuchterentität",
+    "HumidifierInformation": "Hier können Sie eine Reihe von Luftbefeuchterdefinitionen definieren",
+    "HumidifierNameText": "Entitätsname",
+    "Humidifier": "Luftbefeuchter",
+    "WithAct": "mit Act-State",
+    "HumidifierOnOffText": "Ein / Aus",
+    "HumidifierTargetText": "Zielfeuchtigkeit",
+    "HumidifierActText": "Tatsächliche Luftfeuchtigkeit"
 }

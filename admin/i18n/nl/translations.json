@@ -174,5 +174,13 @@
     "ClimateForeignHeader": "Definieer staten voor klimaat entiteit",
     "ClimateForeignInformation": "Hier kunt u een scala aan klimaatdefinities definiëren",
     "VirtualMode": "Virtuele modus",
-    "VirtualModeTooltip": "Activeer, als een modus -ID niet aanwezig is"
+    "VirtualModeTooltip": "Activeer, als een modus -ID niet aanwezig is",
+    "HumidifierHeader": "Definieer staten voor de luchtbevochtiger",
+    "HumidifierInformation": "Hier kunt u een scala aan definities voor luchtbevochtigers definiëren",
+    "HumidifierNameText": "EntityName",
+    "Humidifier": "Luchtbevochtiger",
+    "WithAct": "met Act-State",
+    "HumidifierOnOffText": "Aan / uit",
+    "HumidifierTargetText": "Richt de luchtvochtigheid",
+    "HumidifierActText": "Werkelijke vochtigheid"
 }

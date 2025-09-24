@@ -174,5 +174,13 @@
 	"ClimateForeignHeader": "Define States for Climate Entity",
 	"ClimateForeignInformation": "Here you can define an array of Climate definitions",
 	"VirtualMode": "Virtual Mode",
-	"VirtualModeTooltip": "Activate, if a mode id is not present"
+	"VirtualModeTooltip": "Activate, if a mode id is not present",
+	"HumidifierHeader": "Define States for a Humidifier Entity",
+	"HumidifierInformation": "Here you can define an array of Humidifier definitions",
+	"HumidifierNameText": "Entityname",
+	"Humidifier": "Humidifier",
+	"WithAct": "with Act-State",
+	"HumidifierOnOffText": "On / Off",
+	"HumidifierTargetText": "Target humidity",
+	"HumidifierActText": "Actual humidity"
 }

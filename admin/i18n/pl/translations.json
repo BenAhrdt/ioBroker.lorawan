@@ -174,5 +174,13 @@
     "ClimateForeignHeader": "Zdefiniuj stany dla jednostki klimatycznej",
     "ClimateForeignInformation": "Tutaj możesz zdefiniować szereg definicji klimatycznych",
     "VirtualMode": "Tryb wirtualny",
-    "VirtualModeTooltip": "Aktywuj, jeśli identyfikator trybu nie jest obecny"
+    "VirtualModeTooltip": "Aktywuj, jeśli identyfikator trybu nie jest obecny",
+    "HumidifierHeader": "Zdefiniuj stany dla jednostki nawilżacza",
+    "HumidifierInformation": "Tutaj możesz zdefiniować szereg definicji nawilżaczy",
+    "HumidifierNameText": "Nazwa EntityName",
+    "Humidifier": "Nawilżacz",
+    "WithAct": "Z ACT-State",
+    "HumidifierOnOffText": "Włącz / wyłączony",
+    "HumidifierTargetText": "Docelowa wilgotność",
+    "HumidifierActText": "Faktyczna wilgotność"
 }

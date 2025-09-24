@@ -1557,20 +1557,19 @@
 							"xl": 2
 						},
 						{
-							"newLine": true,
 							"type": "staticText",
 							"attr": "_statciTextTarget",
-							"label": "ClimateTargetTemperatureText",
+							"label": "",
 							"xs": 12,
-							"sm": 12,
-							"md": 12,
-							"lg": 12,
-							"xl": 12
+							"sm": 6,
+							"md": 6,
+							"lg": 6,
+							"xl": 6
 						},
 						{
 							"type": "objectId",
 							"attr": "TargetId",
-							"label": "TargetId",
+							"label": "ClimateTargetTemperatureText",
 							"xs": 12,
 							"sm": 4,
 							"md": 4,
@@ -1580,7 +1579,7 @@
 						{
 							"type": "objectId",
 							"attr": "ActId",
-							"label": "ActId",
+							"label": "ClimateActTemperatureText",
 							"xs": 12,
 							"sm": 4,
 							"md": 4,
@@ -1590,8 +1589,123 @@
 						{
 							"type": "objectId",
 							"attr": "ModeId",
-							"label": "ModeId",
+							"label": "ClimateModeTemperatureText",
 							"hidden": "data.VirtualMode === true",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						}
+					]
+				},
+				"_HumidifierForeignHeader":{
+					"newLine": true,
+					"type": "header",
+					"text": "HumidifierHeader",
+					"size": 3,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+					},
+				"_HumidifierForeignInformation":{
+					"newLine":true,
+					"type": "staticText",
+					"label": "HumidifierInformation",
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"HumidifierForeignConfig":{
+                    "newLine": true,
+                    "type":"accordion",
+					"titleAttr": "HumidifierName",
+					"clone": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12,
+					"items":[
+						{
+							"type": "text",
+							"attr": "HumidifierName",
+							"label": "HumidifierNameText",
+							"validator": "if(data.HumidifierName === ''){return false;}else{return true;}",
+							"validatorNoSaveOnError": true,
+							"default": "Humidifier Name",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "checkbox",
+							"attr": "Humidifier",
+							"label": "Humidifier",
+							"tooltip": "HumidifierTooltip",
+							"default": true,
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},
+						{
+							"type": "checkbox",
+							"attr": "WithAct",
+							"label": "WithAct",
+							"tooltip": "HumidifierTooltip",
+							"default": true,
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},
+						{
+							"type": "staticText",
+							"attr": "_staticTextTarget",
+							"label": "",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "OnOffId",
+							"label": "HumidifierOnOffText",
+							"customFilter": "{common: {type: ['boolean']}",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "TargetId",
+							"label": "HumidifierTargetText",
+							"customFilter": "{common: {type: ['number']}",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "ActId",
+							"label": "HumidifierActText",
+							"hidden": "data.WithAct === false",
+							"customFilter": "{common: {type: ['number']}",
 							"xs": 12,
 							"sm": 4,
 							"md": 4,

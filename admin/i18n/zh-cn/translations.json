@@ -119,7 +119,7 @@
     "subscribeTooltip": "从桥梁订阅州",
     "BridgeStateHeader": "定义发现主题的状态",
     "BridgeStateInformation": "在这里，您可以定义一系列状态，这些状态将设置为发现的主题。 （通配符也是可能的）",
-    "Application": "Application",
+    "Application": "应用",
     "Device": "设备",
     "Folder": "文件夹",
     "State": "状态",
@@ -174,5 +174,13 @@
     "ClimateForeignHeader": "定义气候实体的国家",
     "ClimateForeignInformation": "在这里您可以定义一系列气候定义",
     "VirtualMode": "虚拟模式",
-    "VirtualModeTooltip": "激活，如果不存在模式ID"
+    "VirtualModeTooltip": "激活，如果不存在模式ID",
+    "HumidifierHeader": "定义加湿器实体的状态",
+    "HumidifierInformation": "在这里您可以定义一系列加湿器定义",
+    "HumidifierNameText": "EntityName",
+    "Humidifier": "加湿器",
+    "WithAct": "与行动状态",
+    "HumidifierOnOffText": "打开 /关",
+    "HumidifierTargetText": "目标湿度",
+    "HumidifierActText": "实际的湿度"
 }

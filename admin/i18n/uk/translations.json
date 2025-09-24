@@ -75,7 +75,7 @@
     "keepalive": "зберігати",
     "keepaliveTooltip": "Введіть час у секундах для функції Keepalive",
     "unused": "невикористаний",
-    "downlinkConfigHeader": "Додайте пристрій конкретні низки",
+    "downlinkConfigHeader": "Додайте свій пристрій конкретні низки",
     "customConfig": "\"Custom\" -konfitiguation",
     "customConfigHeader": "Додайте конкретний спеціальний об’єкт до кожного декодованого стану",
     "customJson": "Objekt für den \"custom\" -bereich im \"common\" objekt",
@@ -174,5 +174,13 @@
     "ClimateForeignHeader": "Визначте стани клімату",
     "ClimateForeignInformation": "Тут ви можете визначити безліч визначення клімату",
     "VirtualMode": "Віртуальний режим",
-    "VirtualModeTooltip": "Активуйте, якщо ідентифікатор режиму немає"
+    "VirtualModeTooltip": "Активуйте, якщо ідентифікатор режиму немає",
+    "HumidifierHeader": "Визначте стани для зволожувача",
+    "HumidifierInformation": "Тут ви можете визначити безліч визначення зволожувача",
+    "HumidifierNameText": "EntityName",
+    "Humidifier": "Зволожувач",
+    "WithAct": "з акт-станом",
+    "HumidifierOnOffText": "Увімкнення / вимкнення",
+    "HumidifierTargetText": "Цільова вологість",
+    "HumidifierActText": "Фактична вологість"
 }

@@ -174,5 +174,13 @@
     "ClimateForeignHeader": "Definire gli stati per l'entità climatica",
     "ClimateForeignInformation": "Qui puoi definire una serie di definizioni climatiche",
     "VirtualMode": "Modalità virtuale",
-    "VirtualModeTooltip": "Attivare, se un ID modalità non è presente"
+    "VirtualModeTooltip": "Attivare, se un ID modalità non è presente",
+    "HumidifierHeader": "Definisci gli stati per l'entità dell'umidificatore",
+    "HumidifierInformation": "Qui puoi definire una serie di definizioni di umidificatore",
+    "HumidifierNameText": "EntityName",
+    "Humidifier": "Umidificatore",
+    "WithAct": "con Act-State",
+    "HumidifierOnOffText": "ON / OFF",
+    "HumidifierTargetText": "Umidità target",
+    "HumidifierActText": "Umidità reale"
 }
