@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.13",
+    "version": "1.17.14",
     "news": {
+      "1.17.14": {
+        "en": "add humidifier to foreign States",
+        "de": "fügen Sie Befeuchter für ausländische Staaten hinzu",
+        "ru": "добавить увлажнитель воздуха в иностранные государства",
+        "pt": "adicionar umidificador a estados estrangeiros",
+        "nl": "luchtbevochtiger toevoegen aan buitenlandse staten",
+        "fr": "ajouter l'humidificateur aux États étrangers",
+        "it": "aggiungere umidificatore agli Stati esteri",
+        "es": "añadir humidificador a Estados extranjeros",
+        "pl": "dodać nawilżacz do obcych państw",
+        "uk": "додати зволожувач до іноземних держав",
+        "zh-cn": "向外国添加增湿剂"
+      },
       "1.17.13": {
         "en": "Bugfix discover new devices",
         "de": "Bugfix neue Geräte entdecken",
@@ -80,19 +93,6 @@
         "pl": "zamień [] () & {} na _",
         "uk": "нормалізувати [] () & {} у _",
         "zh-cn": "将[]（）和{}转换为_"
-      },
-      "1.17.7": {
-        "en": "Virtal Mode for Foreign climate entities available",
-        "de": "Virtueller Modus für externe Klima-Entitäten verfügbar",
-        "ru": "Доступен виртуальный режим для иностранных сущностей климата",
-        "pt": "Modo virtual para entidades de clima estrangeiras disponível.",
-        "nl": "Virtuele Modus voor Externe klimaatentiteiten beschikbaar",
-        "fr": "Mode virtuel pour les entités climatiques étrangères disponible",
-        "it": "Modalità virtuale per le entità di clima estere disponibile",
-        "es": "Modo virtual para entidades de clima extranjeras disponible.",
-        "pl": "Dostępny tryb wirtualny dla zagranicznych jednostek klimatyzacyjnych.",
-        "uk": "Доступний режим віртуальних сутностей для зовнішнього клімату",
-        "zh-cn": "可用于外部气候实体的虚拟模式"
       }
     },
     "titleLang": {
