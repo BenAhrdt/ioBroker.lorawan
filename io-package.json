@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.12",
+    "version": "1.17.13",
     "news": {
+      "1.17.13": {
+        "en": "Bugfix discover new devices",
+        "de": "Bugfix neue Geräte entdecken",
+        "ru": "Bugfix открывает новые устройства",
+        "pt": "Bugfix descobre novos dispositivos",
+        "nl": "Bugfix nieuwe apparaten ontdekken",
+        "fr": "Bugfix découvrez de nouveaux périphériques",
+        "it": "Bugfix scopri nuovi dispositivi",
+        "es": "Bugfix descubre nuevos dispositivos",
+        "pl": "Bugfix odkryj nowe urządzenia",
+        "uk": "Виправлення помилок",
+        "zh-cn": "错误fix 发现新设备"
+      },
       "1.17.12": {
         "en": "Virtual Mode in default selected for Climate Entities\nimprove hidden attribute for climate entitie in LoRaWAN\nchange discovery delete {} => ''",
         "de": "Virtueller Modus in Standardeinstellung für Climate Entities\nverbessern Sie das versteckte Attribut für den Klimaschutz in LoRaWAN\nänderung der entdeckung löschen {} => ' '",
@@ -80,19 +93,6 @@
         "pl": "Dostępny tryb wirtualny dla zagranicznych jednostek klimatyzacyjnych.",
         "uk": "Доступний режим віртуальних сутностей для зовнішнього клімату",
         "zh-cn": "可用于外部气候实体的虚拟模式"
-      },
-      "1.17.6": {
-        "en": "Check foreign state id in climate improved",
-        "de": "Überprüfen von ausländischen Status-IDs in der verbesserten Klimasteuerung",
-        "ru": "Проверка идентификатора иностранного состояния в улучшенном режиме климата",
-        "pt": "Verificar id do estado estrangeiro na melhoria do clima.",
-        "nl": "Controleer het buitenlandse statuselement in de verbeterde klimaat instellingen.",
-        "fr": "Vérifier l'identifiant de l'état étranger amélioré dans le système de climatisation",
-        "it": "Controllato l'ID dello stato estero in clima migliorato",
-        "es": "Comprobación de la identificación del estado extranjero en clima mejorado",
-        "pl": "Sprawdź poprawność identyfikatora stanu zagranicznego w ulepszonym module klimatyzacji",
-        "uk": "Перевірено зовнішній ідентифікатор стану в кліматі покращений",
-        "zh-cn": "改进了气候模块中检查外部状态id"
       }
     },
     "titleLang": {
