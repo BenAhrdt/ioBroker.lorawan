@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Bugfix discover new devices
+
 ### 1.17.12 (2025-09-24)
 * (BenAhrdt) Virtual Mode in default selected for Climate Entities
 * (BenAhrdt) improve hidden attribute for climate entitie in LoRaWAN
