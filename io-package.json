@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.11",
+    "version": "1.17.12",
     "news": {
+      "1.17.12": {
+        "en": "Virtual Mode in default selected for Climate Entities\nimprove hidden attribute for climate entitie in LoRaWAN\nchange discovery delete {} => ''",
+        "de": "Virtueller Modus in Standardeinstellung für Climate Entities\nverbessern Sie das versteckte Attribut für den Klimaschutz in LoRaWAN\nänderung der entdeckung löschen {} => ' '",
+        "ru": "Виртуальный режим по умолчанию выбран для климатических объектов\nулучшение скрытого атрибута для климатического объекта в LoRaWAN\nобнаружение изменений удалить {} => \"",
+        "pt": "Modo Virtual por omissão seleccionado para Entidades Climáticas\nmelhorar o atributo oculto para o clima em LoRaWAN\nalterar a descoberta apagar {} => ' '",
+        "nl": "Virtuele modus in standaard geselecteerd voor klimaatentiteiten\nverbeteren verborgen attribuut voor klimaat entitie in LoRaWAN\nde ontdekking wijzigen delete {} => ' '",
+        "fr": "Mode virtuel par défaut sélectionné pour les entités climatiques\naméliorer l'attribut caché pour entitie climatique dans LoRaWAN\nmodifier découverte supprimer {} => ' '",
+        "it": "Modalità virtuale in default selezionata per le Entità Climatiche\nmigliorare l'attributo nascosto per il clima in LoRaWAN\ncambiamento scoperta eliminare {} = > ' '",
+        "es": "Modo virtual por defecto seleccionado para Entidades climáticas\nmejorar el atributo oculto para el aislamiento climático en LoRaWAN\ncambio de descubrimiento eliminar {} = confianza ' '",
+        "pl": "Tryb wirtualny domyślnie wybrany dla podmiotów klimatycznych\npoprawić ukryte atrybuty dla klimatu w LoRaWAN\nzmień odkrycie usuń {} = > ''",
+        "uk": "Віртуальний режим за замовчуванням, вибраний для кліматичних обов'язків\nпокращуйте прихований атрибут для ентіту клімату в LoRaWAN\nвидалити зміни {} => ' р",
+        "zh-cn": "为气候实体选择默认的虚拟模式\n改善LoRaWAN中气候内涵的隐藏属性\n更改发现删除 {}}  '"
+      },
       "1.17.11": {
         "en": "dont fillDownlinks in case of not implemented messagetype\ntype of json ids changed to string",
         "de": "nicht ausfüllen Downlinks bei nicht implementiertem Nachrichtentyp\nart der json ids geändert in string",
@@ -80,19 +93,6 @@
         "pl": "Sprawdź poprawność identyfikatora stanu zagranicznego w ulepszonym module klimatyzacji",
         "uk": "Перевірено зовнішній ідентифікатор стану в кліматі покращений",
         "zh-cn": "改进了气候模块中检查外部状态id"
-      },
-      "1.17.5": {
-        "en": "Improve quere for foreign states in discover foreign climate",
-        "de": "Verbessern Sie die Abfrage für ausländische Staaten in der Entdecken-Fremdes-Klima-Funktion.",
-        "ru": "Улучшена обработка запросов для иностранных стран при обнаружении климата в других странах.",
-        "pt": "Melhorada a consulta para estados estrangeiros no descobrimento do clima estrangeiro.",
-        "nl": "Verbeter query voor buitenlandse staten in het ontdekken van het buitenlandse klimaat",
-        "fr": "Amélioration de la requête pour les états étrangers dans la découverte du climat étranger",
-        "it": "Migliorata la richiesta per gli stati esteri nella scoperta del clima estero",
-        "es": "Mejorar la consulta para estados extranjeros en descubrir clima extranjero",
-        "pl": "Popraw zapytanie o stany zagraniczne w odkrywaniu zagranicznego klimatu",
-        "uk": "Покращено запит для іноземних держав у відкритті зовнішнього клімату",
-        "zh-cn": "改进了外国气候的查询。"
       }
     },
     "titleLang": {
