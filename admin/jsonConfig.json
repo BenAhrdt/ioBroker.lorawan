@@ -1409,6 +1409,7 @@
 							"label": "Device",
 							"default": "*",
 							"jsonData": "{\"application\":\"${data.ModeApplication}\"}",
+							"hidden": "data.ModeApplication === 'NotPresent'",
 							"command": "getDevicesForClimateConfig",
 							"alsoDependsOn":[
                         		"ModeApplication"
@@ -1424,6 +1425,7 @@
 							"attr": "ModeFolder",
 							"label": "Folder",
 							"default": "uplink.decoded",
+							"hidden": "data.ModeApplication === 'NotPresent'",
 							"options": [
 								{"label":"uplink.decoded","value":"uplink.decoded"}
 							],
@@ -1440,6 +1442,7 @@
 							"default": "No State selected",
 							"jsonData": "{\"application\":\"${data.ModeApplication}\",\"device\":\"${data.ModeDevice}\",\"folder\":\"${data.ModeFolder}\"}",
 							"command": "getStatesForClimateConfig",
+							"hidden": "data.ModeApplication === 'NotPresent'",
 							"noTranslation": true,
 							"alsoDependsOn":[
                         		"ModeApplication",
@@ -1546,7 +1549,7 @@
 							"attr": "VirtualMode",
 							"label": "VirtualMode",
 							"tooltip": "VirtualModeTooltip",
-							"default": false,
+							"default": true,
 							"xs": 12,
 							"sm": 2,
 							"md": 2,
