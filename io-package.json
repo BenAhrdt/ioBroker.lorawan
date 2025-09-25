@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.15",
+    "version": "1.17.16",
     "news": {
+      "1.17.16": {
+        "en": "bring state_off topic to humidifier",
+        "de": "state_off-thema zur befeuchtung bringen",
+        "ru": "скачать игру state_off для humidifier",
+        "pt": "trazer o tópico state_off para o umidificador",
+        "nl": "status_off onderwerp naar bevochtiger brengen",
+        "fr": "apporter le sujet état_off à l'humidificateur",
+        "it": "portare argomento state_off a umidificatore",
+        "es": "traer el tema state_off a humidificador",
+        "pl": "przynieść state _ off temat do nawilżacza",
+        "uk": "принести стан_вимкнути тему для зволоження",
+        "zh-cn": "将状态切换为潮湿器"
+      },
       "1.17.15": {
         "en": "notifi new discover in case of oldDiscoveredDevices\nbugfix debug logging",
         "de": "notifi neu entdecken bei oldDiscoveredDevices\nbugfix debug protokollierung",
@@ -80,19 +93,6 @@
         "pl": "Aktualizacja tematów i idów qnique",
         "uk": "Оновлення тем und qnique ids",
         "zh-cn": "更新主题 und qnique ids"
-      },
-      "1.17.9": {
-        "en": "setdefault defiveidentifier for lorawan bridge function to used Device Id",
-        "de": "Setzen Sie den Standardgerätekennzeichner für die LoRaWAN-Bridge-Funktion auf die Verwendung der Geräte-ID.",
-        "ru": "Установите идентификатор устройства по умолчанию для функции моста LoRaWAN, чтобы использовать идентификатор устройства.",
-        "pt": "Defina o identificador padrão do dispositivo para a função de ponte LoRaWAN usando o ID do dispositivo.",
-        "nl": "Stel standaard apparaatidentificatie in voor LoRaWAN Bridge-functie om het apparaat-ID te gebruiken",
-        "fr": "Définir l'identifiant par défaut du périphérique pour la fonction de pont LoRaWAN pour utiliser l'identifiant du périphérique.",
-        "it": "Impostare l'identificatore predefinito del dispositivo per la funzione del ponte LoRaWAN in modo da utilizzare l'ID del dispositivo.",
-        "es": "Establecer el identificador predeterminado del dispositivo para la función de puente LoRaWAN para usar el ID del dispositivo",
-        "pl": "Ustaw domyślny identyfikator urządzenia dla funkcji mostka LoRaWAN na użyty identyfikator urządzenia",
-        "uk": "Встановлено значення за замовчуванням ідентифікатора пристрою для функції моста LoRaWAN на Device Id.",
-        "zh-cn": "将LoRaWAN桥接功能的setdefault设备标识符设置为使用设备ID。"
       }
     },
     "titleLang": {

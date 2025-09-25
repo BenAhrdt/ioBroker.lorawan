@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.17.16 (2025-09-25)
 * (BenAhrdt) bring state_off topic to humidifier
 
 ### 1.17.15 (2025-09-25)
