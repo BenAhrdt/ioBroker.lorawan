@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.14",
+    "version": "1.17.15",
     "news": {
+      "1.17.15": {
+        "en": "notifi new discover in case of oldDiscoveredDevices\nbugfix debug logging",
+        "de": "notifi neu entdecken bei oldDiscoveredDevices\nbugfix debug protokollierung",
+        "ru": "уведомить новое открытие в случае старых обнаруженных устройств\nрегистрация отладчиков",
+        "pt": "notifi nova descoberta no caso de dispositivos antigosdescoberta\nregistro de depuração de bugfix",
+        "nl": "notifi nieuwe ontdekking in het geval van oudeDiscoverdDevices\nbugfix debug logging",
+        "fr": "notifi nouveau découverte en cas d'ancienDiscoveredDevices\nbugfix debug loging",
+        "it": "notifi nuova scoperta in caso di vecchiDiscoveredDevices\nbugfix debug logging",
+        "es": "notifi new discover in case of oldDiscoveredDevices\nbugfix debug logging",
+        "pl": "notifi nowe odkrycie w przypadku old DiscoveredDevices\nlogowanie debugfix",
+        "uk": "неідентифікувати нове відкриття у разі виникнення застарілих\nзареєструватися",
+        "zh-cn": "旧发现器的新发现\n调试日志"
+      },
       "1.17.14": {
         "en": "add humidifier to foreign States",
         "de": "fügen Sie Befeuchter für ausländische Staaten hinzu",
@@ -80,19 +93,6 @@
         "pl": "Ustaw domyślny identyfikator urządzenia dla funkcji mostka LoRaWAN na użyty identyfikator urządzenia",
         "uk": "Встановлено значення за замовчуванням ідентифікатора пристрою для функції моста LoRaWAN на Device Id.",
         "zh-cn": "将LoRaWAN桥接功能的setdefault设备标识符设置为使用设备ID。"
-      },
-      "1.17.8": {
-        "en": "normalize [] () & {} into _",
-        "de": "normalize [] () & {} into _",
-        "ru": "Нормализовать [] () & {} в _",
-        "pt": "Normalizar [] () & {} para _",
-        "nl": "normalize [] () & {} into _",
-        "fr": "normaliser [] () & {} en _",
-        "it": "normalizzare [] () & {} in _",
-        "es": "Normalizar [] () & {} en _.",
-        "pl": "zamień [] () & {} na _",
-        "uk": "нормалізувати [] () & {} у _",
-        "zh-cn": "将[]（）和{}转换为_"
       }
     },
     "titleLang": {
