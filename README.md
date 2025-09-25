@@ -23,6 +23,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) notifi new discover in case of oldDiscoveredDevices
+* (BenAhrdt) bugfix debug logging
+
 ### 1.17.14 (2025-09-24)
 * (BenAhrdt) add humidifier to foreign States
 
