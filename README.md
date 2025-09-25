@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) bring state_off topic to humidifier
+
 ### 1.17.15 (2025-09-25)
 * (BenAhrdt) notifi new discover in case of oldDiscoveredDevices
 * (BenAhrdt) bugfix debug logging
