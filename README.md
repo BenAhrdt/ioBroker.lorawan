@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
-* (BenAhrdt) serialice appending Data on NextSend
+* (BenAhrdt) serialize appending Data on NextSend
 * (BenAhrdt) update assignhandler (SensorTemperature)
 
 ### 1.17.16 (2025-09-25)

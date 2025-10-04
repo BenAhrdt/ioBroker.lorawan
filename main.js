@@ -34,6 +34,8 @@ class Lorawan extends utils.Adapter {
             chirpstack: 'chirpstack',
         };
 
+        this.NextSendLocks = new Map(); // key -> Promise-chain
+
         // Simulation variables
         this.simulation = {};
         this.mySystemConfig;
@@ -765,19 +767,52 @@ class Lorawan extends utils.Adapter {
         this.log.debug(`Function ${activeFunction} started.`);
         try {
             const idFolderNextSend = `${changeInfo.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.downlinkNextSend}`;
-            if (
-                changeInfo.bestMatchForDeviceType &&
-                this.downlinkConfighandler?.activeDownlinkConfigs[changeInfo.bestMatchForDeviceType].sendWithUplink ===
-                    'enabled & collect'
-            ) {
-                const nextSend = await this.getStateAsync(`${idFolderNextSend}.hex`);
-                if (nextSend?.val !== '0') {
-                    payloadInHex = nextSend?.val + payloadInHex;
+            const stateId = `${idFolderNextSend}.hex`;
+
+            // Serialize (also simple write without append)
+            await this.withLock(this.NextSendLocks, stateId, async () => {
+                let toWrite = payloadInHex;
+                if (
+                    changeInfo.bestMatchForDeviceType &&
+                    this.downlinkConfighandler?.activeDownlinkConfigs?.[changeInfo.bestMatchForDeviceType]
+                        .sendWithUplink === 'enabled & collect'
+                ) {
+                    const nextSend = await this.getStateAsync(stateId);
+                    if (nextSend?.val !== '0') {
+                        toWrite = nextSend?.val + toWrite;
+                    }
                 }
-            }
-            await this.setState(`${idFolderNextSend}.hex`, payloadInHex, true);
+                await this.setState(stateId, toWrite, true);
+            });
         } catch (error) {
             this.log.error(`error at ${activeFunction}:  ${error}`);
+        }
+    }
+
+    // Serialize functions
+    async withLock(locksMap, key, fn) {
+        const activeFunction = 'main.js - withLock';
+        this.log.debug(`Function ${activeFunction} started.`);
+        const prev = locksMap.get(key) || Promise.resolve();
+
+        // fn erst starten, wenn prev fertig ist (egal ob ok oder Fehler)
+        const next = prev.then(
+            () => Promise.resolve().then(fn),
+            () => Promise.resolve().then(fn),
+        );
+
+        // stored wartet auf next, fängt aber Fehler intern ab (Kette reißt nicht)
+        const stored = next.catch(() => {});
+        locksMap.set(key, stored);
+
+        try {
+            // Ergebnis/Fehler an Aufrufer weitergeben
+            return await next;
+        } finally {
+            // vorsichtig aufräumen: nur löschen, wenn kein neuer Job dazwischenkam
+            if (locksMap.get(key) === stored) {
+                locksMap.delete(key);
+            }
         }
     }
 
