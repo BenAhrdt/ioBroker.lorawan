@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.16",
+    "version": "1.17.17",
     "news": {
+      "1.17.17": {
+        "en": "serialize appending Data on NextSend\nupdate assignhandler (SensorTemperature)",
+        "de": "serialisieren Appending Data auf NextSend\nupdate assignhandler (SensorTemperatur)",
+        "ru": "сериализировать добавленные данные в NextSend\nраспределитель обновлений (SensorTemperature)",
+        "pt": "serialize anexando dados no NextSend\natualizar assignhandler (SensorTemperature)",
+        "nl": "serialiseren toevoegen van gegevens op NextSend\nupdate awardhandler (SensorTemperatuur)",
+        "fr": "sérialiser l'ajout de données sur NextSend\nmettre à jour le gestionnaire d'attribution (SensorTemperature)",
+        "it": "serializzare i dati di appending su NextSend\naggiornamento assegnatore (SensorTemperature)",
+        "es": "serializar los datos pendientes en NextSend\n(SensorTemperature)",
+        "pl": "serializuj przypisywanie danych na nextSend\naktualizuj urządzenie sterujące (SensorTemperatura)",
+        "uk": "сертифікувати дані додатків на NextSend\nоновлення assignhandler (SensorTemperature)",
+        "zh-cn": "序列化下一端的数据\n更新指派手( 传感器)"
+      },
       "1.17.16": {
         "en": "bring state_off topic to humidifier",
         "de": "state_off-thema zur befeuchtung bringen",
@@ -80,19 +93,6 @@
         "pl": "nie wypełniaj Downlinks w przypadku niewdrożonego rodzaju wiadomości\nrodzaj idów json zmienionych na ciąg",
         "uk": "не заповнити Попередження у разі невиконання типу повідомлення\nтип json ids змінився на рядок",
         "zh-cn": "不填满 未执行消息类型时的下行链接\n更改为字符串的 json id 类型"
-      },
-      "1.17.10": {
-        "en": "Update topics und qnique ids",
-        "de": "Update-Themen und qnique ids",
-        "ru": "Обновление тем und qnique ids",
-        "pt": "Atualizar tópicos e IDs do qnique",
-        "nl": "Onderwerpen en qnique-id's bijwerken",
-        "fr": "Mettre à jour les sujets et les ids qnique",
-        "it": "Aggiornare gli argomenti und qnique ids",
-        "es": "Actualizar temas und qnique ids",
-        "pl": "Aktualizacja tematów i idów qnique",
-        "uk": "Оновлення тем und qnique ids",
-        "zh-cn": "更新主题 und qnique ids"
       }
     },
     "titleLang": {

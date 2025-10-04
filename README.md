@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.17.17 (2025-10-04)
 * (BenAhrdt) serialize appending Data on NextSend
 * (BenAhrdt) update assignhandler (SensorTemperature)
 
