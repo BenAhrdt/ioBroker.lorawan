@@ -608,6 +608,11 @@ class Lorawan extends utils.Adapter {
                                     await this.setState(id, state.val, true);
                                 }
                             }
+                        } else if (id.includes('.nextSend.push')) {
+                            if (state.val) {
+                                await this.checkSendDownlinkWithUplink(id, { pushNextSend: true });
+                                await this.setState(id, false, true);
+                            }
                         } else if (id.indexOf('.configuration.') !== -1) {
                             // State is from configuration path
                             const changeInfo = await this.getChangeInfo(id, { withBestMatch: true });
@@ -722,7 +727,7 @@ class Lorawan extends utils.Adapter {
         }
     }
 
-    async checkSendDownlinkWithUplink(id) {
+    async checkSendDownlinkWithUplink(id, options) {
         const activeFunction = 'main.js - checkSendDownlinkWithUplink';
         this.log.debug(`Function ${activeFunction} started.`);
         try {
@@ -731,8 +736,9 @@ class Lorawan extends utils.Adapter {
             if (
                 changeInfo &&
                 changeInfo.bestMatchForDeviceType &&
-                this.downlinkConfighandler?.activeDownlinkConfigs[changeInfo.bestMatchForDeviceType].sendWithUplink !==
-                    'disabled'
+                (this.downlinkConfighandler?.activeDownlinkConfigs[changeInfo.bestMatchForDeviceType].sendWithUplink !==
+                    'disabled' ||
+                    (options && options.pushNextSend))
             ) {
                 const nextSend = await this.getNextSend(changeInfo?.objectStartDirectory);
                 if (nextSend?.val !== '0') {

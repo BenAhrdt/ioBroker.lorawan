@@ -1167,6 +1167,7 @@
 							"type": "checkbox",
 							"attr": "publish",
 							"label": "publish",
+							"hidden": "data.Folder !== 'downlink.control'",
 							"default": true,
 							"width": "5%"
 						},
@@ -1660,7 +1661,7 @@
 							"type": "checkbox",
 							"attr": "WithAct",
 							"label": "WithAct",
-							"tooltip": "HumidifierTooltip",
+							"tooltip": "WithActTooltip",
 							"default": true,
 							"xs": 12,
 							"sm": 2,

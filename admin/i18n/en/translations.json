@@ -179,7 +179,9 @@
 	"HumidifierInformation": "Here you can define an array of Humidifier definitions",
 	"HumidifierNameText": "Entityname",
 	"Humidifier": "Humidifier",
+	"HumidifierTooltip": "humidifier / dehumidifier",
 	"WithAct": "with Act-State",
+	"WithActTooltip": "activate for setting id for actual value",
 	"HumidifierOnOffText": "On / Off",
 	"HumidifierTargetText": "Target humidity",
 	"HumidifierActText": "Actual humidity"
