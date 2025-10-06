@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.17",
+    "version": "1.17.18",
     "news": {
+      "1.17.18": {
+        "en": "push NextSend",
+        "de": "zurück zur Übersicht",
+        "ru": "скачать NextSend",
+        "pt": "push NextSend",
+        "nl": "volgendeVerzenden",
+        "fr": "pousser NextSend",
+        "it": "spingere NextSend",
+        "es": "push NextSend",
+        "pl": "naciśnij NextSend",
+        "uk": "шемале",
+        "zh-cn": "按下一个发送"
+      },
       "1.17.17": {
         "en": "serialize appending Data on NextSend\nupdate assignhandler (SensorTemperature)",
         "de": "serialisieren Appending Data auf NextSend\nupdate assignhandler (SensorTemperatur)",
@@ -80,19 +93,6 @@
         "pl": "Tryb wirtualny domyślnie wybrany dla podmiotów klimatycznych\npoprawić ukryte atrybuty dla klimatu w LoRaWAN\nzmień odkrycie usuń {} = > ''",
         "uk": "Віртуальний режим за замовчуванням, вибраний для кліматичних обов'язків\nпокращуйте прихований атрибут для ентіту клімату в LoRaWAN\nвидалити зміни {} => ' р",
         "zh-cn": "为气候实体选择默认的虚拟模式\n改善LoRaWAN中气候内涵的隐藏属性\n更改发现删除 {}}  '"
-      },
-      "1.17.11": {
-        "en": "dont fillDownlinks in case of not implemented messagetype\ntype of json ids changed to string",
-        "de": "nicht ausfüllen Downlinks bei nicht implementiertem Nachrichtentyp\nart der json ids geändert in string",
-        "ru": "не заполнять Downlinks в случае нереализованного типа сообщения\nтип json ids изменили на строку",
-        "pt": "não preencher Links para baixo em caso de tipo de mensagem não implementado\no tipo de ids json mudou para string",
-        "nl": "vullen Downlinks in geval van niet geïmplementeerd berichttype\ntype json-id's veranderd in string",
-        "fr": "ne pas remplir Liens vers le bas en cas de type de message non mis en œuvre\ntype d'ids de json changé en chaîne",
-        "it": "non riempire Downlinks in caso di messaggio non implementato\ntipo di json ids cambiato in stringa",
-        "es": "no te llenes Enlaces descendentes en caso de no aplicar el tipo de mensaje\ntipo json ids cambiados a cadena",
-        "pl": "nie wypełniaj Downlinks w przypadku niewdrożonego rodzaju wiadomości\nrodzaj idów json zmienionych na ciąg",
-        "uk": "не заповнити Попередження у разі невиконання типу повідомлення\nтип json ids змінився на рядок",
-        "zh-cn": "不填满 未执行消息类型时的下行链接\n更改为字符串的 json id 类型"
       }
     },
     "titleLang": {
