@@ -1491,7 +1491,7 @@
 					"type": "selectSendTo",
 					"label": "BridgeEnum",
 					"tooltip": "BridgeEnumTooltip",
-					"default": "",
+					"default": "*",
 					"jsonData": "{}",
 					"command": "getEnums",
 					"xs": 12,
