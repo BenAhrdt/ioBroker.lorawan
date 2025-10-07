@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.18",
+    "version": "1.17.19",
     "news": {
+      "1.17.19": {
+        "en": "improve Bridge Handling",
+        "de": "verbesserung der Bridge Handling",
+        "ru": "улучшение Bridge Handling",
+        "pt": "melhorar o manuseio da ponte",
+        "nl": "verbeteren Bridge Handling",
+        "fr": "améliorer la manipulation des ponts",
+        "it": "migliorare la gestione del ponte",
+        "es": "mejorar el manejo del puente",
+        "pl": "poprawić obsługę mostów",
+        "uk": "поліпшити мост ручка",
+        "zh-cn": "改进桥梁处理"
+      },
       "1.17.18": {
         "en": "push NextSend",
         "de": "zurück zur Übersicht",
@@ -80,19 +93,6 @@
         "pl": "Bugfix odkryj nowe urządzenia",
         "uk": "Виправлення помилок",
         "zh-cn": "错误fix 发现新设备"
-      },
-      "1.17.12": {
-        "en": "Virtual Mode in default selected for Climate Entities\nimprove hidden attribute for climate entitie in LoRaWAN\nchange discovery delete {} => ''",
-        "de": "Virtueller Modus in Standardeinstellung für Climate Entities\nverbessern Sie das versteckte Attribut für den Klimaschutz in LoRaWAN\nänderung der entdeckung löschen {} => ' '",
-        "ru": "Виртуальный режим по умолчанию выбран для климатических объектов\nулучшение скрытого атрибута для климатического объекта в LoRaWAN\nобнаружение изменений удалить {} => \"",
-        "pt": "Modo Virtual por omissão seleccionado para Entidades Climáticas\nmelhorar o atributo oculto para o clima em LoRaWAN\nalterar a descoberta apagar {} => ' '",
-        "nl": "Virtuele modus in standaard geselecteerd voor klimaatentiteiten\nverbeteren verborgen attribuut voor klimaat entitie in LoRaWAN\nde ontdekking wijzigen delete {} => ' '",
-        "fr": "Mode virtuel par défaut sélectionné pour les entités climatiques\naméliorer l'attribut caché pour entitie climatique dans LoRaWAN\nmodifier découverte supprimer {} => ' '",
-        "it": "Modalità virtuale in default selezionata per le Entità Climatiche\nmigliorare l'attributo nascosto per il clima in LoRaWAN\ncambiamento scoperta eliminare {} = > ' '",
-        "es": "Modo virtual por defecto seleccionado para Entidades climáticas\nmejorar el atributo oculto para el aislamiento climático en LoRaWAN\ncambio de descubrimiento eliminar {} = confianza ' '",
-        "pl": "Tryb wirtualny domyślnie wybrany dla podmiotów klimatycznych\npoprawić ukryte atrybuty dla klimatu w LoRaWAN\nzmień odkrycie usuń {} = > ''",
-        "uk": "Віртуальний режим за замовчуванням, вибраний для кліматичних обов'язків\nпокращуйте прихований атрибут для ентіту клімату в LoRaWAN\nвидалити зміни {} => ' р",
-        "zh-cn": "为气候实体选择默认的虚拟模式\n改善LoRaWAN中气候内涵的隐藏属性\n更改发现删除 {}}  '"
       }
     },
     "titleLang": {

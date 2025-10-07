@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.17.19 (2025-10-07)
 * (BenAhrdt) improve Bridge Handling
 
 ### 1.17.18 (2025-10-06)
