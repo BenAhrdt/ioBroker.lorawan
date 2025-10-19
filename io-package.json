@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.17.19",
+    "version": "1.18.0",
     "news": {
+      "1.18.0": {
+        "en": "New NPM Auorisation",
+        "de": "Neue NPM-Versteigerung",
+        "ru": "Новый NPM Auorization",
+        "pt": "Nova Auorização do NPM",
+        "nl": "Nieuwe NPM-aanmelding",
+        "fr": "Nouvelle autorisation NPM",
+        "it": "Nuova Auorizzazione NPM",
+        "es": "Nuevo NPM Auorisation",
+        "pl": "Nowa auryzacja NPM",
+        "uk": "Нова Ауроляція NPM",
+        "zh-cn": "新国家预防机制"
+      },
       "1.17.19": {
         "en": "improve Bridge Handling",
         "de": "verbesserung der Bridge Handling",
@@ -80,19 +93,6 @@
         "pl": "dodać nawilżacz do obcych państw",
         "uk": "додати зволожувач до іноземних держав",
         "zh-cn": "向外国添加增湿剂"
-      },
-      "1.17.13": {
-        "en": "Bugfix discover new devices",
-        "de": "Bugfix neue Geräte entdecken",
-        "ru": "Bugfix открывает новые устройства",
-        "pt": "Bugfix descobre novos dispositivos",
-        "nl": "Bugfix nieuwe apparaten ontdekken",
-        "fr": "Bugfix découvrez de nouveaux périphériques",
-        "it": "Bugfix scopri nuovi dispositivi",
-        "es": "Bugfix descubre nuevos dispositivos",
-        "pl": "Bugfix odkryj nowe urządzenia",
-        "uk": "Виправлення помилок",
-        "zh-cn": "错误fix 发现新设备"
       }
     },
     "titleLang": {
