@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Bugfix on case of objectid starts with '.'
+
 ### 1.18.0 (2025-10-19)
 * (BenAhrdt) New NPM Auorisation
 
