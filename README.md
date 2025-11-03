@@ -24,6 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+* (BenAhrdt) Bugfix subscribed Topics
 * (BenAhrdt) Bugfix on case of objectid starts with '.'
 
 ### 1.18.0 (2025-10-19)
