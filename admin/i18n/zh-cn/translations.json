@@ -22,6 +22,7 @@
 	"BridgeType": "桥梁类型",
 	"BridgeTypeHA": "家庭助理",
 	"BridgeTypeOff": "离开",
+	"BridgeTypeSH": "智能家居",
 	"BridgeTypeTooltip": "选择外国系统的类型",
 	"BridgenotificationActivation": "通知激活",
 	"BridgenotificationTooltip": "激活或停用通知",

@@ -127,6 +127,7 @@
 	"BridgeTypeTooltip": "Select the Type of the foreign System",
 	"BridgeTypeOff": "off",
 	"BridgeTypeHA": "Home Assistant",
+	"BridgeTypeSH": "Smart Home",
 	"RefreshDiscoveryCronJob": "Discover Cycle",
 	"RefreshDiscoveryCronJobTooltip": "insert the cronjob for refreshing the discovery",
 	"ClimateHeader": "Define States for Climate Entity",

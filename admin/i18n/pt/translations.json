@@ -22,6 +22,7 @@
 	"BridgeType": "Tipo de ponte",
 	"BridgeTypeHA": "Assistente de casa",
 	"BridgeTypeOff": "desligado",
+	"BridgeTypeSH": "Casa inteligente",
 	"BridgeTypeTooltip": "Selecione o tipo do sistema estranho",
 	"BridgenotificationActivation": "Ativação de notificação",
 	"BridgenotificationTooltip": "ativar ou desativar a notificação",

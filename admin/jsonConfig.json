@@ -750,7 +750,8 @@
 					"tooltip": "BridgeTypeTooltip",
 					"options": [
 						{"label":"BridgeTypeOff","value":"off"},
-						{"label":"BridgeTypeHA","value":"HA"}
+						{"label":"BridgeTypeHA","value":"HA"},
+						{"label":"BridgeTypeSH","value":"SH"}
 					],
 					"default": "off",
 					"xs": 12,

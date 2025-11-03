@@ -22,6 +22,7 @@
 	"BridgeType": "Typ mostu",
 	"BridgeTypeHA": "Asystent domu",
 	"BridgeTypeOff": "wyłączony",
+	"BridgeTypeSH": "Inteligentny dom",
 	"BridgeTypeTooltip": "Wybierz rodzaj systemu zagranicznego",
 	"BridgenotificationActivation": "Aktywacja powiadomienia",
 	"BridgenotificationTooltip": "aktywuj lub dezaktywuj powiadomienie",

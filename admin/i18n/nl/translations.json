@@ -22,6 +22,7 @@
 	"BridgeType": "Brug -type",
 	"BridgeTypeHA": "Thuisassistent",
 	"BridgeTypeOff": "uit",
+	"BridgeTypeSH": "Slim huis",
 	"BridgeTypeTooltip": "Selecteer het type buitenlandse systeem",
 	"BridgenotificationActivation": "Activering van melding",
 	"BridgenotificationTooltip": "de melding activeren of deactiveren",

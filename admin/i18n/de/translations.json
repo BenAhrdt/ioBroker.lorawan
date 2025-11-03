@@ -22,6 +22,7 @@
 	"BridgeType": "Bridge Typ",
 	"BridgeTypeHA": "Home Assistant",
 	"BridgeTypeOff": "aus",
+	"BridgeTypeSH": "Smart Home",
 	"BridgeTypeTooltip": "Wählen Sie den Typ des Fremdsystems aus",
 	"BridgenotificationActivation": "Benachrichtigungsaktivierung",
 	"BridgenotificationTooltip": "Aktivieren oder deaktivieren Sie die Benachrichtigung",

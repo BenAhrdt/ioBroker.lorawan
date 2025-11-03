@@ -24,6 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+* (BenAhrdt) Add Bridge Type Smarthome
 * (BenAhrdt) Bugfix subscribed Topics
 * (BenAhrdt) Bugfix on case of objectid starts with '.'
 

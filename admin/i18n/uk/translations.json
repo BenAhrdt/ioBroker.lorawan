@@ -22,6 +22,7 @@
 	"BridgeType": "Тип мосту",
 	"BridgeTypeHA": "Домашній помічник",
 	"BridgeTypeOff": "не вистачати",
+	"BridgeTypeSH": "Розумний будинок",
 	"BridgeTypeTooltip": "Виберіть тип іноземної системи",
 	"BridgenotificationActivation": "Активація сповіщень",
 	"BridgenotificationTooltip": "активуйте або деактивувати повідомлення",
