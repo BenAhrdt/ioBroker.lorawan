@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.0",
+    "version": "1.18.1",
     "news": {
+      "1.18.1": {
+        "en": "Add Bridge Type Smarthome\nBugfix subscribed Topics\nBugfix on case of objectid starts with '.'",
+        "de": "Bridge Type Smarthome hinzufügen\nBugfix abonniert Themen\nBugfix auf Fall von objectid beginnt mit '. '",
+        "ru": "Обновление Bridge Type Smarthome\nBugfix подписался на Topics\nБагфикс на случай объектидов начинается с '. \"",
+        "pt": "Adicionar tipo de ponte Smarthome\nTópicos subscritos por Bugfix\nBugfix no caso do objeto começa com '. '",
+        "nl": "Brugtype Smarthome toevoegen\nBugfix-geabonneerde onderwerpen\nBugfix op geval objectid begint met '. '",
+        "fr": "Ajouter le type de pont Smarthome\nSujets souscrits Bugfix\nBugfix sur le cas de l'objet commence par '. '",
+        "it": "Aggiungi Bridge Type Smarthome\nBugfix sottoscritto Argomenti\nBugfix su caso di oggetto inizia con '. '",
+        "es": "Agregar Bridge Type Smarthome\nBugfix suscrito Temas\nBugfix en caso de objetado comienza con '. '",
+        "pl": "Dodaj typ mostu Smarthome\nBugfix subskrybowane tematy\nBugfix w przypadku obiektów zaczyna się od \". '",
+        "uk": "Додати Bridge Type Smarthome\nВиправлено помилку\nВиправлення помилок при об'єктиві починається з '. Р",
+        "zh-cn": "添加桥型 Smarthome\nBugfix 已订阅主题\n对象大小写上的错误fix 开始于 。  '"
+      },
       "1.18.0": {
         "en": "New NPM Auorisation",
         "de": "Neue NPM-Versteigerung",
@@ -80,19 +93,6 @@
         "pl": "notifi nowe odkrycie w przypadku old DiscoveredDevices\nlogowanie debugfix",
         "uk": "неідентифікувати нове відкриття у разі виникнення застарілих\nзареєструватися",
         "zh-cn": "旧发现器的新发现\n调试日志"
-      },
-      "1.17.14": {
-        "en": "add humidifier to foreign States",
-        "de": "fügen Sie Befeuchter für ausländische Staaten hinzu",
-        "ru": "добавить увлажнитель воздуха в иностранные государства",
-        "pt": "adicionar umidificador a estados estrangeiros",
-        "nl": "luchtbevochtiger toevoegen aan buitenlandse staten",
-        "fr": "ajouter l'humidificateur aux États étrangers",
-        "it": "aggiungere umidificatore agli Stati esteri",
-        "es": "añadir humidificador a Estados extranjeros",
-        "pl": "dodać nawilżacz do obcych państw",
-        "uk": "додати зволожувач до іноземних держав",
-        "zh-cn": "向外国添加增湿剂"
       }
     },
     "titleLang": {
