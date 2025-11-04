@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Change Topicformat from device_state to device/state
+
 ### 1.18.1 (2025-11-03)
 * (BenAhrdt) Add Bridge Type Smarthome
 * (BenAhrdt) Bugfix subscribed Topics
