@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.18.2 (2025-11-04)
 * (BenAhrdt) Change Topicformat from device_state to device/state
 
 ### 1.18.1 (2025-11-03)
