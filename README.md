@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.18.3 (2025-11-06)
 * (BenAhrdt) Add possibility to switch the LoraWAN communication off (origin)
 
 ### 1.18.2 (2025-11-04)

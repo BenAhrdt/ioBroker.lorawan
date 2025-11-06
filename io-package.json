@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.2",
+    "version": "1.18.3",
     "news": {
+      "1.18.3": {
+        "en": "Add possibility to switch the LoraWAN communication off (origin)",
+        "de": "Möglichkeit hinzufügen, die LoraWAN-Kommunikation auszuschalten (Ursprung)",
+        "ru": "Добавить возможность отключения связи LoraWAN (оригинал)",
+        "pt": "Adicionar possibilidade de desligar a comunicação LoraWAN (origem)",
+        "nl": "Mogelijkheid toevoegen om de LoraWAN communicatie uit te schakelen (origine)",
+        "fr": "Ajouter la possibilité d'éteindre la communication LoraWAN (origine)",
+        "it": "Aggiungi la possibilità di spegnere la comunicazione LoraWAN (origine)",
+        "es": "Añadir posibilidad de apagar la comunicación LoraWAN (origin)",
+        "pl": "Dodaj możliwość wyłączenia komunikacji LoraWAN (pochodzenie)",
+        "uk": "Додати можливість переключити LoraWAN зв'язок (рігін)",
+        "zh-cn": "添加切换 LoraWAN 通讯( 来源) 的可能性"
+      },
       "1.18.2": {
         "en": "Change Topicformat from device_state to device/state",
         "de": "Topicformat von device_state zu device/state ändern",
@@ -80,19 +93,6 @@
         "pl": "serializuj przypisywanie danych na nextSend\naktualizuj urządzenie sterujące (SensorTemperatura)",
         "uk": "сертифікувати дані додатків на NextSend\nоновлення assignhandler (SensorTemperature)",
         "zh-cn": "序列化下一端的数据\n更新指派手( 传感器)"
-      },
-      "1.17.16": {
-        "en": "bring state_off topic to humidifier",
-        "de": "state_off-thema zur befeuchtung bringen",
-        "ru": "скачать игру state_off для humidifier",
-        "pt": "trazer o tópico state_off para o umidificador",
-        "nl": "status_off onderwerp naar bevochtiger brengen",
-        "fr": "apporter le sujet état_off à l'humidificateur",
-        "it": "portare argomento state_off a umidificatore",
-        "es": "traer el tema state_off a humidificador",
-        "pl": "przynieść state _ off temat do nawilżacza",
-        "uk": "принести стан_вимкнути тему для зволоження",
-        "zh-cn": "将状态切换为潮湿器"
       }
     },
     "titleLang": {
