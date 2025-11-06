@@ -52,6 +52,7 @@
 	"LoRaWAN Network Service is disconnected": "Lorawan Network Service is losgekoppeld",
 	"LoRaWAN device is back online": "Het volgende Lorawan -apparaat is weer online",
 	"LoRaWAN device is offline": "Het volgende Lorawan -apparaat is offline",
+	"LorawanOff": "uit",
 	"MQTTInstance": "MQTT -instantie",
 	"NoBridgeConfiged": "Er is geen brug geconfigureerd !!!",
 	"OriginHeader": "Origensettings",

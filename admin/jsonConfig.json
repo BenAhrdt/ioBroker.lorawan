@@ -135,6 +135,7 @@
 					"label": "origin",
 					"tooltip": "originTooltip",
 					"options": [
+						{"label":"LorawanOff","value":"off"},
 						{"label":"TTN","value":"ttn"},
 						{"label":"Chirpstack","value":"chirpstack"}
 					],

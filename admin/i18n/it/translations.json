@@ -52,6 +52,7 @@
 	"LoRaWAN Network Service is disconnected": "Il servizio di rete Lorawan è disconnesso",
 	"LoRaWAN device is back online": "Il seguente dispositivo Lorawan è tornato online",
 	"LoRaWAN device is offline": "Il seguente dispositivo Lorawan è offline",
+	"LorawanOff": "spento",
 	"MQTTInstance": "Istanza MQTT",
 	"NoBridgeConfiged": "Non c'è bridge configurato !!!",
 	"OriginHeader": "Originsettings",

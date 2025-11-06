@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Add possibility to switch the LoraWAN communication off (origin)
+
 ### 1.18.2 (2025-11-04)
 * (BenAhrdt) Change Topicformat from device_state to device/state
 

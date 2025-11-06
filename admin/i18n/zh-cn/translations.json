@@ -52,6 +52,7 @@
 	"LoRaWAN Network Service is disconnected": "Lorawan网络服务已断开连接",
 	"LoRaWAN device is back online": "以下Lorawan设备返回在线",
 	"LoRaWAN device is offline": "以下Lorawan设备离线",
+	"LorawanOff": "离开",
 	"MQTTInstance": "MQTT实例",
 	"NoBridgeConfiged": "没有桥梁配置！！！",
 	"OriginHeader": "起源",

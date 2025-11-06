@@ -75,7 +75,7 @@ class Lorawan extends utils.Adapter {
             this.messagehandler = new messagehandlerClass(this);
 
             // Set mqtt client => just declare, if a url is set
-            if (this.config.ipUrl !== '') {
+            if (this.config.origin !== 'off') {
                 this.mqttClient = new mqttClientClass(this, this.config);
             }
 
