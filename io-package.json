@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.3",
+    "version": "1.18.4",
     "news": {
+      "1.18.4": {
+        "en": "Change unique id for lorawan internal standard states\nChange sequence of dicovery and check downlinks at startup",
+        "de": "Ändern Sie einzigartige id für lorawan interne Standardzustände\nÄndern Sie die Reihenfolge der Dicovery und überprüfen Sie Downlinks beim Start",
+        "ru": "Изменение уникального идентификатора для внутренних стандартных состояний Lorawan\nИзмените последовательность обнаружения и проверьте нисходящие ссылки при запуске",
+        "pt": "Mudar o ID único para estados padrão internos do lorawan\nAltere a sequência de dicovery e verifique os links abaixo na inicialização",
+        "nl": "Wijzig unieke id voor Lorawan interne standaardstaten\nVerander de sequentie van de dicovery en controleer downlinks bij opstarten",
+        "fr": "Modifier l'identifiant unique pour les états standard internes de lorawan\nChanger la séquence de dicovery et vérifier les liens descendants au démarrage",
+        "it": "Cambiare id unico per lorawan stati standard interni\nModificare la sequenza di scoperta e controllare downlink all'avvio",
+        "es": "Cambio único id para los estados estándar internos de Lorawan\nCambio de secuencia de descubrimiento y check downlinks al inicio",
+        "pl": "Zmiana niepowtarzalnego identyfikatora dla stanów wewnętrznych Lorawan\nZmień sekwencję dicovery i sprawdź linki w dół przy starcie",
+        "uk": "Зміна унікальних ідентифікаторів для внутрішніх стандартних станів лоурен\nЗміна послідовності дифективних і контрольних посилань при запуску",
+        "zh-cn": "更改 Lorawan 内部标准状态的独有 ID\n更改隐藏的顺序并在启动时检查下行链路"
+      },
       "1.18.3": {
         "en": "Add possibility to switch the LoraWAN communication off (origin)",
         "de": "Möglichkeit hinzufügen, die LoraWAN-Kommunikation auszuschalten (Ursprung)",
@@ -80,19 +93,6 @@
         "pl": "naciśnij NextSend",
         "uk": "шемале",
         "zh-cn": "按下一个发送"
-      },
-      "1.17.17": {
-        "en": "serialize appending Data on NextSend\nupdate assignhandler (SensorTemperature)",
-        "de": "serialisieren Appending Data auf NextSend\nupdate assignhandler (SensorTemperatur)",
-        "ru": "сериализировать добавленные данные в NextSend\nраспределитель обновлений (SensorTemperature)",
-        "pt": "serialize anexando dados no NextSend\natualizar assignhandler (SensorTemperature)",
-        "nl": "serialiseren toevoegen van gegevens op NextSend\nupdate awardhandler (SensorTemperatuur)",
-        "fr": "sérialiser l'ajout de données sur NextSend\nmettre à jour le gestionnaire d'attribution (SensorTemperature)",
-        "it": "serializzare i dati di appending su NextSend\naggiornamento assegnatore (SensorTemperature)",
-        "es": "serializar los datos pendientes en NextSend\n(SensorTemperature)",
-        "pl": "serializuj przypisywanie danych na nextSend\naktualizuj urządzenie sterujące (SensorTemperatura)",
-        "uk": "сертифікувати дані додатків на NextSend\nоновлення assignhandler (SensorTemperature)",
-        "zh-cn": "序列化下一端的数据\n更新指派手( 传感器)"
       }
     },
     "titleLang": {
