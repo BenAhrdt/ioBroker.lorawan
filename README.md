@@ -23,6 +23,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Change unique id for lorawan internal standard states
+* (BenAhrdt) Change sequence of dicovery and check downlinks at startup
+
 ### 1.18.3 (2025-11-06)
 * (BenAhrdt) Add possibility to switch the LoraWAN communication off (origin)
 

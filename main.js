@@ -74,6 +74,15 @@ class Lorawan extends utils.Adapter {
             // create new messagehandler
             this.messagehandler = new messagehandlerClass(this);
 
+            // generate new configed downlinkstates on allready existing devices at adapter startup
+            await this.messagehandler.generateDownlinksAndRemoveStatesAtStatup();
+
+            // generate deviceinfo of all devices in info folder
+            await this.messagehandler.generateDeviceinfosAtStartup();
+
+            // get history instances at Startup
+            await this.messagehandler.setCustomObjectAtStartup();
+
             // Set mqtt client => just declare, if a url is set
             if (this.config.origin !== 'off') {
                 this.mqttClient = new mqttClientClass(this, this.config);
@@ -83,15 +92,6 @@ class Lorawan extends utils.Adapter {
             if (this.config.BridgeType !== 'off') {
                 this.bridge = new bridgeClass(this);
             }
-
-            // generate new configed downlinkstates on allready existing devices at adapter startup
-            await this.messagehandler.generateDownlinksAndRemoveStatesAtStatup();
-
-            // generate deviceinfo of all devices in info folder
-            await this.messagehandler.generateDeviceinfosAtStartup();
-
-            // get history instances at Startup
-            await this.messagehandler.setCustomObjectAtStartup();
 
             //Subscribe all configuration and control states
             await this.subscribeStatesAsync('*');
