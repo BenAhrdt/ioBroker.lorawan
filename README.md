@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) add mixed to type text for color values
+
 ### 1.18.4 (2025-11-08)
 * (BenAhrdt) Change unique id for lorawan internal standard states
 * (BenAhrdt) Change sequence of dicovery and check downlinks at startup
