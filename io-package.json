@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.4",
+    "version": "1.18.5",
     "news": {
+      "1.18.5": {
+        "en": "add mixed to type text for color values",
+        "de": "hinzufügen gemischt zu geben text für farbwerte",
+        "ru": "добавить смешанный текст для цветовых значений",
+        "pt": "adicionar texto misto ao tipo para valores de cores",
+        "nl": "gemengd toevoegen aan type tekst voor kleurwaarden",
+        "fr": "ajouter mélangé au texte type pour les valeurs de couleur",
+        "it": "aggiungere testo misto per digitare i valori di colore",
+        "es": "añadir mezclado para escribir texto para valores de color",
+        "pl": "dodaj mieszany do tekstu dla wartości kolorów",
+        "uk": "додати змішаний для типу текст для значень кольору",
+        "zh-cn": "在颜色值类型中添加混合文本"
+      },
       "1.18.4": {
         "en": "Change unique id for lorawan internal standard states\nChange sequence of dicovery and check downlinks at startup",
         "de": "Ändern Sie einzigartige id für lorawan interne Standardzustände\nÄndern Sie die Reihenfolge der Dicovery und überprüfen Sie Downlinks beim Start",
@@ -80,19 +93,6 @@
         "pl": "poprawić obsługę mostów",
         "uk": "поліпшити мост ручка",
         "zh-cn": "改进桥梁处理"
-      },
-      "1.17.18": {
-        "en": "push NextSend",
-        "de": "zurück zur Übersicht",
-        "ru": "скачать NextSend",
-        "pt": "push NextSend",
-        "nl": "volgendeVerzenden",
-        "fr": "pousser NextSend",
-        "it": "spingere NextSend",
-        "es": "push NextSend",
-        "pl": "naciśnij NextSend",
-        "uk": "шемале",
-        "zh-cn": "按下一个发送"
       }
     },
     "titleLang": {
