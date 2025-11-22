@@ -1787,6 +1787,24 @@
 							"xl": 2
 						},
 						{
+							"type": "select",
+							"attr": "LightColorType",
+							"label": "LightColorType",
+							"tooltip": "LightColorTypeTooltip",
+							"options": [
+								{"label":"HexToRGB","value":"HexToRGB"},
+								{"label":"HexToHS","value":"HexToHS"},
+								{"label":"HexToXY","value":"HexToXY"}
+							],
+							"default": "HexToRGB",
+							"hidden": "true",
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},
+						{
 							"type": "staticText",
 							"attr": "_staticTextTarget",
 							"label": "",
