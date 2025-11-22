@@ -1612,7 +1612,7 @@
 					"md": 12,
 					"lg": 12,
 					"xl": 12
-					},
+				},
 				"_HumidifierForeignInformation":{
 					"newLine":true,
 					"type": "staticText",
@@ -1708,6 +1708,122 @@
 							"attr": "ActId",
 							"label": "HumidifierActText",
 							"hidden": "data.WithAct === false",
+							"customFilter": "{common: {type: ['number']}",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						}
+					]
+				},
+				"_LightForeignHeader":{
+					"newLine": true,
+					"type": "header",
+					"text": "LightHeader",
+					"size": 3,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"_LightForeignInformation":{
+					"newLine":true,
+					"type": "staticText",
+					"label": "LightInformation",
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"LightForeignConfig":{
+                    "newLine": true,
+                    "type":"accordion",
+					"titleAttr": "LightName",
+					"clone": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12,
+					"items":[
+						{
+							"type": "text",
+							"attr": "LightName",
+							"label": "LightNameText",
+							"validator": "if(data.LightName === ''){return false;}else{return true;}",
+							"validatorNoSaveOnError": true,
+							"default": "Light Name",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "checkbox",
+							"attr": "LightBrightness",
+							"label": "LightBrightness",
+							"tooltip": "LightBrightnessTooltip",
+							"default": true,
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},
+						{
+							"type": "checkbox",
+							"attr": "LightColor",
+							"label": "LightColor",
+							"tooltip": "LightColorTooltip",
+							"default": true,
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},
+						{
+							"type": "staticText",
+							"attr": "_staticTextTarget",
+							"label": "",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "OnOffId",
+							"label": "LightOnOffText",
+							"customFilter": "{common: {type: ['boolean']}",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "BrightnessId",
+							"label": "LightBrightnessText",
+							"hidden": "data.LightBrightness === false",
+							"customFilter": "{common: {type: ['number']}",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "ColorId",
+							"label": "LightColorText",
+							"hidden": "data.LightColor === false",
 							"customFilter": "{common: {type: ['number']}",
 							"xs": 12,
 							"sm": 4,

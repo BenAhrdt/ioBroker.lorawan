@@ -42,7 +42,7 @@ class Lorawan extends utils.Adapter {
         this.language;
 
         this.secret = {
-            hash: '42b2bbd1dd29a1148fa43609a71f6881162e484a0a5ada2ec6ce98d129606d8f',
+            hash: 'feda26376e3d3b38eae8efa48d055754eb0c388d6dbc7ced2ddb5f2f8166f417',
             salt: 'LoRaWANBeScJoFr',
         };
     }
@@ -75,7 +75,9 @@ class Lorawan extends utils.Adapter {
             this.messagehandler = new messagehandlerClass(this);
 
             // generate new configed downlinkstates on allready existing devices at adapter startup
-            await this.messagehandler.generateDownlinksAndRemoveStatesAtStatup();
+            if (this.config.origin !== 'off') {
+                await this.messagehandler.generateDownlinksAndRemoveStatesAtStatup();
+            }
 
             // generate deviceinfo of all devices in info folder
             await this.messagehandler.generateDeviceinfosAtStartup();

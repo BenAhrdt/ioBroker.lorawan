@@ -186,5 +186,15 @@
 	"WithActTooltip": "activate for setting id for actual value",
 	"HumidifierOnOffText": "On / Off",
 	"HumidifierTargetText": "Target humidity",
-	"HumidifierActText": "Actual humidity"
+	"HumidifierActText": "Actual humidity",
+	"LightHeader": "Define States for a Light Entity",
+	"LightInformation": "Here you can define an array of Light definitions",
+	"LightNameText": "Entityname",
+	"LightBrightness": "Brightness",
+	"LightBrightnessTooltip": "enable to set brightness id",
+	"LightColor": "Color",
+	"LightColorTooltip": "enable to set color id",
+	"LightOnOffText": "On / Off",
+	"LightBrightnessText": "Brightness id",
+	"LightColorText": "Color id"
 }
