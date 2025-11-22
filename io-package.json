@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.6",
+    "version": "1.18.7",
     "news": {
+      "1.18.7": {
+        "en": "Add light to possible special devices",
+        "de": "Licht zu möglichen Spezialgeräten hinzufügen",
+        "ru": "Добавление света к возможным специальным устройствам",
+        "pt": "Adicionar luz a possíveis dispositivos especiais",
+        "nl": "Licht toevoegen aan mogelijke speciale apparaten",
+        "fr": "Ajouter de la lumière aux dispositifs spéciaux possibles",
+        "it": "Aggiungi luce a possibili dispositivi speciali",
+        "es": "Añadir luz a posibles dispositivos especiales",
+        "pl": "Dodaj światło do możliwych urządzeń specjalnych",
+        "uk": "Додати світло для можливих спеціальних пристроїв",
+        "zh-cn": "在可能的特殊设备中添加光"
+      },
       "1.18.6": {
         "en": "set role color to entity_category config",
         "de": "rollenfarbe auf entity_category config einstellen",
@@ -80,19 +93,6 @@
         "pl": "Dodaj typ mostu Smarthome\nBugfix subskrybowane tematy\nBugfix w przypadku obiektów zaczyna się od \". '",
         "uk": "Додати Bridge Type Smarthome\nВиправлено помилку\nВиправлення помилок при об'єктиві починається з '. Р",
         "zh-cn": "添加桥型 Smarthome\nBugfix 已订阅主题\n对象大小写上的错误fix 开始于 。  '"
-      },
-      "1.18.0": {
-        "en": "New NPM Auorisation",
-        "de": "Neue NPM-Versteigerung",
-        "ru": "Новый NPM Auorization",
-        "pt": "Nova Auorização do NPM",
-        "nl": "Nieuwe NPM-aanmelding",
-        "fr": "Nouvelle autorisation NPM",
-        "it": "Nuova Auorizzazione NPM",
-        "es": "Nuevo NPM Auorisation",
-        "pl": "Nowa auryzacja NPM",
-        "uk": "Нова Ауроляція NPM",
-        "zh-cn": "新国家预防机制"
       }
     },
     "titleLang": {
