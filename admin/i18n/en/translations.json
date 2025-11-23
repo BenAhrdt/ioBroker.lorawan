@@ -196,5 +196,8 @@
 	"LightColorTooltip": "enable to set color id",
 	"LightOnOffText": "On / Off",
 	"LightBrightnessText": "Brightness id",
-	"LightColorText": "Color id"
+	"LightColorText": "Color id",
+	"LightEffects": "Effects",
+	"LightEffectsTooltip": "enable to set Effects id",
+	"LightEffectsText": "Effects id"
 }

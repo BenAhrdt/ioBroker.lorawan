@@ -1802,14 +1802,16 @@
 							"xl": 2
 						},
 						{
-							"type": "staticText",
-							"attr": "_staticTextTarget",
-							"label": "",
+							"type": "checkbox",
+							"attr": "LightEffects",
+							"label": "LightEffects",
+							"tooltip": "LightEffectsTooltip",
+							"default": false,
 							"xs": 12,
-							"sm": 4,
-							"md": 4,
-							"lg": 4,
-							"xl": 4
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
 						},
 						{
 							"type": "objectId",
@@ -1837,6 +1839,17 @@
 							"attr": "ColorId",
 							"label": "LightColorText",
 							"hidden": "data.LightColor === false",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "EffectsId",
+							"label": "LightEffectsText",
+							"hidden": "data.LightEffects === false",
 							"xs": 12,
 							"sm": 4,
 							"md": 4,

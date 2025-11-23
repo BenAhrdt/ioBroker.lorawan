@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
-* (BenAhrdt) Cover entities
+* (BenAhrdt) Effects for Lights in common.states
 
 ### 1.18.9 (2025-11-23)
 * (BenAhrdt) Automactic Scale of light brightness in case of common.max in state
