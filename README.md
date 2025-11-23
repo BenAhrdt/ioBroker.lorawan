@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
-* (BenAhrdt) Cover for Special entities
+* (BenAhrdt) Bugfix fx for published ids
 
 ### 1.18.10 (2025-11-23)
 * (BenAhrdt) Effects for Lights in common.states
