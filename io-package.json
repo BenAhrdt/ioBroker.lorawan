@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.8",
+    "version": "1.18.9",
     "news": {
+      "1.18.9": {
+        "en": "Automactic Scale of light brightness in case of common.max in state",
+        "de": "Automaktische Skala der Lichthelligkeit bei Common.max im Zustand",
+        "ru": "Автоматическая шкала яркости света в случае common.max в состоянии",
+        "pt": "Escala automática de brilho de luz em caso de comum.max em estado",
+        "nl": "Automactische schaal van licht helderheid in geval van gemeenschappelijk.max in staat",
+        "fr": "Échelle automatique de luminosité de la lumière dans le cas de common.max à l'état",
+        "it": "Scala automatica della luminosità della luce in caso di common.max nello stato",
+        "es": "Escala automáctica de brillo de luz en caso de común.max en estado",
+        "pl": "Automatyczne skalowanie jasności światła w przypadku common.max w stanie",
+        "uk": "Автомактична шкала легкої яскравості при загальній.max в стані",
+        "zh-cn": "状态下常见.max时的光亮度自动缩放"
+      },
       "1.18.8": {
         "en": "Bugfix: no notification in case of no bridge is used",
         "de": "Bugfix: keine Benachrichtigung bei Nutzung einer Brücke",
@@ -80,19 +93,6 @@
         "pl": "Dodaj możliwość wyłączenia komunikacji LoraWAN (pochodzenie)",
         "uk": "Додати можливість переключити LoraWAN зв'язок (рігін)",
         "zh-cn": "添加切换 LoraWAN 通讯( 来源) 的可能性"
-      },
-      "1.18.2": {
-        "en": "Change Topicformat from device_state to device/state",
-        "de": "Topicformat von device_state zu device/state ändern",
-        "ru": "Изменить Тематический формат с device_state на device/state",
-        "pt": "Alterar o formato do tópico do dispositivo_ estado para o dispositivo/estado",
-        "nl": "Topicformat van device_state naar apparaat/staat wijzigen",
-        "fr": "Changer le format du sujet de device_state vers device/state",
-        "it": "Cambia formato di argomento da dispositivo_stato a dispositivo/stato",
-        "es": "Cambiar Topicformat de dispositivo_state a dispositivo/estado",
-        "pl": "Zmień format tematu z urządzenia _ state na urządzenie / stan",
-        "uk": "Зміна Themeformat від device_state до пристрою/state",
-        "zh-cn": "将主题格式从设备_状态更改为设备/状态"
       }
     },
     "titleLang": {

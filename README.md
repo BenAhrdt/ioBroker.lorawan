@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.18.9 (2025-11-23)
 * (BenAhrdt) Automactic Scale of light brightness in case of common.max in state
 
 ### 1.18.8 (2025-11-23)
