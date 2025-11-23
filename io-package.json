@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.11",
+    "version": "1.18.12",
     "news": {
+      "1.18.12": {
+        "en": "Bugfix fx in case of number",
+        "de": "Bugfix fx bei Anzahl",
+        "ru": "Bugfix fx в случае номера",
+        "pt": "Bugfix fx em caso de número",
+        "nl": "Bugfix fx bij aantal",
+        "fr": "Bugfix fx en cas de nombre",
+        "it": "Bugfix fx in caso di numero",
+        "es": "Fx Bugfix en caso de número",
+        "pl": "Bugfix fx w przypadku liczby",
+        "uk": "Виправлення помилок при кількості",
+        "zh-cn": "如果出现数字, 错误fx"
+      },
       "1.18.11": {
         "en": "Bugfix fx for published ids",
         "de": "Bugfix fx für veröffentlichte ids",
@@ -80,19 +93,6 @@
         "pl": "ustaw kolor ról do konfiguracji podmiotu _ kategorii",
         "uk": "встановити колір ролі на сутність_category config",
         "zh-cn": "设置角色颜色到实体_ 类别配置"
-      },
-      "1.18.5": {
-        "en": "add mixed to type text for color values",
-        "de": "hinzufügen gemischt zu geben text für farbwerte",
-        "ru": "добавить смешанный текст для цветовых значений",
-        "pt": "adicionar texto misto ao tipo para valores de cores",
-        "nl": "gemengd toevoegen aan type tekst voor kleurwaarden",
-        "fr": "ajouter mélangé au texte type pour les valeurs de couleur",
-        "it": "aggiungere testo misto per digitare i valori di colore",
-        "es": "añadir mezclado para escribir texto para valores de color",
-        "pl": "dodaj mieszany do tekstu dla wartości kolorów",
-        "uk": "додати змішаний для типу текст для значень кольору",
-        "zh-cn": "在颜色值类型中添加混合文本"
       }
     },
     "titleLang": {
