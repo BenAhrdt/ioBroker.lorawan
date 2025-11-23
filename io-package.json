@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.12",
+    "version": "1.18.13",
     "news": {
+      "1.18.13": {
+        "en": "Bugfix: wrong subscribtion of fx ids",
+        "de": "Bugfix: falsche Anmeldung von fx ids",
+        "ru": "Bugfix: неправильная подписка на fx ids",
+        "pt": "Correção de Bugfix: subscrita errada de fx ids",
+        "nl": "Bugfix: verkeerde subscriptie van fx ids",
+        "fr": "Bugfix : mauvaise subscribtion des ids fx",
+        "it": "Bugfix: sottoscrizione sbagliata di fx ids",
+        "es": "Bugfix: la subscripción incorrecta de los ids de fx",
+        "pl": "Bugfix: błędna subskrypcja fix ids",
+        "uk": "Помилки: неправильне підсобнення попелиці",
+        "zh-cn": "错误fix: fx ID 的子缩写错误"
+      },
       "1.18.12": {
         "en": "Bugfix fx in case of number",
         "de": "Bugfix fx bei Anzahl",
@@ -80,19 +93,6 @@
         "pl": "Dodaj światło do możliwych urządzeń specjalnych",
         "uk": "Додати світло для можливих спеціальних пристроїв",
         "zh-cn": "在可能的特殊设备中添加光"
-      },
-      "1.18.6": {
-        "en": "set role color to entity_category config",
-        "de": "rollenfarbe auf entity_category config einstellen",
-        "ru": "установить цвет ролей в конфигурации entity_category",
-        "pt": "definir a cor do papel para a configuração entity_category",
-        "nl": "rolkleur instellen op entiteit_categorie configuratie",
-        "fr": "définir la couleur du rôle à la config entity_category",
-        "it": "impostare colore ruolo a enti_category config",
-        "es": "definir el papel color a entity_category config",
-        "pl": "ustaw kolor ról do konfiguracji podmiotu _ kategorii",
-        "uk": "встановити колір ролі на сутність_category config",
-        "zh-cn": "设置角色颜色到实体_ 类别配置"
       }
     },
     "titleLang": {
