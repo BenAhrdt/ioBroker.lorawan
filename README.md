@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
-* (BenAhrdt) Add cover to special entities
+* (BenAhrdt) Scale of brightness for light
 
 ### 1.18.8 (2025-11-23)
 * (BenAhrdt) Bugfix: no notification in case of no bridge is used
