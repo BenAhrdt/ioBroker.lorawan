@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.9",
+    "version": "1.18.10",
     "news": {
+      "1.18.10": {
+        "en": "Effects for Lights in common.states",
+        "de": "Effekte für Lichter gemeinsam. Staaten",
+        "ru": "Эффекты для общего света. государства",
+        "pt": "Efeitos para Luzes em comum. estados",
+        "nl": "Effecten voor Lichten gemeen. staat",
+        "fr": "Effets pour les lumières en commun. États",
+        "it": "Effetti per le luci in comune. Stati",
+        "es": "Efectos para las luces en común. estados",
+        "pl": "Skutki dla Lights wspólne. stany",
+        "uk": "Ефекти для вогнів в цілому. Стан",
+        "zh-cn": "对光的影响是共同的。 状态"
+      },
       "1.18.9": {
         "en": "Automactic Scale of light brightness in case of common.max in state",
         "de": "Automaktische Skala der Lichthelligkeit bei Common.max im Zustand",
@@ -80,19 +93,6 @@
         "pl": "Zmiana niepowtarzalnego identyfikatora dla stanów wewnętrznych Lorawan\nZmień sekwencję dicovery i sprawdź linki w dół przy starcie",
         "uk": "Зміна унікальних ідентифікаторів для внутрішніх стандартних станів лоурен\nЗміна послідовності дифективних і контрольних посилань при запуску",
         "zh-cn": "更改 Lorawan 内部标准状态的独有 ID\n更改隐藏的顺序并在启动时检查下行链路"
-      },
-      "1.18.3": {
-        "en": "Add possibility to switch the LoraWAN communication off (origin)",
-        "de": "Möglichkeit hinzufügen, die LoraWAN-Kommunikation auszuschalten (Ursprung)",
-        "ru": "Добавить возможность отключения связи LoraWAN (оригинал)",
-        "pt": "Adicionar possibilidade de desligar a comunicação LoraWAN (origem)",
-        "nl": "Mogelijkheid toevoegen om de LoraWAN communicatie uit te schakelen (origine)",
-        "fr": "Ajouter la possibilité d'éteindre la communication LoraWAN (origine)",
-        "it": "Aggiungi la possibilità di spegnere la comunicazione LoraWAN (origine)",
-        "es": "Añadir posibilidad de apagar la comunicación LoraWAN (origin)",
-        "pl": "Dodaj możliwość wyłączenia komunikacji LoraWAN (pochodzenie)",
-        "uk": "Додати можливість переключити LoraWAN зв'язок (рігін)",
-        "zh-cn": "添加切换 LoraWAN 通讯( 来源) 的可能性"
       }
     },
     "titleLang": {

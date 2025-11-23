@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.18.10 (2025-11-23)
 * (BenAhrdt) Effects for Lights in common.states
 
 ### 1.18.9 (2025-11-23)
