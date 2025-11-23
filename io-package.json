@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.10",
+    "version": "1.18.11",
     "news": {
+      "1.18.11": {
+        "en": "Bugfix fx for published ids",
+        "de": "Bugfix fx für veröffentlichte ids",
+        "ru": "Bugfix fx для опубликованных идентификаторов",
+        "pt": "Bugfix fx para IDs publicados",
+        "nl": "Bugfix fx voor gepubliceerde id's",
+        "fr": "Bugfix fx pour les ids publiés",
+        "it": "Bugfix fx per ids pubblicati",
+        "es": "Fx Bugfix para los ids publicados",
+        "pl": "Bugfix fx dla opublikowanych idów",
+        "uk": "Bugfix fx для опублікованих ids",
+        "zh-cn": "已发布 ID 的臭虫fx"
+      },
       "1.18.10": {
         "en": "Effects for Lights in common.states",
         "de": "Effekte für Lichter gemeinsam. Staaten",
@@ -80,19 +93,6 @@
         "pl": "dodaj mieszany do tekstu dla wartości kolorów",
         "uk": "додати змішаний для типу текст для значень кольору",
         "zh-cn": "在颜色值类型中添加混合文本"
-      },
-      "1.18.4": {
-        "en": "Change unique id for lorawan internal standard states\nChange sequence of dicovery and check downlinks at startup",
-        "de": "Ändern Sie einzigartige id für lorawan interne Standardzustände\nÄndern Sie die Reihenfolge der Dicovery und überprüfen Sie Downlinks beim Start",
-        "ru": "Изменение уникального идентификатора для внутренних стандартных состояний Lorawan\nИзмените последовательность обнаружения и проверьте нисходящие ссылки при запуске",
-        "pt": "Mudar o ID único para estados padrão internos do lorawan\nAltere a sequência de dicovery e verifique os links abaixo na inicialização",
-        "nl": "Wijzig unieke id voor Lorawan interne standaardstaten\nVerander de sequentie van de dicovery en controleer downlinks bij opstarten",
-        "fr": "Modifier l'identifiant unique pour les états standard internes de lorawan\nChanger la séquence de dicovery et vérifier les liens descendants au démarrage",
-        "it": "Cambiare id unico per lorawan stati standard interni\nModificare la sequenza di scoperta e controllare downlink all'avvio",
-        "es": "Cambio único id para los estados estándar internos de Lorawan\nCambio de secuencia de descubrimiento y check downlinks al inicio",
-        "pl": "Zmiana niepowtarzalnego identyfikatora dla stanów wewnętrznych Lorawan\nZmień sekwencję dicovery i sprawdź linki w dół przy starcie",
-        "uk": "Зміна унікальних ідентифікаторів для внутрішніх стандартних станів лоурен\nЗміна послідовності дифективних і контрольних посилань при запуску",
-        "zh-cn": "更改 Lorawan 内部标准状态的独有 ID\n更改隐藏的顺序并在启动时检查下行链路"
       }
     },
     "titleLang": {
