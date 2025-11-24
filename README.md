@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) add Cover to special devices
+
 ### 1.18.13 (2025-11-23)
 * (BenAhrdt) Bugfix: wrong subscribtion of fx ids
 
