@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.14",
+    "version": "1.18.15",
     "news": {
+      "1.18.15": {
+        "en": "add '#' to normalized String",
+        "de": "'#' zu normalisieren String hinzufügen",
+        "ru": "добавить «#» в нормализованную строку",
+        "pt": "adicionar '#' à string normalizada",
+        "nl": "'#' toevoegen aan genormaliseerde tekenreeks",
+        "fr": "ajouter '#' à la chaîne normalisée",
+        "it": "aggiungere '#' a normalized String",
+        "es": "añadir '#' a la cuerda normalizada",
+        "pl": "dodaj '#' do znormalizowanego String",
+        "uk": "додати '#' для нормалізації String",
+        "zh-cn": "添加“ # ” 到正态字符串"
+      },
       "1.18.14": {
         "en": "add Cover to special devices",
         "de": "cover für spezielle Geräte hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "Automatyczne skalowanie jasności światła w przypadku common.max w stanie",
         "uk": "Автомактична шкала легкої яскравості при загальній.max в стані",
         "zh-cn": "状态下常见.max时的光亮度自动缩放"
-      },
-      "1.18.8": {
-        "en": "Bugfix: no notification in case of no bridge is used",
-        "de": "Bugfix: keine Benachrichtigung bei Nutzung einer Brücke",
-        "ru": "Bugfix: отсутствие уведомления в случае отсутствия моста",
-        "pt": "Correção de Bug: não é usada nenhuma notificação em caso de não haver ponte",
-        "nl": "Bugfix: geen melding in geval van geen brug wordt gebruikt",
-        "fr": "Bugfix: aucune notification en cas d'absence de pont n'est utilisée",
-        "it": "Bugfix: nessuna notifica in caso di utilizzo di nessun ponte",
-        "es": "Bugfix: no se utiliza notificación en caso de no puente",
-        "pl": "Bugfix: brak powiadomienia w przypadku braku mostu",
-        "uk": "Виправлення помилок: відсутність сповіщення при відсутності місту",
-        "zh-cn": "Bugfix: 在没有桥时没有使用通知"
       }
     },
     "titleLang": {
