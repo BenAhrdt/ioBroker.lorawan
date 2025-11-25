@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.13",
+    "version": "1.18.14",
     "news": {
+      "1.18.14": {
+        "en": "add Cover to special devices",
+        "de": "cover für spezielle Geräte hinzufügen",
+        "ru": "добавление обложки к специальным устройствам",
+        "pt": "adicionar Capa a dispositivos especiais",
+        "nl": "cover toevoegen aan speciale apparaten",
+        "fr": "ajouter Couverture aux dispositifs spéciaux",
+        "it": "aggiungere Cover a dispositivi speciali",
+        "es": "añadir cobertura a dispositivos especiales",
+        "pl": "dodaj pokrycie do specjalnych urządzeń",
+        "uk": "додати чохол на спеціальні пристрої",
+        "zh-cn": "将封面添加到特殊设备"
+      },
       "1.18.13": {
         "en": "Bugfix: wrong subscribtion of fx ids",
         "de": "Bugfix: falsche Anmeldung von fx ids",
@@ -80,19 +93,6 @@
         "pl": "Bugfix: brak powiadomienia w przypadku braku mostu",
         "uk": "Виправлення помилок: відсутність сповіщення при відсутності місту",
         "zh-cn": "Bugfix: 在没有桥时没有使用通知"
-      },
-      "1.18.7": {
-        "en": "Add light to possible special devices",
-        "de": "Licht zu möglichen Spezialgeräten hinzufügen",
-        "ru": "Добавление света к возможным специальным устройствам",
-        "pt": "Adicionar luz a possíveis dispositivos especiais",
-        "nl": "Licht toevoegen aan mogelijke speciale apparaten",
-        "fr": "Ajouter de la lumière aux dispositifs spéciaux possibles",
-        "it": "Aggiungi luce a possibili dispositivi speciali",
-        "es": "Añadir luz a posibles dispositivos especiales",
-        "pl": "Dodaj światło do możliwych urządzeń specjalnych",
-        "uk": "Додати світло для можливих спеціальних пристроїв",
-        "zh-cn": "在可能的特殊设备中添加光"
       }
     },
     "titleLang": {
