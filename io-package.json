@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.17",
+    "version": "1.18.18",
     "news": {
+      "1.18.18": {
+        "en": "Bugfix limit sitch topic to state_topic",
+        "de": "Bugfix limit sitch Thema zu state_topic",
+        "ru": "Bugfix ограничивает тему ситча state_topic",
+        "pt": "Assunto de configuração limite de Bugfix para state_topic",
+        "nl": "Bugfix limit sitch topic to state_topic",
+        "fr": "Bugfix limit sitch topic to state_topic",
+        "it": "Bugfix limit sitch argomento a state_topic",
+        "es": "Bugfix límite de sitch tema a state_topic",
+        "pl": "Temat limit bugfix do stanu _ topic",
+        "uk": "Виправлення ліміту висихання до стану_topic",
+        "zh-cn": "错误fix 将 sitch 话题限制为状态_ title"
+      },
       "1.18.17": {
         "en": "Bugfix limit switch closed",
         "de": "Bugfix Endschalter geschlossen",
@@ -80,19 +93,6 @@
         "pl": "Bugfix fx w przypadku liczby",
         "uk": "Виправлення помилок при кількості",
         "zh-cn": "如果出现数字, 错误fx"
-      },
-      "1.18.11": {
-        "en": "Bugfix fx for published ids",
-        "de": "Bugfix fx für veröffentlichte ids",
-        "ru": "Bugfix fx для опубликованных идентификаторов",
-        "pt": "Bugfix fx para IDs publicados",
-        "nl": "Bugfix fx voor gepubliceerde id's",
-        "fr": "Bugfix fx pour les ids publiés",
-        "it": "Bugfix fx per ids pubblicati",
-        "es": "Fx Bugfix para los ids publicados",
-        "pl": "Bugfix fx dla opublikowanych idów",
-        "uk": "Bugfix fx для опублікованих ids",
-        "zh-cn": "已发布 ID 的臭虫fx"
       }
     },
     "titleLang": {
