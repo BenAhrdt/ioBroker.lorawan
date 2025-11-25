@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.16",
+    "version": "1.18.17",
     "news": {
+      "1.18.17": {
+        "en": "Bugfix limit switch closed",
+        "de": "Bugfix Endschalter geschlossen",
+        "ru": "Переключатель Bugfix Limit закрыт",
+        "pt": "Interruptor de limite de correção de erros fechado",
+        "nl": "Bugfix limietschakelaar gesloten",
+        "fr": "Interrupteur limite de bogue fermé",
+        "it": "Interruttore di limite Bugfix chiuso",
+        "es": "Interruptor de límite de fallo cerrado",
+        "pl": "Graniczny wyłącznik Bugfix zamknięty",
+        "uk": "Перемикач ліміту попереку",
+        "zh-cn": "关闭错误修正限制开关"
+      },
       "1.18.16": {
         "en": "change cover states into lower case",
         "de": "änderung der deckelzustände in den unteren fall",
@@ -80,19 +93,6 @@
         "pl": "Bugfix fx dla opublikowanych idów",
         "uk": "Bugfix fx для опублікованих ids",
         "zh-cn": "已发布 ID 的臭虫fx"
-      },
-      "1.18.10": {
-        "en": "Effects for Lights in common.states",
-        "de": "Effekte für Lichter gemeinsam. Staaten",
-        "ru": "Эффекты для общего света. государства",
-        "pt": "Efeitos para Luzes em comum. estados",
-        "nl": "Effecten voor Lichten gemeen. staat",
-        "fr": "Effets pour les lumières en commun. États",
-        "it": "Effetti per le luci in comune. Stati",
-        "es": "Efectos para las luces en común. estados",
-        "pl": "Skutki dla Lights wspólne. stany",
-        "uk": "Ефекти для вогнів в цілому. Стан",
-        "zh-cn": "对光的影响是共同的。 状态"
       }
     },
     "titleLang": {
