@@ -41,6 +41,9 @@ class Lorawan extends utils.Adapter {
         this.mySystemConfig;
         this.language;
 
+        // Adapter Version
+        this.version;
+
         this.secret = {
             hash: 'feda26376e3d3b38eae8efa48d055754eb0c388d6dbc7ced2ddb5f2f8166f417',
             salt: 'LoRaWANBeScJoFr',
@@ -64,6 +67,10 @@ class Lorawan extends utils.Adapter {
             // get systemconfig and configued language
             this.mySystemConfig = await this.getForeignObjectAsync('system.config');
             this.language = this.mySystemConfig?.common.language || 'en';
+
+            // Read aktual Adapterversion
+            const adapterinfos = await this.getForeignObjectAsync(`system.adapter.${this.namespace}`);
+            this.version = adapterinfos?.common.version;
 
             // create downlinkConfigs
             this.downlinkConfighandler = new downlinkConfighandlerClass(this);
