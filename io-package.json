@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.20",
+    "version": "1.18.21",
     "news": {
+      "1.18.21": {
+        "en": "Bugfix reading value for light in puslish",
+        "de": "Bugfix Lesewert für Licht in puslish",
+        "ru": "Bugfix значение чтения для света в puslish",
+        "pt": "Valor de leitura de erros para a luz em puslish",
+        "nl": "Bugfix leeswaarde voor licht in het Nederlands",
+        "fr": "Valeur de lecture Bugfix pour la lumière en puslish",
+        "it": "Bugfix valore di lettura per la luce in inglese",
+        "es": "Valor de lectura de Bugfix para luz en puslish",
+        "pl": "Wartość odczytu bugfix dla światła w pussish",
+        "uk": "Помилки для читання значення для світла в puslish",
+        "zh-cn": "Puslish 中的光线错误修正读值"
+      },
       "1.18.20": {
         "en": "Dont write discovery multiple in internal object (in case of reconnect bridge)",
         "de": "Schreibe nicht mehrere Entdeckungen im internen Objekt (im Falle der Wiederverbindungsbrücke)",
@@ -80,19 +93,6 @@
         "pl": "dodaj '#' do znormalizowanego String",
         "uk": "додати '#' для нормалізації String",
         "zh-cn": "添加“ # ” 到正态字符串"
-      },
-      "1.18.14": {
-        "en": "add Cover to special devices",
-        "de": "cover für spezielle Geräte hinzufügen",
-        "ru": "добавление обложки к специальным устройствам",
-        "pt": "adicionar Capa a dispositivos especiais",
-        "nl": "cover toevoegen aan speciale apparaten",
-        "fr": "ajouter Couverture aux dispositifs spéciaux",
-        "it": "aggiungere Cover a dispositivi speciali",
-        "es": "añadir cobertura a dispositivos especiales",
-        "pl": "dodaj pokrycie do specjalnych urządzeń",
-        "uk": "додати чохол на спеціальні пристрої",
-        "zh-cn": "将封面添加到特殊设备"
       }
     },
     "titleLang": {
