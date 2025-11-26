@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Bugfix message to brige with discovered device
+
 ### 1.18.21 (2025-11-26)
 * (BenAhrdt) Bugfix reading value for light in puslish
 
