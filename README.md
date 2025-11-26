@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.18.19 (2025-11-26)
 * (BenAhrdt) possibility to publish one id in spezial and normal entity
 
 ### 1.18.18 (2025-11-25)

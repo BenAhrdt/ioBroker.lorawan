@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.18",
+    "version": "1.18.19",
     "news": {
+      "1.18.19": {
+        "en": "possibility to publish one id in spezial and normal entity",
+        "de": "möglichkeit, eine id in spezial und normal zu veröffentlichen",
+        "ru": "возможность публикации одного идентификатора в пространственной и нормальной сущности",
+        "pt": "possibilidade de publicar um id em entidade específica e normal",
+        "nl": "mogelijkheid om één id te publiceren in een specifieke en normale entiteit",
+        "fr": "possibilité de publier un id en entité spezial et normale",
+        "it": "possibilità di pubblicare un id in entità spezial e normale",
+        "es": "posibilidad de publicar una id en entidad espacial y normal",
+        "pl": "możliwość opublikowania jednego identyfikatora w jednostce spezialnej i normalnej",
+        "uk": "можливість опублікувати одну ідентифікацію в спорідненому і нормальному суб’єкті",
+        "zh-cn": "在普通实体中公布一个标识的可能性"
+      },
       "1.18.18": {
         "en": "Bugfix limit sitch topic to state_topic",
         "de": "Bugfix limit sitch Thema zu state_topic",
@@ -80,19 +93,6 @@
         "pl": "Bugfix: błędna subskrypcja fix ids",
         "uk": "Помилки: неправильне підсобнення попелиці",
         "zh-cn": "错误fix: fx ID 的子缩写错误"
-      },
-      "1.18.12": {
-        "en": "Bugfix fx in case of number",
-        "de": "Bugfix fx bei Anzahl",
-        "ru": "Bugfix fx в случае номера",
-        "pt": "Bugfix fx em caso de número",
-        "nl": "Bugfix fx bij aantal",
-        "fr": "Bugfix fx en cas de nombre",
-        "it": "Bugfix fx in caso di numero",
-        "es": "Fx Bugfix en caso de número",
-        "pl": "Bugfix fx w przypadku liczby",
-        "uk": "Виправлення помилок при кількості",
-        "zh-cn": "如果出现数字, 错误fx"
       }
     },
     "titleLang": {
