@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.22",
+    "version": "1.18.23",
     "news": {
+      "1.18.23": {
+        "en": "Notify Adapter Version to Bridge with connection",
+        "de": "Benachrichtigen Adapter Version auf Brücke mit Anschluss",
+        "ru": "Уведомить версию адаптера о подключении к Bridge",
+        "pt": "Notificar versão do adaptador para Ponte com conexão",
+        "nl": "Aanmelden Adapter versie naar Brug met verbinding",
+        "fr": "Avertissez la version adaptateur de Bridge avec connexion",
+        "it": "Notifica versione adattatore a ponte con connessione",
+        "es": "Notify Adapter Version to Bridge with connection",
+        "pl": "Informuj wersję adaptera do mostka z połączeniem",
+        "uk": "Повідомити версію адаптера до мосту з підключенням",
+        "zh-cn": "将适配器版本通知连接桥"
+      },
       "1.18.22": {
         "en": "Bugfix message to brige with discovered device",
         "de": "Bugfix-Nachricht zu brige mit entdecktem Gerät",
@@ -80,19 +93,6 @@
         "pl": "Graniczny wyłącznik Bugfix zamknięty",
         "uk": "Перемикач ліміту попереку",
         "zh-cn": "关闭错误修正限制开关"
-      },
-      "1.18.16": {
-        "en": "change cover states into lower case",
-        "de": "änderung der deckelzustände in den unteren fall",
-        "ru": "изменение состояния покрытия в нижнем регистре",
-        "pt": "mudar os estados de cobertura em minúsculas",
-        "nl": "wijzigen dekking staten in kleine geval",
-        "fr": "changement des états de couverture en minuscules",
-        "it": "cambiare gli stati di copertura in caso più basso",
-        "es": "cambiar los estados de cobertura en caso inferior",
-        "pl": "zmiana stanu pokrycia na niższy przypadek",
-        "uk": "змінити обкладинки станів в нижній випадок",
-        "zh-cn": "更改覆盖状态为小写"
       }
     },
     "titleLang": {
