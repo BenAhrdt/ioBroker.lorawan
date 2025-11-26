@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.18.20 (2025-11-26)
 * (BenAhrdt) Dont write discovery multiple in internal object (in case of reconnect bridge)
 
 ### 1.18.19 (2025-11-26)

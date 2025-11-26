@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.19",
+    "version": "1.18.20",
     "news": {
+      "1.18.20": {
+        "en": "Dont write discovery multiple in internal object (in case of reconnect bridge)",
+        "de": "Schreibe nicht mehrere Entdeckungen im internen Objekt (im Falle der Wiederverbindungsbrücke)",
+        "ru": "Не записывайте открытие множественного числа во внутренний объект (в случае повторного подключения моста)",
+        "pt": "Não escreva múltiplas descobertas em objeto interno (no caso de reconectar ponte)",
+        "nl": "Niet schrijven ontdekking meerdere in interne object (in het geval van reconnect brug)",
+        "fr": "Ne pas écrire la découverte multiple dans l'objet interne (en cas de reconnect pont)",
+        "it": "Non scrivere la scoperta multipla in oggetto interno (in caso di riconnettere il ponte)",
+        "es": "No escriba descubrimiento múltiple en objeto interno (en caso de puente de reconexión)",
+        "pl": "Nie pisz wielokrotnego odkrycia w obiekcie wewnętrznym (w przypadku ponownego podłączenia mostu)",
+        "uk": "Не писати відкриття декількох в внутрішньому об'єкті (у разі відключення мосту)",
+        "zh-cn": "不要在内部对象中写入多个发现( 如果是重联桥)"
+      },
       "1.18.19": {
         "en": "possibility to publish one id in spezial and normal entity",
         "de": "möglichkeit, eine id in spezial und normal zu veröffentlichen",
@@ -80,19 +93,6 @@
         "pl": "dodaj pokrycie do specjalnych urządzeń",
         "uk": "додати чохол на спеціальні пристрої",
         "zh-cn": "将封面添加到特殊设备"
-      },
-      "1.18.13": {
-        "en": "Bugfix: wrong subscribtion of fx ids",
-        "de": "Bugfix: falsche Anmeldung von fx ids",
-        "ru": "Bugfix: неправильная подписка на fx ids",
-        "pt": "Correção de Bugfix: subscrita errada de fx ids",
-        "nl": "Bugfix: verkeerde subscriptie van fx ids",
-        "fr": "Bugfix : mauvaise subscribtion des ids fx",
-        "it": "Bugfix: sottoscrizione sbagliata di fx ids",
-        "es": "Bugfix: la subscripción incorrecta de los ids de fx",
-        "pl": "Bugfix: błędna subskrypcja fix ids",
-        "uk": "Помилки: неправильне підсобнення попелиці",
-        "zh-cn": "错误fix: fx ID 的子缩写错误"
       }
     },
     "titleLang": {
