@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) possibility to publish one id in spezial and normal entity
+
 ### 1.18.18 (2025-11-25)
 * (BenAhrdt) Bugfix limit sitch topic to state_topic
 
