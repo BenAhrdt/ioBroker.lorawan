@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.21",
+    "version": "1.18.22",
     "news": {
+      "1.18.22": {
+        "en": "Bugfix message to brige with discovered device",
+        "de": "Bugfix-Nachricht zu brige mit entdecktem Gerät",
+        "ru": "Сообщение Bugfix с обнаруженным устройством",
+        "pt": "Mensagem de correção de erros para o brige com o dispositivo descoberto",
+        "nl": "Bugfix-bericht naar Brugge met ontdekt apparaat",
+        "fr": "Message de bogue pour bricker avec le périphérique découvert",
+        "it": "Messaggio di Bugfix a brige con dispositivo scoperto",
+        "es": "Mensaje de Bugfix para cerrar con dispositivo descubierto",
+        "pl": "Komunikat Bugfix do przepłukiwania z odkrytym urządzeniem",
+        "uk": "Повідомлень про помилку при відкритті пристрою",
+        "zh-cn": "用已发现的设备绑定错误修正消息"
+      },
       "1.18.21": {
         "en": "Bugfix reading value for light in puslish",
         "de": "Bugfix Lesewert für Licht in puslish",
@@ -80,19 +93,6 @@
         "pl": "zmiana stanu pokrycia na niższy przypadek",
         "uk": "змінити обкладинки станів в нижній випадок",
         "zh-cn": "更改覆盖状态为小写"
-      },
-      "1.18.15": {
-        "en": "add '#' to normalized String",
-        "de": "'#' zu normalisieren String hinzufügen",
-        "ru": "добавить «#» в нормализованную строку",
-        "pt": "adicionar '#' à string normalizada",
-        "nl": "'#' toevoegen aan genormaliseerde tekenreeks",
-        "fr": "ajouter '#' à la chaîne normalisée",
-        "it": "aggiungere '#' a normalized String",
-        "es": "añadir '#' a la cuerda normalizada",
-        "pl": "dodaj '#' do znormalizowanego String",
-        "uk": "додати '#' для нормалізації String",
-        "zh-cn": "添加“ # ” 到正态字符串"
       }
     },
     "titleLang": {
