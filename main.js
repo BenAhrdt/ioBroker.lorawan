@@ -715,8 +715,10 @@ class Lorawan extends utils.Adapter {
                             }
                             await this.setState(id, false, true);
                         } else if (id.endsWith('.bridge.dataExchange')) {
-                            await this.bridge?.publishId(id, state.val, {});
-                            await this.setState(id, state.val, true);
+                            if (this.bridge) {
+                                await this.setState(id, state.val, true);
+                                await this.bridge.publishId(id, state.val, {});
+                            }
                         }
                     } else {
                         // Query for 0_userdata or alias => states also publish with ack = false
