@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.28",
+    "version": "1.18.29",
     "news": {
+      "1.18.29": {
+        "en": "set ack = true, before push dataExchange",
+        "de": "ack = true, bevor Sie Daten drücken Wechselkurs",
+        "ru": "set ack = true, перед push-данными обмен",
+        "pt": "definir ack = true, antes de empurrar dados Bolsa",
+        "nl": "set ack = true, voor push data Beurs",
+        "fr": "set ack = true, avant de pousser les données Échange",
+        "it": "set ack = true, prima di spingere i dati Scambi",
+        "es": "set ack = true, antes de presionar datos Cambio",
+        "pl": "set ack = true, przed push data Giełda",
+        "uk": "встановити ack = true, перш ніж натиснути дані Обмін",
+        "zh-cn": "在按下数据前设置 ack = true 交换"
+      },
       "1.18.28": {
         "en": "assign comment 'from bridge' to state, if the value is set by bridge",
         "de": "kommentar 'von der brücke' zum zustand zuordnen, wenn der wert von der brücke gesetzt wird",
@@ -80,19 +93,6 @@
         "pl": "Informuj wersję adaptera do mostka z połączeniem",
         "uk": "Повідомити версію адаптера до мосту з підключенням",
         "zh-cn": "将适配器版本通知连接桥"
-      },
-      "1.18.22": {
-        "en": "Bugfix message to brige with discovered device",
-        "de": "Bugfix-Nachricht zu brige mit entdecktem Gerät",
-        "ru": "Сообщение Bugfix с обнаруженным устройством",
-        "pt": "Mensagem de correção de erros para o brige com o dispositivo descoberto",
-        "nl": "Bugfix-bericht naar Brugge met ontdekt apparaat",
-        "fr": "Message de bogue pour bricker avec le périphérique découvert",
-        "it": "Messaggio di Bugfix a brige con dispositivo scoperto",
-        "es": "Mensaje de Bugfix para cerrar con dispositivo descubierto",
-        "pl": "Komunikat Bugfix do przepłukiwania z odkrytym urządzeniem",
-        "uk": "Повідомлень про помилку при відкритті пристрою",
-        "zh-cn": "用已发现的设备绑定错误修正消息"
       }
     },
     "titleLang": {
