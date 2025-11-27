@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.24",
+    "version": "1.18.25",
     "news": {
+      "1.18.25": {
+        "en": "remove logging for testing",
+        "de": "entfernen von protokollen für tests",
+        "ru": "удаление бревен для тестирования",
+        "pt": "remover o registo para testes",
+        "nl": "verwijderen logging voor het testen",
+        "fr": "supprimer l'enregistrement pour les essais",
+        "it": "rimuovere logging per il test",
+        "es": "eliminar registro para pruebas",
+        "pl": "usunąć logowanie do testowania",
+        "uk": "видалення загартування для тестування",
+        "zh-cn": "删除用于测试的日志"
+      },
       "1.18.24": {
         "en": "add dataExchange between Adapter and Bridge-Partner (Complex JSON possible)",
         "de": "daten hinzufügen Austausch zwischen Adapter und Bridge-Partner (Komplex JSON möglich)",
@@ -80,19 +93,6 @@
         "pl": "możliwość opublikowania jednego identyfikatora w jednostce spezialnej i normalnej",
         "uk": "можливість опублікувати одну ідентифікацію в спорідненому і нормальному суб’єкті",
         "zh-cn": "在普通实体中公布一个标识的可能性"
-      },
-      "1.18.18": {
-        "en": "Bugfix limit sitch topic to state_topic",
-        "de": "Bugfix limit sitch Thema zu state_topic",
-        "ru": "Bugfix ограничивает тему ситча state_topic",
-        "pt": "Assunto de configuração limite de Bugfix para state_topic",
-        "nl": "Bugfix limit sitch topic to state_topic",
-        "fr": "Bugfix limit sitch topic to state_topic",
-        "it": "Bugfix limit sitch argomento a state_topic",
-        "es": "Bugfix límite de sitch tema a state_topic",
-        "pl": "Temat limit bugfix do stanu _ topic",
-        "uk": "Виправлення ліміту висихання до стану_topic",
-        "zh-cn": "错误fix 将 sitch 话题限制为状态_ title"
       }
     },
     "titleLang": {
