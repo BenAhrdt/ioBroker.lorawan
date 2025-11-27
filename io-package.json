@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.25",
+    "version": "1.18.26",
     "news": {
+      "1.18.26": {
+        "en": "remove more logging for testing",
+        "de": "entfernen sie mehr protokollierung für tests",
+        "ru": "удалить больше журналов для тестирования",
+        "pt": "remover mais registro para testes",
+        "nl": "meer loggen verwijderen voor testen",
+        "fr": "supprimer plus de journalisation pour tester",
+        "it": "rimuovere più registrazione per il test",
+        "es": "eliminar más registro para pruebas",
+        "pl": "usunąć więcej logowania do testowania",
+        "uk": "видалити більше журналів для тестування",
+        "zh-cn": "删除更多用于测试的日志"
+      },
       "1.18.25": {
         "en": "remove logging for testing",
         "de": "entfernen von protokollen für tests",
@@ -80,19 +93,6 @@
         "pl": "Nie pisz wielokrotnego odkrycia w obiekcie wewnętrznym (w przypadku ponownego podłączenia mostu)",
         "uk": "Не писати відкриття декількох в внутрішньому об'єкті (у разі відключення мосту)",
         "zh-cn": "不要在内部对象中写入多个发现( 如果是重联桥)"
-      },
-      "1.18.19": {
-        "en": "possibility to publish one id in spezial and normal entity",
-        "de": "möglichkeit, eine id in spezial und normal zu veröffentlichen",
-        "ru": "возможность публикации одного идентификатора в пространственной и нормальной сущности",
-        "pt": "possibilidade de publicar um id em entidade específica e normal",
-        "nl": "mogelijkheid om één id te publiceren in een specifieke en normale entiteit",
-        "fr": "possibilité de publier un id en entité spezial et normale",
-        "it": "possibilità di pubblicare un id in entità spezial e normale",
-        "es": "posibilidad de publicar una id en entidad espacial y normal",
-        "pl": "możliwość opublikowania jednego identyfikatora w jednostce spezialnej i normalnej",
-        "uk": "можливість опублікувати одну ідентифікацію в спорідненому і нормальному суб’єкті",
-        "zh-cn": "在普通实体中公布一个标识的可能性"
       }
     },
     "titleLang": {
