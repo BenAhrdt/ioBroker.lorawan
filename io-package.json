@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.26",
+    "version": "1.18.27",
     "news": {
+      "1.18.27": {
+        "en": "wright incomming dataexchange with ack = true",
+        "de": "wright incoming dataexchange mit ack = true",
+        "ru": "wright incomming dataexchange with ack = истинное",
+        "pt": "wright incomming datachange with ack = true",
+        "nl": "wright incoming dataexchange with ack = true",
+        "fr": "wright avec l'échange de données avec ack = true",
+        "it": "wright incomming dataexchange con ack = true",
+        "es": "wright incomming dataexchange con ack = verdadero",
+        "pl": "wright incomming datachange with ack = true",
+        "uk": "wright incomming dataexchange with ack = true",
+        "zh-cn": "wright 以 ack = true 输入数据交换"
+      },
       "1.18.26": {
         "en": "remove more logging for testing",
         "de": "entfernen sie mehr protokollierung für tests",
@@ -80,19 +93,6 @@
         "pl": "Wartość odczytu bugfix dla światła w pussish",
         "uk": "Помилки для читання значення для світла в puslish",
         "zh-cn": "Puslish 中的光线错误修正读值"
-      },
-      "1.18.20": {
-        "en": "Dont write discovery multiple in internal object (in case of reconnect bridge)",
-        "de": "Schreibe nicht mehrere Entdeckungen im internen Objekt (im Falle der Wiederverbindungsbrücke)",
-        "ru": "Не записывайте открытие множественного числа во внутренний объект (в случае повторного подключения моста)",
-        "pt": "Não escreva múltiplas descobertas em objeto interno (no caso de reconectar ponte)",
-        "nl": "Niet schrijven ontdekking meerdere in interne object (in het geval van reconnect brug)",
-        "fr": "Ne pas écrire la découverte multiple dans l'objet interne (en cas de reconnect pont)",
-        "it": "Non scrivere la scoperta multipla in oggetto interno (in caso di riconnettere il ponte)",
-        "es": "No escriba descubrimiento múltiple en objeto interno (en caso de puente de reconexión)",
-        "pl": "Nie pisz wielokrotnego odkrycia w obiekcie wewnętrznym (w przypadku ponownego podłączenia mostu)",
-        "uk": "Не писати відкриття декількох в внутрішньому об'єкті (у разі відключення мосту)",
-        "zh-cn": "不要在内部对象中写入多个发现( 如果是重联桥)"
       }
     },
     "titleLang": {
