@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.23",
+    "version": "1.18.24",
     "news": {
+      "1.18.24": {
+        "en": "add dataExchange between Adapter and Bridge-Partner (Complex JSON possible)",
+        "de": "daten hinzufügen Austausch zwischen Adapter und Bridge-Partner (Komplex JSON möglich)",
+        "ru": "добавить данные Обмен между адаптером и Bridge-Partner (комплекс JSON)",
+        "pt": "adicionar dados Troca entre adaptador e parceiro de ponte (complexo JSON possível)",
+        "nl": "gegevens toevoegen Uitwisseling tussen Adapter en Bridge-Partner (complex JSON mogelijk)",
+        "fr": "ajouter des données Échange entre Adaptateur et Bridge-Partner (Complex JSON possible)",
+        "it": "aggiungere i dati Scambio tra adattatore e Bridge-Partner (Complex JSON possibile)",
+        "es": "añadir datos Intercambio entre Adaptador y Bridge-Partner (Complejo JSON posible)",
+        "pl": "dodaj dane Wymiana między Adapterem a partnerem Bridge- (możliwy kompleks JSON)",
+        "uk": "додати дані Обмін між адаптером і Bridge-Partner (Комплексний JSON можливо)",
+        "zh-cn": "添加数据 适配器与Bridge-Partner之间的交换(可能复杂JSON)"
+      },
       "1.18.23": {
         "en": "Notify Adapter Version to Bridge with connection",
         "de": "Benachrichtigen Adapter Version auf Brücke mit Anschluss",
@@ -80,19 +93,6 @@
         "pl": "Temat limit bugfix do stanu _ topic",
         "uk": "Виправлення ліміту висихання до стану_topic",
         "zh-cn": "错误fix 将 sitch 话题限制为状态_ title"
-      },
-      "1.18.17": {
-        "en": "Bugfix limit switch closed",
-        "de": "Bugfix Endschalter geschlossen",
-        "ru": "Переключатель Bugfix Limit закрыт",
-        "pt": "Interruptor de limite de correção de erros fechado",
-        "nl": "Bugfix limietschakelaar gesloten",
-        "fr": "Interrupteur limite de bogue fermé",
-        "it": "Interruttore di limite Bugfix chiuso",
-        "es": "Interruptor de límite de fallo cerrado",
-        "pl": "Graniczny wyłącznik Bugfix zamknięty",
-        "uk": "Перемикач ліміту попереку",
-        "zh-cn": "关闭错误修正限制开关"
       }
     },
     "titleLang": {

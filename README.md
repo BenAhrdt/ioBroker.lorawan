@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.18.24 (2025-11-27)
 * (BenAhrdt) add dataExchange between Adapter and Bridge-Partner (Complex JSON possible)
 
 ### 1.18.23 (2025-11-26)
