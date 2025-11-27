@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) assign comment 'from bridge' to state, if the value is set by bridge
+
 ### 1.18.27 (2025-11-27)
 * (BenAhrdt) wright incomming dataexchange with ack = true
 
