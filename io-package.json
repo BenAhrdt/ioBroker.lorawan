@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.29",
+    "version": "1.18.30",
     "news": {
+      "1.18.30": {
+        "en": "setting dataExchange to 2 entitie (FromIob & ToIob)",
+        "de": "daten ausgeben Austausch zu 2 Teilnehmern (FromIob & ToIob)",
+        "ru": "настройка данных Обмен на 2 entitie (FromIob & ToIob)",
+        "pt": "que define os dados Troca para 2 entitie (FromIob & Tolob)",
+        "nl": "gegevens instellen Uitwisseling naar 2 ondernemingen (FromIob & Toiob)",
+        "fr": "définir les données Échange avec 2 entreprises (FromIob & TOIob)",
+        "it": "impostazione dei dati Scambio a 2 enti (DaIob & ToIob)",
+        "es": "de datos Intercambio a 2 entitie (Desde Iob & ToIob)",
+        "pl": "ustawienie danych Wymiana na 2 entitie (FromIob & Tolob)",
+        "uk": "налаштування даних Обмін до 2 entitie (З альбомуIob & ToIob)",
+        "zh-cn": "设置数据 交换到2个内置( FromIob & ToIob)"
+      },
       "1.18.29": {
         "en": "set ack = true, before push dataExchange",
         "de": "ack = true, bevor Sie Daten drücken Wechselkurs",
@@ -80,19 +93,6 @@
         "pl": "dodaj dane Wymiana między Adapterem a partnerem Bridge- (możliwy kompleks JSON)",
         "uk": "додати дані Обмін між адаптером і Bridge-Partner (Комплексний JSON можливо)",
         "zh-cn": "添加数据 适配器与Bridge-Partner之间的交换(可能复杂JSON)"
-      },
-      "1.18.23": {
-        "en": "Notify Adapter Version to Bridge with connection",
-        "de": "Benachrichtigen Adapter Version auf Brücke mit Anschluss",
-        "ru": "Уведомить версию адаптера о подключении к Bridge",
-        "pt": "Notificar versão do adaptador para Ponte com conexão",
-        "nl": "Aanmelden Adapter versie naar Brug met verbinding",
-        "fr": "Avertissez la version adaptateur de Bridge avec connexion",
-        "it": "Notifica versione adattatore a ponte con connessione",
-        "es": "Notify Adapter Version to Bridge with connection",
-        "pl": "Informuj wersję adaptera do mostka z połączeniem",
-        "uk": "Повідомити версію адаптера до мосту з підключенням",
-        "zh-cn": "将适配器版本通知连接桥"
       }
     },
     "titleLang": {
