@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.30",
+    "version": "1.18.31",
     "news": {
+      "1.18.31": {
+        "en": "Bugfix state at light effekts in case of 0",
+        "de": "Bugfix Zustand bei Lichteffekten bei 0",
+        "ru": "Состояние Bugfix на световых эффектах в случае 0",
+        "pt": "Estado de correção de erros em efekts de luz em caso de 0",
+        "nl": "Bugfix toestand bij lichte effekts in geval van 0",
+        "fr": "État Bugfix aux effects légers en cas de 0",
+        "it": "Bugfix stato alla luce effekts in caso di 0",
+        "es": "Estado de Bugfix en effekts luz en caso de 0",
+        "pl": "Stan bugfix w lekkich effekts w przypadku 0",
+        "uk": "Стан Бугфікса при легких діях при 0",
+        "zh-cn": "0 时在 effekts 时发生错误"
+      },
       "1.18.30": {
         "en": "setting dataExchange to 2 entitie (FromIob & ToIob)",
         "de": "daten ausgeben Austausch zu 2 Teilnehmern (FromIob & ToIob)",
@@ -80,19 +93,6 @@
         "pl": "usunąć logowanie do testowania",
         "uk": "видалення загартування для тестування",
         "zh-cn": "删除用于测试的日志"
-      },
-      "1.18.24": {
-        "en": "add dataExchange between Adapter and Bridge-Partner (Complex JSON possible)",
-        "de": "daten hinzufügen Austausch zwischen Adapter und Bridge-Partner (Komplex JSON möglich)",
-        "ru": "добавить данные Обмен между адаптером и Bridge-Partner (комплекс JSON)",
-        "pt": "adicionar dados Troca entre adaptador e parceiro de ponte (complexo JSON possível)",
-        "nl": "gegevens toevoegen Uitwisseling tussen Adapter en Bridge-Partner (complex JSON mogelijk)",
-        "fr": "ajouter des données Échange entre Adaptateur et Bridge-Partner (Complex JSON possible)",
-        "it": "aggiungere i dati Scambio tra adattatore e Bridge-Partner (Complex JSON possibile)",
-        "es": "añadir datos Intercambio entre Adaptador y Bridge-Partner (Complejo JSON posible)",
-        "pl": "dodaj dane Wymiana między Adapterem a partnerem Bridge- (możliwy kompleks JSON)",
-        "uk": "додати дані Обмін між адаптером і Bridge-Partner (Комплексний JSON можливо)",
-        "zh-cn": "添加数据 适配器与Bridge-Partner之间的交换(可能复杂JSON)"
       }
     },
     "titleLang": {
