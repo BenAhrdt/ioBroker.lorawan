@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) setting dataExchange to 2 entitie (FromIob & ToIob)
+
 ### 1.18.29 (2025-11-27)
 * (BenAhrdt) set ack = true, before push dataExchange
 

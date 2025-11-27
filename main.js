@@ -714,7 +714,7 @@ class Lorawan extends utils.Adapter {
                                 await this.setState('bridge.debug.payload', payload.val, true);
                             }
                             await this.setState(id, false, true);
-                        } else if (id.endsWith('.bridge.dataExchange')) {
+                        } else if (id.endsWith('.bridge.dataFromIob')) {
                             if (this.bridge) {
                                 await this.setState(id, state.val, true);
                                 await this.bridge.publishId(id, state.val, {});

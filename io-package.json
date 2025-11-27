@@ -581,14 +581,27 @@
       "native": {}
     },
     {
-      "_id": "bridge.dataExchange",
+      "_id": "bridge.dataFromIob",
       "type": "state",
       "common": {
         "type": "string",
         "role": "json",
-        "name": "dataexchange with bridge",
+        "name": "data to bridge",
         "read": true,
         "write": true,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "bridge.dataToIob",
+      "type": "state",
+      "common": {
+        "type": "string",
+        "role": "json",
+        "name": "data from bridge",
+        "read": true,
+        "write": false,
         "def": ""
       },
       "native": {}
