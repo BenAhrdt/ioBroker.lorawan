@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.27",
+    "version": "1.18.28",
     "news": {
+      "1.18.28": {
+        "en": "assign comment 'from bridge' to state, if the value is set by bridge",
+        "de": "kommentar 'von der brücke' zum zustand zuordnen, wenn der wert von der brücke gesetzt wird",
+        "ru": "присвоить комментарий «от моста» государству, если значение установлено мостом",
+        "pt": "atribuir o comentário 'da ponte' ao estado, se o valor for definido pela ponte",
+        "nl": "commentaar 'van brug' toewijzen aan status, als de waarde door brug wordt ingesteld",
+        "fr": "assigner le commentaire 'from bridge' à l'état, si la valeur est définie par bridge",
+        "it": "assegnare commento 'da ponte' a stato, se il valore è impostato da ponte",
+        "es": "asignar comentario 'de puente' a estado, si el valor se establece por puente",
+        "pl": "przypisz komentarz \"z mostu\" do stanu, jeśli wartość jest ustawiona przez most",
+        "uk": "призначте коментар «з місту» до держави, якщо значення встановлене містом",
+        "zh-cn": "如果值由桥来设定, 则将注释“ 从桥” 指定为状态"
+      },
       "1.18.27": {
         "en": "wright incomming dataexchange with ack = true",
         "de": "wright incoming dataexchange mit ack = true",
@@ -80,19 +93,6 @@
         "pl": "Komunikat Bugfix do przepłukiwania z odkrytym urządzeniem",
         "uk": "Повідомлень про помилку при відкритті пристрою",
         "zh-cn": "用已发现的设备绑定错误修正消息"
-      },
-      "1.18.21": {
-        "en": "Bugfix reading value for light in puslish",
-        "de": "Bugfix Lesewert für Licht in puslish",
-        "ru": "Bugfix значение чтения для света в puslish",
-        "pt": "Valor de leitura de erros para a luz em puslish",
-        "nl": "Bugfix leeswaarde voor licht in het Nederlands",
-        "fr": "Valeur de lecture Bugfix pour la lumière en puslish",
-        "it": "Bugfix valore di lettura per la luce in inglese",
-        "es": "Valor de lectura de Bugfix para luz en puslish",
-        "pl": "Wartość odczytu bugfix dla światła w pussish",
-        "uk": "Помилки для читання значення для світла в puslish",
-        "zh-cn": "Puslish 中的光线错误修正读值"
       }
     },
     "titleLang": {
