@@ -23,8 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.18.32 (2025-11-28)
 * (BenAhrdt) Changes in cover and add Lock
+
 ### 1.18.31 (2025-11-27)
 * (BenAhrdt) Bugfix state at light effekts in case of 0
 
