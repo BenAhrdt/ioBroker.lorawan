@@ -226,5 +226,18 @@
 	"OneString": "one string for command",
 	"no command": "no command id",
 	"CoverPosition": "position",
-	"CoverPositionTooltip": "selected: separate id for position"
+	"CoverPositionTooltip": "selected: separate id for position",
+	"LockHeader": "Define States for a Lock Entity",
+	"LockInformation": "Here you can define an array of Lock definitions",
+	"LockNameText": "Entityname",
+	"LockSeparate": "separate",
+	"LockSeparateTooltip": "selected: separate boolean states for lock, unlock. Otherwise, one string state.",
+	"LockOpen": "open",
+	"LockOpenTooltip": "selected: separate boolean states for open",
+	"LockSeparateState": "separate state",
+	"LockSeparateStateTooltip": "selected: separate state for the state of the lock",
+	"StateText": "State ID",
+	"LockLockText": "Lock ID",
+	"LockUnlockText": "Unlock ID",
+	"LockOpenText": "Open ID"
 }

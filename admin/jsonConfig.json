@@ -2109,7 +2109,163 @@
 							"xl": 4
 						}
 					]
-				}
+				},
+				"_LockForeignHeader":{
+					"newLine": true,
+					"type": "header",
+					"text": "LockHeader",
+					"size": 3,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"_LockForeignInformation":{
+					"newLine":true,
+					"type": "staticText",
+					"label": "LockInformation",
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"LockForeignConfig":{
+                    "newLine": true,
+                    "type":"accordion",
+					"titleAttr": "LockName",
+					"clone": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12,
+					"items":[
+						{
+							"type": "text",
+							"attr": "LockName",
+							"label": "LockNameText",
+							"validator": "if(data.LockName === ''){return false;}else{return true;}",
+							"validatorNoSaveOnError": true,
+							"default": "Lock Name",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "select",
+							"attr": "LockSeparate",
+							"label": "LockSeparate",
+							"tooltip": "LockSeparateTooltip",
+							"options": [
+								{"label":"OneString","value":"string"},
+								{"label":"SeparateIds","value":"separate"}
+							],
+							"default": "string",
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},	
+						{
+							"type": "checkbox",
+							"attr": "LockOpen",
+							"label": "LockOpen",
+							"tooltip": "LockOpenTooltip",
+							"hidden": "data.LockSeparate !== 'separate'",
+							"default": true,
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},
+						{
+							"type": "checkbox",
+							"attr": "LockSeparateState",
+							"label": "LockSeparateState",
+							"tooltip": "LockSeparateStateTooltip",
+							"default": false,
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},
+						{
+							"type": "objectId",
+							"newLine": true,
+							"attr": "CommandId",
+							"label": "CommandText",
+							"hidden": "data.LockSeparate !== 'string'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"newLine": true,
+							"attr": "LockId",
+							"label": "LockLockText",
+							"hidden": "data.LockSeparate !== 'separate'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "UnlockId",
+							"label": "LockUnlockText",
+							"hidden": "data.LockSeparate !== 'separate'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "OpenId",
+							"label": "LockOpenText",
+							"hidden": "data.LockSeparate !== 'separate' || data.LockOpen === false",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "staticText",
+							"attr": "_staticTextSeparateState",
+							"label": "",
+							"hidden": "data.LockSeparate === 'separate' && data.LockOpen === true",
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},
+						{
+							"type": "objectId",
+							"attr": "StateId",
+							"label": "StateText",
+							"hidden": "data.LockSeparateState === false",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						}
+					]
+				}				
 			}
 		}
 	}

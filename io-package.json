@@ -456,7 +456,8 @@
     "ClimateForeignConfig": [],
     "HumidifierForeignConfig": [],
     "LightForeignConfig": [],
-    "CoverForeignConfig": []
+    "CoverForeignConfig": [],
+    "LockForeignConfig": []
   },
   "objects": [],
   "instanceObjects": [
