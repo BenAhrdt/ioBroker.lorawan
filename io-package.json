@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.33",
+    "version": "1.18.34",
     "news": {
+      "1.18.34": {
+        "en": "translation changed",
+        "de": "übersetzung geändert",
+        "ru": "перевод изменился",
+        "pt": "tradução alterada",
+        "nl": "vertaling gewijzigd",
+        "fr": "traduction changée",
+        "it": "traduzione cambiata",
+        "es": "traducción modificada",
+        "pl": "zmienione tłumaczenie",
+        "uk": "зміни перекладу",
+        "zh-cn": "翻译更改"
+      },
       "1.18.33": {
         "en": "change state in Lock entity",
         "de": "änderungszustand in Sperreinrichtung",
@@ -80,19 +93,6 @@
         "pl": "przypisz komentarz \"z mostu\" do stanu, jeśli wartość jest ustawiona przez most",
         "uk": "призначте коментар «з місту» до держави, якщо значення встановлене містом",
         "zh-cn": "如果值由桥来设定, 则将注释“ 从桥” 指定为状态"
-      },
-      "1.18.27": {
-        "en": "wright incomming dataexchange with ack = true",
-        "de": "wright incoming dataexchange mit ack = true",
-        "ru": "wright incomming dataexchange with ack = истинное",
-        "pt": "wright incomming datachange with ack = true",
-        "nl": "wright incoming dataexchange with ack = true",
-        "fr": "wright avec l'échange de données avec ack = true",
-        "it": "wright incomming dataexchange con ack = true",
-        "es": "wright incomming dataexchange con ack = verdadero",
-        "pl": "wright incomming datachange with ack = true",
-        "uk": "wright incomming dataexchange with ack = true",
-        "zh-cn": "wright 以 ack = true 输入数据交换"
       }
     },
     "titleLang": {
