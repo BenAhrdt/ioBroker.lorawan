@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.32",
+    "version": "1.18.33",
     "news": {
+      "1.18.33": {
+        "en": "change state in Lock entity",
+        "de": "änderungszustand in Sperreinrichtung",
+        "ru": "изменение состояния Lock entity",
+        "pt": "mudar o estado na entidade Bloquear",
+        "nl": "veranderingstoestand in Lock-entiteit",
+        "fr": "changement d'état dans l'entité de verrouillage",
+        "it": "cambiamento stato in entità Lock",
+        "es": "estado de cambio en la entidad Lock",
+        "pl": "zmiana stanu w jednostce blokującej",
+        "uk": "змінити стан в суб'єкті блокування",
+        "zh-cn": "锁定实体中的变化状态"
+      },
       "1.18.32": {
         "en": "Changes in cover and add Lock",
         "de": "Änderungen im Cover und hinzufügen Lock",
@@ -80,19 +93,6 @@
         "pl": "wright incomming datachange with ack = true",
         "uk": "wright incomming dataexchange with ack = true",
         "zh-cn": "wright 以 ack = true 输入数据交换"
-      },
-      "1.18.26": {
-        "en": "remove more logging for testing",
-        "de": "entfernen sie mehr protokollierung für tests",
-        "ru": "удалить больше журналов для тестирования",
-        "pt": "remover mais registro para testes",
-        "nl": "meer loggen verwijderen voor testen",
-        "fr": "supprimer plus de journalisation pour tester",
-        "it": "rimuovere più registrazione per il test",
-        "es": "eliminar más registro para pruebas",
-        "pl": "usunąć więcej logowania do testowania",
-        "uk": "видалити більше журналів для тестування",
-        "zh-cn": "删除更多用于测试的日志"
       }
     },
     "titleLang": {
