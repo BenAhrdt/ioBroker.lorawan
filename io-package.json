@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.34",
+    "version": "1.18.35",
     "news": {
+      "1.18.35": {
+        "en": "internal code improovment for better reading",
+        "de": "interner code improovement für besseres lesen",
+        "ru": "импровизация внутреннего кода для лучшего чтения",
+        "pt": "improvisação de código interno para melhor leitura",
+        "nl": "interne code improvisatie voor beter lezen",
+        "fr": "imprégnation du code interne pour une meilleure lecture",
+        "it": "codice interno improovment per una migliore lettura",
+        "es": "improvimento de código interno para una mejor lectura",
+        "pl": "improwizacja kodu wewnętrznego dla lepszego czytania",
+        "uk": "внутрішня обробка коду для кращого читання",
+        "zh-cn": "内部代码即兴读取"
+      },
       "1.18.34": {
         "en": "translation changed",
         "de": "übersetzung geändert",
@@ -80,19 +93,6 @@
         "pl": "set ack = true, przed push data Giełda",
         "uk": "встановити ack = true, перш ніж натиснути дані Обмін",
         "zh-cn": "在按下数据前设置 ack = true 交换"
-      },
-      "1.18.28": {
-        "en": "assign comment 'from bridge' to state, if the value is set by bridge",
-        "de": "kommentar 'von der brücke' zum zustand zuordnen, wenn der wert von der brücke gesetzt wird",
-        "ru": "присвоить комментарий «от моста» государству, если значение установлено мостом",
-        "pt": "atribuir o comentário 'da ponte' ao estado, se o valor for definido pela ponte",
-        "nl": "commentaar 'van brug' toewijzen aan status, als de waarde door brug wordt ingesteld",
-        "fr": "assigner le commentaire 'from bridge' à l'état, si la valeur est définie par bridge",
-        "it": "assegnare commento 'da ponte' a stato, se il valore è impostato da ponte",
-        "es": "asignar comentario 'de puente' a estado, si el valor se establece por puente",
-        "pl": "przypisz komentarz \"z mostu\" do stanu, jeśli wartość jest ustawiona przez most",
-        "uk": "призначте коментар «з місту» до держави, якщо значення встановлене містом",
-        "zh-cn": "如果值由桥来设定, 则将注释“ 从桥” 指定为状态"
       }
     },
     "titleLang": {
