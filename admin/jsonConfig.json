@@ -2263,6 +2263,26 @@
 							"md": 4,
 							"lg": 4,
 							"xl": 4
+						},
+						{
+							"newLine": true,
+							"type": "autocomplete",
+							"attr": "commandForOpen",
+							"label": "commandForOpen",
+							"options": [{"value": "unlatch", "label": "unlatch (Nuki)"},
+										{"value": "open", "label": "open (Standard)"},
+										{"value": "pull", "label": "pull (Something else)"}],
+							"tooltip": "commandForOpenTooltip",
+							"default": "unlatch",
+							"validator": "if(data.commandForOpen === ''){return false;}else{return true;}",
+							"validatorNoSaveOnError": true,
+							"hidden": "true",
+							"freeSolo": true,
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
 						}
 					]
 				}				

@@ -239,5 +239,7 @@
 	"StateText": "State ID",
 	"LockLockText": "Lock ID",
 	"LockUnlockText": "Unlock ID",
-	"LockOpenText": "Open ID"
+	"LockOpenText": "Open ID",
+	"commandForOpen": "command to open the lock",
+	"commandForOpenTooltip": "set the command, that opens the lock"
 }
