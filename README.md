@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.18.36 (2025-11-29)
 * (BenAhrdt) fist possibillity to change unlatch on lock entity
 * (BenAhrdt) Add version to discovery
 * (BenAhrdt) Add via device to discovery

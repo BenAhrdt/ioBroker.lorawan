@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.35",
+    "version": "1.18.36",
     "news": {
+      "1.18.36": {
+        "en": "fist possibillity to change unlatch on lock entity\nAdd version to discovery\nAdd via device to discovery",
+        "de": "fist possibillity zu ändern unlatch auf schloss entity\nVersion zur Entdeckung hinzufügen\nÜber das Gerät zur Entdeckung hinzufügen",
+        "ru": "fist possibillity - изменить unlatch на lock entity\nДобавить версию к Discovery\nДобавить через устройство к открытию",
+        "pt": "possibilidade do punho para mudar a desacoplamento na entidade de bloqueio\nAdicionar versão à descoberta\nAdicionar via dispositivo à descoberta",
+        "nl": "fist mogelijkheid om unlatch te veranderen op slot entiteit\nVersie toevoegen aan ontdekking\nVoeg via apparaat toe aan ontdekking",
+        "fr": "possibillity du poing pour changer le déblocage sur l'entité de verrouillage\nAjouter une version à la découverte\nAjouter via périphérique à la découverte",
+        "it": "possibilità di cambiare unlatch su entità di blocco\nAggiungere la versione alla scoperta\nAggiungere tramite dispositivo alla scoperta",
+        "es": "fist possibillity to change unlatch on lock entity\nAñadir versión al descubrimiento\nAñadir vía dispositivo al descubrimiento",
+        "pl": "fist possibilty to change unlatch on lock entity\nDodaj wersję do odkrycia\nDodaj przez urządzenie do odkrycia",
+        "uk": "fist possibillity змінити unlatch на суб'єкті блокування\nДодати версію для відкриття\nДодати через пристрій для відкриття",
+        "zh-cn": "在锁实体上更改未匹配的拳头特性\n在发现中添加版本\n通过设备添加到发现"
+      },
       "1.18.35": {
         "en": "internal code improovment for better reading",
         "de": "interner code improovement für besseres lesen",
@@ -80,19 +93,6 @@
         "pl": "ustawienie danych Wymiana na 2 entitie (FromIob & Tolob)",
         "uk": "налаштування даних Обмін до 2 entitie (З альбомуIob & ToIob)",
         "zh-cn": "设置数据 交换到2个内置( FromIob & ToIob)"
-      },
-      "1.18.29": {
-        "en": "set ack = true, before push dataExchange",
-        "de": "ack = true, bevor Sie Daten drücken Wechselkurs",
-        "ru": "set ack = true, перед push-данными обмен",
-        "pt": "definir ack = true, antes de empurrar dados Bolsa",
-        "nl": "set ack = true, voor push data Beurs",
-        "fr": "set ack = true, avant de pousser les données Échange",
-        "it": "set ack = true, prima di spingere i dati Scambi",
-        "es": "set ack = true, antes de presionar datos Cambio",
-        "pl": "set ack = true, przed push data Giełda",
-        "uk": "встановити ack = true, перш ніж натиснути дані Обмін",
-        "zh-cn": "在按下数据前设置 ack = true 交换"
       }
     },
     "titleLang": {
