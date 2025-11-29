@@ -133,6 +133,8 @@
 	"applicationId": "Идентификатор приложения",
 	"applicationName": "Имя приложения",
 	"bridge connection": "уведомления о подключении",
+	"commandForOpen": "команда открытия замка",
+	"commandForOpenTooltip": "задать команду, открывающую замок",
 	"confirmed": "подтвержденный",
 	"confirmedTooltip": "если вы хотите отправить загрузку с подтвержденным сообщением, включите эту опцию",
 	"connection to bridge is activ": "соединение с мостом активно",

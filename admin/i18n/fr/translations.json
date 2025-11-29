@@ -133,6 +133,8 @@
 	"applicationId": "Identifiant de l'application",
 	"applicationName": "Nom de la demande",
 	"bridge connection": "notifications de connexion",
+	"commandForOpen": "commande pour ouvrir la serrure",
+	"commandForOpenTooltip": "définir la commande qui ouvre le verrou",
 	"confirmed": "confirmé",
 	"confirmedTooltip": "si vous souhaitez envoyer le téléchargement avec un message confirmé, activez cette option",
 	"connection to bridge is activ": "la connexion au pont est active",

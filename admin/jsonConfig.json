@@ -2276,7 +2276,6 @@
 							"default": "unlatch",
 							"validator": "if(data.commandForOpen === ''){return false;}else{return true;}",
 							"validatorNoSaveOnError": true,
-							"hidden": "true",
 							"freeSolo": true,
 							"xs": 12,
 							"sm": 2,

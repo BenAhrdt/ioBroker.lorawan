@@ -133,6 +133,8 @@
 	"applicationId": "Applikations Id",
 	"applicationName": "Applikationsname",
 	"bridge connection": "Verbindungsbenachrichtigungen",
+	"commandForOpen": "Befehl zum Öffnen des Schlosses",
+	"commandForOpenTooltip": "Trage Sie den Befehl ein, der das Schloss öffnet",
 	"confirmed": "bestätigt",
 	"confirmedTooltip": "Wenn Sie den Download mit einer bestätigten Nachricht senden möchten, aktivieren Sie diese Option",
 	"connection to bridge is activ": "Die Verbindung zur Bridge ist aktiv",

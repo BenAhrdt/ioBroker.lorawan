@@ -133,6 +133,8 @@
 	"applicationId": "ID de la aplicación",
 	"applicationName": "Nombre de la aplicación",
 	"bridge connection": "notificaciones de conexión",
+	"commandForOpen": "comando para abrir la cerradura",
+	"commandForOpenTooltip": "configurar el comando que abre la cerradura",
 	"confirmed": "confirmado",
 	"confirmedTooltip": "si desea enviar la descarga con mensaje confirmado habilite esta opción",
 	"connection to bridge is activ": "la conexión al puente está activa",

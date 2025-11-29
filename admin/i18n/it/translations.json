@@ -133,6 +133,8 @@
 	"applicationId": "ID applicazione",
 	"applicationName": "Nome dell'applicazione",
 	"bridge connection": "notifiche di connessione",
+	"commandForOpen": "comando per aprire la serratura",
+	"commandForOpenTooltip": "impostare il comando che apre la serratura",
 	"confirmed": "confermato",
 	"confirmedTooltip": "se desideri inviare il download con messaggio di conferma abilita questa opzione",
 	"connection to bridge is activ": "la connessione al bridge è attiva",

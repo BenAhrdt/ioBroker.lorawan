@@ -133,6 +133,8 @@
 	"applicationId": "应用程序 ID",
 	"applicationName": "应用名称",
 	"bridge connection": "连接通知",
+	"commandForOpen": "打开锁的命令",
+	"commandForOpenTooltip": "设置打开锁的命令",
 	"confirmed": "确认的",
 	"confirmedTooltip": "如果您想发送带有确认消息的下载，请启用此选项",
 	"connection to bridge is activ": "与网桥的连接已激活",

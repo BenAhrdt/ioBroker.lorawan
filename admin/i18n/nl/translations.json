@@ -133,6 +133,8 @@
 	"applicationId": "Applicatie-ID",
 	"applicationName": "Applicatienaam",
 	"bridge connection": "verbindingsmeldingen",
+	"commandForOpen": "commando om het slot te openen",
+	"commandForOpenTooltip": "stel het commando in, waarmee het slot wordt geopend",
 	"confirmed": "bevestigd",
 	"confirmedTooltip": "Als u de download met een bevestigd bericht wilt verzenden, schakelt u deze optie in",
 	"connection to bridge is activ": "verbinding met brug is actief",
