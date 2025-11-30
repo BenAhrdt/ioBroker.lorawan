@@ -2024,6 +2024,40 @@
 							"xl": 4
 						},
 						{
+							"type": "checkbox",
+							"attr": "CoverTilt",
+							"label": "CoverTilt",
+							"tooltip": "CoverTiltTooltip",
+							"newLine": true,
+							"default": false,
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},
+						{
+							"type": "staticText",
+							"attr": "_staticTextTilt",
+							"label": "",
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},
+						{
+							"type": "objectId",
+							"attr": "TiltId",
+							"label": "CoverTiltText",
+							"hidden": "data.CoverTilt === false",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
 							"type": "staticText",
 							"attr": "_staticTextSignal",
 							"label": "CoverSignal",

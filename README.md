@@ -24,6 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### 1.18.36 (2025-11-29)
+* (BenAhrdt) add tilt to cover config
 * (BenAhrdt) fist possibillity to change unlatch on lock entity
 * (BenAhrdt) Add version to discovery
 * (BenAhrdt) Add via device to discovery

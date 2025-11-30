@@ -241,5 +241,9 @@
 	"LockUnlockText": "Unlock ID",
 	"LockOpenText": "Open ID",
 	"commandForOpen": "command to open the lock",
-	"commandForOpenTooltip": "set the command, that opens the lock"
+	"commandForOpenTooltip": "set the command, that opens the lock",
+	"CoverTilt": "tilt",
+	"CoverTiltTooltip": "selected: separate id for tilt",
+	"CoverTiltText": "Tilt ID",
+	"CoverPositionText": "Position ID"
 }
