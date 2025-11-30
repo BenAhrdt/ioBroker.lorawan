@@ -1921,15 +1921,29 @@
 							"xl": 2
 						},
 						{
-							"type": "staticText",
-							"attr": "_staticTextStop",
-							"label": "",
+							"type": "select",
+							"attr": "CoverDeviceClass",
+							"label": "CoverDeviceClass",
+							"tooltip": "CoverDeviceClassTooltip",
+							"options": [
+								{"label": "Markise",       "value": "awning"},
+								{"label": "Jalousie",       "value": "blind"},
+								{"label": "Vorhang",      "value": "curtain"},
+								{"label": "Lüftungsklappe","value": "damper"},
+								{"label": "Tür",             "value": "door"},
+								{"label": "Garagentor",    "value": "garage"},
+								{"label": "Hoftor",   "value": "gate"},
+								{"label": "Rollo",          "value": "shade"},
+								{"label": "Rollladen",    "value": "shutter"},
+								{"label": "Fenster",       "value": "window"}
+							],
+							"default": "shutter",
 							"xs": 12,
 							"sm": 2,
 							"md": 2,
 							"lg": 2,
 							"xl": 2
-						},	
+						},
 						{
 							"type": "checkbox",
 							"attr": "CoverStop",

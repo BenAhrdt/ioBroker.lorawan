@@ -245,5 +245,17 @@
 	"CoverTilt": "tilt",
 	"CoverTiltTooltip": "selected: separate id for tilt",
 	"CoverTiltText": "Tilt ID",
-	"CoverPositionText": "Position ID"
+	"CoverPositionText": "Position ID",
+	"CoverDeviceClass": "Device Class",
+	"CoverDeviceClassTooltip": "Select the desired device class",
+    "CoverAwning": "awning",
+    "CoverBlind": "blind",
+    "CoverCurtain": "curtain",
+    "CoverDamper": "damper",
+    "CoverDoor": "door",
+    "CoverGarage": "garage",
+    "CoverGate": "gate",
+    "CoverShade": "shade",
+    "CoverShutter": "shutter",
+    "CoverWindow": "window"
 }
