@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.37",
+    "version": "1.18.38",
     "news": {
+      "1.18.38": {
+        "en": "add device class to cover in config",
+        "de": "geräteklasse in config hinzufügen",
+        "ru": "добавить класс устройства для покрытия в конфигурацию",
+        "pt": "adicionar a classe do dispositivo para cobrir na configuração",
+        "nl": "apparaatklasse toevoegen om in config te dekken",
+        "fr": "ajouter la classe de périphérique pour couvrir la configuration",
+        "it": "aggiungere classe di dispositivo per coprire in configurazione",
+        "es": "añadir clase de dispositivo para cubrir en config",
+        "pl": "dodaj klasę urządzenia do pokrycia w konfiguracji",
+        "uk": "додати клас пристрою для обкладинки в налаштування",
+        "zh-cn": "在配置中添加要覆盖的设备类"
+      },
       "1.18.37": {
         "en": "add tilt to cover config",
         "de": "kippen auf cover config hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "Zmiany w okładce i dodać blokadę",
         "uk": "Зміни в кришці і додати блокування",
         "zh-cn": "封面和加锁的变化"
-      },
-      "1.18.31": {
-        "en": "Bugfix state at light effekts in case of 0",
-        "de": "Bugfix Zustand bei Lichteffekten bei 0",
-        "ru": "Состояние Bugfix на световых эффектах в случае 0",
-        "pt": "Estado de correção de erros em efekts de luz em caso de 0",
-        "nl": "Bugfix toestand bij lichte effekts in geval van 0",
-        "fr": "État Bugfix aux effects légers en cas de 0",
-        "it": "Bugfix stato alla luce effekts in caso di 0",
-        "es": "Estado de Bugfix en effekts luz en caso de 0",
-        "pl": "Stan bugfix w lekkich effekts w przypadku 0",
-        "uk": "Стан Бугфікса при легких діях при 0",
-        "zh-cn": "0 时在 effekts 时发生错误"
       }
     },
     "titleLang": {
