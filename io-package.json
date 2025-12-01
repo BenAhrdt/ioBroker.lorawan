@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.40",
+    "version": "1.18.41",
     "news": {
+      "1.18.41": {
+        "en": "change sending the payload in case of light",
+        "de": "änderung des sendens der nutzlast bei licht",
+        "ru": "изменение отправки полезной нагрузки в случае света",
+        "pt": "alterar o envio da carga útil em caso de luz",
+        "nl": "verandering in het verzenden van de lading in geval van licht",
+        "fr": "changement d'envoi de la charge utile en cas de lumière",
+        "it": "cambiare inviando il carico utile in caso di luce",
+        "es": "cambio enviar la carga útil en caso de luz",
+        "pl": "zmiana wysyłania ładunku w przypadku światła",
+        "uk": "змінити відправлення корисного навантаження при світлі",
+        "zh-cn": "更改发送有效载荷的光线"
+      },
       "1.18.40": {
         "en": "change hash",
         "de": "ändern hash",
@@ -80,19 +93,6 @@
         "pl": "improwizacja kodu wewnętrznego dla lepszego czytania",
         "uk": "внутрішня обробка коду для кращого читання",
         "zh-cn": "内部代码即兴读取"
-      },
-      "1.18.34": {
-        "en": "translation changed",
-        "de": "übersetzung geändert",
-        "ru": "перевод изменился",
-        "pt": "tradução alterada",
-        "nl": "vertaling gewijzigd",
-        "fr": "traduction changée",
-        "it": "traduzione cambiata",
-        "es": "traducción modificada",
-        "pl": "zmienione tłumaczenie",
-        "uk": "зміни перекладу",
-        "zh-cn": "翻译更改"
       }
     },
     "titleLang": {
