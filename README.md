@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) change sending the payload in case of light
+
 ### 1.18.40 (2025-12-01)
 * (BenAhrdt) change hash
 
