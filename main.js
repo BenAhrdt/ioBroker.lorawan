@@ -45,7 +45,7 @@ class Lorawan extends utils.Adapter {
         this.version;
 
         this.secret = {
-            hash: 'feda26376e3d3b38eae8efa48d055754eb0c388d6dbc7ced2ddb5f2f8166f417',
+            hash: 'f3988f71e0d6248fbf690c414bcb46b0500c3a8b3ec9adb9c66be2774ec12291',
             salt: 'LoRaWANBeScJoFr',
         };
     }
@@ -671,7 +671,13 @@ class Lorawan extends utils.Adapter {
                                     });
                                     this.extendObject('bridge.debug.topic', {
                                         type: 'state',
-                                        common: { name: 'topic of mqtt message', type: 'string', def: '' },
+                                        common: {
+                                            name: 'topic of mqtt message',
+                                            type: 'string',
+                                            read: true,
+                                            write: true,
+                                            def: '',
+                                        },
                                         native: {},
                                     });
                                     this.extendObject('bridge.debug.payload', {
@@ -680,6 +686,8 @@ class Lorawan extends utils.Adapter {
                                             name: 'payload of mqtt message',
                                             type: 'string',
                                             role: 'json',
+                                            read: true,
+                                            write: true,
                                             def: '',
                                         },
                                         native: {},
@@ -690,7 +698,33 @@ class Lorawan extends utils.Adapter {
                                             name: 'payload of mqtt message',
                                             type: 'boolean',
                                             role: 'button',
+                                            read: false,
+                                            write: true,
                                             def: false,
+                                        },
+                                        native: {},
+                                    });
+                                    // Incomming
+                                    this.extendObject('bridge.debug.incommingTopic', {
+                                        type: 'state',
+                                        common: {
+                                            name: 'topic of mqtt message',
+                                            type: 'string',
+                                            read: true,
+                                            write: false,
+                                            def: '',
+                                        },
+                                        native: {},
+                                    });
+                                    this.extendObject('bridge.debug.incommingPayload', {
+                                        type: 'state',
+                                        common: {
+                                            name: 'payload of mqtt message',
+                                            type: 'string',
+                                            role: 'json',
+                                            read: true,
+                                            write: false,
+                                            def: '',
                                         },
                                         native: {},
                                     });
