@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.18.42 (2025-12-01)
 * (BenAhrdt) change gate to garage_door in binary_sensor
 
 ### 1.18.41 (2025-12-01)

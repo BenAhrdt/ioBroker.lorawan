@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.41",
+    "version": "1.18.42",
     "news": {
+      "1.18.42": {
+        "en": "change gate to garage_door in binary_sensor",
+        "de": "ändern sie das tor zu garage_door in binär_sensor",
+        "ru": "скачать игру garage_door in binary_sensor",
+        "pt": "mudar portão para garage_door em binário_sensor",
+        "nl": "poort wijzigen naar garage_deur in binaire _sensor",
+        "fr": "changer la porte en garage_door en binaire_sensor",
+        "it": "cambiare cancello a garage_door in binario_sensor",
+        "es": "cambio de puerta a garage_door en binario_sensor",
+        "pl": "zmiana bramy na garaż _ door w binarnym _ sensor",
+        "uk": "змінити ворота в гараж_критий в бінарних_сенсор",
+        "zh-cn": "在二进制中将门改为车库_门_传感器"
+      },
       "1.18.41": {
         "en": "change sending the payload in case of light",
         "de": "änderung des sendens der nutzlast bei licht",
@@ -80,19 +93,6 @@
         "pl": "fist possibilty to change unlatch on lock entity\nDodaj wersję do odkrycia\nDodaj przez urządzenie do odkrycia",
         "uk": "fist possibillity змінити unlatch на суб'єкті блокування\nДодати версію для відкриття\nДодати через пристрій для відкриття",
         "zh-cn": "在锁实体上更改未匹配的拳头特性\n在发现中添加版本\n通过设备添加到发现"
-      },
-      "1.18.35": {
-        "en": "internal code improovment for better reading",
-        "de": "interner code improovement für besseres lesen",
-        "ru": "импровизация внутреннего кода для лучшего чтения",
-        "pt": "improvisação de código interno para melhor leitura",
-        "nl": "interne code improvisatie voor beter lezen",
-        "fr": "imprégnation du code interne pour une meilleure lecture",
-        "it": "codice interno improovment per una migliore lettura",
-        "es": "improvimento de código interno para una mejor lectura",
-        "pl": "improwizacja kodu wewnętrznego dla lepszego czytania",
-        "uk": "внутрішня обробка коду для кращого читання",
-        "zh-cn": "内部代码即兴读取"
       }
     },
     "titleLang": {
