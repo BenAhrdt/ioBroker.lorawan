@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.39",
+    "version": "1.18.40",
     "news": {
+      "1.18.40": {
+        "en": "change hash",
+        "de": "ändern hash",
+        "ru": "изменить хеш",
+        "pt": "mudar hash",
+        "nl": "hash veranderen",
+        "fr": "changement hash",
+        "it": "cambiamento hash",
+        "es": "cambio hash",
+        "pl": "zmień hasz",
+        "uk": "зміна хеш",
+        "zh-cn": "变化散列"
+      },
       "1.18.39": {
         "en": "build more roles for contactsensors, in case of role. (window, door, gate ...)",
         "de": "bauen mehr rollen für kontaktsensoren, im falle der rolle. (fenster, tür, tor ...)",
@@ -80,19 +93,6 @@
         "pl": "zmienione tłumaczenie",
         "uk": "зміни перекладу",
         "zh-cn": "翻译更改"
-      },
-      "1.18.33": {
-        "en": "change state in Lock entity",
-        "de": "änderungszustand in Sperreinrichtung",
-        "ru": "изменение состояния Lock entity",
-        "pt": "mudar o estado na entidade Bloquear",
-        "nl": "veranderingstoestand in Lock-entiteit",
-        "fr": "changement d'état dans l'entité de verrouillage",
-        "it": "cambiamento stato in entità Lock",
-        "es": "estado de cambio en la entidad Lock",
-        "pl": "zmiana stanu w jednostce blokującej",
-        "uk": "змінити стан в суб'єкті блокування",
-        "zh-cn": "锁定实体中的变化状态"
       }
     },
     "titleLang": {
