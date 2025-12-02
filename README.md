@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) specific filter at objectId selection in config
+
 ### 1.18.42 (2025-12-01)
 * (BenAhrdt) change gate to garage_door in binary_sensor
 
