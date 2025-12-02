@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.42",
+    "version": "1.18.43",
     "news": {
+      "1.18.43": {
+        "en": "specific filter at objectId selection in config",
+        "de": "spezifischer Filter am Objekt Id-Auswahl in config",
+        "ru": "специальный фильтр на объекте Id выбор в конфигурации",
+        "pt": "filtro específico no objeto Seleção de ID na configuração",
+        "nl": "specifiek filter bij object Id-selectie in configuratie",
+        "fr": "filtre spécifique à l'objet Sélection d'id dans config",
+        "it": "filtro specifico per oggetto Selezione Id in configurazione",
+        "es": "filtro específico en objeto Selección de medicamentos en config",
+        "pl": "określony filtr w obiekcie Id wybór w konfiguracji",
+        "uk": "специфічний фільтр на об'єкті Вибір Id в config",
+        "zh-cn": "对象的特定过滤器 配置中的 ID 选择"
+      },
       "1.18.42": {
         "en": "change gate to garage_door in binary_sensor",
         "de": "ändern sie das tor zu garage_door in binär_sensor",
@@ -80,19 +93,6 @@
         "pl": "dodaj tilt do okładki config",
         "uk": "add tilt для налаштування кришки",
         "zh-cn": "添加倾斜到覆盖配置"
-      },
-      "1.18.36": {
-        "en": "fist possibillity to change unlatch on lock entity\nAdd version to discovery\nAdd via device to discovery",
-        "de": "fist possibillity zu ändern unlatch auf schloss entity\nVersion zur Entdeckung hinzufügen\nÜber das Gerät zur Entdeckung hinzufügen",
-        "ru": "fist possibillity - изменить unlatch на lock entity\nДобавить версию к Discovery\nДобавить через устройство к открытию",
-        "pt": "possibilidade do punho para mudar a desacoplamento na entidade de bloqueio\nAdicionar versão à descoberta\nAdicionar via dispositivo à descoberta",
-        "nl": "fist mogelijkheid om unlatch te veranderen op slot entiteit\nVersie toevoegen aan ontdekking\nVoeg via apparaat toe aan ontdekking",
-        "fr": "possibillity du poing pour changer le déblocage sur l'entité de verrouillage\nAjouter une version à la découverte\nAjouter via périphérique à la découverte",
-        "it": "possibilità di cambiare unlatch su entità di blocco\nAggiungere la versione alla scoperta\nAggiungere tramite dispositivo alla scoperta",
-        "es": "fist possibillity to change unlatch on lock entity\nAñadir versión al descubrimiento\nAñadir vía dispositivo al descubrimiento",
-        "pl": "fist possibilty to change unlatch on lock entity\nDodaj wersję do odkrycia\nDodaj przez urządzenie do odkrycia",
-        "uk": "fist possibillity змінити unlatch на суб'єкті блокування\nДодати версію для відкриття\nДодати через пристрій для відкриття",
-        "zh-cn": "在锁实体上更改未匹配的拳头特性\n在发现中添加版本\n通过设备添加到发现"
       }
     },
     "titleLang": {
