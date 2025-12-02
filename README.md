@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.18.44 (2025-12-02)
 * (BenAhrdt) add mixed to possible value types in config
 
 ### 1.18.43 (2025-12-02)

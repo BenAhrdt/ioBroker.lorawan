@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.43",
+    "version": "1.18.44",
     "news": {
+      "1.18.44": {
+        "en": "add mixed to possible value types in config",
+        "de": "hinzufügen zu möglichen werttypen in config",
+        "ru": "добавить смешанные возможные типы значений в конфигурацию",
+        "pt": "adicionar mixed aos possíveis tipos de valor na configuração",
+        "nl": "gemengd toevoegen aan mogelijke waardetypes in configuratie",
+        "fr": "ajouter mélangé aux types de valeurs possibles dans config",
+        "it": "aggiungere misto a possibili tipi di valore in configurazione",
+        "es": "añadir mixto a posibles tipos de valor en config",
+        "pl": "dodać mieszane do możliwych typów wartości w konfigu",
+        "uk": "додати змішані для можливих типів значень в конфігурації",
+        "zh-cn": "在配置中向可能的值类型添加混合"
+      },
       "1.18.43": {
         "en": "specific filter at objectId selection in config",
         "de": "spezifischer Filter am Objekt Id-Auswahl in config",
@@ -80,19 +93,6 @@
         "pl": "dodaj klasę urządzenia do pokrycia w konfiguracji",
         "uk": "додати клас пристрою для обкладинки в налаштування",
         "zh-cn": "在配置中添加要覆盖的设备类"
-      },
-      "1.18.37": {
-        "en": "add tilt to cover config",
-        "de": "kippen auf cover config hinzufügen",
-        "ru": "добавить наклон для покрытия конфигурацией",
-        "pt": "adicionar inclinação à configuração da capa",
-        "nl": "kantel toevoegen aan cover config",
-        "fr": "ajouter l'inclinaison à la configuration du couvercle",
-        "it": "aggiungere inclinazione per coprire config",
-        "es": "añadir inclinación para cubrir config",
-        "pl": "dodaj tilt do okładki config",
-        "uk": "add tilt для налаштування кришки",
-        "zh-cn": "添加倾斜到覆盖配置"
       }
     },
     "titleLang": {
