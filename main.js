@@ -1507,7 +1507,7 @@ class Lorawan extends utils.Adapter {
     }
 
     async getConnectionInfo() {
-        if (this.config.ipUrl === '' || this.mqttClient?.internalConnectionstate) {
+        if (this.config.origin === 'off' || this.mqttClient?.internalConnectionstate) {
             if (this.config.BridgeType === 'off' || this.bridge?.bridgeMqttClient?.internalConnectionstate) {
                 return true;
             }
