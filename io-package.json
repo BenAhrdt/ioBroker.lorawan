@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.44",
+    "version": "1.18.45",
     "news": {
+      "1.18.45": {
+        "en": "improve showing Adapter state (yellw / green)",
+        "de": "verbesserung des Adapterzustands (gelb / grün)",
+        "ru": "улучшение отображения состояния адаптера (yellw / green)",
+        "pt": "melhorar mostrando o estado do adaptador (Yellw / verde)",
+        "nl": "verbetering van de stand van de adapter (geel / groen)",
+        "fr": "améliorer l'état de l'adaptateur (yellw / vert)",
+        "it": "migliorare lo stato dell'adattatore di visualizzazione (yellw / green)",
+        "es": "mejorar la visualización del estado del adaptador (yellw / verde)",
+        "pl": "poprawić wyświetlanie stanu Adapter (yellw / green)",
+        "uk": "поліпшення демонстрації стану адаптера (жовтий / зелений)",
+        "zh-cn": "改进显示适配器状态( yallw / 绿色)"
+      },
       "1.18.44": {
         "en": "add mixed to possible value types in config",
         "de": "hinzufügen zu möglichen werttypen in config",
@@ -80,19 +93,6 @@
         "pl": "budować więcej ról dla czujników kontaktu, w przypadku roli. (okno, drzwi, brama...)",
         "uk": "будувати більше ролей для контакторів, у разі ролі. (вікно, двері, ворота ...)",
         "zh-cn": "为联系人建立更多的角色,如果是角色的话。 (窗,门,门"
-      },
-      "1.18.38": {
-        "en": "add device class to cover in config",
-        "de": "geräteklasse in config hinzufügen",
-        "ru": "добавить класс устройства для покрытия в конфигурацию",
-        "pt": "adicionar a classe do dispositivo para cobrir na configuração",
-        "nl": "apparaatklasse toevoegen om in config te dekken",
-        "fr": "ajouter la classe de périphérique pour couvrir la configuration",
-        "it": "aggiungere classe di dispositivo per coprire in configurazione",
-        "es": "añadir clase de dispositivo para cubrir en config",
-        "pl": "dodaj klasę urządzenia do pokrycia w konfiguracji",
-        "uk": "додати клас пристрою для обкладинки в налаштування",
-        "zh-cn": "在配置中添加要覆盖的设备类"
       }
     },
     "titleLang": {
