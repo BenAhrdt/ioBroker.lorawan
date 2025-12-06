@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.45",
+    "version": "1.18.46",
     "news": {
+      "1.18.46": {
+        "en": "CustomSend has been extended to include the option of direct push.",
+        "de": "CustomSend wurde erweitert, um die Möglichkeit der direkten Push.",
+        "ru": "CustomSend был расширен, чтобы включить возможность прямого толчка.",
+        "pt": "O CustomSend foi estendido para incluir a opção de push direto.",
+        "nl": "AangepastVerzenden is uitgebreid met de optie van directe push.",
+        "fr": "CustomSend a été étendu pour inclure l'option de poussée directe.",
+        "it": "CustomSend è stato esteso per includere l'opzione di spinta diretta.",
+        "es": "CustomSend se ha ampliado para incluir la opción de empuje directo.",
+        "pl": "CustomSend został rozszerzony o opcję bezpośredniego pchnięcia.",
+        "uk": "CustomSend було розширено, щоб включити опцію прямого натискання.",
+        "zh-cn": "CustomSend已被扩展,以包括直接推动的选择."
+      },
       "1.18.45": {
         "en": "improve showing Adapter state (yellw / green)",
         "de": "verbesserung des Adapterzustands (gelb / grün)",
@@ -80,19 +93,6 @@
         "pl": "zmień hasz",
         "uk": "зміна хеш",
         "zh-cn": "变化散列"
-      },
-      "1.18.39": {
-        "en": "build more roles for contactsensors, in case of role. (window, door, gate ...)",
-        "de": "bauen mehr rollen für kontaktsensoren, im falle der rolle. (fenster, tür, tor ...)",
-        "ru": "построить больше ролей для контактенсоров, в случае роли. (окно, дверь, ворота...)",
-        "pt": "constrói mais papéis para os agentes de contacto, em caso de papel. (janela, porta, portão...)",
-        "nl": "meer rollen voor contactpersonen te creëren, in geval van rol. (raam, deur, poort ...)",
-        "fr": "construire plus de rôles pour les capteurs de contacts, en cas de rôle. (fenêtre, porte, portail...)",
-        "it": "costruire più ruoli per i sensori di contatto, in caso di ruolo. (finestra, porta, cancello ...)",
-        "es": "crear más roles para los contactensores, en caso de papel. (ventana, puerta, puerta...)",
-        "pl": "budować więcej ról dla czujników kontaktu, w przypadku roli. (okno, drzwi, brama...)",
-        "uk": "будувати більше ролей для контакторів, у разі ролі. (вікно, двері, ворота ...)",
-        "zh-cn": "为联系人建立更多的角色,如果是角色的话。 (窗,门,门"
       }
     },
     "titleLang": {
