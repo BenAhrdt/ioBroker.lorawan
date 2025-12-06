@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) CustomSend has been extended to include the option of direct push.
+
 ### 1.18.45 (2025-12-04)
 * (BenAhrdt) improve showing Adapter state (yellw / green)
 

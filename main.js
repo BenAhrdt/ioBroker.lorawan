@@ -539,36 +539,51 @@ class Lorawan extends utils.Adapter {
                                         ];
                                     const Statevalues = state.val.split(',');
                                     const StateElements = {
-                                        PayloadInHex: Statevalues[0].toUpperCase(),
-                                        Port: Statevalues[1] ? parseInt(Statevalues[1]) : downlinkConfig.port,
-                                        Confirmed: Statevalues[2]
-                                            ? Statevalues[2] === 'true'
-                                                ? true
-                                                : false
-                                            : downlinkConfig.confirmed,
-                                        Priority: Statevalues[3] ? Statevalues[3] : downlinkConfig.priority,
+                                        payloadInHex: Statevalues[0].toUpperCase(),
+                                        port: downlinkConfig.port,
+                                        confirmed: downlinkConfig.confirmed,
+                                        priority: downlinkConfig.priority,
+                                        push: false,
                                     };
-                                    // Query for righte type
+                                    // Assign writen values
+                                    for (const element in Statevalues) {
+                                        if (Statevalues[element] === 'push') {
+                                            StateElements.push = true;
+                                            break;
+                                        }
+                                        if (element === '1') {
+                                            StateElements.port = Number(Statevalues[element]);
+                                        } else if (element === '2') {
+                                            StateElements.confirmed = Statevalues[element] === 'true' ? true : false;
+                                        } else if (element === '3') {
+                                            StateElements.priority = Statevalues[element];
+                                        }
+                                    }
+                                    // Query about th correct type
                                     this.log.debug('The following values are detected at input of custom send state');
                                     for (const element of Object.values(StateElements)) {
                                         this.log.debug(typeof element);
                                         this.log.debug(element);
                                     }
-                                    // Write into nextSend
-                                    await this.writeNextSend(changeInfo, StateElements.PayloadInHex);
+                                    // write into NextSend, or push directly
+                                    if (!StateElements.push) {
+                                        // Write into nextSend
+                                        await this.writeNextSend(changeInfo, StateElements.payloadInHex);
+                                    }
                                     if (
                                         !changeInfo?.bestMatchForDeviceType ||
                                         this.downlinkConfighandler?.activeDownlinkConfigs[
                                             changeInfo.bestMatchForDeviceType
-                                        ].sendWithUplink === 'disabled'
+                                        ].sendWithUplink === 'disabled' ||
+                                        StateElements.push
                                     ) {
                                         const downlink = this.downlinkConfighandler?.getDownlink(
                                             {
-                                                port: StateElements.Port,
-                                                confirmed: StateElements.Confirmed,
-                                                priority: StateElements.Priority,
+                                                port: StateElements.port,
+                                                confirmed: StateElements.confirmed,
+                                                priority: StateElements.priority,
                                             },
-                                            StateElements.PayloadInHex,
+                                            StateElements.payloadInHex,
                                             changeInfo,
                                         );
                                         if (downlink !== undefined) {
