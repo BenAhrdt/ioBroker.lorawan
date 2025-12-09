@@ -537,6 +537,7 @@ class Lorawan extends utils.Adapter {
                                         this.downlinkConfighandler?.activeDownlinkConfigs[
                                             changeInfo.bestMatchForDeviceType
                                         ];
+                                    /* Alte Zuweisung
                                     const Statevalues = state.val.split(',');
                                     const StateElements = {
                                         payloadInHex: Statevalues[0].toUpperCase(),
@@ -559,12 +560,62 @@ class Lorawan extends utils.Adapter {
                                             StateElements.priority = Statevalues[element];
                                         }
                                     }
-                                    // Query about th correct type
-                                    this.log.debug('The following values are detected at input of custom send state');
-                                    for (const element of Object.values(StateElements)) {
-                                        this.log.debug(typeof element);
-                                        this.log.debug(element);
+                                    */
+                                    // Eingefügt am 09.12.2026
+                                    const Statevalues = state.val.split(',');
+
+                                    const StateElements = {
+                                        payloadInHex: null,
+                                        port: downlinkConfig.port,
+                                        confirmed: downlinkConfig.confirmed,
+                                        priority: downlinkConfig.priority,
+                                        push: false,
+                                    };
+
+                                    for (const raw of Statevalues) {
+                                        const element = raw.trim();
+
+                                        // --- push ---
+                                        if (element.toLowerCase() === 'push') {
+                                            StateElements.push = true;
+                                            continue;
+                                        }
+
+                                        // --- confirmed (boolean) ---
+                                        if (element === 'true' || element === 'false') {
+                                            StateElements.confirmed = element === 'true';
+                                            continue;
+                                        }
+
+                                        // --- port (number) ---
+                                        if (/^\d+$/.test(element)) {
+                                            StateElements.port = Number(element);
+                                            continue;
+                                        }
+
+                                        // --- payloadInHex: reiner Hex-String ---
+                                        if (/^[0-9A-Fa-f]+$/.test(element)) {
+                                            StateElements.payloadInHex = element.toUpperCase();
+                                            continue;
+                                        }
+
+                                        // --- priority: alles, was kein reiner Hex-String ist ---
+                                        if (/[^0-9A-Fa-f]/.test(element)) {
+                                            StateElements.priority = element;
+                                            continue;
+                                        }
                                     }
+
+                                    // Query about th correct type
+                                    this.log.debug(
+                                        'The following values are detected / used at input of custom send state',
+                                    );
+                                    for (const element in StateElements) {
+                                        this.log.debug(
+                                            `${element}: Type: ${typeof StateElements[element]} - Value: ${StateElements[element]}`,
+                                        );
+                                    }
+
                                     // write into NextSend, or push directly
                                     if (!StateElements.push) {
                                         // Write into nextSend

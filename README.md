@@ -23,6 +23,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) CustomSend becomes possibility for different order of parameters.
+             payloadInHex, port, confirmed, priority, push (push is written as string 'push')
+
 ### 1.18.46 (2025-12-06)
 * (BenAhrdt) CustomSend has been extended to include the option of direct push.
 
