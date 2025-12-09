@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.46",
+    "version": "1.18.47",
     "news": {
+      "1.18.47": {
+        "en": "* CustomSend becomes possibility for different order of parameters.\n             payloadInHex, port, confirmed, priority, push (push is written as string 'push')",
+        "de": "* CustomSend wird Möglichkeit für verschiedene Parameterreihenfolge.\nnutzlast InHex, Port, bestätigt, Priorität, Push (Push wird als String 'Push' geschrieben)",
+        "ru": "* CustomSend становится возможностью для различных порядков параметров.\nполезная нагрузка InHex, порт, подтвержденный, приоритет, push (push пишется как строка «push»)",
+        "pt": "* CustomSend torna-se possibilidade para diferentes ordens de parâmetros.\ncarga útil InHex, porto, confirmado, prioridade, push (empurra é escrito como string 'push')",
+        "nl": "* AangepastVerzenden wordt mogelijk voor verschillende orde van parameters.\nlaadvermogen InHex, poort, bevestigd, prioriteit, push (push is geschreven als string 'push')",
+        "fr": "* CustomSend devient possibilité pour différents ordres de paramètres.\ncharge utile InHex, port, confirmé, priorité, push (push est écrit comme chaîne de caractères \"push\")",
+        "it": "* CustomSend diventa possibilità per ordine diverso di parametri.\ncarico utile InHex, porto, confermato, priorità, spinta (push è scritto come stringa 'push')",
+        "es": "* CustomSend se convierte en posibilidad para diferentes tipos de parámetros.\ncarga útil InHex, port, confirmed, priority, push (push está escrito como cadena 'push')",
+        "pl": "* CustomSend staje się możliwością dla różnych kolejności parametrów.\nładowność InHex, port, potwierdzone, priorytet, push (push jest zapisany jako ciąg 'push')",
+        "uk": "* Користувальницька робота на різних параметрах.\nзавантажити InHex, порт, підтверджений, пріоритет, штовхач (подушка написана як рядок 'push')",
+        "zh-cn": "* CustomSend成为不同参数顺序的可能.\n有效载荷 InHex, 端口, 确认, 优先级, 推( 推为字符串“ push” )"
+      },
       "1.18.46": {
         "en": "CustomSend has been extended to include the option of direct push.",
         "de": "CustomSend wurde erweitert, um die Möglichkeit der direkten Push.",
@@ -80,19 +93,6 @@
         "pl": "zmiana wysyłania ładunku w przypadku światła",
         "uk": "змінити відправлення корисного навантаження при світлі",
         "zh-cn": "更改发送有效载荷的光线"
-      },
-      "1.18.40": {
-        "en": "change hash",
-        "de": "ändern hash",
-        "ru": "изменить хеш",
-        "pt": "mudar hash",
-        "nl": "hash veranderen",
-        "fr": "changement hash",
-        "it": "cambiamento hash",
-        "es": "cambio hash",
-        "pl": "zmień hasz",
-        "uk": "зміна хеш",
-        "zh-cn": "变化散列"
       }
     },
     "titleLang": {
