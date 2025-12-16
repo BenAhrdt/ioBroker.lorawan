@@ -1343,7 +1343,7 @@ class Lorawan extends utils.Adapter {
                             if (adapterObject.type === 'folder' && adapterObject._id.endsWith('uplink')) {
                                 adapterObject._id = this.removeNamespace(adapterObject._id);
                                 const changeInfo = await this.getChangeInfo(adapterObject._id);
-                                const label = changeInfo?.applicationName;
+                                const label = changeInfo?.usedApplicationName;
                                 const value = changeInfo?.applicationId;
                                 if (!currentApplications[value]) {
                                     currentApplications[value] = value;
@@ -1375,7 +1375,7 @@ class Lorawan extends utils.Adapter {
                             ) {
                                 adapterObject._id = this.removeNamespace(adapterObject._id);
                                 const changeInfo = await this.getChangeInfo(adapterObject._id);
-                                const label = changeInfo?.deviceId;
+                                const label = changeInfo?.usedDeviceId;
                                 const value = changeInfo?.deviceEUI;
                                 devices[myCount] = { label: label, value: value };
                                 myCount++;
