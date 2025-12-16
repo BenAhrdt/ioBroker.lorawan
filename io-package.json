@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.48",
+    "version": "1.18.49",
     "news": {
+      "1.18.49": {
+        "en": "Read and send always all light attributes",
+        "de": "Lesen und senden Sie immer alle Licht-Attribute",
+        "ru": "Читайте и отправляйте всегда все световые атрибуты",
+        "pt": "Ler e enviar sempre todos os atributos de luz",
+        "nl": "Lees en stuur altijd alle lichtattributen",
+        "fr": "Lire et envoyer toujours tous les attributs de lumière",
+        "it": "Leggi e invia sempre tutti gli attributi leggeri",
+        "es": "Lea y envíe siempre todos los atributos de luz",
+        "pl": "Czytaj i wysyłaj zawsze wszystkie atrybuty światła",
+        "uk": "Читайте і надсилайте завжди всі атрибути світла",
+        "zh-cn": "读取并发送所有光属性"
+      },
       "1.18.48": {
         "en": "Set the selection to usedNames (application and device)",
         "de": "Setzen Sie die Auswahl auf gebrauchtNamen (Anwendung und Gerät)",
@@ -80,19 +93,6 @@
         "pl": "określony filtr w obiekcie Id wybór w konfiguracji",
         "uk": "специфічний фільтр на об'єкті Вибір Id в config",
         "zh-cn": "对象的特定过滤器 配置中的 ID 选择"
-      },
-      "1.18.42": {
-        "en": "change gate to garage_door in binary_sensor",
-        "de": "ändern sie das tor zu garage_door in binär_sensor",
-        "ru": "скачать игру garage_door in binary_sensor",
-        "pt": "mudar portão para garage_door em binário_sensor",
-        "nl": "poort wijzigen naar garage_deur in binaire _sensor",
-        "fr": "changer la porte en garage_door en binaire_sensor",
-        "it": "cambiare cancello a garage_door in binario_sensor",
-        "es": "cambio de puerta a garage_door en binario_sensor",
-        "pl": "zmiana bramy na garaż _ door w binarnym _ sensor",
-        "uk": "змінити ворота в гараж_критий в бінарних_сенсор",
-        "zh-cn": "在二进制中将门改为车库_门_传感器"
       }
     },
     "titleLang": {
