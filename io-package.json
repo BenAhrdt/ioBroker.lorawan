@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.47",
+    "version": "1.18.48",
     "news": {
+      "1.18.48": {
+        "en": "Set the selection to usedNames (application and device)",
+        "de": "Setzen Sie die Auswahl auf gebrauchtNamen (Anwendung und Gerät)",
+        "ru": "Установите выбор используемых имен (приложения и устройства)",
+        "pt": "Define a seleção para nomes usados (aplicação e dispositivo)",
+        "nl": "De selectie instellen op gebruikte Namen (toepassing en apparaat)",
+        "fr": "Définissez la sélection aux noms utilisés (application et périphérique)",
+        "it": "Impostare la selezione per i nomi utilizzati (applicazione e dispositivo)",
+        "es": "Establecer la selección para utilizarNames (aplicación y dispositivo)",
+        "pl": "Ustaw wybór na używane Nazwy (aplikacja i urządzenie)",
+        "uk": "Налаштуйте вибір для використанняНазви (застосування та пристрій)",
+        "zh-cn": "将选中区域设定为使用的名称( 应用程序和设备)"
+      },
       "1.18.47": {
         "en": "* CustomSend becomes possibility for different order of parameters.\n             payloadInHex, port, confirmed, priority, push (push is written as string 'push')",
         "de": "* CustomSend wird Möglichkeit für verschiedene Parameterreihenfolge.\nnutzlast InHex, Port, bestätigt, Priorität, Push (Push wird als String 'Push' geschrieben)",
@@ -80,19 +93,6 @@
         "pl": "zmiana bramy na garaż _ door w binarnym _ sensor",
         "uk": "змінити ворота в гараж_критий в бінарних_сенсор",
         "zh-cn": "在二进制中将门改为车库_门_传感器"
-      },
-      "1.18.41": {
-        "en": "change sending the payload in case of light",
-        "de": "änderung des sendens der nutzlast bei licht",
-        "ru": "изменение отправки полезной нагрузки в случае света",
-        "pt": "alterar o envio da carga útil em caso de luz",
-        "nl": "verandering in het verzenden van de lading in geval van licht",
-        "fr": "changement d'envoi de la charge utile en cas de lumière",
-        "it": "cambiare inviando il carico utile in caso di luce",
-        "es": "cambio enviar la carga útil en caso de luz",
-        "pl": "zmiana wysyłania ładunku w przypadku światła",
-        "uk": "змінити відправлення корисного навантаження при світлі",
-        "zh-cn": "更改发送有效载荷的光线"
       }
     },
     "titleLang": {
