@@ -782,6 +782,17 @@ class Lorawan extends utils.Adapter {
                                         },
                                         native: {},
                                     });
+                                    this.extendObject('bridge.debug.incommingTopicFilter', {
+                                        type: 'state',
+                                        common: {
+                                            name: 'filter for topic of mqtt message',
+                                            type: 'string',
+                                            read: true,
+                                            write: true,
+                                            def: '',
+                                        },
+                                        native: {},
+                                    });
                                     this.extendObject('bridge.debug.incommingPayload', {
                                         type: 'state',
                                         common: {
@@ -802,6 +813,17 @@ class Lorawan extends utils.Adapter {
                                             type: 'string',
                                             read: true,
                                             write: false,
+                                            def: '',
+                                        },
+                                        native: {},
+                                    });
+                                    this.extendObject('bridge.debug.outgoingTopicFilter', {
+                                        type: 'state',
+                                        common: {
+                                            name: 'filter for topic of mqtt message',
+                                            type: 'string',
+                                            read: true,
+                                            write: true,
                                             def: '',
                                         },
                                         native: {},
@@ -829,6 +851,12 @@ class Lorawan extends utils.Adapter {
                                 );
                                 await this.setState(id, state.val, true);
                             }
+                        } else if (id.endsWith('bridge.debug.incommingTopicFilter')) {
+                            this.bridge?.bridgeMqttClient.setFilter('incomming', state.val);
+                            await this.setState(id, state.val, true);
+                        } else if (id.endsWith('bridge.debug.outgoingTopicFilter')) {
+                            this.bridge?.bridgeMqttClient.setFilter('outgoing', state.val);
+                            await this.setState(id, state.val, true);
                         } else if (id.endsWith('.bridge.debug.send')) {
                             const topic = await this.getStateAsync('bridge.debug.topic');
                             const payload = await this.getStateAsync('bridge.debug.payload');
