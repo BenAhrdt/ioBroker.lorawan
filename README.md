@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Read and send always all light attributes
+
 ### 1.18.48 (2025-12-16)
 * (BenAhrdt) Set the selection to usedNames (application and device)
 
