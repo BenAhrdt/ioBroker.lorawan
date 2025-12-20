@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.50",
+    "version": "1.18.51",
     "news": {
+      "1.18.51": {
+        "en": "add \"Temperatur\" to autmatic assign",
+        "de": "\"Temperatur\" zu autmatic assign hinzufügen",
+        "ru": "добавить \"Temperatur\" в аутматическое назначение",
+        "pt": "adicionar \"Temperatur\" à atribuição autmática",
+        "nl": "\"Temperatur\" toevoegen aan autmatisch toewijzen",
+        "fr": "ajouter \"Temperatur\" à l'attribut autmatique",
+        "it": "aggiungere \"Temperatur\" all'assegnazione autmatica",
+        "es": "añadir \"Temperatur\" a la asignación autmática",
+        "pl": "dodaj \"Temperatur\" do przypisania automatycznego",
+        "uk": "додати \"Temperatur\" до тематичного знака",
+        "zh-cn": "在自定义中添加“临时”"
+      },
       "1.18.50": {
         "en": "filter in Debug mode (dev tool)",
         "de": "filter im Debug-Modus (dev tool)",
@@ -80,19 +93,6 @@
         "pl": "poprawić wyświetlanie stanu Adapter (yellw / green)",
         "uk": "поліпшення демонстрації стану адаптера (жовтий / зелений)",
         "zh-cn": "改进显示适配器状态( yallw / 绿色)"
-      },
-      "1.18.44": {
-        "en": "add mixed to possible value types in config",
-        "de": "hinzufügen zu möglichen werttypen in config",
-        "ru": "добавить смешанные возможные типы значений в конфигурацию",
-        "pt": "adicionar mixed aos possíveis tipos de valor na configuração",
-        "nl": "gemengd toevoegen aan mogelijke waardetypes in configuratie",
-        "fr": "ajouter mélangé aux types de valeurs possibles dans config",
-        "it": "aggiungere misto a possibili tipi di valore in configurazione",
-        "es": "añadir mixto a posibles tipos de valor en config",
-        "pl": "dodać mieszane do możliwych typów wartości w konfigu",
-        "uk": "додати змішані для можливих типів значень в конфігурації",
-        "zh-cn": "在配置中向可能的值类型添加混合"
       }
     },
     "titleLang": {
