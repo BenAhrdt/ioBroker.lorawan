@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.18.54 (2025-12-29)
 * (BenAhrdt) add '.' to folders in config selection
 
 ### 1.18.53 (2025-12-29)
