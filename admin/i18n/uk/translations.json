@@ -178,6 +178,7 @@
 	"device online offline": "сповіщення про стан пристрою",
 	"deviceEUI": "Пристрій EUI",
 	"deviceId": "Ідентифікатор пристрою",
+	"deviceSuffix": "суфікс пристрою",
 	"deviceType": "тип пристрою",
 	"deviceTypeTooltip": "вставте назву типу пристрою, ця конфігурація дійсна. (наприклад, Dragino XY також відповідає Dragino)",
 	"downlinkConfig": "Конфігурація Donwlink",

@@ -1166,6 +1166,13 @@
 							"width": "25%"
 						},
 						{
+							"type": "text",
+							"attr": "deviceSuffix",
+							"label": "deviceSuffix",
+							"default": "",
+							"width": "10%"
+						},
+						{
 							"type": "checkbox",
 							"attr": "publish",
 							"label": "publish",

@@ -257,5 +257,6 @@
     "CoverGate": "gate",
     "CoverShade": "shade",
     "CoverShutter": "shutter",
-    "CoverWindow": "window"
+    "CoverWindow": "window",
+	"deviceSuffix": "device Suffix"
 }

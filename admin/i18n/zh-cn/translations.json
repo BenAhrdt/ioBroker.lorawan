@@ -178,6 +178,7 @@
 	"device online offline": "设备状态通知",
 	"deviceEUI": "设备用户界面",
 	"deviceId": "设备 ID",
+	"deviceSuffix": "设备后缀",
 	"deviceType": "设备类型",
 	"deviceTypeTooltip": "插入设备类型的名称，此配置有效。 （例如，Dragino XY 也匹配 Dragino）",
 	"downlinkConfig": "下行链路配置",

@@ -178,6 +178,7 @@
 	"device online offline": "notifications d'état de l'appareil",
 	"deviceEUI": "Interface utilisateur de l'appareil",
 	"deviceId": "Identifiant de l'appareil",
+	"deviceSuffix": "Suffixe de l'appareil",
 	"deviceType": "type d'appareil",
 	"deviceTypeTooltip": "insérez le nom du type d'appareil, cette configuration est valide. (par exemple, Dragino XY correspond également à Dragino)",
 	"downlinkConfig": "Configuration du lien de téléchargement",

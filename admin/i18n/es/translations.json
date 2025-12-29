@@ -178,6 +178,7 @@
 	"device online offline": "notificaciones de estado del dispositivo",
 	"deviceEUI": "IUE del dispositivo",
 	"deviceId": "Identificación del dispositivo",
+	"deviceSuffix": "dispositivo sufijo",
 	"deviceType": "tipo de dispositivo",
 	"deviceTypeTooltip": "inserte el nombre del tipo de dispositivo, esta configuración es válida. (por ejemplo, Dragino XY también coincide con Dragino)",
 	"downlinkConfig": "Configuración de enlace donwlink",
