@@ -1461,6 +1461,9 @@ class Lorawan extends utils.Adapter {
                                         fullStatename += changeInfo?.allElements[i];
                                     }
                                 }
+                                if (adapterObject.type === 'folder') {
+                                    fullStatename += '.';
+                                }
                                 const label = fullStatename;
                                 const value = fullStatename;
                                 if (!currentStates[value]) {
