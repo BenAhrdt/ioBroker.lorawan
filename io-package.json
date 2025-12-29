@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.54",
+    "version": "1.18.55",
     "news": {
+      "1.18.55": {
+        "en": "bugfix folderinclusion",
+        "de": "bugfix ordnerinclusion",
+        "ru": "bugfix включение папок",
+        "pt": "inclusão de pastas de correção de erros",
+        "nl": "bugfix-map-integratie",
+        "fr": "bugfix dossierinclusion",
+        "it": "bugfix folderinclusione",
+        "es": "carpeta bugfixinclusion",
+        "pl": "włączenie folderu bugfix",
+        "uk": "папка прикусу",
+        "zh-cn": "包含错误文件夹"
+      },
       "1.18.54": {
         "en": "add '.' to folders in config selection",
         "de": "fügen sie '.' in ordner in config auswahl",
@@ -80,19 +93,6 @@
         "pl": "Czytaj i wysyłaj zawsze wszystkie atrybuty światła",
         "uk": "Читайте і надсилайте завжди всі атрибути світла",
         "zh-cn": "读取并发送所有光属性"
-      },
-      "1.18.48": {
-        "en": "Set the selection to usedNames (application and device)",
-        "de": "Setzen Sie die Auswahl auf gebrauchtNamen (Anwendung und Gerät)",
-        "ru": "Установите выбор используемых имен (приложения и устройства)",
-        "pt": "Define a seleção para nomes usados (aplicação e dispositivo)",
-        "nl": "De selectie instellen op gebruikte Namen (toepassing en apparaat)",
-        "fr": "Définissez la sélection aux noms utilisés (application et périphérique)",
-        "it": "Impostare la selezione per i nomi utilizzati (applicazione e dispositivo)",
-        "es": "Establecer la selección para utilizarNames (aplicación y dispositivo)",
-        "pl": "Ustaw wybór na używane Nazwy (aplikacja i urządzenie)",
-        "uk": "Налаштуйте вибір для використанняНазви (застосування та пристрій)",
-        "zh-cn": "将选中区域设定为使用的名称( 应用程序和设备)"
       }
     },
     "titleLang": {
