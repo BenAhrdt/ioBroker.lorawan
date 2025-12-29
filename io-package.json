@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.51",
+    "version": "1.18.52",
     "news": {
+      "1.18.52": {
+        "en": "add possibility to set Devicesuffix in LoraWAN States",
+        "de": "möglichkeit hinzufügen, Devicesuffix in LoraWAN-Staaten einzustellen",
+        "ru": "добавить возможность установки Devicesuffix в штатах LoraWAN",
+        "pt": "adicionar possibilidade de definir Dispositivosuffix nos Estados de LoraWAN",
+        "nl": "voeg mogelijkheid toe om Devicesuffix in LoraWAN Staten in te stellen",
+        "fr": "ajouter la possibilité de définir Devicesuffix dans les États de LoraWAN",
+        "it": "aggiungere la possibilità di impostare Devicesuffix in LoraWAN States",
+        "es": "añadir posibilidad para establecer Dispositivosuffix en Estados LoraWAN",
+        "pl": "dodać możliwość ustawienia Devicesuffix w państwach LoraWAN",
+        "uk": "додати можливість встановити Devicesuffix в LoraWAN",
+        "zh-cn": "添加在 LoraWAN 州设置设备后缀的可能性"
+      },
       "1.18.51": {
         "en": "add \"Temperatur\" to autmatic assign",
         "de": "\"Temperatur\" zu autmatic assign hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "CustomSend został rozszerzony o opcję bezpośredniego pchnięcia.",
         "uk": "CustomSend було розширено, щоб включити опцію прямого натискання.",
         "zh-cn": "CustomSend已被扩展,以包括直接推动的选择."
-      },
-      "1.18.45": {
-        "en": "improve showing Adapter state (yellw / green)",
-        "de": "verbesserung des Adapterzustands (gelb / grün)",
-        "ru": "улучшение отображения состояния адаптера (yellw / green)",
-        "pt": "melhorar mostrando o estado do adaptador (Yellw / verde)",
-        "nl": "verbetering van de stand van de adapter (geel / groen)",
-        "fr": "améliorer l'état de l'adaptateur (yellw / vert)",
-        "it": "migliorare lo stato dell'adattatore di visualizzazione (yellw / green)",
-        "es": "mejorar la visualización del estado del adaptador (yellw / verde)",
-        "pl": "poprawić wyświetlanie stanu Adapter (yellw / green)",
-        "uk": "поліпшення демонстрації стану адаптера (жовтий / зелений)",
-        "zh-cn": "改进显示适配器状态( yallw / 绿色)"
       }
     },
     "titleLang": {
