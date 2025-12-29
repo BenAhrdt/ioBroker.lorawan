@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.52",
+    "version": "1.18.53",
     "news": {
+      "1.18.53": {
+        "en": "add possibility to add folders to",
+        "de": "die möglichkeit hinzufügen von ordnern",
+        "ru": "добавить возможность добавления папок в",
+        "pt": "adicionar a possibilidade de adicionar pastas",
+        "nl": "mogelijkheid toevoegen om mappen toe te voegen aan",
+        "fr": "ajouter la possibilité d'ajouter des dossiers à",
+        "it": "aggiungere la possibilità di aggiungere cartelle a",
+        "es": "añadir la posibilidad de añadir carpetas para",
+        "pl": "dodać możliwość dodawania folderów do",
+        "uk": "додати можливість додати папки до",
+        "zh-cn": "添加文件夹到"
+      },
       "1.18.52": {
         "en": "add possibility to set Devicesuffix in LoraWAN States",
         "de": "möglichkeit hinzufügen, Devicesuffix in LoraWAN-Staaten einzustellen",
@@ -80,19 +93,6 @@
         "pl": "* CustomSend staje się możliwością dla różnych kolejności parametrów.\nładowność InHex, port, potwierdzone, priorytet, push (push jest zapisany jako ciąg 'push')",
         "uk": "* Користувальницька робота на різних параметрах.\nзавантажити InHex, порт, підтверджений, пріоритет, штовхач (подушка написана як рядок 'push')",
         "zh-cn": "* CustomSend成为不同参数顺序的可能.\n有效载荷 InHex, 端口, 确认, 优先级, 推( 推为字符串“ push” )"
-      },
-      "1.18.46": {
-        "en": "CustomSend has been extended to include the option of direct push.",
-        "de": "CustomSend wurde erweitert, um die Möglichkeit der direkten Push.",
-        "ru": "CustomSend был расширен, чтобы включить возможность прямого толчка.",
-        "pt": "O CustomSend foi estendido para incluir a opção de push direto.",
-        "nl": "AangepastVerzenden is uitgebreid met de optie van directe push.",
-        "fr": "CustomSend a été étendu pour inclure l'option de poussée directe.",
-        "it": "CustomSend è stato esteso per includere l'opzione di spinta diretta.",
-        "es": "CustomSend se ha ampliado para incluir la opción de empuje directo.",
-        "pl": "CustomSend został rozszerzony o opcję bezpośredniego pchnięcia.",
-        "uk": "CustomSend було розширено, щоб включити опцію прямого натискання.",
-        "zh-cn": "CustomSend已被扩展,以包括直接推动的选择."
       }
     },
     "titleLang": {
