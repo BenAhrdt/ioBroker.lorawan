@@ -1429,15 +1429,17 @@ class Lorawan extends utils.Adapter {
                     try {
                         let myCount = 0;
                         const states = [];
+                        const possibleTypes = { state: true };
                         if (obj.command === 'getStatesForConfig') {
                             states[myCount] = { label: '* (Wildcard)', value: '*' };
                             myCount++;
+                            possibleTypes.folder = true;
                         }
                         const currentStates = {};
                         const adapterObjects = await this.getAdapterObjectsAsync();
                         for (const adapterObject of Object.values(adapterObjects)) {
                             if (
-                                adapterObject.type === 'state' &&
+                                possibleTypes[adapterObject.type] === true &&
                                 (adapterObject._id.includes(obj.message.application) ||
                                     obj.message.application === '*') &&
                                 (adapterObject._id.includes(obj.message.device) || obj.message.device === '*') &&

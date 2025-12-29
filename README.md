@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) add possibility to add folders to 
+
 ### 1.18.52 (2025-12-29)
 * (BenAhrdt) add possibility to set Devicesuffix in LoraWAN States
 
