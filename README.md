@@ -23,6 +23,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) remoove namespace twice remooved
+* (BenAhrdt) serialize getConfigStates
+
 ### 1.18.55 (2025-12-29)
 * (BenAhrdt) bugfix folderinclusion
 

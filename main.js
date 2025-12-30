@@ -48,6 +48,10 @@ class Lorawan extends utils.Adapter {
             hash: 'f3988f71e0d6248fbf690c414bcb46b0500c3a8b3ec9adb9c66be2774ec12291',
             salt: 'LoRaWANBeScJoFr',
         };
+
+        // Serialize getStateConfig
+        this._configQueue = Promise.resolve();
+        this._changeInfoCache = new Map();
     }
 
     onFileChange(_id, _fileName, _size) {
@@ -1427,54 +1431,56 @@ class Lorawan extends utils.Adapter {
                     }
                 } else if (obj.command === 'getStatesForConfig' || obj.command === 'getStatesForClimateConfig') {
                     try {
-                        let myCount = 0;
-                        const states = [];
-                        const possibleTypes = { state: true };
-                        if (obj.command === 'getStatesForConfig') {
-                            states[myCount] = { label: '* (Wildcard)', value: '*' };
-                            myCount++;
-                            possibleTypes.folder = true;
-                        }
-                        const currentStates = {};
-                        const adapterObjects = await this.getAdapterObjectsAsync();
-                        for (const adapterObject of Object.values(adapterObjects)) {
-                            if (
-                                possibleTypes[adapterObject.type] === true &&
-                                (adapterObject._id.includes(obj.message.application) ||
-                                    obj.message.application === '*') &&
-                                (adapterObject._id.includes(obj.message.device) || obj.message.device === '*') &&
-                                (adapterObject._id.includes(obj.message.folder) ||
-                                    (obj.message.folder === '*' &&
-                                        (adapterObject._id.includes('uplink.decoded') ||
-                                            adapterObject._id.includes('downlink.control'))))
-                            ) {
-                                adapterObject._id = this.removeNamespace(adapterObject._id);
-                                const changeInfo = await this.getChangeInfo(adapterObject._id);
-                                //if uplink decoded => changed State with folder
-                                let fullStatename = changeInfo?.changedState;
-                                if (changeInfo?.allElements.length > 6) {
-                                    fullStatename = '';
-                                    for (let i = 5; i < changeInfo?.allElements.length; i++) {
-                                        if (fullStatename !== '') {
-                                            fullStatename += '.';
+                        await this.runSerializedMessage(async () => {
+                            let myCount = 0;
+                            const states = [];
+                            const possibleTypes = { state: true };
+                            if (obj.command === 'getStatesForConfig') {
+                                states[myCount] = { label: '* (Wildcard)', value: '*' };
+                                myCount++;
+                                possibleTypes.folder = true;
+                            }
+                            const currentStates = {};
+                            const adapterObjects = await this.getAdapterObjectsAsync();
+                            for (const adapterObject of Object.values(adapterObjects)) {
+                                if (
+                                    possibleTypes[adapterObject.type] === true &&
+                                    (adapterObject._id.includes(obj.message.application) ||
+                                        obj.message.application === '*') &&
+                                    (adapterObject._id.includes(obj.message.device) || obj.message.device === '*') &&
+                                    (adapterObject._id.includes(obj.message.folder) ||
+                                        (obj.message.folder === '*' &&
+                                            (adapterObject._id.includes('uplink.decoded') ||
+                                                adapterObject._id.includes('downlink.control'))))
+                                ) {
+                                    //adapterObject._id = this.removeNamespace(adapterObject._id); remooved 30.122025
+                                    const changeInfo = await this.getChangeInfoCached(adapterObject._id);
+                                    //if uplink decoded => changed State with folder
+                                    let fullStatename = changeInfo?.changedState;
+                                    if (changeInfo?.allElements.length > 6) {
+                                        fullStatename = '';
+                                        for (let i = 5; i < changeInfo?.allElements.length; i++) {
+                                            if (fullStatename !== '') {
+                                                fullStatename += '.';
+                                            }
+                                            fullStatename += changeInfo?.allElements[i];
                                         }
-                                        fullStatename += changeInfo?.allElements[i];
+                                    }
+                                    if (adapterObject.type === 'folder') {
+                                        fullStatename += '.';
+                                    }
+                                    const label = fullStatename;
+                                    const value = fullStatename;
+                                    if (!currentStates[value]) {
+                                        currentStates[value] = value;
+                                        states[myCount] = { label: label, value: value };
+                                        myCount++;
                                     }
                                 }
-                                if (adapterObject.type === 'folder') {
-                                    fullStatename += '.';
-                                }
-                                const label = fullStatename;
-                                const value = fullStatename;
-                                if (!currentStates[value]) {
-                                    currentStates[value] = value;
-                                    states[myCount] = { label: label, value: value };
-                                    myCount++;
-                                }
                             }
-                        }
-                        states.sort(this.sortByLabel);
-                        this.sendTo(obj.from, obj.command, states, obj.callback);
+                            states.sort(this.sortByLabel);
+                            this.sendTo(obj.from, obj.command, states, obj.callback);
+                        });
                     } catch (error) {
                         this.log.error(error);
                     }
@@ -1612,6 +1618,36 @@ class Lorawan extends utils.Adapter {
             }
         }
         return false;
+    }
+
+    async runSerializedMessage(fn) {
+        const run = async () => fn();
+
+        // Queue verlängern
+        const next = this._configQueue.then(run, run);
+
+        // Queue immer weiterführen, Fehler schlucken
+        this._configQueue = next.catch(() => {});
+
+        return next;
+    }
+
+    async getChangeInfoCached(id) {
+        const cleanId = this.removeNamespace(id);
+        const now = Date.now();
+
+        const cached = this._changeInfoCache.get(cleanId);
+        if (cached && cached.expires > now) {
+            return cached.value;
+        }
+
+        const value = await this.getChangeInfo(cleanId);
+        this._changeInfoCache.set(cleanId, {
+            value,
+            expires: now + 30_000, // 10 Sekunden
+        });
+
+        return value;
     }
 }
 
