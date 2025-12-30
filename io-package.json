@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.55",
+    "version": "1.18.56",
     "news": {
+      "1.18.56": {
+        "en": "remoove namespace twice remooved\nserialize getConfigStates",
+        "de": "remoove namespace zweimal remooved\nserialisieren getConfigStates",
+        "ru": "remoove namespace дважды удаляется\nсерийный GetConfigStates",
+        "pt": "remoove namespace duas vezes remooved\nserialize getConfigStates",
+        "nl": "naamruimte twee keer verplaatsen\nserialiseren getConfigStates",
+        "fr": "remove namespace deux fois removed\nsérialiser getConfigStates",
+        "it": "rimoove namespace due volte rimuovi\nserializzare ottenereConfigStates",
+        "es": "remoove namespace dos remooved\nserialize getConfigStates",
+        "pl": "remoove namespace two remooved\nserialize getConfigurations",
+        "uk": "remoove namespace двічі remooved\nсертифіковано getConfigStates",
+        "zh-cn": "两次重新移动命名空间\n序列化获取配置状态"
+      },
       "1.18.55": {
         "en": "bugfix folderinclusion",
         "de": "bugfix ordnerinclusion",
@@ -80,19 +93,6 @@
         "pl": "filtr w trybie debugowania (narzędzie dev)",
         "uk": "фільтр в режимі Debug (розробний інструмент)",
         "zh-cn": "调试模式中的过滤器( dev 工具)"
-      },
-      "1.18.49": {
-        "en": "Read and send always all light attributes",
-        "de": "Lesen und senden Sie immer alle Licht-Attribute",
-        "ru": "Читайте и отправляйте всегда все световые атрибуты",
-        "pt": "Ler e enviar sempre todos os atributos de luz",
-        "nl": "Lees en stuur altijd alle lichtattributen",
-        "fr": "Lire et envoyer toujours tous les attributs de lumière",
-        "it": "Leggi e invia sempre tutti gli attributi leggeri",
-        "es": "Lea y envíe siempre todos los atributos de luz",
-        "pl": "Czytaj i wysyłaj zawsze wszystkie atrybuty światła",
-        "uk": "Читайте і надсилайте завжди всі атрибути світла",
-        "zh-cn": "读取并发送所有光属性"
       }
     },
     "titleLang": {
