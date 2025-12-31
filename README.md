@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) serialize and cache the config messagens
+
 ### 1.18.57 (2025-12-31)
 * (BenAhrdt) cache Infos in config for more performance
 

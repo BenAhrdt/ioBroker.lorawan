@@ -1361,78 +1361,84 @@ class Lorawan extends utils.Adapter {
                     obj.command === 'getApplicationsForClimateModeConfig'
                 ) {
                     try {
-                        let myCount = 0;
-                        const applications = [];
-                        if (obj.command === 'getApplicationsForConfig') {
-                            applications[myCount] = { label: '* (Wildcard)', value: '*' };
-                            myCount++;
-                        } else if (obj.command === 'getApplicationsForClimateModeConfig') {
-                            applications[myCount] = { label: '* Not Present (Virtual)', value: 'NotPresent' };
-                            myCount++;
-                        }
-                        const currentApplications = {};
-                        const adapterObjects = await this.getAdapterObjectsCached();
-                        for (const adapterObject of Object.values(adapterObjects)) {
-                            if (adapterObject.type === 'folder' && adapterObject._id.endsWith('uplink')) {
-                                adapterObject._id = this.removeNamespace(adapterObject._id);
-                                const changeInfo = await this.getChangeInfoCached(adapterObject._id);
-                                const label = changeInfo?.usedApplicationName;
-                                const value = changeInfo?.applicationId;
-                                if (!currentApplications[value]) {
-                                    currentApplications[value] = value;
-                                    applications[myCount] = { label: label, value: value };
-                                    myCount++;
+                        await this.runSerializedMessages(async () => {
+                            let myCount = 0;
+                            const applications = [];
+                            if (obj.command === 'getApplicationsForConfig') {
+                                applications[myCount] = { label: '* (Wildcard)', value: '*' };
+                                myCount++;
+                            } else if (obj.command === 'getApplicationsForClimateModeConfig') {
+                                applications[myCount] = { label: '* Not Present (Virtual)', value: 'NotPresent' };
+                                myCount++;
+                            }
+                            const currentApplications = {};
+                            const adapterObjects = await this.getAdapterObjectsCached();
+                            for (const adapterObject of Object.values(adapterObjects)) {
+                                if (adapterObject.type === 'folder' && adapterObject._id.endsWith('uplink')) {
+                                    adapterObject._id = this.removeNamespace(adapterObject._id);
+                                    const changeInfo = await this.getChangeInfoCached(adapterObject._id);
+                                    const label = changeInfo?.usedApplicationName;
+                                    const value = changeInfo?.applicationId;
+                                    if (!currentApplications[value]) {
+                                        currentApplications[value] = value;
+                                        applications[myCount] = { label: label, value: value };
+                                        myCount++;
+                                    }
                                 }
                             }
-                        }
-                        applications.sort(this.sortByLabel);
-                        this.sendTo(obj.from, obj.command, applications, obj.callback);
+                            applications.sort(this.sortByLabel);
+                            this.sendTo(obj.from, obj.command, applications, obj.callback);
+                        });
                     } catch (error) {
                         this.log.error(error);
                     }
                 } else if (obj.command === 'getDevicesForConfig' || obj.command === 'getDevicesForClimateConfig') {
                     try {
-                        let myCount = 0;
-                        const devices = [];
-                        if (obj.command === 'getDevicesForConfig') {
-                            devices[myCount] = { label: '* (Wildcard)', value: '*' };
-                            myCount++;
-                        }
-                        const adapterObjects = await this.getAdapterObjectsCached();
-                        for (const adapterObject of Object.values(adapterObjects)) {
-                            if (
-                                adapterObject.type === 'folder' &&
-                                (adapterObject._id.includes(obj.message.application) ||
-                                    obj.message.application === '*') &&
-                                adapterObject._id.endsWith('uplink')
-                            ) {
-                                adapterObject._id = this.removeNamespace(adapterObject._id);
-                                const changeInfo = await this.getChangeInfoCached(adapterObject._id);
-                                const label = changeInfo?.usedDeviceId;
-                                const value = changeInfo?.deviceEUI;
-                                devices[myCount] = { label: label, value: value };
+                        await this.runSerializedMessages(async () => {
+                            let myCount = 0;
+                            const devices = [];
+                            if (obj.command === 'getDevicesForConfig') {
+                                devices[myCount] = { label: '* (Wildcard)', value: '*' };
                                 myCount++;
                             }
-                        }
-                        devices.sort(this.sortByLabel);
-                        this.sendTo(obj.from, obj.command, devices, obj.callback);
+                            const adapterObjects = await this.getAdapterObjectsCached();
+                            for (const adapterObject of Object.values(adapterObjects)) {
+                                if (
+                                    adapterObject.type === 'folder' &&
+                                    (adapterObject._id.includes(obj.message.application) ||
+                                        obj.message.application === '*') &&
+                                    adapterObject._id.endsWith('uplink')
+                                ) {
+                                    adapterObject._id = this.removeNamespace(adapterObject._id);
+                                    const changeInfo = await this.getChangeInfoCached(adapterObject._id);
+                                    const label = changeInfo?.usedDeviceId;
+                                    const value = changeInfo?.deviceEUI;
+                                    devices[myCount] = { label: label, value: value };
+                                    myCount++;
+                                }
+                            }
+                            devices.sort(this.sortByLabel);
+                            this.sendTo(obj.from, obj.command, devices, obj.callback);
+                        });
                     } catch (error) {
                         this.log.error(error);
                     }
                 } else if (obj.command === 'getFoldersForConfig') {
                     try {
-                        const devices = [
-                            { label: '* (Wildcard)', value: '*' },
-                            { label: 'uplink.decoded', value: 'uplink.decoded' },
-                            { label: 'downlink.control', value: 'downlink.control' },
-                        ];
-                        this.sendTo(obj.from, obj.command, devices, obj.callback);
+                        await this.runSerializedMessages(async () => {
+                            const devices = [
+                                { label: '* (Wildcard)', value: '*' },
+                                { label: 'uplink.decoded', value: 'uplink.decoded' },
+                                { label: 'downlink.control', value: 'downlink.control' },
+                            ];
+                            this.sendTo(obj.from, obj.command, devices, obj.callback);
+                        });
                     } catch (error) {
                         this.log.error(error);
                     }
                 } else if (obj.command === 'getStatesForConfig' || obj.command === 'getStatesForClimateConfig') {
                     try {
-                        await this.runSerializedStateMessage(async () => {
+                        await this.runSerializedMessages(async () => {
                             let myCount = 0;
                             const states = [];
                             const possibleTypes = { state: true };
@@ -1621,7 +1627,7 @@ class Lorawan extends utils.Adapter {
         return false;
     }
 
-    async runSerializedStateMessage(fn) {
+    async runSerializedMessages(fn) {
         const run = async () => fn();
 
         // Queue verlängern
