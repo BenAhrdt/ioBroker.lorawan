@@ -860,7 +860,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 ## License
 MIT License
 
-Copyright (c) 2025 BenAhrdt <bsahrdt@gmail.com>  
+Copyright (c) 2025-2026 BenAhrdt <bsahrdt@gmail.com>  
 Copyright (c) 2025 Joerg Froehner <LoraWan@hafenmeister.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
