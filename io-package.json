@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.56",
+    "version": "1.18.57",
     "news": {
+      "1.18.57": {
+        "en": "cache Infos in config for more performance",
+        "de": "cache Infos in config für mehr Leistung",
+        "ru": "cache Infos in Config для повышения производительности",
+        "pt": "informações de cache em configuração para mais desempenho",
+        "nl": "cache-informatie in configuratie voor meer prestaties",
+        "fr": "cache Infos en configuration pour plus de performances",
+        "it": "cache Infos in config per maggiori prestazioni",
+        "es": "cache Infos en config para más rendimiento",
+        "pl": "cache Infos w konfiguracji dla większej wydajności",
+        "uk": "cache Infos в конфігурації для більшої продуктивності",
+        "zh-cn": "为更多性能在配置中缓存信息"
+      },
       "1.18.56": {
         "en": "remoove namespace twice remooved\nserialize getConfigStates",
         "de": "remoove namespace zweimal remooved\nserialisieren getConfigStates",
@@ -80,19 +93,6 @@
         "pl": "dodaj \"Temperatur\" do przypisania automatycznego",
         "uk": "додати \"Temperatur\" до тематичного знака",
         "zh-cn": "在自定义中添加“临时”"
-      },
-      "1.18.50": {
-        "en": "filter in Debug mode (dev tool)",
-        "de": "filter im Debug-Modus (dev tool)",
-        "ru": "фильтр в режиме Debug (dev tool)",
-        "pt": "filtro no modo de depuração (ferramenta de dev)",
-        "nl": "filter in debugmodus (dev tool)",
-        "fr": "filtre en mode Debug (outil dv)",
-        "it": "filtro in modalità Debug (attrezzo di sviluppo)",
-        "es": "filtro en modo Debug (herramienta dev)",
-        "pl": "filtr w trybie debugowania (narzędzie dev)",
-        "uk": "фільтр в режимі Debug (розробний інструмент)",
-        "zh-cn": "调试模式中的过滤器( dev 工具)"
       }
     },
     "titleLang": {
