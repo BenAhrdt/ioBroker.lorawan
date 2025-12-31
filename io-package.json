@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.57",
+    "version": "1.18.58",
     "news": {
+      "1.18.58": {
+        "en": "serialize and cache the config messagens",
+        "de": "serialisieren und kache die config messagens",
+        "ru": "сериализировать и кэшировать config messagens",
+        "pt": "serialize e cache as mensagens de configuração",
+        "nl": "serialiseren en cache de config messages",
+        "fr": "sérialisez et cachez les messages de configuration",
+        "it": "serializzare e memorizzare i messaggi di configurazione",
+        "es": "serialize y cache los mensajes de config",
+        "pl": "serializuj i buforuj wiadomości konfiguracyjne",
+        "uk": "послідовність і кешування конфігураційних повідомлень",
+        "zh-cn": "序列化和缓存配置信件"
+      },
       "1.18.57": {
         "en": "cache Infos in config for more performance",
         "de": "cache Infos in config für mehr Leistung",
@@ -80,19 +93,6 @@
         "pl": "dodać możliwość ustawienia Devicesuffix w państwach LoraWAN",
         "uk": "додати можливість встановити Devicesuffix в LoraWAN",
         "zh-cn": "添加在 LoraWAN 州设置设备后缀的可能性"
-      },
-      "1.18.51": {
-        "en": "add \"Temperatur\" to autmatic assign",
-        "de": "\"Temperatur\" zu autmatic assign hinzufügen",
-        "ru": "добавить \"Temperatur\" в аутматическое назначение",
-        "pt": "adicionar \"Temperatur\" à atribuição autmática",
-        "nl": "\"Temperatur\" toevoegen aan autmatisch toewijzen",
-        "fr": "ajouter \"Temperatur\" à l'attribut autmatique",
-        "it": "aggiungere \"Temperatur\" all'assegnazione autmatica",
-        "es": "añadir \"Temperatur\" a la asignación autmática",
-        "pl": "dodaj \"Temperatur\" do przypisania automatycznego",
-        "uk": "додати \"Temperatur\" до тематичного знака",
-        "zh-cn": "在自定义中添加“临时”"
       }
     },
     "titleLang": {
