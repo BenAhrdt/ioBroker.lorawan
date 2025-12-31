@@ -52,6 +52,7 @@ class Lorawan extends utils.Adapter {
         // Serialize getStateConfig
         this._configQueue = Promise.resolve();
         this._changeInfoCache = new Map();
+        this._adapterObjectsCache = null;
     }
 
     onFileChange(_id, _fileName, _size) {
@@ -1370,11 +1371,11 @@ class Lorawan extends utils.Adapter {
                             myCount++;
                         }
                         const currentApplications = {};
-                        const adapterObjects = await this.getAdapterObjectsAsync();
+                        const adapterObjects = await this.getAdapterObjectsCached();
                         for (const adapterObject of Object.values(adapterObjects)) {
                             if (adapterObject.type === 'folder' && adapterObject._id.endsWith('uplink')) {
                                 adapterObject._id = this.removeNamespace(adapterObject._id);
-                                const changeInfo = await this.getChangeInfo(adapterObject._id);
+                                const changeInfo = await this.getChangeInfoCached(adapterObject._id);
                                 const label = changeInfo?.usedApplicationName;
                                 const value = changeInfo?.applicationId;
                                 if (!currentApplications[value]) {
@@ -1397,7 +1398,7 @@ class Lorawan extends utils.Adapter {
                             devices[myCount] = { label: '* (Wildcard)', value: '*' };
                             myCount++;
                         }
-                        const adapterObjects = await this.getAdapterObjectsAsync();
+                        const adapterObjects = await this.getAdapterObjectsCached();
                         for (const adapterObject of Object.values(adapterObjects)) {
                             if (
                                 adapterObject.type === 'folder' &&
@@ -1406,7 +1407,7 @@ class Lorawan extends utils.Adapter {
                                 adapterObject._id.endsWith('uplink')
                             ) {
                                 adapterObject._id = this.removeNamespace(adapterObject._id);
-                                const changeInfo = await this.getChangeInfo(adapterObject._id);
+                                const changeInfo = await this.getChangeInfoCached(adapterObject._id);
                                 const label = changeInfo?.usedDeviceId;
                                 const value = changeInfo?.deviceEUI;
                                 devices[myCount] = { label: label, value: value };
@@ -1431,7 +1432,7 @@ class Lorawan extends utils.Adapter {
                     }
                 } else if (obj.command === 'getStatesForConfig' || obj.command === 'getStatesForClimateConfig') {
                     try {
-                        await this.runSerializedMessage(async () => {
+                        await this.runSerializedStateMessage(async () => {
                             let myCount = 0;
                             const states = [];
                             const possibleTypes = { state: true };
@@ -1441,7 +1442,7 @@ class Lorawan extends utils.Adapter {
                                 possibleTypes.folder = true;
                             }
                             const currentStates = {};
-                            const adapterObjects = await this.getAdapterObjectsAsync();
+                            const adapterObjects = await this.getAdapterObjectsCached();
                             for (const adapterObject of Object.values(adapterObjects)) {
                                 if (
                                     possibleTypes[adapterObject.type] === true &&
@@ -1620,7 +1621,7 @@ class Lorawan extends utils.Adapter {
         return false;
     }
 
-    async runSerializedMessage(fn) {
+    async runSerializedStateMessage(fn) {
         const run = async () => fn();
 
         // Queue verlängern
@@ -1633,19 +1634,35 @@ class Lorawan extends utils.Adapter {
     }
 
     async getChangeInfoCached(id) {
-        const cleanId = this.removeNamespace(id);
         const now = Date.now();
 
-        const cached = this._changeInfoCache.get(cleanId);
+        const cached = this._changeInfoCache.get(id);
         if (cached && cached.expires > now) {
             return cached.value;
         }
 
-        const value = await this.getChangeInfo(cleanId);
-        this._changeInfoCache.set(cleanId, {
+        const value = await this.getChangeInfo(id);
+        this._changeInfoCache.set(id, {
             value,
             expires: now + 30_000, // 10 Sekunden
         });
+
+        return value;
+    }
+
+    async getAdapterObjectsCached() {
+        const now = Date.now();
+
+        if (this._adapterObjectsCache && this._adapterObjectsCache.expires > now) {
+            return this._adapterObjectsCache.value;
+        }
+
+        const value = await this.getAdapterObjectsAsync();
+
+        this._adapterObjectsCache = {
+            value,
+            expires: now + 30_000, // z.B. 30s
+        };
 
         return value;
     }
