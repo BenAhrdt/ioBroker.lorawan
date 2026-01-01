@@ -846,6 +846,24 @@ class Lorawan extends utils.Adapter {
                                         native: {},
                                     });
                                     await this.setState(id, '', true);
+                                } else if (words[1] === 'chunk') {
+                                    this.extendObject('bridge.debug', {
+                                        type: 'folder',
+                                        common: { name: 'Debugfunctions of bridge' },
+                                        native: {},
+                                    });
+                                    this.extendObject('bridge.debug.chunk', {
+                                        type: 'state',
+                                        common: {
+                                            name: 'chunk of parallel works',
+                                            type: 'number',
+                                            read: true,
+                                            write: true,
+                                            def: 32,
+                                        },
+                                        native: {},
+                                    });
+                                    await this.setState(id, '', true);
                                 }
                             } else {
                                 let notificationId = `${this.namespace}.${this.bridge?.Words.notification}${this.bridge?.GeneralId}`;
