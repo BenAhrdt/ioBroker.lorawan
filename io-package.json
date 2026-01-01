@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.61",
+    "version": "1.18.62",
     "news": {
+      "1.18.62": {
+        "en": "Promise the foreign functions in Promise.all",
+        "de": "Versprechen Sie die ausländischen Funktionen in Promise.all",
+        "ru": "Обещайте иностранные функции в Promise.all",
+        "pt": "Prometa as funções estrangeiras em Promise.all",
+        "nl": "Beloof de buitenlandse functies in Promise.all",
+        "fr": "Promets les fonctions étrangères dans Promise.all",
+        "it": "Promettere le funzioni straniere in Promise.all",
+        "es": "Prométeme las funciones extranjeras en Promesa.todos",
+        "pl": "Obiecaj funkcje zagraniczne w Promise.all",
+        "uk": "Використовуйте іноземні функції в Promise.all",
+        "zh-cn": "在保证中保证外国职能"
+      },
       "1.18.61": {
         "en": "set chunksize to 32",
         "de": "set chunksize auf 32",
@@ -80,19 +93,6 @@
         "pl": "remoove namespace two remooved\nserialize getConfigurations",
         "uk": "remoove namespace двічі remooved\nсертифіковано getConfigStates",
         "zh-cn": "两次重新移动命名空间\n序列化获取配置状态"
-      },
-      "1.18.55": {
-        "en": "bugfix folderinclusion",
-        "de": "bugfix ordnerinclusion",
-        "ru": "bugfix включение папок",
-        "pt": "inclusão de pastas de correção de erros",
-        "nl": "bugfix-map-integratie",
-        "fr": "bugfix dossierinclusion",
-        "it": "bugfix folderinclusione",
-        "es": "carpeta bugfixinclusion",
-        "pl": "włączenie folderu bugfix",
-        "uk": "папка прикусу",
-        "zh-cn": "包含错误文件夹"
       }
     },
     "titleLang": {
