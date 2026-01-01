@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.62",
+    "version": "1.18.63",
     "news": {
+      "1.18.63": {
+        "en": "return to await calls in checkAll (bridge)",
+        "de": "zurück zu warten Anrufe im Check Alle (Brücke)",
+        "ru": "возвращение в ожидании звонков в чек Все (мост)",
+        "pt": "retornar para aguardar chamadas em cheque Todos (ponte)",
+        "nl": "terug te keren naar wachten gesprekken in check Alle (brug)",
+        "fr": "retour à attendre les appels en contrôle Tous (pont)",
+        "it": "ritorno in attesa chiamate in controllo Tutti (ponte)",
+        "es": "volver a esperar llamadas en cheque Todo (puente)",
+        "pl": "powrót czekać rozmowy w czeku Wszystkie (most)",
+        "uk": "поверніть на чек дзвінків Всі (місто)",
+        "zh-cn": "返回等待呼叫检查 全部(桥梁)"
+      },
       "1.18.62": {
         "en": "Promise the foreign functions in Promise.all",
         "de": "Versprechen Sie die ausländischen Funktionen in Promise.all",
@@ -80,19 +93,6 @@
         "pl": "cache Infos w konfiguracji dla większej wydajności",
         "uk": "cache Infos в конфігурації для більшої продуктивності",
         "zh-cn": "为更多性能在配置中缓存信息"
-      },
-      "1.18.56": {
-        "en": "remoove namespace twice remooved\nserialize getConfigStates",
-        "de": "remoove namespace zweimal remooved\nserialisieren getConfigStates",
-        "ru": "remoove namespace дважды удаляется\nсерийный GetConfigStates",
-        "pt": "remoove namespace duas vezes remooved\nserialize getConfigStates",
-        "nl": "naamruimte twee keer verplaatsen\nserialiseren getConfigStates",
-        "fr": "remove namespace deux fois removed\nsérialiser getConfigStates",
-        "it": "rimoove namespace due volte rimuovi\nserializzare ottenereConfigStates",
-        "es": "remoove namespace dos remooved\nserialize getConfigStates",
-        "pl": "remoove namespace two remooved\nserialize getConfigurations",
-        "uk": "remoove namespace двічі remooved\nсертифіковано getConfigStates",
-        "zh-cn": "两次重新移动命名空间\n序列化获取配置状态"
       }
     },
     "titleLang": {
