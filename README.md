@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) bugfix errorlogging
+
 ### 1.18.59 (2026-01-01)
 * (BenAhrdt) Chuck checkAllStatesForBridgeWork for better performance
 
