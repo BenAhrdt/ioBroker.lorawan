@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.60",
+    "version": "1.18.61",
     "news": {
+      "1.18.61": {
+        "en": "set chunksize to 32",
+        "de": "set chunksize auf 32",
+        "ru": "устанавливает размер до 32",
+        "pt": "definir o tamanho do bloco como 32",
+        "nl": "blokgrootte instellen op 32",
+        "fr": "définir la taille des morceaux à 32",
+        "it": "set chunksize a 32",
+        "es": "set chunksize a 32",
+        "pl": "ustawiony rozmiar chunksize do 32",
+        "uk": "встановити chunksize до 32",
+        "zh-cn": "设置为32块"
+      },
       "1.18.60": {
         "en": "bugfix errorlogging",
         "de": "fehlerbehebung von fehlern",
@@ -80,19 +93,6 @@
         "pl": "włączenie folderu bugfix",
         "uk": "папка прикусу",
         "zh-cn": "包含错误文件夹"
-      },
-      "1.18.54": {
-        "en": "add '.' to folders in config selection",
-        "de": "fügen sie '.' in ordner in config auswahl",
-        "ru": "добавить '.' в папки в настройках выбора",
-        "pt": "adicionar '.' às pastas na seleção de configuração",
-        "nl": "'.' toevoegen aan mappen in configuratieselectie",
-        "fr": "ajouter '.' aux dossiers dans la sélection de configuration",
-        "it": "aggiungere '.' alle cartelle nella selezione di configurazione",
-        "es": "añadir '.' a carpetas en la selección de configuración",
-        "pl": "dodaj '.' do folderów w zaznaczeniu konfiguracyjnym",
-        "uk": "додати '.' до папок у вибраному конфігурації",
-        "zh-cn": "在配置选中的文件夹中添加“. ”"
       }
     },
     "titleLang": {
