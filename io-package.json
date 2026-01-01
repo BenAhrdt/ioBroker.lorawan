@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.59",
+    "version": "1.18.60",
     "news": {
+      "1.18.60": {
+        "en": "bugfix errorlogging",
+        "de": "fehlerbehebung von fehlern",
+        "ru": "bugfix ошибка",
+        "pt": "erro de correção",
+        "nl": "bugfix foutloggen",
+        "fr": "bugfix errorlogging",
+        "it": "bugfix errorelogging",
+        "es": "error bugfixlogging",
+        "pl": "błąd bugfix",
+        "uk": "повідомлень про помилку",
+        "zh-cn": "错误修正错误日志"
+      },
       "1.18.59": {
         "en": "Chuck checkAllStatesForBridgeWork for better performance",
         "de": "Chuck-Check AllStatesForBridgeWork für bessere Leistung",
@@ -80,19 +93,6 @@
         "pl": "dodaj '.' do folderów w zaznaczeniu konfiguracyjnym",
         "uk": "додати '.' до папок у вибраному конфігурації",
         "zh-cn": "在配置选中的文件夹中添加“. ”"
-      },
-      "1.18.53": {
-        "en": "add possibility to add folders to",
-        "de": "die möglichkeit hinzufügen von ordnern",
-        "ru": "добавить возможность добавления папок в",
-        "pt": "adicionar a possibilidade de adicionar pastas",
-        "nl": "mogelijkheid toevoegen om mappen toe te voegen aan",
-        "fr": "ajouter la possibilité d'ajouter des dossiers à",
-        "it": "aggiungere la possibilità di aggiungere cartelle a",
-        "es": "añadir la posibilidad de añadir carpetas para",
-        "pl": "dodać możliwość dodawania folderów do",
-        "uk": "додати можливість додати папки до",
-        "zh-cn": "添加文件夹到"
       }
     },
     "titleLang": {
