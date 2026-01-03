@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.0",
+    "version": "1.19.1",
     "news": {
+      "1.19.1": {
+        "en": "bugfix device and replace debug logs for silly",
+        "de": "bugfix gerät und ersetzen debug protokolle für albern",
+        "ru": "bugfix-устройство и замена отладочных журналов на глупые",
+        "pt": "dispositivo de correção de bugs e registros de depuração de substituição para bobo",
+        "nl": "bugfix-apparaat en debug-logs vervangen voor domheid",
+        "fr": "bugfix périphérique et remplacer les journaux de débogage pour idiot",
+        "it": "dispositivo bugfix e sostituire i log di debug per sciocco",
+        "es": "dispositivo bugfix y reemplazar los registros de depuración para tontos",
+        "pl": "bugfix urządzenia i zastąpić logi debug dla głupi",
+        "uk": "пристрій для виправлення помилок і заміни журналів для silly",
+        "zh-cn": "错误修正设备并替换愚昧的调试日志"
+      },
       "1.19.0": {
         "en": "remove Bridgetype Smarthome\nadd firt possibility to generate devices from Bridge to Iob",
         "de": "bridgetype Smarthome entfernen\nfügen Sie firt Möglichkeit, Geräte von Bridge zu Iob zu generieren",
@@ -80,19 +93,6 @@
         "pl": "Chuck sprawdził Wszystkie państwa dla BridgeWork dla lepszej wydajności",
         "uk": "Перевірка качки AllStatesForBridgeWork для кращої продуктивності",
         "zh-cn": "查克检查 为更好的业绩而努力"
-      },
-      "1.18.58": {
-        "en": "serialize and cache the config messagens",
-        "de": "serialisieren und kache die config messagens",
-        "ru": "сериализировать и кэшировать config messagens",
-        "pt": "serialize e cache as mensagens de configuração",
-        "nl": "serialiseren en cache de config messages",
-        "fr": "sérialisez et cachez les messages de configuration",
-        "it": "serializzare e memorizzare i messaggi di configurazione",
-        "es": "serialize y cache los mensajes de config",
-        "pl": "serializuj i buforuj wiadomości konfiguracyjne",
-        "uk": "послідовність і кешування конфігураційних повідомлень",
-        "zh-cn": "序列化和缓存配置信件"
       }
     },
     "titleLang": {

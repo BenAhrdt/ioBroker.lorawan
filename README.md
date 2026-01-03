@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.19.1 (2026-01-03)
 * (BenAhrdt) bugfix device and replace debug logs for silly
 
 ### 1.19.0 (2026-01-03)
