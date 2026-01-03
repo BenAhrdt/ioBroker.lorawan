@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### 1.19.0 (2026-01-03)
+* (BenAhrdt) bugfix device and replace debug logs for silly
+
+### 1.19.0 (2026-01-03)
 * (BenAhrdt) remove Bridgetype Smarthome
 * (BenAhrdt) add firt possibility to generate devices from Bridge to Iob
 

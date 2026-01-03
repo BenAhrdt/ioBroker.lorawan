@@ -460,7 +460,7 @@ class Lorawan extends utils.Adapter {
     async onObjectChange(id, obj) {
         this.log.debug(`${id} is changed into ${JSON.stringify(obj.common)}`);
         const activeFunction = 'main.js - onObjectChange';
-        this.log.debug(`Function ${activeFunction} started.`);
+        this.log.silly(`Function ${activeFunction} started.`);
         try {
             // Only work, if bridge is activ
             if (this.bridge) {
@@ -903,7 +903,7 @@ class Lorawan extends utils.Adapter {
 
     async checkSendDownlinkWithUplink(id, options) {
         const activeFunction = 'main.js - checkSendDownlinkWithUplink';
-        this.log.debug(`Function ${activeFunction} started.`);
+        this.log.silly(`Function ${activeFunction} started.`);
         try {
             this.log.debug(`Check for send downlink with uplink.`);
             const changeInfo = await this.getChangeInfo(id, { withBestMatch: true });
@@ -933,7 +933,7 @@ class Lorawan extends utils.Adapter {
 
     async getNextSend(deviceDirectory) {
         const activeFunction = 'main.js - getNextSend';
-        this.log.debug(`Function ${activeFunction} started.`);
+        this.log.silly(`Function ${activeFunction} started.`);
         try {
             const idFolder = `${deviceDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.downlinkNextSend}`;
             return await this.getStateAsync(`${idFolder}.hex`);
@@ -944,7 +944,7 @@ class Lorawan extends utils.Adapter {
 
     async writeNextSend(changeInfo, payloadInHex) {
         const activeFunction = 'main.js - writeNextSend';
-        this.log.debug(`Function ${activeFunction} started.`);
+        this.log.silly(`Function ${activeFunction} started.`);
         try {
             const idFolderNextSend = `${changeInfo.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.downlinkNextSend}`;
             const stateId = `${idFolderNextSend}.hex`;
@@ -972,7 +972,7 @@ class Lorawan extends utils.Adapter {
     // Serialize functions
     async withLock(locksMap, key, fn) {
         const activeFunction = 'main.js - withLock';
-        this.log.debug(`Function ${activeFunction} started.`);
+        this.log.silly(`Function ${activeFunction} started.`);
         const prev = locksMap.get(key) || Promise.resolve();
 
         // fn erst starten, wenn prev fertig ist (egal ob ok oder Fehler)
@@ -998,7 +998,7 @@ class Lorawan extends utils.Adapter {
 
     async sendDownlink(topic, message, changeInfo) {
         const activeFunction = 'main.js - sendDownlink';
-        this.log.debug(`Function ${activeFunction} started.`);
+        this.log.silly(`Function ${activeFunction} started.`);
         try {
             await this.mqttClient?.publish(topic, message, {});
             const idFolderNextSend = `${changeInfo.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.downlinkNextSend}`;
@@ -1018,7 +1018,7 @@ class Lorawan extends utils.Adapter {
 
     getHexpayloadFromDownlink(downlinkmessage) {
         const activeFunction = 'main.js - getHexpayloadFromDownlink';
-        this.log.debug(`Function ${activeFunction} started.`);
+        this.log.silly(`Function ${activeFunction} started.`);
         try {
             let downlink = downlinkmessage;
             if (typeof downlink === 'string') {
