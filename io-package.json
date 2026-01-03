@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.1",
+    "version": "1.19.2",
     "news": {
+      "1.19.2": {
+        "en": "bugfix filldownlink",
+        "de": "fehlerbehebungen",
+        "ru": "bugfix filldownlink",
+        "pt": "ligação de preenchimento de correções de erros",
+        "nl": "bugfix filldownlink",
+        "fr": "bugfix remplissagelien",
+        "it": "bugfix filldownlink",
+        "es": "bugfix rellenolink",
+        "pl": "bugfix fishdownlink",
+        "uk": "javascript licenses api веб-сайт",
+        "zh-cn": "臭虫补全下行链路"
+      },
       "1.19.1": {
         "en": "bugfix device and replace debug logs for silly",
         "de": "bugfix gerät und ersetzen debug protokolle für albern",
@@ -80,19 +93,6 @@
         "pl": "błąd bugfix",
         "uk": "повідомлень про помилку",
         "zh-cn": "错误修正错误日志"
-      },
-      "1.18.59": {
-        "en": "Chuck checkAllStatesForBridgeWork for better performance",
-        "de": "Chuck-Check AllStatesForBridgeWork für bessere Leistung",
-        "ru": "Проверка Чака AllStatesForBridgeWork для повышения производительности",
-        "pt": "Chuck, verifica. AllStatesForBridgeTrabalhar para melhor desempenho",
-        "nl": "Chuck check AllStatesForBridgeWork voor betere prestaties",
-        "fr": "Contrôle Chuck AllStatesForBridgeWork pour une meilleure performance",
-        "it": "Controllo Chuck AllStatesForBridgeWork per prestazioni migliori",
-        "es": "Chuck. AllStatesForBridgeWork para un mejor rendimiento",
-        "pl": "Chuck sprawdził Wszystkie państwa dla BridgeWork dla lepszej wydajności",
-        "uk": "Перевірка качки AllStatesForBridgeWork для кращої продуктивності",
-        "zh-cn": "查克检查 为更好的业绩而努力"
       }
     },
     "titleLang": {
