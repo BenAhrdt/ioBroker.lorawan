@@ -41,7 +41,7 @@
     "@iobroker/testing": "^5.2.2",
     "@tsconfig/node20": "^20.1.8",
     "@types/lodash": "^4.17.21",
-    "@types/node": "^24.10.1",
+    "@types/node": "^25.0.3",
     "typescript": "~5.9.3"
   },
   "main": "main.js",
