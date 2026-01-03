@@ -23,6 +23,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) remove Bridgetype Smarthome
+* (BenAhrdt) add firt possibility to generate devices from Bridge to Iob
+
 ### 1.18.63 (2026-01-01)
 * (BenAhrdt) return to await calls in checkAll (bridge)
 
