@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.18.63",
+    "version": "1.19.0",
     "news": {
+      "1.19.0": {
+        "en": "remove Bridgetype Smarthome\nadd firt possibility to generate devices from Bridge to Iob",
+        "de": "bridgetype Smarthome entfernen\nfügen Sie firt Möglichkeit, Geräte von Bridge zu Iob zu generieren",
+        "ru": "скачать Bridgetype Smarthome\nдобавьте возможность создания устройств от Bridge до Iob",
+        "pt": "remover o tipo de ponte Smarthome\nadicionar a possibilidade inicial de gerar dispositivos de Bridge para Iob",
+        "nl": "verwijderen Bridgetype Smarthome\nfirt mogelijkheid toevoegen om apparaten van brug aan Iob te genereren",
+        "fr": "supprimer Bridgetype Smarthome\najouter la possibilité de firt pour générer des appareils de Bridge à Iob",
+        "it": "rimuovere Bridgetype Smarthome\naggiungere firt possibilità di generare dispositivi da Bridge a Iob",
+        "es": "eliminar Bridgetype Smarthome\nañadir firt posibilidad de generar dispositivos desde Bridge a Iob",
+        "pl": "usuń Bridgetype Smarthome\ndodać firt możliwość generowania urządzeń z Bridge do Iob",
+        "uk": "видалити Bridgetype Smarthome\nдо Iob",
+        "zh-cn": "删除桥型 Smarthome\n从 Bridge 添加 firt 生成设备的可能性"
+      },
       "1.18.63": {
         "en": "return to await calls in checkAll (bridge)",
         "de": "zurück zu warten Anrufe im Check Alle (Brücke)",
@@ -80,19 +93,6 @@
         "pl": "serializuj i buforuj wiadomości konfiguracyjne",
         "uk": "послідовність і кешування конфігураційних повідомлень",
         "zh-cn": "序列化和缓存配置信件"
-      },
-      "1.18.57": {
-        "en": "cache Infos in config for more performance",
-        "de": "cache Infos in config für mehr Leistung",
-        "ru": "cache Infos in Config для повышения производительности",
-        "pt": "informações de cache em configuração para mais desempenho",
-        "nl": "cache-informatie in configuratie voor meer prestaties",
-        "fr": "cache Infos en configuration pour plus de performances",
-        "it": "cache Infos in config per maggiori prestazioni",
-        "es": "cache Infos en config para más rendimiento",
-        "pl": "cache Infos w konfiguracji dla większej wydajności",
-        "uk": "cache Infos в конфігурації для більшої продуктивності",
-        "zh-cn": "为更多性能在配置中缓存信息"
       }
     },
     "titleLang": {
