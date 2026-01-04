@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.2",
+    "version": "1.19.3",
     "news": {
+      "1.19.3": {
+        "en": "add version and domain to automation",
+        "de": "version und domäne zur automatisierung hinzufügen",
+        "ru": "добавить версию и домен в автоматизацию",
+        "pt": "adicionar versão e domínio à automação",
+        "nl": "versie en domein toevoegen aan automatisering",
+        "fr": "ajouter version et domaine à l'automatisation",
+        "it": "aggiungere la versione e il dominio all'automazione",
+        "es": "añadir versión y dominio a automatización",
+        "pl": "dodawanie wersji i domeny do automatyzacji",
+        "uk": "додати версію та домен до автоматизації",
+        "zh-cn": "在自动化中添加版本和域"
+      },
       "1.19.2": {
         "en": "bugfix filldownlink",
         "de": "fehlerbehebungen",
@@ -80,19 +93,6 @@
         "pl": "ustawiony rozmiar chunksize do 32",
         "uk": "встановити chunksize до 32",
         "zh-cn": "设置为32块"
-      },
-      "1.18.60": {
-        "en": "bugfix errorlogging",
-        "de": "fehlerbehebung von fehlern",
-        "ru": "bugfix ошибка",
-        "pt": "erro de correção",
-        "nl": "bugfix foutloggen",
-        "fr": "bugfix errorlogging",
-        "it": "bugfix errorelogging",
-        "es": "error bugfixlogging",
-        "pl": "błąd bugfix",
-        "uk": "повідомлень про помилку",
-        "zh-cn": "错误修正错误日志"
       }
     },
     "titleLang": {
