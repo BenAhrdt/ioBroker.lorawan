@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.6",
+    "version": "1.19.7",
     "news": {
+      "1.19.7": {
+        "en": "improve available logic",
+        "de": "verbesserung der verfügbaren logik",
+        "ru": "улучшение доступной логики",
+        "pt": "melhorar a lógica disponível",
+        "nl": "de beschikbare logica verbeteren",
+        "fr": "améliorer la logique disponible",
+        "it": "migliorare la logica disponibile",
+        "es": "mejorar la lógica disponible",
+        "pl": "poprawić dostępną logikę",
+        "uk": "поліпшення логіки",
+        "zh-cn": "改进可用的逻辑"
+      },
       "1.19.6": {
         "en": "add available bit",
         "de": "hinzufügen von bit",
@@ -80,19 +93,6 @@
         "pl": "bugfix urządzenia i zastąpić logi debug dla głupi",
         "uk": "пристрій для виправлення помилок і заміни журналів для silly",
         "zh-cn": "错误修正设备并替换愚昧的调试日志"
-      },
-      "1.19.0": {
-        "en": "remove Bridgetype Smarthome\nadd firt possibility to generate devices from Bridge to Iob",
-        "de": "bridgetype Smarthome entfernen\nfügen Sie firt Möglichkeit, Geräte von Bridge zu Iob zu generieren",
-        "ru": "скачать Bridgetype Smarthome\nдобавьте возможность создания устройств от Bridge до Iob",
-        "pt": "remover o tipo de ponte Smarthome\nadicionar a possibilidade inicial de gerar dispositivos de Bridge para Iob",
-        "nl": "verwijderen Bridgetype Smarthome\nfirt mogelijkheid toevoegen om apparaten van brug aan Iob te genereren",
-        "fr": "supprimer Bridgetype Smarthome\najouter la possibilité de firt pour générer des appareils de Bridge à Iob",
-        "it": "rimuovere Bridgetype Smarthome\naggiungere firt possibilità di generare dispositivi da Bridge a Iob",
-        "es": "eliminar Bridgetype Smarthome\nañadir firt posibilidad de generar dispositivos desde Bridge a Iob",
-        "pl": "usuń Bridgetype Smarthome\ndodać firt możliwość generowania urządzeń z Bridge do Iob",
-        "uk": "видалити Bridgetype Smarthome\nдо Iob",
-        "zh-cn": "删除桥型 Smarthome\n从 Bridge 添加 firt 生成设备的可能性"
       }
     },
     "titleLang": {
