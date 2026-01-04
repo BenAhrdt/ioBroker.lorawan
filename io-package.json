@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.4",
+    "version": "1.19.5",
     "news": {
+      "1.19.5": {
+        "en": "change nameing and handling of device_class (result for roles)",
+        "de": "nameing und handling von device_class ändern (ergebnis für rollen)",
+        "ru": "изменение наименования и обработки device_class (результат для ролей)",
+        "pt": "mudar nome e manipulação de device_class (resultado para funções)",
+        "nl": "naam wijzigen en hanteren van device_class (resultaat voor rollen)",
+        "fr": "modifier le nom et la gestion de la classe de périphérique (résultats pour les rôles)",
+        "it": "cambiamento nome e gestione di device_class (risultato per ruoli)",
+        "es": "cambio de nombre y manejo de dispositivo_class (resultado para roles)",
+        "pl": "zmiana nazwy i obsługi urządzenia _ class (wynik dla ról)",
+        "uk": "зміна назв і обробки пристрою_class (здійснення ролі)",
+        "zh-cn": "更改设备名称和处理级别( 角色结果)"
+      },
       "1.19.4": {
         "en": "change buildSafeStateId (domain)",
         "de": "änderungen Sicherheit Id (domain)",
@@ -80,19 +93,6 @@
         "pl": "powrót czekać rozmowy w czeku Wszystkie (most)",
         "uk": "поверніть на чек дзвінків Всі (місто)",
         "zh-cn": "返回等待呼叫检查 全部(桥梁)"
-      },
-      "1.18.62": {
-        "en": "Promise the foreign functions in Promise.all",
-        "de": "Versprechen Sie die ausländischen Funktionen in Promise.all",
-        "ru": "Обещайте иностранные функции в Promise.all",
-        "pt": "Prometa as funções estrangeiras em Promise.all",
-        "nl": "Beloof de buitenlandse functies in Promise.all",
-        "fr": "Promets les fonctions étrangères dans Promise.all",
-        "it": "Promettere le funzioni straniere in Promise.all",
-        "es": "Prométeme las funciones extranjeras en Promesa.todos",
-        "pl": "Obiecaj funkcje zagraniczne w Promise.all",
-        "uk": "Використовуйте іноземні функції в Promise.all",
-        "zh-cn": "在保证中保证外国职能"
       }
     },
     "titleLang": {
