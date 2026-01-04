@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.3",
+    "version": "1.19.4",
     "news": {
+      "1.19.4": {
+        "en": "change buildSafeStateId (domain)",
+        "de": "änderungen Sicherheit Id (domain)",
+        "ru": "изменение структуры Безопасное государство Id (домен)",
+        "pt": "alterar compilação Estado Seguro ID (domínio)",
+        "nl": "bouwen veranderen Veilige staat Id (domein)",
+        "fr": "construction de changement État de sécurité Id (domaine)",
+        "it": "cambiamento di costruzione Stato sicuro Id (domain)",
+        "es": "cambio de construcción Estado seguro Id (dominio)",
+        "pl": "zmień budowę SafeState Id (domena)",
+        "uk": "збір змін Сейфи Id (домен)",
+        "zh-cn": "变化构建 安全状态 ID( 域数)"
+      },
       "1.19.3": {
         "en": "add version and domain to automation",
         "de": "version und domäne zur automatisierung hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "Obiecaj funkcje zagraniczne w Promise.all",
         "uk": "Використовуйте іноземні функції в Promise.all",
         "zh-cn": "在保证中保证外国职能"
-      },
-      "1.18.61": {
-        "en": "set chunksize to 32",
-        "de": "set chunksize auf 32",
-        "ru": "устанавливает размер до 32",
-        "pt": "definir o tamanho do bloco como 32",
-        "nl": "blokgrootte instellen op 32",
-        "fr": "définir la taille des morceaux à 32",
-        "it": "set chunksize a 32",
-        "es": "set chunksize a 32",
-        "pl": "ustawiony rozmiar chunksize do 32",
-        "uk": "встановити chunksize до 32",
-        "zh-cn": "设置为32块"
       }
     },
     "titleLang": {
