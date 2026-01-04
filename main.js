@@ -510,7 +510,7 @@ class Lorawan extends utils.Adapter {
                         `the state ${id} has changed to ${state.val !== '' ? state.val : '""'} with ack = ${state.ack}.`,
                     );
                 } else {
-                    this.log.debug(
+                    this.log.silly(
                         `the state ${id} has changed to ${state.val !== '' ? state.val : '""'} with ack = ${state.ack}.`,
                     );
                 }
@@ -612,11 +612,11 @@ class Lorawan extends utils.Adapter {
                                     }
 
                                     // Query about th correct type
-                                    this.log.debug(
+                                    this.log.silly(
                                         'The following values are detected / used at input of custom send state',
                                     );
                                     for (const element in StateElements) {
-                                        this.log.debug(
+                                        this.log.silly(
                                             `${element}: Type: ${typeof StateElements[element]} - Value: ${StateElements[element]}`,
                                         );
                                     }
@@ -905,7 +905,7 @@ class Lorawan extends utils.Adapter {
         const activeFunction = 'main.js - checkSendDownlinkWithUplink';
         this.log.silly(`Function ${activeFunction} started.`);
         try {
-            this.log.debug(`Check for send downlink with uplink.`);
+            this.log.silly(`Check for send downlink with uplink.`);
             const changeInfo = await this.getChangeInfo(id, { withBestMatch: true });
             if (
                 changeInfo &&
@@ -1064,7 +1064,7 @@ class Lorawan extends utils.Adapter {
     async getChangeInfo(id, options) {
         const activeFunction = 'getChangeInfo';
         try {
-            this.log.debug(`changeinfo of id ${id}, will be generated.`);
+            this.log.silly(`changeinfo of id ${id}, will be generated.`);
             const changeInfo = this.getBaseDeviceInfo(id);
             const myId = `${changeInfo?.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.configuration}.devicetype`;
             // Check for changeInfo
@@ -1088,18 +1088,18 @@ class Lorawan extends utils.Adapter {
                             this.downlinkConfighandler?.getBestMatchForDeviceType(changeInfo);
                         if (bestMatchForDeviceType) {
                             changeInfo.bestMatchForDeviceType = bestMatchForDeviceType;
-                            this.log.debug(
+                            this.log.silly(
                                 `best match for expertconfig of device: ${changeInfo.deviceType ? changeInfo.deviceType : 'empty devicetype'} is: ${bestMatchForDeviceType}`,
                             );
                         } else {
-                            this.log.debug(
+                            this.log.silly(
                                 `no match for expert downlinkconfig found: ${changeInfo.deviceType ? changeInfo.deviceType : 'empty devicetype'}`,
                             );
                         }
                     }
                 }
             }
-            this.log.debug(`changeinfo is ${JSON.stringify(changeInfo)}.`);
+            this.log.silly(`changeinfo is ${JSON.stringify(changeInfo)}.`);
             return changeInfo;
         } catch (error) {
             this.log.error(`error at ${activeFunction}: ${error}`);
@@ -1108,7 +1108,7 @@ class Lorawan extends utils.Adapter {
 
     removeNamespace(id) {
         if (id.indexOf(this.namespace) !== -1) {
-            this.log.debug(`namespace will be removed from id ${id}.`);
+            this.log.silly(`namespace will be removed from id ${id}.`);
             id = id.substring(this.namespace.length + 1, id.length);
         }
         return id;
@@ -1138,7 +1138,7 @@ class Lorawan extends utils.Adapter {
 
     async onMessage(obj) {
         const activeFunction = 'onMessage';
-        this.log.debug(`message received: command = ${obj.command} - message = ${JSON.stringify(obj.message)}`);
+        this.log.silly(`message received: command = ${obj.command} - message = ${JSON.stringify(obj.message)}`);
         try {
             if (typeof obj === 'object' && obj.message) {
                 let result = {};
