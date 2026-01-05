@@ -877,8 +877,12 @@ class Lorawan extends utils.Adapter {
                                 await this.bridge.publishId(id, state.val, {});
                             }
                         } else if (id.startsWith(`${this.namespace}.bridge.devices.`)) {
-                            await this.bridge?.bridgeDeviceHandler.sendData(id, state);
-                            await this.setState(id, state.val, true);
+                            if (!id.endsWith('discoveredEntities')) {
+                                if (!id.endsWith('bridgeBaseIp')) {
+                                    await this.bridge?.bridgeDeviceHandler.sendData(id, state);
+                                }
+                                await this.setState(id, state.val, true);
+                            }
                         }
                     } else {
                         // Query for 0_userdata or alias => states also publish with ack = false
