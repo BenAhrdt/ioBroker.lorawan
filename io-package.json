@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.7",
+    "version": "1.19.8",
     "news": {
+      "1.19.8": {
+        "en": "implement Link to device",
+        "de": "durchführung Link zum Gerät",
+        "ru": "осуществлять Ссылка на устройство",
+        "pt": "implementar Ligação ao dispositivo",
+        "nl": "implementeren Koppeling naar apparaat",
+        "fr": "mise en œuvre Lien vers le périphérique",
+        "it": "attuazione Link al dispositivo",
+        "es": "aplicación Enlace al dispositivo",
+        "pl": "wdrożenie Link do urządzenia",
+        "uk": "реалізація Посилання на пристрій",
+        "zh-cn": "执行 链接到设备"
+      },
       "1.19.7": {
         "en": "improve available logic",
         "de": "verbesserung der verfügbaren logik",
@@ -80,19 +93,6 @@
         "pl": "bugfix fishdownlink",
         "uk": "javascript licenses api веб-сайт",
         "zh-cn": "臭虫补全下行链路"
-      },
-      "1.19.1": {
-        "en": "bugfix device and replace debug logs for silly",
-        "de": "bugfix gerät und ersetzen debug protokolle für albern",
-        "ru": "bugfix-устройство и замена отладочных журналов на глупые",
-        "pt": "dispositivo de correção de bugs e registros de depuração de substituição para bobo",
-        "nl": "bugfix-apparaat en debug-logs vervangen voor domheid",
-        "fr": "bugfix périphérique et remplacer les journaux de débogage pour idiot",
-        "it": "dispositivo bugfix e sostituire i log di debug per sciocco",
-        "es": "dispositivo bugfix y reemplazar los registros de depuración para tontos",
-        "pl": "bugfix urządzenia i zastąpić logi debug dla głupi",
-        "uk": "пристрій для виправлення помилок і заміни журналів для silly",
-        "zh-cn": "错误修正设备并替换愚昧的调试日志"
       }
     },
     "titleLang": {

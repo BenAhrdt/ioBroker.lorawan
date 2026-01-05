@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.19.8 (2026-01-05)
 * (BenAhrdt) implement Link to device
 
 ### 1.19.7 (2026-01-04)
