@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.10",
+    "version": "1.19.11",
     "news": {
+      "1.19.11": {
+        "en": "add role button to bridge devices",
+        "de": "rollentaste hinzufügen, um geräte zu überbrücken",
+        "ru": "добавить кнопку «роль» в мостовые устройства",
+        "pt": "adicionar botão de função aos dispositivos de ponte",
+        "nl": "rolknop toevoegen aan brugapparaten",
+        "fr": "ajouter un bouton de rôle aux dispositifs de pont",
+        "it": "aggiungere pulsante ruolo ai dispositivi di bridge",
+        "es": "añadir botón de rol a los dispositivos puente",
+        "pl": "dodaj przycisk ról do urządzeń mostowych",
+        "uk": "додати кнопку ролі на мостові пристрої",
+        "zh-cn": "向桥接设备添加角色按钮"
+      },
       "1.19.10": {
         "en": "bugfix reading state",
         "de": "bugfix lesezustand",
@@ -80,19 +93,6 @@
         "pl": "zmiana nazwy i obsługi urządzenia _ class (wynik dla ról)",
         "uk": "зміна назв і обробки пристрою_class (здійснення ролі)",
         "zh-cn": "更改设备名称和处理级别( 角色结果)"
-      },
-      "1.19.4": {
-        "en": "change buildSafeStateId (domain)",
-        "de": "änderungen Sicherheit Id (domain)",
-        "ru": "изменение структуры Безопасное государство Id (домен)",
-        "pt": "alterar compilação Estado Seguro ID (domínio)",
-        "nl": "bouwen veranderen Veilige staat Id (domein)",
-        "fr": "construction de changement État de sécurité Id (domaine)",
-        "it": "cambiamento di costruzione Stato sicuro Id (domain)",
-        "es": "cambio de construcción Estado seguro Id (dominio)",
-        "pl": "zmień budowę SafeState Id (domena)",
-        "uk": "збір змін Сейфи Id (домен)",
-        "zh-cn": "变化构建 安全状态 ID( 域数)"
       }
     },
     "titleLang": {
