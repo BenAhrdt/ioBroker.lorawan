@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.9",
+    "version": "1.19.10",
     "news": {
+      "1.19.10": {
+        "en": "bugfix reading state",
+        "de": "bugfix lesezustand",
+        "ru": "bugfix состояние чтения",
+        "pt": "estado de leitura do bugfix",
+        "nl": "bugfix-leesstatus",
+        "fr": "état de lecture du bugfix",
+        "it": "bugfix lettura stato",
+        "es": "estado de lectura de bugfix",
+        "pl": "stan odczytu bugfix",
+        "uk": "стан читання помилок",
+        "zh-cn": "错误修正读取状态"
+      },
       "1.19.9": {
         "en": "bugfix deleteing device",
         "de": "bugfix löschgerät",
@@ -80,19 +93,6 @@
         "pl": "zmień budowę SafeState Id (domena)",
         "uk": "збір змін Сейфи Id (домен)",
         "zh-cn": "变化构建 安全状态 ID( 域数)"
-      },
-      "1.19.3": {
-        "en": "add version and domain to automation",
-        "de": "version und domäne zur automatisierung hinzufügen",
-        "ru": "добавить версию и домен в автоматизацию",
-        "pt": "adicionar versão e domínio à automação",
-        "nl": "versie en domein toevoegen aan automatisering",
-        "fr": "ajouter version et domaine à l'automatisation",
-        "it": "aggiungere la versione e il dominio all'automazione",
-        "es": "añadir versión y dominio a automatización",
-        "pl": "dodawanie wersji i domeny do automatyzacji",
-        "uk": "додати версію та домен до автоматизації",
-        "zh-cn": "在自动化中添加版本和域"
       }
     },
     "titleLang": {
