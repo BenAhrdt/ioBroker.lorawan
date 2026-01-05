@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.8",
+    "version": "1.19.9",
     "news": {
+      "1.19.9": {
+        "en": "bugfix deleteing device",
+        "de": "bugfix löschgerät",
+        "ru": "bugfix удаление устройства",
+        "pt": "dispositivo de remoção de correções de erros",
+        "nl": "bugfix verwijderapparaat",
+        "fr": "bugfix supprimer le périphérique",
+        "it": "bugfix dispositivo di cancellazione",
+        "es": "bugfix dispositivo de eliminación",
+        "pl": "urządzenie do usuwania błędów",
+        "uk": "пристрій видалення помилок",
+        "zh-cn": "错误修正删除设备"
+      },
       "1.19.8": {
         "en": "implement Link to device",
         "de": "durchführung Link zum Gerät",
@@ -80,19 +93,6 @@
         "pl": "dodawanie wersji i domeny do automatyzacji",
         "uk": "додати версію та домен до автоматизації",
         "zh-cn": "在自动化中添加版本和域"
-      },
-      "1.19.2": {
-        "en": "bugfix filldownlink",
-        "de": "fehlerbehebungen",
-        "ru": "bugfix filldownlink",
-        "pt": "ligação de preenchimento de correções de erros",
-        "nl": "bugfix filldownlink",
-        "fr": "bugfix remplissagelien",
-        "it": "bugfix filldownlink",
-        "es": "bugfix rellenolink",
-        "pl": "bugfix fishdownlink",
-        "uk": "javascript licenses api веб-сайт",
-        "zh-cn": "臭虫补全下行链路"
       }
     },
     "titleLang": {
