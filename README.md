@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) bug with git credentials
+
 ### 1.19.11 (2026-01-05)
 * (BenAhrdt) add role button to bridge devices
 
