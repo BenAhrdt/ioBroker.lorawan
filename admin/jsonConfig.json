@@ -1927,6 +1927,7 @@
 							"options": [
 								{"label":"SeparateIds","value":"separate"},
 								{"label":"OneString","value":"string"},
+								{"label":"OneNumber","value":"number"},
 								{"label":"no command","value":"noCommand"}
 							],
 							"default": "separate",
@@ -1980,6 +1981,19 @@
 							"label": "CommandText",
 							"customFilter": {"common": { "type": [ "string", "mixed" ] } },
 							"hidden": "data.CoverSeparate !== 'string'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"newLine": true,
+							"attr": "NumberId",
+							"label": "NumberText",
+							"customFilter": {"common": { "type": [ "number", "mixed" ] } },
+							"hidden": "data.CoverSeparate !== 'number'",
 							"xs": 12,
 							"sm": 4,
 							"md": 4,

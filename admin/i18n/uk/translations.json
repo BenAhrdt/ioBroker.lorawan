@@ -119,6 +119,8 @@
 	"LorawanOff": "вимкнено",
 	"MQTTInstance": "Екземпляр MQTT",
 	"NoBridgeConfiged": "Міст не налаштований !!!",
+	"NumberText": "ID номера",
+	"OneNumber": "одна цифра для команди",
 	"OneString": "один рядок для команди",
 	"OriginHeader": "Налаштування походження",
 	"OriginInformation": "Встановіть джерело очікуваних даних",

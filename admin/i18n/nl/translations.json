@@ -119,6 +119,8 @@
 	"LorawanOff": "uit",
 	"MQTTInstance": "MQTT-instantie",
 	"NoBridgeConfiged": "Er is geen bridge geconfigureerd!!!",
+	"NumberText": "Nummer-ID",
+	"OneNumber": "één nummer voor commando",
 	"OneString": "één string voor commando",
 	"OriginHeader": "Oorspronkelijke instellingen",
 	"OriginInformation": "Stel de oorsprong van de verwachte gegevens in",

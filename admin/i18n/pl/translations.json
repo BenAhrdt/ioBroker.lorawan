@@ -119,6 +119,8 @@
 	"LorawanOff": "wyłączony",
 	"MQTTInstance": "Instancja MQTT",
 	"NoBridgeConfiged": "Nie ma skonfigurowanego mostu!!!",
+	"NumberText": "Numer identyfikacyjny",
+	"OneNumber": "jeden numer do polecenia",
 	"OneString": "jeden ciąg dla polecenia",
 	"OriginHeader": "Ustawienia oryginalności",
 	"OriginInformation": "Ustaw pochodzenie oczekiwanych danych",

@@ -119,6 +119,8 @@
 	"LorawanOff": "spento",
 	"MQTTInstance": "Istanza MQTT",
 	"NoBridgeConfiged": "Non c'è nessun bridge configurato!!!",
+	"NumberText": "Numero identificativo",
+	"OneNumber": "un numero per comando",
 	"OneString": "una stringa per il comando",
 	"OriginHeader": "Impostazioni dell'origine",
 	"OriginInformation": "Imposta l'origine dei dati attesi",

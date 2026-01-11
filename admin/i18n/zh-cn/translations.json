@@ -119,6 +119,8 @@
 	"LorawanOff": "离开",
 	"MQTTInstance": "MQTT实例",
 	"NoBridgeConfiged": "没有配置桥接！！！",
+	"NumberText": "号码 ID",
+	"OneNumber": "一个数字用于命令",
 	"OneString": "一个命令字符串",
 	"OriginHeader": "原始设置",
 	"OriginInformation": "设置预期数据的来源",
