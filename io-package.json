@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.17",
+    "version": "1.19.18",
     "news": {
+      "1.19.18": {
+        "en": "bugfix startwith",
+        "de": "bugfix start",
+        "ru": "bugfix начать",
+        "pt": "início do erro",
+        "nl": "bugfix startwith",
+        "fr": "bugfix commence par",
+        "it": "avvio bugfix con",
+        "es": "bugfix startwith",
+        "pl": "bugfix startwith",
+        "uk": "почати роботу",
+        "zh-cn": "启动错误修正"
+      },
       "1.19.17": {
         "en": "Change assign of cover logic command in case of number",
         "de": "Ändern Sie die Zuordnung von Cover-Logik-Befehl bei Nummer",
@@ -80,19 +93,6 @@
         "pl": "bug with git references",
         "uk": "помилка з git обліковими даними",
         "zh-cn": "带有 git 证书的错误"
-      },
-      "1.19.10": {
-        "en": "bugfix reading state",
-        "de": "bugfix lesezustand",
-        "ru": "bugfix состояние чтения",
-        "pt": "estado de leitura do bugfix",
-        "nl": "bugfix-leesstatus",
-        "fr": "état de lecture du bugfix",
-        "it": "bugfix lettura stato",
-        "es": "estado de lectura de bugfix",
-        "pl": "stan odczytu bugfix",
-        "uk": "стан читання помилок",
-        "zh-cn": "错误修正读取状态"
       }
     },
     "titleLang": {
