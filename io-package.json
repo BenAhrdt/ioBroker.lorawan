@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.12",
+    "version": "1.19.13",
     "news": {
+      "1.19.13": {
+        "en": "first test with number for cover config",
+        "de": "erste prüfung mit nummer für cover config",
+        "ru": "первый тест с номером для конфигурации крышки",
+        "pt": "primeiro teste com número para configuração da capa",
+        "nl": "eerste test met nummer voor cover config",
+        "fr": "premier test avec numéro pour la configuration de la couverture",
+        "it": "primo test con numero per cover config",
+        "es": "primera prueba con número para el config de cubierta",
+        "pl": "pierwszy test z numerem dla konfiguracji okładki",
+        "uk": "перший тест з номером для налаштування кришки",
+        "zh-cn": "首个带有封面配置数字的测试"
+      },
       "1.19.12": {
         "en": "bug with git credentials",
         "de": "fehler mit git anmeldeinformationen",
