@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.15",
+    "version": "1.19.16",
     "news": {
+      "1.19.16": {
+        "en": "bugfix Foreign Cover (getForeignState)",
+        "de": "bugfix Foreign Cover (getForeignState)",
+        "ru": "bugfix Зарубежная обложка (getForeignState)",
+        "pt": "bugfix Capa Estrangeira (getForeignState)",
+        "nl": "bugfix Foreign Cover (getForeignState)",
+        "fr": "bugfix Couverture étrangère (getForeignState)",
+        "it": "bugfix Foreign Cover (getForeignState)",
+        "es": "bugfix Foreign Cover (getForeignState)",
+        "pl": "bugfix ForeignState",
+        "uk": "виправлення помилок (getForeignState)",
+        "zh-cn": "bugfix 外国封面( GetForeign State)"
+      },
       "1.19.15": {
         "en": "add new bugfixes cover",
         "de": "neue bugfixes cover hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "urządzenie do usuwania błędów",
         "uk": "пристрій видалення помилок",
         "zh-cn": "错误修正删除设备"
-      },
-      "1.19.8": {
-        "en": "implement Link to device",
-        "de": "durchführung Link zum Gerät",
-        "ru": "осуществлять Ссылка на устройство",
-        "pt": "implementar Ligação ao dispositivo",
-        "nl": "implementeren Koppeling naar apparaat",
-        "fr": "mise en œuvre Lien vers le périphérique",
-        "it": "attuazione Link al dispositivo",
-        "es": "aplicación Enlace al dispositivo",
-        "pl": "wdrożenie Link do urządzenia",
-        "uk": "реалізація Посилання на пристрій",
-        "zh-cn": "执行 链接到设备"
       }
     },
     "titleLang": {
