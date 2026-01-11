@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.13",
+    "version": "1.19.14",
     "news": {
+      "1.19.14": {
+        "en": "bugfixes cover",
+        "de": "bugfixes cover",
+        "ru": "багфикс покрытия",
+        "pt": "cobertura de correções de erros",
+        "nl": "bugfixes cover",
+        "fr": "bugfixes couverture",
+        "it": "copertura bugfixs",
+        "es": "bugfixes cover",
+        "pl": "pokrywa błędów",
+        "uk": "виправлення помилок",
+        "zh-cn": "错误修正覆盖"
+      },
       "1.19.13": {
         "en": "first test with number for cover config",
         "de": "erste prüfung mit nummer für cover config",
@@ -80,19 +93,6 @@
         "pl": "poprawić dostępną logikę",
         "uk": "поліпшення логіки",
         "zh-cn": "改进可用的逻辑"
-      },
-      "1.19.6": {
-        "en": "add available bit",
-        "de": "hinzufügen von bit",
-        "ru": "добавить доступный бит",
-        "pt": "adicionar bit disponível",
-        "nl": "beschikbare bit toevoegen",
-        "fr": "ajouter le bit disponible",
-        "it": "aggiungere bit disponibile",
-        "es": "añadir bit disponible",
-        "pl": "dodaj dostępny bit",
-        "uk": "додати доступний біт",
-        "zh-cn": "添加可用位"
       }
     },
     "titleLang": {
