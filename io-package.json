@@ -16,19 +16,6 @@
         "uk": "помилка з git обліковими даними",
         "zh-cn": "带有 git 证书的错误"
       },
-      "1.19.11": {
-        "en": "add role button to bridge devices",
-        "de": "rollentaste hinzufügen, um geräte zu überbrücken",
-        "ru": "добавить кнопку «роль» в мостовые устройства",
-        "pt": "adicionar botão de função aos dispositivos de ponte",
-        "nl": "rolknop toevoegen aan brugapparaten",
-        "fr": "ajouter un bouton de rôle aux dispositifs de pont",
-        "it": "aggiungere pulsante ruolo ai dispositivi di bridge",
-        "es": "añadir botón de rol a los dispositivos puente",
-        "pl": "dodaj przycisk ról do urządzeń mostowych",
-        "uk": "додати кнопку ролі на мостові пристрої",
-        "zh-cn": "向桥接设备添加角色按钮"
-      },
       "1.19.10": {
         "en": "bugfix reading state",
         "de": "bugfix lesezustand",
