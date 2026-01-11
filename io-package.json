@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.14",
+    "version": "1.19.15",
     "news": {
+      "1.19.15": {
+        "en": "add new bugfixes cover",
+        "de": "neue bugfixes cover hinzufügen",
+        "ru": "добавить новый багфикс покрытия",
+        "pt": "adicionar nova tampa de correções de erros",
+        "nl": "nieuwe bugfixes cover toevoegen",
+        "fr": "ajouter une nouvelle couverture bugfixes",
+        "it": "aggiungere nuovi bugfixs cover",
+        "es": "añadir nueva cubierta de bugfixes",
+        "pl": "dodawanie nowej okładki błędów",
+        "uk": "додати новий чохол для виправлення помилок",
+        "zh-cn": "添加新的错误修正覆盖"
+      },
       "1.19.14": {
         "en": "bugfixes cover",
         "de": "bugfixes cover",
@@ -80,19 +93,6 @@
         "pl": "wdrożenie Link do urządzenia",
         "uk": "реалізація Посилання на пристрій",
         "zh-cn": "执行 链接到设备"
-      },
-      "1.19.7": {
-        "en": "improve available logic",
-        "de": "verbesserung der verfügbaren logik",
-        "ru": "улучшение доступной логики",
-        "pt": "melhorar a lógica disponível",
-        "nl": "de beschikbare logica verbeteren",
-        "fr": "améliorer la logique disponible",
-        "it": "migliorare la logica disponibile",
-        "es": "mejorar la lógica disponible",
-        "pl": "poprawić dostępną logikę",
-        "uk": "поліпшення логіки",
-        "zh-cn": "改进可用的逻辑"
       }
     },
     "titleLang": {
