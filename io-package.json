@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.18",
+    "version": "1.19.19",
     "news": {
+      "1.19.19": {
+        "en": "change id building of more then one spezial entity (same type) in one device\nadd state of cover in type number (limit switch) with common states.",
+        "de": "id-gebäude von mehr als einer spezial-entität (gleiche art) in einem gerät ändern\nfügen sie zustand der abdeckung in der typnummer (begrenzungsschalter) mit gemeinsamen zuständen.",
+        "ru": "изменение id-построения более чем одной пространственной сущности (один и тот же тип) в одном устройстве\nдобавить состояние покрытия в номер типа (лимитный переключатель) с общими состояниями.",
+        "pt": "alterar a construção do id de mais de uma entidade especial (mesmo tipo) num dispositivo\nadicionar o estado de cobertura no número de tipo (interruptor de limite) com estados comuns.",
+        "nl": "veranderen id gebouw van meer dan een spezial entiteit (hetzelfde type) in één apparaat\nvoeg de dekkingstoestand in typenummer (limit switch) toe met gemeenschappelijke staten.",
+        "fr": "modifier id construction de plus d'une entité spezial (même type) dans un appareil\najouter l'état de couverture dans le numéro de type (interrupteur limite) avec les états communs.",
+        "it": "modificare la costruzione di più di un'entità spezial (stesso tipo) in un dispositivo\naggiungere lo stato di copertura in numero di tipo (interruttore di limite) con stati comuni.",
+        "es": "cambio id edificio de más entonces una entidad esporezial (tipo igual) en un dispositivo\nañadir estado de cobertura en el número de tipo (interruptor de límites) con estados comunes.",
+        "pl": "zmiana budowy id więcej niż jeden podmiot spezial (ten sam typ) w jednym urządzeniu\ndodać stan pokrycia w numerze typu (przełącznik graniczny) ze zwykłymi stanami.",
+        "uk": "змінити ідеальну будівлю, а потім одну спезійську суб’єкт (тип призначення) в одному пристрої\nдодати стан чохла в номер типу (лімітний перемикач) з загальними станами.",
+        "zh-cn": "更改一个设备中一个以上( 相同的类型) 的分隔实体的 id 构筑\n在类型编号(限制开关)中添加覆盖状态,包含常见状态."
+      },
       "1.19.18": {
         "en": "bugfix startwith",
         "de": "bugfix start",
@@ -80,19 +93,6 @@
         "pl": "pierwszy test z numerem dla konfiguracji okładki",
         "uk": "перший тест з номером для налаштування кришки",
         "zh-cn": "首个带有封面配置数字的测试"
-      },
-      "1.19.12": {
-        "en": "bug with git credentials",
-        "de": "fehler mit git anmeldeinformationen",
-        "ru": "баг с git credentials",
-        "pt": "erro com credenciais git",
-        "nl": "bug met git referenties",
-        "fr": "bug avec identifiants git",
-        "it": "bug con le credenziali git",
-        "es": "bug con credenciales de git",
-        "pl": "bug with git references",
-        "uk": "помилка з git обліковими даними",
-        "zh-cn": "带有 git 证书的错误"
       }
     },
     "titleLang": {

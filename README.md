@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.19.19 (2026-01-12)
 * (BenAhrdt) change id building of more then one spezial entity (same type) in one device
 * (BenAhrdt) add state of cover in type number (limit switch) with common states.
 
