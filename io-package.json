@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.19",
+    "version": "1.19.20",
     "news": {
+      "1.19.20": {
+        "en": "bugfix virtual ending",
+        "de": "bugfix virtuelles ende",
+        "ru": "bugfix виртуальная концовка",
+        "pt": "finalização virtual do bugfix",
+        "nl": "bugfix virtueel einde",
+        "fr": "bugfix virtual ending",
+        "it": "bugfix virtuale finale",
+        "es": "final virtual de bugfix",
+        "pl": "wirtualne zakończenie bugfix",
+        "uk": "виправлення віртуальних даних",
+        "zh-cn": "错误修正虚拟结尾"
+      },
       "1.19.19": {
         "en": "change id building of more then one spezial entity (same type) in one device\nadd state of cover in type number (limit switch) with common states.",
         "de": "id-gebäude von mehr als einer spezial-entität (gleiche art) in einem gerät ändern\nfügen sie zustand der abdeckung in der typnummer (begrenzungsschalter) mit gemeinsamen zuständen.",
@@ -80,19 +93,6 @@
         "pl": "pokrywa błędów",
         "uk": "виправлення помилок",
         "zh-cn": "错误修正覆盖"
-      },
-      "1.19.13": {
-        "en": "first test with number for cover config",
-        "de": "erste prüfung mit nummer für cover config",
-        "ru": "первый тест с номером для конфигурации крышки",
-        "pt": "primeiro teste com número para configuração da capa",
-        "nl": "eerste test met nummer voor cover config",
-        "fr": "premier test avec numéro pour la configuration de la couverture",
-        "it": "primo test con numero per cover config",
-        "es": "primera prueba con número para el config de cubierta",
-        "pl": "pierwszy test z numerem dla konfiguracji okładki",
-        "uk": "перший тест з номером для налаштування кришки",
-        "zh-cn": "首个带有封面配置数字的测试"
       }
     },
     "titleLang": {
