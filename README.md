@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) more debuglogging in foreignDiscover
+
 ### 1.19.22 (2026-01-13)
 * (BenAhrdt) change Check getForeigenObjectAsync to foreignObjectExists (chek config objects)
 
