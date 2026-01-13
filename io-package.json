@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.21",
+    "version": "1.19.22",
     "news": {
+      "1.19.22": {
+        "en": "change Check getForeigenObjectAsync to foreignObjectExists (chek config objects)",
+        "de": "änderung Anreise nach Foreigen ObjectAsync zu fremd ObjectExists (chek config Objekte)",
+        "ru": "изменение Проверить GetForeigen ObjectAsync для иностранных ObjectExists (объекты чек-конфигурирования)",
+        "pt": "alteração Verificar getForeigen ObjetoAsync para estrangeiro O objeto existe (objetos de configuração do 'chek')",
+        "nl": "verandering Check getForeigen ObjectAsync naar vreemd ObjectExists (chek config objecten)",
+        "fr": "changement Vérifiez getForeigen ObjetAsync à étranger ObjetExists (chèquer les objets de configuration)",
+        "it": "cambiamento Controllare il prezzo ObjectAsync per stranieri ObjectExists (chek oggetti di configurazione)",
+        "es": "cambio Comprobación de Foreigen ObjectAsync to foreign ObjectExists (chek config objects)",
+        "pl": "zmiana Sprawdź getForeigen ObjectAsync do zagranicy ObjectExists (obiekty konfiguracyjne chek)",
+        "uk": "увійти Перевірити getForeigen Об'єкт Об'єктExists (пристрої налаштування)",
+        "zh-cn": "变动 检查是否获取 Foreigen 对象同步到外国 对象Exists (切克配置对象)"
+      },
       "1.19.21": {
         "en": "add color Termperature mode to foreign light config",
         "de": "farbe hinzufügen Termperatur-Modus zu ausländischen Licht config",
@@ -80,19 +93,6 @@
         "pl": "bugfix ForeignState",
         "uk": "виправлення помилок (getForeignState)",
         "zh-cn": "bugfix 外国封面( GetForeign State)"
-      },
-      "1.19.15": {
-        "en": "add new bugfixes cover",
-        "de": "neue bugfixes cover hinzufügen",
-        "ru": "добавить новый багфикс покрытия",
-        "pt": "adicionar nova tampa de correções de erros",
-        "nl": "nieuwe bugfixes cover toevoegen",
-        "fr": "ajouter une nouvelle couverture bugfixes",
-        "it": "aggiungere nuovi bugfixs cover",
-        "es": "añadir nueva cubierta de bugfixes",
-        "pl": "dodawanie nowej okładki błędów",
-        "uk": "додати новий чохол для виправлення помилок",
-        "zh-cn": "添加新的错误修正覆盖"
       }
     },
     "titleLang": {
