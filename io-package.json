@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.22",
+    "version": "1.19.23",
     "news": {
+      "1.19.23": {
+        "en": "more debuglogging in foreignDiscover",
+        "de": "mehr Debuglogging im Ausland Entdecken",
+        "ru": "больше дебюггинга в иностранных Открыть",
+        "pt": "mais depuração em estrangeiro Descobrir",
+        "nl": "meer debuggen in het buitenland Ontdekken",
+        "fr": "plus de débogage à l'étranger Découvrir",
+        "it": "più debuglog in straniero Scopri di più",
+        "es": "más depuración en el extranjero Descubre",
+        "pl": "więcej debuglogging w zagranicznych Odkryj",
+        "uk": "більш детальна інформація Про нас",
+        "zh-cn": "更多外国调试日志 发现"
+      },
       "1.19.22": {
         "en": "change Check getForeigenObjectAsync to foreignObjectExists (chek config objects)",
         "de": "änderung Anreise nach Foreigen ObjectAsync zu fremd ObjectExists (chek config Objekte)",
@@ -80,19 +93,6 @@
         "pl": "Zmiana przypisania polecenia logiki okładki w przypadku numeru",
         "uk": "Зміна знака логіки кришки в разі кількості",
         "zh-cn": "在编号时更改封面逻辑命令的指定"
-      },
-      "1.19.16": {
-        "en": "bugfix Foreign Cover (getForeignState)",
-        "de": "bugfix Foreign Cover (getForeignState)",
-        "ru": "bugfix Зарубежная обложка (getForeignState)",
-        "pt": "bugfix Capa Estrangeira (getForeignState)",
-        "nl": "bugfix Foreign Cover (getForeignState)",
-        "fr": "bugfix Couverture étrangère (getForeignState)",
-        "it": "bugfix Foreign Cover (getForeignState)",
-        "es": "bugfix Foreign Cover (getForeignState)",
-        "pl": "bugfix ForeignState",
-        "uk": "виправлення помилок (getForeignState)",
-        "zh-cn": "bugfix 外国封面( GetForeign State)"
       }
     },
     "titleLang": {

@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.19.23 (2026-01-13)
 * (BenAhrdt) more debuglogging in foreignDiscover
 
 ### 1.19.22 (2026-01-13)
