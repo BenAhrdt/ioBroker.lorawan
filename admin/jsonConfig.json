@@ -1815,6 +1815,18 @@
 						},
 						{
 							"type": "checkbox",
+							"attr": "LightColorTemperature",
+							"label": "LightColorTemperature",
+							"tooltip": "LightColorTemperatureTooltip",
+							"default": false,
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},
+						{
+							"type": "checkbox",
 							"attr": "LightEffects",
 							"label": "LightEffects",
 							"tooltip": "LightEffectsTooltip",
@@ -1854,6 +1866,18 @@
 							"label": "LightColorText",
 							"customFilter": {"common": { "type": [ "string", "mixed" ] } },
 							"hidden": "data.LightColor === false",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "ColorTemperatureId",
+							"label": "LightColorTemperatureText",
+							"customFilter": {"common": { "type": [ "number", "mixed" ] } },
+							"hidden": "data.LightColorTemperature === false",
 							"xs": 12,
 							"sm": 4,
 							"md": 4,
