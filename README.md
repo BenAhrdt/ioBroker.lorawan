@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.19.21 (2026-01-13)
 * (BenAhrdt) add color Termperature mode to foreign light config
 
 ### 1.19.20 (2026-01-12)

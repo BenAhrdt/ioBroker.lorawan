@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.20",
+    "version": "1.19.21",
     "news": {
+      "1.19.21": {
+        "en": "add color Termperature mode to foreign light config",
+        "de": "farbe hinzufügen Termperatur-Modus zu ausländischen Licht config",
+        "ru": "добавить цветовой режим термометрии в конфигурацию иностранного света",
+        "pt": "adicionar o modo de termos de cores à configuração de luz estrangeira",
+        "nl": "kleur Termperatuurmodus toevoegen aan vreemde lichtconfiguratie",
+        "fr": "ajouter le mode couleur Termperature à la configuration de la lumière étrangère",
+        "it": "aggiungere la modalità Termperature colore alla configurazione della luce straniera",
+        "es": "añadir el modo Termperature color a la luz extranjera",
+        "pl": "dodaj kolor Tryb termperature do konfigu światła obcego",
+        "uk": "додати кольоровий режим Termperature до зовнішньої конфігурації світла",
+        "zh-cn": "在外光配置中添加颜色"
+      },
       "1.19.20": {
         "en": "bugfix virtual ending",
         "de": "bugfix virtuelles ende",
@@ -80,19 +93,6 @@
         "pl": "dodawanie nowej okładki błędów",
         "uk": "додати новий чохол для виправлення помилок",
         "zh-cn": "添加新的错误修正覆盖"
-      },
-      "1.19.14": {
-        "en": "bugfixes cover",
-        "de": "bugfixes cover",
-        "ru": "багфикс покрытия",
-        "pt": "cobertura de correções de erros",
-        "nl": "bugfixes cover",
-        "fr": "bugfixes couverture",
-        "it": "copertura bugfixs",
-        "es": "bugfixes cover",
-        "pl": "pokrywa błędów",
-        "uk": "виправлення помилок",
-        "zh-cn": "错误修正覆盖"
       }
     },
     "titleLang": {
