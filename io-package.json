@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.23",
+    "version": "1.19.24",
     "news": {
+      "1.19.24": {
+        "en": "assign Filter at startup\nbugfix assign color temperature id in case of no color is configed",
+        "de": "filter beim Start zuordnen\nbugfix ordnen sie farbtemperatur id, wenn keine farbe konfisziert wird",
+        "ru": "назначение фильтра при запуске\nbugfix присваивает цветовую температуру id в случае отсутствия цвета",
+        "pt": "atribuir o Filtro na inicialização\nbugfix atribuir id de temperatura de cor no caso de nenhuma cor ser configurada",
+        "nl": "filter toewijzen bij opstarten\nbugfix kleurtemperatuur-id toewijzen in geval er geen kleur is ingesteld",
+        "fr": "assigner le filtre au démarrage\nbugfix assigner l'id de température de couleur en cas de aucune couleur est configuré",
+        "it": "assegnare il filtro all'avvio\nbugfix assegna la temperatura di colore id in caso di nessun colore è configed",
+        "es": "asignar filtro al inicio\nbugfix asigna la temperatura de color id en caso de que no se confite color",
+        "pl": "przypisz filtr przy starcie\nbugfix przypisać id temperatury koloru w przypadku braku koloru jest configed",
+        "uk": "призначте фільтр на старті\nвиправлення призначає колірну температуру при відсутності кольору",
+        "zh-cn": "启动时指定过滤器\n在无颜色时指定颜色温度 id"
+      },
       "1.19.23": {
         "en": "more debuglogging in foreignDiscover",
         "de": "mehr Debuglogging im Ausland Entdecken",
@@ -80,19 +93,6 @@
         "pl": "bugfix startwith",
         "uk": "почати роботу",
         "zh-cn": "启动错误修正"
-      },
-      "1.19.17": {
-        "en": "Change assign of cover logic command in case of number",
-        "de": "Ändern Sie die Zuordnung von Cover-Logik-Befehl bei Nummer",
-        "ru": "Изменение назначения команды логики крышки в случае номера",
-        "pt": "Alterar a atribuição do comando de lógica de cobertura em caso de número",
-        "nl": "Wijzig de toewijzing van het commando \"cover logic\" in geval van getal",
-        "fr": "Modifier l'attribution de la commande logique de couverture en cas de nombre",
-        "it": "Cambia l'assegnazione del comando di logica di copertura in caso di numero",
-        "es": "Cambio de asignación de comando lógico de cubierta en caso de número",
-        "pl": "Zmiana przypisania polecenia logiki okładki w przypadku numeru",
-        "uk": "Зміна знака логіки кришки в разі кількості",
-        "zh-cn": "在编号时更改封面逻辑命令的指定"
       }
     },
     "titleLang": {
