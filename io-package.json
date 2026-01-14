@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.24",
+    "version": "1.19.25",
     "news": {
+      "1.19.25": {
+        "en": "handle promise rejection before publish",
+        "de": "zurückweisung vor der veröffentlichung",
+        "ru": "обработать отказ от обещания до публикации",
+        "pt": "lidar com rejeição promessa antes de publicar",
+        "nl": "de belofteweigering afhandelen voordat deze gepubliceerd wordt",
+        "fr": "traiter le rejet de promesse avant de publier",
+        "it": "gestire il rifiuto promessa prima di pubblicare",
+        "es": "el rechazo de la promesa antes de publicar",
+        "pl": "obsługiwać odrzucenie obietnicy przed publikacją",
+        "uk": "ручка обіцяє відхилення перед опублікуванням",
+        "zh-cn": "在发布前处理拒绝承诺"
+      },
       "1.19.24": {
         "en": "assign Filter at startup\nbugfix assign color temperature id in case of no color is configed",
         "de": "filter beim Start zuordnen\nbugfix ordnen sie farbtemperatur id, wenn keine farbe konfisziert wird",
@@ -80,19 +93,6 @@
         "pl": "zmiana budowy id więcej niż jeden podmiot spezial (ten sam typ) w jednym urządzeniu\ndodać stan pokrycia w numerze typu (przełącznik graniczny) ze zwykłymi stanami.",
         "uk": "змінити ідеальну будівлю, а потім одну спезійську суб’єкт (тип призначення) в одному пристрої\nдодати стан чохла в номер типу (лімітний перемикач) з загальними станами.",
         "zh-cn": "更改一个设备中一个以上( 相同的类型) 的分隔实体的 id 构筑\n在类型编号(限制开关)中添加覆盖状态,包含常见状态."
-      },
-      "1.19.18": {
-        "en": "bugfix startwith",
-        "de": "bugfix start",
-        "ru": "bugfix начать",
-        "pt": "início do erro",
-        "nl": "bugfix startwith",
-        "fr": "bugfix commence par",
-        "it": "avvio bugfix con",
-        "es": "bugfix startwith",
-        "pl": "bugfix startwith",
-        "uk": "почати роботу",
-        "zh-cn": "启动错误修正"
       }
     },
     "titleLang": {
