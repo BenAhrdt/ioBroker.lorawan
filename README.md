@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### 1.19.24 (2026-01-14)
+* (BenAhrdt) handle promise rejection before publish
+
+### 1.19.24 (2026-01-14)
 * (BenAhrdt) assign Filter at startup
 * (BenAhrdt) bugfix assign color temperature id in case of no color is configed
 
