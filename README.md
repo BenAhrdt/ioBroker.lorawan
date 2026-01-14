@@ -23,6 +23,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) assign Filter at startup
+* (BenAhrdt) bugfix assign color temperature id in case of no color is configed
+
 ### 1.19.23 (2026-01-13)
 * (BenAhrdt) more debuglogging in foreignDiscover
 
