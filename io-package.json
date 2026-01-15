@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.26",
+    "version": "1.19.27",
     "news": {
+      "1.19.27": {
+        "en": "setting internal logging to debug path in bridge and query the json entries",
+        "de": "interne protokollierung zum debug-pfad in der brücke einstellen und die json-einträge abfragen",
+        "ru": "установка внутренней регистрации для отладки пути в мосту и запроса записей json",
+        "pt": "definindo o registro interno para o caminho de depuração na ponte e consultando os itens json",
+        "nl": "interne logging instellen op debugpad in de brug en de json-items opvragen",
+        "fr": "paramétrer l'enregistrement interne pour déboguer le chemin dans le pont et interroger les entrées de json",
+        "it": "impostare logging interno per debug percorso in ponte e query le voci json",
+        "es": "establecer registro interno para depurar el camino en puente y consultar las entradas json",
+        "pl": "ustawienie wewnętrznego logowania do debugowania ścieżki w moście i zapytanie wpisów json",
+        "uk": "встановлення внутрішнього входу в дебюговий шлях в мост і переробити записи json",
+        "zh-cn": "设置内部日志以调试桥上的路径并查询 json 条目"
+      },
       "1.19.26": {
         "en": "build internal logging",
         "de": "interne protokollierung erstellen",
@@ -80,19 +93,6 @@
         "pl": "dodaj kolor Tryb termperature do konfigu światła obcego",
         "uk": "додати кольоровий режим Termperature до зовнішньої конфігурації світла",
         "zh-cn": "在外光配置中添加颜色"
-      },
-      "1.19.20": {
-        "en": "bugfix virtual ending",
-        "de": "bugfix virtuelles ende",
-        "ru": "bugfix виртуальная концовка",
-        "pt": "finalização virtual do bugfix",
-        "nl": "bugfix virtueel einde",
-        "fr": "bugfix virtual ending",
-        "it": "bugfix virtuale finale",
-        "es": "final virtual de bugfix",
-        "pl": "wirtualne zakończenie bugfix",
-        "uk": "виправлення віртуальних даних",
-        "zh-cn": "错误修正虚拟结尾"
       }
     },
     "titleLang": {
