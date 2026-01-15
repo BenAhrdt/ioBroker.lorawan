@@ -570,6 +570,14 @@
       "native": {}
     },
     {
+      "_id": "bridge.debug",
+      "type": "folder",
+      "common": {
+        "name": "Debugfunctions of bridge"
+      },
+      "native": {}
+    },
+    {
       "_id": "bridge.notification",
       "type": "state",
       "common": {

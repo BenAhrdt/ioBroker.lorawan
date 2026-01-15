@@ -1,4 +1,5 @@
 'use strict';
+
 const mqtt = require('mqtt');
 const crypto = require('crypto');
 
@@ -53,6 +54,9 @@ class Lorawan extends utils.Adapter {
         this._configQueue = Promise.resolve();
         this._changeInfoCache = new Map();
         this._adapterObjectsCache = null;
+
+        // Internal Logging Table
+        this.logtypes = [];
     }
 
     onFileChange(_id, _fileName, _size) {
@@ -66,6 +70,13 @@ class Lorawan extends utils.Adapter {
     async onReady() {
         const activeFunction = 'onReady';
         try {
+            // Get Logtypes
+            if (await this.objectExists('bridge.debug.logtypes')) {
+                const logtypes = await this.getStateAsync('bridge.debug.logtypes');
+                if (logtypes && typeof logtypes.val === 'string') {
+                    this.logtypes = JSON.parse(logtypes.val);
+                }
+            }
             // read system translation out of i18n translation
             this.i18nTranslation = await this.geti18nTranslation();
 
@@ -735,11 +746,6 @@ class Lorawan extends utils.Adapter {
                             const hash = this.createHash(words[0], this.secret.salt);
                             if (hash === this.secret.hash) {
                                 if (words[1] === 'mqtt') {
-                                    this.extendObject('bridge.debug', {
-                                        type: 'folder',
-                                        common: { name: 'Debugfunctions of bridge' },
-                                        native: {},
-                                    });
                                     this.extendObject('bridge.debug.topic', {
                                         type: 'state',
                                         common: {
@@ -846,6 +852,21 @@ class Lorawan extends utils.Adapter {
                                         native: {},
                                     });
                                     await this.setState(id, '', true);
+                                } else if (words[1] === 'logging') {
+                                    this.extendObject('bridge.debug.logtypes', {
+                                        type: 'state',
+                                        common: {
+                                            name: 'topic of mqtt message',
+                                            type: 'string',
+                                            role: 'json',
+                                            read: true,
+                                            write: true,
+                                            desc: 'Possible array entries eg.: ["discovery", "assign"]',
+                                            def: '',
+                                        },
+                                        native: {},
+                                    });
+                                    await this.setState(id, '', true);
                                 }
                             } else {
                                 let notificationId = `${this.namespace}.${this.bridge?.Words.notification}${this.bridge?.GeneralId}`;
@@ -883,6 +904,9 @@ class Lorawan extends utils.Adapter {
                                 }
                                 await this.setState(id, state.val, true);
                             }
+                        } else if (id.endsWith('bridge.debug.logtypes')) {
+                            this.logtypes = JSON.parse(state.val);
+                            await this.setState(id, state.val, true);
                         }
                     } else {
                         // Query for 0_userdata or alias => states also publish with ack = false
