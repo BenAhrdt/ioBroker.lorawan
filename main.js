@@ -56,7 +56,7 @@ class Lorawan extends utils.Adapter {
         this._adapterObjectsCache = null;
 
         // Internal Logging Table
-        this.logtypes = [];
+        this.logtypes = {};
     }
 
     onFileChange(_id, _fileName, _size) {
@@ -71,12 +71,8 @@ class Lorawan extends utils.Adapter {
         const activeFunction = 'onReady';
         try {
             // Get Logtypes
-            if (await this.objectExists('bridge.debug.logtypes')) {
-                const logtypes = await this.getStateAsync('bridge.debug.logtypes');
-                if (logtypes && typeof logtypes.val === 'string') {
-                    this.logtypes = JSON.parse(logtypes.val);
-                }
-            }
+            this.logtypes = JSON.parse(await this.setDefIfEmptyAndReturnVal('bridge.debug.logtypes'));
+
             // read system translation out of i18n translation
             this.i18nTranslation = await this.geti18nTranslation();
 
@@ -148,6 +144,28 @@ class Lorawan extends utils.Adapter {
             .createHash('sha256')
             .update(plainText + salt)
             .digest('hex');
+    }
+
+    /**
+     * CHeck Id for '' and set to def, if preset
+     *
+     * @param id id to check for empty
+     */
+    async setDefIfEmptyAndReturnVal(id) {
+        if (await this.objectExists(id)) {
+            const stateOfId = await this.getStateAsync(id);
+            if (stateOfId && typeof stateOfId.val) {
+                if (stateOfId.val === '') {
+                    const objectOfId = await this.getObjectAsync(id);
+                    if (objectOfId?.common.def) {
+                        await this.setState(id, objectOfId?.common.def, true);
+                        return objectOfId?.common.def;
+                    }
+                } else {
+                    return stateOfId.val;
+                }
+            }
+        }
     }
 
     async geti18nTranslation() {
@@ -852,21 +870,6 @@ class Lorawan extends utils.Adapter {
                                         native: {},
                                     });
                                     await this.setState(id, '', true);
-                                } else if (words[1] === 'logging') {
-                                    this.extendObject('bridge.debug.logtypes', {
-                                        type: 'state',
-                                        common: {
-                                            name: 'topic of mqtt message',
-                                            type: 'string',
-                                            role: 'json',
-                                            read: true,
-                                            write: true,
-                                            desc: 'Possible array entries eg.: ["discovery", "assign"]',
-                                            def: '',
-                                        },
-                                        native: {},
-                                    });
-                                    await this.setState(id, '', true);
                                 }
                             } else {
                                 let notificationId = `${this.namespace}.${this.bridge?.Words.notification}${this.bridge?.GeneralId}`;
@@ -905,8 +908,8 @@ class Lorawan extends utils.Adapter {
                                 await this.setState(id, state.val, true);
                             }
                         } else if (id.endsWith('bridge.debug.logtypes')) {
-                            this.logtypes = JSON.parse(state.val);
                             await this.setState(id, state.val, true);
+                            this.logtypes = JSON.parse(await this.setDefIfEmptyAndReturnVal(id));
                         }
                     } else {
                         // Query for 0_userdata or alias => states also publish with ack = false

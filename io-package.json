@@ -578,6 +578,19 @@
       "native": {}
     },
     {
+      "_id": "bridge.debug.logtypes",
+      "type": "state",
+      "common": {
+        "type": "string",
+        "role": "json",
+        "name": "internal logging types",
+        "read": true,
+        "write": true,
+        "def": "{\"discovery\":false, \"assign\": false}"
+      },
+      "native": {}
+    },
+    {
       "_id": "bridge.notification",
       "type": "state",
       "common": {
