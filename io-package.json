@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.31",
+    "version": "1.19.32",
     "news": {
+      "1.19.32": {
+        "en": "bugfix await this.ObjectExists",
+        "de": "bugfix warten darauf. ObjekteExperimente",
+        "ru": "багфикс, жди этого. Объекты существуют",
+        "pt": "bugfix espera por isto. O objeto existe",
+        "nl": "bugfix wacht hier op. ObjectBestaat",
+        "fr": "bugfix attend ça. Objet Existe",
+        "it": "bugfix aspetta questo. OBIETTIVI",
+        "es": "bugfix espera esto. ObjectExists",
+        "pl": "bugfix czeka na to. ObjectExists",
+        "uk": "виправлено помилку. Об'єкти",
+        "zh-cn": "bugfix 等待这个 。 对象存在"
+      },
       "1.19.31": {
         "en": "add try catch for adding filter (strage bug)",
         "de": "fügen sie versuchen zu fangen für das hinzufügen von filter (strge bug)",
@@ -80,19 +93,6 @@
         "pl": "budować wewnętrzny logowanie",
         "uk": "створення внутрішнього входу",
         "zh-cn": "建立内部记录"
-      },
-      "1.19.25": {
-        "en": "handle promise rejection before publish",
-        "de": "zurückweisung vor der veröffentlichung",
-        "ru": "обработать отказ от обещания до публикации",
-        "pt": "lidar com rejeição promessa antes de publicar",
-        "nl": "de belofteweigering afhandelen voordat deze gepubliceerd wordt",
-        "fr": "traiter le rejet de promesse avant de publier",
-        "it": "gestire il rifiuto promessa prima di pubblicare",
-        "es": "el rechazo de la promesa antes de publicar",
-        "pl": "obsługiwać odrzucenie obietnicy przed publikacją",
-        "uk": "ручка обіцяє відхилення перед опублікуванням",
-        "zh-cn": "在发布前处理拒绝承诺"
       }
     },
     "titleLang": {
