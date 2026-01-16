@@ -70,6 +70,8 @@
 	"CoverShade": "sombra",
 	"CoverShutter": "obturador",
 	"CoverSignal": "Señales de finales de carrera",
+	"CoverSimulatePosition": "simular posición",
+	"CoverSimulatePositionTooltip": "Simula la posición en función de los finales de carrera (requeridos para algunos sistemas)",
 	"CoverStop": "detener",
 	"CoverStopText": "Detener ID de comando",
 	"CoverStopTooltip": "Un estado adicional para el comando de parada",

@@ -271,5 +271,7 @@
     "CoverShade": "shade",
     "CoverShutter": "shutter",
     "CoverWindow": "window",
-	"deviceSuffix": "device Suffix"
+	"deviceSuffix": "device Suffix",
+	"CoverSimulatePosition": "simulate position",
+	"CoverSimulatePositionTooltip": "simulates the position depending on the limit switches (required for some systems)"
 }

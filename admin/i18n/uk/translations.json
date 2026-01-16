@@ -70,6 +70,8 @@
 	"CoverShade": "відтінок",
 	"CoverShutter": "затвор",
 	"CoverSignal": "Сигнали від кінцевих вимикачів",
+	"CoverSimulatePosition": "імітувати положення",
+	"CoverSimulatePositionTooltip": "імітує положення в залежності від кінцевих вимикачів (необхідно для деяких систем)",
 	"CoverStop": "СТІЙ",
 	"CoverStopText": "Ідентифікатор команди зупинки",
 	"CoverStopTooltip": "Додатковий стан для команди зупинки",

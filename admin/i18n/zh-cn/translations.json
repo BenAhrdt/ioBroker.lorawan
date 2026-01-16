@@ -70,6 +70,8 @@
 	"CoverShade": "阴影",
 	"CoverShutter": "快门",
 	"CoverSignal": "来自限位开关的信号",
+	"CoverSimulatePosition": "模拟位置",
+	"CoverSimulatePositionTooltip": "根据限位开关模拟位置（某些系统需要）",
 	"CoverStop": "停止",
 	"CoverStopText": "停止命令ID",
 	"CoverStopTooltip": "停止命令的附加状态",

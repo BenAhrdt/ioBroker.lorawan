@@ -70,6 +70,8 @@
 	"CoverShade": "sombra",
 	"CoverShutter": "obturador",
 	"CoverSignal": "Sinais de interruptores de limite",
+	"CoverSimulatePosition": "simular posição",
+	"CoverSimulatePositionTooltip": "simula a posição dependendo dos interruptores de limite (necessário para alguns sistemas)",
 	"CoverStop": "parar",
 	"CoverStopText": "ID do comando de parada",
 	"CoverStopTooltip": "Um estado adicional para comando de parada",

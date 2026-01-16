@@ -70,6 +70,8 @@
 	"CoverShade": "schaduw",
 	"CoverShutter": "sluiter",
 	"CoverSignal": "Signalen van eindschakelaars",
+	"CoverSimulatePosition": "positie simuleren",
+	"CoverSimulatePositionTooltip": "simuleert de positie afhankelijk van de eindschakelaars (vereist voor sommige systemen)",
 	"CoverStop": "stop",
 	"CoverStopText": "Stopopdracht-ID",
 	"CoverStopTooltip": "Een extra status voor stopcommando",

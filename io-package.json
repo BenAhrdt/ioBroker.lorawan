@@ -586,7 +586,7 @@
         "name": "internal logging types",
         "read": true,
         "write": true,
-        "def": "{\"discovery\":false, \"assign\": false}"
+        "def": "{\"discovery\":false, \"assign\": false, \"messageTo\": false}"
       },
       "native": {}
     },

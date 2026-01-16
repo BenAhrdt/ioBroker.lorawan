@@ -70,6 +70,8 @@
 	"CoverShade": "Rollo",
 	"CoverShutter": "Rolladen",
 	"CoverSignal": "Signale von Endschaltern",
+	"CoverSimulatePosition": "Position simulieren",
+	"CoverSimulatePositionTooltip": "Simuliert die Position abhängig von den Endschaltern (bei manchen Systemen erforderlich)",
 	"CoverStop": "stoppen",
 	"CoverStopText": "Befehls-ID stoppen",
 	"CoverStopTooltip": "Ein zusätzlicher Status für den Stoppbefehl",

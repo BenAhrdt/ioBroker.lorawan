@@ -70,6 +70,8 @@
 	"CoverShade": "cień",
 	"CoverShutter": "migawka",
 	"CoverSignal": "Sygnały z wyłączników krańcowych",
+	"CoverSimulatePosition": "symulować pozycję",
+	"CoverSimulatePositionTooltip": "symuluje położenie w zależności od wyłączników krańcowych (wymagane w przypadku niektórych systemów)",
 	"CoverStop": "zatrzymywać się",
 	"CoverStopText": "Zatrzymaj identyfikator polecenia",
 	"CoverStopTooltip": "Dodatkowy stan dla polecenia stop",

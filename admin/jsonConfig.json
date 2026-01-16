@@ -2065,7 +2065,6 @@
 							"type": "checkbox",
 							"attr": "CoverPosition",
 							"label": "CoverPosition",
-							"customFilter": {"common": { "type": [ "number", "mixed" ] } },
 							"tooltip": "CoverPositionTooltip",
 							"newLine": true,
 							"default": true,
@@ -2245,6 +2244,20 @@
 							"md": 4,
 							"lg": 4,
 							"xl": 4
+						},
+						{
+							"type": "checkbox",
+							"attr": "CoverSimulatePosition",
+							"label": "CoverSimulatePosition",
+							"tooltip": "CoverSimulatePositionTooltip",
+							"hidden": "data.CoverPosition === true",
+							"newLine": true,
+							"default": false,
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
 						}
 					]
 				},

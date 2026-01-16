@@ -70,6 +70,8 @@
 	"CoverShade": "ombra",
 	"CoverShutter": "otturatore",
 	"CoverSignal": "Segnali dai finecorsa",
+	"CoverSimulatePosition": "simulare la posizione",
+	"CoverSimulatePositionTooltip": "simula la posizione in funzione dei finecorsa (richiesto per alcuni sistemi)",
 	"CoverStop": "fermare",
 	"CoverStopText": "Arresta l'ID del comando",
 	"CoverStopTooltip": "Uno stato aggiuntivo per il comando di arresto",

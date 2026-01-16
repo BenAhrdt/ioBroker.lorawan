@@ -70,6 +70,8 @@
 	"CoverShade": "ombre",
 	"CoverShutter": "obturateur",
 	"CoverSignal": "Signaux des interrupteurs de fin de course",
+	"CoverSimulatePosition": "simuler la position",
+	"CoverSimulatePositionTooltip": "simule la position en fonction des fins de course (obligatoire pour certains systèmes)",
 	"CoverStop": "arrêt",
 	"CoverStopText": "ID de commande d'arrêt",
 	"CoverStopTooltip": "Un état supplémentaire pour la commande d'arrêt",
