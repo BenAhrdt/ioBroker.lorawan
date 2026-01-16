@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.27",
+    "version": "1.19.28",
     "news": {
+      "1.19.28": {
+        "en": "add logging possibility info, debug, warn, error to internal logging",
+        "de": "hinzufügen von logging-möglichkeiten info, debug, warnen, fehler in der internen protokollierung",
+        "ru": "добавьте информацию о возможности регистрации, отладку, предупреждение, ошибку к внутренней регистрации",
+        "pt": "adicionar informações de possibilidade de registro, depurar, alertar, erro ao registro interno",
+        "nl": "log mogelijkheid info toevoegen, debug, waarschuwen, fout bij interne logging",
+        "fr": "ajouter des informations de possibilité de log, debug, avertissement, erreur à la log interne",
+        "it": "aggiungere informazioni possibilità di registrazione, debug, avvertire, errore di registrazione interna",
+        "es": "añadir información de la posibilidad de registro, depuración, aviso, error al registro interno",
+        "pl": "dodaj informacje o możliwości logowania, debugowanie, ostrzeganie, błąd logowania wewnętrznego",
+        "uk": "додайте інформацію про можливість входу, відхилити, попереджати, похибка до внутрішнього входу",
+        "zh-cn": "将记录可能性信息、调试、警告、错误添加到内部记录"
+      },
       "1.19.27": {
         "en": "setting internal logging to debug path in bridge and query the json entries",
         "de": "interne protokollierung zum debug-pfad in der brücke einstellen und die json-einträge abfragen",
@@ -80,19 +93,6 @@
         "pl": "zmiana Sprawdź getForeigen ObjectAsync do zagranicy ObjectExists (obiekty konfiguracyjne chek)",
         "uk": "увійти Перевірити getForeigen Об'єкт Об'єктExists (пристрої налаштування)",
         "zh-cn": "变动 检查是否获取 Foreigen 对象同步到外国 对象Exists (切克配置对象)"
-      },
-      "1.19.21": {
-        "en": "add color Termperature mode to foreign light config",
-        "de": "farbe hinzufügen Termperatur-Modus zu ausländischen Licht config",
-        "ru": "добавить цветовой режим термометрии в конфигурацию иностранного света",
-        "pt": "adicionar o modo de termos de cores à configuração de luz estrangeira",
-        "nl": "kleur Termperatuurmodus toevoegen aan vreemde lichtconfiguratie",
-        "fr": "ajouter le mode couleur Termperature à la configuration de la lumière étrangère",
-        "it": "aggiungere la modalità Termperature colore alla configurazione della luce straniera",
-        "es": "añadir el modo Termperature color a la luz extranjera",
-        "pl": "dodaj kolor Tryb termperature do konfigu światła obcego",
-        "uk": "додати кольоровий режим Termperature до зовнішньої конфігурації світла",
-        "zh-cn": "在外光配置中添加颜色"
       }
     },
     "titleLang": {
