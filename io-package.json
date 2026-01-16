@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.28",
+    "version": "1.19.29",
     "news": {
+      "1.19.29": {
+        "en": "bugfix tilt min & max",
+        "de": "bugfix neigung min & max",
+        "ru": "багфикс tilt min & max",
+        "pt": "min & max da inclinação do erro de correção",
+        "nl": "bugfix tilt min & max",
+        "fr": "bugfix inclinaison min & max",
+        "it": "bugfix tilt min & max",
+        "es": "bugfix tilt min < max",
+        "pl": "przechył bugfix min & max",
+        "uk": "виправлення tilt min & макс",
+        "zh-cn": "最大时长( u)"
+      },
       "1.19.28": {
         "en": "add logging possibility info, debug, warn, error to internal logging",
         "de": "hinzufügen von logging-möglichkeiten info, debug, warnen, fehler in der internen protokollierung",
@@ -80,19 +93,6 @@
         "pl": "więcej debuglogging w zagranicznych Odkryj",
         "uk": "більш детальна інформація Про нас",
         "zh-cn": "更多外国调试日志 发现"
-      },
-      "1.19.22": {
-        "en": "change Check getForeigenObjectAsync to foreignObjectExists (chek config objects)",
-        "de": "änderung Anreise nach Foreigen ObjectAsync zu fremd ObjectExists (chek config Objekte)",
-        "ru": "изменение Проверить GetForeigen ObjectAsync для иностранных ObjectExists (объекты чек-конфигурирования)",
-        "pt": "alteração Verificar getForeigen ObjetoAsync para estrangeiro O objeto existe (objetos de configuração do 'chek')",
-        "nl": "verandering Check getForeigen ObjectAsync naar vreemd ObjectExists (chek config objecten)",
-        "fr": "changement Vérifiez getForeigen ObjetAsync à étranger ObjetExists (chèquer les objets de configuration)",
-        "it": "cambiamento Controllare il prezzo ObjectAsync per stranieri ObjectExists (chek oggetti di configurazione)",
-        "es": "cambio Comprobación de Foreigen ObjectAsync to foreign ObjectExists (chek config objects)",
-        "pl": "zmiana Sprawdź getForeigen ObjectAsync do zagranicy ObjectExists (obiekty konfiguracyjne chek)",
-        "uk": "увійти Перевірити getForeigen Об'єкт Об'єктExists (пристрої налаштування)",
-        "zh-cn": "变动 检查是否获取 Foreigen 对象同步到外国 对象Exists (切克配置对象)"
       }
     },
     "titleLang": {
