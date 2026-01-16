@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.29",
+    "version": "1.19.30",
     "news": {
+      "1.19.30": {
+        "en": "add simulation of Position for cover",
+        "de": "simulation von Position für Cover hinzufügen",
+        "ru": "добавить моделирование позиции для покрытия",
+        "pt": "adicionar simulação de Posição para cobertura",
+        "nl": "simulatie van positie voor dekking toevoegen",
+        "fr": "ajouter la simulation de la position pour la couverture",
+        "it": "aggiungere la simulazione di posizione per il coperchio",
+        "es": "añadir simulación de la posición para la cubierta",
+        "pl": "dodać symulację pozycji dla pokrycia",
+        "uk": "додати моделювання позиції для покриття",
+        "zh-cn": "添加覆盖位置模拟"
+      },
       "1.19.29": {
         "en": "bugfix tilt min & max",
         "de": "bugfix neigung min & max",
@@ -80,19 +93,6 @@
         "pl": "przypisz filtr przy starcie\nbugfix przypisać id temperatury koloru w przypadku braku koloru jest configed",
         "uk": "призначте фільтр на старті\nвиправлення призначає колірну температуру при відсутності кольору",
         "zh-cn": "启动时指定过滤器\n在无颜色时指定颜色温度 id"
-      },
-      "1.19.23": {
-        "en": "more debuglogging in foreignDiscover",
-        "de": "mehr Debuglogging im Ausland Entdecken",
-        "ru": "больше дебюггинга в иностранных Открыть",
-        "pt": "mais depuração em estrangeiro Descobrir",
-        "nl": "meer debuggen in het buitenland Ontdekken",
-        "fr": "plus de débogage à l'étranger Découvrir",
-        "it": "più debuglog in straniero Scopri di più",
-        "es": "más depuración en el extranjero Descubre",
-        "pl": "więcej debuglogging w zagranicznych Odkryj",
-        "uk": "більш детальна інформація Про нас",
-        "zh-cn": "更多外国调试日志 发现"
       }
     },
     "titleLang": {
