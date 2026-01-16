@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.30",
+    "version": "1.19.31",
     "news": {
+      "1.19.31": {
+        "en": "add try catch for adding filter (strage bug)",
+        "de": "fügen sie versuchen zu fangen für das hinzufügen von filter (strge bug)",
+        "ru": "добавить try catch для добавления фильтра (strage bug)",
+        "pt": "adicionar tentativa de captura para adicionar filtro (erro de fita)",
+        "nl": "add catch for add filter (strage bug)",
+        "fr": "ajouter une capture pour ajouter un filtre",
+        "it": "aggiungere la cattura per l'aggiunta di filtro (insetto di sforzo)",
+        "es": "añadir probar captura para añadir filtro (falta de tracción)",
+        "pl": "dodaj chwyt do dodawania filtra (błąd strage)",
+        "uk": "додати намагатися ловити для додавання фільтра (перевірити помилки)",
+        "zh-cn": "添加添加过滤器的尝试抓取( strage bug)"
+      },
       "1.19.30": {
         "en": "add simulation of Position for cover",
         "de": "simulation von Position für Cover hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "obsługiwać odrzucenie obietnicy przed publikacją",
         "uk": "ручка обіцяє відхилення перед опублікуванням",
         "zh-cn": "在发布前处理拒绝承诺"
-      },
-      "1.19.24": {
-        "en": "assign Filter at startup\nbugfix assign color temperature id in case of no color is configed",
-        "de": "filter beim Start zuordnen\nbugfix ordnen sie farbtemperatur id, wenn keine farbe konfisziert wird",
-        "ru": "назначение фильтра при запуске\nbugfix присваивает цветовую температуру id в случае отсутствия цвета",
-        "pt": "atribuir o Filtro na inicialização\nbugfix atribuir id de temperatura de cor no caso de nenhuma cor ser configurada",
-        "nl": "filter toewijzen bij opstarten\nbugfix kleurtemperatuur-id toewijzen in geval er geen kleur is ingesteld",
-        "fr": "assigner le filtre au démarrage\nbugfix assigner l'id de température de couleur en cas de aucune couleur est configuré",
-        "it": "assegnare il filtro all'avvio\nbugfix assegna la temperatura di colore id in caso di nessun colore è configed",
-        "es": "asignar filtro al inicio\nbugfix asigna la temperatura de color id en caso de que no se confite color",
-        "pl": "przypisz filtr przy starcie\nbugfix przypisać id temperatury koloru w przypadku braku koloru jest configed",
-        "uk": "призначте фільтр на старті\nвиправлення призначає колірну температуру при відсутності кольору",
-        "zh-cn": "启动时指定过滤器\n在无颜色时指定颜色温度 id"
       }
     },
     "titleLang": {
