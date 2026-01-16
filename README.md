@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) add logging possibility info, debug, warn, error to internal logging
+
 ### 1.19.27 (2026-01-15)
 * (BenAhrdt) setting internal logging to debug path in bridge and query the json entries
 
