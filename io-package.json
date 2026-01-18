@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.32",
+    "version": "1.19.33",
     "news": {
+      "1.19.33": {
+        "en": "sonoff bugfix aparrant_power",
+        "de": "sonoff bugfix aparrant_power",
+        "ru": "sonoff bugfix aparrant_power скачать бесплатно",
+        "pt": "sonoff bugfix aparrant_ power",
+        "nl": "sonoff bugfix aparrant_power",
+        "fr": "sonoff bugfix aparrant_power",
+        "it": "sonoff bugfix aparrant_power",
+        "es": "sonoff bugfix aparrant_power",
+        "pl": "sonoff bugfix aparrant _ power",
+        "uk": "gaeilge, english, українська..",
+        "zh-cn": "sonoff 错误修补parrant_power"
+      },
       "1.19.32": {
         "en": "bugfix await this.ObjectExists",
         "de": "bugfix warten darauf. ObjekteExperimente",
@@ -80,19 +93,6 @@
         "pl": "ustawienie wewnętrznego logowania do debugowania ścieżki w moście i zapytanie wpisów json",
         "uk": "встановлення внутрішнього входу в дебюговий шлях в мост і переробити записи json",
         "zh-cn": "设置内部日志以调试桥上的路径并查询 json 条目"
-      },
-      "1.19.26": {
-        "en": "build internal logging",
-        "de": "interne protokollierung erstellen",
-        "ru": "построить внутренние лесозаготовки",
-        "pt": "criar registro interno",
-        "nl": "interne logging bouwen",
-        "fr": "construire l'exploitation forestière interne",
-        "it": "costruire logging interno",
-        "es": "construir registro interno",
-        "pl": "budować wewnętrzny logowanie",
-        "uk": "створення внутрішнього входу",
-        "zh-cn": "建立内部记录"
       }
     },
     "titleLang": {

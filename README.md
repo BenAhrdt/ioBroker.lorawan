@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.19.33 (2026-01-18)
 * (BenAhrdt) sonoff bugfix aparrant_power
 
 ### 1.19.32 (2026-01-16)
