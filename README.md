@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.19.34 (2026-01-20)
 * (BenAhrdt) assign Percent & Liter in assignhandler
 
 ### 1.19.33 (2026-01-18)

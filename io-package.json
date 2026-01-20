@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.33",
+    "version": "1.19.34",
     "news": {
+      "1.19.34": {
+        "en": "assign Percent & Liter in assignhandler",
+        "de": "percent & Liter in assignhandler zuweisen",
+        "ru": "производитель Percent & Liter",
+        "pt": "atribuir a percentagem & Liter no atribuidor",
+        "nl": "procent & Liter toewijzen aan attributen",
+        "fr": "assigner Pourcentage & Liter dans l'attributhandler",
+        "it": "assegnare Percent & Liter in assegnatore",
+        "es": "asignar Percent \" Liter in assignhandler",
+        "pl": "przypisz Procent i Liter w assignhandler",
+        "uk": "призначте відсоток & Література в assignhandler",
+        "zh-cn": "在指定手牌中指定百分数( L)"
+      },
       "1.19.33": {
         "en": "sonoff bugfix aparrant_power",
         "de": "sonoff bugfix aparrant_power",
@@ -80,19 +93,6 @@
         "pl": "dodaj informacje o możliwości logowania, debugowanie, ostrzeganie, błąd logowania wewnętrznego",
         "uk": "додайте інформацію про можливість входу, відхилити, попереджати, похибка до внутрішнього входу",
         "zh-cn": "将记录可能性信息、调试、警告、错误添加到内部记录"
-      },
-      "1.19.27": {
-        "en": "setting internal logging to debug path in bridge and query the json entries",
-        "de": "interne protokollierung zum debug-pfad in der brücke einstellen und die json-einträge abfragen",
-        "ru": "установка внутренней регистрации для отладки пути в мосту и запроса записей json",
-        "pt": "definindo o registro interno para o caminho de depuração na ponte e consultando os itens json",
-        "nl": "interne logging instellen op debugpad in de brug en de json-items opvragen",
-        "fr": "paramétrer l'enregistrement interne pour déboguer le chemin dans le pont et interroger les entrées de json",
-        "it": "impostare logging interno per debug percorso in ponte e query le voci json",
-        "es": "establecer registro interno para depurar el camino en puente y consultar las entradas json",
-        "pl": "ustawienie wewnętrznego logowania do debugowania ścieżki w moście i zapytanie wpisów json",
-        "uk": "встановлення внутрішнього входу в дебюговий шлях в мост і переробити записи json",
-        "zh-cn": "设置内部日志以调试桥上的路径并查询 json 条目"
       }
     },
     "titleLang": {
