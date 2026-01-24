@@ -14,6 +14,8 @@ const bridgeClass = require('./lib/modules/bridge');
 const mqttClientClass = require('./lib/modules/mqttclient');
 const messagehandlerClass = require('./lib/modules/messagehandler');
 const downlinkConfighandlerClass = require('./lib/modules/downlinkConfighandler');
+const LoRaWANDeviceManagement = require('./lib/modules/deviceManager');
+const objectStoreClass = require('./lib/modules/objectStore');
 
 class Lorawan extends utils.Adapter {
     /**
@@ -70,6 +72,11 @@ class Lorawan extends utils.Adapter {
     async onReady() {
         const activeFunction = 'onReady';
         try {
+            // Generate Objectstore
+            this.objectStore = new objectStoreClass(this);
+
+            await this.objectStore.generateDeviceObjects();
+
             // Get Logtypes
             this.logtypes = JSON.parse(await this.setDefIfEmptyAndReturnVal('bridge.debug.logtypes'));
 
@@ -113,6 +120,8 @@ class Lorawan extends utils.Adapter {
             if (this.config.BridgeType !== 'off') {
                 this.bridge = new bridgeClass(this);
             }
+
+            this.deviceManagement = new LoRaWANDeviceManagement(this);
 
             //Subscribe all configuration and control states
             await this.subscribeStatesAsync('*');

@@ -145,6 +145,9 @@
     "messagebox": true,
     "dataSource": "push",
     "blockly": true,
+    "supportedMessages": {
+      "deviceManager": true
+    },
     "adminUI": {
       "config": "json",
       "tab": "json"
