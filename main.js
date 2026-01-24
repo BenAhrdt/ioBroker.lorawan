@@ -125,7 +125,7 @@ class Lorawan extends utils.Adapter {
 
             //Subscribe all configuration and control states
             await this.subscribeStatesAsync('*');
-            //this.subscribeObjectsAsync('*.uplink.decoded.*');
+            await this.subscribeObjectsAsync('*');
             //this.subscribeObjectsAsync('*.downlink.control.*');
             this.log.debug(`the adapter starts with downlinkconfigs: ${JSON.stringify(this.config.downlinkConfig)}.`);
             this.log.debug(
@@ -496,33 +496,41 @@ class Lorawan extends utils.Adapter {
      * @param obj value and ack of the changed object
      */
     async onObjectChange(id, obj) {
-        this.log.debug(`${id} is changed into ${JSON.stringify(obj.common)}`);
+        this.log.silly(`${id} is changed into ${JSON.stringify(obj)}`);
         const activeFunction = 'main.js - onObjectChange';
         this.log.silly(`Function ${activeFunction} started.`);
         try {
-            // Only work, if bridge is activ
-            if (this.bridge) {
-                // Erzeugen der HA Bridged für Control
-                // check for new Entry
-                const members = obj.common.members;
-                for (const member of members) {
-                    if (!this.bridge.ForeignBridgeMembers[member]) {
-                        if (!member.startsWith(this.namespace)) {
-                            await this.bridge?.discoverForeignRange(member);
-                        } else {
-                            this.log.warn(
-                                `The bridge enum is set within adapternamespace. please remove form id: ${member}`,
-                            );
-                        }
-                        return;
-                    }
-                }
+            // Internal Objects => Assign to objectStore
+            if (id.startsWith(this.namespace)) {
+                // Update State in objectStore
+                await this.objectStore?.generateObjectStructureFromId(id, { payload: { object: obj } });
 
-                // check for Entry removed
-                for (const member of Object.values(this.bridge.ForeignBridgeMembers)) {
-                    if (!members.includes(member)) {
-                        await this.bridge.discoverForeignRange(member, true);
-                        return;
+                // External States
+            } else {
+                // Only work, if bridge is activ
+                if (this.bridge) {
+                    // Erzeugen der HA Bridged für Control
+                    // check for new Entry
+                    const members = obj.common.members;
+                    for (const member of members) {
+                        if (!this.bridge.ForeignBridgeMembers[member]) {
+                            if (!member.startsWith(this.namespace)) {
+                                await this.bridge?.discoverForeignRange(member);
+                            } else {
+                                this.log.warn(
+                                    `The bridge enum is set within adapternamespace. please remove form id: ${member}`,
+                                );
+                            }
+                            return;
+                        }
+                    }
+
+                    // check for Entry removed
+                    for (const member of Object.values(this.bridge.ForeignBridgeMembers)) {
+                        if (!members.includes(member)) {
+                            await this.bridge.discoverForeignRange(member, true);
+                            return;
+                        }
                     }
                 }
             }
@@ -930,6 +938,9 @@ class Lorawan extends utils.Adapter {
                     // Query for Namespace => Just publish foreign States with ack = true
                     if (!id.startsWith(this.namespace)) {
                         await this.bridge?.publishId(id, state.val, {});
+                    } else {
+                        // Update State in objectStore
+                        await this.objectStore?.generateObjectStructureFromId(id, { payload: { state: state } });
                     }
                 }
             } else {
