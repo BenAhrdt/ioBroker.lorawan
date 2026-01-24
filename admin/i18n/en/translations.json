@@ -273,5 +273,8 @@
     "CoverWindow": "window",
 	"deviceSuffix": "device Suffix",
 	"CoverSimulatePosition": "simulate position",
-	"CoverSimulatePositionTooltip": "simulates the position depending on the limit switches (required for some systems)"
+	"CoverSimulatePositionTooltip": "simulates the position depending on the limit switches (required for some systems)",
+	"Rename this device": "Rename this device",
+	"Config this device": "Config this device",
+	"Info of this device": "Info of this device"
 }
