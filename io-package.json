@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.6",
+    "version": "1.20.7",
     "news": {
+      "1.20.7": {
+        "en": "bugfix correct writing of indicators",
+        "de": "bugfix korrektes schreiben von indikatoren",
+        "ru": "bugfix правильное написание индикаторов",
+        "pt": "errofix escrita correta de indicadores",
+        "nl": "foutfix correct schrijven van indicatoren",
+        "fr": "bugfix écriture correcte des indicateurs",
+        "it": "bugfix corretto scrittura di indicatori",
+        "es": "bugfix correcta escritura de indicadores",
+        "pl": "bugfix prawidłowe pisanie wskaźników",
+        "uk": "виправлення правильних показників",
+        "zh-cn": "错误修正正确的指标写法"
+      },
       "1.20.6": {
         "en": "updateing assignhandler und modifying indicators and informations",
         "de": "aktualisierung von assignhandler und änderung von indikatoren und informationen",
@@ -80,19 +93,6 @@
         "pl": "menedżer urządzeń bugfix",
         "uk": "диспетчер пристроїв",
         "zh-cn": "错误修正设备管理器"
-      },
-      "1.20.0": {
-        "en": "add first Steps of device Manager",
-        "de": "erste Schritte des Gerätemanagers hinzufügen",
-        "ru": "добавить первые шаги диспетчера устройств",
-        "pt": "adicionar os primeiros Passos do Gestor de Dispositivos",
-        "nl": "eerste stappen van apparaatbeheer toevoegen",
-        "fr": "ajouter les premières étapes du gestionnaire de périphérique",
-        "it": "aggiungere i primi passi di Gestione dispositivi",
-        "es": "añadir los primeros pasos del administrador del dispositivo",
-        "pl": "dodaj pierwsze kroki menedżera urządzeń",
-        "uk": "додати перші кроки диспетчера пристроїв",
-        "zh-cn": "添加设备管理器的第一个步骤"
       }
     },
     "titleLang": {
