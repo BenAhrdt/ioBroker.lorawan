@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) updateing assignhandler und modifying indicators and informations
+
 ### 1.20.5 (2026-01-25)
 * (BenAhrdt) bugfixing updating object Store with not alowed id
 
