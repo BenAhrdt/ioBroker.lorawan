@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.0",
+    "version": "1.20.1",
     "news": {
+      "1.20.1": {
+        "en": "bugfix device Manager",
+        "de": "bugfix Gerät Manager",
+        "ru": "bugfix устройство диспетчер",
+        "pt": "gerenciador de dispositivos de correção de erros",
+        "nl": "bugfix apparaatbeheer",
+        "fr": "gestionnaire de périphériques bugfix",
+        "it": "bugfix dispositivo Manager",
+        "es": "bugfix device Manager",
+        "pl": "menedżer urządzeń bugfix",
+        "uk": "диспетчер пристроїв",
+        "zh-cn": "错误修正设备管理器"
+      },
       "1.20.0": {
         "en": "add first Steps of device Manager",
         "de": "erste Schritte des Gerätemanagers hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "dodać symulację pozycji dla pokrycia",
         "uk": "додати моделювання позиції для покриття",
         "zh-cn": "添加覆盖位置模拟"
-      },
-      "1.19.29": {
-        "en": "bugfix tilt min & max",
-        "de": "bugfix neigung min & max",
-        "ru": "багфикс tilt min & max",
-        "pt": "min & max da inclinação do erro de correção",
-        "nl": "bugfix tilt min & max",
-        "fr": "bugfix inclinaison min & max",
-        "it": "bugfix tilt min & max",
-        "es": "bugfix tilt min < max",
-        "pl": "przechył bugfix min & max",
-        "uk": "виправлення tilt min & макс",
-        "zh-cn": "最大时长( u)"
       }
     },
     "titleLang": {
