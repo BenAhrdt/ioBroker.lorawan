@@ -72,13 +72,13 @@ class Lorawan extends utils.Adapter {
     async onReady() {
         const activeFunction = 'onReady';
         try {
+            // Get Logtypes
+            this.logtypes = JSON.parse(await this.setDefIfEmptyAndReturnVal('bridge.debug.logtypes'));
+
             // Generate Objectstore
             this.objectStore = new objectStoreClass(this);
 
             await this.objectStore.generateDeviceObjects();
-
-            // Get Logtypes
-            this.logtypes = JSON.parse(await this.setDefIfEmptyAndReturnVal('bridge.debug.logtypes'));
 
             // read system translation out of i18n translation
             this.i18nTranslation = await this.geti18nTranslation();
