@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.19.34",
+    "version": "1.20.0",
     "news": {
+      "1.20.0": {
+        "en": "add first Steps of device Manager",
+        "de": "erste Schritte des Gerätemanagers hinzufügen",
+        "ru": "добавить первые шаги диспетчера устройств",
+        "pt": "adicionar os primeiros Passos do Gestor de Dispositivos",
+        "nl": "eerste stappen van apparaatbeheer toevoegen",
+        "fr": "ajouter les premières étapes du gestionnaire de périphérique",
+        "it": "aggiungere i primi passi di Gestione dispositivi",
+        "es": "añadir los primeros pasos del administrador del dispositivo",
+        "pl": "dodaj pierwsze kroki menedżera urządzeń",
+        "uk": "додати перші кроки диспетчера пристроїв",
+        "zh-cn": "添加设备管理器的第一个步骤"
+      },
       "1.19.34": {
         "en": "assign Percent & Liter in assignhandler",
         "de": "percent & Liter in assignhandler zuweisen",
@@ -80,19 +93,6 @@
         "pl": "przechył bugfix min & max",
         "uk": "виправлення tilt min & макс",
         "zh-cn": "最大时长( u)"
-      },
-      "1.19.28": {
-        "en": "add logging possibility info, debug, warn, error to internal logging",
-        "de": "hinzufügen von logging-möglichkeiten info, debug, warnen, fehler in der internen protokollierung",
-        "ru": "добавьте информацию о возможности регистрации, отладку, предупреждение, ошибку к внутренней регистрации",
-        "pt": "adicionar informações de possibilidade de registro, depurar, alertar, erro ao registro interno",
-        "nl": "log mogelijkheid info toevoegen, debug, waarschuwen, fout bij interne logging",
-        "fr": "ajouter des informations de possibilité de log, debug, avertissement, erreur à la log interne",
-        "it": "aggiungere informazioni possibilità di registrazione, debug, avvertire, errore di registrazione interna",
-        "es": "añadir información de la posibilidad de registro, depuración, aviso, error al registro interno",
-        "pl": "dodaj informacje o możliwości logowania, debugowanie, ostrzeganie, błąd logowania wewnętrznego",
-        "uk": "додайте інформацію про можливість входу, відхилити, попереджати, похибка до внутрішнього входу",
-        "zh-cn": "将记录可能性信息、调试、警告、错误添加到内部记录"
       }
     },
     "titleLang": {
