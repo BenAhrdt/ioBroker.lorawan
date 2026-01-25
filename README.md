@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) bugfix device Manager
+
 ### 1.20.0 (2026-01-25)
 * (BenAhrdt) add first Steps of device Manager
 
