@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.5",
+    "version": "1.20.6",
     "news": {
+      "1.20.6": {
+        "en": "updateing assignhandler und modifying indicators and informations",
+        "de": "aktualisierung von assignhandler und änderung von indikatoren und informationen",
+        "ru": "обновление цессионера и изменение показателей и информации",
+        "pt": "atualização de indicadores e informações de atribuição e modificação",
+        "nl": "actualisering van indicatoren en informatie",
+        "fr": "mettre à jour les indicateurs et les informations d'attribution et de modification",
+        "it": "aggiornamento assegnatore und modifica degli indicatori e delle informazioni",
+        "es": "actualización del cedente nod modificando indicadores e informaciones",
+        "pl": "aktualizowanie identyfikatorów i modyfikowanie wskaźników i informacji",
+        "uk": "оновлення вивіски унд модифікації індикаторів та інформації",
+        "zh-cn": "更新指定手控器未修改指标和信息"
+      },
       "1.20.5": {
         "en": "bugfixing updating object Store with not alowed id",
         "de": "bugfixing update object Store with not alowed id",
@@ -80,19 +93,6 @@
         "pl": "dodaj pierwsze kroki menedżera urządzeń",
         "uk": "додати перші кроки диспетчера пристроїв",
         "zh-cn": "添加设备管理器的第一个步骤"
-      },
-      "1.19.34": {
-        "en": "assign Percent & Liter in assignhandler",
-        "de": "percent & Liter in assignhandler zuweisen",
-        "ru": "производитель Percent & Liter",
-        "pt": "atribuir a percentagem & Liter no atribuidor",
-        "nl": "procent & Liter toewijzen aan attributen",
-        "fr": "assigner Pourcentage & Liter dans l'attributhandler",
-        "it": "assegnare Percent & Liter in assegnatore",
-        "es": "asignar Percent \" Liter in assignhandler",
-        "pl": "przypisz Procent i Liter w assignhandler",
-        "uk": "призначте відсоток & Література в assignhandler",
-        "zh-cn": "在指定手牌中指定百分数( L)"
       }
     },
     "titleLang": {
