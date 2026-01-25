@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.4",
+    "version": "1.20.5",
     "news": {
+      "1.20.5": {
+        "en": "bugfixing updating object Store with not alowed id",
+        "de": "bugfixing update object Store with not alowed id",
+        "ru": "bugfixing Update Object Store с невысоким идентификатором",
+        "pt": "correcção de erros para actualizar o objecto Armazenar sem ID abaixado",
+        "nl": "bugfixing update object Store with not alowed id",
+        "fr": "bugfixing update object Store avec id non alowed",
+        "it": "bugfixing aggiornamento oggetti Store con non alowed id",
+        "es": "bugfixing actualización objeto Store with not alowed id",
+        "pl": "bugfitting aktualizacja obiektu Przechowuj bez przypisanego id",
+        "uk": "виправлення помилок оновлення об'єкту Store з не потовщеним id",
+        "zh-cn": "正在更新对象 Store, 且未减少 ID"
+      },
       "1.20.4": {
         "en": "experimental to debug in live system",
         "de": "experimentell zu debug im live-system",
@@ -80,19 +93,6 @@
         "pl": "przypisz Procent i Liter w assignhandler",
         "uk": "призначте відсоток & Література в assignhandler",
         "zh-cn": "在指定手牌中指定百分数( L)"
-      },
-      "1.19.33": {
-        "en": "sonoff bugfix aparrant_power",
-        "de": "sonoff bugfix aparrant_power",
-        "ru": "sonoff bugfix aparrant_power скачать бесплатно",
-        "pt": "sonoff bugfix aparrant_ power",
-        "nl": "sonoff bugfix aparrant_power",
-        "fr": "sonoff bugfix aparrant_power",
-        "it": "sonoff bugfix aparrant_power",
-        "es": "sonoff bugfix aparrant_power",
-        "pl": "sonoff bugfix aparrant _ power",
-        "uk": "gaeilge, english, українська..",
-        "zh-cn": "sonoff 错误修补parrant_power"
       }
     },
     "titleLang": {
