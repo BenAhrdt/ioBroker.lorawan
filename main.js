@@ -127,8 +127,11 @@ class Lorawan extends utils.Adapter {
             await this.subscribeStatesAsync('*');
             await this.subscribeObjectsAsync('*');
             //this.subscribeObjectsAsync('*.downlink.control.*');
-            this.log.debug(`the adapter starts with downlinkconfigs: ${JSON.stringify(this.config.downlinkConfig)}.`);
-            this.log.debug(
+            // Check for logging
+            this.log[this.logtypes.downlinkconfig]?.(
+                `the adapter starts with downlinkconfigs: ${JSON.stringify(this.config.downlinkConfig)}.`,
+            );
+            this.log[this.logtypes.downlinkconfig]?.(
                 `the active downlinkconfigs are: ${JSON.stringify(this.downlinkConfighandler.activeDownlinkConfigs)}`,
             );
             /*            
