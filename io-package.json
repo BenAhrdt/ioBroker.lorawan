@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.2",
+    "version": "1.20.3",
     "news": {
+      "1.20.3": {
+        "en": "bugfix device Manager",
+        "de": "bugfix Gerät Manager",
+        "ru": "bugfix устройство диспетчер",
+        "pt": "gerenciador de dispositivos de correção de erros",
+        "nl": "bugfix apparaatbeheer",
+        "fr": "gestionnaire de périphériques bugfix",
+        "it": "bugfix dispositivo Manager",
+        "es": "bugfix device Manager",
+        "pl": "menedżer urządzeń bugfix",
+        "uk": "диспетчер пристроїв",
+        "zh-cn": "错误修正设备管理器"
+      },
       "1.20.2": {
         "en": "bugfix device Manager and objectStore device checks",
         "de": "bugfix device Manager und Objekt Geräteüberprüfungen",
@@ -80,19 +93,6 @@
         "pl": "bugfix czeka na to. ObjectExists",
         "uk": "виправлено помилку. Об'єкти",
         "zh-cn": "bugfix 等待这个 。 对象存在"
-      },
-      "1.19.31": {
-        "en": "add try catch for adding filter (strage bug)",
-        "de": "fügen sie versuchen zu fangen für das hinzufügen von filter (strge bug)",
-        "ru": "добавить try catch для добавления фильтра (strage bug)",
-        "pt": "adicionar tentativa de captura para adicionar filtro (erro de fita)",
-        "nl": "add catch for add filter (strage bug)",
-        "fr": "ajouter une capture pour ajouter un filtre",
-        "it": "aggiungere la cattura per l'aggiunta di filtro (insetto di sforzo)",
-        "es": "añadir probar captura para añadir filtro (falta de tracción)",
-        "pl": "dodaj chwyt do dodawania filtra (błąd strage)",
-        "uk": "додати намагатися ловити для додавання фільтра (перевірити помилки)",
-        "zh-cn": "添加添加过滤器的尝试抓取( strage bug)"
       }
     },
     "titleLang": {
