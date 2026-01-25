@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.1",
+    "version": "1.20.2",
     "news": {
+      "1.20.2": {
+        "en": "bugfix device Manager and objectStore device checks",
+        "de": "bugfix device Manager und Objekt Geräteüberprüfungen",
+        "ru": "bugfix диспетчер устройств и объект Проверка устройств магазина",
+        "pt": "gestor e objecto do dispositivo de correção de erros Verificação do dispositivo de armazenamento",
+        "nl": "bugfix apparaatbeheer en object Controles van het opslagapparaat",
+        "fr": "bugfix device Manager et objet Contrôles des dispositifs de stockage",
+        "it": "bugfix device Manager e oggetto Controllo dispositivi di memorizzazione",
+        "es": "bugfix device Manager y objeto Controles de dispositivo de la tienda",
+        "pl": "menedżer i obiekt urządzenia bugfix Kontrole urządzeń do przechowywania",
+        "uk": "диспетчер пристроїв та об'єкт Перевірка пристрою магазину",
+        "zh-cn": "错误修正设备管理器和对象 存储设备检查"
+      },
       "1.20.1": {
         "en": "bugfix device Manager",
         "de": "bugfix Gerät Manager",
@@ -80,19 +93,6 @@
         "pl": "dodaj chwyt do dodawania filtra (błąd strage)",
         "uk": "додати намагатися ловити для додавання фільтра (перевірити помилки)",
         "zh-cn": "添加添加过滤器的尝试抓取( strage bug)"
-      },
-      "1.19.30": {
-        "en": "add simulation of Position for cover",
-        "de": "simulation von Position für Cover hinzufügen",
-        "ru": "добавить моделирование позиции для покрытия",
-        "pt": "adicionar simulação de Posição para cobertura",
-        "nl": "simulatie van positie voor dekking toevoegen",
-        "fr": "ajouter la simulation de la position pour la couverture",
-        "it": "aggiungere la simulazione di posizione per il coperchio",
-        "es": "añadir simulación de la posición para la cubierta",
-        "pl": "dodać symulację pozycji dla pokrycia",
-        "uk": "додати моделювання позиції для покриття",
-        "zh-cn": "添加覆盖位置模拟"
       }
     },
     "titleLang": {
