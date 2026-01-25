@@ -503,7 +503,9 @@ class Lorawan extends utils.Adapter {
             // Internal Objects => Assign to objectStore
             if (id.startsWith(this.namespace)) {
                 // Update State in objectStore
-                await this.objectStore?.generateObjectStructureFromId(id, { payload: { object: obj } });
+                if (!id.startsWith(`${this.namespace}.info`) && !id.startsWith(`${this.namespace}.bridge`)) {
+                    await this.objectStore?.generateObjectStructureFromId(id, { payload: { object: obj } });
+                }
 
                 // External States
             } else {
@@ -940,7 +942,9 @@ class Lorawan extends utils.Adapter {
                         await this.bridge?.publishId(id, state.val, {});
                     } else {
                         // Update State in objectStore
-                        await this.objectStore?.generateObjectStructureFromId(id, { payload: { state: state } });
+                        if (!id.startsWith(`${this.namespace}.info`) && !id.startsWith(`${this.namespace}.bridge`)) {
+                            await this.objectStore?.generateObjectStructureFromId(id, { payload: { state: state } });
+                        }
                     }
                 }
             } else {
