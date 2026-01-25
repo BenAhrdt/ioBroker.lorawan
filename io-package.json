@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.3",
+    "version": "1.20.4",
     "news": {
+      "1.20.4": {
+        "en": "experimental to debug in live system",
+        "de": "experimentell zu debug im live-system",
+        "ru": "экспериментальная отладка в живой системе",
+        "pt": "experimental para depuração no sistema live",
+        "nl": "experimenteel debuggen in live systeem",
+        "fr": "expérimental pour déboguer dans le système vivant",
+        "it": "sperimentale per debug nel sistema live",
+        "es": "experimental para depurar en el sistema en vivo",
+        "pl": "eksperymentalne debugowanie w systemie live",
+        "uk": "експериментальна дебюга в живій системі",
+        "zh-cn": "正在运行系统中调试的实验"
+      },
       "1.20.3": {
         "en": "bugfix device Manager",
         "de": "bugfix Gerät Manager",
@@ -80,19 +93,6 @@
         "pl": "sonoff bugfix aparrant _ power",
         "uk": "gaeilge, english, українська..",
         "zh-cn": "sonoff 错误修补parrant_power"
-      },
-      "1.19.32": {
-        "en": "bugfix await this.ObjectExists",
-        "de": "bugfix warten darauf. ObjekteExperimente",
-        "ru": "багфикс, жди этого. Объекты существуют",
-        "pt": "bugfix espera por isto. O objeto existe",
-        "nl": "bugfix wacht hier op. ObjectBestaat",
-        "fr": "bugfix attend ça. Objet Existe",
-        "it": "bugfix aspetta questo. OBIETTIVI",
-        "es": "bugfix espera esto. ObjectExists",
-        "pl": "bugfix czeka na to. ObjectExists",
-        "uk": "виправлено помилку. Об'єкти",
-        "zh-cn": "bugfix 等待这个 。 对象存在"
       }
     },
     "titleLang": {
