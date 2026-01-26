@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.12",
+    "version": "1.20.13",
     "news": {
+      "1.20.13": {
+        "en": "remove nod from crypto",
+        "de": "nod from crypto entfernen",
+        "ru": "удалить nod из crypto",
+        "pt": "remover aceno do cripto",
+        "nl": "verwijderen knik uit crypto",
+        "fr": "enlever le noeud de crypto",
+        "it": "rimuovere il nodo da crypto",
+        "es": "quitar el fideo de cripto",
+        "pl": "usunąć skinienie z krypto",
+        "uk": "видалити nod з крипто",
+        "zh-cn": "从加密中删除点头"
+      },
       "1.20.12": {
         "en": "check for update",
         "de": "überprüfung der aktualisierung",
@@ -80,19 +93,6 @@
         "pl": "bugfix prawidłowe pisanie wskaźników",
         "uk": "виправлення правильних показників",
         "zh-cn": "错误修正正确的指标写法"
-      },
-      "1.20.6": {
-        "en": "updateing assignhandler und modifying indicators and informations",
-        "de": "aktualisierung von assignhandler und änderung von indikatoren und informationen",
-        "ru": "обновление цессионера и изменение показателей и информации",
-        "pt": "atualização de indicadores e informações de atribuição e modificação",
-        "nl": "actualisering van indicatoren en informatie",
-        "fr": "mettre à jour les indicateurs et les informations d'attribution et de modification",
-        "it": "aggiornamento assegnatore und modifica degli indicatori e delle informazioni",
-        "es": "actualización del cedente nod modificando indicadores e informaciones",
-        "pl": "aktualizowanie identyfikatorów i modyfikowanie wskaźników i informacji",
-        "uk": "оновлення вивіски унд модифікації індикаторів та інформації",
-        "zh-cn": "更新指定手控器未修改指标和信息"
       }
     },
     "titleLang": {
