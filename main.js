@@ -1144,13 +1144,13 @@ class Lorawan extends utils.Adapter {
             // Check for logging
             this.log[this.logtypes.getChangeInfo]?.(`changeinfo of id ${id}, will be generated.`);
             const changeInfo = this.getBaseDeviceInfo(id);
-            //const myId = `${changeInfo?.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.configuration}.devicetype`; // commented out on: 26.01.2026 => Use objectStore
+            const myId = `${changeInfo?.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.configuration}.devicetype`; // commented out on: 26.01.2026 => Use objectStore
             // Check for changeInfo
             if (changeInfo) {
-                //const applicationDirectoryObject = await this.getObjectAsync(changeInfo.applicationId); // commented out on: 26.01.2026 => Use objectStore
-                //const startDirectoryObject = await this.getObjectAsync(changeInfo.objectStartDirectory); // commented out on: 26.01.2026 => Use objectStore
-                const applicationDirectoryObject = this.objectStore?.applications[changeInfo.applicationId].object;
-                const startDirectoryObject = this.objectStore?.devices[changeInfo.deviceEUI].object;
+                const applicationDirectoryObject = await this.getObjectAsync(changeInfo.applicationId); // commented out on: 26.01.2026 => Use objectStore
+                const startDirectoryObject = await this.getObjectAsync(changeInfo.objectStartDirectory); // commented out on: 26.01.2026 => Use objectStore
+                //const applicationDirectoryObject = this.objectStore?.applications[changeInfo.applicationId].object;
+                //const startDirectoryObject = this.objectStore?.devices[changeInfo.deviceEUI].object;
                 if (applicationDirectoryObject && startDirectoryObject) {
                     changeInfo.applicationName = applicationDirectoryObject.native.applicationName;
                     changeInfo.usedApplicationName = applicationDirectoryObject.common.name;
@@ -1158,8 +1158,8 @@ class Lorawan extends utils.Adapter {
                     changeInfo.usedDeviceId = startDirectoryObject.common.name;
                 }
                 // Get deviceType
-                //const deviceTypeIdState = await this.getStateAsync(myId); // commented out on: 26.01.2026 => Use objectStore
-                const deviceTypeIdState = this.objectStore?.devices[changeInfo.deviceEUI].informations.devicetype.state;
+                const deviceTypeIdState = await this.getStateAsync(myId); // commented out on: 26.01.2026 => Use objectStore
+                //const deviceTypeIdState = this.objectStore?.devices[changeInfo.deviceEUI].informations.devicetype.state;
                 if (deviceTypeIdState) {
                     changeInfo.deviceType = deviceTypeIdState.val;
                     if (options && options.withBestMatch) {
