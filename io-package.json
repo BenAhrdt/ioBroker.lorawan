@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.11",
+    "version": "1.20.12",
     "news": {
+      "1.20.12": {
+        "en": "check for update",
+        "de": "überprüfung der aktualisierung",
+        "ru": "проверьте обновление",
+        "pt": "verificar a actualização",
+        "nl": "controleren op update",
+        "fr": "vérifier la mise à jour",
+        "it": "controllare per l'aggiornamento",
+        "es": "check for update",
+        "pl": "sprawdzanie aktualizacji",
+        "uk": "реєстрація на оновлення",
+        "zh-cn": "检查更新"
+      },
       "1.20.11": {
         "en": "improve device Manager icons and Buttons",
         "de": "verbesserung der Vorrichtung Icons und Buttons verwalten",
@@ -80,19 +93,6 @@
         "pl": "aktualizowanie identyfikatorów i modyfikowanie wskaźników i informacji",
         "uk": "оновлення вивіски унд модифікації індикаторів та інформації",
         "zh-cn": "更新指定手控器未修改指标和信息"
-      },
-      "1.20.5": {
-        "en": "bugfixing updating object Store with not alowed id",
-        "de": "bugfixing update object Store with not alowed id",
-        "ru": "bugfixing Update Object Store с невысоким идентификатором",
-        "pt": "correcção de erros para actualizar o objecto Armazenar sem ID abaixado",
-        "nl": "bugfixing update object Store with not alowed id",
-        "fr": "bugfixing update object Store avec id non alowed",
-        "it": "bugfixing aggiornamento oggetti Store con non alowed id",
-        "es": "bugfixing actualización objeto Store with not alowed id",
-        "pl": "bugfitting aktualizacja obiektu Przechowuj bez przypisanego id",
-        "uk": "виправлення помилок оновлення об'єкту Store з не потовщеним id",
-        "zh-cn": "正在更新对象 Store, 且未减少 ID"
       }
     },
     "titleLang": {
