@@ -85,6 +85,8 @@
 	"DeviceIdentifiers": "Identyfikatory urządzeń",
 	"EnableRefresh": "cykliczne Odkryj",
 	"EnableRefreshTooltip": "włącz wykrywanie w cyklicznym cronie",
+	"Enter new devicename": "Wprowadź nową nazwę urządzenia",
+	"Enter new name": "Wprowadź nową nazwę",
 	"Folder": "Falcówka",
 	"Humidifier": "Nawilżacz",
 	"HumidifierActText": "Rzeczywista wilgotność",

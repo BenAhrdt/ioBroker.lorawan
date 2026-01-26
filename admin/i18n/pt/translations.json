@@ -85,6 +85,8 @@
 	"DeviceIdentifiers": "Identificadores de dispositivos",
 	"EnableRefresh": "descoberta cíclica",
 	"EnableRefreshTooltip": "permitir descobrir em um cron cíclico",
+	"Enter new devicename": "Insira o novo nome do dispositivo",
+	"Enter new name": "Digite o novo nome",
 	"Folder": "Pasta",
 	"Humidifier": "Umidificador",
 	"HumidifierActText": "Umidade real",

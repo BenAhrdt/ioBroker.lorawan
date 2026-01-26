@@ -276,5 +276,7 @@
 	"CoverSimulatePositionTooltip": "simulates the position depending on the limit switches (required for some systems)",
 	"Rename this device": "Rename this device",
 	"Config this device": "Config this device",
-	"Info of this device": "Info of this device"
+	"Info of this device": "Info of this device",
+	"Enter new name": "Enter new name",
+	"Enter new devicename": "Enter new devicename"
 }

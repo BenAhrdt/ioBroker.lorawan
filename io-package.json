@@ -576,7 +576,7 @@
       "_id": "bridge.debug",
       "type": "folder",
       "common": {
-        "name": "Debugfunctions of bridge"
+        "name": "Debug functions of bridge"
       },
       "native": {}
     },
@@ -589,7 +589,7 @@
         "name": "internal logging types",
         "read": true,
         "write": true,
-        "def": "{\"discovery\":false, \"assign\": false, \"messageTo\": false, \"listDevices\": false, \"getStatus\": false, \"deviceinformation\": false, \"downlinkconfig\": false, \"getChangeInfo\": false,}"
+        "def": "{\"discovery\":false, \"assign\": false, \"messageTo\": false, \"listDevices\": false, \"getStatus\": false, \"deviceinformation\": false, \"downlinkconfig\": false, \"getChangeInfo\": false}"
       },
       "native": {}
     },

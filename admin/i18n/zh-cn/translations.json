@@ -85,6 +85,8 @@
 	"DeviceIdentifiers": "设备标识符",
 	"EnableRefresh": "循环发现",
 	"EnableRefreshTooltip": "能够在循环 cron 中发现",
+	"Enter new devicename": "输入新设备名称",
+	"Enter new name": "输入新名称",
 	"Folder": "文件夹",
 	"Humidifier": "加湿器",
 	"HumidifierActText": "实际湿度",

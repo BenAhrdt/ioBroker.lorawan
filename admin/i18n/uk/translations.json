@@ -85,6 +85,8 @@
 	"DeviceIdentifiers": "Ідентифікатори пристроїв",
 	"EnableRefresh": "циклічний Discover",
 	"EnableRefreshTooltip": "дозволити виявити в циклічному кроні",
+	"Enter new devicename": "Введіть нове ім'я пристрою",
+	"Enter new name": "Введіть нове ім'я",
 	"Folder": "Папка",
 	"Humidifier": "Зволожувач повітря",
 	"HumidifierActText": "Фактична вологість",
