@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.10",
+    "version": "1.20.11",
     "news": {
+      "1.20.11": {
+        "en": "improve device Manager icons and Buttons",
+        "de": "verbesserung der Vorrichtung Icons und Buttons verwalten",
+        "ru": "улучшить устройство Иконки менеджера и кнопки",
+        "pt": "melhorar o dispositivo Gerir ícones e botões",
+        "nl": "apparaat verbeteren Pictogrammen en knoppen voor de manager",
+        "fr": "améliorer l'appareil Icônes de gestionnaire et boutons",
+        "it": "migliorare il dispositivo Icone Manager e pulsanti",
+        "es": "mejorar el dispositivo Gestor de iconos y botones",
+        "pl": "ulepszenie urządzenia Ikony menedżera i przyciski",
+        "uk": "поліпшення пристрою Ім'я користувача",
+        "zh-cn": "改进设备 管理器图标和按钮"
+      },
       "1.20.10": {
         "en": "return to root getCnageInfo",
         "de": "zurück zu root getCnageInfo",
@@ -80,19 +93,6 @@
         "pl": "bugfitting aktualizacja obiektu Przechowuj bez przypisanego id",
         "uk": "виправлення помилок оновлення об'єкту Store з не потовщеним id",
         "zh-cn": "正在更新对象 Store, 且未减少 ID"
-      },
-      "1.20.4": {
-        "en": "experimental to debug in live system",
-        "de": "experimentell zu debug im live-system",
-        "ru": "экспериментальная отладка в живой системе",
-        "pt": "experimental para depuração no sistema live",
-        "nl": "experimenteel debuggen in live systeem",
-        "fr": "expérimental pour déboguer dans le système vivant",
-        "it": "sperimentale per debug nel sistema live",
-        "es": "experimental para depurar en el sistema en vivo",
-        "pl": "eksperymentalne debugowanie w systemie live",
-        "uk": "експериментальна дебюга в живій системі",
-        "zh-cn": "正在运行系统中调试的实验"
       }
     },
     "titleLang": {
