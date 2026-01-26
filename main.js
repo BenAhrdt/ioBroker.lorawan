@@ -1,7 +1,7 @@
 'use strict';
 
 const mqtt = require('mqtt');
-const crypto = require('crypto');
+const crypto = require('node:crypto');
 
 /*
  * Created with @iobroker/create-adapter v2.6.0
@@ -13,7 +13,7 @@ const utils = require('@iobroker/adapter-core');
 const bridgeClass = require('./lib/modules/bridge');
 const mqttClientClass = require('./lib/modules/mqttclient');
 const messagehandlerClass = require('./lib/modules/messagehandler');
-const downlinkConfighandlerClass = require('./lib/modules/downlinkConfighandler');
+const downlinkConfigHandlerClass = require('./lib/modules/downlinkConfighandler');
 const LoRaWANDeviceManagement = require('./lib/modules/deviceManager');
 const objectStoreClass = require('./lib/modules/objectStore');
 
@@ -63,7 +63,7 @@ class Lorawan extends utils.Adapter {
 
     onFileChange(_id, _fileName, _size) {
         // restart adapter after upload
-        //this.restart();
+        // this.restart();
     }
 
     /**
@@ -75,7 +75,7 @@ class Lorawan extends utils.Adapter {
             // Get Logtypes
             this.logtypes = JSON.parse(await this.setDefIfEmptyAndReturnVal('bridge.debug.logtypes'));
 
-            // Generate Objectstore
+            // Generate Object store
             this.objectStore = new objectStoreClass(this);
 
             await this.objectStore.generateDeviceObjects();
@@ -83,24 +83,24 @@ class Lorawan extends utils.Adapter {
             // read system translation out of i18n translation
             this.i18nTranslation = await this.geti18nTranslation();
 
-            // get systemconfig and configued language
+            // get system config and configured language
             this.mySystemConfig = await this.getForeignObjectAsync('system.config');
             this.language = this.mySystemConfig?.common.language || 'en';
 
-            // Read aktual Adapterversion
+            // Read actual Adapterversion
             const adapterinfos = await this.getForeignObjectAsync(`system.adapter.${this.namespace}`);
             this.version = adapterinfos?.common.version;
 
             // create downlinkConfigs
-            this.downlinkConfighandler = new downlinkConfighandlerClass(this);
+            this.downlinkConfighandler = new downlinkConfigHandlerClass(this);
 
-            // Merge the configed and standard profile of downlinks
+            // Merge the configured and standard profile of downlinks
             await this.downlinkConfighandler.addAndMergeDownlinkConfigs();
 
-            // create new messagehandler
+            // create new message handler
             this.messagehandler = new messagehandlerClass(this);
 
-            // generate new configed downlinkstates on allready existing devices at adapter startup
+            // generate new configured downlink states on already existing devices at adapter startup
             if (this.config.origin !== 'off') {
                 await this.messagehandler.generateDownlinksAndRemoveStatesAtStatup();
             }
@@ -111,22 +111,22 @@ class Lorawan extends utils.Adapter {
             // get history instances at Startup
             await this.messagehandler.setCustomObjectAtStartup();
 
-            // Set mqtt client => just declare, if a url is set
+            // Set mqtt client => just declare, if a URL is set
             if (this.config.origin !== 'off') {
                 this.mqttClient = new mqttClientClass(this, this.config);
             }
 
-            // declare bridge if configed
+            // declare bridge if configured
             if (this.config.BridgeType !== 'off') {
                 this.bridge = new bridgeClass(this);
             }
 
             this.deviceManagement = new LoRaWANDeviceManagement(this);
 
-            //Subscribe all configuration and control states
+            // Subscribe all configuration and control states
             await this.subscribeStatesAsync('*');
             await this.subscribeObjectsAsync('*');
-            //this.subscribeObjectsAsync('*.downlink.control.*');
+            // this.subscribeObjectsAsync('*.downlink.control.*');
             // Check for logging
             this.log[this.logtypes.downlinkconfig]?.(
                 `the adapter starts with downlinkconfigs: ${JSON.stringify(this.config.downlinkConfig)}.`,
@@ -134,18 +134,18 @@ class Lorawan extends utils.Adapter {
             this.log[this.logtypes.downlinkconfig]?.(
                 `the active downlinkconfigs are: ${JSON.stringify(this.downlinkConfighandler.activeDownlinkConfigs)}`,
             );
-            /*            
+            /*
             setTimeout(async () => {
                 this.log.debug('vor Simulation');
                 await this.startSimulation();
                 this.log.debug('nach Simulation');
             }, 5000);
             */
-            /*this.simulation.timeout = setTimeout(async () => {
+            /* this.simulation.timeout = setTimeout(async () => {
 				const topic = "application/d63c10b6-9263-4ab3-9299-4308fa19a2ad/device/f1c0ae0e-b4a2-4547-b360-7cfa15e85734/command/down";
 				const message = {devEui:"f1c0ae0e-b4a2-4547-b360-7cfa15e85734",confirmed:false,fPort:1,data:"AAA"};
 				await this.mqttClient?.publish(topic,JSON.stringify(message));
-			}, 5000);*/
+			}, 5000); */
         } catch (error) {
             this.log.error(`error at ${activeFunction}: ${error}`);
         }
@@ -159,7 +159,7 @@ class Lorawan extends utils.Adapter {
     }
 
     /**
-     * CHeck Id for '' and set to def, if preset
+     * Check ID for '' and set to def, if preset
      *
      * @param id id to check for empty
      */
@@ -412,56 +412,56 @@ class Lorawan extends utils.Adapter {
             regionConfigId: 'eu868',
         };
 
-        //const topic = "application/d63c10b6-9263-4ab3-9299-4308fa19a2ad/device/a84041f621857cd2/command/down";
-        //const message = {"devEui":"a84041f621857cd2","confirmed":false,"fPort":1,"data":"AQAqMA=="};
+        // const topic = "application/d63c10b6-9263-4ab3-9299-4308fa19a2ad/device/a84041f621857cd2/command/down";
+        // const message = {"devEui":"a84041f621857cd2","confirmed":false,"fPort":1,"data":"AQAqMA=="};
 
         // Chirpstack LT222222
-        //const topic = "application/d63c10b6-9263-4ab3-9299-4308fa19a2ad/device/a8404127a188d826/event/up";
-        //const message = {"deduplicationId":"bd3fdb3b-af86-4617-b9f2-da07075d2bc5","time":"2024-01-24T16:47:01.573381+00:00","deviceInfo":{"tenantId":"52f14cd4-c6f1-4fbd-8f87-4025e1d49242","tenantName":"ChirpStack","applicationId":"d63c10b6-9263-4ab3-9299-4308fa19a2ad","applicationName":"Benjamin Schmidt","deviceProfileId":"f1c0ae0e-b4a2-4547-b360-7cfa15e85734","deviceProfileName":"Dragino LT22222","deviceName":"Relaistestgerät","devEui":"a8404127a188d826","deviceClassEnabled":"CLASS_C","tags":{}},"devAddr":"01dfbaf2","adr":true,"dr":5,"fCnt":12,"fPort":2,"confirmed":false,"data":"AAAAAAAAAAA8/0E=","object":{"RO1_status":"OFF","DO2_status":"H","ACI2_mA":0.0,"DO1_status":"H","Hardware_mode":"LT22222","RO2_status":"OFF","AVI2_V":0.0,"ACI1_mA":0.0,"DI1_status":"H","DI2_status":"H","Work_mode":"2ACI+2AVI","AVI1_V":0.0},"rxInfo":[{"gatewayId":"50303541b0344750","uplinkId":57857,"gwTime":"2024-01-24T16:47:01.573381+00:00","nsTime":"2024-01-24T16:47:02.370171527+00:00","rssi":-54,"snr":8.5,"channel":6,"location":{"latitude":50.69344693065449,"longitude":8.476783633232118},"context":"2tr9BA==","metadata":{"region_config_id":"eu868","region_common_name":"EU868"},"crcStatus":"CRC_OK"}],"txInfo":{"frequency":867700000,"modulation":{"lora":{"bandwidth":125000,"spreadingFactor":7,"codeRate":"CR_4_5"}}}};
-        //const topic = "application/d63c10b6-9263-4ab3-9299-4308fa19a2ad/device/a8404127a188d826/command/down";
-        //const message = {"devEui":"a8404127a188d826","confirmed":false,"fPort":1,"data":"AQACWA=="};
+        // const topic = "application/d63c10b6-9263-4ab3-9299-4308fa19a2ad/device/a8404127a188d826/event/up";
+        // const message = {"deduplicationId":"bd3fdb3b-af86-4617-b9f2-da07075d2bc5","time":"2024-01-24T16:47:01.573381+00:00","deviceInfo":{"tenantId":"52f14cd4-c6f1-4fbd-8f87-4025e1d49242","tenantName":"ChirpStack","applicationId":"d63c10b6-9263-4ab3-9299-4308fa19a2ad","applicationName":"Benjamin Schmidt","deviceProfileId":"f1c0ae0e-b4a2-4547-b360-7cfa15e85734","deviceProfileName":"Dragino LT22222","deviceName":"Relaistestgerät","devEui":"a8404127a188d826","deviceClassEnabled":"CLASS_C","tags":{}},"devAddr":"01dfbaf2","adr":true,"dr":5,"fCnt":12,"fPort":2,"confirmed":false,"data":"AAAAAAAAAAA8/0E=","object":{"RO1_status":"OFF","DO2_status":"H","ACI2_mA":0.0,"DO1_status":"H","Hardware_mode":"LT22222","RO2_status":"OFF","AVI2_V":0.0,"ACI1_mA":0.0,"DI1_status":"H","DI2_status":"H","Work_mode":"2ACI+2AVI","AVI1_V":0.0},"rxInfo":[{"gatewayId":"50303541b0344750","uplinkId":57857,"gwTime":"2024-01-24T16:47:01.573381+00:00","nsTime":"2024-01-24T16:47:02.370171527+00:00","rssi":-54,"snr":8.5,"channel":6,"location":{"latitude":50.69344693065449,"longitude":8.476783633232118},"context":"2tr9BA==","metadata":{"region_config_id":"eu868","region_common_name":"EU868"},"crcStatus":"CRC_OK"}],"txInfo":{"frequency":867700000,"modulation":{"lora":{"bandwidth":125000,"spreadingFactor":7,"codeRate":"CR_4_5"}}}};
+        // const topic = "application/d63c10b6-9263-4ab3-9299-4308fa19a2ad/device/a8404127a188d826/command/down";
+        // const message = {"devEui":"a8404127a188d826","confirmed":false,"fPort":1,"data":"AQACWA=="};
 
         // ACK
-        //const topic = "application/59bcc5a7-59e2-4481-9615-fc4e58791915/device/70b3d52dd300ed31/event/ack";
-        //const message = {"deduplicationId":"b080c0d8-6151-4675-84b8-74ecf9e33bae","time":"2023-08-15T13:22:27.969901+00:00","deviceInfo":{"tenantId":"52f14cd4-c6f1-4fbd-8f87-4025e1d49242","tenantName":"ChirpStack","applicationId":"59bcc5a7-59e2-4481-9615-fc4e58791915","applicationName":"Mclimate_Vicki","deviceProfileId":"3a9bc28f-3664-4bdf-b3be-a20d1eb32dc8","deviceProfileName":"Mclimate_Vicki","deviceName":"MClimate_Vicki_Heizkoerperventil_001","devEui":"70b3d52dd300ed31","deviceClassEnabled":"CLASS_A","tags":{}},"queueItemId":"3434298f-2b89-49f8-885e-9fdd9f0892e6","acknowledged":true,"fCntDown":262};
+        // const topic = "application/59bcc5a7-59e2-4481-9615-fc4e58791915/device/70b3d52dd300ed31/event/ack";
+        // const message = {"deduplicationId":"b080c0d8-6151-4675-84b8-74ecf9e33bae","time":"2023-08-15T13:22:27.969901+00:00","deviceInfo":{"tenantId":"52f14cd4-c6f1-4fbd-8f87-4025e1d49242","tenantName":"ChirpStack","applicationId":"59bcc5a7-59e2-4481-9615-fc4e58791915","applicationName":"Mclimate_Vicki","deviceProfileId":"3a9bc28f-3664-4bdf-b3be-a20d1eb32dc8","deviceProfileName":"Mclimate_Vicki","deviceName":"MClimate_Vicki_Heizkoerperventil_001","devEui":"70b3d52dd300ed31","deviceClassEnabled":"CLASS_A","tags":{}},"queueItemId":"3434298f-2b89-49f8-885e-9fdd9f0892e6","acknowledged":true,"fCntDown":262};
 
         // TXACK
-        //const topic = "application/59bcc5a7-59e2-4481-9615-fc4e58791915/device/70b3d52dd300ed31/event/txack";
-        //const message = {"downlinkId":2478630510,"time":"2024-01-27T11:50:04.736655452+00:00","deviceInfo":{"tenantId":"52f14cd4-c6f1-4fbd-8f87-4025e1d49242","tenantName":"ChirpStack","applicationId":"59bcc5a7-59e2-4481-9615-fc4e58791915","applicationName":"Mclimate_Vicki","deviceProfileId":"3a9bc28f-3664-4bdf-b3be-a20d1eb32dc8","deviceProfileName":"Mclimate_Vicki","deviceName":"MClimate_Vicki_Heizkoerperventil_001","devEui":"70b3d52dd300ed31","deviceClassEnabled":"CLASS_A","tags":{}},"queueItemId":"efc2bacf-d5da-48d3-a6ef-2a77fda41bd0","fCntDown":4940,"gatewayId":"50313953530a4750","txInfo":{"frequency":868300000,"power":16,"modulation":{"lora":{"bandwidth":125000,"spreadingFactor":7,"codeRate":"CR_4_5","polarizationInversion":true}},"timing":{"delay":{"delay":"1s"}},"context":"eqFuiw=="}};
+        // const topic = "application/59bcc5a7-59e2-4481-9615-fc4e58791915/device/70b3d52dd300ed31/event/txack";
+        // const message = {"downlinkId":2478630510,"time":"2024-01-27T11:50:04.736655452+00:00","deviceInfo":{"tenantId":"52f14cd4-c6f1-4fbd-8f87-4025e1d49242","tenantName":"ChirpStack","applicationId":"59bcc5a7-59e2-4481-9615-fc4e58791915","applicationName":"Mclimate_Vicki","deviceProfileId":"3a9bc28f-3664-4bdf-b3be-a20d1eb32dc8","deviceProfileName":"Mclimate_Vicki","deviceName":"MClimate_Vicki_Heizkoerperventil_001","devEui":"70b3d52dd300ed31","deviceClassEnabled":"CLASS_A","tags":{}},"queueItemId":"efc2bacf-d5da-48d3-a6ef-2a77fda41bd0","fCntDown":4940,"gatewayId":"50313953530a4750","txInfo":{"frequency":868300000,"power":16,"modulation":{"lora":{"bandwidth":125000,"spreadingFactor":7,"codeRate":"CR_4_5","polarizationInversion":true}},"timing":{"delay":{"delay":"1s"}},"context":"eqFuiw=="}};
 
         // STATUS
-        //const topic = "application/59bcc5a7-59e2-4481-9615-fc4e58791915/device/70b3d52dd300ed31/event/status";
-        //const message = {"deduplicationId":"4a91b00d-b5e1-4955-b085-ba21b9318213","time":"2024-01-26T20:18:45.299871+00:00","deviceInfo":{"tenantId":"52f14cd4-c6f1-4fbd-8f87-4025e1d49242","tenantName":"ChirpStack","applicationId":"59bcc5a7-59e2-4481-9615-fc4e58791915","applicationName":"Mclimate_Vicki","deviceProfileId":"3a9bc28f-3664-4bdf-b3be-a20d1eb32dc8","deviceProfileName":"Mclimate_Vicki","deviceName":"MClimate_Vicki_Heizkoerperventil_001","devEui":"70b3d52dd300ed31","deviceClassEnabled":"CLASS_A","tags":{}},"margin":7,"externalPowerSource":false,"batteryLevelUnavailable":false,"batteryLevel":85.826775};
+        // const topic = "application/59bcc5a7-59e2-4481-9615-fc4e58791915/device/70b3d52dd300ed31/event/status";
+        // const message = {"deduplicationId":"4a91b00d-b5e1-4955-b085-ba21b9318213","time":"2024-01-26T20:18:45.299871+00:00","deviceInfo":{"tenantId":"52f14cd4-c6f1-4fbd-8f87-4025e1d49242","tenantName":"ChirpStack","applicationId":"59bcc5a7-59e2-4481-9615-fc4e58791915","applicationName":"Mclimate_Vicki","deviceProfileId":"3a9bc28f-3664-4bdf-b3be-a20d1eb32dc8","deviceProfileName":"Mclimate_Vicki","deviceName":"MClimate_Vicki_Heizkoerperventil_001","devEui":"70b3d52dd300ed31","deviceClassEnabled":"CLASS_A","tags":{}},"margin":7,"externalPowerSource":false,"batteryLevelUnavailable":false,"batteryLevel":85.826775};
 
         // UP
-        //const topic = "application/e91e66ba-1aa7-4bdf-af88-f1246e0b8d75/device/a84041263188b787/event/up";
-        //const message = {"deduplicationId":"ce1ca35d-35c7-4f60-844c-c2b2810fd74b","time":"2024-08-25T07:10:47.758298+00:00","deviceInfo":{"tenantId":"52f14cd4-c6f1-4fbd-8f87-4025e1d49242","tenantName":"ChirpStack","applicationId":"e91e66ba-1aa7-4bdf-af88-f1246e0b8d75","applicationName":"Türen","deviceProfileId":"431c5895-68e2-478d-945f-f0e9a6f5f9f5","deviceProfileName":"Dragino Türsensoren / Fenstersensoren","deviceName":"Flurtüre","devEui":"a84041263188b787","deviceClassEnabled":"CLASS_A","tags":{}},"devAddr":"0061ebd4","adr":true,"dr":5,"fCnt":8264,"fPort":10,"confirmed":false,"data":"DAYBAA+IAAAAAA==","object":{"ALARM":0.0,"BAT_V":3.078,"CONTACT":true,"OPEN_TIMES":3976.0,"MOD":1.0,"LAST_OPEN_DURATION":0.0,"OPEN":false,"devicetype":"Dragino"},"rxInfo":[{"gatewayId":"503035416e314750","uplinkId":64001,"gwTime":"2024-08-25T07:10:47.758298+00:00","nsTime":"2024-08-25T07:11:29.787667701+00:00","rssi":-68,"snr":9.25,"channel":6,"location":{"latitude":50.69350130173554,"longitude":8.476821184158327},"context":"fp1WbA==","metadata":{"region_common_name":"EU868","region_config_id":"eu868"},"crcStatus":"CRC_OK"}],"txInfo":{"frequency":867700000,"modulation":{"lora":{"bandwidth":125000,"spreadingFactor":7,"codeRate":"CR_4_5"}}}};
+        // const topic = "application/e91e66ba-1aa7-4bdf-af88-f1246e0b8d75/device/a84041263188b787/event/up";
+        // const message = {"deduplicationId":"ce1ca35d-35c7-4f60-844c-c2b2810fd74b","time":"2024-08-25T07:10:47.758298+00:00","deviceInfo":{"tenantId":"52f14cd4-c6f1-4fbd-8f87-4025e1d49242","tenantName":"ChirpStack","applicationId":"e91e66ba-1aa7-4bdf-af88-f1246e0b8d75","applicationName":"Türen","deviceProfileId":"431c5895-68e2-478d-945f-f0e9a6f5f9f5","deviceProfileName":"Dragino Türsensoren / Fenstersensoren","deviceName":"Flurtüre","devEui":"a84041263188b787","deviceClassEnabled":"CLASS_A","tags":{}},"devAddr":"0061ebd4","adr":true,"dr":5,"fCnt":8264,"fPort":10,"confirmed":false,"data":"DAYBAA+IAAAAAA==","object":{"ALARM":0.0,"BAT_V":3.078,"CONTACT":true,"OPEN_TIMES":3976.0,"MOD":1.0,"LAST_OPEN_DURATION":0.0,"OPEN":false,"devicetype":"Dragino"},"rxInfo":[{"gatewayId":"503035416e314750","uplinkId":64001,"gwTime":"2024-08-25T07:10:47.758298+00:00","nsTime":"2024-08-25T07:11:29.787667701+00:00","rssi":-68,"snr":9.25,"channel":6,"location":{"latitude":50.69350130173554,"longitude":8.476821184158327},"context":"fp1WbA==","metadata":{"region_common_name":"EU868","region_config_id":"eu868"},"crcStatus":"CRC_OK"}],"txInfo":{"frequency":867700000,"modulation":{"lora":{"bandwidth":125000,"spreadingFactor":7,"codeRate":"CR_4_5"}}}};
 
         // LOG
-        //const topic = "application/59bcc5a7-59e2-4481-9615-fc4e58791915/device/70b3d52dd300ed31/event/up";
-        //const message = {"time":"2024-01-27T10:29:58.221817559+00:00","deviceInfo":{"tenantId":"52f14cd4-c6f1-4fbd-8f87-4025e1d49242","tenantName":"ChirpStack","applicationId":"59bcc5a7-59e2-4481-9615-fc4e58791915","applicationName":"Mclimate_Vicki","deviceProfileId":"3a9bc28f-3664-4bdf-b3be-a20d1eb32dc8","deviceProfileName":"Mclimate_Vicki","deviceName":"MClimate_Vicki_Heizkoerperventil_001","devEui":"70b3d52dd300ed31","deviceClassEnabled":"CLASS_A","tags":{}},"level":"ERROR","code":"UPLINK_CODEC","description":"Exception generated by quickjs","context":{"deduplication_id":"c44e7e25-09ce-4c95-b96f-5a298c5c6440"}};
+        // const topic = "application/59bcc5a7-59e2-4481-9615-fc4e58791915/device/70b3d52dd300ed31/event/up";
+        // const message = {"time":"2024-01-27T10:29:58.221817559+00:00","deviceInfo":{"tenantId":"52f14cd4-c6f1-4fbd-8f87-4025e1d49242","tenantName":"ChirpStack","applicationId":"59bcc5a7-59e2-4481-9615-fc4e58791915","applicationName":"Mclimate_Vicki","deviceProfileId":"3a9bc28f-3664-4bdf-b3be-a20d1eb32dc8","deviceProfileName":"Mclimate_Vicki","deviceName":"MClimate_Vicki_Heizkoerperventil_001","devEui":"70b3d52dd300ed31","deviceClassEnabled":"CLASS_A","tags":{}},"level":"ERROR","code":"UPLINK_CODEC","description":"Exception generated by quickjs","context":{"deduplication_id":"c44e7e25-09ce-4c95-b96f-5a298c5c6440"}};
 
         // JOIN
-        //const topic = "application/59bcc5a7-59e2-4481-9615-fc4e58791915/device/70b3d52dd300ed31/event/join";
-        //const message = {"deduplicationId":"44cef56d-1b8d-45fc-a762-03b98b620db2","time":"2023-12-12T03:13:21.551178+00:00","deviceInfo":{"tenantId":"52f14cd4-c6f1-4fbd-8f87-4025e1d49242","tenantName":"ChirpStack","applicationId":"59bcc5a7-59e2-4481-9615-fc4e58791915","applicationName":"Mclimate_Vicki","deviceProfileId":"3a9bc28f-3664-4bdf-b3be-a20d1eb32dc8","deviceProfileName":"Mclimate_Vicki","deviceName":"MClimate_Vicki_Heizkoerperventil_001","devEui":"70b3d52dd300ed31","deviceClassEnabled":"CLASS_A","tags":{}},"devAddr":"01009400"};
+        // const topic = "application/59bcc5a7-59e2-4481-9615-fc4e58791915/device/70b3d52dd300ed31/event/join";
+        // const message = {"deduplicationId":"44cef56d-1b8d-45fc-a762-03b98b620db2","time":"2023-12-12T03:13:21.551178+00:00","deviceInfo":{"tenantId":"52f14cd4-c6f1-4fbd-8f87-4025e1d49242","tenantName":"ChirpStack","applicationId":"59bcc5a7-59e2-4481-9615-fc4e58791915","applicationName":"Mclimate_Vicki","deviceProfileId":"3a9bc28f-3664-4bdf-b3be-a20d1eb32dc8","deviceProfileName":"Mclimate_Vicki","deviceName":"MClimate_Vicki_Heizkoerperventil_001","devEui":"70b3d52dd300ed31","deviceClassEnabled":"CLASS_A","tags":{}},"devAddr":"01009400"};
 
         // DOWN
-        //const topic = "application/59bcc5a7-59e2-4481-9615-fc4e58791915/device/70b3d52dd300ed31/command/down";
-        //const message = {"devEui": "70b3d52dd300ed31", "confirmed": false,"fPort": 1,"data": "DQEYDQEY"};
+        // const topic = "application/59bcc5a7-59e2-4481-9615-fc4e58791915/device/70b3d52dd300ed31/command/down";
+        // const message = {"devEui": "70b3d52dd300ed31", "confirmed": false,"fPort": 1,"data": "DQEYDQEY"};
 
-        this.log.debug(`incomming topic: ${topic}`);
-        this.log.debug(`incomming message: ${JSON.stringify(message)}`);
+        this.log.debug(`incoming topic: ${topic}`);
+        this.log.debug(`incoming message: ${JSON.stringify(message)}`);
 
         await this.messagehandler?.handleMessage(topic, message);
     }
     /**
-     * Is called when adapter shuts down - callback has to be called under any circumstances!
+     * Is called when the adapter shuts down - callback has to be called under any circumstances!
      *
      * @param callback function wich is called after shutdown adapter
      */
     async onUnload(callback) {
         try {
-            // Ausgabe der Nachrichtg, dass der Adapter beendet wird
+            // Ausgabe der Nachricht, dass der Adapter beendet wird
             const notificationId = `${this.namespace}.${this.bridge?.Words.notification}${this.bridge?.GeneralId}`;
             await this.bridge?.publishNotification(
                 notificationId,
@@ -474,7 +474,7 @@ class Lorawan extends utils.Adapter {
                 delete this.simulation.timeout;
             }
 
-            // Clear Schedules in directoriehandler
+            // Clear Schedules in the directory handler
             this.messagehandler?.clearAllSchedules();
 
             // Clear Schedules in Bridge
@@ -487,7 +487,7 @@ class Lorawan extends utils.Adapter {
             this.mqttClient?.destroy();
             callback();
         } catch (e) {
-            this.log.error(e);
+            this.log.error(`error at onUnload: ${e}`);
             callback();
         }
     }
@@ -495,7 +495,7 @@ class Lorawan extends utils.Adapter {
     /**
      * Is called if a subscribed object changes
      *
-     * @param id id of the changed object
+     * @param id ID of the changed object
      * @param obj value and ack of the changed object
      */
     async onObjectChange(id, obj) {
@@ -512,7 +512,7 @@ class Lorawan extends utils.Adapter {
 
                 // External States
             } else {
-                // Only work, if bridge is activ
+                // Only work if bridge is activ
                 if (this.bridge) {
                     // Erzeugen der HA Bridged für Control
                     // check for new Entry
@@ -547,7 +547,7 @@ class Lorawan extends utils.Adapter {
     /**
      * Is called if a subscribed state changes
      *
-     * @param id id of the changed state
+     * @param id ID of the changed state
      * @param state value and ack of the changed state
      */
     async onStateChange(id, state) {
@@ -594,31 +594,31 @@ class Lorawan extends utils.Adapter {
                                             changeInfo.bestMatchForDeviceType
                                         ];
                                     /* Alte Zuweisung
-                                    const Statevalues = state.val.split(',');
+                                    const stateValues = state.val.split(',');
                                     const StateElements = {
-                                        payloadInHex: Statevalues[0].toUpperCase(),
+                                        payloadInHex: stateValues[0].toUpperCase(),
                                         port: downlinkConfig.port,
                                         confirmed: downlinkConfig.confirmed,
                                         priority: downlinkConfig.priority,
                                         push: false,
                                     };
                                     // Assign writen values
-                                    for (const element in Statevalues) {
-                                        if (Statevalues[element] === 'push') {
+                                    for (const element in stateValues) {
+                                        if (stateValues[element] === 'push') {
                                             StateElements.push = true;
                                             break;
                                         }
                                         if (element === '1') {
-                                            StateElements.port = Number(Statevalues[element]);
+                                            StateElements.port = Number(stateValues[element]);
                                         } else if (element === '2') {
-                                            StateElements.confirmed = Statevalues[element] === 'true' ? true : false;
+                                            StateElements.confirmed = stateValues[element] === 'true' ? true : false;
                                         } else if (element === '3') {
-                                            StateElements.priority = Statevalues[element];
+                                            StateElements.priority = stateValues[element];
                                         }
                                     }
                                     */
                                     // Eingefügt am 09.12.2026
-                                    const Statevalues = state.val.split(',');
+                                    const stateValues = state.val.split(',');
 
                                     const StateElements = {
                                         payloadInHex: null,
@@ -628,7 +628,7 @@ class Lorawan extends utils.Adapter {
                                         push: false,
                                     };
 
-                                    for (const raw of Statevalues) {
+                                    for (const raw of stateValues) {
                                         const element = raw.trim();
 
                                         // --- push ---
@@ -662,7 +662,7 @@ class Lorawan extends utils.Adapter {
                                         }
                                     }
 
-                                    // Query about th correct type
+                                    // Query about the correct type
                                     this.log.silly(
                                         'The following values are detected / used at input of custom send state',
                                     );
@@ -672,7 +672,7 @@ class Lorawan extends utils.Adapter {
                                         );
                                     }
 
-                                    // write into NextSend, or push directly
+                                    // write into NextSend or push directly
                                     if (!StateElements.push) {
                                         // Write into nextSend
                                         await this.writeNextSend(changeInfo, StateElements.payloadInHex);
@@ -745,11 +745,11 @@ class Lorawan extends utils.Adapter {
                                 await this.setState(id, false, true);
                             }
                         } else if (id.indexOf('.configuration.') !== -1) {
-                            // State is from configuration path
+                            // State is from the configuration path
                             const changeInfo = await this.getChangeInfo(id, { withBestMatch: true });
                             this.messagehandler?.fillWithDownlinkConfig(changeInfo?.objectStartDirectory, {});
 
-                            // remove not configed states
+                            // remove not configured states
                             const adapterObjects = await this.getAdapterObjectsAsync();
                             for (const adapterObject of Object.values(adapterObjects)) {
                                 if (
@@ -824,6 +824,7 @@ class Lorawan extends utils.Adapter {
                                         },
                                         native: {},
                                     });
+                                    // The name should be "incoming"
                                     this.extendObject('bridge.debug.incommingTopicFilter', {
                                         type: 'state',
                                         common: {
@@ -835,6 +836,7 @@ class Lorawan extends utils.Adapter {
                                         },
                                         native: {},
                                     });
+                                    // The name should be "incoming"
                                     this.extendObject('bridge.debug.incommingPayload', {
                                         type: 'state',
                                         common: {
@@ -906,6 +908,7 @@ class Lorawan extends utils.Adapter {
                                 );
                                 await this.setState(id, state.val, true);
                             }
+                            // The name should be "incoming"
                         } else if (id.endsWith('bridge.debug.incommingTopicFilter')) {
                             this.bridge?.bridgeMqttClient.setFilter('incomming', state.val);
                             await this.setState(id, state.val, true);
@@ -917,7 +920,7 @@ class Lorawan extends utils.Adapter {
                             const topic = await this.getStateAsync('bridge.debug.topic');
                             const payload = await this.getStateAsync('bridge.debug.payload');
                             if (topic && payload) {
-                                this.bridge?.bridgeMqttClient.publish(topic.val, payload.val, {});
+                                await this.bridge?.bridgeMqttClient.publish(topic.val, payload.val, {});
                                 await this.setState('bridge.debug.topic', topic.val, true);
                                 await this.setState('bridge.debug.payload', payload.val, true);
                             }
@@ -980,7 +983,7 @@ class Lorawan extends utils.Adapter {
                 changeInfo.bestMatchForDeviceType &&
                 (this.downlinkConfighandler?.activeDownlinkConfigs[changeInfo.bestMatchForDeviceType].sendWithUplink !==
                     'disabled' ||
-                    (options && options.pushNextSend))
+                    options?.pushNextSend)
             ) {
                 const nextSend = await this.getNextSend(changeInfo?.objectStartDirectory);
                 if (nextSend?.val !== '0') {
@@ -1017,7 +1020,7 @@ class Lorawan extends utils.Adapter {
             const idFolderNextSend = `${changeInfo.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.downlinkNextSend}`;
             const stateId = `${idFolderNextSend}.hex`;
 
-            // Serialize (also simple write without append)
+            // Serialize (also simply write without appending)
             await this.withLock(this.NextSendLocks, stateId, async () => {
                 let toWrite = payloadInHex;
                 if (
@@ -1085,7 +1088,7 @@ class Lorawan extends utils.Adapter {
     }
 
     getHexpayloadFromDownlink(downlinkmessage) {
-        const activeFunction = 'main.js - getHexpayloadFromDownlink';
+        const activeFunction = 'main.js - getHexPayloadFromDownlink';
         this.log.silly(`Function ${activeFunction} started.`);
         try {
             let downlink = downlinkmessage;
@@ -1116,7 +1119,7 @@ class Lorawan extends utils.Adapter {
             id = this.removeNamespace(id);
             const idElements = id.split('.');
             const deviceInfo = {
-                id: id,
+                id,
                 applicationId: idElements[0],
                 deviceEUI: idElements[2],
                 changedState: idElements[idElements.length - 1],
@@ -1137,7 +1140,7 @@ class Lorawan extends utils.Adapter {
             const myId = `${changeInfo?.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.configuration}.devicetype`;
             // Check for changeInfo
             if (changeInfo) {
-                // Get Obect from startdirectory
+                // Get Object from start directory
                 const applicationDirectoryObject = await this.getObjectAsync(changeInfo.applicationId);
                 const startDirectoryObject = await this.getObjectAsync(changeInfo.objectStartDirectory);
                 if (applicationDirectoryObject && startDirectoryObject) {
@@ -1151,7 +1154,7 @@ class Lorawan extends utils.Adapter {
                 if (deviceTypeIdState) {
                     changeInfo.deviceType = deviceTypeIdState.val;
                     if (options && options.withBestMatch) {
-                        // Get best match of expert downlink
+                        // Get the best match of expert downlink
                         const bestMatchForDeviceType =
                             this.downlinkConfighandler?.getBestMatchForDeviceType(changeInfo);
                         if (bestMatchForDeviceType) {
@@ -1199,12 +1202,17 @@ class Lorawan extends utils.Adapter {
 
     // If you need to accept messages in your adapter, uncomment the following block and the corresponding line in the constructor.
     // /**
-    //  * Some message was sent to this instance over message box. Used by email, pushover, text2speech, ...
+    //  * Some message was sent to this instance over the message box. Used by email, pushover, text2speech, ...
     //  * Using this method requires "common.messagebox" property to be set to true in io-package.json
     //  * @param {ioBroker.Message} obj
     //  */
 
     async onMessage(obj) {
+        if (obj.command?.startsWith('dm:')) {
+            // Handled by Device Manager class itself, so ignored here
+            return;
+        }
+
         const activeFunction = 'onMessage';
         this.log.silly(`message received: command = ${obj.command} - message = ${JSON.stringify(obj.message)}`);
         try {
@@ -1461,7 +1469,7 @@ class Lorawan extends utils.Adapter {
                             this.sendTo(obj.from, obj.command, applications, obj.callback);
                         });
                     } catch (error) {
-                        this.log.error(error);
+                        this.log.error(`Error by command ${obj.command}: ${error}`);
                     }
                 } else if (obj.command === 'getDevicesForConfig' || obj.command === 'getDevicesForClimateConfig') {
                     try {
@@ -1492,7 +1500,7 @@ class Lorawan extends utils.Adapter {
                             this.sendTo(obj.from, obj.command, devices, obj.callback);
                         });
                     } catch (error) {
-                        this.log.error(error);
+                        this.log.error(`Error by command ${obj.command}: ${error}`);
                     }
                 } else if (obj.command === 'getFoldersForConfig') {
                     try {
@@ -1505,7 +1513,7 @@ class Lorawan extends utils.Adapter {
                             this.sendTo(obj.from, obj.command, devices, obj.callback);
                         });
                     } catch (error) {
-                        this.log.error(error);
+                        this.log.error(`Error by command ${obj.command}: ${error}`);
                     }
                 } else if (obj.command === 'getStatesForConfig' || obj.command === 'getStatesForClimateConfig') {
                     try {
@@ -1534,21 +1542,21 @@ class Lorawan extends utils.Adapter {
                                     //adapterObject._id = this.removeNamespace(adapterObject._id); remooved 30.122025
                                     const changeInfo = await this.getChangeInfoCached(adapterObject._id);
                                     //if uplink decoded => changed State with folder
-                                    let fullStatename = changeInfo?.changedState;
+                                    let fullStateName = changeInfo?.changedState;
                                     if (changeInfo?.allElements.length > 6) {
-                                        fullStatename = '';
+                                        fullStateName = '';
                                         for (let i = 5; i < changeInfo?.allElements.length; i++) {
-                                            if (fullStatename !== '') {
-                                                fullStatename += '.';
+                                            if (fullStateName !== '') {
+                                                fullStateName += '.';
                                             }
-                                            fullStatename += changeInfo?.allElements[i];
+                                            fullStateName += changeInfo?.allElements[i];
                                         }
                                     }
                                     if (adapterObject.type === 'folder') {
-                                        fullStatename += '.';
+                                        fullStateName += '.';
                                     }
-                                    const label = fullStatename;
-                                    const value = fullStatename;
+                                    const label = fullStateName;
+                                    const value = fullStateName;
                                     if (!currentStates[value]) {
                                         currentStates[value] = value;
                                         states[myCount] = { label: label, value: value };
@@ -1560,7 +1568,7 @@ class Lorawan extends utils.Adapter {
                             this.sendTo(obj.from, obj.command, states, obj.callback);
                         });
                     } catch (error) {
-                        this.log.error(error);
+                        this.log.error(`Error by command ${obj.command}: ${error}`);
                     }
                 } else if (obj.command === 'getDiscoveredIds') {
                     try {
@@ -1573,7 +1581,7 @@ class Lorawan extends utils.Adapter {
                             obj.callback,
                         );
                     } catch (error) {
-                        this.log.error(error);
+                        this.log.error(`Error by command ${obj.command}: ${error}`);
                     }
                 } else if (obj.command === 'getPublishedIds') {
                     try {
@@ -1586,7 +1594,7 @@ class Lorawan extends utils.Adapter {
                             obj.callback,
                         );
                     } catch (error) {
-                        this.log.error(error);
+                        this.log.error(`Error by command ${obj.command}: ${error}`);
                     }
                 } else if (obj.command === 'getSubscribedTopics') {
                     try {
@@ -1599,7 +1607,7 @@ class Lorawan extends utils.Adapter {
                             obj.callback,
                         );
                     } catch (error) {
-                        this.log.error(error);
+                        this.log.error(`Error by command ${obj.command}: ${error}`);
                     }
                 } else if (obj.command === 'getDeviceinformations') {
                     try {
@@ -1610,14 +1618,14 @@ class Lorawan extends utils.Adapter {
                             obj.callback,
                         );
                     } catch (error) {
-                        this.log.error(error);
+                        this.log.error(`Error by command ${obj.command}: ${error}`);
                     }
                 } else if (obj.command === 'getEnums') {
                     try {
                         const enums = [{ label: 'No Enum selected', value: '*' }];
                         const enumList = await this.getEnumsAsync();
-                        for (const enumtyp of Object.values(enumList)) {
-                            for (const myEnum of Object.values(enumtyp)) {
+                        for (const enumType of Object.values(enumList)) {
+                            for (const myEnum of Object.values(enumType)) {
                                 const value = myEnum._id;
                                 let label = myEnum.common.name;
                                 if (typeof label !== 'string') {
@@ -1631,13 +1639,13 @@ class Lorawan extends utils.Adapter {
                         }
                         this.sendTo(obj.from, obj.command, enums, obj.callback);
                     } catch (error) {
-                        this.log.error(error);
+                        this.log.error(`Error by command ${obj.command}: ${error}`);
                     }
                 } else if (obj.command === 'getBridgeConnection') {
                     try {
                         let connection = false;
-                        const mqttprefix = obj.message.Bridgessl ? 'mqtts://' : 'mqtt://';
-                        const testclient = mqtt.connect(`${mqttprefix}${obj.message.BridgeipUrl}`, {
+                        const mqttPrefix = obj.message.Bridgessl ? 'mqtts://' : 'mqtt://';
+                        const testclient = mqtt.connect(`${mqttPrefix}${obj.message.BridgeipUrl}`, {
                             port: obj.message.Bridgeport,
                             username: obj.message.Bridgeusername,
                             password: obj.message.Bridgepassword,
@@ -1660,15 +1668,15 @@ class Lorawan extends utils.Adapter {
                             );
                         }, 100);
                     } catch (error) {
-                        this.log.error(error);
+                        this.log.error(`Error by command ${obj.command}: ${error}`);
                     }
                 } else if (obj.command === 'sendMQTTMessage') {
                     try {
-                        this.log.error(typeof obj.message.Topic);
+                        this.log.error(`Error by ${obj.command}: ${typeof obj.message.Topic}`);
                         this.log.error(typeof obj.message.Message);
                         this.sendTo(obj.from, obj.command, { result: 'OK' }, obj.callback);
                     } catch (error) {
-                        this.log.error(error);
+                        this.log.error(`Error by command ${obj.command}: ${error}`);
                     }
                 } else {
                     const result = { error: true, message: 'No message matched', received: obj.message };
