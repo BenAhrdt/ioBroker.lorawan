@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.7",
+    "version": "1.20.8",
     "news": {
+      "1.20.8": {
+        "en": "changes in objectStore",
+        "de": "änderungen des Objekts Store",
+        "ru": "изменения в объекте Магазин",
+        "pt": "alterações no objeto Armazenar",
+        "nl": "wijzigingen in object Opslaan",
+        "fr": "changements d'objet A conserver",
+        "it": "cambiamenti nell'oggetto Negozio",
+        "es": "cambios en el objeto Store",
+        "pl": "zmiany w obiekcie Przechowywać",
+        "uk": "зміни об'єкта Магазини",
+        "zh-cn": "对象变化 存储"
+      },
       "1.20.7": {
         "en": "bugfix correct writing of indicators",
         "de": "bugfix korrektes schreiben von indikatoren",
@@ -80,19 +93,6 @@
         "pl": "menedżer i obiekt urządzenia bugfix Kontrole urządzeń do przechowywania",
         "uk": "диспетчер пристроїв та об'єкт Перевірка пристрою магазину",
         "zh-cn": "错误修正设备管理器和对象 存储设备检查"
-      },
-      "1.20.1": {
-        "en": "bugfix device Manager",
-        "de": "bugfix Gerät Manager",
-        "ru": "bugfix устройство диспетчер",
-        "pt": "gerenciador de dispositivos de correção de erros",
-        "nl": "bugfix apparaatbeheer",
-        "fr": "gestionnaire de périphériques bugfix",
-        "it": "bugfix dispositivo Manager",
-        "es": "bugfix device Manager",
-        "pl": "menedżer urządzeń bugfix",
-        "uk": "диспетчер пристроїв",
-        "zh-cn": "错误修正设备管理器"
       }
     },
     "titleLang": {
