@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.8",
+    "version": "1.20.9",
     "news": {
+      "1.20.9": {
+        "en": "experimental for form",
+        "de": "experiment für form",
+        "ru": "экспериментальная форма",
+        "pt": "experimental para forma",
+        "nl": "experimenteel voor vorm",
+        "fr": "expérimental pour la forme",
+        "it": "sperimentale per forma",
+        "es": "experimental para forma",
+        "pl": "eksperymentalne dla formy",
+        "uk": "експериментальна форма",
+        "zh-cn": "实验形式"
+      },
       "1.20.8": {
         "en": "changes in objectStore",
         "de": "änderungen des Objekts Store",
@@ -80,19 +93,6 @@
         "pl": "menedżer urządzeń bugfix",
         "uk": "диспетчер пристроїв",
         "zh-cn": "错误修正设备管理器"
-      },
-      "1.20.2": {
-        "en": "bugfix device Manager and objectStore device checks",
-        "de": "bugfix device Manager und Objekt Geräteüberprüfungen",
-        "ru": "bugfix диспетчер устройств и объект Проверка устройств магазина",
-        "pt": "gestor e objecto do dispositivo de correção de erros Verificação do dispositivo de armazenamento",
-        "nl": "bugfix apparaatbeheer en object Controles van het opslagapparaat",
-        "fr": "bugfix device Manager et objet Contrôles des dispositifs de stockage",
-        "it": "bugfix device Manager e oggetto Controllo dispositivi di memorizzazione",
-        "es": "bugfix device Manager y objeto Controles de dispositivo de la tienda",
-        "pl": "menedżer i obiekt urządzenia bugfix Kontrole urządzeń do przechowywania",
-        "uk": "диспетчер пристроїв та об'єкт Перевірка пристрою магазину",
-        "zh-cn": "错误修正设备管理器和对象 存储设备检查"
       }
     },
     "titleLang": {
