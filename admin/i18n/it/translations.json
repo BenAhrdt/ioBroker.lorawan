@@ -85,7 +85,7 @@
 	"DeviceIdentifiers": "Identificatori del dispositivo",
 	"EnableRefresh": "Scopri ciclico",
 	"EnableRefreshTooltip": "consentire di scoprire in un cron ciclico",
-	"Enter new devicename": "Inserisci il nuovo nome del dispositivo",
+	"Enter new devicetype": "Inserisci il nuovo tipo di dispositivo",
 	"Enter new name": "Inserisci il nuovo nome",
 	"Folder": "Cartella",
 	"Humidifier": "Umidificatore",

@@ -85,7 +85,7 @@
 	"DeviceIdentifiers": "Identificateurs de périphérique",
 	"EnableRefresh": "cyclique Découvrir",
 	"EnableRefreshTooltip": "permettre de découvrir dans un cron cyclique",
-	"Enter new devicename": "Entrez le nouveau nom de l'appareil",
+	"Enter new devicetype": "Entrez le nouveau type d'appareil",
 	"Enter new name": "Entrez un nouveau nom",
 	"Folder": "Dossier",
 	"Humidifier": "Humidificateur",

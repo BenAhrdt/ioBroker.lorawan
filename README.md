@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) improve device Manager icons and Buttons
+
 ### 1.20.10 (2026-01-26)
 * (BenAhrdt) return to root getCnageInfo
 

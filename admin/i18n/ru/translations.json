@@ -85,7 +85,7 @@
 	"DeviceIdentifiers": "Идентификаторы устройств",
 	"EnableRefresh": "циклическое открытие",
 	"EnableRefreshTooltip": "включить обнаружение в циклическом cron",
-	"Enter new devicename": "Введите новое имя устройства",
+	"Enter new devicetype": "Введите новый тип устройства",
 	"Enter new name": "Введите новое имя",
 	"Folder": "Папка",
 	"Humidifier": "Увлажнитель",

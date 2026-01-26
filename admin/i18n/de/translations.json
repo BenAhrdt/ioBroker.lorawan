@@ -85,7 +85,7 @@
 	"DeviceIdentifiers": "Gerätekennung",
 	"EnableRefresh": "zyklisches Discovery",
 	"EnableRefreshTooltip": "aktivieren, um zyklisch mit einem cron zu discovern",
-	"Enter new devicename": "Geben Sie einen neuen Gerätetyp ein",
+	"Enter new devicetype": "Geben Sie einen neuen Gerätetyp ein",
 	"Enter new name": "Geben Sie einen neuen Gerätenamen ein",
 	"Folder": "Ordner",
 	"Humidifier": "Luftbefeuchter",
