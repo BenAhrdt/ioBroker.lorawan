@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.13",
+    "version": "1.20.14",
     "news": {
+      "1.20.14": {
+        "en": "insert node",
+        "de": "einsatzknoten",
+        "ru": "вставной узел",
+        "pt": "inserir o nó",
+        "nl": "knooppunt invoegen",
+        "fr": "insérer le noeud",
+        "it": "inserto nodo",
+        "es": "insertar nodos",
+        "pl": "wstaw węzeł",
+        "uk": "вставка вершини",
+        "zh-cn": "插入节点"
+      },
       "1.20.13": {
         "en": "remove nod from crypto",
         "de": "nod from crypto entfernen",
@@ -80,19 +93,6 @@
         "pl": "zmiany w obiekcie Przechowywać",
         "uk": "зміни об'єкта Магазини",
         "zh-cn": "对象变化 存储"
-      },
-      "1.20.7": {
-        "en": "bugfix correct writing of indicators",
-        "de": "bugfix korrektes schreiben von indikatoren",
-        "ru": "bugfix правильное написание индикаторов",
-        "pt": "errofix escrita correta de indicadores",
-        "nl": "foutfix correct schrijven van indicatoren",
-        "fr": "bugfix écriture correcte des indicateurs",
-        "it": "bugfix corretto scrittura di indicatori",
-        "es": "bugfix correcta escritura de indicadores",
-        "pl": "bugfix prawidłowe pisanie wskaźników",
-        "uk": "виправлення правильних показників",
-        "zh-cn": "错误修正正确的指标写法"
       }
     },
     "titleLang": {

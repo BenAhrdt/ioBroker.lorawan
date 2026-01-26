@@ -1,6 +1,6 @@
 {
   "name": "iobroker.lorawan",
-  "version": "1.20.13",
+  "version": "1.20.14",
   "description": "converts the desired lora gateway data to a ioBroker structure",
   "author": {
     "name": "BenAhrdt",
