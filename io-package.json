@@ -589,7 +589,7 @@
         "name": "internal logging types",
         "read": true,
         "write": true,
-        "def": "{\"discovery\":false, \"assign\": false, \"messageTo\": false, \"listDevices\": false, \"getStatus\": false, \"deviceinformation\": false, \"downlinkconfig\": false,}"
+        "def": "{\"discovery\":false, \"assign\": false, \"messageTo\": false, \"listDevices\": false, \"getStatus\": false, \"deviceinformation\": false, \"downlinkconfig\": false, \"getChangeInfo\": false,}"
       },
       "native": {}
     },

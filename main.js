@@ -36,7 +36,6 @@ class Lorawan extends utils.Adapter {
             ttn: 'ttn',
             chirpstack: 'chirpstack',
         };
-
         this.NextSendLocks = new Map(); // key -> Promise-chain
 
         // Simulation variables
@@ -122,7 +121,6 @@ class Lorawan extends utils.Adapter {
             }
 
             this.deviceManagement = new LoRaWANDeviceManagement(this);
-
             //Subscribe all configuration and control states
             await this.subscribeStatesAsync('*');
             await this.subscribeObjectsAsync('*');
@@ -146,6 +144,16 @@ class Lorawan extends utils.Adapter {
 				const message = {devEui:"f1c0ae0e-b4a2-4547-b360-7cfa15e85734",confirmed:false,fPort:1,data:"AAA"};
 				await this.mqttClient?.publish(topic,JSON.stringify(message));
 			}, 5000);*/
+            // Test of getChangeInfo with and without object Store
+            /*
+            const ts = Date.now();
+            this.log.error(`start mit objectStore`);
+            for (let i = 1; i <= 1000; i++) {
+                let a = await this.getChangeInfo(
+                    'lorawan.0.bbea74d6-1fc5-4238-af20-d2aecdbb4f8e.devices.70b3d52dd301b3cc.configuration.devicetype',
+                );
+            }
+            this.log.error(`Dauer: ${Date.now() - ts}`);*/
         } catch (error) {
             this.log.error(`error at ${activeFunction}: ${error}`);
         }
@@ -554,16 +562,22 @@ class Lorawan extends utils.Adapter {
         const activeFunction = 'onStateChange';
         try {
             if (state) {
-                //this.log.debug(`state ${id} changed: val: ${state.val} - ack: ${state.ack}`);
-                // The state was changed => only states with ack = false will be processed, others will be ignored
-                if (id.startsWith(`${this.namespace}.info.`)) {
-                    this.log.silly(
-                        `the state ${id} has changed to ${state.val !== '' ? state.val : '""'} with ack = ${state.ack}.`,
-                    );
-                } else {
-                    this.log.silly(
-                        `the state ${id} has changed to ${state.val !== '' ? state.val : '""'} with ack = ${state.ack}.`,
-                    );
+                this.log.silly(
+                    `the state ${id} has changed to ${state.val !== '' ? state.val : '""'} with ack = ${state.ack}.`,
+                );
+                // Update State in objectStore
+                if (id.startsWith(this.namespace)) {
+                    if (!id.startsWith(`${this.namespace}.info`) && !id.startsWith(`${this.namespace}.bridge`)) {
+                        // Configuration and Downlink is updated with ack = false / true
+                        // Other folders only in case of true
+                        if (
+                            id.includes(this.messagehandler?.directoryhandler.reachableSubfolders.configuration) ||
+                            id.includes(this.messagehandler?.directoryhandler.reachableSubfolders.downlinkControl) ||
+                            state.ack
+                        ) {
+                            await this.objectStore?.generateObjectStructureFromId(id, { payload: { state: state } });
+                        }
+                    }
                 }
                 if (!state.ack) {
                     if (id.startsWith(this.namespace)) {
@@ -953,11 +967,6 @@ class Lorawan extends utils.Adapter {
                     // Query for Namespace => Just publish foreign States with ack = true
                     if (!id.startsWith(this.namespace)) {
                         await this.bridge?.publishId(id, state.val, {});
-                    } else {
-                        // Update State in objectStore
-                        if (!id.startsWith(`${this.namespace}.info`) && !id.startsWith(`${this.namespace}.bridge`)) {
-                            await this.objectStore?.generateObjectStructureFromId(id, { payload: { state: state } });
-                        }
                     }
                 }
             } else {
@@ -1132,14 +1141,16 @@ class Lorawan extends utils.Adapter {
     async getChangeInfo(id, options) {
         const activeFunction = 'getChangeInfo';
         try {
-            this.log.silly(`changeinfo of id ${id}, will be generated.`);
+            // Check for logging
+            this.log[this.logtypes.getChangeInfo]?.(`changeinfo of id ${id}, will be generated.`);
             const changeInfo = this.getBaseDeviceInfo(id);
-            const myId = `${changeInfo?.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.configuration}.devicetype`;
+            //const myId = `${changeInfo?.objectStartDirectory}.${this.messagehandler?.directoryhandler.reachableSubfolders.configuration}.devicetype`; // commented out on: 26.01.2026 => Use objectStore
             // Check for changeInfo
             if (changeInfo) {
-                // Get Obect from startdirectory
-                const applicationDirectoryObject = await this.getObjectAsync(changeInfo.applicationId);
-                const startDirectoryObject = await this.getObjectAsync(changeInfo.objectStartDirectory);
+                //const applicationDirectoryObject = await this.getObjectAsync(changeInfo.applicationId); // commented out on: 26.01.2026 => Use objectStore
+                //const startDirectoryObject = await this.getObjectAsync(changeInfo.objectStartDirectory); // commented out on: 26.01.2026 => Use objectStore
+                const applicationDirectoryObject = this.objectStore?.applications[changeInfo.applicationId].object;
+                const startDirectoryObject = this.objectStore?.devices[changeInfo.deviceEUI].object;
                 if (applicationDirectoryObject && startDirectoryObject) {
                     changeInfo.applicationName = applicationDirectoryObject.native.applicationName;
                     changeInfo.usedApplicationName = applicationDirectoryObject.common.name;
@@ -1147,7 +1158,8 @@ class Lorawan extends utils.Adapter {
                     changeInfo.usedDeviceId = startDirectoryObject.common.name;
                 }
                 // Get deviceType
-                const deviceTypeIdState = await this.getStateAsync(myId);
+                //const deviceTypeIdState = await this.getStateAsync(myId); // commented out on: 26.01.2026 => Use objectStore
+                const deviceTypeIdState = this.objectStore?.devices[changeInfo.deviceEUI].informations.devicetype.state;
                 if (deviceTypeIdState) {
                     changeInfo.deviceType = deviceTypeIdState.val;
                     if (options && options.withBestMatch) {
