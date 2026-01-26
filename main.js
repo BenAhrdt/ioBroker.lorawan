@@ -1,7 +1,7 @@
 'use strict';
 
 const mqtt = require('mqtt');
-const crypto = require('node:crypto');
+const crypto = require('crypto');
 
 /*
  * Created with @iobroker/create-adapter v2.6.0
