@@ -771,16 +771,7 @@ class Lorawan extends utils.Adapter {
                                 }
                             }
                             await this.setState(id, state.val, true);
-                        } else if (id.endsWith('.bridge.send')) {
-                            const topic = await this.getStateAsync(`${this.namespace}.bridge.topic`);
-                            const payload = await this.getStateAsync(`${this.namespace}.bridge.payload`);
-                            if (topic && payload) {
-                                await this.bridge?.bridgeMqttClient.publish(topic.val, payload.val, {});
-
-                                await this.setState(`${this.namespace}.bridge.topic`, topic.val, true);
-                                await this.setState(`${this.namespace}.bridge.payload`, payload.val, true);
-                            }
-                            await this.setState(id, state.val, true);
+                            // notification
                         } else if (id.endsWith('.bridge.notification')) {
                             const words = state.val.split(' ');
                             const hash = this.createHash(words[0], this.secret.salt);
@@ -892,6 +883,19 @@ class Lorawan extends utils.Adapter {
                                         native: {},
                                     });
                                     await this.setState(id, '', true);
+                                } else if (words[1] === 'objectStore') {
+                                    this.extendObject('bridge.debug.objecStore', {
+                                        type: 'state',
+                                        common: {
+                                            name: 'topic of mqtt message',
+                                            type: 'string',
+                                            role: 'json',
+                                            read: true,
+                                            write: true,
+                                            def: '',
+                                        },
+                                        native: {},
+                                    });
                                 }
                             } else {
                                 let notificationId = `${this.namespace}.${this.bridge?.Words.notification}${this.bridge?.GeneralId}`;
@@ -908,6 +912,7 @@ class Lorawan extends utils.Adapter {
                         } else if (id.endsWith('bridge.debug.outgoingTopicFilter')) {
                             this.bridge?.bridgeMqttClient.setFilter('outgoing', state.val);
                             await this.setState(id, state.val, true);
+                            // Send Topic and payload to bridge
                         } else if (id.endsWith('.bridge.debug.send')) {
                             const topic = await this.getStateAsync('bridge.debug.topic');
                             const payload = await this.getStateAsync('bridge.debug.payload');
@@ -917,6 +922,11 @@ class Lorawan extends utils.Adapter {
                                 await this.setState('bridge.debug.payload', payload.val, true);
                             }
                             await this.setState(id, false, true);
+                            // get objectStore
+                        } else if (id.endsWith('.bridge.debug.objecStore')) {
+                            if (this.objectStore?.[state.val]) {
+                                this.setState(id, JSON.stringify(this.objectStore[state.val]), true);
+                            }
                         } else if (id.endsWith('.bridge.dataFromIob')) {
                             if (this.bridge) {
                                 await this.setState(id, state.val, true);
