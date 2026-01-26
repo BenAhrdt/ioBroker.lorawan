@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.14",
+    "version": "1.20.15",
     "news": {
+      "1.20.15": {
+        "en": "sort output for informations",
+        "de": "sortierausgabe für informationen",
+        "ru": "сортировать выход для информации",
+        "pt": "sort output para informações",
+        "nl": "uitvoer voor informatie sorteren",
+        "fr": "trier la sortie pour les informations",
+        "it": "sort output per informazioni",
+        "es": "salida de tipo para información",
+        "pl": "sortowanie wyników dla informacji",
+        "uk": "сортування інформації",
+        "zh-cn": "信息排序输出"
+      },
       "1.20.14": {
         "en": "insert node",
         "de": "einsatzknoten",
@@ -80,19 +93,6 @@
         "pl": "eksperymentalne dla formy",
         "uk": "експериментальна форма",
         "zh-cn": "实验形式"
-      },
-      "1.20.8": {
-        "en": "changes in objectStore",
-        "de": "änderungen des Objekts Store",
-        "ru": "изменения в объекте Магазин",
-        "pt": "alterações no objeto Armazenar",
-        "nl": "wijzigingen in object Opslaan",
-        "fr": "changements d'objet A conserver",
-        "it": "cambiamenti nell'oggetto Negozio",
-        "es": "cambios en el objeto Store",
-        "pl": "zmiany w obiekcie Przechowywać",
-        "uk": "зміни об'єкта Магазини",
-        "zh-cn": "对象变化 存储"
       }
     },
     "titleLang": {
