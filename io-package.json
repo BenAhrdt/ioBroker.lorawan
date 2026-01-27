@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.19",
+    "version": "1.20.20",
     "news": {
+      "1.20.20": {
+        "en": "icon assign changed",
+        "de": "symbol assign geändert",
+        "ru": "изменить иконку",
+        "pt": "atribuição do ícone alterada",
+        "nl": "pictogram toegewezen",
+        "fr": "icon assigner changé",
+        "it": "icona assegna cambiato",
+        "es": "icono asignado cambiado",
+        "pl": "ikona przypisz zmieniony",
+        "uk": "ікона призначає зміни",
+        "zh-cn": "图标已更改"
+      },
       "1.20.19": {
         "en": "bugfix incon set",
         "de": "bugfix incon set",
@@ -80,19 +93,6 @@
         "pl": "usunąć skinienie z krypto",
         "uk": "видалити nod з крипто",
         "zh-cn": "从加密中删除点头"
-      },
-      "1.20.11": {
-        "en": "improve device Manager icons and Buttons",
-        "de": "verbesserung der Vorrichtung Icons und Buttons verwalten",
-        "ru": "улучшить устройство Иконки менеджера и кнопки",
-        "pt": "melhorar o dispositivo Gerir ícones e botões",
-        "nl": "apparaat verbeteren Pictogrammen en knoppen voor de manager",
-        "fr": "améliorer l'appareil Icônes de gestionnaire et boutons",
-        "it": "migliorare il dispositivo Icone Manager e pulsanti",
-        "es": "mejorar el dispositivo Gestor de iconos y botones",
-        "pl": "ulepszenie urządzenia Ikony menedżera i przyciski",
-        "uk": "поліпшення пристрою Ім'я користувача",
-        "zh-cn": "改进设备 管理器图标和按钮"
       }
     },
     "titleLang": {
