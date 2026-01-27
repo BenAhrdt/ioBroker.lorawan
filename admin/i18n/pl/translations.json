@@ -219,6 +219,7 @@
 	"ipUrlTooltip": "wprowadź adres IP lub adres URL, z którym chcesz się połączyć",
 	"keepalive": "podtrzymać",
 	"keepaliveTooltip": "wprowadź czas w sekundach dla funkcji utrzymywania aktywności",
+	"lastJoined": "dołączył jako ostatni",
 	"lengthInByte": "długość stanu (bajt)",
 	"lengthInByteTooltip": "wstaw długość stanu w bajtach",
 	"limitMax": "ograniczenie maks.",

@@ -219,6 +219,7 @@
 	"ipUrlTooltip": "voer het ip-adres in, of de url waarmee u verbinding wilt maken",
 	"keepalive": "in leven houden",
 	"keepaliveTooltip": "voer de tijd in seconden in voor de keepalive-functie",
+	"lastJoined": "laatst lid geworden",
 	"lengthInByte": "lengte van staat (byte)",
 	"lengthInByteTooltip": "voer de lengte van de status in bytes in",
 	"limitMax": "limiet max.",

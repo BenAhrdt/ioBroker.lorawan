@@ -219,6 +219,7 @@
 	"ipUrlTooltip": "insira o endereço IP ou o URL ao qual deseja se conectar",
 	"keepalive": "manutenção de atividade",
 	"keepaliveTooltip": "insira o tempo em segundos para a função keepalive",
+	"lastJoined": "última adesão",
 	"lengthInByte": "comprimento do estado (byte)",
 	"lengthInByteTooltip": "insira o comprimento do estado em bytes",
 	"limitMax": "limite máx.",

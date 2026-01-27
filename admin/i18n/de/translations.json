@@ -219,6 +219,7 @@
 	"ipUrlTooltip": "Geben Sie die IP-Adresse oder die URL ein, zu der Sie eine Verbindung herstellen möchten",
 	"keepalive": "keepalive",
 	"keepaliveTooltip": "Geben Sie die Zeit in Sekunden für die Keepalive-Funktion ein",
+	"lastJoined": "Letzter Join:",
 	"lengthInByte": "Statelänge (Byte)",
 	"lengthInByteTooltip": "Geben Sie die Länge des States in Bytes an",
 	"limitMax": "Maximum begrenzen",

@@ -282,5 +282,6 @@
 	"detectedRoles": "detected roles",
 	"LoRaWAN devices": "LoRaWAN devices",
 	"LastUplink": "Last Uplink:",
-	"generalInformations": "general informations"
+	"generalInformations": "general informations",
+	"lastJoined": "last join:"
 }
