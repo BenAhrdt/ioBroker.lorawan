@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.17",
+    "version": "1.20.18",
     "news": {
+      "1.20.18": {
+        "en": "bugfix nameing incomingTopic",
+        "de": "bugfix Nameing eingehend Thema",
+        "ru": "bugfix Имя входящего Тема",
+        "pt": "correcção de erros a dar entrada Tópico",
+        "nl": "bugfix-naam binnenkomend Onderwerp",
+        "fr": "bugfix nominant entrant Thème",
+        "it": "bugfix nome in arrivo Argomento",
+        "es": "bugfix nombre entrante Tema",
+        "pl": "nadchodzące nazewnictwo bugfix Temat",
+        "uk": "виправлення ім'я користувача Головна",
+        "zh-cn": "正在接收错误修正名称 专题"
+      },
       "1.20.17": {
         "en": "implement Device details",
         "de": "durchführung Gerätedetails",
@@ -80,19 +93,6 @@
         "pl": "powrót do root getCnageInfo",
         "uk": "повернення в корінь GetCnageInfo",
         "zh-cn": "返回到 root 获取CnageInfo"
-      },
-      "1.20.9": {
-        "en": "experimental for form",
-        "de": "experiment für form",
-        "ru": "экспериментальная форма",
-        "pt": "experimental para forma",
-        "nl": "experimenteel voor vorm",
-        "fr": "expérimental pour la forme",
-        "it": "sperimentale per forma",
-        "es": "experimental para forma",
-        "pl": "eksperymentalne dla formy",
-        "uk": "експериментальна форма",
-        "zh-cn": "实验形式"
       }
     },
     "titleLang": {
