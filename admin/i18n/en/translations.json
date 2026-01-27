@@ -278,5 +278,9 @@
 	"Config this device": "Config this device",
 	"Info of this device": "Info of this device",
 	"Enter new name": "Enter new name",
-	"Enter new devicetype": "Enter new devicetype"
+	"Enter new devicetype": "Enter new devicetype",
+	"detectedRoles": "detected roles",
+	"LoRaWAN devices": "LoRaWAN devices",
+	"LastUplink": "Last Uplink:",
+	"generalInformations": "general informations"
 }

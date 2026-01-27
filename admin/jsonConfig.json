@@ -7,7 +7,7 @@
 	"items":{
 		"_deviceManager": {
 			"type": "panel",
-			"label": "Device manager",
+			"label": "LoRaWAN devices",
 			"items": {
 				"_dm": {
 					"type": "deviceManager",

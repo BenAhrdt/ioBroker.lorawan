@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### 1.20.15 (2026-01-26)
+* (BenAhrdt) add informations to device Manager
+
+### 1.20.15 (2026-01-26)
 * (BenAhrdt) sort output for informations
 
 ### 1.20.14 (2026-01-26)

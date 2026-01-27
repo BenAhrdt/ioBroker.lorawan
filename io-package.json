@@ -16,19 +16,6 @@
         "uk": "сортування інформації",
         "zh-cn": "信息排序输出"
       },
-      "1.20.14": {
-        "en": "insert node",
-        "de": "einsatzknoten",
-        "ru": "вставной узел",
-        "pt": "inserir o nó",
-        "nl": "knooppunt invoegen",
-        "fr": "insérer le noeud",
-        "it": "inserto nodo",
-        "es": "insertar nodos",
-        "pl": "wstaw węzeł",
-        "uk": "вставка вершини",
-        "zh-cn": "插入节点"
-      },
       "1.20.13": {
         "en": "remove nod from crypto",
         "de": "nod from crypto entfernen",
@@ -41,19 +28,6 @@
         "pl": "usunąć skinienie z krypto",
         "uk": "видалити nod з крипто",
         "zh-cn": "从加密中删除点头"
-      },
-      "1.20.12": {
-        "en": "check for update",
-        "de": "überprüfung der aktualisierung",
-        "ru": "проверьте обновление",
-        "pt": "verificar a actualização",
-        "nl": "controleren op update",
-        "fr": "vérifier la mise à jour",
-        "it": "controllare per l'aggiornamento",
-        "es": "check for update",
-        "pl": "sprawdzanie aktualizacji",
-        "uk": "реєстрація на оновлення",
-        "zh-cn": "检查更新"
       },
       "1.20.11": {
         "en": "improve device Manager icons and Buttons",
