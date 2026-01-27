@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.21",
+    "version": "1.20.22",
     "news": {
+      "1.20.22": {
+        "en": "change preasure quere to pressure",
+        "de": "voreinstellungsanfrage zum druck ändern",
+        "ru": "изменение преасмента к давлению",
+        "pt": "mudança preasure quere à pressão",
+        "nl": "verandering preasure quere aan druk",
+        "fr": "changement de mesure quere à pression",
+        "it": "cambiare la quere preasure alla pressione",
+        "es": "cambiar preasure quere a presión",
+        "pl": "zmiana preasure quere do ciśnienia",
+        "uk": "змінити запобіжний привід для тиску",
+        "zh-cn": "将预置排程改为压力"
+      },
       "1.20.21": {
         "en": "set Details to informations and add icons for weateher station / humidity",
         "de": "set Details zu Informationen und Icons für Weateher Station / Feuchtigkeit hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "dodać informacje do urządzenia Manager",
         "uk": "додати інформацію в диспетчер пристроїв",
         "zh-cn": "向设备管理器添加信息"
-      },
-      "1.20.15": {
-        "en": "sort output for informations",
-        "de": "sortierausgabe für informationen",
-        "ru": "сортировать выход для информации",
-        "pt": "sort output para informações",
-        "nl": "uitvoer voor informatie sorteren",
-        "fr": "trier la sortie pour les informations",
-        "it": "sort output per informazioni",
-        "es": "salida de tipo para información",
-        "pl": "sortowanie wyników dla informacji",
-        "uk": "сортування інформації",
-        "zh-cn": "信息排序输出"
       }
     },
     "titleLang": {

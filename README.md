@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.20.22 (2026-01-27)
 * (BenAhrdt) change preasure quere to pressure
 
 ### 1.20.21 (2026-01-27)
