@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.16",
+    "version": "1.20.17",
     "news": {
+      "1.20.17": {
+        "en": "implement Device details",
+        "de": "durchführung Gerätedetails",
+        "ru": "осуществлять Детали устройства",
+        "pt": "implementar Detalhes do dispositivo",
+        "nl": "implementeren Apparaatdetails",
+        "fr": "mise en œuvre Détails du périphérique",
+        "it": "attuazione Dettagli del dispositivo",
+        "es": "aplicación Detalles del dispositivo",
+        "pl": "wdrożenie Szczegóły dotyczące urządzenia",
+        "uk": "реалізація Деталі пристрою",
+        "zh-cn": "执行 设备细节"
+      },
       "1.20.16": {
         "en": "add informations to device Manager",
         "de": "informationen zum Gerätemanager hinzufügen",
