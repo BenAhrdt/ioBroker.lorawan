@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.20",
+    "version": "1.20.21",
     "news": {
+      "1.20.21": {
+        "en": "set Details to informations and add icons for weateher station / humidity",
+        "de": "set Details zu Informationen und Icons für Weateher Station / Feuchtigkeit hinzufügen",
+        "ru": "установить детали для информации и добавить значки для Weateher станции / влажности",
+        "pt": "definir detalhes para informações e adicionar ícones para estação / umidade",
+        "nl": "set Details aan informatie en voeg pictogrammen voor weateher station / vochtigheid",
+        "fr": "définir les détails aux informations et ajouter des icônes pour la station de soudeuse / humidité",
+        "it": "impostare Dettagli alle informazioni e aggiungere icone per la stazione di bagnatura / umidità",
+        "es": "set Detalles a información y añadir iconos para estación de weateher / humedad",
+        "pl": "ustaw szczegóły informacji i dodaj ikony dla stacji / wilgotności",
+        "uk": "встановити деталі до інформації та додати іконки для станції плетіння / вологості",
+        "zh-cn": "设置信息的细节并添加编织站/湿度的图标"
+      },
       "1.20.20": {
         "en": "icon assign changed",
         "de": "symbol assign geändert",
@@ -80,19 +93,6 @@
         "pl": "sortowanie wyników dla informacji",
         "uk": "сортування інформації",
         "zh-cn": "信息排序输出"
-      },
-      "1.20.13": {
-        "en": "remove nod from crypto",
-        "de": "nod from crypto entfernen",
-        "ru": "удалить nod из crypto",
-        "pt": "remover aceno do cripto",
-        "nl": "verwijderen knik uit crypto",
-        "fr": "enlever le noeud de crypto",
-        "it": "rimuovere il nodo da crypto",
-        "es": "quitar el fideo de cripto",
-        "pl": "usunąć skinienie z krypto",
-        "uk": "видалити nod з крипто",
-        "zh-cn": "从加密中删除点头"
       }
     },
     "titleLang": {
