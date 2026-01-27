@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.18",
+    "version": "1.20.19",
     "news": {
+      "1.20.19": {
+        "en": "bugfix incon set",
+        "de": "bugfix incon set",
+        "ru": "багфикс incon set",
+        "pt": "conjunto de incons de correção de erros",
+        "nl": "bugfix-inconset",
+        "fr": "bugfix incon set",
+        "it": "set bugfix incon",
+        "es": "bugfix incon set",
+        "pl": "bugfix incon set",
+        "uk": "виправлення помилок",
+        "zh-cn": "装入套装错误"
+      },
       "1.20.18": {
         "en": "bugfix nameing incomingTopic",
         "de": "bugfix Nameing eingehend Thema",
@@ -80,19 +93,6 @@
         "pl": "ulepszenie urządzenia Ikony menedżera i przyciski",
         "uk": "поліпшення пристрою Ім'я користувача",
         "zh-cn": "改进设备 管理器图标和按钮"
-      },
-      "1.20.10": {
-        "en": "return to root getCnageInfo",
-        "de": "zurück zu root getCnageInfo",
-        "ru": "вернуться в root getCnageInfo",
-        "pt": "voltar ao root getCnageInfo",
-        "nl": "terug naar root getCnageInfo",
-        "fr": "retour à la racine getCnageInfo",
-        "it": "ritorno a root getCnageInfo",
-        "es": "volver a root getCnageInfo",
-        "pl": "powrót do root getCnageInfo",
-        "uk": "повернення в корінь GetCnageInfo",
-        "zh-cn": "返回到 root 获取CnageInfo"
       }
     },
     "titleLang": {
