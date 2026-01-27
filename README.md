@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) icon assign changed
+
 ### 1.20.19 (2026-01-27)
 * (BenAhrdt) bugfix incon set
 
