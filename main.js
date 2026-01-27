@@ -1224,6 +1224,7 @@ class Lorawan extends utils.Adapter {
             // Handled by Device Manager class itself, so ignored here
             return;
         }
+        this.log.warn(JSON.stringify(obj));
         const activeFunction = 'onMessage';
         this.log.silly(`message received: command = ${obj.command} - message = ${JSON.stringify(obj.message)}`);
         try {
