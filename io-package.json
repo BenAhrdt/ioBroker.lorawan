@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.22",
+    "version": "1.20.23",
     "news": {
+      "1.20.23": {
+        "en": "change role display and icons",
+        "de": "rollenanzeige und icons ändern",
+        "ru": "изменить отображение ролей и иконки",
+        "pt": "alterar a exibição de funções e ícones",
+        "nl": "rolweergave en pictogrammen wijzigen",
+        "fr": "modifier l'affichage des rôles et les icônes",
+        "it": "modifica visualizzazione del ruolo e icone",
+        "es": "función de cambio de visualización e iconos",
+        "pl": "zmienić wyświetlacz ról i ikony",
+        "uk": "змінити відображення ролі та іконки",
+        "zh-cn": "更改角色显示和图标"
+      },
       "1.20.22": {
         "en": "change preasure quere to pressure",
         "de": "voreinstellungsanfrage zum druck ändern",
@@ -80,19 +93,6 @@
         "pl": "wdrożenie Szczegóły dotyczące urządzenia",
         "uk": "реалізація Деталі пристрою",
         "zh-cn": "执行 设备细节"
-      },
-      "1.20.16": {
-        "en": "add informations to device Manager",
-        "de": "informationen zum Gerätemanager hinzufügen",
-        "ru": "добавление информации в диспетчер устройств",
-        "pt": "adicionar informações ao gerenciador de dispositivos",
-        "nl": "informatie toevoegen aan apparaatbeheer",
-        "fr": "ajouter des informations au gestionnaire de périphériques",
-        "it": "aggiungere informazioni al gestore del dispositivo",
-        "es": "añadir información al administrador del dispositivo",
-        "pl": "dodać informacje do urządzenia Manager",
-        "uk": "додати інформацію в диспетчер пристроїв",
-        "zh-cn": "向设备管理器添加信息"
       }
     },
     "titleLang": {
