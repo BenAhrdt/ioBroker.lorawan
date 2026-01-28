@@ -906,7 +906,7 @@ class Lorawan extends utils.Adapter {
                                             role: 'json',
                                             read: true,
                                             write: true,
-                                            def: '',
+                                            def: 'applications, devices, currentIds',
                                         },
                                         native: {},
                                     });
