@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.23",
+    "version": "1.20.24",
     "news": {
+      "1.20.24": {
+        "en": "change info Form to Detail button",
+        "de": "änderungen Formular zum Detail Knopf",
+        "ru": "изменить информацию Форма для детализации кнопки",
+        "pt": "alterar informações Botão de Formulário para Detalhe",
+        "nl": "info wijzigen Vorm naar detailknop",
+        "fr": "modifier les informations Formulaire au bouton Détail",
+        "it": "cambiare le informazioni Modulo per Dettaglio pulsante",
+        "es": "cambio de información Forma al botón Detalle",
+        "pl": "zmiana informacji Format do przycisku Szczegóły",
+        "uk": "зміна інформації Форма для докладної кнопки",
+        "zh-cn": "更改信息 详细按钮的窗体"
+      },
       "1.20.23": {
         "en": "change role display and icons",
         "de": "rollenanzeige und icons ändern",
@@ -80,19 +93,6 @@
         "pl": "nadchodzące nazewnictwo bugfix Temat",
         "uk": "виправлення ім'я користувача Головна",
         "zh-cn": "正在接收错误修正名称 专题"
-      },
-      "1.20.17": {
-        "en": "implement Device details",
-        "de": "durchführung Gerätedetails",
-        "ru": "осуществлять Детали устройства",
-        "pt": "implementar Detalhes do dispositivo",
-        "nl": "implementeren Apparaatdetails",
-        "fr": "mise en œuvre Détails du périphérique",
-        "it": "attuazione Dettagli del dispositivo",
-        "es": "aplicación Detalles del dispositivo",
-        "pl": "wdrożenie Szczegóły dotyczące urządzenia",
-        "uk": "реалізація Деталі пристрою",
-        "zh-cn": "执行 设备细节"
       }
     },
     "titleLang": {

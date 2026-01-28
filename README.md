@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.20.24 (2026-01-28)
 * (BenAhrdt) change info Form to Detail button
 
 ### 1.20.23 (2026-01-28)
