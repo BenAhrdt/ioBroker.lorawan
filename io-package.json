@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.24",
+    "version": "1.20.25",
     "news": {
+      "1.20.25": {
+        "en": "improve number of role detection",
+        "de": "verbesserung der anzahl der rollenerkennung",
+        "ru": "улучшение обнаружения ролей",
+        "pt": "melhorar o número de detecção de funções",
+        "nl": "het aantal roldetectie verbeteren",
+        "fr": "améliorer le nombre de détections de rôles",
+        "it": "migliorare il numero di rilevamento del ruolo",
+        "es": "mejorar el número de detección de funciones",
+        "pl": "zwiększenie liczby wykrywanych ról",
+        "uk": "поліпшення кількості визначення ролі",
+        "zh-cn": "改进角色检测数量"
+      },
       "1.20.24": {
         "en": "change info Form to Detail button",
         "de": "änderungen Formular zum Detail Knopf",
@@ -80,19 +93,6 @@
         "pl": "bugfix incon set",
         "uk": "виправлення помилок",
         "zh-cn": "装入套装错误"
-      },
-      "1.20.18": {
-        "en": "bugfix nameing incomingTopic",
-        "de": "bugfix Nameing eingehend Thema",
-        "ru": "bugfix Имя входящего Тема",
-        "pt": "correcção de erros a dar entrada Tópico",
-        "nl": "bugfix-naam binnenkomend Onderwerp",
-        "fr": "bugfix nominant entrant Thème",
-        "it": "bugfix nome in arrivo Argomento",
-        "es": "bugfix nombre entrante Tema",
-        "pl": "nadchodzące nazewnictwo bugfix Temat",
-        "uk": "виправлення ім'я користувача Головна",
-        "zh-cn": "正在接收错误修正名称 专题"
       }
     },
     "titleLang": {
