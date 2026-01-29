@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### 1.20.25 (2026-01-28)
+### **WORK IN PROGRESS**
 * (BenAhrdt) bring objectstore and deviceManager functions in new structure for future devices
 
 ### 1.20.25 (2026-01-28)
