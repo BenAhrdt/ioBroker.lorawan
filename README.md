@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### 1.20.25 (2026-01-28)
+* (BenAhrdt) bring objectstore and deviceManager functions in new structure for future devices
+
+### 1.20.25 (2026-01-28)
 * (BenAhrdt) improve number of role detection
 
 ### 1.20.24 (2026-01-28)

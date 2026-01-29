@@ -204,6 +204,7 @@
 	"deviceSuffix": "urządzenie Sufiks",
 	"deviceType": "typ urządzenia",
 	"deviceTypeTooltip": "wstaw nazwę typu urządzenia, ta konfiguracja jest prawidłowa. (np. Dragino XY pasuje również do Dragino)",
+	"devices": "urządzenia",
 	"downlinkConfig": "Konfiguracja Donwlink",
 	"downlinkConfigHeader": "Dodaj łącza w dół specyficzne dla Twojego urządzenia",
 	"downlinkConfigMainHeader": "główna konfiguracja łącza w dół",

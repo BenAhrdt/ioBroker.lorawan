@@ -204,6 +204,7 @@
 	"deviceSuffix": "dispositivo sufijo",
 	"deviceType": "tipo de dispositivo",
 	"deviceTypeTooltip": "inserte el nombre del tipo de dispositivo, esta configuración es válida. (por ejemplo, Dragino XY también coincide con Dragino)",
+	"devices": "dispositivos",
 	"downlinkConfig": "Configuración de enlace donwlink",
 	"downlinkConfigHeader": "Agregue enlaces descendentes específicos de su dispositivo",
 	"downlinkConfigMainHeader": "configuración principal del enlace descendente",

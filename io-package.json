@@ -413,7 +413,7 @@
     "password": "",
     "ssl": true,
     "origin": "ttn",
-    "notificationActivation": "allNotifications, bridgeConnection, newDiscover, deviceState",
+    "notificationActivation": "notification",
     "downlinkConfig": [],
     "customDecodedJsonActive": false,
     "customConfigurationJsonActive": false,
@@ -428,7 +428,7 @@
     "EnableRefresh": true,
     "RefreshDiscoveryCronJob": "0 * * * *",
     "BridgeEnum": "*",
-    "BridgenotificationActivation": "allNotifications, brdigeConnection, newDiscover, deviceState",
+    "BridgenotificationActivation": "allNotifications, bridgeConnection, newDiscover, deviceState",
     "DeviceIdentifiers": [
       {
         "DeviceIdentifier": "usedDeviceId"

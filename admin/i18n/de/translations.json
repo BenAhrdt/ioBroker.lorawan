@@ -204,6 +204,7 @@
 	"deviceSuffix": "Gerätesuffix",
 	"deviceType": "Gerätetyp",
 	"deviceTypeTooltip": "Geben Sie den Namen des Gerätetyps ein. Diese Konfiguration ist gültig. (z. B. Dragino XY passt auch zu Dragino)",
+	"devices": "Geräte",
 	"downlinkConfig": "Donwlink-Konfiguration",
 	"downlinkConfigHeader": "Fügen Sie Ihre gerätespezifischen Downlinks hinzu",
 	"downlinkConfigMainHeader": "Haupt Downlink Konfiguration",

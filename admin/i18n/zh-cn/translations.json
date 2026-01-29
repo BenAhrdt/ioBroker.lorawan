@@ -204,6 +204,7 @@
 	"deviceSuffix": "设备后缀",
 	"deviceType": "设备类型",
 	"deviceTypeTooltip": "插入设备类型的名称，此配置有效。 （例如，Dragino XY 也匹配 Dragino）",
+	"devices": "设备",
 	"downlinkConfig": "下行链路配置",
 	"downlinkConfigHeader": "添加您的设备特定的下行链路",
 	"downlinkConfigMainHeader": "主要下行配置",

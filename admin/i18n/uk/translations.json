@@ -204,6 +204,7 @@
 	"deviceSuffix": "суфікс пристрою",
 	"deviceType": "тип пристрою",
 	"deviceTypeTooltip": "вставте назву типу пристрою, ця конфігурація дійсна. (наприклад, Dragino XY також відповідає Dragino)",
+	"devices": "пристроїв",
 	"downlinkConfig": "Конфігурація Donwlink",
 	"downlinkConfigHeader": "Додайте низхідні посилання для свого пристрою",
 	"downlinkConfigMainHeader": "основна конфігурація низхідного каналу",

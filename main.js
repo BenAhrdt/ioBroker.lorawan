@@ -14,7 +14,7 @@ const bridgeClass = require('./lib/modules/bridge');
 const mqttClientClass = require('./lib/modules/mqttclient');
 const messagehandlerClass = require('./lib/modules/messagehandler');
 const downlinkConfigHandlerClass = require('./lib/modules/downlinkConfighandler');
-const LoRaWANDeviceManagement = require('./lib/modules/deviceManager');
+const LoRaWANDeviceManagement = require('./lib/modules/deviceManager/deviceManager');
 const objectStoreClass = require('./lib/modules/objectStore');
 
 class Lorawan extends utils.Adapter {
@@ -77,7 +77,7 @@ class Lorawan extends utils.Adapter {
             // Generate Object Store
             this.objectStore = new objectStoreClass(this);
 
-            await this.objectStore.generateDeviceObjects();
+            await this.objectStore.generateStoreObjects();
 
             // read system translation out of i18n translation
             this.i18nTranslation = await this.geti18nTranslation();
@@ -515,7 +515,7 @@ class Lorawan extends utils.Adapter {
             if (id.startsWith(this.namespace)) {
                 // Update State in objectStore
                 if (!id.startsWith(`${this.namespace}.info`) && !id.startsWith(`${this.namespace}.bridge`)) {
-                    await this.objectStore?.generateObjectStructureFromId(id, { payload: { object: obj } });
+                    await this.objectStore?.updateLoraWanObject(id, { payload: { object: obj } });
                 }
 
                 // External States
@@ -575,7 +575,7 @@ class Lorawan extends utils.Adapter {
                             id.includes(this.messagehandler?.directoryhandler.reachableSubfolders.downlinkControl) ||
                             state.ack
                         ) {
-                            await this.objectStore?.generateObjectStructureFromId(id, { payload: { state: state } });
+                            await this.objectStore?.updateLoraWanObject(id, { payload: { state: state } });
                         }
                     }
                 }
@@ -906,7 +906,7 @@ class Lorawan extends utils.Adapter {
                                             role: 'json',
                                             read: true,
                                             write: true,
-                                            def: 'applications, devices, currentIds',
+                                            def: 'lorawan.applications, lorawan.devices, lorawan.currentIds',
                                         },
                                         native: {},
                                     });
@@ -939,8 +939,11 @@ class Lorawan extends utils.Adapter {
                             await this.setState(id, false, true);
                             // get objectStore
                         } else if (id.endsWith('.bridge.debug.objecStore')) {
-                            if (this.objectStore?.[state.val]) {
-                                this.setState(id, JSON.stringify(this.objectStore[state.val]), true);
+                            const words = state.val.split('.');
+                            if (words[0] === 'lorawan') {
+                                if (this.objectStore?.lorawan[words[1]]) {
+                                    this.setState(id, JSON.stringify(this.objectStore.lorawan[words[1]]), true);
+                                }
                             }
                         } else if (id.endsWith('.bridge.dataFromIob')) {
                             if (this.bridge) {
@@ -1151,8 +1154,9 @@ class Lorawan extends utils.Adapter {
                 // Get Object from start directory
                 // const applicationDirectoryObject = await this.getObjectAsync(changeInfo.applicationId); // commented out on: 26.01.2026 => Use objectStore
                 // const startDirectoryObject = await this.getObjectAsync(changeInfo.objectStartDirectory); // commented out on: 26.01.2026 => Use objectStore
-                const applicationDirectoryObject = this.objectStore?.applications[changeInfo.applicationId].object;
-                const startDirectoryObject = this.objectStore?.devices[changeInfo.deviceEUI].object;
+                const applicationDirectoryObject =
+                    this.objectStore?.lorawan.applications[changeInfo.applicationId].object;
+                const startDirectoryObject = this.objectStore?.lorawan.devices[changeInfo.deviceEUI].object;
                 if (applicationDirectoryObject && startDirectoryObject) {
                     changeInfo.applicationName = applicationDirectoryObject.native.applicationName;
                     changeInfo.usedApplicationName = applicationDirectoryObject.common.name;
@@ -1161,7 +1165,8 @@ class Lorawan extends utils.Adapter {
                 }
                 // Get deviceType
                 // const deviceTypeIdState = await this.getStateAsync(myId); // commented out on: 26.01.2026 => Use objectStore
-                const deviceTypeIdState = this.objectStore?.devices[changeInfo.deviceEUI].informations.devicetype.state;
+                const deviceTypeIdState =
+                    this.objectStore?.lorawan.devices[changeInfo.deviceEUI].informations.devicetype.state;
                 if (deviceTypeIdState) {
                     changeInfo.deviceType = deviceTypeIdState.val;
                     if (options && options.withBestMatch) {
@@ -1224,7 +1229,6 @@ class Lorawan extends utils.Adapter {
             // Handled by Device Manager class itself, so ignored here
             return;
         }
-        this.log.warn(JSON.stringify(obj));
         const activeFunction = 'onMessage';
         this.log.silly(`message received: command = ${obj.command} - message = ${JSON.stringify(obj.message)}`);
         try {

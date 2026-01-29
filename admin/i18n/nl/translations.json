@@ -204,6 +204,7 @@
 	"deviceSuffix": "apparaat Achtervoegsel",
 	"deviceType": "apparaattype",
 	"deviceTypeTooltip": "voer de naam van het apparaattype in, deze configuratie is geldig. (bijv. Dragino XY komt ook overeen met Dragino)",
+	"devices": "apparaten",
 	"downlinkConfig": "Donwlink-configuratie",
 	"downlinkConfigHeader": "Voeg uw apparaatspecifieke downlinks toe",
 	"downlinkConfigMainHeader": "belangrijkste downlink-configuratie",

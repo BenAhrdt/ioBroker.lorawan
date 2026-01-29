@@ -7,7 +7,7 @@
 	"items":{
 		"_deviceManager": {
 			"type": "panel",
-			"label": "LoRaWAN devices",
+			"label": "devices",
 			"items": {
 				"_dm": {
 					"type": "deviceManager",
@@ -666,6 +666,7 @@
 					"label": "customJson",
 					"tooltip": "customJsonTooltip",
 					"hidden": "data.customDecodedJsonActive === false",
+					"readOnly": true,
 					"xs": 12,
 					"sm": 2,
 					"md": 2,

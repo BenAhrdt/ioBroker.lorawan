@@ -204,6 +204,7 @@
 	"deviceSuffix": "Suffixe de l'appareil",
 	"deviceType": "type d'appareil",
 	"deviceTypeTooltip": "insérez le nom du type d'appareil, cette configuration est valide. (par exemple, Dragino XY correspond également à Dragino)",
+	"devices": "appareils",
 	"downlinkConfig": "Configuration du lien de téléchargement",
 	"downlinkConfigHeader": "Ajoutez des liens descendants spécifiques à votre appareil",
 	"downlinkConfigMainHeader": "configuration principale de la liaison descendante",

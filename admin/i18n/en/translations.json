@@ -283,5 +283,6 @@
 	"LoRaWAN devices": "LoRaWAN devices",
 	"LastUplink": "Last Uplink:",
 	"generalInformations": "general informations",
-	"lastJoined": "last join:"
+	"lastJoined": "last join:",
+	"devices": "devices"
 }
