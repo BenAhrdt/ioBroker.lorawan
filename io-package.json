@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.25",
+    "version": "1.20.26",
     "news": {
+      "1.20.26": {
+        "en": "bring objectstore and deviceManager functions in new structure for future devices",
+        "de": "objektspeicher und Gerät mitbringen Managerfunktionen in neuer Struktur für zukünftige Geräte",
+        "ru": "принести объектный магазин и устройство Функции менеджера в новой структуре для будущих устройств",
+        "pt": "trazer loja de objetos e dispositivo Funções do gestor em nova estrutura para dispositivos futuros",
+        "nl": "objectstore en apparaat meenemen Manager functies in nieuwe structuur voor toekomstige apparaten",
+        "fr": "apporter objetstore et périphérique Fonctions de gestionnaire dans la nouvelle structure pour les futurs appareils",
+        "it": "portare oggettitore e dispositivo Funzioni Manager in una nuova struttura per dispositivi futuri",
+        "es": "traer objetación y dispositivo Funciones de administrador en nueva estructura para futuros dispositivos",
+        "pl": "przynieść obiekt i urządzenie Funkcje menedżera w nowej strukturze dla przyszłych urządzeń",
+        "uk": "принести об'єктний магазин і пристрій Функції менеджера в новій структурі для майбутніх пристроїв",
+        "zh-cn": "带来对象和设备 未来设备新结构中的管理器功能"
+      },
       "1.20.25": {
         "en": "improve number of role detection",
         "de": "verbesserung der anzahl der rollenerkennung",
@@ -80,19 +93,6 @@
         "pl": "ikona przypisz zmieniony",
         "uk": "ікона призначає зміни",
         "zh-cn": "图标已更改"
-      },
-      "1.20.19": {
-        "en": "bugfix incon set",
-        "de": "bugfix incon set",
-        "ru": "багфикс incon set",
-        "pt": "conjunto de incons de correção de erros",
-        "nl": "bugfix-inconset",
-        "fr": "bugfix incon set",
-        "it": "set bugfix incon",
-        "es": "bugfix incon set",
-        "pl": "bugfix incon set",
-        "uk": "виправлення помилок",
-        "zh-cn": "装入套装错误"
       }
     },
     "titleLang": {
