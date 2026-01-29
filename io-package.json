@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.26",
+    "version": "1.20.27",
     "news": {
+      "1.20.27": {
+        "en": "bugfix rolehandling",
+        "de": "bugfix rollenhandling",
+        "ru": "багфикс rolehandling",
+        "pt": "tratamento de funções de correção de erros",
+        "nl": "bugfix rolehandling",
+        "fr": "gestion de rôle bugfix",
+        "it": "bugfix rolehandling",
+        "es": "bugfix rolehandling",
+        "pl": "obsługa rolefix bugfix",
+        "uk": "рольова гра",
+        "zh-cn": "错误修正角色处理"
+      },
       "1.20.26": {
         "en": "bring objectstore and deviceManager functions in new structure for future devices",
         "de": "objektspeicher und Gerät mitbringen Managerfunktionen in neuer Struktur für zukünftige Geräte",
@@ -80,19 +93,6 @@
         "pl": "ustaw szczegóły informacji i dodaj ikony dla stacji / wilgotności",
         "uk": "встановити деталі до інформації та додати іконки для станції плетіння / вологості",
         "zh-cn": "设置信息的细节并添加编织站/湿度的图标"
-      },
-      "1.20.20": {
-        "en": "icon assign changed",
-        "de": "symbol assign geändert",
-        "ru": "изменить иконку",
-        "pt": "atribuição do ícone alterada",
-        "nl": "pictogram toegewezen",
-        "fr": "icon assigner changé",
-        "it": "icona assegna cambiato",
-        "es": "icono asignado cambiado",
-        "pl": "ikona przypisz zmieniony",
-        "uk": "ікона призначає зміни",
-        "zh-cn": "图标已更改"
       }
     },
     "titleLang": {
