@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### 1.20.33 (2026-01-30)
+* (BenAhrdt) starup bridge device with battery value
+
+### 1.20.33 (2026-01-30)
 * (BenAhrdt) first step of role detectiopn in bridged devices
 
 ### 1.20.32 (2026-01-30)
