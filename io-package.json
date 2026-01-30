@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.33",
+    "version": "1.20.34",
     "news": {
+      "1.20.34": {
+        "en": "starup bridge device with battery value",
+        "de": "sternbrückengerät mit batteriewert",
+        "ru": "starup bridge устройство с аккумуляторной батареей",
+        "pt": "dispositivo starup bridge com valor da bateria",
+        "nl": "starup brug apparaat met batterij waarde",
+        "fr": "dispositif de pont avec valeur de batterie",
+        "it": "dispositivo ponte stellare con valore della batteria",
+        "es": "dispositivo de puente con valor de batería",
+        "pl": "urządzenie mostowe starup z wartością baterii",
+        "uk": "зірковий містовий пристрій з значенням батареї",
+        "zh-cn": "有电池值的星座桥设备"
+      },
       "1.20.33": {
         "en": "first step of role detectiopn in bridged devices",
         "de": "erster schritt des rollendetektivs in überbrückten geräten",
@@ -80,19 +93,6 @@
         "pl": "pokazywanie eksperymentalnych urządzeń zagranicznych",
         "uk": "демонструвати експериментальні іноземні пристрої",
         "zh-cn": "显示实验性外国设备"
-      },
-      "1.20.27": {
-        "en": "bugfix rolehandling",
-        "de": "bugfix rollenhandling",
-        "ru": "багфикс rolehandling",
-        "pt": "tratamento de funções de correção de erros",
-        "nl": "bugfix rolehandling",
-        "fr": "gestion de rôle bugfix",
-        "it": "bugfix rolehandling",
-        "es": "bugfix rolehandling",
-        "pl": "obsługa rolefix bugfix",
-        "uk": "рольова гра",
-        "zh-cn": "错误修正角色处理"
       }
     },
     "titleLang": {
