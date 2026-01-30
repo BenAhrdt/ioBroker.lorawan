@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.31",
+    "version": "1.20.32",
     "news": {
+      "1.20.32": {
+        "en": "change icon for default",
+        "de": "icon für standard ändern",
+        "ru": "изменить иконку по умолчанию",
+        "pt": "alterar o ícone por omissão",
+        "nl": "pictogram wijzigen voor standaard",
+        "fr": "modifier l'icône par défaut",
+        "it": "cambiare icona per default",
+        "es": "cambiar icono por defecto",
+        "pl": "zmień ikonę dla domyślnej",
+        "uk": "значок зміни за замовчуванням",
+        "zh-cn": "更改默认图标"
+      },
       "1.20.31": {
         "en": "Add colors to DeviceInfo and Details to Bridge Devices",
         "de": "Hinzufügen von Farben zu DeviceInfo und Details zu Bridge Devices",
@@ -80,19 +93,6 @@
         "pl": "przynieść obiekt i urządzenie Funkcje menedżera w nowej strukturze dla przyszłych urządzeń",
         "uk": "принести об'єктний магазин і пристрій Функції менеджера в новій структурі для майбутніх пристроїв",
         "zh-cn": "带来对象和设备 未来设备新结构中的管理器功能"
-      },
-      "1.20.25": {
-        "en": "improve number of role detection",
-        "de": "verbesserung der anzahl der rollenerkennung",
-        "ru": "улучшение обнаружения ролей",
-        "pt": "melhorar o número de detecção de funções",
-        "nl": "het aantal roldetectie verbeteren",
-        "fr": "améliorer le nombre de détections de rôles",
-        "it": "migliorare il numero di rilevamento del ruolo",
-        "es": "mejorar el número de detección de funciones",
-        "pl": "zwiększenie liczby wykrywanych ról",
-        "uk": "поліпшення кількості визначення ролі",
-        "zh-cn": "改进角色检测数量"
       }
     },
     "titleLang": {
