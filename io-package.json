@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.29",
+    "version": "1.20.30",
     "news": {
+      "1.20.30": {
+        "en": "Devices sorted alphabetically for Device Manager",
+        "de": "Geräte alphabetisch sortiert für Gerätemanager",
+        "ru": "Устройства, отсортированные по алфавиту для диспетчера устройств",
+        "pt": "Dispositivos ordenados alfabeticamente para o Gerenciador de Dispositivos",
+        "nl": "Apparaten alfabetisch gesorteerd voor Apparaatbeheer",
+        "fr": "Dispositifs triés par ordre alphabétique pour Gestionnaire de périphériques",
+        "it": "Dispositivi ordinati in ordine alfabetico per Gestione dispositivi",
+        "es": "Dispositivos ordenados alfabéticamente para el administrador de dispositivos",
+        "pl": "Urządzenia posortowane alfabetycznie dla menedżera urządzeń",
+        "uk": "Пристрої, відсортовані алфавітно для диспетчера пристроїв",
+        "zh-cn": "设备管理器按字母顺序排序"
+      },
       "1.20.29": {
         "en": "bugfix entity type",
         "de": "fehlerbehebung art",
@@ -80,19 +93,6 @@
         "pl": "zmiana informacji Format do przycisku Szczegóły",
         "uk": "зміна інформації Форма для докладної кнопки",
         "zh-cn": "更改信息 详细按钮的窗体"
-      },
-      "1.20.23": {
-        "en": "change role display and icons",
-        "de": "rollenanzeige und icons ändern",
-        "ru": "изменить отображение ролей и иконки",
-        "pt": "alterar a exibição de funções e ícones",
-        "nl": "rolweergave en pictogrammen wijzigen",
-        "fr": "modifier l'affichage des rôles et les icônes",
-        "it": "modifica visualizzazione del ruolo e icone",
-        "es": "función de cambio de visualización e iconos",
-        "pl": "zmienić wyświetlacz ról i ikony",
-        "uk": "змінити відображення ролі та іконки",
-        "zh-cn": "更改角色显示和图标"
       }
     },
     "titleLang": {

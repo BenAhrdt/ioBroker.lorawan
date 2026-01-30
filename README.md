@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.20.30 (2026-01-30)
 * (BenAhrdt) Devices sorted alphabetically for Device Manager
 
 ### 1.20.29 (2026-01-30)
