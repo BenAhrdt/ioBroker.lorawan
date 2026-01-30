@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.32",
+    "version": "1.20.33",
     "news": {
+      "1.20.33": {
+        "en": "first step of role detectiopn in bridged devices",
+        "de": "erster schritt des rollendetektivs in überbrückten geräten",
+        "ru": "первый шаг определения роли в мостовых устройствах",
+        "pt": "primeira etapa de detecção de funções em dispositivos conectados",
+        "nl": "eerste stap van rol detective in brugdevices",
+        "fr": "première étape de détection des rôles dans les dispositifs pontés",
+        "it": "primo passo di ruolo rilevaiopn nei dispositivi con ponti",
+        "es": "primer paso de detección de rol en dispositivos puente",
+        "pl": "pierwszy krok roli detectiopn w urządzeniach złączonych",
+        "uk": "перший крок ролі детектива в мостових пристроях",
+        "zh-cn": "连接设备中角色探测的第一步"
+      },
       "1.20.32": {
         "en": "change icon for default",
         "de": "icon für standard ändern",
@@ -80,19 +93,6 @@
         "pl": "obsługa rolefix bugfix",
         "uk": "рольова гра",
         "zh-cn": "错误修正角色处理"
-      },
-      "1.20.26": {
-        "en": "bring objectstore and deviceManager functions in new structure for future devices",
-        "de": "objektspeicher und Gerät mitbringen Managerfunktionen in neuer Struktur für zukünftige Geräte",
-        "ru": "принести объектный магазин и устройство Функции менеджера в новой структуре для будущих устройств",
-        "pt": "trazer loja de objetos e dispositivo Funções do gestor em nova estrutura para dispositivos futuros",
-        "nl": "objectstore en apparaat meenemen Manager functies in nieuwe structuur voor toekomstige apparaten",
-        "fr": "apporter objetstore et périphérique Fonctions de gestionnaire dans la nouvelle structure pour les futurs appareils",
-        "it": "portare oggettitore e dispositivo Funzioni Manager in una nuova struttura per dispositivi futuri",
-        "es": "traer objetación y dispositivo Funciones de administrador en nueva estructura para futuros dispositivos",
-        "pl": "przynieść obiekt i urządzenie Funkcje menedżera w nowej strukturze dla przyszłych urządzeń",
-        "uk": "принести об'єктний магазин і пристрій Функції менеджера в новій структурі для майбутніх пристроїв",
-        "zh-cn": "带来对象和设备 未来设备新结构中的管理器功能"
       }
     },
     "titleLang": {
