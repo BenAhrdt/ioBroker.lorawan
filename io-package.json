@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.28",
+    "version": "1.20.29",
     "news": {
+      "1.20.29": {
+        "en": "bugfix entity type",
+        "de": "fehlerbehebung art",
+        "ru": "bugfix тип объекта",
+        "pt": "tipo de entidade de correção de erros",
+        "nl": "bugfix entiteittype",
+        "fr": "type d'entité de correction du bug",
+        "it": "tipo di entità bugfix",
+        "es": "tipo de entidad bugfix",
+        "pl": "rodzaj podmiotu bugfix",
+        "uk": "тип суб'єкта господарювання",
+        "zh-cn": "错误修正实体类型"
+      },
       "1.20.28": {
         "en": "showing experimental foreign devices",
         "de": "experimentelle fremdgeräte",
@@ -80,19 +93,6 @@
         "pl": "zmienić wyświetlacz ról i ikony",
         "uk": "змінити відображення ролі та іконки",
         "zh-cn": "更改角色显示和图标"
-      },
-      "1.20.22": {
-        "en": "change preasure quere to pressure",
-        "de": "voreinstellungsanfrage zum druck ändern",
-        "ru": "изменение преасмента к давлению",
-        "pt": "mudança preasure quere à pressão",
-        "nl": "verandering preasure quere aan druk",
-        "fr": "changement de mesure quere à pression",
-        "it": "cambiare la quere preasure alla pressione",
-        "es": "cambiar preasure quere a presión",
-        "pl": "zmiana preasure quere do ciśnienia",
-        "uk": "змінити запобіжний привід для тиску",
-        "zh-cn": "将预置排程改为压力"
       }
     },
     "titleLang": {
