@@ -284,5 +284,8 @@
 	"LastUplink": "Last Uplink:",
 	"generalInformations": "general informations",
 	"lastJoined": "last join:",
-	"devices": "devices"
+	"devices": "devices",
+	"all devices": "all devices",
+	"lorawan devices": "lorawan devices",
+	"foreign devices": "foreign devices"
 }

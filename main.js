@@ -119,6 +119,10 @@ class Lorawan extends utils.Adapter {
             if (this.config.BridgeType !== 'off') {
                 this.bridge = new bridgeClass(this);
             }
+            // Zuweisen einer Discovery zu der Gerätediscovery
+            this.bridge?.on('publishDiscovery', options => {
+                this.objectStore?.initBridgeObject(options.id, options.DiscoveryObject);
+            });
 
             this.deviceManagement = new LoRaWANDeviceManagement(this);
             //Subscribe all configuration and control states
@@ -132,6 +136,7 @@ class Lorawan extends utils.Adapter {
             this.log[this.logtypes.downlinkconfig]?.(
                 `the active downlinkconfigs are: ${JSON.stringify(this.downlinkConfighandler.activeDownlinkConfigs)}`,
             );
+
             /*
             setTimeout(async () => {
                 this.log.debug('vor Simulation');

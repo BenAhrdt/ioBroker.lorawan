@@ -831,6 +831,23 @@
 					"lg": 3,
 					"xl": 3
 				},
+				"BridgeDevicesToGenerate":{
+					"type": "select",
+					"label": "BridgeDevicesToGenerate",
+					"hidden": "data.BridgeType === 'off'",
+					"tooltip": "BridgeDevicesToGenerateTooltip",
+					"options": [
+						{"label":"all devices","value":"allDevices, loawanDevices, foreignDevices"},
+						{"label":"lorawan devices","value":"lorawanDevices"},
+						{"label":"foreign devices","value":"foreignDevices"}
+					],
+					"default": "foreign devices",
+					"xs": 12,
+					"sm": 3,
+					"md": 3,
+					"lg": 3,
+					"xl": 3
+				},
 				"_BridgeServersettingsHeader": {
 					"newLine": true,
 					"type": "header",
