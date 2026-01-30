@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.27",
+    "version": "1.20.28",
     "news": {
+      "1.20.28": {
+        "en": "showing experimental foreign devices",
+        "de": "experimentelle fremdgeräte",
+        "ru": "показать экспериментальные зарубежные устройства",
+        "pt": "mostrando dispositivos experimentais estranhos",
+        "nl": "met experimentele vreemde hulpmiddelen",
+        "fr": "montrant des dispositifs expérimentaux étrangers",
+        "it": "mostra dispositivi sperimentali esteri",
+        "es": "mostrando dispositivos extranjeros experimentales",
+        "pl": "pokazywanie eksperymentalnych urządzeń zagranicznych",
+        "uk": "демонструвати експериментальні іноземні пристрої",
+        "zh-cn": "显示实验性外国设备"
+      },
       "1.20.27": {
         "en": "bugfix rolehandling",
         "de": "bugfix rollenhandling",
@@ -80,19 +93,6 @@
         "pl": "zmiana preasure quere do ciśnienia",
         "uk": "змінити запобіжний привід для тиску",
         "zh-cn": "将预置排程改为压力"
-      },
-      "1.20.21": {
-        "en": "set Details to informations and add icons for weateher station / humidity",
-        "de": "set Details zu Informationen und Icons für Weateher Station / Feuchtigkeit hinzufügen",
-        "ru": "установить детали для информации и добавить значки для Weateher станции / влажности",
-        "pt": "definir detalhes para informações e adicionar ícones para estação / umidade",
-        "nl": "set Details aan informatie en voeg pictogrammen voor weateher station / vochtigheid",
-        "fr": "définir les détails aux informations et ajouter des icônes pour la station de soudeuse / humidité",
-        "it": "impostare Dettagli alle informazioni e aggiungere icone per la stazione di bagnatura / umidità",
-        "es": "set Detalles a información y añadir iconos para estación de weateher / humedad",
-        "pl": "ustaw szczegóły informacji i dodaj ikony dla stacji / wilgotności",
-        "uk": "встановити деталі до інформації та додати іконки для станції плетіння / вологості",
-        "zh-cn": "设置信息的细节并添加编织站/湿度的图标"
       }
     },
     "titleLang": {
