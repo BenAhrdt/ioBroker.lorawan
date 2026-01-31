@@ -23,7 +23,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.20.36 (2026-01-31)
 * (BenAhrdt) add more details to lorawan and bridged devices
 * (BenAhrdt) change some logging
 

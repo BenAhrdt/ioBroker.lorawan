@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.35",
+    "version": "1.20.36",
     "news": {
+      "1.20.36": {
+        "en": "add more details to lorawan and bridged devices\nchange some logging",
+        "de": "weitere details zu lorawan und überbrückten geräten hinzufügen\nänderung der protokollierung",
+        "ru": "добавьте больше деталей к устройствам lorawan и bridged\nизменить некоторые бревна",
+        "pt": "adicionar mais detalhes para lorawan e dispositivos ponte\nalterar algum registro",
+        "nl": "voeg meer details toe aan lorawan en brugdevices\nsommige logging wijzigen",
+        "fr": "ajouter plus de détails aux dispositifs lorawan et pontés\nchanger un peu d'enregistrement",
+        "it": "aggiungere ulteriori dettagli a lorawan e dispositivi ponti\ncambia un po' di logging",
+        "es": "añadir más detalles a lorawan y dispositivos puente\ncambiar un poco de registro",
+        "pl": "dodaj więcej szczegółów do urządzeń lorawan i bridged\nzmienić trochę logowania",
+        "uk": "додати більше деталей для лоуренових і мостівних пристроїв\nзмінити деякі журнали",
+        "zh-cn": "向 lorawan 和桥接设备添加更多细节\n更改一些日志"
+      },
       "1.20.35": {
         "en": "display actual device values for foreign devices",
         "de": "aktuelle gerätewerte für fremdgeräte anzeigen",
@@ -80,19 +93,6 @@
         "pl": "Urządzenia posortowane alfabetycznie dla menedżera urządzeń",
         "uk": "Пристрої, відсортовані алфавітно для диспетчера пристроїв",
         "zh-cn": "设备管理器按字母顺序排序"
-      },
-      "1.20.29": {
-        "en": "bugfix entity type",
-        "de": "fehlerbehebung art",
-        "ru": "bugfix тип объекта",
-        "pt": "tipo de entidade de correção de erros",
-        "nl": "bugfix entiteittype",
-        "fr": "type d'entité de correction du bug",
-        "it": "tipo di entità bugfix",
-        "es": "tipo de entidad bugfix",
-        "pl": "rodzaj podmiotu bugfix",
-        "uk": "тип суб'єкта господарювання",
-        "zh-cn": "错误修正实体类型"
       }
     },
     "titleLang": {
