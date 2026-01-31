@@ -24,6 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+* (BenAhrdt) add more details to lorawan and bridged devices
 * (BenAhrdt) change some logging
 
 ### 1.20.35 (2026-01-31)

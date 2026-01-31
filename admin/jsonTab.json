@@ -31,6 +31,7 @@
 			}
 		},
         "_DiscoveredIds":{
+			"hidden": "true",
             "type": "panel",
             "label": "_DiscoveredIds",
 			"items": {
@@ -50,6 +51,7 @@
             }
         },
         "_PublishedIds":{
+			"hidden": "true",
             "type": "panel",
             "label": "_PublishedIds",
 			"items": {
@@ -70,6 +72,7 @@
             }
         },
 		"_SubscribedTopics":{
+			"hidden": "true",
 			"type": "panel",
 			"label": "_SubscribedTopics",
 			"items": {

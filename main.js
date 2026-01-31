@@ -118,11 +118,11 @@ class Lorawan extends utils.Adapter {
             // declare bridge if configured
             if (this.config.BridgeType !== 'off') {
                 this.bridge = new bridgeClass(this);
+                // Zuweisen einer Discovery zu der Gerätediscovery
+                this.bridge?.on('publishDiscovery', options => {
+                    this.objectStore?.initBridgeObject(options.id, options.DiscoveryObject);
+                });
             }
-            // Zuweisen einer Discovery zu der Gerätediscovery
-            this.bridge?.on('publishDiscovery', options => {
-                this.objectStore?.initBridgeObject(options.id, options.DiscoveryObject);
-            });
 
             this.deviceManagement = new LoRaWANDeviceManagement(this);
             //Subscribe all configuration and control states
@@ -525,7 +525,7 @@ class Lorawan extends utils.Adapter {
 
                 // External States
             } else {
-                if (this.objectStore?.bridge.currentIds[id]) {
+                if (this.bridge && this.objectStore?.bridge.currentIds[id]) {
                     this.objectStore.updateBridgeObject(id, { payload: { object: obj } });
                 }
                 // Only work if bridge is activ
@@ -587,7 +587,7 @@ class Lorawan extends utils.Adapter {
                         }
                     }
                 } else {
-                    if (!id.startsWith(`0_userdata.`) || !id.startsWith(`alias.`) || state.ack) {
+                    if (this.bridge && (!id.startsWith(`0_userdata.`) || !id.startsWith(`alias.`) || state.ack)) {
                         if (this.objectStore?.bridge.currentIds[id]) {
                             this.objectStore.updateBridgeObject(id, { payload: { state: state } });
                         }

@@ -290,6 +290,10 @@
 	"foreign devices": "foreign devices",
 	"LastDiscover": "Last Discover",
 	"actualValues": "actual Values",
-	"actualDeviceValues": "actual Device-Values"
+	"actualDeviceValues": "actual Device-Values",
+	"LastPublish": "last published message",
+	"LastSubscribe": "last subscribed message",
+	"published": "published",
+	"subscribed": "subscribed"
 
 }
