@@ -287,5 +287,9 @@
 	"devices": "devices",
 	"all devices": "all devices",
 	"lorawan devices": "lorawan devices",
-	"foreign devices": "foreign devices"
+	"foreign devices": "foreign devices",
+	"LastDiscover": "Last Discover",
+	"actualValues": "actual Values",
+	"actualDeviceValues": "actual Device-Values"
+
 }

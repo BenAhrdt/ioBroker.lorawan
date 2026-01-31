@@ -525,8 +525,11 @@ class Lorawan extends utils.Adapter {
 
                 // External States
             } else {
+                if (this.objectStore?.bridge.currentIds[id]) {
+                    this.objectStore.updateBridgeObject(id, { payload: { object: obj } });
+                }
                 // Only work if bridge is activ
-                if (this.bridge) {
+                if (this.bridge && id === this.config.BridgeEnum) {
                     // Erzeugen der HA Bridged für Control
                     // check for new Entry
                     const members = obj.common.members;
@@ -581,6 +584,12 @@ class Lorawan extends utils.Adapter {
                             state.ack
                         ) {
                             await this.objectStore?.updateLoraWanObject(id, { payload: { state: state } });
+                        }
+                    }
+                } else {
+                    if (!id.startsWith(`0_userdata.`) || !id.startsWith(`alias.`) || state.ack) {
+                        if (this.objectStore?.bridge.currentIds[id]) {
+                            this.objectStore.updateBridgeObject(id, { payload: { state: state } });
                         }
                     }
                 }
@@ -948,6 +957,10 @@ class Lorawan extends utils.Adapter {
                             if (words[0] === 'lorawan') {
                                 if (this.objectStore?.lorawan[words[1]]) {
                                     this.setState(id, JSON.stringify(this.objectStore.lorawan[words[1]]), true);
+                                }
+                            } else if (words[0] === 'bridge') {
+                                if (this.objectStore?.bridge[words[1]]) {
+                                    this.setState(id, JSON.stringify(this.objectStore.bridge[words[1]]), true);
                                 }
                             }
                         } else if (id.endsWith('.bridge.dataFromIob')) {
