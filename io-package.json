@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.34",
+    "version": "1.20.35",
     "news": {
+      "1.20.35": {
+        "en": "display actual device values for foreign devices",
+        "de": "aktuelle gerätewerte für fremdgeräte anzeigen",
+        "ru": "отображать фактические значения устройства для иностранных устройств",
+        "pt": "mostrar os valores reais do dispositivo para dispositivos estrangeiros",
+        "nl": "werkelijke apparaatwaarden voor vreemde apparaten weergeven",
+        "fr": "afficher les valeurs réelles de l'appareil pour les appareils étrangers",
+        "it": "visualizzare i valori reali del dispositivo per dispositivi stranieri",
+        "es": "mostrar valores de dispositivo reales para dispositivos extranjeros",
+        "pl": "wyświetla rzeczywiste wartości urządzenia dla urządzeń zagranicznych",
+        "uk": "відображення фактичних значень пристроїв для зарубіжних пристроїв",
+        "zh-cn": "显示外国设备的实际设备值"
+      },
       "1.20.34": {
         "en": "starup bridge device with battery value",
         "de": "sternbrückengerät mit batteriewert",
@@ -80,19 +93,6 @@
         "pl": "rodzaj podmiotu bugfix",
         "uk": "тип суб'єкта господарювання",
         "zh-cn": "错误修正实体类型"
-      },
-      "1.20.28": {
-        "en": "showing experimental foreign devices",
-        "de": "experimentelle fremdgeräte",
-        "ru": "показать экспериментальные зарубежные устройства",
-        "pt": "mostrando dispositivos experimentais estranhos",
-        "nl": "met experimentele vreemde hulpmiddelen",
-        "fr": "montrant des dispositifs expérimentaux étrangers",
-        "it": "mostra dispositivi sperimentali esteri",
-        "es": "mostrando dispositivos extranjeros experimentales",
-        "pl": "pokazywanie eksperymentalnych urządzeń zagranicznych",
-        "uk": "демонструвати експериментальні іноземні пристрої",
-        "zh-cn": "显示实验性外国设备"
       }
     },
     "titleLang": {
