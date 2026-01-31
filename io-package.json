@@ -590,7 +590,7 @@
         "name": "internal logging types",
         "read": true,
         "write": true,
-        "def": "{\"assign\": false, \"messageTo\": false, \"listDevices\": false, \"getStatus\": false, \"deviceinformation\": false, \"downlinkconfig\": false, \"getChangeInfo\": false, \"assign\": false, \"assignHandler\": false, \"bridgeMqtt\": false, \"bridgeDiscovery\": false, \"bridgePublish\": false, \"mqtt\": false}"
+        "def": "{\"assign\": false, \"setObject\": false, \"parentNameing\": false, \"messageTo\": false, \"listDevices\": false, \"getStatus\": false, \"deviceinformation\": false, \"downlinkconfig\": false, \"getChangeInfo\": false, \"assign\": false, \"assignHandler\": false, \"bridgeMqtt\": false, \"bridgeDiscovery\": false, \"bridgePublish\": false, \"mqtt\": false}"
       },
       "native": {}
     },
