@@ -16,6 +16,7 @@ The adapter communicates bidirectionally with LoraWan devices via LoRaWAN Networ
 Adapter was created in collaboration with Joerg Froehner LoraWan@hafenmeister.com
 
 The documentation Wiki is here: https://github.com/BenAhrdt/ioBroker.lorawan/wiki
+<br/>
 For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ## Changelog
