@@ -23,10 +23,10 @@
       "lengthInByte": 1,
       "decimalPlaces": 0,
       "crc": "noCrc",
-      "limitMax": false,
-      "limitMin": false,
-      "limitMinValue": 0,
-      "limitMaxValue": 0,
+      "limitMin":true,
+      "limitMinValue":5,
+      "limitMax":true,
+      "limitMaxValue":360,
       "swap": false
     },
     {

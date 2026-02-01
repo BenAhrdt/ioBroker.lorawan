@@ -22,10 +22,10 @@
       "decimalPlaces": 0,
       "unit": "min",
       "crc": "noCrc",
-      "limitMin": true,
-      "limitMinValue": 0,
-      "limitMax": false,
-      "limitMaxValue": 0
+      "limitMin":true,
+      "limitMinValue":5,
+      "limitMax":true,
+      "limitMaxValue":360
     }
   ]
 }
