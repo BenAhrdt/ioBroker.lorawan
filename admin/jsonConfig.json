@@ -837,7 +837,7 @@
 					"hidden": "data.BridgeType === 'off'",
 					"tooltip": "BridgeDevicesToGenerateTooltip",
 					"options": [
-						{"label":"all devices","value":"allDevices, loawanDevices, foreignDevices"},
+						{"label":"all devices","value":"allDevices, lorawanDevices, foreignDevices"},
 						{"label":"lorawan devices","value":"lorawanDevices"},
 						{"label":"foreign devices","value":"foreignDevices"}
 					],
