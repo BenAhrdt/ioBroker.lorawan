@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.38",
+    "version": "1.20.39",
     "news": {
+      "1.20.39": {
+        "en": "update DeviceProfile",
+        "de": "update DeviceProfile",
+        "ru": "обновление DeviceProfile",
+        "pt": "atualizarDeviceProfile",
+        "nl": "apparaatbestand bijwerken",
+        "fr": "mettre à jour DeviceProfile",
+        "it": "aggiornamento DeviceProfile",
+        "es": "actualización DeviceProfile",
+        "pl": "aktualizacja profilu urządzenia",
+        "uk": "оновлення DeviceProfile",
+        "zh-cn": "更新设备文件"
+      },
       "1.20.38": {
         "en": "add min / max to form",
         "de": "min / max zu formen",
@@ -80,19 +93,6 @@
         "pl": "pierwszy krok roli detectiopn w urządzeniach złączonych",
         "uk": "перший крок ролі детектива в мостових пристроях",
         "zh-cn": "连接设备中角色探测的第一步"
-      },
-      "1.20.32": {
-        "en": "change icon for default",
-        "de": "icon für standard ändern",
-        "ru": "изменить иконку по умолчанию",
-        "pt": "alterar o ícone por omissão",
-        "nl": "pictogram wijzigen voor standaard",
-        "fr": "modifier l'icône par défaut",
-        "it": "cambiare icona per default",
-        "es": "cambiar icono por defecto",
-        "pl": "zmień ikonę dla domyślnej",
-        "uk": "значок зміни за замовчуванням",
-        "zh-cn": "更改默认图标"
       }
     },
     "titleLang": {
