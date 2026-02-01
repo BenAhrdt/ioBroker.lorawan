@@ -15,7 +15,7 @@ The adapter communicates bidirectionally with LoraWan devices via LoRaWAN Networ
 “The Thinks Network” and “Chirpstack” are supported now, more could follow later. 
 Adapter was created in collaboration with Joerg Froehner LoraWan@hafenmeister.com
 
-For Documentation use the doc folder.
+The documentation Wiki is here: https://github.com/BenAhrdt/ioBroker.lorawan/wiki
 For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ## Changelog
