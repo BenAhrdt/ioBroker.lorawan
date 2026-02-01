@@ -23,6 +23,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) add min / max to form
+
 ### 1.20.37 (2026-02-01)
 * (BenAhrdt) show Values (at bridge device) and Downlinks (at lorawan device) in Device Details flexible
 
