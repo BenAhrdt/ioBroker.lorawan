@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.37",
+    "version": "1.20.38",
     "news": {
+      "1.20.38": {
+        "en": "add min / max to form",
+        "de": "min / max zu formen",
+        "ru": "добавить min/max в форму",
+        "pt": "adicionar min / max ao formulário",
+        "nl": "min / max aan formulier toevoegen",
+        "fr": "ajouter min / max à la forme",
+        "it": "aggiungere min / max a forma",
+        "es": "añadir min / max a la forma",
+        "pl": "dodać min / max do formularza",
+        "uk": "додати хв / макс у форму",
+        "zh-cn": "将分钟/ 最大值添加到窗体"
+      },
       "1.20.37": {
         "en": "show Values (at bridge device) and Downlinks (at lorawan device) in Device Details flexible",
         "de": "zeige Werte (im Brückengerät) und Downlinks (im Lorawan-Gerät) in Device Details flexibel",
@@ -80,19 +93,6 @@
         "pl": "zmień ikonę dla domyślnej",
         "uk": "значок зміни за замовчуванням",
         "zh-cn": "更改默认图标"
-      },
-      "1.20.31": {
-        "en": "Add colors to DeviceInfo and Details to Bridge Devices",
-        "de": "Hinzufügen von Farben zu DeviceInfo und Details zu Bridge Devices",
-        "ru": "Добавьте цвета в DeviceInfo и детали в Bridge Devices",
-        "pt": "Adicione cores ao DeviceInfo e detalhes aos dispositivos Bridge",
-        "nl": "Kleuren toevoegen aan ApparaatInfo en details aan Bridge Devices",
-        "fr": "Ajouter des couleurs à DeviceInfo et détails à Bridge Devices",
-        "it": "Aggiungi colori a DeviceInfo e Dettagli per Bridge Device",
-        "es": "Añadir colores a DeviceInfo y detalles a dispositivos puente",
-        "pl": "Dodaj kolory do DeviceInfo i Szczegóły do urządzeń mostowych",
-        "uk": "Додати кольори до пристроюІнфо та деталі до пристрою міст",
-        "zh-cn": "将颜色添加到设备信息中, 并将细节添加到桥梁设备中"
       }
     },
     "titleLang": {
