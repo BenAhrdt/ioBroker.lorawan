@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) add more iconassigns in order to role detection
+
 ### 1.20.41 (2026-02-02)
 * (BenAhrdt) update device information and icons
 
