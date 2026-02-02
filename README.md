@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) update device information and icons
+
 ### 1.20.40 (2026-02-02)
 * (BenAhrdt) update Form Width in Device Details
 
