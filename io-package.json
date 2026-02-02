@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.39",
+    "version": "1.20.40",
     "news": {
+      "1.20.40": {
+        "en": "update Form Width in Device Details",
+        "de": "update Form Width in Gerätedetails",
+        "ru": "обновление формы Width в деталях устройства",
+        "pt": "atualizar Largura do Formulário em Detalhes do Dispositivo",
+        "nl": "update formulierbreedte in apparaatdetails",
+        "fr": "mettre à jour le formulaire Largeur dans les détails du périphérique",
+        "it": "modulo aggiornamento Larghezza nei dettagli del dispositivo",
+        "es": "formulario de actualización Ancho en detalles del dispositivo",
+        "pl": "aktualizuj format Szerokość w Szczegóły urządzenia",
+        "uk": "оновлення Ширина форми в Деталі пристрою",
+        "zh-cn": "更新设备细节中的窗体宽度"
+      },
       "1.20.39": {
         "en": "update DeviceProfile",
         "de": "update DeviceProfile",
@@ -80,19 +93,6 @@
         "pl": "urządzenie mostowe starup z wartością baterii",
         "uk": "зірковий містовий пристрій з значенням батареї",
         "zh-cn": "有电池值的星座桥设备"
-      },
-      "1.20.33": {
-        "en": "first step of role detectiopn in bridged devices",
-        "de": "erster schritt des rollendetektivs in überbrückten geräten",
-        "ru": "первый шаг определения роли в мостовых устройствах",
-        "pt": "primeira etapa de detecção de funções em dispositivos conectados",
-        "nl": "eerste stap van rol detective in brugdevices",
-        "fr": "première étape de détection des rôles dans les dispositifs pontés",
-        "it": "primo passo di ruolo rilevaiopn nei dispositivi con ponti",
-        "es": "primer paso de detección de rol en dispositivos puente",
-        "pl": "pierwszy krok roli detectiopn w urządzeniach złączonych",
-        "uk": "перший крок ролі детектива в мостових пристроях",
-        "zh-cn": "连接设备中角色探测的第一步"
       }
     },
     "titleLang": {
