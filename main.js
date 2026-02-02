@@ -120,7 +120,13 @@ class Lorawan extends utils.Adapter {
                 this.bridge = new bridgeClass(this);
                 // Zuweisen einer Discovery zu der Gerätediscovery
                 this.bridge?.on('publishDiscovery', options => {
-                    this.objectStore?.initBridgeObject(options.id, options.DiscoveryObject);
+                    this.objectStore?.initBridgeObjectWithDiscover(options.id, options.DiscoveryObject);
+                });
+                this.bridge?.on('publishId', options => {
+                    this.objectStore?.setPublishForBridge(options.device);
+                });
+                this.bridge?.on('handleMessage', options => {
+                    this.objectStore?.handleMessageForBridge(options.device);
                 });
             }
 

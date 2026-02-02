@@ -1,4 +1,81 @@
 ## Changelog history
+### 1.19.34 (2026-01-20)
+* (BenAhrdt) assign Percent & Liter in assignhandler
+
+### 1.19.33 (2026-01-18)
+* (BenAhrdt) sonoff bugfix aparrant_power
+
+### 1.19.32 (2026-01-16)
+* (BenAhrdt) bugfix await this.ObjectExists
+
+### 1.19.31 (2026-01-16)
+* (BenAhrdt) add try catch for adding filter (strage bug)
+
+### 1.19.30 (2026-01-16)
+* (BenAhrdt) add simulation of Position for cover
+
+### 1.19.29 (2026-01-16)
+* (BenAhrdt) bugfix tilt min & max
+
+### 1.19.28 (2026-01-16)
+* (BenAhrdt) add logging possibility info, debug, warn, error to internal logging
+
+### 1.19.27 (2026-01-15)
+* (BenAhrdt) setting internal logging to debug path in bridge and query the json entries
+
+### 1.19.26 (2026-01-15)
+* (BenAhrdt) build internal logging
+
+### 1.19.25 (2026-01-14)
+* (BenAhrdt) handle promise rejection before publish
+
+### 1.19.24 (2026-01-14)
+* (BenAhrdt) assign Filter at startup
+* (BenAhrdt) bugfix assign color temperature id in case of no color is configed
+
+### 1.19.23 (2026-01-13)
+* (BenAhrdt) more debuglogging in foreignDiscover
+
+### 1.19.22 (2026-01-13)
+* (BenAhrdt) change Check getForeigenObjectAsync to foreignObjectExists (chek config objects)
+
+### 1.19.21 (2026-01-13)
+* (BenAhrdt) add color Termperature mode to foreign light config
+
+### 1.19.20 (2026-01-12)
+* (BenAhrdt) bugfix virtual ending
+
+### 1.19.19 (2026-01-12)
+* (BenAhrdt) change id building of more then one spezial entity (same type) in one device
+* (BenAhrdt) add state of cover in type number (limit switch) with common states.
+
+### 1.19.18 (2026-01-11)
+* (BenAhrdt) bugfix startwith
+
+### 1.19.17 (2026-01-11)
+* (BenAhrdt) Change assign of cover logic command in case of number
+
+### 1.19.16 (2026-01-11)
+* (BenAhrdt) bugfix Foreign Cover (getForeignState)
+
+### 1.19.15 (2026-01-11)
+* (BenAhrdt) add new bugfixes cover
+
+### 1.19.14 (2026-01-11)
+* (BenAhrdt) bugfixes cover
+
+### 1.19.13 (2026-01-11)
+* (BenAhrdt) first test with number for cover config
+
+### 1.19.12 (2026-01-05)
+* (BenAhrdt) bug with git credentials
+
+### 1.19.11 (2026-01-05)
+* (BenAhrdt) add role button to bridge devices
+
+### 1.19.10 (2026-01-05)
+* (BenAhrdt) bugfix reading state
+
 ### 1.19.9 (2026-01-05)
 * (BenAhrdt) bugfix deleteing device
 
