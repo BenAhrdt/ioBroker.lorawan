@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.40",
+    "version": "1.20.41",
     "news": {
+      "1.20.41": {
+        "en": "update device information and icons",
+        "de": "aktualisierung der geräteinformationen und -symbole",
+        "ru": "обновление информации об устройстве и значках",
+        "pt": "atualizar informações do dispositivo e ícones",
+        "nl": "apparaatinformatie en pictogrammen bijwerken",
+        "fr": "mettre à jour les informations et les icônes de l'appareil",
+        "it": "aggiornare le informazioni del dispositivo e le icone",
+        "es": "actualizar la información del dispositivo e iconos",
+        "pl": "aktualizacji informacji i ikon urządzenia",
+        "uk": "оновлення інформації та іконок пристрою",
+        "zh-cn": "更新设备信息和图标"
+      },
       "1.20.40": {
         "en": "update Form Width in Device Details",
         "de": "update Form Width in Gerätedetails",
@@ -80,19 +93,6 @@
         "pl": "wyświetla rzeczywiste wartości urządzenia dla urządzeń zagranicznych",
         "uk": "відображення фактичних значень пристроїв для зарубіжних пристроїв",
         "zh-cn": "显示外国设备的实际设备值"
-      },
-      "1.20.34": {
-        "en": "starup bridge device with battery value",
-        "de": "sternbrückengerät mit batteriewert",
-        "ru": "starup bridge устройство с аккумуляторной батареей",
-        "pt": "dispositivo starup bridge com valor da bateria",
-        "nl": "starup brug apparaat met batterij waarde",
-        "fr": "dispositif de pont avec valeur de batterie",
-        "it": "dispositivo ponte stellare con valore della batteria",
-        "es": "dispositivo de puente con valor de batería",
-        "pl": "urządzenie mostowe starup z wartością baterii",
-        "uk": "зірковий містовий пристрій з значенням батареї",
-        "zh-cn": "有电池值的星座桥设备"
       }
     },
     "titleLang": {
