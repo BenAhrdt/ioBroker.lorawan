@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.42",
+    "version": "1.20.43",
     "news": {
+      "1.20.43": {
+        "en": "add value.power.active and value.power.reactive ...",
+        "de": "add value.power.active und value.power.reactive ...",
+        "ru": "добавить value.power.active и value.power.reactive.",
+        "pt": "adicionar valor.power.active e valor.power.reative ...",
+        "nl": "toegevoegde waarde.power.active en waarde.power.reactive ...",
+        "fr": "ajouter value.power.active et value.power.réactive ...",
+        "it": "aggiungere valore.power.active e value.power.reactive ...",
+        "es": "añadir valor.power.active y valor.power.reactive ...",
+        "pl": "dodaj value.power.active i value.power.reaktywne...",
+        "uk": "add value.power.active and value.power.reactive ...",
+        "zh-cn": "增加值 能量 活性 能量 反应..."
+      },
       "1.20.42": {
         "en": "adisplay the id name in form (name1, name2, name3)\nadd more iconassigns in order to role detection",
         "de": "adisplay the id name in form (name1, name2, name3)\nweitere iconassigns hinzufügen, um rollenerkennung",
@@ -80,19 +93,6 @@
         "pl": "pokaż wartości (w urządzeniu mostowym) i Downlinks (w urządzeniu Lorawan) w urządzeniu Szczegóły elastyczne",
         "uk": "показати значення (в мостовому пристрої) і Downlinks (в лоуретановому пристрої) в пристрої Детальніше гнучкі",
         "zh-cn": "在设备细节中显示值( 在桥设备中) 和下行链接( 在 Lorawan 设备中)"
-      },
-      "1.20.36": {
-        "en": "add more details to lorawan and bridged devices\nchange some logging",
-        "de": "weitere details zu lorawan und überbrückten geräten hinzufügen\nänderung der protokollierung",
-        "ru": "добавьте больше деталей к устройствам lorawan и bridged\nизменить некоторые бревна",
-        "pt": "adicionar mais detalhes para lorawan e dispositivos ponte\nalterar algum registro",
-        "nl": "voeg meer details toe aan lorawan en brugdevices\nsommige logging wijzigen",
-        "fr": "ajouter plus de détails aux dispositifs lorawan et pontés\nchanger un peu d'enregistrement",
-        "it": "aggiungere ulteriori dettagli a lorawan e dispositivi ponti\ncambia un po' di logging",
-        "es": "añadir más detalles a lorawan y dispositivos puente\ncambiar un poco de registro",
-        "pl": "dodaj więcej szczegółów do urządzeń lorawan i bridged\nzmienić trochę logowania",
-        "uk": "додати більше деталей для лоуренових і мостівних пристроїв\nзмінити деякі журнали",
-        "zh-cn": "向 lorawan 和桥接设备添加更多细节\n更改一些日志"
       }
     },
     "titleLang": {
