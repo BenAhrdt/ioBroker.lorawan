@@ -25,6 +25,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+* (BenAhrdt) adisplay the id name in form (name1, name2, name3)
 * (BenAhrdt) add more iconassigns in order to role detection
 
 ### 1.20.41 (2026-02-02)
