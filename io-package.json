@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.41",
+    "version": "1.20.42",
     "news": {
+      "1.20.42": {
+        "en": "adisplay the id name in form (name1, name2, name3)\nadd more iconassigns in order to role detection",
+        "de": "adisplay the id name in form (name1, name2, name3)\nweitere iconassigns hinzufügen, um rollenerkennung",
+        "ru": "a отображать имя идентификатора в форме (имя1, имя2, имя3)\nдобавьте больше иконок для обнаружения ролей",
+        "pt": "adisplay the id name in form (name1, name2, name3)\nadicionar mais ícones para detecção de funções",
+        "nl": "adisplay de id-naam in vorm (naam1, naam2, naam3)\nvoeg meer iconasigns toe om de rol te detecteren",
+        "fr": "aaffichage du nom d'identité sous forme (nom1, nom2, nom3)\najouter plus d'icônes pour détecter les rôles",
+        "it": "adisplay il nome id in forma (nome1, nome2, nome3)\naggiungere più iconassigns per il rilevamento del ruolo",
+        "es": "adisplay el nombre id en forma (nombre1, nombre2, nombre3)\nañadir más íconos para la detección de roles",
+        "pl": "adisplay nazwa identyfikatora w formie (nazwa 1, nazwa 2, nazwa 3)\ndodać więcej ikonosików w celu wykrycia roli",
+        "uk": "показати ім'я ідентифікатора у вигляді (name1, name2, name3)\nдодати більше іконописів для визначення ролі",
+        "zh-cn": "显示窗体中的 id 名称 (name1, name2, name3)\n为角色检测添加更多的图标指定"
+      },
       "1.20.41": {
         "en": "update device information and icons",
         "de": "aktualisierung der geräteinformationen und -symbole",
@@ -80,19 +93,6 @@
         "pl": "dodaj więcej szczegółów do urządzeń lorawan i bridged\nzmienić trochę logowania",
         "uk": "додати більше деталей для лоуренових і мостівних пристроїв\nзмінити деякі журнали",
         "zh-cn": "向 lorawan 和桥接设备添加更多细节\n更改一些日志"
-      },
-      "1.20.35": {
-        "en": "display actual device values for foreign devices",
-        "de": "aktuelle gerätewerte für fremdgeräte anzeigen",
-        "ru": "отображать фактические значения устройства для иностранных устройств",
-        "pt": "mostrar os valores reais do dispositivo para dispositivos estrangeiros",
-        "nl": "werkelijke apparaatwaarden voor vreemde apparaten weergeven",
-        "fr": "afficher les valeurs réelles de l'appareil pour les appareils étrangers",
-        "it": "visualizzare i valori reali del dispositivo per dispositivi stranieri",
-        "es": "mostrar valores de dispositivo reales para dispositivos extranjeros",
-        "pl": "wyświetla rzeczywiste wartości urządzenia dla urządzeń zagranicznych",
-        "uk": "відображення фактичних значень пристроїв для зарубіжних пристроїв",
-        "zh-cn": "显示外国设备的实际设备值"
       }
     },
     "titleLang": {
