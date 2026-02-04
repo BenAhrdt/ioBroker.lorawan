@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.43",
+    "version": "1.20.44",
     "news": {
+      "1.20.44": {
+        "en": "add possibility to see devices wiche are sendet ToIob",
+        "de": "hinzufügen der Möglichkeit, Geräte zu sehen wiche sind sendet ToIob",
+        "ru": "добавить возможность видеть устройства Wiche с помощью sendet ToIob",
+        "pt": "adicionar possibilidade de ver dispositivos wiche são sentet ToIob",
+        "nl": "voeg mogelijkheid toe om apparaten wiche te zien zijn sendet ToIob",
+        "fr": "ajouter la possibilité de voir les appareils wiche sont sendet toIob",
+        "it": "aggiungere la possibilità di vedere i dispositivi wiche sono mittente ToIob",
+        "es": "añadir la posibilidad de ver los dispositivos wiche son sendet ToIob",
+        "pl": "dodać możliwość zobaczyć urządzenia wiche są sendet Tolob",
+        "uk": "додати можливість побачити пристрої Wiche відправник ToIob",
+        "zh-cn": "添加可看到设备 wiche 是 sendet ToIob"
+      },
       "1.20.43": {
         "en": "add value.power.active and value.power.reactive ...",
         "de": "add value.power.active und value.power.reactive ...",
@@ -80,19 +93,6 @@
         "pl": "dodać min / max do formularza",
         "uk": "додати хв / макс у форму",
         "zh-cn": "将分钟/ 最大值添加到窗体"
-      },
-      "1.20.37": {
-        "en": "show Values (at bridge device) and Downlinks (at lorawan device) in Device Details flexible",
-        "de": "zeige Werte (im Brückengerät) und Downlinks (im Lorawan-Gerät) in Device Details flexibel",
-        "ru": "показать значения (на мостовом устройстве) и нисходящие ссылки (на лоравановом устройстве) в Device Details",
-        "pt": "mostrar os valores (no dispositivo de ponte) e as ligações (no dispositivo lorawan) em detalhes do dispositivo flexíveis",
-        "nl": "toon waarden (op brug apparaat) en Downlinks (op Lorawan apparaat) in Apparaat Details flexibel",
-        "fr": "afficher les valeurs (à l'appareil de pont) et les liaisons descendantes (à lorawan) dans les détails de l'appareil flexible",
-        "it": "mostrare Valori (al dispositivo del ponte) e Downlinks (al dispositivo lorawan) in Dispositivi Dettagli flessibili",
-        "es": "mostrar valores (en el dispositivo puente) y Downlinks (en el dispositivo Lorawan) en Device Details flexible",
-        "pl": "pokaż wartości (w urządzeniu mostowym) i Downlinks (w urządzeniu Lorawan) w urządzeniu Szczegóły elastyczne",
-        "uk": "показати значення (в мостовому пристрої) і Downlinks (в лоуретановому пристрої) в пристрої Детальніше гнучкі",
-        "zh-cn": "在设备细节中显示值( 在桥设备中) 和下行链接( 在 Lorawan 设备中)"
       }
     },
     "titleLang": {
