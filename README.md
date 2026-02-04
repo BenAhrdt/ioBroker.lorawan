@@ -25,7 +25,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
-* (BenAhrdt) more informations about devices wich are sendet ToIob
+* (BenAhrdt) first possibilities to set values in ToIob devices
 
 ### 1.20.44 (2026-02-04)
 * (BenAhrdt) add possibility to see devices wiche are sendet ToIob
