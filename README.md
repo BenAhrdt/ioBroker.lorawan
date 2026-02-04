@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) add possibility to see devices wiche are sendet ToIob
+
 ### 1.20.43 (2026-02-03)
 * (BenAhrdt) add value.power.active and value.power.reactive ...
 

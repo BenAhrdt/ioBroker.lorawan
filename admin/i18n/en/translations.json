@@ -294,6 +294,8 @@
 	"LastPublish": "last published message",
 	"LastSubscribe": "last subscribed message",
 	"published": "published",
-	"subscribed": "subscribed"
+	"subscribed": "subscribed",
+	"info devices": "info devices",
+	"toIob devices": "ToIob devices"
 
 }

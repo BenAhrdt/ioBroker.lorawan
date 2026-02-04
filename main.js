@@ -968,6 +968,10 @@ class Lorawan extends utils.Adapter {
                                 if (this.objectStore?.bridge[words[1]]) {
                                     this.setState(id, JSON.stringify(this.objectStore.bridge[words[1]]), true);
                                 }
+                            } else if (words[0] === 'toIob') {
+                                if (this.objectStore?.toIob[words[1]]) {
+                                    this.setState(id, JSON.stringify(this.objectStore.toIob[words[1]]), true);
+                                }
                             }
                         } else if (id.endsWith('.bridge.dataFromIob')) {
                             if (this.bridge) {

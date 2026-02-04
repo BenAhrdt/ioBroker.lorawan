@@ -834,12 +834,14 @@
 				"BridgeDevicesToGenerate":{
 					"type": "select",
 					"label": "BridgeDevicesToGenerate",
+					"multiple": true,
 					"hidden": "data.BridgeType === 'off'",
 					"tooltip": "BridgeDevicesToGenerateTooltip",
 					"options": [
-						{"label":"all devices","value":"allDevices, lorawanDevices, foreignDevices"},
+						{"label":"info devices","value":"infoDevices"},
 						{"label":"lorawan devices","value":"lorawanDevices"},
-						{"label":"foreign devices","value":"foreignDevices"}
+						{"label":"foreign devices","value":"foreignDevices"},
+						{"label":"toIob devices","value":"toIobDevices"}
 					],
 					"default": "foreign devices",
 					"xs": 12,
