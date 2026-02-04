@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) more informations about devices wich are sendet ToIob
+
 ### 1.20.44 (2026-02-04)
 * (BenAhrdt) add possibility to see devices wiche are sendet ToIob
 
