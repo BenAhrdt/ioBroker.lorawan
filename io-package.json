@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.44",
+    "version": "1.20.45",
     "news": {
+      "1.20.45": {
+        "en": "first possibilities to set values in ToIob devices",
+        "de": "erste Möglichkeiten, Werte in ToIob-Geräten einzustellen",
+        "ru": "первые возможности установки значений в устройствах ToIob",
+        "pt": "primeiras possibilidades para definir valores em dispositivos ToIob",
+        "nl": "eerste mogelijkheden om waarden in ToIob-apparaten in te stellen",
+        "fr": "premières possibilités de définir des valeurs dans les appareils TOIob",
+        "it": "prime possibilità di impostare valori in dispositivi ToIob",
+        "es": "primeras posibilidades de establecer valores en dispositivos ToIob",
+        "pl": "pierwsze możliwości ustawienia wartości w urządzeniach Tolob",
+        "uk": "перші можливості встановити значення в пристроях ToIob",
+        "zh-cn": "在 ToIob 设备中设置值的最初可能性"
+      },
       "1.20.44": {
         "en": "add possibility to see devices wiche are sendet ToIob",
         "de": "hinzufügen der Möglichkeit, Geräte zu sehen wiche sind sendet ToIob",
@@ -80,19 +93,6 @@
         "pl": "aktualizacja profilu urządzenia",
         "uk": "оновлення DeviceProfile",
         "zh-cn": "更新设备文件"
-      },
-      "1.20.38": {
-        "en": "add min / max to form",
-        "de": "min / max zu formen",
-        "ru": "добавить min/max в форму",
-        "pt": "adicionar min / max ao formulário",
-        "nl": "min / max aan formulier toevoegen",
-        "fr": "ajouter min / max à la forme",
-        "it": "aggiungere min / max a forma",
-        "es": "añadir min / max a la forma",
-        "pl": "dodać min / max do formularza",
-        "uk": "додати хв / макс у форму",
-        "zh-cn": "将分钟/ 最大值添加到窗体"
       }
     },
     "titleLang": {
