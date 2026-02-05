@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) improve handling of toIob devices
+
 ### 1.20.45 (2026-02-04)
 * (BenAhrdt) first possibilities to set values in ToIob devices
 

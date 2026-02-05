@@ -528,11 +528,14 @@ class Lorawan extends utils.Adapter {
                 if (!id.startsWith(`${this.namespace}.info`) && !id.startsWith(`${this.namespace}.bridge`)) {
                     await this.objectStore?.updateLoraWanObject(id, { payload: { object: obj } });
                 }
+                if (id.startsWith(`${this.namespace}.bridge.devices`)) {
+                    await this.objectStore?.updateToIobObject(id, { payload: { object: obj } });
+                }
 
                 // External States
             } else {
                 if (this.bridge && this.objectStore?.bridge.currentIds[id]) {
-                    this.objectStore.updateBridgeObject(id, { payload: { object: obj } });
+                    await this.objectStore.updateBridgeObject(id, { payload: { object: obj } });
                 }
                 // Only work if bridge is activ
                 if (this.bridge && id === this.config.BridgeEnum) {
@@ -591,6 +594,9 @@ class Lorawan extends utils.Adapter {
                         ) {
                             await this.objectStore?.updateLoraWanObject(id, { payload: { state: state } });
                         }
+                        // ToIob
+                    } else if (id.startsWith(`${this.namespace}.bridge.devices`)) {
+                        await this.objectStore?.updateToIobObject(id, { payload: { state: state } });
                     }
                 } else {
                     if (this.bridge && (!id.startsWith(`0_userdata.`) || !id.startsWith(`alias.`) || state.ack)) {
