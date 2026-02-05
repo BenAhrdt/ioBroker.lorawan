@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.45",
+    "version": "1.20.46",
     "news": {
+      "1.20.46": {
+        "en": "improve handling of toIob devices",
+        "de": "verbesserung der Handhabung von ToIob-Geräten",
+        "ru": "улучшение работы с устройствами ToIob",
+        "pt": "melhorar o manuseio de dispositivos toIob",
+        "nl": "verbetering van het gebruik van toIob-apparaten",
+        "fr": "améliorer la manipulation des dispositifs toIob",
+        "it": "migliorare la gestione dei dispositivi toIob",
+        "es": "mejorar el manejo de dispositivos toIob",
+        "pl": "poprawa obsługi urządzeń Tolob",
+        "uk": "поліпшення обробки пристроїв",
+        "zh-cn": "改进 toIob 设备的处理"
+      },
       "1.20.45": {
         "en": "first possibilities to set values in ToIob devices",
         "de": "erste Möglichkeiten, Werte in ToIob-Geräten einzustellen",
@@ -80,19 +93,6 @@
         "pl": "aktualizuj format Szerokość w Szczegóły urządzenia",
         "uk": "оновлення Ширина форми в Деталі пристрою",
         "zh-cn": "更新设备细节中的窗体宽度"
-      },
-      "1.20.39": {
-        "en": "update DeviceProfile",
-        "de": "update DeviceProfile",
-        "ru": "обновление DeviceProfile",
-        "pt": "atualizarDeviceProfile",
-        "nl": "apparaatbestand bijwerken",
-        "fr": "mettre à jour DeviceProfile",
-        "it": "aggiornamento DeviceProfile",
-        "es": "actualización DeviceProfile",
-        "pl": "aktualizacja profilu urządzenia",
-        "uk": "оновлення DeviceProfile",
-        "zh-cn": "更新设备文件"
       }
     },
     "titleLang": {
