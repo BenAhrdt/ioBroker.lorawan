@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.46",
+    "version": "1.20.47",
     "news": {
+      "1.20.47": {
+        "en": "possible to delete toIoB devices",
+        "de": "möglichkeit, IoB-Geräte zu löschen",
+        "ru": "возможность удаления устройств toIoB",
+        "pt": "possível apagar dispositivos toIoB",
+        "nl": "kan verwijderen naarIoB-apparaten",
+        "fr": "possibilité de supprimer les dispositifs toIoB",
+        "it": "possibile eliminare i dispositivi IoB",
+        "es": "posible eliminar dispositivos toIoB",
+        "pl": "możliwość usunięcia urządzeń toIoB",
+        "uk": "можливість видалення пристроїв IoB",
+        "zh-cn": "可删除 toIOB 设备"
+      },
       "1.20.46": {
         "en": "improve handling of toIob devices",
         "de": "verbesserung der Handhabung von ToIob-Geräten",
@@ -80,19 +93,6 @@
         "pl": "aktualizacji informacji i ikon urządzenia",
         "uk": "оновлення інформації та іконок пристрою",
         "zh-cn": "更新设备信息和图标"
-      },
-      "1.20.40": {
-        "en": "update Form Width in Device Details",
-        "de": "update Form Width in Gerätedetails",
-        "ru": "обновление формы Width в деталях устройства",
-        "pt": "atualizar Largura do Formulário em Detalhes do Dispositivo",
-        "nl": "update formulierbreedte in apparaatdetails",
-        "fr": "mettre à jour le formulaire Largeur dans les détails du périphérique",
-        "it": "modulo aggiornamento Larghezza nei dettagli del dispositivo",
-        "es": "formulario de actualización Ancho en detalles del dispositivo",
-        "pl": "aktualizuj format Szerokość w Szczegóły urządzenia",
-        "uk": "оновлення Ширина форми в Деталі пристрою",
-        "zh-cn": "更新设备细节中的窗体宽度"
       }
     },
     "titleLang": {
