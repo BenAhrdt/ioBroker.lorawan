@@ -529,7 +529,11 @@ class Lorawan extends utils.Adapter {
                     await this.objectStore?.updateLoraWanObject(id, { payload: { object: obj } });
                 }
                 if (id.startsWith(`${this.namespace}.bridge.devices`)) {
-                    await this.objectStore?.updateToIobObject(id, { payload: { object: obj } });
+                    if (obj !== null) {
+                        await this.objectStore?.updateToIobObject(id, { payload: { object: obj } });
+                    } else {
+                        await this.objectStore?.deleteToIobObject(id);
+                    }
                 }
 
                 // External States
