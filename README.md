@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) possible to delete toIoB devices
+
 ### 1.20.46 (2026-02-05)
 * (BenAhrdt) improve handling of toIob devices
 
