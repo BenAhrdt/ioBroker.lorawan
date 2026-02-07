@@ -58,6 +58,10 @@ class Lorawan extends utils.Adapter {
 
         // Internal Logging Table
         this.logtypes = {};
+
+        // Channels atStartup
+        this.channelsAtStartup = {};
+        this.devicesAtStartup = {};
     }
 
     onFileChange(_id, _fileName, _size) {
@@ -71,6 +75,22 @@ class Lorawan extends utils.Adapter {
     async onReady() {
         const activeFunction = 'onReady';
         try {
+            this.devicessAtStartup = await this.getObjectViewAsync('system', 'device', {
+                startkey: ``,
+                endkey: `\u9999`,
+            });
+            this.deviceMap = new Map();
+            for (const row of this.devicessAtStartup.rows) {
+                this.deviceMap.set(row.id, row.value);
+            }
+            this.channelsAtStartup = await this.getObjectViewAsync('system', 'channel', {
+                startkey: ``,
+                endkey: `\u9999`,
+            });
+            this.channelMap = new Map();
+            for (const row of this.channelsAtStartup.rows) {
+                this.channelMap.set(row.id, row.value);
+            }
             // Get Logtypes
             this.logtypes = JSON.parse(await this.setDefIfEmptyAndReturnVal('bridge.debug.logtypes'));
 
