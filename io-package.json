@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.47",
+    "version": "1.20.48",
     "news": {
+      "1.20.48": {
+        "en": "Faster Device / Channel search",
+        "de": "Schnellere Gerätesuche / Kanalsuche",
+        "ru": "Быстрое устройство / Поиск по каналу",
+        "pt": "Pesquisa mais rápida do dispositivo / canal",
+        "nl": "Sneller Apparaat / Kanaal zoeken",
+        "fr": "Recherche de périphérique / canal plus rapide",
+        "it": "Più veloce dispositivo / ricerca canale",
+        "es": "Dispositivo más rápido / Búsqueda de canales",
+        "pl": "Szybsze wyszukiwanie urządzenia / kanału",
+        "uk": "Швидкий пристрій / Пошук каналів",
+        "zh-cn": "快速设备/ 频道搜索"
+      },
       "1.20.47": {
         "en": "possible to delete toIoB devices",
         "de": "möglichkeit, IoB-Geräte zu löschen",
@@ -80,19 +93,6 @@
         "pl": "adisplay nazwa identyfikatora w formie (nazwa 1, nazwa 2, nazwa 3)\ndodać więcej ikonosików w celu wykrycia roli",
         "uk": "показати ім'я ідентифікатора у вигляді (name1, name2, name3)\nдодати більше іконописів для визначення ролі",
         "zh-cn": "显示窗体中的 id 名称 (name1, name2, name3)\n为角色检测添加更多的图标指定"
-      },
-      "1.20.41": {
-        "en": "update device information and icons",
-        "de": "aktualisierung der geräteinformationen und -symbole",
-        "ru": "обновление информации об устройстве и значках",
-        "pt": "atualizar informações do dispositivo e ícones",
-        "nl": "apparaatinformatie en pictogrammen bijwerken",
-        "fr": "mettre à jour les informations et les icônes de l'appareil",
-        "it": "aggiornare le informazioni del dispositivo e le icone",
-        "es": "actualizar la información del dispositivo e iconos",
-        "pl": "aktualizacji informacji i ikon urządzenia",
-        "uk": "оновлення інформації та іконок пристрою",
-        "zh-cn": "更新设备信息和图标"
       }
     },
     "titleLang": {
