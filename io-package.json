@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.48",
+    "version": "1.20.49",
     "news": {
+      "1.20.49": {
+        "en": "improve handling of remove Function fpr Bridge",
+        "de": "verbesserung der Handhabung von Entfernen Function fpr Bridge",
+        "ru": "улучшение обработки удаления Функция fpr Bridge",
+        "pt": "melhorar o manuseio de remover Função fpr Bridge",
+        "nl": "verbeteren van de behandeling van verwijderen functie fpr Bridge",
+        "fr": "améliorer la manipulation de supprimer Fonction fpr Bridge",
+        "it": "migliorare la gestione di rimuovere Funzione fpr Bridge",
+        "es": "mejorar el manejo de la eliminación Fun fpr Bridge",
+        "pl": "poprawić obsługę usuwania funkcji Fpr Bridge",
+        "uk": "поліпшення обробки видалення Функція Fpr Bridge",
+        "zh-cn": "改进对删除函数 fpr 桥的处理"
+      },
       "1.20.48": {
         "en": "Faster Device / Channel search",
         "de": "Schnellere Gerätesuche / Kanalsuche",
@@ -80,19 +93,6 @@
         "pl": "dodaj value.power.active i value.power.reaktywne...",
         "uk": "add value.power.active and value.power.reactive ...",
         "zh-cn": "增加值 能量 活性 能量 反应..."
-      },
-      "1.20.42": {
-        "en": "adisplay the id name in form (name1, name2, name3)\nadd more iconassigns in order to role detection",
-        "de": "adisplay the id name in form (name1, name2, name3)\nweitere iconassigns hinzufügen, um rollenerkennung",
-        "ru": "a отображать имя идентификатора в форме (имя1, имя2, имя3)\nдобавьте больше иконок для обнаружения ролей",
-        "pt": "adisplay the id name in form (name1, name2, name3)\nadicionar mais ícones para detecção de funções",
-        "nl": "adisplay de id-naam in vorm (naam1, naam2, naam3)\nvoeg meer iconasigns toe om de rol te detecteren",
-        "fr": "aaffichage du nom d'identité sous forme (nom1, nom2, nom3)\najouter plus d'icônes pour détecter les rôles",
-        "it": "adisplay il nome id in forma (nome1, nome2, nome3)\naggiungere più iconassigns per il rilevamento del ruolo",
-        "es": "adisplay el nombre id en forma (nombre1, nombre2, nombre3)\nañadir más íconos para la detección de roles",
-        "pl": "adisplay nazwa identyfikatora w formie (nazwa 1, nazwa 2, nazwa 3)\ndodać więcej ikonosików w celu wykrycia roli",
-        "uk": "показати ім'я ідентифікатора у вигляді (name1, name2, name3)\nдодати більше іконописів для визначення ролі",
-        "zh-cn": "显示窗体中的 id 名称 (name1, name2, name3)\n为角色检测添加更多的图标指定"
       }
     },
     "titleLang": {
