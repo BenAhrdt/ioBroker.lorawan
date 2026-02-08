@@ -59,9 +59,11 @@ class Lorawan extends utils.Adapter {
         // Internal Logging Table
         this.logtypes = {};
 
-        // Channels atStartup
-        this.channelsAtStartup = {};
+        // Devices / Channels
         this.devicesAtStartup = {};
+        this.deviceMap = new Map();
+        this.channelsAtStartup = {};
+        this.channelMap = new Map();
     }
 
     onFileChange(_id, _fileName, _size) {
@@ -79,7 +81,6 @@ class Lorawan extends utils.Adapter {
                 startkey: ``,
                 endkey: `\u9999`,
             });
-            this.deviceMap = new Map();
             for (const row of this.devicessAtStartup.rows) {
                 this.deviceMap.set(row.id, row.value);
             }
@@ -87,7 +88,6 @@ class Lorawan extends utils.Adapter {
                 startkey: ``,
                 endkey: `\u9999`,
             });
-            this.channelMap = new Map();
             for (const row of this.channelsAtStartup.rows) {
                 this.channelMap.set(row.id, row.value);
             }
@@ -153,7 +153,8 @@ class Lorawan extends utils.Adapter {
             this.deviceManagement = new LoRaWANDeviceManagement(this);
             //Subscribe all configuration and control states
             await this.subscribeStatesAsync('*');
-            await this.subscribeObjectsAsync('*');
+            //await this.subscribeObjectsAsync('*');
+            await this.subscribeForeignObjectsAsync('*');
             // this.subscribeObjectsAsync('*.downlink.control.*');
             // Check for logging
             this.log[this.logtypes.downlinkconfig]?.(
@@ -538,10 +539,15 @@ class Lorawan extends utils.Adapter {
      * @param obj value and ack of the changed object
      */
     async onObjectChange(id, obj) {
-        this.log.silly(`${id} is changed into ${JSON.stringify(obj)}`);
+        //this.log.silly(`${id} is changed into ${JSON.stringify(obj)}`);
         const activeFunction = 'main.js - onObjectChange';
         this.log.silly(`Function ${activeFunction} started.`);
         try {
+            if (obj?.type === 'device') {
+                this.deviceMap.set(id, obj);
+            } else if (obj?.type === 'channel') {
+                this.channelMap.set(id, obj);
+            }
             // Internal Objects => Assign to objectStore
             if (id.startsWith(this.namespace)) {
                 // Update State in objectStore

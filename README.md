@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) improve handling of remove Function fpr Bridge
+
 ### 1.20.48 (2026-02-07)
 * (BenAhrdt) Faster Device / Channel search
 
