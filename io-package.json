@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.49",
+    "version": "1.20.50",
     "news": {
+      "1.20.50": {
+        "en": "implements light to ToIoB function",
+        "de": "implementiert Licht zur ToIoB-Funktion",
+        "ru": "функция Light to ToIoB",
+        "pt": "implementa luz para a função ToIoB",
+        "nl": "implementeert licht naar ToIoB functie",
+        "fr": "implémente la lumière à la fonction ToIoB",
+        "it": "implementa la luce alla funzione ToIoB",
+        "es": "implementa luz a la función ToIoB",
+        "pl": "implementuje światło do funkcji ToIoB",
+        "uk": "реалізує світло для функції ToIoB",
+        "zh-cn": "执行光线到 ToIOB 函数"
+      },
       "1.20.49": {
         "en": "improve handling of remove Function fpr Bridge",
         "de": "verbesserung der Handhabung von Entfernen Function fpr Bridge",
@@ -80,19 +93,6 @@
         "pl": "dodać możliwość zobaczyć urządzenia wiche są sendet Tolob",
         "uk": "додати можливість побачити пристрої Wiche відправник ToIob",
         "zh-cn": "添加可看到设备 wiche 是 sendet ToIob"
-      },
-      "1.20.43": {
-        "en": "add value.power.active and value.power.reactive ...",
-        "de": "add value.power.active und value.power.reactive ...",
-        "ru": "добавить value.power.active и value.power.reactive.",
-        "pt": "adicionar valor.power.active e valor.power.reative ...",
-        "nl": "toegevoegde waarde.power.active en waarde.power.reactive ...",
-        "fr": "ajouter value.power.active et value.power.réactive ...",
-        "it": "aggiungere valore.power.active e value.power.reactive ...",
-        "es": "añadir valor.power.active y valor.power.reactive ...",
-        "pl": "dodaj value.power.active i value.power.reaktywne...",
-        "uk": "add value.power.active and value.power.reactive ...",
-        "zh-cn": "增加值 能量 活性 能量 反应..."
       }
     },
     "titleLang": {

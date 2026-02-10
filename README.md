@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.20.50 (2026-02-10)
 * (BenAhrdt) implements light to ToIoB function
 
 ### 1.20.49 (2026-02-08)
