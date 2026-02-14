@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.50",
+    "version": "1.20.51",
     "news": {
+      "1.20.51": {
+        "en": "including of more entites in ToIob functionality (light, climate, hummidifier, lock, cover)",
+        "de": "mit mehr Entites in ToIob Funktionalität (Licht, Klima, Demütiger, Schloss, Cover)",
+        "ru": "включение большего количества элементов в функциональность ToIob (свет, климат, увлажнитель, замок, крышка)",
+        "pt": "incluindo de mais entites na funcionalidade ToIob (luz, clima, hummidificador, bloqueio, tampa)",
+        "nl": "met inbegrip van meer entites in Toiob functionaliteit (licht, klimaat, bevochtiger, slot, afdekking)",
+        "fr": "incluant plus d'entites dans la fonctionnalité TOIob (lumière, climat, hummidificateur, serrure, couvercle)",
+        "it": "incluso di più diritti nella funzionalità ToIob (luce, clima, hummidifier, lock, cover)",
+        "es": "incluyendo más entites en la funcionalidad ToIob (light, clima, hummidifier, lock, cover)",
+        "pl": "w tym więcej entytów w funkcjonalności Tołob (światło, klimat, hummidyfikator, zamek, okładka)",
+        "uk": "в тому числі більш схильні до функції ToIob (світло, клімат, зволожувач, замок, кришка)",
+        "zh-cn": "包括ToIob功能中的更多实体(光、气候、放大器、锁、覆盖)"
+      },
       "1.20.50": {
         "en": "implements light to ToIoB function",
         "de": "implementiert Licht zur ToIoB-Funktion",
@@ -80,19 +93,6 @@
         "pl": "pierwsze możliwości ustawienia wartości w urządzeniach Tolob",
         "uk": "перші можливості встановити значення в пристроях ToIob",
         "zh-cn": "在 ToIob 设备中设置值的最初可能性"
-      },
-      "1.20.44": {
-        "en": "add possibility to see devices wiche are sendet ToIob",
-        "de": "hinzufügen der Möglichkeit, Geräte zu sehen wiche sind sendet ToIob",
-        "ru": "добавить возможность видеть устройства Wiche с помощью sendet ToIob",
-        "pt": "adicionar possibilidade de ver dispositivos wiche são sentet ToIob",
-        "nl": "voeg mogelijkheid toe om apparaten wiche te zien zijn sendet ToIob",
-        "fr": "ajouter la possibilité de voir les appareils wiche sont sendet toIob",
-        "it": "aggiungere la possibilità di vedere i dispositivi wiche sono mittente ToIob",
-        "es": "añadir la posibilidad de ver los dispositivos wiche son sendet ToIob",
-        "pl": "dodać możliwość zobaczyć urządzenia wiche są sendet Tolob",
-        "uk": "додати можливість побачити пристрої Wiche відправник ToIob",
-        "zh-cn": "添加可看到设备 wiche 是 sendet ToIob"
       }
     },
     "titleLang": {

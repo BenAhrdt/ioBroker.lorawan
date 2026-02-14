@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.20.51 (2026-02-14)
 * (BenAhrdt) including of more entites in ToIob functionality (light, climate, hummidifier, lock, cover)
 
 ### 1.20.50 (2026-02-10)
