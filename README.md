@@ -25,7 +25,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
-* (BenAhrdt) including of more entites in ToIob functionality
+* (BenAhrdt) including of more entites in ToIob functionality (light, climate, hummidifier, lock, cover)
 
 ### 1.20.50 (2026-02-10)
 * (BenAhrdt) implements light to ToIoB function
