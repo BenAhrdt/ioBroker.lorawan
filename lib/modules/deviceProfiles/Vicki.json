@@ -147,7 +147,7 @@
       "swap": false
     },
     {
-      "name": "MotorCallibration",
+      "name": "MotorCalibration",
       "port": 1,
       "priority": "NORMAL",
       "type": "button",
