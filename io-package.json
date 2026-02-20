@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.51",
+    "version": "1.20.52",
     "news": {
+      "1.20.52": {
+        "en": "bugfix show ToIob always in device Manager\ncorrection of wording in downlink Profil Vicki\nadd role button.mode.startMotorcalibration",
+        "de": "bugfix show ToIob immer im Gerätemanager\nkorrektur der Formulierung im Downlink Profil Vicki\nrollentaste hinzufügen.mode.startMotorcalibration",
+        "ru": "bugfix показывает ToIob в диспетчере устройств\nисправление формулировки в downlink Profil Vicki\nдобавить роль кнопка.mode.startMotorcalibibration",
+        "pt": "bugfix mostra o ToIob sempre no Gerenciador de dispositivos\ncorreção de redação no perfil de downlink Vicki\nadicionar função button.mode.startMotorcalibration",
+        "nl": "bugfix ToIob altijd tonen in apparaatbeheer\ncorrectie van de formulering in downlink Profil Vicki\nrolknop.mode.startMotorkalibratie toevoegen",
+        "fr": "bugfix afficher toujours ToIob dans le gestionnaire de périphériques\ncorrection du libellé dans le profil Vicki\najouter le bouton de rôle.mode.startMotorcalibration",
+        "it": "bugfix mostra ToIob sempre in dispositivo Manager\ncorrezione delle parole in downlink Profil Vicki\naggiungere pulsante ruolo.mode.startMotorcalibration",
+        "es": "bugfix show ToIob siempre en el administrador del dispositivo\ncorrección de la redacción en downlink Profil Vicki\nañadir botón de rol.mode.startMotorcalibration",
+        "pl": "bugfix show Tolob zawsze w urządzeniu Manager\nkorekta brzmienia w dolnym linku Profil Vicki\ndodaj rolę button.mode.startMotorkalibration",
+        "uk": "виправлення помилок ToIob завжди в диспетчері пристроїв\nкорекція слова в внизу посилання Profil Vicki\nadd роль кнопка.mode.startMotorcalibration",
+        "zh-cn": "错误修正显示 ToIob 总是在设备管理器中\n下行线路中措辞的校正\n添加角色按钮. mode. start Motor校正"
+      },
       "1.20.51": {
         "en": "including of more entites in ToIob functionality (light, climate, hummidifier, lock, cover)",
         "de": "mit mehr Entites in ToIob Funktionalität (Licht, Klima, Demütiger, Schloss, Cover)",
@@ -80,19 +93,6 @@
         "pl": "poprawa obsługi urządzeń Tolob",
         "uk": "поліпшення обробки пристроїв",
         "zh-cn": "改进 toIob 设备的处理"
-      },
-      "1.20.45": {
-        "en": "first possibilities to set values in ToIob devices",
-        "de": "erste Möglichkeiten, Werte in ToIob-Geräten einzustellen",
-        "ru": "первые возможности установки значений в устройствах ToIob",
-        "pt": "primeiras possibilidades para definir valores em dispositivos ToIob",
-        "nl": "eerste mogelijkheden om waarden in ToIob-apparaten in te stellen",
-        "fr": "premières possibilités de définir des valeurs dans les appareils TOIob",
-        "it": "prime possibilità di impostare valori in dispositivi ToIob",
-        "es": "primeras posibilidades de establecer valores en dispositivos ToIob",
-        "pl": "pierwsze możliwości ustawienia wartości w urządzeniach Tolob",
-        "uk": "перші можливості встановити значення в пристроях ToIob",
-        "zh-cn": "在 ToIob 设备中设置值的最初可能性"
       }
     },
     "titleLang": {
