@@ -6,6 +6,8 @@
 	"AuthenticationInformation": "Imposta l'autenticazione per il tuo server (se necessario)",
 	"BridgeConnectionTest": "test di connessione",
 	"BridgeConnectionTestTooltip": "fare clic su questo pulsante per verificare la connessione al bridge",
+	"BridgeDevicesToGenerate": "dispositivi mostrati in Gestione dispositivi",
+	"BridgeDevicesToGenerateTooltip": "seleziona i tipi di dispositivo desiderati che desideri vedere in Gestione dispositivi",
 	"BridgeEnum": "Enumerazione del ponte",
 	"BridgeEnumTooltip": "Seleziona un'enumerazione, utilizzata per portare gli stati stranieri sul ponte",
 	"BridgeForeignConfigHeader": "Impostazioni per gli stati esteri",

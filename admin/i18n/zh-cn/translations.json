@@ -6,6 +6,8 @@
 	"AuthenticationInformation": "设置服务器的身份验证（如果需要）",
 	"BridgeConnectionTest": "连接测试",
 	"BridgeConnectionTestTooltip": "单击此按钮，检查与您的网桥的连接",
+	"BridgeDevicesToGenerate": "设备管理器中显示的设备",
+	"BridgeDevicesToGenerateTooltip": "选择您希望在设备管理器中看到的所需设备类型",
 	"BridgeEnum": "桥枚举",
 	"BridgeEnumTooltip": "选择一个枚举，用于将外国国家带到桥上",
 	"BridgeForeignConfigHeader": "国外的设置",

@@ -556,7 +556,10 @@ class Lorawan extends utils.Adapter {
                 }
                 if (id.startsWith(`${this.namespace}.bridge.devices`)) {
                     if (obj !== null) {
-                        await this.objectStore?.updateToIobObject(id, { payload: { object: obj } });
+                        // Check for eable the building of device in deviceManager
+                        if (this.config.BridgeDevicesToGenerate.includes('toIobDevices')) {
+                            await this.objectStore?.updateToIobObject(id, { payload: { object: obj } });
+                        }
                     } else {
                         await this.objectStore?.deleteToIobObject(id);
                     }

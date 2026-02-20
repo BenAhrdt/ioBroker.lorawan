@@ -6,6 +6,8 @@
 	"AuthenticationInformation": "Configure la autenticación para su servidor (si es necesario)",
 	"BridgeConnectionTest": "prueba de conexión",
 	"BridgeConnectionTestTooltip": "Haga clic en este botón para comprobar la conexión a su puente.",
+	"BridgeDevicesToGenerate": "dispositivos mostrados en el administrador de dispositivos",
+	"BridgeDevicesToGenerateTooltip": "seleccione los tipos de dispositivos deseados que desee ver en el administrador de dispositivos",
 	"BridgeEnum": "Enumeración del puente",
 	"BridgeEnumTooltip": "Seleccione una enumeración que se utilice para llevar estados extranjeros al puente.",
 	"BridgeForeignConfigHeader": "Configuraciones para los estados extranjeros.",

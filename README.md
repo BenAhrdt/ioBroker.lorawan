@@ -25,6 +25,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+* (BenAhrdt) bugfix show ToIob always in device Manager
 * (BenAhrdt) correction of wording in downlink Profil Vicki
 * (BenAhrdt) add role button.mode.startMotorcalibration
 

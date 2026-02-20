@@ -6,6 +6,8 @@
 	"AuthenticationInformation": "Stel de authenticatie voor uw server in (indien nodig)",
 	"BridgeConnectionTest": "verbindingstest",
 	"BridgeConnectionTestTooltip": "Klik op deze knop om de verbinding met uw bridge te controleren",
+	"BridgeDevicesToGenerate": "getoonde apparaten in apparaatbeheer",
+	"BridgeDevicesToGenerateTooltip": "selecteer de gewenste apparaattypes, die je graag ziet in apparaatbeheer",
 	"BridgeEnum": "Brug Enum",
 	"BridgeEnumTooltip": "Selecteer een enum dat wordt gebruikt om buitenlandse staten naar de brug te brengen",
 	"BridgeForeignConfigHeader": "Instellingen voor de buitenlandse staten",

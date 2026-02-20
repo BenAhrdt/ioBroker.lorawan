@@ -296,6 +296,7 @@
 	"published": "published",
 	"subscribed": "subscribed",
 	"info devices": "info devices",
-	"toIob devices": "ToIob devices"
-
+	"toIob devices": "ToIob devices",
+	"BridgeDevicesToGenerate": "shown devices in device manager",
+	"BridgeDevicesToGenerateTooltip": "select the desired devicetypes, you like to see in device manager"
 }

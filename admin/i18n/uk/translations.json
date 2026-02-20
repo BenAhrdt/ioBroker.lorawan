@@ -6,6 +6,8 @@
 	"AuthenticationInformation": "Налаштуйте автентифікацію для вашого сервера (якщо потрібно)",
 	"BridgeConnectionTest": "тест підключення",
 	"BridgeConnectionTestTooltip": "натисніть цю кнопку, щоб перевірити підключення до вашого мосту",
+	"BridgeDevicesToGenerate": "показані пристрої в диспетчері пристроїв",
+	"BridgeDevicesToGenerateTooltip": "виберіть потрібні типи пристроїв, які ви хочете бачити в диспетчері пристроїв",
 	"BridgeEnum": "Міст Enum",
 	"BridgeEnumTooltip": "Виберіть перелік, який використовується для залучення іноземних держав до мосту",
 	"BridgeForeignConfigHeader": "Налаштування для іноземних держав",

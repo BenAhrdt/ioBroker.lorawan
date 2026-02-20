@@ -6,6 +6,8 @@
 	"AuthenticationInformation": "Legen Sie die Authentifizierung für Ihren Server fest (falls erforderlich)",
 	"BridgeConnectionTest": "Verbindungstest",
 	"BridgeConnectionTestTooltip": "Klicken, um einen Verbindungstest zur Bridge durchzuführen",
+	"BridgeDevicesToGenerate": "Angezeigte Geräte im Device-Manager",
+	"BridgeDevicesToGenerateTooltip": "Wählen Sie die gewünschten Gerätetypen aus, die Sie im Gerätemanager sehen möchten",
 	"BridgeEnum": "Bridge enum",
 	"BridgeEnumTooltip": "Wählen Sie eine enum (Kategorie) aus, die verwendet werden soll, um Adapter fremde States zur Bridge zu übertragen",
 	"BridgeForeignConfigHeader": "Einstellungen für fremede States",
