@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) errorhandling in case of aggregat error with mqtt connection
+
 ### 1.20.52 (2026-02-20)
 * (BenAhrdt) bugfix show ToIob always in device Manager
 * (BenAhrdt) correction of wording in downlink Profil Vicki
