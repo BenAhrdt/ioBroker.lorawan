@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.52",
+    "version": "1.20.53",
     "news": {
+      "1.20.53": {
+        "en": "errorhandling in case of aggregat error with mqtt connection",
+        "de": "fehlerbehebung bei aggregatfehlern mit mqtt-verbindung",
+        "ru": "обработка ошибок в случае ошибки агрегата с подключением mqtt",
+        "pt": "tratamento de erros em caso de erro agregado com ligação mqtt",
+        "nl": "foutafhandeling bij aggregat-fout met mqtt-verbinding",
+        "fr": "gestion des erreurs en cas d'erreur agrégat avec connexion mqtt",
+        "it": "errore di gestione in caso di errore aggregato con connessione mqtt",
+        "es": "errorhandling en caso de error aggregat con conexión mqtt",
+        "pl": "błąd obsługi w przypadku błędu agregatu z połączeniem mqtt",
+        "uk": "похибка в разі агрегаційної помилки з підключенням mqtt",
+        "zh-cn": "与 mqtt 连接的聚合错误时处理错误"
+      },
       "1.20.52": {
         "en": "bugfix show ToIob always in device Manager\ncorrection of wording in downlink Profil Vicki\nadd role button.mode.startMotorcalibration",
         "de": "bugfix show ToIob immer im Gerätemanager\nkorrektur der Formulierung im Downlink Profil Vicki\nrollentaste hinzufügen.mode.startMotorcalibration",
@@ -80,19 +93,6 @@
         "pl": "możliwość usunięcia urządzeń toIoB",
         "uk": "можливість видалення пристроїв IoB",
         "zh-cn": "可删除 toIOB 设备"
-      },
-      "1.20.46": {
-        "en": "improve handling of toIob devices",
-        "de": "verbesserung der Handhabung von ToIob-Geräten",
-        "ru": "улучшение работы с устройствами ToIob",
-        "pt": "melhorar o manuseio de dispositivos toIob",
-        "nl": "verbetering van het gebruik van toIob-apparaten",
-        "fr": "améliorer la manipulation des dispositifs toIob",
-        "it": "migliorare la gestione dei dispositivi toIob",
-        "es": "mejorar el manejo de dispositivos toIob",
-        "pl": "poprawa obsługi urządzeń Tolob",
-        "uk": "поліпшення обробки пристроїв",
-        "zh-cn": "改进 toIob 设备的处理"
       }
     },
     "titleLang": {
