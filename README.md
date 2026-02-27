@@ -24,6 +24,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) update dependencies
+* (BenAhrdt) bugfix button press
+
 ### 1.20.53 (2026-02-21)
 * (BenAhrdt) errorhandling in case of aggregat error with mqtt connection
 
