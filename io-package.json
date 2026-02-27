@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.53",
+    "version": "1.20.54",
     "news": {
+      "1.20.54": {
+        "en": "update dependencies\nbugfix button press",
+        "de": "aktualisierung der abhängigkeiten\nbugfix knopf drücken",
+        "ru": "обновление зависимостей\nнажать кнопку bugfix",
+        "pt": "atualizar dependências\nbotão de correção de erros pressiona",
+        "nl": "afhankelijkheden bijwerken\nbugfix-knop indrukken",
+        "fr": "mettre à jour les dépendances\nbouton de correction du bug appuyez sur",
+        "it": "aggiornamento dipendenze\npulsante bugfix premere",
+        "es": "dependencias de actualización\nbotón de error pulsar",
+        "pl": "aktualizacji zależności\nprzycisk bugfix naciśnij",
+        "uk": "оновлення залежності\nкнопка виправлення помилок",
+        "zh-cn": "更新依赖关系\n错误修正按钮按"
+      },
       "1.20.53": {
         "en": "errorhandling in case of aggregat error with mqtt connection",
         "de": "fehlerbehebung bei aggregatfehlern mit mqtt-verbindung",
@@ -80,19 +93,6 @@
         "pl": "Szybsze wyszukiwanie urządzenia / kanału",
         "uk": "Швидкий пристрій / Пошук каналів",
         "zh-cn": "快速设备/ 频道搜索"
-      },
-      "1.20.47": {
-        "en": "possible to delete toIoB devices",
-        "de": "möglichkeit, IoB-Geräte zu löschen",
-        "ru": "возможность удаления устройств toIoB",
-        "pt": "possível apagar dispositivos toIoB",
-        "nl": "kan verwijderen naarIoB-apparaten",
-        "fr": "possibilité de supprimer les dispositifs toIoB",
-        "it": "possibile eliminare i dispositivi IoB",
-        "es": "posible eliminar dispositivos toIoB",
-        "pl": "możliwość usunięcia urządzeń toIoB",
-        "uk": "можливість видалення пристроїв IoB",
-        "zh-cn": "可删除 toIOB 设备"
       }
     },
     "titleLang": {
