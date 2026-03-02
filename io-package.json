@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.57",
+    "version": "1.21.0",
     "news": {
+      "1.21.0": {
+        "en": "update deviceManager (dm-utils) to 3.0.0\nadd Links for Bridge devices",
+        "de": "update deviceManager (dm-utils) bis 3.0.0\nlinks für Bridge-Geräte hinzufügen",
+        "ru": "обновление DeviceManager (dm-utils) до 3.0.0\nдобавить ссылки для устройств Bridge",
+        "pt": "dispositivo de atualizaçãoManager (dm-utils) para 3.0.0\nadicionar links para dispositivos Bridge",
+        "nl": "deviceManager (dm-utils) updaten naar 3.0.0\nlinks voor Bridge-apparaten toevoegen",
+        "fr": "mettre à jour deviceManager (dm-utils) à 3.0.0\najouter des liens pour les périphériques Bridge",
+        "it": "aggiornamento dispositivoManager (dm-utils) a 3.0.0\naggiungere Link per dispositivi Bridge",
+        "es": "dispositivo de actualizaciónManager (dm-utils) a 3.0.0\nañadir Enlaces para dispositivos Bridge",
+        "pl": "update deviceManager (dm- utils) do 3.0.0\ndodaj linki do urządzeń mostowych",
+        "uk": "оновлення пристроюManager (dm-utils) до 3.0.0\nдодати посилання для пристроїв міст",
+        "zh-cn": "更新设备管理器( dm- utils) 到 3. 0.0\n为桥梁设备添加链接"
+      },
       "1.20.57": {
         "en": "bugfix query for null",
         "de": "bugfix-abfrage für null",
@@ -80,19 +93,6 @@
         "pl": "bugfix show Tolob zawsze w urządzeniu Manager\nkorekta brzmienia w dolnym linku Profil Vicki\ndodaj rolę button.mode.startMotorkalibration",
         "uk": "виправлення помилок ToIob завжди в диспетчері пристроїв\nкорекція слова в внизу посилання Profil Vicki\nadd роль кнопка.mode.startMotorcalibration",
         "zh-cn": "错误修正显示 ToIob 总是在设备管理器中\n下行线路中措辞的校正\n添加角色按钮. mode. start Motor校正"
-      },
-      "1.20.51": {
-        "en": "including of more entites in ToIob functionality (light, climate, hummidifier, lock, cover)",
-        "de": "mit mehr Entites in ToIob Funktionalität (Licht, Klima, Demütiger, Schloss, Cover)",
-        "ru": "включение большего количества элементов в функциональность ToIob (свет, климат, увлажнитель, замок, крышка)",
-        "pt": "incluindo de mais entites na funcionalidade ToIob (luz, clima, hummidificador, bloqueio, tampa)",
-        "nl": "met inbegrip van meer entites in Toiob functionaliteit (licht, klimaat, bevochtiger, slot, afdekking)",
-        "fr": "incluant plus d'entites dans la fonctionnalité TOIob (lumière, climat, hummidificateur, serrure, couvercle)",
-        "it": "incluso di più diritti nella funzionalità ToIob (luce, clima, hummidifier, lock, cover)",
-        "es": "incluyendo más entites en la funcionalidad ToIob (light, clima, hummidifier, lock, cover)",
-        "pl": "w tym więcej entytów w funkcjonalności Tołob (światło, klimat, hummidyfikator, zamek, okładka)",
-        "uk": "в тому числі більш схильні до функції ToIob (світло, клімат, зволожувач, замок, кришка)",
-        "zh-cn": "包括ToIob功能中的更多实体(光、气候、放大器、锁、覆盖)"
       }
     },
     "titleLang": {
