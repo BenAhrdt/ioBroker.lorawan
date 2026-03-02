@@ -24,6 +24,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) update deviceManager (dm-utils) to 3.0.0
+* (BenAhrdt) add Links for Bridge devices
+
 ### 1.20.57 (2026-03-02)
 * (BenAhrdt) bugfix query for null
 
@@ -50,37 +54,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ### 1.20.50 (2026-02-10)
 * (BenAhrdt) implements light to ToIoB function
-
-### 1.20.49 (2026-02-08)
-* (BenAhrdt) improve handling of remove Function fpr Bridge
-
-### 1.20.48 (2026-02-07)
-* (BenAhrdt) Faster Device / Channel search
-
-### 1.20.47 (2026-02-06)
-* (BenAhrdt) possible to delete toIoB devices
-
-### 1.20.46 (2026-02-05)
-* (BenAhrdt) improve handling of toIob devices
-
-### 1.20.45 (2026-02-04)
-* (BenAhrdt) first possibilities to set values in ToIob devices
-
-### 1.20.44 (2026-02-04)
-* (BenAhrdt) add possibility to see devices wiche are sendet ToIob
-
-### 1.20.43 (2026-02-03)
-* (BenAhrdt) add value.power.active and value.power.reactive ...
-
-### 1.20.42 (2026-02-03)
-* (BenAhrdt) adisplay the id name in form (name1, name2, name3)
-* (BenAhrdt) add more iconassigns in order to role detection
-
-### 1.20.41 (2026-02-02)
-* (BenAhrdt) update device information and icons
-
-### 1.20.40 (2026-02-02)
-* (BenAhrdt) update Form Width in Device Details
 
 ### Older entries
 [here](OLD_CHANGELOG.md)
