@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.2",
+    "version": "1.21.3",
     "news": {
+      "1.21.3": {
+        "en": "add Link to ToIoB Devices",
+        "de": "link zu ToIoB-Geräten hinzufügen",
+        "ru": "добавить ссылку на устройства ToIoB",
+        "pt": "adicionar link para dispositivos ToIoB",
+        "nl": "koppeling toevoegen aan ToIoB-apparaten",
+        "fr": "ajouter un lien aux périphériques ToIoB",
+        "it": "aggiungere Link a dispositivi ToIoB",
+        "es": "añadir Enlace a dispositivos ToIoB",
+        "pl": "dodaj link do urządzeń ToIoB",
+        "uk": "додати посилання на пристрої ToIoB",
+        "zh-cn": "添加链接到 ToIOB 设备"
+      },
       "1.21.2": {
         "en": "update icon for device link",
         "de": "update-symbol für gerätelink",
@@ -80,19 +93,6 @@
         "pl": "catch publishing value (null) and log warning for this id",
         "uk": "зловживання видавництвом (нуль) та попередженням про це",
         "zh-cn": "抓取发布值( null) 和日志警告"
-      },
-      "1.20.54": {
-        "en": "update dependencies\nbugfix button press",
-        "de": "aktualisierung der abhängigkeiten\nbugfix knopf drücken",
-        "ru": "обновление зависимостей\nнажать кнопку bugfix",
-        "pt": "atualizar dependências\nbotão de correção de erros pressiona",
-        "nl": "afhankelijkheden bijwerken\nbugfix-knop indrukken",
-        "fr": "mettre à jour les dépendances\nbouton de correction du bug appuyez sur",
-        "it": "aggiornamento dipendenze\npulsante bugfix premere",
-        "es": "dependencias de actualización\nbotón de error pulsar",
-        "pl": "aktualizacji zależności\nprzycisk bugfix naciśnij",
-        "uk": "оновлення залежності\nкнопка виправлення помилок",
-        "zh-cn": "更新依赖关系\n错误修正按钮按"
       }
     },
     "titleLang": {
