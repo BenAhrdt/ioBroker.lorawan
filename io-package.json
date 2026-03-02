@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.0",
+    "version": "1.21.1",
     "news": {
+      "1.21.1": {
+        "en": "brind possibility for editing base ip in devce Manager",
+        "de": "brind Möglichkeit zum Bearbeiten von Basis ip in devce Manager",
+        "ru": "возможность редактирования base ip в devce Manager",
+        "pt": "possibilidade de borda para editar base ip em devce Manager",
+        "nl": "brind mogelijkheid voor het bewerken van base ip in devce Manager",
+        "fr": "possibilité de montage de base ip dans devce Manager",
+        "it": "possibilità di editing base ip in devce Manager",
+        "es": "brind posibilidad de edición de base ip en devce Manager",
+        "pl": "brind możliwość edycji bazy ip w Devce Manager",
+        "uk": "можливість редагування бази ip в devce Manager",
+        "zh-cn": "在 devce 管理器中编辑基础 ip 的可能性"
+      },
       "1.21.0": {
         "en": "update deviceManager (dm-utils) to 3.0.0\nadd Links for Bridge devices",
         "de": "update deviceManager (dm-utils) bis 3.0.0\nlinks für Bridge-Geräte hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "błąd obsługi w przypadku błędu agregatu z połączeniem mqtt",
         "uk": "похибка в разі агрегаційної помилки з підключенням mqtt",
         "zh-cn": "与 mqtt 连接的聚合错误时处理错误"
-      },
-      "1.20.52": {
-        "en": "bugfix show ToIob always in device Manager\ncorrection of wording in downlink Profil Vicki\nadd role button.mode.startMotorcalibration",
-        "de": "bugfix show ToIob immer im Gerätemanager\nkorrektur der Formulierung im Downlink Profil Vicki\nrollentaste hinzufügen.mode.startMotorcalibration",
-        "ru": "bugfix показывает ToIob в диспетчере устройств\nисправление формулировки в downlink Profil Vicki\nдобавить роль кнопка.mode.startMotorcalibibration",
-        "pt": "bugfix mostra o ToIob sempre no Gerenciador de dispositivos\ncorreção de redação no perfil de downlink Vicki\nadicionar função button.mode.startMotorcalibration",
-        "nl": "bugfix ToIob altijd tonen in apparaatbeheer\ncorrectie van de formulering in downlink Profil Vicki\nrolknop.mode.startMotorkalibratie toevoegen",
-        "fr": "bugfix afficher toujours ToIob dans le gestionnaire de périphériques\ncorrection du libellé dans le profil Vicki\najouter le bouton de rôle.mode.startMotorcalibration",
-        "it": "bugfix mostra ToIob sempre in dispositivo Manager\ncorrezione delle parole in downlink Profil Vicki\naggiungere pulsante ruolo.mode.startMotorcalibration",
-        "es": "bugfix show ToIob siempre en el administrador del dispositivo\ncorrección de la redacción en downlink Profil Vicki\nañadir botón de rol.mode.startMotorcalibration",
-        "pl": "bugfix show Tolob zawsze w urządzeniu Manager\nkorekta brzmienia w dolnym linku Profil Vicki\ndodaj rolę button.mode.startMotorkalibration",
-        "uk": "виправлення помилок ToIob завжди в диспетчері пристроїв\nкорекція слова в внизу посилання Profil Vicki\nadd роль кнопка.mode.startMotorcalibration",
-        "zh-cn": "错误修正显示 ToIob 总是在设备管理器中\n下行线路中措辞的校正\n添加角色按钮. mode. start Motor校正"
       }
     },
     "titleLang": {
