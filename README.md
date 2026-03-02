@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.20.57 (2026-03-02)
 * (BenAhrdt) bugfix query for null
 
 ### 1.20.56 (2026-03-02)

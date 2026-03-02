@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.56",
+    "version": "1.20.57",
     "news": {
+      "1.20.57": {
+        "en": "bugfix query for null",
+        "de": "bugfix-abfrage für null",
+        "ru": "запрос bugfix для null",
+        "pt": "pesquisa de 'bugfix' para null",
+        "nl": "bugfix query for null",
+        "fr": "bugfix requête pour null",
+        "it": "bugfix query per null",
+        "es": "búsqueda de bugfix para null",
+        "pl": "bugfix query for null",
+        "uk": "виправлення помилок для null",
+        "zh-cn": "无效的错误修正查询"
+      },
       "1.20.56": {
         "en": "implement deviceId Handling from bridge",
         "de": "werkzeugmaschinen Id Handling von Brücke",
@@ -80,19 +93,6 @@
         "pl": "w tym więcej entytów w funkcjonalności Tołob (światło, klimat, hummidyfikator, zamek, okładka)",
         "uk": "в тому числі більш схильні до функції ToIob (світло, клімат, зволожувач, замок, кришка)",
         "zh-cn": "包括ToIob功能中的更多实体(光、气候、放大器、锁、覆盖)"
-      },
-      "1.20.50": {
-        "en": "implements light to ToIoB function",
-        "de": "implementiert Licht zur ToIoB-Funktion",
-        "ru": "функция Light to ToIoB",
-        "pt": "implementa luz para a função ToIoB",
-        "nl": "implementeert licht naar ToIoB functie",
-        "fr": "implémente la lumière à la fonction ToIoB",
-        "it": "implementa la luce alla funzione ToIoB",
-        "es": "implementa luz a la función ToIoB",
-        "pl": "implementuje światło do funkcji ToIoB",
-        "uk": "реалізує світло для функції ToIoB",
-        "zh-cn": "执行光线到 ToIOB 函数"
       }
     },
     "titleLang": {
