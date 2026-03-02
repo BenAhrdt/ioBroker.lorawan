@@ -4,15 +4,15 @@
     "version": "1.21.1",
     "news": {
       "1.21.1": {
-        "en": "brind possibility for editing base ip in devce Manager",
-        "de": "brind Möglichkeit zum Bearbeiten von Basis ip in devce Manager",
+        "en": "bring possibility for editing base ip in devce Manager",
+        "de": "bring Möglichkeit zum Bearbeiten von Basis ip in devce Manager",
         "ru": "возможность редактирования base ip в devce Manager",
         "pt": "possibilidade de borda para editar base ip em devce Manager",
-        "nl": "brind mogelijkheid voor het bewerken van base ip in devce Manager",
+        "nl": "bring mogelijkheid voor het bewerken van base ip in devce Manager",
         "fr": "possibilité de montage de base ip dans devce Manager",
         "it": "possibilità di editing base ip in devce Manager",
-        "es": "brind posibilidad de edición de base ip en devce Manager",
-        "pl": "brind możliwość edycji bazy ip w Devce Manager",
+        "es": "bring posibilidad de edición de base ip en devce Manager",
+        "pl": "bring możliwość edycji bazy ip w Devce Manager",
         "uk": "можливість редагування бази ip в devce Manager",
         "zh-cn": "在 devce 管理器中编辑基础 ip 的可能性"
       },
