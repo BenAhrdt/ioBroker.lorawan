@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.55",
+    "version": "1.20.56",
     "news": {
+      "1.20.56": {
+        "en": "implement deviceId Handling from bridge",
+        "de": "werkzeugmaschinen Id Handling von Brücke",
+        "ru": "реализовать устройство Обработка с моста",
+        "pt": "dispositivo de implementação Id Manuseamento da ponte",
+        "nl": "implementeer apparaat Id Handling vanaf brug",
+        "fr": "dispositif de mise en œuvre Id Manipulation depuis le pont",
+        "it": "implementare il dispositivo Id Handling da ponte",
+        "es": "dispositivo Id Handling desde puente",
+        "pl": "urządzenie implementacyjne Id Obsługa z mostu",
+        "uk": "реалізація пристрою Id Handling від міст",
+        "zh-cn": "执行设备 从桥上处理"
+      },
       "1.20.55": {
         "en": "catch publishing value (null) and log warning for this id",
         "de": "fänge-veröffentlichungswert (null) und log-warnung für diese id",
@@ -80,19 +93,6 @@
         "pl": "implementuje światło do funkcji ToIoB",
         "uk": "реалізує світло для функції ToIoB",
         "zh-cn": "执行光线到 ToIOB 函数"
-      },
-      "1.20.49": {
-        "en": "improve handling of remove Function fpr Bridge",
-        "de": "verbesserung der Handhabung von Entfernen Function fpr Bridge",
-        "ru": "улучшение обработки удаления Функция fpr Bridge",
-        "pt": "melhorar o manuseio de remover Função fpr Bridge",
-        "nl": "verbeteren van de behandeling van verwijderen functie fpr Bridge",
-        "fr": "améliorer la manipulation de supprimer Fonction fpr Bridge",
-        "it": "migliorare la gestione di rimuovere Funzione fpr Bridge",
-        "es": "mejorar el manejo de la eliminación Fun fpr Bridge",
-        "pl": "poprawić obsługę usuwania funkcji Fpr Bridge",
-        "uk": "поліпшення обробки видалення Функція Fpr Bridge",
-        "zh-cn": "改进对删除函数 fpr 桥的处理"
       }
     },
     "titleLang": {
