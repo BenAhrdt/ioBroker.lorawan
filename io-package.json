@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.1",
+    "version": "1.21.2",
     "news": {
+      "1.21.2": {
+        "en": "update icon for device link",
+        "de": "update-symbol für gerätelink",
+        "ru": "значок обновления для ссылки на устройство",
+        "pt": "atualizar ícone para o link do dispositivo",
+        "nl": "pictogram bijwerken voor apparaatkoppeling",
+        "fr": "icône de mise à jour pour le lien de périphérique",
+        "it": "icona di aggiornamento per il collegamento del dispositivo",
+        "es": "icono de actualización para el enlace del dispositivo",
+        "pl": "ikona aktualizacji dla łącza urządzenia",
+        "uk": "значок оновлення для посилання на пристрій",
+        "zh-cn": "设备链接的更新图标"
+      },
       "1.21.1": {
         "en": "bring possibility for editing base ip in devce Manager",
         "de": "bring Möglichkeit zum Bearbeiten von Basis ip in devce Manager",
@@ -80,19 +93,6 @@
         "pl": "aktualizacji zależności\nprzycisk bugfix naciśnij",
         "uk": "оновлення залежності\nкнопка виправлення помилок",
         "zh-cn": "更新依赖关系\n错误修正按钮按"
-      },
-      "1.20.53": {
-        "en": "errorhandling in case of aggregat error with mqtt connection",
-        "de": "fehlerbehebung bei aggregatfehlern mit mqtt-verbindung",
-        "ru": "обработка ошибок в случае ошибки агрегата с подключением mqtt",
-        "pt": "tratamento de erros em caso de erro agregado com ligação mqtt",
-        "nl": "foutafhandeling bij aggregat-fout met mqtt-verbinding",
-        "fr": "gestion des erreurs en cas d'erreur agrégat avec connexion mqtt",
-        "it": "errore di gestione in caso di errore aggregato con connessione mqtt",
-        "es": "errorhandling en caso de error aggregat con conexión mqtt",
-        "pl": "błąd obsługi w przypadku błędu agregatu z połączeniem mqtt",
-        "uk": "похибка в разі агрегаційної помилки з підключенням mqtt",
-        "zh-cn": "与 mqtt 连接的聚合错误时处理错误"
       }
     },
     "titleLang": {

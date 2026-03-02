@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.21.2 (2026-03-02)
 * (BenAhrdt) update icon for device link
 
 ### 1.21.1 (2026-03-02)
