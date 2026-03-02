@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) implement deviceId Handling from bridge
+
 ### 1.20.55 (2026-03-02)
 * (BenAhrdt) catch publishing value (null) and log warning for this id
 
