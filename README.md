@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.20.55 (2026-03-02)
 * (BenAhrdt) catch publishing value (null) and log warning for this id
 
 ### 1.20.54 (2026-02-27)

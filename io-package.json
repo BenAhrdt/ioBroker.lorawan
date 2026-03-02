@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.20.54",
+    "version": "1.20.55",
     "news": {
+      "1.20.55": {
+        "en": "catch publishing value (null) and log warning for this id",
+        "de": "fänge-veröffentlichungswert (null) und log-warnung für diese id",
+        "ru": "уловить значение публикации (нуль) и предупреждение журнала для этого идентификатора",
+        "pt": "valor de publicação das capturas (null) e aviso de registo para este id",
+        "nl": "waarde van vangstuitgeverij (null) en logwaarschuwing voor deze id",
+        "fr": "valeur de publication de capture (null) et avertissement de log pour cet id",
+        "it": "catturare valore editoriale (null) e avviso di log per questo id",
+        "es": "valor de publicación de capturas (null) y advertencia de registro para este id",
+        "pl": "catch publishing value (null) and log warning for this id",
+        "uk": "зловживання видавництвом (нуль) та попередженням про це",
+        "zh-cn": "抓取发布值( null) 和日志警告"
+      },
       "1.20.54": {
         "en": "update dependencies\nbugfix button press",
         "de": "aktualisierung der abhängigkeiten\nbugfix knopf drücken",
@@ -80,19 +93,6 @@
         "pl": "poprawić obsługę usuwania funkcji Fpr Bridge",
         "uk": "поліпшення обробки видалення Функція Fpr Bridge",
         "zh-cn": "改进对删除函数 fpr 桥的处理"
-      },
-      "1.20.48": {
-        "en": "Faster Device / Channel search",
-        "de": "Schnellere Gerätesuche / Kanalsuche",
-        "ru": "Быстрое устройство / Поиск по каналу",
-        "pt": "Pesquisa mais rápida do dispositivo / canal",
-        "nl": "Sneller Apparaat / Kanaal zoeken",
-        "fr": "Recherche de périphérique / canal plus rapide",
-        "it": "Più veloce dispositivo / ricerca canale",
-        "es": "Dispositivo más rápido / Búsqueda de canales",
-        "pl": "Szybsze wyszukiwanie urządzenia / kanału",
-        "uk": "Швидкий пристрій / Пошук каналів",
-        "zh-cn": "快速设备/ 频道搜索"
       }
     },
     "titleLang": {
