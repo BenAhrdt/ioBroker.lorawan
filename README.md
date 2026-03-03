@@ -24,6 +24,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) update the updateBridge function in objectStore
+* (BenAhrdt) improve LoraWAN and ToIob funkction (init / update)
+
 ### 1.21.3 (2026-03-02)
 * (BenAhrdt) add Link to ToIoB Devices
 
