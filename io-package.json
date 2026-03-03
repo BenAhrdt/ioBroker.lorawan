@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.3",
+    "version": "1.21.4",
     "news": {
+      "1.21.4": {
+        "en": "update the updateBridge function in objectStore\nimprove LoraWAN and ToIob funkction (init / update)",
+        "de": "aktualisierung des Updates Brückenfunktion im Objekt Store\nloraWAN und ToIob Funkction verbessern (init / update)",
+        "ru": "обновить обновление Функция моста в объекте Магазин\nулучшение функции LoraWAN и ToIob funkction (init / update)",
+        "pt": "atualizar a atualização Função de ponte no objeto Armazenar\nmelhorar a função LoraWAN e ToIob (init / update)",
+        "nl": "bijwerken Brugfunctie in object Opslaan\nloraWAN en Toiob funkction verbeteren (init / update)",
+        "fr": "mettre à jour la mise à jour Fonction passerelle dans l'objet A conserver\naméliorer LoraWAN et TOIob funkction (init / update)",
+        "it": "aggiornare l'aggiornamento Funzione di ponte in oggetto Negozio\nmigliorare LoraWAN e ToIob funkction (init / aggiornamento)",
+        "es": "actualizar la actualización Función de puente en objeto Store\nmejorar LoraWAN y ToIob funkction (init / update)",
+        "pl": "aktualizacja aktualizacji Funkcja mostka w obiekcie Przechowywać\npoprawić LoraWAN i Tolob funktion (init / update)",
+        "uk": "оновлення оновлення оновлення Функція мосту в об'єкті Магазини\nпокращити LoraWAN і ToIob функціонування (вхід / оновлення)",
+        "zh-cn": "更新更新 对象中的桥函数 存储\n改进 LoraWAN 和 ToIob funkction (init / 更新)"
+      },
       "1.21.3": {
         "en": "add Link to ToIoB Devices",
         "de": "link zu ToIoB-Geräten hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "urządzenie implementacyjne Id Obsługa z mostu",
         "uk": "реалізація пристрою Id Handling від міст",
         "zh-cn": "执行设备 从桥上处理"
-      },
-      "1.20.55": {
-        "en": "catch publishing value (null) and log warning for this id",
-        "de": "fänge-veröffentlichungswert (null) und log-warnung für diese id",
-        "ru": "уловить значение публикации (нуль) и предупреждение журнала для этого идентификатора",
-        "pt": "valor de publicação das capturas (null) e aviso de registo para este id",
-        "nl": "waarde van vangstuitgeverij (null) en logwaarschuwing voor deze id",
-        "fr": "valeur de publication de capture (null) et avertissement de log pour cet id",
-        "it": "catturare valore editoriale (null) e avviso di log per questo id",
-        "es": "valor de publicación de capturas (null) y advertencia de registro para este id",
-        "pl": "catch publishing value (null) and log warning for this id",
-        "uk": "зловживання видавництвом (нуль) та попередженням про це",
-        "zh-cn": "抓取发布值( null) 和日志警告"
       }
     },
     "titleLang": {
