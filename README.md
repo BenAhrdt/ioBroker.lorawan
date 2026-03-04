@@ -24,6 +24,10 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) change logic for TTN link and change base ip handling
+* (BenAhrdt) set more devices at default
+
 ### 1.21.5 (2026-03-04)
 * (BenAhrdt) implements link to Chirpstack / TTN
 
