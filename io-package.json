@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.5",
+    "version": "1.21.6",
     "news": {
+      "1.21.6": {
+        "en": "change logic for TTN link and change base ip handling\nset more devices at default",
+        "de": "änderungslogik für TTN-Link und Änderung der Basis-ip-Handling\nmehr geräte standardmäßig einstellen",
+        "ru": "изменение логики для TTN-ссылки и изменение базовой ip-обработки\nустановите больше устройств по умолчанию",
+        "pt": "mudar a lógica para a ligação TTN e mudar a base de manipulação ip\ndefinir mais dispositivos por omissão",
+        "nl": "change logic for TTN link and change base ip handling\nmeer apparaten standaard instellen",
+        "fr": "modifier la logique pour le lien TTN et la gestion de la base de changement ip\ndéfinir plus de périphériques par défaut",
+        "it": "cambiare logica per il collegamento TTN e cambiare la gestione di base ip\nimpostare più dispositivi di default",
+        "es": "cambiar lógica para el enlace TTN y cambiar el manejo base ip\nestablecer más dispositivos por defecto",
+        "pl": "zmiana logiki dla połączenia TTN i zmiana obsługi ip bazowej\nustawianie domyślnej liczby urządzeń",
+        "uk": "зміна логіки для TTN посилання та зміни бази ip-обробки\nвстановити більше пристроїв за замовчуванням",
+        "zh-cn": "更改 TTN 链接和更改基础 ip 处理的逻辑\n默认时设置更多设备"
+      },
       "1.21.5": {
         "en": "implements link to Chirpstack / TTN",
         "de": "führt Link zu Chirpstack / TTN",
@@ -80,19 +93,6 @@
         "pl": "update deviceManager (dm- utils) do 3.0.0\ndodaj linki do urządzeń mostowych",
         "uk": "оновлення пристроюManager (dm-utils) до 3.0.0\nдодати посилання для пристроїв міст",
         "zh-cn": "更新设备管理器( dm- utils) 到 3. 0.0\n为桥梁设备添加链接"
-      },
-      "1.20.57": {
-        "en": "bugfix query for null",
-        "de": "bugfix-abfrage für null",
-        "ru": "запрос bugfix для null",
-        "pt": "pesquisa de 'bugfix' para null",
-        "nl": "bugfix query for null",
-        "fr": "bugfix requête pour null",
-        "it": "bugfix query per null",
-        "es": "búsqueda de bugfix para null",
-        "pl": "bugfix query for null",
-        "uk": "виправлення помилок для null",
-        "zh-cn": "无效的错误修正查询"
       }
     },
     "titleLang": {
