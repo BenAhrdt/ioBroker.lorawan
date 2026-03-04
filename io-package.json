@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.6",
+    "version": "1.21.7",
     "news": {
+      "1.21.7": {
+        "en": "update logic for icons and link building",
+        "de": "aktualisierungslogik für icons und link building",
+        "ru": "логика обновления для иконок и построения ссылок",
+        "pt": "atualizar lógica para ícones e construção de links",
+        "nl": "update logica voor pictogrammen en koppelingsopbouw",
+        "fr": "mettre à jour la logique pour les icônes et la construction de liens",
+        "it": "aggiornamento logica per icone e link building",
+        "es": "actualización lógica para iconos y construcción de enlaces",
+        "pl": "aktualizacja logiki ikon i budowania linków",
+        "uk": "оновлення логіки для іконок і мереж",
+        "zh-cn": "更新图标和链接构建的逻辑"
+      },
       "1.21.6": {
         "en": "change logic for TTN link and change base ip handling\nset more devices at default",
         "de": "änderungslogik für TTN-Link und Änderung der Basis-ip-Handling\nmehr geräte standardmäßig einstellen",
@@ -80,19 +93,6 @@
         "pl": "bring możliwość edycji bazy ip w Devce Manager",
         "uk": "можливість редагування бази ip в devce Manager",
         "zh-cn": "在 devce 管理器中编辑基础 ip 的可能性"
-      },
-      "1.21.0": {
-        "en": "update deviceManager (dm-utils) to 3.0.0\nadd Links for Bridge devices",
-        "de": "update deviceManager (dm-utils) bis 3.0.0\nlinks für Bridge-Geräte hinzufügen",
-        "ru": "обновление DeviceManager (dm-utils) до 3.0.0\nдобавить ссылки для устройств Bridge",
-        "pt": "dispositivo de atualizaçãoManager (dm-utils) para 3.0.0\nadicionar links para dispositivos Bridge",
-        "nl": "deviceManager (dm-utils) updaten naar 3.0.0\nlinks voor Bridge-apparaten toevoegen",
-        "fr": "mettre à jour deviceManager (dm-utils) à 3.0.0\najouter des liens pour les périphériques Bridge",
-        "it": "aggiornamento dispositivoManager (dm-utils) a 3.0.0\naggiungere Link per dispositivi Bridge",
-        "es": "dispositivo de actualizaciónManager (dm-utils) a 3.0.0\nañadir Enlaces para dispositivos Bridge",
-        "pl": "update deviceManager (dm- utils) do 3.0.0\ndodaj linki do urządzeń mostowych",
-        "uk": "оновлення пристроюManager (dm-utils) до 3.0.0\nдодати посилання для пристроїв міст",
-        "zh-cn": "更新设备管理器( dm- utils) 到 3. 0.0\n为桥梁设备添加链接"
       }
     },
     "titleLang": {
