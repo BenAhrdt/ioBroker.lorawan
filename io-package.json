@@ -429,7 +429,11 @@
     "RefreshDiscoveryCronJob": "0 * * * *",
     "BridgeEnum": "*",
     "BridgenotificationActivation": "allNotifications, bridgeConnection, newDiscover, deviceState",
-    "BridgeDevicesToGenerate": "foreignDevices",
+    "BridgeDevicesToGenerate": [
+      "toIobDevices",
+      "foreignDevices",
+      "lorawanDevices"
+    ],
     "DeviceIdentifiers": [
       {
         "DeviceIdentifier": "usedDeviceId"
