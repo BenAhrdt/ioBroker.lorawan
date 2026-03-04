@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.7",
+    "version": "1.21.8",
     "news": {
+      "1.21.8": {
+        "en": "update icons",
+        "de": "icons aktualisieren",
+        "ru": "обновление иконок",
+        "pt": "atualizar ícones",
+        "nl": "iconen bijwerken",
+        "fr": "icônes de mise à jour",
+        "it": "icone di aggiornamento",
+        "es": "actualizar iconos",
+        "pl": "aktualizacji ikon",
+        "uk": "оновлення іконок",
+        "zh-cn": "更新图标"
+      },
       "1.21.7": {
         "en": "update logic for icons and link building",
         "de": "aktualisierungslogik für icons und link building",
@@ -80,19 +93,6 @@
         "pl": "ikona aktualizacji dla łącza urządzenia",
         "uk": "значок оновлення для посилання на пристрій",
         "zh-cn": "设备链接的更新图标"
-      },
-      "1.21.1": {
-        "en": "bring possibility for editing base ip in devce Manager",
-        "de": "bring Möglichkeit zum Bearbeiten von Basis ip in devce Manager",
-        "ru": "возможность редактирования base ip в devce Manager",
-        "pt": "possibilidade de borda para editar base ip em devce Manager",
-        "nl": "bring mogelijkheid voor het bewerken van base ip in devce Manager",
-        "fr": "possibilité de montage de base ip dans devce Manager",
-        "it": "possibilità di editing base ip in devce Manager",
-        "es": "bring posibilidad de edición de base ip en devce Manager",
-        "pl": "bring możliwość edycji bazy ip w Devce Manager",
-        "uk": "можливість редагування бази ip в devce Manager",
-        "zh-cn": "在 devce 管理器中编辑基础 ip 的可能性"
       }
     },
     "titleLang": {
