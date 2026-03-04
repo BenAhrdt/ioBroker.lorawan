@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.4",
+    "version": "1.21.5",
     "news": {
+      "1.21.5": {
+        "en": "implements link to Chirpstack / TTN",
+        "de": "führt Link zu Chirpstack / TTN",
+        "ru": "ссылка на Chirpstack / TTN",
+        "pt": "implementa link para Chirpstack / TTN",
+        "nl": "implementeert link naar Chirpstack / TTN",
+        "fr": "implements link to Chirpstack / TTN",
+        "it": "implementa il collegamento a Chirpstack / TTN",
+        "es": "implements link to Chirpstack / TTN",
+        "pl": "implementation link do Chirpstock / TTN",
+        "uk": "виконує посилання на Chirpstack / TTN",
+        "zh-cn": "执行与 Chirpstack / TTN 的链接"
+      },
       "1.21.4": {
         "en": "update the updateBridge function in objectStore\nimprove LoraWAN and ToIob funkction (init / update)",
         "de": "aktualisierung des Updates Brückenfunktion im Objekt Store\nloraWAN und ToIob Funkction verbessern (init / update)",
@@ -80,19 +93,6 @@
         "pl": "bugfix query for null",
         "uk": "виправлення помилок для null",
         "zh-cn": "无效的错误修正查询"
-      },
-      "1.20.56": {
-        "en": "implement deviceId Handling from bridge",
-        "de": "werkzeugmaschinen Id Handling von Brücke",
-        "ru": "реализовать устройство Обработка с моста",
-        "pt": "dispositivo de implementação Id Manuseamento da ponte",
-        "nl": "implementeer apparaat Id Handling vanaf brug",
-        "fr": "dispositif de mise en œuvre Id Manipulation depuis le pont",
-        "it": "implementare il dispositivo Id Handling da ponte",
-        "es": "dispositivo Id Handling desde puente",
-        "pl": "urządzenie implementacyjne Id Obsługa z mostu",
-        "uk": "реалізація пристрою Id Handling від міст",
-        "zh-cn": "执行设备 从桥上处理"
       }
     },
     "titleLang": {

@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.21.5 (2026-03-04)
 * (BenAhrdt) implements link to Chirpstack / TTN
 
 ### 1.21.4 (2026-03-03)
