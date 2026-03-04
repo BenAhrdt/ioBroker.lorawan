@@ -1027,6 +1027,10 @@ class Lorawan extends utils.Adapter {
                         } else if (id.endsWith('bridge.debug.logtypes')) {
                             await this.setState(id, state.val, true);
                             this.logtypes = JSON.parse(await this.setDefIfEmptyAndReturnVal(id));
+                        } else if (id.startsWith(`${this.namespace}.info.`)) {
+                            if (id.endsWith('lnsBaseIp')) {
+                                await this.setState(id, state.val, true);
+                            }
                         }
                     } else {
                         // Query for 0_userdata or alias => states also publish with ack = false

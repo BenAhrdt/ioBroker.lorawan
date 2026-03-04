@@ -298,5 +298,9 @@
 	"info devices": "info devices",
 	"toIob devices": "ToIob devices",
 	"BridgeDevicesToGenerate": "shown devices in device manager",
-	"BridgeDevicesToGenerateTooltip": "select the desired devicetypes, you like to see in device manager"
+	"BridgeDevicesToGenerateTooltip": "select the desired devicetypes, you like to see in device manager",
+	"Base Ip for LoraWAN devices": "Base Ip for LoraWAN devices",
+	"Set the Base Ip for LoRaWAN devices": "Set the Base Ip for LoRaWAN devices",
+	"Base Ip for Bridge devices": "Base Ip for Bridge devices",
+	"Set the Base Ip for bride devices": "Set the Base Ip for bride devices"
 }
