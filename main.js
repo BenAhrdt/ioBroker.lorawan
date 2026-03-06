@@ -96,7 +96,6 @@ class Lorawan extends utils.Adapter {
 
             // Generate Object Store
             this.objectStore = new objectStoreClass(this);
-
             await this.objectStore.generateStoreObjects();
 
             // read system translation out of i18n translation
@@ -1020,7 +1019,9 @@ class Lorawan extends utils.Adapter {
                         } else if (id.startsWith(`${this.namespace}.bridge.devices.`)) {
                             if (!id.endsWith('discoveredEntities')) {
                                 if (!id.endsWith('bridgeBaseIp')) {
-                                    await this.bridge?.bridgeDeviceHandler.sendData(id, state);
+                                    if (!id.endsWith('receivedDeviceInfos')) {
+                                        await this.bridge?.bridgeDeviceHandler.sendData(id, state);
+                                    }
                                 }
                                 await this.setState(id, state.val, true);
                             }
