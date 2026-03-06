@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.8",
+    "version": "1.21.9",
     "news": {
+      "1.21.9": {
+        "en": "persistant Bride DeviceIds",
+        "de": "persistenz Bridegerät Iden",
+        "ru": "упорный Устройство Bride Ids",
+        "pt": "persistente Dispositivo de noiva Ids",
+        "nl": "persistent Bruidsapparaat Ids",
+        "fr": "persistante Dispositif de mariée Ids",
+        "it": "persistente Dispositivo Bride Ids",
+        "es": "persistencia Bride Device Ids",
+        "pl": "persistant Urządzenie panny młodej Ids",
+        "uk": "персистент Пристрої нареченої Іди",
+        "zh-cn": "坚持 新娘设备 编号"
+      },
       "1.21.8": {
         "en": "update icons",
         "de": "icons aktualisieren",
@@ -80,19 +93,6 @@
         "pl": "dodaj link do urządzeń ToIoB",
         "uk": "додати посилання на пристрої ToIoB",
         "zh-cn": "添加链接到 ToIOB 设备"
-      },
-      "1.21.2": {
-        "en": "update icon for device link",
-        "de": "update-symbol für gerätelink",
-        "ru": "значок обновления для ссылки на устройство",
-        "pt": "atualizar ícone para o link do dispositivo",
-        "nl": "pictogram bijwerken voor apparaatkoppeling",
-        "fr": "icône de mise à jour pour le lien de périphérique",
-        "it": "icona di aggiornamento per il collegamento del dispositivo",
-        "es": "icono de actualización para el enlace del dispositivo",
-        "pl": "ikona aktualizacji dla łącza urządzenia",
-        "uk": "значок оновлення для посилання на пристрій",
-        "zh-cn": "设备链接的更新图标"
       }
     },
     "titleLang": {
