@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.9",
+    "version": "1.21.10",
     "news": {
+      "1.21.10": {
+        "en": "change Testing and change standard value of lorawan origin to off",
+        "de": "ändern Prüfen und ändern Sie den Standardwert von lorawan Ursprungs",
+        "ru": "изменение Тестирования и изменение стандартного значения происхождения лораванов",
+        "pt": "alteração Teste e alteração do valor padrão da origem lorawan para desligado",
+        "nl": "verandering Testen en verandering van standaardwaarde van oorsprong Lorawan naar uit",
+        "fr": "changement Test et changement de la valeur standard de l'origine du lorawan",
+        "it": "prova e modifica il valore standard di origine lorawan per disattivare",
+        "es": "cambio Pruebas y cambio de valor estándar de origen de lorawan",
+        "pl": "zmiana Badanie i zmiana standardowej wartości pochodzenia Lorawan na off",
+        "uk": "зміна Тестування та зміни стандартного значення тканого походження для вимкнення",
+        "zh-cn": "将 Lorawan 源代码的标准值测试和更改为关闭"
+      },
       "1.21.9": {
         "en": "persistant Bride DeviceIds",
         "de": "persistenz Bridegerät Iden",
@@ -80,19 +93,6 @@
         "pl": "aktualizacja aktualizacji Funkcja mostka w obiekcie Przechowywać\npoprawić LoraWAN i Tolob funktion (init / update)",
         "uk": "оновлення оновлення оновлення Функція мосту в об'єкті Магазини\nпокращити LoraWAN і ToIob функціонування (вхід / оновлення)",
         "zh-cn": "更新更新 对象中的桥函数 存储\n改进 LoraWAN 和 ToIob funkction (init / 更新)"
-      },
-      "1.21.3": {
-        "en": "add Link to ToIoB Devices",
-        "de": "link zu ToIoB-Geräten hinzufügen",
-        "ru": "добавить ссылку на устройства ToIoB",
-        "pt": "adicionar link para dispositivos ToIoB",
-        "nl": "koppeling toevoegen aan ToIoB-apparaten",
-        "fr": "ajouter un lien aux périphériques ToIoB",
-        "it": "aggiungere Link a dispositivi ToIoB",
-        "es": "añadir Enlace a dispositivos ToIoB",
-        "pl": "dodaj link do urządzeń ToIoB",
-        "uk": "додати посилання на пристрої ToIoB",
-        "zh-cn": "添加链接到 ToIOB 设备"
       }
     },
     "titleLang": {
