@@ -164,7 +164,7 @@
 						{"label":"TTN","value":"ttn"},
 						{"label":"Chirpstack","value":"chirpstack"}
 					],
-					"default": "ttn",
+					"default": "off",
 					"xs": 12,
 					"sm": 2,
 					"md": 2,

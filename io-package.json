@@ -412,7 +412,7 @@
     "username": "",
     "password": "",
     "ssl": true,
-    "origin": "ttn",
+    "origin": "off",
     "notificationActivation": "notification",
     "downlinkConfig": [],
     "customDecodedJsonActive": false,

@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) change Testing and change standard value of lorawan origin to off
+
 ### 1.21.9 (2026-03-06)
 * (BenAhrdt) persistant Bride DeviceIds
 
