@@ -24,6 +24,11 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) improve nameing of actual values
+* (BenAhrdt) imlpement digits to actual values
+
+
 ### 1.21.10 (2026-03-12)
 * (BenAhrdt) change Testing and change standard value of lorawan origin to off
 
