@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.10",
+    "version": "1.21.11",
     "news": {
+      "1.21.11": {
+        "en": "improve nameing of actual values\nimlpement digits to actual values",
+        "de": "die bezeichnung der tatsächlichen werte verbessern\nimlpement-zeichen zu aktuellen werten",
+        "ru": "улучшение наименования фактических значений\nимплементация цифр в фактические значения",
+        "pt": "melhorar a designação dos valores reais\nalgarismos de impulso aos valores reais",
+        "nl": "verbetering van de vermelding van de werkelijke waarden\nimpement cijfers naar werkelijke waarden",
+        "fr": "améliorer la désignation des valeurs réelles\nchiffres de mise en œuvre aux valeurs réelles",
+        "it": "migliorare il nome dei valori effettivi\ncifre imlpement ai valori effettivi",
+        "es": "mejorar el nombre de valores reales\ndígitos de la ayuda a valores reales",
+        "pl": "poprawić nazewnictwo rzeczywistych wartości\ncyfry imlpementu do wartości rzeczywistych",
+        "uk": "поліпшення назв фактичних значень\nвизначення цифр до фактичних значень",
+        "zh-cn": "改进实际值的名称\n实际值的位数"
+      },
       "1.21.10": {
         "en": "change Testing and change standard value of lorawan origin to off",
         "de": "ändern Prüfen und ändern Sie den Standardwert von lorawan Ursprungs",
@@ -80,19 +93,6 @@
         "pl": "implementation link do Chirpstock / TTN",
         "uk": "виконує посилання на Chirpstack / TTN",
         "zh-cn": "执行与 Chirpstack / TTN 的链接"
-      },
-      "1.21.4": {
-        "en": "update the updateBridge function in objectStore\nimprove LoraWAN and ToIob funkction (init / update)",
-        "de": "aktualisierung des Updates Brückenfunktion im Objekt Store\nloraWAN und ToIob Funkction verbessern (init / update)",
-        "ru": "обновить обновление Функция моста в объекте Магазин\nулучшение функции LoraWAN и ToIob funkction (init / update)",
-        "pt": "atualizar a atualização Função de ponte no objeto Armazenar\nmelhorar a função LoraWAN e ToIob (init / update)",
-        "nl": "bijwerken Brugfunctie in object Opslaan\nloraWAN en Toiob funkction verbeteren (init / update)",
-        "fr": "mettre à jour la mise à jour Fonction passerelle dans l'objet A conserver\naméliorer LoraWAN et TOIob funkction (init / update)",
-        "it": "aggiornare l'aggiornamento Funzione di ponte in oggetto Negozio\nmigliorare LoraWAN e ToIob funkction (init / aggiornamento)",
-        "es": "actualizar la actualización Función de puente en objeto Store\nmejorar LoraWAN y ToIob funkction (init / update)",
-        "pl": "aktualizacja aktualizacji Funkcja mostka w obiekcie Przechowywać\npoprawić LoraWAN i Tolob funktion (init / update)",
-        "uk": "оновлення оновлення оновлення Функція мосту в об'єкті Магазини\nпокращити LoraWAN і ToIob функціонування (вхід / оновлення)",
-        "zh-cn": "更新更新 对象中的桥函数 存储\n改进 LoraWAN 和 ToIob funkction (init / 更新)"
       }
     },
     "titleLang": {
