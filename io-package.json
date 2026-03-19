@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.11",
+    "version": "1.21.12",
     "news": {
+      "1.21.12": {
+        "en": "bugfix display devices in case of bridge is not selected",
+        "de": "bugfix display-geräte bei bridge nicht ausgewählt",
+        "ru": "устройства отображения bugfix в случае невыбора моста",
+        "pt": "dispositivos de exibição de bugfix no caso de ponte não estar selecionada",
+        "nl": "bugfix display apparaten in geval van brug is niet geselecteerd",
+        "fr": "les périphériques d'affichage bugfix en cas de pont n'est pas sélectionné",
+        "it": "dispositivi di visualizzazione bugfix in caso di ponte non è selezionato",
+        "es": "dispositivos de visualización de bugfix en caso de puente no se selecciona",
+        "pl": "urządzenia wyświetlające bugfix w przypadku mostka nie jest wybrany",
+        "uk": "пристрій для відображення помилок при мості не вибрано",
+        "zh-cn": "未选择桥桥时的错误修正显示设备"
+      },
       "1.21.11": {
         "en": "improve nameing of actual values\nimlpement digits to actual values",
         "de": "die bezeichnung der tatsächlichen werte verbessern\nimlpement-zeichen zu aktuellen werten",
@@ -80,19 +93,6 @@
         "pl": "zmiana logiki dla połączenia TTN i zmiana obsługi ip bazowej\nustawianie domyślnej liczby urządzeń",
         "uk": "зміна логіки для TTN посилання та зміни бази ip-обробки\nвстановити більше пристроїв за замовчуванням",
         "zh-cn": "更改 TTN 链接和更改基础 ip 处理的逻辑\n默认时设置更多设备"
-      },
-      "1.21.5": {
-        "en": "implements link to Chirpstack / TTN",
-        "de": "führt Link zu Chirpstack / TTN",
-        "ru": "ссылка на Chirpstack / TTN",
-        "pt": "implementa link para Chirpstack / TTN",
-        "nl": "implementeert link naar Chirpstack / TTN",
-        "fr": "implements link to Chirpstack / TTN",
-        "it": "implementa il collegamento a Chirpstack / TTN",
-        "es": "implements link to Chirpstack / TTN",
-        "pl": "implementation link do Chirpstock / TTN",
-        "uk": "виконує посилання на Chirpstack / TTN",
-        "zh-cn": "执行与 Chirpstack / TTN 的链接"
       }
     },
     "titleLang": {
