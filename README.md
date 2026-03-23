@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.21.13 (2026-03-23)
 * (BenAhrdt) improve displaying devEUI in actual Values
 
 ### 1.21.12 (2026-03-19)
