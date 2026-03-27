@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.13",
+    "version": "1.21.14",
     "news": {
+      "1.21.14": {
+        "en": "change userdata and alias query for bridge",
+        "de": "benutzerdaten und alias-abfrage für brücke ändern",
+        "ru": "изменить пользовательские данные и псевдоним запрос для моста",
+        "pt": "alterar a consulta de dados de usuário e alias para bridge",
+        "nl": "userdata en alias query voor bridge wijzigen",
+        "fr": "modifier les données utilisateur et alias requête pour le pont",
+        "it": "cambiare userdata e alias query per bridge",
+        "es": "cambiar userdata y alias consulta para puente",
+        "pl": "zmienić dane użytkownika i alias query dla mostka",
+        "uk": "змінити дані користувача та псевдонім запиту для міст",
+        "zh-cn": "更改桥的用户数据和别名查询"
+      },
       "1.21.13": {
         "en": "improve displaying devEUI in actual Values",
         "de": "verbesserung der Anzeige von devEUI in tatsächlichen Werten",
@@ -80,19 +93,6 @@
         "pl": "aktualizacji ikon",
         "uk": "оновлення іконок",
         "zh-cn": "更新图标"
-      },
-      "1.21.7": {
-        "en": "update logic for icons and link building",
-        "de": "aktualisierungslogik für icons und link building",
-        "ru": "логика обновления для иконок и построения ссылок",
-        "pt": "atualizar lógica para ícones e construção de links",
-        "nl": "update logica voor pictogrammen en koppelingsopbouw",
-        "fr": "mettre à jour la logique pour les icônes et la construction de liens",
-        "it": "aggiornamento logica per icone e link building",
-        "es": "actualización lógica para iconos y construcción de enlaces",
-        "pl": "aktualizacja logiki ikon i budowania linków",
-        "uk": "оновлення логіки для іконок і мереж",
-        "zh-cn": "更新图标和链接构建的逻辑"
       }
     },
     "titleLang": {
