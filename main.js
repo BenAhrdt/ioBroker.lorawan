@@ -631,7 +631,8 @@ class Lorawan extends utils.Adapter {
                         await this.objectStore?.updateToIobObject(id, { payload: { state: state } });
                     }
                 } else {
-                    if (this.bridge && (!id.startsWith(`0_userdata.`) || !id.startsWith(`alias.`) || state.ack)) {
+                    // Change userdata query and alias query 27.03.2026
+                    if (this.bridge && (id.startsWith(`0_userdata.`) || id.startsWith(`alias.`) || state.ack)) {
                         if (this.objectStore?.bridge.currentIds[id]) {
                             this.objectStore.updateBridgeObject(id, { payload: { state: state } });
                         }
