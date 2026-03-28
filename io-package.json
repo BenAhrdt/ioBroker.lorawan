@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.14",
+    "version": "1.21.15",
     "news": {
+      "1.21.15": {
+        "en": "implement TTI tenant to download to TTI",
+        "de": "tTI-Tenant zum Download in TTI implementieren",
+        "ru": "реализация TTI Арендатор скачать в TTI",
+        "pt": "implementar o inquilino de TTI para transferir para TTI",
+        "nl": "implementeren TTI huurder te downloaden naar TTI",
+        "fr": "mettre en œuvre TTI locataire à télécharger à TTI",
+        "it": "implementare TTI inquilino da scaricare a TTI",
+        "es": "implementar TTI arrendatario para descargar en TTI",
+        "pl": "wdrożyć TTI najemca do pobrania do TTI",
+        "uk": "впровадження TTI оренда для TTI",
+        "zh-cn": "执行 TTI 租户下载到 TTI"
+      },
       "1.21.14": {
         "en": "change userdata and alias query for bridge",
         "de": "benutzerdaten und alias-abfrage für brücke ändern",
@@ -80,19 +93,6 @@
         "pl": "persistant Urządzenie panny młodej Ids",
         "uk": "персистент Пристрої нареченої Іди",
         "zh-cn": "坚持 新娘设备 编号"
-      },
-      "1.21.8": {
-        "en": "update icons",
-        "de": "icons aktualisieren",
-        "ru": "обновление иконок",
-        "pt": "atualizar ícones",
-        "nl": "iconen bijwerken",
-        "fr": "icônes de mise à jour",
-        "it": "icone di aggiornamento",
-        "es": "actualizar iconos",
-        "pl": "aktualizacji ikon",
-        "uk": "оновлення іконок",
-        "zh-cn": "更新图标"
       }
     },
     "titleLang": {
