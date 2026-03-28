@@ -384,7 +384,7 @@ class Lorawan extends utils.Adapter {
         };*/
 
         // Chipstack
-        const topic = 'application/bbea74d6-1fc5-4238-af20-d2aecdbb4f8e/device/70b3d52dd301b3cc/event/up';
+        /*const topic = 'application/bbea74d6-1fc5-4238-af20-d2aecdbb4f8e/device/70b3d52dd301b3cc/event/up';
         const message = {
             deduplicationId: '1d94e6d8-25cc-4099-ab45-4a7f7faa1634',
             time: '2025-05-15T13:22:08.891648+00:00',
@@ -449,6 +449,74 @@ class Lorawan extends utils.Adapter {
                 modulation: { lora: { bandwidth: 125000, spreadingFactor: 7, codeRate: 'CR_4_5' } },
             },
             regionConfigId: 'eu868',
+        };*/
+
+        // TTI
+        const topic = 'v3/1-2024-05@gisa/devices/eui-647fda0000009f7c/up';
+        const message = {
+            end_device_ids: {
+                device_id: 'eui-647fda0000009f7c',
+                application_ids: { application_id: '1-2024-05' },
+                dev_eui: '647FDA0000009F7C',
+                join_eui: '647FDA8010000100',
+                dev_addr: '27FE773A',
+            },
+            correlation_ids: ['pba:uplink:01KMSRSP6R5T5PZJQ04MSEXKY1'],
+            received_at: '2026-03-28T08:26:02.028458338Z',
+            uplink_message: {
+                session_key_id: 'AZ0gPNNV66dqus+7rsoxCg==',
+                f_port: 10,
+                f_cnt: 147,
+                frm_payload: 'A2cAhQRogAD/ATg=',
+                decoded_payload: { ambient_temperature: 13.3, battery_voltage: 3.12, relative_humidity: 64 },
+                normalized_payload: [{ air: { relativeHumidity: 64, temperature: 13.3 }, battery: 3.12 }],
+                rx_metadata: [
+                    {
+                        gateway_ids: { gateway_id: 'packetbroker' },
+                        packet_broker: {
+                            message_id: '01KMSRSP6R5T5PZJQ04MSEXKY1',
+                            forwarder_net_id: '000013',
+                            forwarder_tenant_id: 'ttn',
+                            forwarder_cluster_id: 'eu1.cloud.thethings.network',
+                            forwarder_gateway_eui: '58A0CBFFFE8013BC',
+                            forwarder_gateway_id: 'ttig-gc-02',
+                            home_network_net_id: '000013',
+                            home_network_tenant_id: 'gisa',
+                            home_network_cluster_id: 'eu1.cloud.thethings.industries',
+                        },
+                        time: '2026-03-28T08:26:01.625602006Z',
+                        rssi: -82,
+                        channel_rssi: -82,
+                        snr: 8.25,
+                        location: { latitude: 50.8092618783735, longitude: 12.5405844762086, altitude: 265 },
+                        uplink_token:
+                            'CmgKWEgShwdeyXTdRXcteR62S2O79M/rcaVMZsQlBf7kF15l2lar+58Gt0oXQSc0ESJwOW3e1e/Ah40/4gm4fc+pG5QoLiWzTpu0BmSr2P7O1XEilP1ZFsVjdZUSDNlTG9hNirqUSjyQnBonCgMAABMSA3R0bhobZXUxLmNsb3VkLnRoZXRoaW5ncy5uZXR3b3Jr',
+                        received_at: '2026-03-28T08:26:01.813256353Z',
+                    },
+                ],
+                settings: {
+                    data_rate: { lora: { bandwidth: 125000, spreading_factor: 7, coding_rate: '4/5' } },
+                    frequency: '867900000',
+                },
+                received_at: '2026-03-28T08:26:01.821949208Z',
+                consumed_airtime: '0.061696s',
+                version_ids: {
+                    brand_id: 'tektelic',
+                    model_id: 't00048xx-smart-room-pir',
+                    hardware_version: 'D',
+                    firmware_version: 'D',
+                    band_id: 'EU_863_870',
+                },
+                network_ids: {
+                    net_id: '000013',
+                    ns_id: 'EC656E0000101A0E',
+                    tenant_id: 'gisa',
+                    cluster_id: 'eu1',
+                    cluster_address: 'eu1.cloud.thethings.industries',
+                    tenant_address: 'gisa.eu1.cloud.thethings.industries',
+                },
+                last_battery_percentage: { f_cnt: 108, value: 100, received_at: '2026-03-27T16:33:18.858398164Z' },
+            },
         };
 
         // const topic = "application/d63c10b6-9263-4ab3-9299-4308fa19a2ad/device/a84041f621857cd2/command/down";

@@ -161,7 +161,7 @@
 					"tooltip": "originTooltip",
 					"options": [
 						{"label":"LorawanOff","value":"off"},
-						{"label":"TTN","value":"ttn"},
+						{"label":"TTN / TTI","value":"ttn"},
 						{"label":"Chirpstack","value":"chirpstack"}
 					],
 					"default": "off",
