@@ -2,6 +2,7 @@
 
 const mqtt = require('mqtt');
 const crypto = require('node:crypto');
+const lodash = require('lodash');
 
 /*
  * Created with @iobroker/create-adapter v2.6.0
@@ -206,64 +207,48 @@ class Lorawan extends utils.Adapter {
     }
 
     async generateState() {
-        const cardRoleObject = {
+        let cardRoleObject = {};
+        cardRoleObject = {
             lorawan: {
                 'button.mode.startMotorcalibration': [{ subfolder: 'downlink.control', card: { control: 'button' } }],
                 'button.mode.card': [{ subfolder: 'downlink.control', card: { control: 'button' } }],
 
-                'value.power.active': [
-                    {
-                        subfolder: 'uplink.decoded',
-                        card: { control: 'text', digits: 0 },
-                    },
-                ],
-                'value.power.consumption': [
-                    {
-                        subfolder: 'uplink.decoded',
-                        card: { control: 'text', digits: 0 },
-                    },
-                ],
+                'value.brightness': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
 
-                switch: [
-                    {
-                        subfolder: 'uplink.decoded',
-                        card: {
-                            control: 'switch',
-                        },
-                    },
-                ],
-                'switch.light': [
-                    {
-                        subfolder: 'uplink.decoded',
-                        card: {
-                            control: 'switch',
-                            preLabel: '💡 ',
-                        },
-                    },
-                ],
+                'value.energy': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.energy.active': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.energy.reactive': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.energy.consumed': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.energy.produced': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+
+                'value.power': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.power.active': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.power.reactive': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.power.consumed': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.power.produced': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+
+                'value.pressure': [{ subfolder: 'uplink.decoded', card: { control: 'text' } }],
+
+                'value.voltage': [{ subfolder: 'uplink.decoded', card: { control: 'text' } }],
+                'value.current': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 1 } }],
+                'value.frequency ': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 2 } }],
+
+                switch: [{ subfolder: 'uplink.decoded', card: { control: 'switch' } }],
+                'switch.light': [{ subfolder: 'uplink.decoded', card: { control: 'switch', preLabel: '💡 ' } }],
 
                 'value.temperature': [
                     {
                         subfolder: 'uplink.decoded',
-                        card: {
-                            control: 'text',
-                            preLabel: '🌡 ',
-                            label: 'Temperatur',
-                            digits: 1,
-                        },
+                        card: { control: 'text', preLabel: '🌡 ', label: 'Temperatur', digits: 1 },
                     },
                 ],
                 'value.humidity': [
                     {
                         subfolder: 'uplink.decoded',
-                        card: {
-                            control: 'text',
-                            preLabel: '💧 ',
-                            label: 'Luftfeuchtigkeit',
-                            digits: 0,
-                        },
+                        card: { control: 'text', preLabel: '💧 ', label: 'Luftfeuchtigkeit', digits: 0 },
                     },
                 ],
+
                 'sensor.window': [
                     {
                         subfolder: 'uplink.decoded',
@@ -300,14 +285,11 @@ class Lorawan extends utils.Adapter {
                         },
                     },
                 ],
+
                 'value.valve': [
                     {
                         subfolder: 'uplink.decoded',
-                        card: {
-                            control: 'text',
-                            label: 'Ventilöffnung',
-                            possibleUnit: '%',
-                        },
+                        card: { control: 'text', label: 'Ventilöffnung', possibleUnit: '%' },
                     },
                 ],
             },
@@ -316,45 +298,34 @@ class Lorawan extends utils.Adapter {
                 'button.mode.startMotorcalibration': [{ card: { control: 'button' } }],
                 'button.mode.card': [{ card: { control: 'button' } }],
 
+                'value.brightness': [{ card: { control: 'text', digits: 0 } }],
+
+                'value.energy': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.active': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.reactive': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.consumed': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.produced': [{ card: { control: 'text', digits: 0 } }],
+
+                'value.power': [{ card: { control: 'text', digits: 0 } }],
                 'value.power.active': [{ card: { control: 'text', digits: 0 } }],
-                'value.power.consumption': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.reactive': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.consumed': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.produced': [{ card: { control: 'text', digits: 0 } }],
 
-                switch: [
-                    {
-                        card: {
-                            control: 'switch',
-                        },
-                    },
-                ],
-                'switch.light': [
-                    {
-                        card: {
-                            control: 'switch',
-                            preLabel: '💡 ',
-                        },
-                    },
-                ],
+                'value.pressure': [{ card: { control: 'text' } }],
 
-                'value.temperature': [
-                    {
-                        card: {
-                            control: 'text',
-                            preLabel: '🌡 ',
-                            label: 'Temperatur',
-                            digits: 1,
-                        },
-                    },
-                ],
+                'value.volatge': [{ card: { control: 'text' } }],
+                'value.current': [{ card: { control: 'text', digits: 1 } }],
+                'value.frequency ': [{ card: { control: 'text', digits: 2 } }],
+
+                switch: [{ card: { control: 'switch' } }],
+                'switch.light': [{ card: { control: 'switch', preLabel: '💡 ' } }],
+
+                'value.temperature': [{ card: { control: 'text', preLabel: '🌡 ', label: 'Temperatur', digits: 1 } }],
                 'value.humidity': [
-                    {
-                        card: {
-                            control: 'text',
-                            preLabel: '💧 ',
-                            label: 'Luftfeuchtigkeit',
-                            digits: 0,
-                        },
-                    },
+                    { card: { control: 'text', preLabel: '💧 ', label: 'Luftfeuchtigkeit', digits: 0 } },
                 ],
+
                 'sensor.window': [
                     {
                         card: {
@@ -388,60 +359,42 @@ class Lorawan extends utils.Adapter {
                         },
                     },
                 ],
-                'value.valve': [
-                    {
-                        card: {
-                            control: 'text',
-                            label: 'Ventilöffnung',
-                            possibleUnit: '%',
-                        },
-                    },
-                ],
+
+                'value.valve': [{ card: { control: 'text', label: 'Ventilöffnung', possibleUnit: '%' } }],
             },
 
             toIob: {
                 'button.mode.startMotorcalibration': [{ card: { control: 'button' } }],
                 'button.mode.card': [{ card: { control: 'button' } }],
 
+                'value.brightness': [{ card: { control: 'text', digits: 0 } }],
+
+                'value.energy': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.active': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.reactive': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.consumed': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.produced': [{ card: { control: 'text', digits: 0 } }],
+
+                'value.power': [{ card: { control: 'text', digits: 0 } }],
                 'value.power.active': [{ card: { control: 'text', digits: 0 } }],
-                'value.power.consumption': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.reactive': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.consumed': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.produced': [{ card: { control: 'text', digits: 0 } }],
 
-                switch: [
-                    {
-                        card: {
-                            control: 'switch',
-                        },
-                    },
-                ],
-                'switch.light': [
-                    {
-                        card: {
-                            control: 'switch',
-                            preLabel: '💡 ',
-                        },
-                    },
-                ],
+                'value.pressure': [{ card: { control: 'text' } }],
 
-                'value.temperature': [
-                    {
-                        card: {
-                            control: 'text',
-                            preLabel: '🌡 ',
-                            label: 'Temperatur',
-                            digits: 1,
-                        },
-                    },
-                ],
+                'value.voltage': [{ card: { control: 'text' } }],
+                'value.current': [{ card: { control: 'text', digits: 1 } }],
+                'value.frequency ': [{ card: { control: 'text', digits: 2 } }],
+
+                switch: [{ card: { control: 'switch' } }],
+                'switch.light': [{ card: { control: 'switch', preLabel: '💡 ' } }],
+
+                'value.temperature': [{ card: { control: 'text', preLabel: '🌡 ', label: 'Temperatur', digits: 1 } }],
                 'value.humidity': [
-                    {
-                        card: {
-                            control: 'text',
-                            preLabel: '💧 ',
-                            label: 'Luftfeuchtigkeit',
-                            digits: 0,
-                        },
-                    },
+                    { card: { control: 'text', preLabel: '💧 ', label: 'Luftfeuchtigkeit', digits: 0 } },
                 ],
+
                 'sensor.window': [
                     {
                         card: {
@@ -475,17 +428,15 @@ class Lorawan extends utils.Adapter {
                         },
                     },
                 ],
-                'value.valve': [
-                    {
-                        card: {
-                            control: 'text',
-                            label: 'Ventilöffnung',
-                            possibleUnit: '%',
-                        },
-                    },
-                ],
+
+                'value.valve': [{ card: { control: 'text', label: 'Ventilöffnung', possibleUnit: '%' } }],
             },
         };
+
+        cardRoleObject.lorawan = this.sortKeys(cardRoleObject.lorawan);
+        cardRoleObject.bridge = this.sortKeys(cardRoleObject.bridge);
+        cardRoleObject.toIob = this.sortKeys(cardRoleObject.toIob);
+
         await this.extendObject(`info.cardRoles`, {
             type: 'state',
             common: {
@@ -499,6 +450,10 @@ class Lorawan extends utils.Adapter {
             },
             native: {},
         });
+    }
+
+    sortKeys(obj) {
+        return Object.fromEntries(Object.entries(obj).sort(([a], [b]) => a.localeCompare(b)));
     }
 
     /**
@@ -1395,8 +1350,20 @@ class Lorawan extends utils.Adapter {
                                 this.cardRoles = JSON.parse(await this.setDefIfEmptyAndReturnVal(id));
                             } else {
                                 try {
-                                    this.cardRoles = JSON.parse(state.val);
-                                    this.setState(id, state.val, true);
+                                    if (state.val === 'merge') {
+                                        const cardRolesObject = await this.getObjectAsync(id);
+                                        this.cardRoles = lodash.merge(
+                                            JSON.parse(cardRolesObject?.common.def),
+                                            this.cardRoles,
+                                        );
+                                        this.cardRoles.lorawan = this.sortKeys(this.cardRoles.lorawan);
+                                        this.cardRoles.bridge = this.sortKeys(this.cardRoles.bridge);
+                                        this.cardRoles.toIob = this.sortKeys(this.cardRoles.toIob);
+                                        this.setState(id, JSON.stringify(this.cardRoles), true);
+                                    } else {
+                                        this.cardRoles = JSON.parse(state.val);
+                                        this.setState(id, state.val, true);
+                                    }
                                 } catch (error) {
                                     this.log.error(
                                         `JSON not parsable, please enter a correct json, or write '' for def value. Error: ${error}`,
