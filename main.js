@@ -210,128 +210,97 @@ class Lorawan extends utils.Adapter {
         let cardRoleObject = {};
         cardRoleObject = {
             lorawan: {
-                'button.mode.startMotorcalibration': [{ subfolder: 'downlink.control', card: { control: 'button' } }],
                 'button.mode.card': [{ subfolder: 'downlink.control', card: { control: 'button' } }],
+                'button.mode.startMotorcalibration': [{ subfolder: 'downlink.control', card: { control: 'button' } }],
 
-                'value.brightness': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
-
-                'value.energy': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
-                'value.energy.active': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
-                'value.energy.reactive': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
-                'value.energy.consumed': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
-                'value.energy.produced': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
-
-                'value.power': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
-                'value.power.active': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
-                'value.power.reactive': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
-                'value.power.consumed': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
-                'value.power.produced': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
-
-                'value.pressure': [{ subfolder: 'uplink.decoded', card: { control: 'text' } }],
-
-                'value.voltage': [{ subfolder: 'uplink.decoded', card: { control: 'text' } }],
-                'value.current': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 1 } }],
-                'value.frequency ': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 2 } }],
+                'sensor.contact': [
+                    {
+                        subfolder: 'uplink.decoded',
+                        card: {
+                            control: 'text',
+                            preLabel: '⚫ ',
+                            label: 'Kontakt',
+                            falseText: 'geschlossen',
+                            trueText: 'geöffnet',
+                        },
+                    },
+                ],
+                'sensor.door': [
+                    {
+                        subfolder: 'uplink.decoded',
+                        card: {
+                            control: 'text',
+                            preLabel: '🚪 ',
+                            label: 'Tür',
+                            falseText: 'geschlossen',
+                            trueText: 'geöffnet',
+                        },
+                    },
+                ],
+                'sensor.window': [
+                    {
+                        subfolder: 'uplink.decoded',
+                        card: {
+                            control: 'text',
+                            preLabel: '🪟 ',
+                            label: 'Fenster',
+                            falseText: 'geschlossen',
+                            trueText: 'geöffnet',
+                        },
+                    },
+                ],
 
                 switch: [{ subfolder: 'uplink.decoded', card: { control: 'switch' } }],
                 'switch.light': [{ subfolder: 'uplink.decoded', card: { control: 'switch', preLabel: '💡 ' } }],
 
-                'value.temperature': [
-                    {
-                        subfolder: 'uplink.decoded',
-                        card: { control: 'text', preLabel: '🌡 ', label: 'Temperatur', digits: 1 },
-                    },
-                ],
+                'value.brightness': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.co2': [{ subfolder: 'uplink.decoded', card: { control: 'text' } }],
+                'value.current': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 1 } }],
+                'value.energy': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.energy.active': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.energy.consumed': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.energy.produced': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.energy.reactive': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.fill': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 3 } }],
+                'value.frequency ': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 2 } }],
                 'value.humidity': [
                     {
                         subfolder: 'uplink.decoded',
                         card: { control: 'text', preLabel: '💧 ', label: 'Luftfeuchtigkeit', digits: 0 },
                     },
                 ],
-
-                'sensor.window': [
+                'value.power': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.power.active': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.power.consumed': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.power.produced': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.power.reactive': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
+                'value.pressure': [{ subfolder: 'uplink.decoded', card: { control: 'text' } }],
+                'value.speed': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 1 } }],
+                'value.temperature': [
                     {
                         subfolder: 'uplink.decoded',
-                        card: {
-                            control: 'text',
-                            preLabel: '🪟 ',
-                            label: 'Fenster',
-                            falseText: 'geschlossen',
-                            trueText: 'geöffnet',
-                        },
+                        card: { control: 'text', preLabel: '🌡 ', label: 'Temperatur', digits: 1 },
                     },
                 ],
-                'sensor.door': [
-                    {
-                        subfolder: 'uplink.decoded',
-                        card: {
-                            control: 'text',
-                            preLabel: '🚪 ',
-                            label: 'Tür',
-                            falseText: 'geschlossen',
-                            trueText: 'geöffnet',
-                        },
-                    },
-                ],
-                'sensor.contact': [
-                    {
-                        subfolder: 'uplink.decoded',
-                        card: {
-                            control: 'text',
-                            preLabel: '⚫ ',
-                            label: 'Kontakt',
-                            falseText: 'geschlossen',
-                            trueText: 'geöffnet',
-                        },
-                    },
-                ],
-
                 'value.valve': [
                     {
                         subfolder: 'uplink.decoded',
                         card: { control: 'text', label: 'Ventilöffnung', possibleUnit: '%' },
                     },
                 ],
+                'value.voltage': [{ subfolder: 'uplink.decoded', card: { control: 'text' } }],
             },
 
             bridge: {
-                'button.mode.startMotorcalibration': [{ card: { control: 'button' } }],
                 'button.mode.card': [{ card: { control: 'button' } }],
+                'button.mode.startMotorcalibration': [{ card: { control: 'button' } }],
 
-                'value.brightness': [{ card: { control: 'text', digits: 0 } }],
-
-                'value.energy': [{ card: { control: 'text', digits: 0 } }],
-                'value.energy.active': [{ card: { control: 'text', digits: 0 } }],
-                'value.energy.reactive': [{ card: { control: 'text', digits: 0 } }],
-                'value.energy.consumed': [{ card: { control: 'text', digits: 0 } }],
-                'value.energy.produced': [{ card: { control: 'text', digits: 0 } }],
-
-                'value.power': [{ card: { control: 'text', digits: 0 } }],
-                'value.power.active': [{ card: { control: 'text', digits: 0 } }],
-                'value.power.reactive': [{ card: { control: 'text', digits: 0 } }],
-                'value.power.consumed': [{ card: { control: 'text', digits: 0 } }],
-                'value.power.produced': [{ card: { control: 'text', digits: 0 } }],
-
-                'value.pressure': [{ card: { control: 'text' } }],
-
-                'value.volatge': [{ card: { control: 'text' } }],
-                'value.current': [{ card: { control: 'text', digits: 1 } }],
-                'value.frequency ': [{ card: { control: 'text', digits: 2 } }],
-
-                switch: [{ card: { control: 'switch' } }],
-                'switch.light': [{ card: { control: 'switch', preLabel: '💡 ' } }],
-
-                'value.temperature': [{ card: { control: 'text', preLabel: '🌡 ', label: 'Temperatur', digits: 1 } }],
-                'value.humidity': [
-                    { card: { control: 'text', preLabel: '💧 ', label: 'Luftfeuchtigkeit', digits: 0 } },
-                ],
-
-                'sensor.window': [
+                'sensor.contact': [
                     {
                         card: {
                             control: 'text',
-                            preLabel: '🪟 ',
-                            label: 'Fenster',
+                            preLabel: '⚫ ',
+                            label: 'Kontakt',
                             falseText: 'geschlossen',
                             trueText: 'geöffnet',
                         },
@@ -348,59 +317,56 @@ class Lorawan extends utils.Adapter {
                         },
                     },
                 ],
-                'sensor.contact': [
+                'sensor.window': [
                     {
                         card: {
                             control: 'text',
-                            preLabel: '⚫ ',
-                            label: 'Kontakt',
+                            preLabel: '🪟 ',
+                            label: 'Fenster',
                             falseText: 'geschlossen',
                             trueText: 'geöffnet',
                         },
                     },
                 ],
 
+                switch: [{ card: { control: 'switch' } }],
+                'switch.light': [{ card: { control: 'switch', preLabel: '💡 ' } }],
+
+                'value.brightness': [{ card: { control: 'text', digits: 0 } }],
+                'value.co2': [{ card: { control: 'text' } }],
+                'value.current': [{ card: { control: 'text', digits: 1 } }],
+                'value.energy': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.active': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.consumed': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.produced': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.reactive': [{ card: { control: 'text', digits: 0 } }],
+                'value.fill': [{ card: { control: 'text', digits: 3 } }],
+                'value.frequency ': [{ card: { control: 'text', digits: 2 } }],
+                'value.humidity': [
+                    { card: { control: 'text', preLabel: '💧 ', label: 'Luftfeuchtigkeit', digits: 0 } },
+                ],
+                'value.power': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.active': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.consumed': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.produced': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.reactive': [{ card: { control: 'text', digits: 0 } }],
+                'value.pressure': [{ card: { control: 'text' } }],
+                'value.speed': [{ card: { control: 'text', digits: 1 } }],
+                'value.temperature': [{ card: { control: 'text', preLabel: '🌡 ', label: 'Temperatur', digits: 1 } }],
                 'value.valve': [{ card: { control: 'text', label: 'Ventilöffnung', possibleUnit: '%' } }],
+                'value.volatge': [{ card: { control: 'text' } }],
             },
 
             toIob: {
-                'button.mode.startMotorcalibration': [{ card: { control: 'button' } }],
                 'button.mode.card': [{ card: { control: 'button' } }],
+                'button.mode.startMotorcalibration': [{ card: { control: 'button' } }],
 
-                'value.brightness': [{ card: { control: 'text', digits: 0 } }],
-
-                'value.energy': [{ card: { control: 'text', digits: 0 } }],
-                'value.energy.active': [{ card: { control: 'text', digits: 0 } }],
-                'value.energy.reactive': [{ card: { control: 'text', digits: 0 } }],
-                'value.energy.consumed': [{ card: { control: 'text', digits: 0 } }],
-                'value.energy.produced': [{ card: { control: 'text', digits: 0 } }],
-
-                'value.power': [{ card: { control: 'text', digits: 0 } }],
-                'value.power.active': [{ card: { control: 'text', digits: 0 } }],
-                'value.power.reactive': [{ card: { control: 'text', digits: 0 } }],
-                'value.power.consumed': [{ card: { control: 'text', digits: 0 } }],
-                'value.power.produced': [{ card: { control: 'text', digits: 0 } }],
-
-                'value.pressure': [{ card: { control: 'text' } }],
-
-                'value.voltage': [{ card: { control: 'text' } }],
-                'value.current': [{ card: { control: 'text', digits: 1 } }],
-                'value.frequency ': [{ card: { control: 'text', digits: 2 } }],
-
-                switch: [{ card: { control: 'switch' } }],
-                'switch.light': [{ card: { control: 'switch', preLabel: '💡 ' } }],
-
-                'value.temperature': [{ card: { control: 'text', preLabel: '🌡 ', label: 'Temperatur', digits: 1 } }],
-                'value.humidity': [
-                    { card: { control: 'text', preLabel: '💧 ', label: 'Luftfeuchtigkeit', digits: 0 } },
-                ],
-
-                'sensor.window': [
+                'sensor.contact': [
                     {
                         card: {
                             control: 'text',
-                            preLabel: '🪟 ',
-                            label: 'Fenster',
+                            preLabel: '⚫ ',
+                            label: 'Kontakt',
                             falseText: 'geschlossen',
                             trueText: 'geöffnet',
                         },
@@ -417,19 +383,44 @@ class Lorawan extends utils.Adapter {
                         },
                     },
                 ],
-                'sensor.contact': [
+                'sensor.window': [
                     {
                         card: {
                             control: 'text',
-                            preLabel: '⚫ ',
-                            label: 'Kontakt',
+                            preLabel: '🪟 ',
+                            label: 'Fenster',
                             falseText: 'geschlossen',
                             trueText: 'geöffnet',
                         },
                     },
                 ],
 
+                switch: [{ card: { control: 'switch' } }],
+                'switch.light': [{ card: { control: 'switch', preLabel: '💡 ' } }],
+
+                'value.brightness': [{ card: { control: 'text', digits: 0 } }],
+                'value.co2': [{ card: { control: 'text' } }],
+                'value.current': [{ card: { control: 'text', digits: 1 } }],
+                'value.energy': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.active': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.consumed': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.produced': [{ card: { control: 'text', digits: 0 } }],
+                'value.energy.reactive': [{ card: { control: 'text', digits: 0 } }],
+                'value.fill': [{ card: { control: 'text', digits: 3 } }],
+                'value.frequency ': [{ card: { control: 'text', digits: 2 } }],
+                'value.humidity': [
+                    { card: { control: 'text', preLabel: '💧 ', label: 'Luftfeuchtigkeit', digits: 0 } },
+                ],
+                'value.power': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.active': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.consumed': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.produced': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.reactive': [{ card: { control: 'text', digits: 0 } }],
+                'value.pressure': [{ card: { control: 'text' } }],
+                'value.speed': [{ card: { control: 'text', digits: 1 } }],
+                'value.temperature': [{ card: { control: 'text', preLabel: '🌡 ', label: 'Temperatur', digits: 1 } }],
                 'value.valve': [{ card: { control: 'text', label: 'Ventilöffnung', possibleUnit: '%' } }],
+                'value.voltage': [{ card: { control: 'text' } }],
             },
         };
 
