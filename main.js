@@ -208,27 +208,40 @@ class Lorawan extends utils.Adapter {
     async generateState() {
         const cardRoleObject = {
             lorawan: {
-                'button.mode.startMotorcalibration': [
-                    {
-                        subfolder: 'downlink.control',
-                        card: { control: 'button' },
-                    },
-                ],
-                'button.mode.card': [
-                    {
-                        subfolder: 'downlink.control',
-                        card: { control: 'button' },
-                    },
-                ],
+                'button.mode.startMotorcalibration': [{ subfolder: 'downlink.control', card: { control: 'button' } }],
+                'button.mode.card': [{ subfolder: 'downlink.control', card: { control: 'button' } }],
+
                 'value.power.active': [
                     {
                         subfolder: 'uplink.decoded',
+                        card: { control: 'text', digits: 0 },
+                    },
+                ],
+                'value.power.consumption': [
+                    {
+                        subfolder: 'uplink.decoded',
+                        card: { control: 'text', digits: 0 },
+                    },
+                ],
+
+                switch: [
+                    {
+                        subfolder: 'uplink.decoded',
                         card: {
-                            control: 'text',
-                            digits: 0,
+                            control: 'switch',
                         },
                     },
                 ],
+                'switch.light': [
+                    {
+                        subfolder: 'uplink.decoded',
+                        card: {
+                            control: 'switch',
+                            preLabel: '💡 ',
+                        },
+                    },
+                ],
+
                 'value.temperature': [
                     {
                         subfolder: 'uplink.decoded',
@@ -302,14 +315,26 @@ class Lorawan extends utils.Adapter {
             bridge: {
                 'button.mode.startMotorcalibration': [{ card: { control: 'button' } }],
                 'button.mode.card': [{ card: { control: 'button' } }],
-                'value.power.active': [
+
+                'value.power.active': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.consumption': [{ card: { control: 'text', digits: 0 } }],
+
+                switch: [
                     {
                         card: {
-                            control: 'text',
-                            digits: 0,
+                            control: 'switch',
                         },
                     },
                 ],
+                'switch.light': [
+                    {
+                        card: {
+                            control: 'switch',
+                            preLabel: '💡 ',
+                        },
+                    },
+                ],
+
                 'value.temperature': [
                     {
                         card: {
@@ -377,14 +402,26 @@ class Lorawan extends utils.Adapter {
             toIob: {
                 'button.mode.startMotorcalibration': [{ card: { control: 'button' } }],
                 'button.mode.card': [{ card: { control: 'button' } }],
-                'value.power.active': [
+
+                'value.power.active': [{ card: { control: 'text', digits: 0 } }],
+                'value.power.consumption': [{ card: { control: 'text', digits: 0 } }],
+
+                switch: [
                     {
                         card: {
-                            control: 'text',
-                            digits: 0,
+                            control: 'switch',
                         },
                     },
                 ],
+                'switch.light': [
+                    {
+                        card: {
+                            control: 'switch',
+                            preLabel: '💡 ',
+                        },
+                    },
+                ],
+
                 'value.temperature': [
                     {
                         card: {
