@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.17",
+    "version": "1.21.18",
     "news": {
+      "1.21.18": {
+        "en": "bugfix display states for bridged devices in dM",
+        "de": "bugfix Anzeigezustände für überbrückte Geräte in dM",
+        "ru": "состояния отображения bugfix для мостовых устройств в dM",
+        "pt": "estados de exibição de bugfix para dispositivos conectados no dM",
+        "nl": "bugfix display staat voor gebrugde apparaten in dM",
+        "fr": "états d'affichage du bugfix pour les périphériques pontés dans dM",
+        "it": "stati di visualizzazione bugfix per dispositivi ponti in dM",
+        "es": "estados de pantalla de bugfix para dispositivos puente en dM",
+        "pl": "stany wyświetlania bugfix dla urządzeń okrągłych w dM",
+        "uk": "випадкові стани відображення для мостових пристроїв в dM",
+        "zh-cn": "dM 中桥设备的bugfix 显示状态"
+      },
       "1.21.17": {
         "en": "change display of sensor.contact in dM card",
         "de": "anzeige von sensor.contact in dM-Karte ändern",
@@ -80,19 +93,6 @@
         "pl": "urządzenia wyświetlające bugfix w przypadku mostka nie jest wybrany",
         "uk": "пристрій для відображення помилок при мості не вибрано",
         "zh-cn": "未选择桥桥时的错误修正显示设备"
-      },
-      "1.21.11": {
-        "en": "improve nameing of actual values\nimlpement digits to actual values",
-        "de": "die bezeichnung der tatsächlichen werte verbessern\nimlpement-zeichen zu aktuellen werten",
-        "ru": "улучшение наименования фактических значений\nимплементация цифр в фактические значения",
-        "pt": "melhorar a designação dos valores reais\nalgarismos de impulso aos valores reais",
-        "nl": "verbetering van de vermelding van de werkelijke waarden\nimpement cijfers naar werkelijke waarden",
-        "fr": "améliorer la désignation des valeurs réelles\nchiffres de mise en œuvre aux valeurs réelles",
-        "it": "migliorare il nome dei valori effettivi\ncifre imlpement ai valori effettivi",
-        "es": "mejorar el nombre de valores reales\ndígitos de la ayuda a valores reales",
-        "pl": "poprawić nazewnictwo rzeczywistych wartości\ncyfry imlpementu do wartości rzeczywistych",
-        "uk": "поліпшення назв фактичних значень\nвизначення цифр до фактичних значень",
-        "zh-cn": "改进实际值的名称\n实际值的位数"
       }
     },
     "titleLang": {
