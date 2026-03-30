@@ -80,6 +80,9 @@ class Lorawan extends utils.Adapter {
     async onReady() {
         const activeFunction = 'onReady';
         try {
+            // Generate States wich are not in io-package.json
+            await this.generateState();
+
             this.devicessAtStartup = await this.getObjectViewAsync('system', 'device', {
                 startkey: ``,
                 endkey: `\u9999`,
@@ -200,6 +203,265 @@ class Lorawan extends utils.Adapter {
             .createHash('sha256')
             .update(plainText + salt)
             .digest('hex');
+    }
+
+    async generateState() {
+        const cardRoleObject = {
+            lorawan: {
+                'button.mode.startMotorcalibration': [
+                    {
+                        subfolder: 'downlink.control',
+                        card: { control: 'button' },
+                    },
+                ],
+                'button.mode.card': [
+                    {
+                        subfolder: 'downlink.control',
+                        card: { control: 'button' },
+                    },
+                ],
+                'value.power.active': [
+                    {
+                        subfolder: 'uplink.decoded',
+                        card: {
+                            control: 'text',
+                            digits: 0,
+                        },
+                    },
+                ],
+                'value.temperature': [
+                    {
+                        subfolder: 'uplink.decoded',
+                        card: {
+                            control: 'text',
+                            preLabel: '🌡 ',
+                            label: 'Temperatur',
+                            digits: 1,
+                        },
+                    },
+                ],
+                'value.humidity': [
+                    {
+                        subfolder: 'uplink.decoded',
+                        card: {
+                            control: 'text',
+                            preLabel: '💧 ',
+                            label: 'Luftfeuchtigkeit',
+                            digits: 0,
+                        },
+                    },
+                ],
+                'sensor.window': [
+                    {
+                        subfolder: 'uplink.decoded',
+                        card: {
+                            control: 'text',
+                            preLabel: '🪟 ',
+                            label: 'Fenster',
+                            falseText: 'geschlossen',
+                            trueText: 'geöffnet',
+                        },
+                    },
+                ],
+                'sensor.door': [
+                    {
+                        subfolder: 'uplink.decoded',
+                        card: {
+                            control: 'text',
+                            preLabel: '🚪 ',
+                            label: 'Tür',
+                            falseText: 'geschlossen',
+                            trueText: 'geöffnet',
+                        },
+                    },
+                ],
+                'sensor.contact': [
+                    {
+                        subfolder: 'uplink.decoded',
+                        card: {
+                            control: 'text',
+                            preLabel: '⚫ ',
+                            label: 'Kontakt',
+                            falseText: 'geschlossen',
+                            trueText: 'geöffnet',
+                        },
+                    },
+                ],
+                'value.valve': [
+                    {
+                        subfolder: 'uplink.decoded',
+                        card: {
+                            control: 'text',
+                            label: 'Ventilöffnung',
+                            possibleUnit: '%',
+                        },
+                    },
+                ],
+            },
+
+            bridge: {
+                'button.mode.startMotorcalibration': [{ card: { control: 'button' } }],
+                'button.mode.card': [{ card: { control: 'button' } }],
+                'value.power.active': [
+                    {
+                        card: {
+                            control: 'text',
+                            digits: 0,
+                        },
+                    },
+                ],
+                'value.temperature': [
+                    {
+                        card: {
+                            control: 'text',
+                            preLabel: '🌡 ',
+                            label: 'Temperatur',
+                            digits: 1,
+                        },
+                    },
+                ],
+                'value.humidity': [
+                    {
+                        card: {
+                            control: 'text',
+                            preLabel: '💧 ',
+                            label: 'Luftfeuchtigkeit',
+                            digits: 0,
+                        },
+                    },
+                ],
+                'sensor.window': [
+                    {
+                        card: {
+                            control: 'text',
+                            preLabel: '🪟 ',
+                            label: 'Fenster',
+                            falseText: 'geschlossen',
+                            trueText: 'geöffnet',
+                        },
+                    },
+                ],
+                'sensor.door': [
+                    {
+                        card: {
+                            control: 'text',
+                            preLabel: '🚪 ',
+                            label: 'Tür',
+                            falseText: 'geschlossen',
+                            trueText: 'geöffnet',
+                        },
+                    },
+                ],
+                'sensor.contact': [
+                    {
+                        card: {
+                            control: 'text',
+                            preLabel: '⚫ ',
+                            label: 'Kontakt',
+                            falseText: 'geschlossen',
+                            trueText: 'geöffnet',
+                        },
+                    },
+                ],
+                'value.valve': [
+                    {
+                        card: {
+                            control: 'text',
+                            label: 'Ventilöffnung',
+                            possibleUnit: '%',
+                        },
+                    },
+                ],
+            },
+
+            toIob: {
+                'button.mode.startMotorcalibration': [{ card: { control: 'button' } }],
+                'button.mode.card': [{ card: { control: 'button' } }],
+                'value.power.active': [
+                    {
+                        card: {
+                            control: 'text',
+                            digits: 0,
+                        },
+                    },
+                ],
+                'value.temperature': [
+                    {
+                        card: {
+                            control: 'text',
+                            preLabel: '🌡 ',
+                            label: 'Temperatur',
+                            digits: 1,
+                        },
+                    },
+                ],
+                'value.humidity': [
+                    {
+                        card: {
+                            control: 'text',
+                            preLabel: '💧 ',
+                            label: 'Luftfeuchtigkeit',
+                            digits: 0,
+                        },
+                    },
+                ],
+                'sensor.window': [
+                    {
+                        card: {
+                            control: 'text',
+                            preLabel: '🪟 ',
+                            label: 'Fenster',
+                            falseText: 'geschlossen',
+                            trueText: 'geöffnet',
+                        },
+                    },
+                ],
+                'sensor.door': [
+                    {
+                        card: {
+                            control: 'text',
+                            preLabel: '🚪 ',
+                            label: 'Tür',
+                            falseText: 'geschlossen',
+                            trueText: 'geöffnet',
+                        },
+                    },
+                ],
+                'sensor.contact': [
+                    {
+                        card: {
+                            control: 'text',
+                            preLabel: '⚫ ',
+                            label: 'Kontakt',
+                            falseText: 'geschlossen',
+                            trueText: 'geöffnet',
+                        },
+                    },
+                ],
+                'value.valve': [
+                    {
+                        card: {
+                            control: 'text',
+                            label: 'Ventilöffnung',
+                            possibleUnit: '%',
+                        },
+                    },
+                ],
+            },
+        };
+        await this.extendObject(`info.cardRoles`, {
+            type: 'state',
+            common: {
+                role: 'json',
+                name: 'Roles to display in card',
+                type: 'string',
+                icon: 'icons/deviceinfo.png',
+                read: true,
+                write: true,
+                def: JSON.stringify(cardRoleObject),
+            },
+            native: {},
+        });
     }
 
     /**

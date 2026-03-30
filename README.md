@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) add value.power.active to cardRoles and possibility for Name (label? Name? ID)
+
 ### 1.21.18 (2026-03-30)
 * (BenAhrdt) bugfix display states for bridged devices in dM
 
