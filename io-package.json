@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.16",
+    "version": "1.21.17",
     "news": {
+      "1.21.17": {
+        "en": "change display of sensor.contact in dM card",
+        "de": "anzeige von sensor.contact in dM-Karte ändern",
+        "ru": "изменение отображения sensor.contact в карте dM",
+        "pt": "mudar a exibição do sensor.contato no cartão dM",
+        "nl": "wijzigen weergave van sensor.contact in dM-kaart",
+        "fr": "modifier l'affichage du capteur.contact dans la carte dM",
+        "it": "display del sensore.contatto nella scheda dM",
+        "es": "cambio de pantalla de sensor.contacto en tarjeta dM",
+        "pl": "zmiana wyświetlania sensor.contact w karcie dM",
+        "uk": "зміна відображення датчика.контакт в картці dM",
+        "zh-cn": "在 dM 卡中更改传感器显示. contact"
+      },
       "1.21.16": {
         "en": "implements cardRoles state to define displayed Roles in card\nFirst try of custom Info at dM",
         "de": "implementiert cardRoles-Zustand, um angezeigte Rollen in der Karte zu definieren\nErster Versuch der benutzerdefinierten Info bei dM",
@@ -80,19 +93,6 @@
         "pl": "poprawić nazewnictwo rzeczywistych wartości\ncyfry imlpementu do wartości rzeczywistych",
         "uk": "поліпшення назв фактичних значень\nвизначення цифр до фактичних значень",
         "zh-cn": "改进实际值的名称\n实际值的位数"
-      },
-      "1.21.10": {
-        "en": "change Testing and change standard value of lorawan origin to off",
-        "de": "ändern Prüfen und ändern Sie den Standardwert von lorawan Ursprungs",
-        "ru": "изменение Тестирования и изменение стандартного значения происхождения лораванов",
-        "pt": "alteração Teste e alteração do valor padrão da origem lorawan para desligado",
-        "nl": "verandering Testen en verandering van standaardwaarde van oorsprong Lorawan naar uit",
-        "fr": "changement Test et changement de la valeur standard de l'origine du lorawan",
-        "it": "prova e modifica il valore standard di origine lorawan per disattivare",
-        "es": "cambio Pruebas y cambio de valor estándar de origen de lorawan",
-        "pl": "zmiana Badanie i zmiana standardowej wartości pochodzenia Lorawan na off",
-        "uk": "зміна Тестування та зміни стандартного значення тканого походження для вимкнення",
-        "zh-cn": "将 Lorawan 源代码的标准值测试和更改为关闭"
       }
     },
     "titleLang": {
