@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.15",
+    "version": "1.21.16",
     "news": {
+      "1.21.16": {
+        "en": "implements cardRoles state to define displayed Roles in card\nFirst try of custom Info at dM",
+        "de": "implementiert cardRoles-Zustand, um angezeigte Rollen in der Karte zu definieren\nErster Versuch der benutzerdefinierten Info bei dM",
+        "ru": "реализует состояние CardRoles для определения отображаемых ролей в карте\nПервая попытка пользовательской информации в dM",
+        "pt": "implementa o estado do cardRoles para definir funções exibidas no cartão\nPrimeira tentativa de informações personalizadas no dM",
+        "nl": "implementeert de status van kaartRoles om getoonde rollen in kaart te definiëren\nEerste poging van aangepaste informatie op dM",
+        "fr": "implémente cardRoles état pour définir les rôles affichés dans la carte\nPremier essai d'Info personnalisée à dM",
+        "it": "implementa lo stato cardRoles per definire i ruoli visualizzati nella scheda\nPrimo tentativo di informazioni personalizzate a dM",
+        "es": "implementa el estado de cardRoles para definir los roles mostrados en la tarjeta\nPrimera prueba de información personalizada en dM",
+        "pl": "implementuje stan kardRoles aby zdefiniować wyświetlane rolki w karcie\nPierwsza próba niestandardowych informacji w dM",
+        "uk": "впроваджує стан карнизів для визначення відображених ролей в картці\nПерша спроба користувальницької інформації в dM",
+        "zh-cn": "执行 cardRoles 状态以定义卡片中显示的角色\n第一次尝试自定义信息 "
+      },
       "1.21.15": {
         "en": "implement TTI tenant to download to TTI",
         "de": "tTI-Tenant zum Download in TTI implementieren",
@@ -80,19 +93,6 @@
         "pl": "zmiana Badanie i zmiana standardowej wartości pochodzenia Lorawan na off",
         "uk": "зміна Тестування та зміни стандартного значення тканого походження для вимкнення",
         "zh-cn": "将 Lorawan 源代码的标准值测试和更改为关闭"
-      },
-      "1.21.9": {
-        "en": "persistant Bride DeviceIds",
-        "de": "persistenz Bridegerät Iden",
-        "ru": "упорный Устройство Bride Ids",
-        "pt": "persistente Dispositivo de noiva Ids",
-        "nl": "persistent Bruidsapparaat Ids",
-        "fr": "persistante Dispositif de mariée Ids",
-        "it": "persistente Dispositivo Bride Ids",
-        "es": "persistencia Bride Device Ids",
-        "pl": "persistant Urządzenie panny młodej Ids",
-        "uk": "персистент Пристрої нареченої Іди",
-        "zh-cn": "坚持 新娘设备 编号"
       }
     },
     "titleLang": {
