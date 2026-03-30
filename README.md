@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) bugfix display states for bridged devices in dM
+
 ### 1.21.17 (2026-03-30)
 * (BenAhrdt) change display of sensor.contact in dM card
 
