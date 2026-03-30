@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.20",
+    "version": "1.21.21",
     "news": {
+      "1.21.21": {
+        "en": "change priority to name => lable => id (in card)",
+        "de": "name ändern => lable => id (in karte)",
+        "ru": "изменить приоритет на имя => lable => id (в карте)",
+        "pt": "mudar a prioridade para o nome => lable => id (no cartão)",
+        "nl": "de prioriteit wijzigen naar naam => lable => id (in kaart)",
+        "fr": "changer la priorité en nom => lable => id (dans la carte)",
+        "it": "modifica la priorità al nome => lable => id (in scheda)",
+        "es": "cambio de prioridad al nombre = título = título id (en la tarjeta)",
+        "pl": "zmienić priorytet na nazwę = > lable = > id (w karcie)",
+        "uk": "змінити пріоритет в name => lable => id (в картці)",
+        "zh-cn": "更改优先级为 qq lable id (卡片)"
+      },
       "1.21.20": {
         "en": "add more role definitions and logic to card roles",
         "de": "mehr rollendefinitionen und logik zu kartenrollen hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "wdrożyć TTI najemca do pobrania do TTI",
         "uk": "впровадження TTI оренда для TTI",
         "zh-cn": "执行 TTI 租户下载到 TTI"
-      },
-      "1.21.14": {
-        "en": "change userdata and alias query for bridge",
-        "de": "benutzerdaten und alias-abfrage für brücke ändern",
-        "ru": "изменить пользовательские данные и псевдоним запрос для моста",
-        "pt": "alterar a consulta de dados de usuário e alias para bridge",
-        "nl": "userdata en alias query voor bridge wijzigen",
-        "fr": "modifier les données utilisateur et alias requête pour le pont",
-        "it": "cambiare userdata e alias query per bridge",
-        "es": "cambiar userdata y alias consulta para puente",
-        "pl": "zmienić dane użytkownika i alias query dla mostka",
-        "uk": "змінити дані користувача та псевдонім запиту для міст",
-        "zh-cn": "更改桥的用户数据和别名查询"
       }
     },
     "titleLang": {
