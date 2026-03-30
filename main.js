@@ -64,6 +64,9 @@ class Lorawan extends utils.Adapter {
         this.deviceMap = new Map();
         this.channelsAtStartup = {};
         this.channelMap = new Map();
+
+        // CardRoles
+        this.cardRoles = {};
     }
 
     onFileChange(_id, _fileName, _size) {
@@ -91,11 +94,13 @@ class Lorawan extends utils.Adapter {
             for (const row of this.channelsAtStartup.rows) {
                 this.channelMap.set(row.id, row.value);
             }
-            // Get Logtypes
+            // Get Logtypes and CardRoles
             this.logtypes = JSON.parse(await this.setDefIfEmptyAndReturnVal('bridge.debug.logtypes'));
+            this.cardRoles = JSON.parse(await this.setDefIfEmptyAndReturnVal('info.cardRoles'));
 
             // Generate Object Store
             this.objectStore = new objectStoreClass(this);
+            await this.objectStore.addCardRoles(this.cardRoles);
             await this.objectStore.generateStoreObjects();
 
             // read system translation out of i18n translation
@@ -203,19 +208,25 @@ class Lorawan extends utils.Adapter {
      * @param id id to check for empty
      */
     async setDefIfEmptyAndReturnVal(id) {
-        if (await this.objectExists(id)) {
-            const stateOfId = await this.getStateAsync(id);
-            if (stateOfId && typeof stateOfId.val) {
-                if (stateOfId.val === '') {
-                    const objectOfId = await this.getObjectAsync(id);
-                    if (objectOfId?.common.def) {
-                        await this.setState(id, objectOfId?.common.def, true);
-                        return objectOfId?.common.def;
+        try {
+            if (await this.objectExists(id)) {
+                const stateOfId = await this.getStateAsync(id);
+                if (stateOfId && typeof stateOfId.val) {
+                    if (stateOfId.val === '') {
+                        const objectOfId = await this.getObjectAsync(id);
+                        if (objectOfId?.common.def) {
+                            await this.setState(id, objectOfId?.common.def, true);
+                            return objectOfId?.common.def;
+                        }
+                    } else {
+                        return stateOfId.val;
                     }
-                } else {
-                    return stateOfId.val;
                 }
             }
+        } catch (error) {
+            this.log.error(
+                `error at setDefIfEmptyAndReturnVal with id: ${id}. Error: ${error}. Please set state to ''`,
+            );
         }
     }
 
@@ -1078,6 +1089,19 @@ class Lorawan extends utils.Adapter {
                             } else if (words[0] === 'toIob') {
                                 if (this.objectStore?.toIob[words[1]]) {
                                     this.setState(id, JSON.stringify(this.objectStore.toIob[words[1]]), true);
+                                }
+                            }
+                        } else if (id.endsWith('.info.cardRoles')) {
+                            if (state.val === '') {
+                                this.cardRoles = JSON.parse(await this.setDefIfEmptyAndReturnVal(id));
+                            } else {
+                                try {
+                                    this.cardRoles = JSON.parse(state.val);
+                                    this.setState(id, state.val, true);
+                                } catch (error) {
+                                    this.log.error(
+                                        `JSON not parsable, please enter a correct json, or write '' for def value. Error: ${error}`,
+                                    );
                                 }
                             }
                         } else if (id.endsWith('.bridge.dataFromIob')) {

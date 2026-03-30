@@ -25,6 +25,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+* (BenAhrdt) implements cardRoles state to define displayed Roles in card
 * (BenAhrdt) First try of custom Info at dM
 
 ### 1.21.15 (2026-03-28)
