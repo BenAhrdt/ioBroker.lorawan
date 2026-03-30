@@ -25,6 +25,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### 1.21.16 (2026-03-30)
+* (BenAhrdt) change display of sensor.contact in dM card
+
+### 1.21.16 (2026-03-30)
 * (BenAhrdt) implements cardRoles state to define displayed Roles in card
 * (BenAhrdt) First try of custom Info at dM
 
