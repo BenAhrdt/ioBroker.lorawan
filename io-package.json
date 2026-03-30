@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.19",
+    "version": "1.21.20",
     "news": {
+      "1.21.20": {
+        "en": "add more role definitions and logic to card roles",
+        "de": "mehr rollendefinitionen und logik zu kartenrollen hinzufügen",
+        "ru": "добавьте больше определений ролей и логики в карточные роли",
+        "pt": "adicionar mais definições de papel e lógica para papéis de cartão",
+        "nl": "meer roldefinities en logica toe te voegen aan kaartrollen",
+        "fr": "ajouter davantage de définitions de rôles et de logique aux rôles de cartes",
+        "it": "aggiungere più definizioni di ruolo e logica ai ruoli delle carte",
+        "es": "añadir más definiciones de papel y lógica a los roles de tarjeta",
+        "pl": "dodać więcej definicji roli i logiki do ról kart",
+        "uk": "додати більше визначення ролі та логіку до ролей карток",
+        "zh-cn": "在卡片角色中添加更多角色定义和逻辑"
+      },
       "1.21.19": {
         "en": "add value.power.active to cardRoles and possibility for Name (label? Name? ID)",
         "de": "add value.power.active to cardRoles und Möglichkeit für Name (label? Name? Ausweis",
@@ -80,19 +93,6 @@
         "pl": "zmienić dane użytkownika i alias query dla mostka",
         "uk": "змінити дані користувача та псевдонім запиту для міст",
         "zh-cn": "更改桥的用户数据和别名查询"
-      },
-      "1.21.13": {
-        "en": "improve displaying devEUI in actual Values",
-        "de": "verbesserung der Anzeige von devEUI in tatsächlichen Werten",
-        "ru": "улучшение отображения devEUI в реальных значениях",
-        "pt": "melhorar a exibição de EUIv em valores reais",
-        "nl": "het weergeven van devEUI in werkelijke waarden verbeteren",
-        "fr": "améliorer l'affichage devEUI dans les valeurs réelles",
-        "it": "migliorare la visualizzazione devEUI in valori reali",
-        "es": "mejorar la visualización de devEUI en valores reales",
-        "pl": "poprawić wyświetlanie devEUI w rzeczywistych wartościach",
-        "uk": "поліпшення відображення devEUI в фактичних значеннях",
-        "zh-cn": "改进在实际值中显示deEUI"
       }
     },
     "titleLang": {
