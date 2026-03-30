@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.18",
+    "version": "1.21.19",
     "news": {
+      "1.21.19": {
+        "en": "add value.power.active to cardRoles and possibility for Name (label? Name? ID)",
+        "de": "add value.power.active to cardRoles und Möglichkeit für Name (label? Name? Ausweis",
+        "ru": "добавить value.power.active к ролям карты и возможности для имени Имя? ID",
+        "pt": "add value.power.active to cardRoles e possibilidade de Nome (label? Nome? ID)",
+        "nl": "waarde.power.active toevoegen aan kaartRoles en mogelijkheid voor Naam (label? Naam? ID)",
+        "fr": "ajouter value.power.active à cardRoles et possibilité de nom (étiquette? Votre nom ? Numéro d'identification",
+        "it": "aggiungere valore.power.active a cardRoles e possibilità per Nome (etichetta? Nome? ID)",
+        "es": "añadir valor.power.active a cardRoles y posibilidad de Nombre (label? ¿Nombre? ID)",
+        "pl": "dodać value.power.active do kardRoles i możliwość Nazwa (etykieta? Nazwisko? ID)",
+        "uk": "додати значення.power.active to cardRoles і можливість для Ім'я (label? Ім'я Ім'я",
+        "zh-cn": "添加值. power. active to cardRoles 和名称的可能性(标签?) 名字吗? 身份证)"
+      },
       "1.21.18": {
         "en": "bugfix display states for bridged devices in dM",
         "de": "bugfix Anzeigezustände für überbrückte Geräte in dM",
@@ -80,19 +93,6 @@
         "pl": "poprawić wyświetlanie devEUI w rzeczywistych wartościach",
         "uk": "поліпшення відображення devEUI в фактичних значеннях",
         "zh-cn": "改进在实际值中显示deEUI"
-      },
-      "1.21.12": {
-        "en": "bugfix display devices in case of bridge is not selected",
-        "de": "bugfix display-geräte bei bridge nicht ausgewählt",
-        "ru": "устройства отображения bugfix в случае невыбора моста",
-        "pt": "dispositivos de exibição de bugfix no caso de ponte não estar selecionada",
-        "nl": "bugfix display apparaten in geval van brug is niet geselecteerd",
-        "fr": "les périphériques d'affichage bugfix en cas de pont n'est pas sélectionné",
-        "it": "dispositivi di visualizzazione bugfix in caso di ponte non è selezionato",
-        "es": "dispositivos de visualización de bugfix en caso de puente no se selecciona",
-        "pl": "urządzenia wyświetlające bugfix w przypadku mostka nie jest wybrany",
-        "uk": "пристрій для відображення помилок при мості не вибрано",
-        "zh-cn": "未选择桥桥时的错误修正显示设备"
       }
     },
     "titleLang": {
