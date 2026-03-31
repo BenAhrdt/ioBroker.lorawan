@@ -237,6 +237,16 @@ class Lorawan extends utils.Adapter {
                         },
                     },
                 ],
+                'sensor.motion': [
+                    {
+                        subfolder: 'uplink.decoded',
+                        card: {
+                            control: 'text',
+                            falseText: '🧍',
+                            trueText: '🏃',
+                        },
+                    },
+                ],
                 'sensor.window': [
                     {
                         subfolder: 'uplink.decoded',
@@ -317,6 +327,15 @@ class Lorawan extends utils.Adapter {
                         },
                     },
                 ],
+                'sensor.motion': [
+                    {
+                        card: {
+                            control: 'text',
+                            falseText: '🧍',
+                            trueText: '🏃',
+                        },
+                    },
+                ],
                 'sensor.window': [
                     {
                         card: {
@@ -380,6 +399,15 @@ class Lorawan extends utils.Adapter {
                             label: 'Tür',
                             falseText: 'geschlossen',
                             trueText: 'geöffnet',
+                        },
+                    },
+                ],
+                'sensor.motion': [
+                    {
+                        card: {
+                            control: 'text',
+                            falseText: '🧍',
+                            trueText: '🏃',
                         },
                     },
                 ],
