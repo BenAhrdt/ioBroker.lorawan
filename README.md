@@ -25,6 +25,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+* (BenAhrdt) add DeviceObject to every device in dM
 * (BenAhrdt) remove moin / max because used in default
 
 ### 1.21.22 (2026-03-31)

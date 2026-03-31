@@ -302,5 +302,7 @@
 	"Base Ip for LoraWAN devices": "Base Ip for LoraWAN devices",
 	"Set the Base Ip for LoRaWAN devices": "Set the Base Ip for LoRaWAN devices",
 	"Base Ip for Bridge devices": "Base Ip for Bridge devices",
-	"Set the Base Ip for bride devices": "Set the Base Ip for bride devices"
+	"Set the Base Ip for bride devices": "Set the Base Ip for bride devices",
+	"deviceObject": "Device Object",
+	"DeviceObject": "Device Object"
 }
