@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) remove moin / max because used in default
+
 ### 1.21.22 (2026-03-31)
 * (BenAhrdt) bugfix in bridge objectStore
 * (BenAhrdt) add sensor.motion to cardRoles
