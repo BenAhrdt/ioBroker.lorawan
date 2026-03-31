@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.21",
+    "version": "1.21.22",
     "news": {
+      "1.21.22": {
+        "en": "bugfix in bridge objectStore\nadd sensor.motion to cardRoles",
+        "de": "bugfix im BrückenobjektStore\nsensor hinzufügen.motion to cardRoles",
+        "ru": "bugfix в Bridge Object\nдобавить sensor.motion в CardRoles",
+        "pt": "correção de erros no objeto bridgeStore\nadicionar sensor.motion ao cardRoles",
+        "nl": "bugfix in brug objectStore\nsensor.motion toevoegen aan kaartRoles",
+        "fr": "bugfix dans bridge objectStore\najouter sensor.motion à la carteRoles",
+        "it": "bugfix in bridge objectStore\naggiungere sensore.mozione a cardRoles",
+        "es": "bugfix en objeto puente\nañadir sensor.motion a cardRoles",
+        "pl": "bugfix w bridge objectStore\ndodaj sensor.motion do kardRoles",
+        "uk": "виправлення помилок в об'єкті міст\nдодати датчик.motion до картиРолес",
+        "zh-cn": "桥对象中的错误修正Store\n将感应器.motion添加到卡片"
+      },
       "1.21.21": {
         "en": "change priority to name => lable => id (in card)",
         "de": "name ändern => lable => id (in karte)",
@@ -80,19 +93,6 @@
         "pl": "implementuje stan kardRoles aby zdefiniować wyświetlane rolki w karcie\nPierwsza próba niestandardowych informacji w dM",
         "uk": "впроваджує стан карнизів для визначення відображених ролей в картці\nПерша спроба користувальницької інформації в dM",
         "zh-cn": "执行 cardRoles 状态以定义卡片中显示的角色\n第一次尝试自定义信息 "
-      },
-      "1.21.15": {
-        "en": "implement TTI tenant to download to TTI",
-        "de": "tTI-Tenant zum Download in TTI implementieren",
-        "ru": "реализация TTI Арендатор скачать в TTI",
-        "pt": "implementar o inquilino de TTI para transferir para TTI",
-        "nl": "implementeren TTI huurder te downloaden naar TTI",
-        "fr": "mettre en œuvre TTI locataire à télécharger à TTI",
-        "it": "implementare TTI inquilino da scaricare a TTI",
-        "es": "implementar TTI arrendatario para descargar en TTI",
-        "pl": "wdrożyć TTI najemca do pobrania do TTI",
-        "uk": "впровадження TTI оренда для TTI",
-        "zh-cn": "执行 TTI 租户下载到 TTI"
       }
     },
     "titleLang": {
