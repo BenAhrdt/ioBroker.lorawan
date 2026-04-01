@@ -1,4 +1,31 @@
 ## Changelog history
+### 1.20.57 (2026-03-02)
+* (BenAhrdt) bugfix query for null
+
+### 1.20.56 (2026-03-02)
+* (BenAhrdt) implement deviceId Handling from bridge
+
+### 1.20.55 (2026-03-02)
+* (BenAhrdt) catch publishing value (null) and log warning for this id
+
+### 1.20.54 (2026-02-27)
+* (BenAhrdt) update dependencies
+* (BenAhrdt) bugfix button press
+
+### 1.20.53 (2026-02-21)
+* (BenAhrdt) errorhandling in case of aggregat error with mqtt connection
+
+### 1.20.52 (2026-02-20)
+* (BenAhrdt) bugfix show ToIob always in device Manager
+* (BenAhrdt) correction of wording in downlink Profil Vicki
+* (BenAhrdt) add role button.mode.startMotorcalibration
+
+### 1.20.51 (2026-02-14)
+* (BenAhrdt) including of more entites in ToIob functionality (light, climate, hummidifier, lock, cover)
+
+### 1.20.50 (2026-02-10)
+* (BenAhrdt) implements light to ToIoB function
+
 ### 1.20.49 (2026-02-08)
 * (BenAhrdt) improve handling of remove Function fpr Bridge
 

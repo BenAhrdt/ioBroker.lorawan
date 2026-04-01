@@ -266,7 +266,7 @@ class Lorawan extends utils.Adapter {
                 switch: [{ subfolder: 'uplink.decoded', card: { control: 'switch' } }],
                 'switch.light': [{ subfolder: 'uplink.decoded', card: { control: 'switch', preLabel: '💡 ' } }],
 
-                'value.airquality': [{ subfolder: 'uplink.decoded', card: { control: 'text' } }],
+                'value.airquality': [{ subfolder: 'uplink.decoded', card: { control: 'text', preLabel: '🌿 ' } }],
                 'value.brightness': [{ subfolder: 'uplink.decoded', card: { control: 'text', digits: 0 } }],
                 'value.ch2o': [{ subfolder: 'uplink.decoded', card: { control: 'text' } }],
                 'value.co': [{ subfolder: 'uplink.decoded', card: { control: 'text' } }],
@@ -363,7 +363,7 @@ class Lorawan extends utils.Adapter {
                 switch: [{ card: { control: 'switch' } }],
                 'switch.light': [{ card: { control: 'switch', preLabel: '💡 ' } }],
 
-                'value.airquality': [{ card: { control: 'text' } }],
+                'value.airquality': [{ card: { control: 'text', preLabel: '🌿 ' } }],
                 'value.brightness': [{ card: { control: 'text', digits: 0 } }],
                 'value.ch2o': [{ card: { control: 'text' } }],
                 'value.co': [{ card: { control: 'text' } }],
@@ -447,7 +447,7 @@ class Lorawan extends utils.Adapter {
                 switch: [{ card: { control: 'switch' } }],
                 'switch.light': [{ card: { control: 'switch', preLabel: '💡 ' } }],
 
-                'value.airquality': [{ card: { control: 'text' } }],
+                'value.airquality': [{ card: { control: 'text', preLabel: '🌿 ' } }],
                 'value.brightness': [{ card: { control: 'text', digits: 0 } }],
                 'value.ch2o': [{ card: { control: 'text' } }],
                 'value.co': [{ card: { control: 'text' } }],
