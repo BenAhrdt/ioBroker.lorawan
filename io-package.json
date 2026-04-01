@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.31",
+    "version": "1.22.0",
     "news": {
+      "1.22.0": {
+        "en": "new Design in device Manager Cards",
+        "de": "neues Design in Gerätemanagerkarten",
+        "ru": "новый дизайн в картах диспетчера устройств",
+        "pt": "novo design em cartões gerenciadores de dispositivos",
+        "nl": "nieuw ontwerp in apparaatbeheerkaarten",
+        "fr": "nouvelle conception dans les cartes de gestionnaire d'appareils",
+        "it": "nuovo design nelle schede di gestione dei dispositivi",
+        "es": "nuevo diseño en tarjetas de gestión de dispositivos",
+        "pl": "nowy projekt w urządzeniu karty menedżer",
+        "uk": "новий дизайн в управлінні пристроями Картки",
+        "zh-cn": "设备管理卡中的新设计"
+      },
       "1.21.31": {
         "en": "Display more Infos and colors in Cards",
         "de": "Mehr Infos und Farben in Karten anzeigen",
@@ -80,19 +93,6 @@
         "pl": "dodaj airquilty dla urządzeń tolob\ndodać funkcjonalność z rodzimej karty",
         "uk": "додати повітряну опалубку для пристроїв\nдодати функціональність на рідній карті",
         "zh-cn": "添加 ToIob 设备的空平\n从本地卡中添加功能"
-      },
-      "1.21.25": {
-        "en": "add prelabel to some roles for card",
-        "de": "fügen sie prelabel zu einigen rollen für karte hinzu",
-        "ru": "добавить предисловие к некоторым ролям для карты",
-        "pt": "adicionar o rótulo prévio a algumas funções do cartão",
-        "nl": "prelabel toevoegen aan een aantal rollen voor kaart",
-        "fr": "ajouter le prélabel à certains rôles pour la carte",
-        "it": "aggiungere prelabel ad alcuni ruoli per carta",
-        "es": "añadir prelabel a algunos roles para la tarjeta",
-        "pl": "dodaj preetykietę do niektórych ról dla karty",
-        "uk": "додати до деяких ролей для картки",
-        "zh-cn": "为一些牌角色添加预标签"
       }
     },
     "titleLang": {
