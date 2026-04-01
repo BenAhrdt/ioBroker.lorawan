@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.26",
+    "version": "1.21.27",
     "news": {
+      "1.21.27": {
+        "en": "bugfix airqulity",
+        "de": "bugfix luftmenge",
+        "ru": "багфикс airlity",
+        "pt": "errorfix airqulity",
+        "nl": "bugfix airqulity",
+        "fr": "bugfix airqulity",
+        "it": "bugfix airqulity",
+        "es": "bugfix airqulity",
+        "pl": "bugfix airquality",
+        "uk": "български, english, українська..",
+        "zh-cn": "错误修正空格"
+      },
       "1.21.26": {
         "en": "add airquilty for toIob devices\nadd functionality off native card",
         "de": "airquilty für Iob-Geräte hinzufügen\ndie funktionalität der nativen karte hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "zmienić priorytet na nazwę = > lable = > id (w karcie)",
         "uk": "змінити пріоритет в name => lable => id (в картці)",
         "zh-cn": "更改优先级为 qq lable id (卡片)"
-      },
-      "1.21.20": {
-        "en": "add more role definitions and logic to card roles",
-        "de": "mehr rollendefinitionen und logik zu kartenrollen hinzufügen",
-        "ru": "добавьте больше определений ролей и логики в карточные роли",
-        "pt": "adicionar mais definições de papel e lógica para papéis de cartão",
-        "nl": "meer roldefinities en logica toe te voegen aan kaartrollen",
-        "fr": "ajouter davantage de définitions de rôles et de logique aux rôles de cartes",
-        "it": "aggiungere più definizioni di ruolo e logica ai ruoli delle carte",
-        "es": "añadir más definiciones de papel y lógica a los roles de tarjeta",
-        "pl": "dodać więcej definicji roli i logiki do ról kart",
-        "uk": "додати більше визначення ролі та логіку до ролей карток",
-        "zh-cn": "在卡片角色中添加更多角色定义和逻辑"
       }
     },
     "titleLang": {
