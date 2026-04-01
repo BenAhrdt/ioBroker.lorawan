@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.24",
+    "version": "1.21.25",
     "news": {
+      "1.21.25": {
+        "en": "add prelabel to some roles for card",
+        "de": "fügen sie prelabel zu einigen rollen für karte hinzu",
+        "ru": "добавить предисловие к некоторым ролям для карты",
+        "pt": "adicionar o rótulo prévio a algumas funções do cartão",
+        "nl": "prelabel toevoegen aan een aantal rollen voor kaart",
+        "fr": "ajouter le prélabel à certains rôles pour la carte",
+        "it": "aggiungere prelabel ad alcuni ruoli per carta",
+        "es": "añadir prelabel a algunos roles para la tarjeta",
+        "pl": "dodaj preetykietę do niektórych ról dla karty",
+        "uk": "додати до деяких ролей для картки",
+        "zh-cn": "为一些牌角色添加预标签"
+      },
       "1.21.24": {
         "en": "Merge cardRoles at startup in default\nadd some roles to cardRoles\nadd some roles to toIob generation",
         "de": "Merge cardRoles beim Start im Standard\nfügen Sie einige Rollen zu CardRoles hinzu\neinige Rollen zu Iob-Generation hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "dodać value.power.active do kardRoles i możliwość Nazwa (etykieta? Nazwisko? ID)",
         "uk": "додати значення.power.active to cardRoles і можливість для Ім'я (label? Ім'я Ім'я",
         "zh-cn": "添加值. power. active to cardRoles 和名称的可能性(标签?) 名字吗? 身份证)"
-      },
-      "1.21.18": {
-        "en": "bugfix display states for bridged devices in dM",
-        "de": "bugfix Anzeigezustände für überbrückte Geräte in dM",
-        "ru": "состояния отображения bugfix для мостовых устройств в dM",
-        "pt": "estados de exibição de bugfix para dispositivos conectados no dM",
-        "nl": "bugfix display staat voor gebrugde apparaten in dM",
-        "fr": "états d'affichage du bugfix pour les périphériques pontés dans dM",
-        "it": "stati di visualizzazione bugfix per dispositivi ponti in dM",
-        "es": "estados de pantalla de bugfix para dispositivos puente en dM",
-        "pl": "stany wyświetlania bugfix dla urządzeń okrągłych w dM",
-        "uk": "випадкові стани відображення для мостових пристроїв в dM",
-        "zh-cn": "dM 中桥设备的bugfix 显示状态"
       }
     },
     "titleLang": {

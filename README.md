@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.21.25 (2026-04-01)
 * (BenAhrdt) add prelabel to some roles for card
 
 ### 1.21.24 (2026-04-01)
