@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.25",
+    "version": "1.21.26",
     "news": {
+      "1.21.26": {
+        "en": "add airquilty for toIob devices\nadd functionality off native card",
+        "de": "airquilty für Iob-Geräte hinzufügen\ndie funktionalität der nativen karte hinzufügen",
+        "ru": "добавить Airquilty для устройств Iob\nдобавьте функциональность с родной карты",
+        "pt": "adicionar arquivamento para dispositivos toIob\nadicionar funcionalidade fora do cartão nativo",
+        "nl": "airquilty voor toIob-apparaten toevoegen\nfunctionaliteit toevoegen aan native card",
+        "fr": "ajouter de l'airquilty pour les appareils toIob\najouter des fonctionnalités hors carte native",
+        "it": "aggiungere airquilty per dispositivi toIob\naggiungere funzionalità dalla scheda madre",
+        "es": "añadir airquilty para dispositivos toIob\nañadir funcionalidad de tarjeta nativa",
+        "pl": "dodaj airquilty dla urządzeń tolob\ndodać funkcjonalność z rodzimej karty",
+        "uk": "додати повітряну опалубку для пристроїв\nдодати функціональність на рідній карті",
+        "zh-cn": "添加 ToIob 设备的空平\n从本地卡中添加功能"
+      },
       "1.21.25": {
         "en": "add prelabel to some roles for card",
         "de": "fügen sie prelabel zu einigen rollen für karte hinzu",
@@ -80,19 +93,6 @@
         "pl": "dodać więcej definicji roli i logiki do ról kart",
         "uk": "додати більше визначення ролі та логіку до ролей карток",
         "zh-cn": "在卡片角色中添加更多角色定义和逻辑"
-      },
-      "1.21.19": {
-        "en": "add value.power.active to cardRoles and possibility for Name (label? Name? ID)",
-        "de": "add value.power.active to cardRoles und Möglichkeit für Name (label? Name? Ausweis",
-        "ru": "добавить value.power.active к ролям карты и возможности для имени Имя? ID",
-        "pt": "add value.power.active to cardRoles e possibilidade de Nome (label? Nome? ID)",
-        "nl": "waarde.power.active toevoegen aan kaartRoles en mogelijkheid voor Naam (label? Naam? ID)",
-        "fr": "ajouter value.power.active à cardRoles et possibilité de nom (étiquette? Votre nom ? Numéro d'identification",
-        "it": "aggiungere valore.power.active a cardRoles e possibilità per Nome (etichetta? Nome? ID)",
-        "es": "añadir valor.power.active a cardRoles y posibilidad de Nombre (label? ¿Nombre? ID)",
-        "pl": "dodać value.power.active do kardRoles i możliwość Nazwa (etykieta? Nazwisko? ID)",
-        "uk": "додати значення.power.active to cardRoles і можливість для Ім'я (label? Ім'я Ім'я",
-        "zh-cn": "添加值. power. active to cardRoles 和名称的可能性(标签?) 名字吗? 身份证)"
       }
     },
     "titleLang": {
