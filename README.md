@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.21.31 (2026-04-01)
 * (BenAhrdt) Display more Infos and colors in Cards
 
 ### 1.21.30 (2026-04-01)

@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.30",
+    "version": "1.21.31",
     "news": {
+      "1.21.31": {
+        "en": "Display more Infos and colors in Cards",
+        "de": "Mehr Infos und Farben in Karten anzeigen",
+        "ru": "Показать больше информации и цветов в картах",
+        "pt": "Mostrar mais informações e cores nos cartões",
+        "nl": "Meer informatie en kleuren in kaarten tonen",
+        "fr": "Afficher plus Infos et couleurs dans les Cartes",
+        "it": "Visualizza maggiori informazioni e colori nelle carte",
+        "es": "Mostrar más Información y colores en tarjetas",
+        "pl": "Wyświetl więcej informacji i kolorów w kartach",
+        "uk": "Показати більше інформації та кольорів в картках",
+        "zh-cn": "在卡片中显示更多信息和颜色"
+      },
       "1.21.30": {
         "en": "bugfix warn logging",
         "de": "bugfix warnen",
@@ -80,19 +93,6 @@
         "pl": "dodaj preetykietę do niektórych ról dla karty",
         "uk": "додати до деяких ролей для картки",
         "zh-cn": "为一些牌角色添加预标签"
-      },
-      "1.21.24": {
-        "en": "Merge cardRoles at startup in default\nadd some roles to cardRoles\nadd some roles to toIob generation",
-        "de": "Merge cardRoles beim Start im Standard\nfügen Sie einige Rollen zu CardRoles hinzu\neinige Rollen zu Iob-Generation hinzufügen",
-        "ru": "Слияние CardRoles при запуске по умолчанию\nдобавьте несколько ролей в карточные роли\nдобавьте некоторые роли в поколение Iob",
-        "pt": "Mesclar o cardRoles no arranque por omissão\nadicionar alguns papéis ao cardRoles\nadicionar alguns papéis à geração toIob",
-        "nl": "KaartsamenvoegenRollen bij opstarten in standaard\nenkele rollen toevoegen aan cardRoles\nvoeg een aantal rollen toe aan Iob generatie",
-        "fr": "Fusionner carteRoles au démarrage par défaut\najouter quelques rôles à cardRoles\najouter quelques rôles à la génération Iob",
-        "it": "Unisci cardRoles all'avvio in default\naggiungere alcuni ruoli a cardRoles\naggiungere alcuni ruoli alla generazione di toIob",
-        "es": "Tarjeta de fusiónRoles al inicio por defecto\nañadir algunos papeles a cardRoles\nañadir algunos roles a la generación de Iob",
-        "pl": "Połączenie kardRoles przy starcie domyślnie\ndodaj kilka ról do kardRoles\ndodaj kilka ról do pokolenia",
-        "uk": "Закупи хостинг »\nдодати деякі ролі до картиРолес\nдодати деякі ролі до покоління",
-        "zh-cn": "默认启动时合并卡片\n在卡片中添加一些角色\n在toIob生成中添加一些角色"
       }
     },
     "titleLang": {
