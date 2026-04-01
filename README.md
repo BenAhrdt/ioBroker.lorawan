@@ -25,7 +25,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
-* (BenAhrdt) add enum query to ait quality
+* (BenAhrdt) add enum query to air quality
 
 ### 1.21.27 (2026-04-01)
 * (BenAhrdt) bugfix airqulity
