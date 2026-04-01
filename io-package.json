@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.27",
+    "version": "1.21.28",
     "news": {
+      "1.21.28": {
+        "en": "add enum query to air quality",
+        "de": "enum quer zur luftqualität hinzufügen",
+        "ru": "добавить вопрос к качеству воздуха",
+        "pt": "adicionar consulta enum à qualidade do ar",
+        "nl": "enum query toevoegen aan luchtkwaliteit",
+        "fr": "ajouter une requête enum à la qualité de l'air",
+        "it": "aggiungere query enum alla qualità dell'aria",
+        "es": "añadir enum query a la calidad del aire",
+        "pl": "dodaj enum query do jakości powietrza",
+        "uk": "додати конвертер для якості повітря",
+        "zh-cn": "在空气质量中添加enum查询"
+      },
       "1.21.27": {
         "en": "bugfix airqulity",
         "de": "bugfix luftmenge",
@@ -80,19 +93,6 @@
         "pl": "bugfix w bridge objectStore\ndodaj sensor.motion do kardRoles",
         "uk": "виправлення помилок в об'єкті міст\nдодати датчик.motion до картиРолес",
         "zh-cn": "桥对象中的错误修正Store\n将感应器.motion添加到卡片"
-      },
-      "1.21.21": {
-        "en": "change priority to name => lable => id (in card)",
-        "de": "name ändern => lable => id (in karte)",
-        "ru": "изменить приоритет на имя => lable => id (в карте)",
-        "pt": "mudar a prioridade para o nome => lable => id (no cartão)",
-        "nl": "de prioriteit wijzigen naar naam => lable => id (in kaart)",
-        "fr": "changer la priorité en nom => lable => id (dans la carte)",
-        "it": "modifica la priorità al nome => lable => id (in scheda)",
-        "es": "cambio de prioridad al nombre = título = título id (en la tarjeta)",
-        "pl": "zmienić priorytet na nazwę = > lable = > id (w karcie)",
-        "uk": "змінити пріоритет в name => lable => id (в картці)",
-        "zh-cn": "更改优先级为 qq lable id (卡片)"
       }
     },
     "titleLang": {
