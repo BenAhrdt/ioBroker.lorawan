@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) add prelabel to some roles for card
+
 ### 1.21.24 (2026-04-01)
 * (BenAhrdt) Merge cardRoles at startup in default
 * (BenAhrdt) add some roles to cardRoles
