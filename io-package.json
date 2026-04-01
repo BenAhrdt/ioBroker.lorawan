@@ -513,6 +513,20 @@
       },
       "native": {}
     },
+      {
+      "_id": "info.cardRoleMerge",
+      "type": "state",
+      "common": {
+        "role": "state",
+        "name": "Merge state at startup",
+        "type": "boolean",
+        "icon": "icons/plug.png",
+        "read": true,
+        "write": true,
+        "def": true
+      },
+      "native": {}
+    },
     {
       "_id": "info.discoveredIds",
       "type": "state",
@@ -594,7 +608,7 @@
         "name": "internal logging types",
         "read": true,
         "write": true,
-        "def": "{\"assign\": false, \"setObject\": false, \"parentNameing\": false, \"messageTo\": false, \"listDevices\": false, \"getStatus\": false, \"deviceinformation\": false, \"downlinkconfig\": false, \"getChangeInfo\": false, \"assign\": false, \"assignHandler\": false, \"bridgeMqtt\": false, \"bridgeDiscovery\": false, \"bridgePublish\": false, \"mqtt\": false, \"deviceManager\": false}"
+        "def": "{\"assign\": false, \"setObject\": false, \"parentNameing\": false, \"messageTo\": false, \"listDevices\": false, \"getStatus\": false, \"deviceinformation\": false, \"downlinkconfig\": false, \"getChangeInfo\": false, \"assign\": false, \"assignHandler\": false, \"bridgeMqtt\": false, \"bridgeDiscovery\": false, \"bridgePublish\": false, \"mqtt\": false, \"deviceManager\": false, \"generateStates\": false}"
       },
       "native": {}
     },

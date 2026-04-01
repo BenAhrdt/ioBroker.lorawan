@@ -24,6 +24,11 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Merge cardRoles at startup in default
+* (BenAhrdt) add some roles to cardRoles
+* (BenAhrdt) add some roles to toIob generation
+
 ### 1.21.23 (2026-03-31)
 * (BenAhrdt) add DeviceObject to every device in dM
 * (BenAhrdt) remove moin / max because used in default
