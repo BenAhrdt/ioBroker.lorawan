@@ -25,6 +25,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+* (BenAhrdt) add airquilty for toIob devices
 * (BenAhrdt) add functionality off native card
 
 ### 1.21.25 (2026-04-01)
