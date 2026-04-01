@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.29",
+    "version": "1.21.30",
     "news": {
+      "1.21.30": {
+        "en": "bugfix warn logging",
+        "de": "bugfix warnen",
+        "ru": "bugfix предупреждает об опасности",
+        "pt": "aviso de erro de registro",
+        "nl": "bugfix waarschuwing loggen",
+        "fr": "bugfix prévient l'enregistrement",
+        "it": "bugfix avvertire la registrazione",
+        "es": "bugfix warn logging",
+        "pl": "bugfix ostrzega logowanie",
+        "uk": "виправлення помилок",
+        "zh-cn": "错误修正警告日志"
+      },
       "1.21.29": {
         "en": "check native",
         "de": "check native",
@@ -80,19 +93,6 @@
         "pl": "Połączenie kardRoles przy starcie domyślnie\ndodaj kilka ról do kardRoles\ndodaj kilka ról do pokolenia",
         "uk": "Закупи хостинг »\nдодати деякі ролі до картиРолес\nдодати деякі ролі до покоління",
         "zh-cn": "默认启动时合并卡片\n在卡片中添加一些角色\n在toIob生成中添加一些角色"
-      },
-      "1.21.23": {
-        "en": "add DeviceObject to every device in dM\nremove moin / max because used in default",
-        "de": "deviceObject zu jedem Gerät in dM hinzufügen\nmoin / max entfernen, weil im standard verwendet",
-        "ru": "добавить DeviceObject на каждое устройство в dM\nудалить moin/max, потому что используется по умолчанию",
-        "pt": "adicionar DeviceObject a cada dispositivo no dM\nremover moin / max porque usado por omissão",
-        "nl": "apparaatObject toevoegen aan elk apparaat in dM\nverwijderen moin / max omdat gebruikt in standaard",
-        "fr": "ajouter DeviceObject à chaque périphérique dans dM\nsupprimer moin / max parce qu'il est utilisé par défaut",
-        "it": "aggiungere DeviceObject ad ogni dispositivo in dM\nrimuovere moin / max perché utilizzato in default",
-        "es": "añadir DispositivoObjeto a cada dispositivo en dM\neliminar moin / máx porque se utiliza por defecto",
-        "pl": "dodaj DeviceObject do każdego urządzenia w dM\nusuń moin / max, ponieważ używane domyślnie",
-        "uk": "додати пристрійВимкніть до кожного пристрою в dM\nвидалити moin / макс, тому що використовується в за замовчуванням",
-        "zh-cn": "将设备对象添加到 dM 每个设备\n删除 moin / 最大值, 因为默认使用"
       }
     },
     "titleLang": {
