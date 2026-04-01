@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.21.23",
+    "version": "1.21.24",
     "news": {
+      "1.21.24": {
+        "en": "Merge cardRoles at startup in default\nadd some roles to cardRoles\nadd some roles to toIob generation",
+        "de": "Merge cardRoles beim Start im Standard\nfügen Sie einige Rollen zu CardRoles hinzu\neinige Rollen zu Iob-Generation hinzufügen",
+        "ru": "Слияние CardRoles при запуске по умолчанию\nдобавьте несколько ролей в карточные роли\nдобавьте некоторые роли в поколение Iob",
+        "pt": "Mesclar o cardRoles no arranque por omissão\nadicionar alguns papéis ao cardRoles\nadicionar alguns papéis à geração toIob",
+        "nl": "KaartsamenvoegenRollen bij opstarten in standaard\nenkele rollen toevoegen aan cardRoles\nvoeg een aantal rollen toe aan Iob generatie",
+        "fr": "Fusionner carteRoles au démarrage par défaut\najouter quelques rôles à cardRoles\najouter quelques rôles à la génération Iob",
+        "it": "Unisci cardRoles all'avvio in default\naggiungere alcuni ruoli a cardRoles\naggiungere alcuni ruoli alla generazione di toIob",
+        "es": "Tarjeta de fusiónRoles al inicio por defecto\nañadir algunos papeles a cardRoles\nañadir algunos roles a la generación de Iob",
+        "pl": "Połączenie kardRoles przy starcie domyślnie\ndodaj kilka ról do kardRoles\ndodaj kilka ról do pokolenia",
+        "uk": "Закупи хостинг »\nдодати деякі ролі до картиРолес\nдодати деякі ролі до покоління",
+        "zh-cn": "默认启动时合并卡片\n在卡片中添加一些角色\n在toIob生成中添加一些角色"
+      },
       "1.21.23": {
         "en": "add DeviceObject to every device in dM\nremove moin / max because used in default",
         "de": "deviceObject zu jedem Gerät in dM hinzufügen\nmoin / max entfernen, weil im standard verwendet",
@@ -80,19 +93,6 @@
         "pl": "stany wyświetlania bugfix dla urządzeń okrągłych w dM",
         "uk": "випадкові стани відображення для мостових пристроїв в dM",
         "zh-cn": "dM 中桥设备的bugfix 显示状态"
-      },
-      "1.21.17": {
-        "en": "change display of sensor.contact in dM card",
-        "de": "anzeige von sensor.contact in dM-Karte ändern",
-        "ru": "изменение отображения sensor.contact в карте dM",
-        "pt": "mudar a exibição do sensor.contato no cartão dM",
-        "nl": "wijzigen weergave van sensor.contact in dM-kaart",
-        "fr": "modifier l'affichage du capteur.contact dans la carte dM",
-        "it": "display del sensore.contatto nella scheda dM",
-        "es": "cambio de pantalla de sensor.contacto en tarjeta dM",
-        "pl": "zmiana wyświetlania sensor.contact w karcie dM",
-        "uk": "зміна відображення датчика.контакт в картці dM",
-        "zh-cn": "在 dM 卡中更改传感器显示. contact"
       }
     },
     "titleLang": {
@@ -513,7 +513,7 @@
       },
       "native": {}
     },
-      {
+    {
       "_id": "info.cardRoleMerge",
       "type": "state",
       "common": {
