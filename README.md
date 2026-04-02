@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) add more roles to toIob devices
+
 ### 1.22.0 (2026-04-01)
 * (BenAhrdt) new Design in device Manager Cards
 
