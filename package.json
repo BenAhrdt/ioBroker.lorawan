@@ -29,7 +29,7 @@
     "@iobroker/dm-utils": "^3.0.9",
     "easy-crc": "^1.1.0",
     "lodash": "^4.17.21",
-    "mqtt": "^5.14.1",
+    "mqtt": "^5.15.1",
     "node-schedule": "^2.1.1"
   },
   "devDependencies": {
