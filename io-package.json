@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.0",
+    "version": "1.22.1",
     "news": {
+      "1.22.1": {
+        "en": "add more roles to toIob devices",
+        "de": "weitere Rollen zu Iob-Geräten hinzufügen",
+        "ru": "добавьте больше ролей в устройства Iob",
+        "pt": "adicionar mais funções aos dispositivos toIob",
+        "nl": "meer rollen toevoegen aan Iob-apparaten",
+        "fr": "ajouter plus de rôles aux périphériques toIob",
+        "it": "aggiungere più ruoli ai dispositivi toIob",
+        "es": "añadir más roles a los dispositivos",
+        "pl": "dodaj więcej ról do urządzeń tolob",
+        "uk": "додати більше ролей до пристроїв",
+        "zh-cn": "向 toIob 设备添加更多角色"
+      },
       "1.22.0": {
         "en": "new Design in device Manager Cards",
         "de": "neues Design in Gerätemanagerkarten",
@@ -80,19 +93,6 @@
         "pl": "bugfix airquality",
         "uk": "български, english, українська..",
         "zh-cn": "错误修正空格"
-      },
-      "1.21.26": {
-        "en": "add airquilty for toIob devices\nadd functionality off native card",
-        "de": "airquilty für Iob-Geräte hinzufügen\ndie funktionalität der nativen karte hinzufügen",
-        "ru": "добавить Airquilty для устройств Iob\nдобавьте функциональность с родной карты",
-        "pt": "adicionar arquivamento para dispositivos toIob\nadicionar funcionalidade fora do cartão nativo",
-        "nl": "airquilty voor toIob-apparaten toevoegen\nfunctionaliteit toevoegen aan native card",
-        "fr": "ajouter de l'airquilty pour les appareils toIob\najouter des fonctionnalités hors carte native",
-        "it": "aggiungere airquilty per dispositivi toIob\naggiungere funzionalità dalla scheda madre",
-        "es": "añadir airquilty para dispositivos toIob\nañadir funcionalidad de tarjeta nativa",
-        "pl": "dodaj airquilty dla urządzeń tolob\ndodać funkcjonalność z rodzimej karty",
-        "uk": "додати повітряну опалубку для пристроїв\nдодати функціональність на рідній карті",
-        "zh-cn": "添加 ToIob 设备的空平\n从本地卡中添加功能"
       }
     },
     "titleLang": {
