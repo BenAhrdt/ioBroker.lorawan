@@ -666,7 +666,6 @@
 					"label": "customJson",
 					"tooltip": "customJsonTooltip",
 					"hidden": "data.customDecodedJsonActive === false",
-					"readOnly": true,
 					"xs": 12,
 					"sm": 2,
 					"md": 2,
