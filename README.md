@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.2 (2026-04-07)
 * (BenAhrdt) remove readOnly flag from jsonEditor
 
 ### 1.22.1 (2026-04-02)

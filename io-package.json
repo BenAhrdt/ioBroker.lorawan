@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.1",
+    "version": "1.22.2",
     "news": {
+      "1.22.2": {
+        "en": "remove readOnly flag from jsonEditor",
+        "de": "readOnly flag von jsonEditor entfernen",
+        "ru": "удалить только флаг jsonEditor",
+        "pt": "remove readOnly flag do jsonEditor",
+        "nl": "readOnly-vlag verwijderen uit jsonEditor",
+        "fr": "supprimer readOnly drapeau de jsonEditor",
+        "it": "rimuovere readOnly flag da jsonEditor",
+        "es": "eliminar readOnly flag de jsonEditor",
+        "pl": "usuń flagę readOnly z jsonEditor",
+        "uk": "remove readOnly прапорець з jsonEditor",
+        "zh-cn": "从json编辑器中删除只读的旗"
+      },
       "1.22.1": {
         "en": "add more roles to toIob devices",
         "de": "weitere Rollen zu Iob-Geräten hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "dodaj enum query do jakości powietrza",
         "uk": "додати конвертер для якості повітря",
         "zh-cn": "在空气质量中添加enum查询"
-      },
-      "1.21.27": {
-        "en": "bugfix airqulity",
-        "de": "bugfix luftmenge",
-        "ru": "багфикс airlity",
-        "pt": "errorfix airqulity",
-        "nl": "bugfix airqulity",
-        "fr": "bugfix airqulity",
-        "it": "bugfix airqulity",
-        "es": "bugfix airqulity",
-        "pl": "bugfix airquality",
-        "uk": "български, english, українська..",
-        "zh-cn": "错误修正空格"
       }
     },
     "titleLang": {
