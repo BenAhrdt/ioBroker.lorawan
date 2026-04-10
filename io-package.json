@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.3",
+    "version": "1.22.4",
     "news": {
+      "1.22.4": {
+        "en": "bugfix lock entity in dM card",
+        "de": "bugfix Schloss Entität in dM Karte",
+        "ru": "bugfix lock entity в карте dM",
+        "pt": "entidade de bloqueio de bugfix no cartão dM",
+        "nl": "bugfix slot entiteit in dM-kaart",
+        "fr": "bugfix lock entity dans la carte dM",
+        "it": "entità di blocco bugfix nella scheda dM",
+        "es": "bugfix entidad de bloqueo en tarjeta dM",
+        "pl": "element blokujący bugfix w karcie dM",
+        "uk": "суб'єкт блокування помилок в картці dM",
+        "zh-cn": "dM 卡中的bugfix锁实体"
+      },
       "1.22.3": {
         "en": "add first Test for states of configed devices shown in device Manager cards",
         "de": "fügen Sie ersten Test für Zustände von konfiktiven Geräten in Device Manager-Karten",
@@ -80,19 +93,6 @@
         "pl": "bugfix ostrzega logowanie",
         "uk": "виправлення помилок",
         "zh-cn": "错误修正警告日志"
-      },
-      "1.21.29": {
-        "en": "check native",
-        "de": "check native",
-        "ru": "проверить родной",
-        "pt": "verificar nativo",
-        "nl": "native controleren",
-        "fr": "vérifier native",
-        "it": "controllare nativo",
-        "es": "cheque nativo",
-        "pl": "sprawdź rodzime",
-        "uk": "перевірити рідний",
-        "zh-cn": "检查本地"
       }
     },
     "titleLang": {
