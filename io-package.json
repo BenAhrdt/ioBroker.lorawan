@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.5",
+    "version": "1.22.6",
     "news": {
+      "1.22.6": {
+        "en": "bugfix cover endposition open",
+        "de": "bugfix cover endposition offen",
+        "ru": "багфикс cover end end open",
+        "pt": "endposition de cobertura de bugfix aberta",
+        "nl": "bugfix cover endposition open",
+        "fr": "bugfix endposition de couverture ouverte",
+        "it": "bugfix cover endposition aperto",
+        "es": "tapa bugfix endposition open",
+        "pl": "bugfix pokrywa końcowa otwarta",
+        "uk": "відновлення пароля",
+        "zh-cn": "bugfix 封面结束位置打开"
+      },
       "1.22.5": {
         "en": "bugfix displaying buttons in dM cards",
         "de": "bugfix Anzeigetasten in dM-Karten",
@@ -80,19 +93,6 @@
         "pl": "nowy projekt w urządzeniu karty menedżer",
         "uk": "новий дизайн в управлінні пристроями Картки",
         "zh-cn": "设备管理卡中的新设计"
-      },
-      "1.21.31": {
-        "en": "Display more Infos and colors in Cards",
-        "de": "Mehr Infos und Farben in Karten anzeigen",
-        "ru": "Показать больше информации и цветов в картах",
-        "pt": "Mostrar mais informações e cores nos cartões",
-        "nl": "Meer informatie en kleuren in kaarten tonen",
-        "fr": "Afficher plus Infos et couleurs dans les Cartes",
-        "it": "Visualizza maggiori informazioni e colori nelle carte",
-        "es": "Mostrar más Información y colores en tarjetas",
-        "pl": "Wyświetl więcej informacji i kolorów w kartach",
-        "uk": "Показати більше інформації та кольорів в картках",
-        "zh-cn": "在卡片中显示更多信息和颜色"
       }
     },
     "titleLang": {
