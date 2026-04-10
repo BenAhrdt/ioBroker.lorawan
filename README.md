@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) bugfix lock entity in dM card
+
 ### 1.22.3 (2026-04-10)
 * (BenAhrdt) add first Test for states of configed devices shown in device Manager cards
 
