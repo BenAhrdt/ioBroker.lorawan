@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.4",
+    "version": "1.22.5",
     "news": {
+      "1.22.5": {
+        "en": "bugfix displaying buttons in dM cards",
+        "de": "bugfix Anzeigetasten in dM-Karten",
+        "ru": "bugfix отображение кнопок в картах dM",
+        "pt": "correcção de erros a mostrar botões nas cartas dM",
+        "nl": "bugfix tonen van knoppen in dM-kaarten",
+        "fr": "bugfix affichant les boutons dans les cartes dM",
+        "it": "pulsanti di visualizzazione bugfix nelle schede dM",
+        "es": "botones de visualización de bugfix en tarjetas dM",
+        "pl": "bugfix wyświetlanie przycisków w kartach dM",
+        "uk": "кнопки відображення помилок в dM-картах",
+        "zh-cn": "在 dM 纸卡中显示按钮"
+      },
       "1.22.4": {
         "en": "bugfix lock entity in dM card",
         "de": "bugfix Schloss Entität in dM Karte",
@@ -80,19 +93,6 @@
         "pl": "Wyświetl więcej informacji i kolorów w kartach",
         "uk": "Показати більше інформації та кольорів в картках",
         "zh-cn": "在卡片中显示更多信息和颜色"
-      },
-      "1.21.30": {
-        "en": "bugfix warn logging",
-        "de": "bugfix warnen",
-        "ru": "bugfix предупреждает об опасности",
-        "pt": "aviso de erro de registro",
-        "nl": "bugfix waarschuwing loggen",
-        "fr": "bugfix prévient l'enregistrement",
-        "it": "bugfix avvertire la registrazione",
-        "es": "bugfix warn logging",
-        "pl": "bugfix ostrzega logowanie",
-        "uk": "виправлення помилок",
-        "zh-cn": "错误修正警告日志"
       }
     },
     "titleLang": {
