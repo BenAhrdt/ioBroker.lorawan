@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.2",
+    "version": "1.22.3",
     "news": {
+      "1.22.3": {
+        "en": "add first Test for states of configed devices shown in device Manager cards",
+        "de": "fügen Sie ersten Test für Zustände von konfiktiven Geräten in Device Manager-Karten",
+        "ru": "добавить первый Тест для состояний конфигурированных устройств, показанных в картах диспетчера устройств",
+        "pt": "adicionar primeiro Teste para estados de dispositivos configurados mostrados nas placas do Gerenciador de dispositivos",
+        "nl": "toe te voegen eerste Test voor toestanden van geconfigureerde apparaten weergegeven in apparaat Manager kaarten",
+        "fr": "ajouter le premier test pour les états des périphériques configurés affichés dans les cartes de gestionnaire de périphériques",
+        "it": "aggiungere il primo test per gli stati di dispositivi confidificati mostrati nelle schede Gestione dispositivi",
+        "es": "añadir el primer Test para estados de dispositivos conectados mostrados en tarjetas de administrador de dispositivos",
+        "pl": "dodaj pierwszy test dla stanu podłączonych urządzeń pokazany w kartach menedżera urządzeń",
+        "uk": "додати перший тест для станів настрочених пристроїв, відображених в картах диспетчера пристроїв",
+        "zh-cn": "添加第一个设备管理卡中显示的配置设备状态测试"
+      },
       "1.22.2": {
         "en": "remove readOnly flag from jsonEditor",
         "de": "readOnly flag von jsonEditor entfernen",
@@ -80,19 +93,6 @@
         "pl": "sprawdź rodzime",
         "uk": "перевірити рідний",
         "zh-cn": "检查本地"
-      },
-      "1.21.28": {
-        "en": "add enum query to air quality",
-        "de": "enum quer zur luftqualität hinzufügen",
-        "ru": "добавить вопрос к качеству воздуха",
-        "pt": "adicionar consulta enum à qualidade do ar",
-        "nl": "enum query toevoegen aan luchtkwaliteit",
-        "fr": "ajouter une requête enum à la qualité de l'air",
-        "it": "aggiungere query enum alla qualità dell'aria",
-        "es": "añadir enum query a la calidad del aire",
-        "pl": "dodaj enum query do jakości powietrza",
-        "uk": "додати конвертер для якості повітря",
-        "zh-cn": "在空气质量中添加enum查询"
       }
     },
     "titleLang": {
