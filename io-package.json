@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.6",
+    "version": "1.22.7",
     "news": {
+      "1.22.7": {
+        "en": "add more device_class entries to assign roles",
+        "de": "mehr device class einträge hinzufügen, um rollen zuzuordnen",
+        "ru": "добавить больше записей device class для назначения ролей",
+        "pt": "adicionar mais entradas de dispositivo  classe para atribuir funções",
+        "nl": "voeg meer apparaat klasse items toe om rollen toe te wijzen",
+        "fr": "ajouter plus d'entrées de classe de périphérique pour attribuer des rôles",
+        "it": "aggiungere più voci di device class per assegnare ruoli",
+        "es": "añadir más entradas de dispositivo clase para asignar roles",
+        "pl": "dodaj więcej wpisów _ device _ class do przypisywania ról",
+        "uk": "add more device class записів для позначення ролей",
+        "zh-cn": "添加更多设备 类条目以指定角色"
+      },
       "1.22.6": {
         "en": "bugfix cover endposition open",
         "de": "bugfix cover endposition offen",
@@ -80,19 +93,6 @@
         "pl": "dodaj więcej ról do urządzeń tolob",
         "uk": "додати більше ролей до пристроїв",
         "zh-cn": "向 toIob 设备添加更多角色"
-      },
-      "1.22.0": {
-        "en": "new Design in device Manager Cards",
-        "de": "neues Design in Gerätemanagerkarten",
-        "ru": "новый дизайн в картах диспетчера устройств",
-        "pt": "novo design em cartões gerenciadores de dispositivos",
-        "nl": "nieuw ontwerp in apparaatbeheerkaarten",
-        "fr": "nouvelle conception dans les cartes de gestionnaire d'appareils",
-        "it": "nuovo design nelle schede di gestione dei dispositivi",
-        "es": "nuevo diseño en tarjetas de gestión de dispositivos",
-        "pl": "nowy projekt w urządzeniu karty menedżer",
-        "uk": "новий дизайн в управлінні пристроями Картки",
-        "zh-cn": "设备管理卡中的新设计"
       }
     },
     "titleLang": {
