@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) correct default value for pause (worx)
+
 ### 1.22.10 (2026-04-20)
 * (BenAhrdt) implements button in card
 

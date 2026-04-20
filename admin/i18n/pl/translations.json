@@ -168,6 +168,8 @@
 	"OpenSignalText": "identyfikator otwartego wyłącznika krańcowego",
 	"OriginHeader": "Ustawienia oryginalności",
 	"OriginInformation": "Ustaw pochodzenie oczekiwanych danych",
+	"PauseStateId": "Identyfikator stanu wstrzymania",
+	"PauseStateNumber": "Numer pauzy",
 	"RefreshDiscoveryCronJob": "Odkryj cykl",
 	"RefreshDiscoveryCronJobTooltip": "wstaw cronjob, aby odświeżyć odkrycie",
 	"Rename this device": "Zmień nazwę tego urządzenia",

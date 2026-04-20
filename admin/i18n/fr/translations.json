@@ -168,6 +168,8 @@
 	"OpenSignalText": "identifiant pour fin de course ouvert",
 	"OriginHeader": "Paramètres d'origine",
 	"OriginInformation": "Définir l'origine des données attendues",
+	"PauseStateId": "PauseStateId",
+	"PauseStateNumber": "Numéro de pause",
 	"RefreshDiscoveryCronJob": "Découvrir le cycle",
 	"RefreshDiscoveryCronJobTooltip": "insérez le cronjob pour rafraîchir la découverte",
 	"Rename this device": "Renommer cet appareil",

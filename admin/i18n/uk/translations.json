@@ -168,6 +168,8 @@
 	"OpenSignalText": "ідентифікатор для відкритого кінцевого вимикача",
 	"OriginHeader": "Налаштування походження",
 	"OriginInformation": "Встановіть джерело очікуваних даних",
+	"PauseStateId": "PauseStateId",
+	"PauseStateNumber": "Пауза-номер",
 	"RefreshDiscoveryCronJob": "Цикл відкриття",
 	"RefreshDiscoveryCronJobTooltip": "вставте cronjob для оновлення відкриття",
 	"Rename this device": "Перейменуйте цей пристрій",

@@ -168,6 +168,8 @@
 	"OpenSignalText": "ID para interruptor de límite abierto",
 	"OriginHeader": "Configuración de origen",
 	"OriginInformation": "Establecer el origen de los datos esperados.",
+	"PauseStateId": "PausaEstadoId",
+	"PauseStateNumber": "Número de pausa",
 	"RefreshDiscoveryCronJob": "Descubre el ciclo",
 	"RefreshDiscoveryCronJobTooltip": "inserte el cronjob para actualizar el descubrimiento",
 	"Rename this device": "Cambiar el nombre de este dispositivo",

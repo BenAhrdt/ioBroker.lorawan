@@ -168,6 +168,8 @@
 	"OpenSignalText": "идентификатор концевого выключателя открытия",
 	"OriginHeader": "Оригинальные настройки",
 	"OriginInformation": "Установите источник ожидаемых данных",
+	"PauseStateId": "Паузастатеид",
+	"PauseStateNumber": "Пауза-номер",
 	"RefreshDiscoveryCronJob": "Откройте для себя цикл",
 	"RefreshDiscoveryCronJobTooltip": "вставьте cronjob для обновления открытия",
 	"Rename this device": "Переименуйте это устройство",

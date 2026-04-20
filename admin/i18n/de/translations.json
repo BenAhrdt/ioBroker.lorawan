@@ -168,6 +168,8 @@
 	"OpenSignalText": "ID für offenen Endschalter",
 	"OriginHeader": "Ursprungseinstellungen",
 	"OriginInformation": "Legen Sie den Ursprung der erwarteten Daten fest",
+	"PauseStateId": "Pause Id",
+	"PauseStateNumber": "Pausiert Nummer",
 	"RefreshDiscoveryCronJob": "Discovery Zyklus",
 	"RefreshDiscoveryCronJobTooltip": "Stellen Sie den Cronjob für das Discovery ein",
 	"Rename this device": "Gerät umbenennen",

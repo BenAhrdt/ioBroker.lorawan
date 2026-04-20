@@ -322,10 +322,10 @@
 	"HomeId": "HomeId",
 	"NumberStateId": "Id of State-Number",
 	"MowingStateNumber": "Mowing-Number",
-	"IdleStateNumber": "Idle-Number",
+	"PauseStateNumber": "Pause-Number",
 	"HomeStateNumber": "Home-Number",
 	"MowingStateId": "MowingStateId",
-	"IdleStateId": "IdleStateId",
+	"PauseStateId": "PauseStateId",
 	"HomeStateId": "HomeStateId",
 	"NumberStateText": "State-Number Id",
 	"StatciTextMowerSeparate": "The default values are selected for the worx adapter"

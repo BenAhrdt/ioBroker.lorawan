@@ -168,6 +168,8 @@
 	"OpenSignalText": "id per finecorsa aperto",
 	"OriginHeader": "Impostazioni dell'origine",
 	"OriginInformation": "Imposta l'origine dei dati attesi",
+	"PauseStateId": "PauseStateId",
+	"PauseStateNumber": "Numero di pausa",
 	"RefreshDiscoveryCronJob": "Scopri Ciclo",
 	"RefreshDiscoveryCronJobTooltip": "inserire il cronjob per aggiornare la scoperta",
 	"Rename this device": "Rinomina questo dispositivo",

@@ -168,6 +168,8 @@
 	"OpenSignalText": "ID voor open eindschakelaar",
 	"OriginHeader": "Oorspronkelijke instellingen",
 	"OriginInformation": "Stel de oorsprong van de verwachte gegevens in",
+	"PauseStateId": "PauseStateId",
+	"PauseStateNumber": "Pauze-nummer",
 	"RefreshDiscoveryCronJob": "Ontdek Cyclus",
 	"RefreshDiscoveryCronJobTooltip": "plaats de cronjob om de ontdekking te vernieuwen",
 	"Rename this device": "Hernoem dit apparaat",

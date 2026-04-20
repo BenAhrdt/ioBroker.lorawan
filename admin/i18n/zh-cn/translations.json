@@ -168,6 +168,8 @@
 	"OpenSignalText": "打开限位开关的 id",
 	"OriginHeader": "原始设置",
 	"OriginInformation": "设置预期数据的来源",
+	"PauseStateId": "暂停状态ID",
+	"PauseStateNumber": "暂停号码",
 	"RefreshDiscoveryCronJob": "发现周期",
 	"RefreshDiscoveryCronJobTooltip": "插入 cronjob 以刷新发现",
 	"Rename this device": "重命名该设备",
