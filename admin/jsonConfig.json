@@ -842,7 +842,11 @@
 						{"label":"foreign devices","value":"foreignDevices"},
 						{"label":"toIob devices","value":"toIobDevices"}
 					],
-					"default": "foreign devices",
+					"default": [
+								"toIobDevices",
+								"foreignDevices",
+								"lorawanDevices"
+								],
 					"xs": 12,
 					"sm": 3,
 					"md": 3,
@@ -2484,7 +2488,266 @@
 							"xl": 2
 						}
 					]
-				}				
+				},
+
+
+				"_MowerForeignHeader":{
+					"newLine": true,
+					"type": "header",
+					"text": "MowerHeader",
+					"size": 3,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"_MowerForeignInformation":{
+					"newLine":true,
+					"type": "staticText",
+					"label": "MowerInformation",
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
+				},
+				"MowerForeignConfig":{
+                    "newLine": true,
+                    "type":"accordion",
+					"titleAttr": "MowerName",
+					"clone": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12,
+					"items":[
+						{
+							"type": "text",
+							"attr": "MowerName",
+							"label": "MowerNameText",
+							"validator": "if(data.MowerName === ''){return false;}else{return true;}",
+							"validatorNoSaveOnError": true,
+							"default": "Mower Name",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "select",
+							"attr": "MowerSeparate",
+							"label": "MowerSeparate",
+							"tooltip": "MowerSeparateTooltip",
+							"options": [
+								{"label":"OneNumber","value":"number"},
+								{"label":"SeparateIds","value":"separate"}
+							],
+							"default": "number",
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},
+						{
+							"type": "select",
+							"attr": "MowerStateSeparate",
+							"label": "MowerStateSeparate",
+							"tooltip": "MowerStateSeparateTooltip",
+							"options": [
+								{"label":"OneNumberState","value":"number"},
+								{"label":"SeparateStateIds","value":"separate"}
+							],
+							"default": "number",
+							"xs": 12,
+							"sm": 2,
+							"md": 2,
+							"lg": 2,
+							"xl": 2
+						},
+						{
+							"type": "objectId",
+							"newLine": true,
+							"attr": "NumberId",
+							"label": "NumberText",
+							"customFilter": {"common": { "type": [ "number", "mixed" ] } },
+							"hidden": "data.MowerSeparate !== 'number'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "number",
+							"label": "StartNumber",
+							"attr": "StartNumber",
+							"tooltip": "StartNumberTooltip",
+							"default": 1,
+							"hidden": "data.MowerSeparate !== 'number'",
+							"xs": 12,
+							"sm": 1,
+							"md": 1,
+							"lg": 1,
+							"xl": 1
+						},
+						{
+							"type": "number",
+							"label": "StopNumber",
+							"attr": "StopNumber",
+							"tooltip": "StopNumberTooltip",
+							"default": 2,
+							"hidden": "data.MowerSeparate !== 'number'",
+							"xs": 12,
+							"sm": 1,
+							"md": 1,
+							"lg": 1,
+							"xl": 1
+						},
+						{
+							"type": "number",
+							"label": "HomeNumber",
+							"attr": "HomeNumber",
+							"tooltip": "HomeNumberTooltip",
+							"default": 3,
+							"hidden": "data.MowerSeparate !== 'number'",
+							"xs": 12,
+							"sm": 1,
+							"md": 1,
+							"lg": 1,
+							"xl": 1
+						},
+						{
+							"type": "objectId",
+							"newLine": true,
+							"attr": "StartId",
+							"label": "CoverOpenText",
+							"customFilter": {"common": { "type": [ "boolean", "mixed" ] } },
+							"hidden": "data.MowerSeparate !== 'separate'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "StopId",
+							"label": "CoverOpenText",
+							"customFilter": {"common": { "type": [ "boolean", "mixed" ] } },
+							"hidden": "data.MowerSeparate !== 'separate'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "HomeId",
+							"label": "CoverOpenText",
+							"customFilter": {"common": { "type": [ "boolean", "mixed" ] } },
+							"hidden": "data.MowerSeparate !== 'separate'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"newLine": true,
+							"attr": "NumberStateId",
+							"label": "NumberText",
+							"customFilter": {"common": { "type": [ "number", "mixed" ] } },
+							"hidden": "data.MowerStateSeparate !== 'number'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "number",
+							"label": "MowingStateNumber",
+							"attr": "MowingStateNumber",
+							"tooltip": "MowingStateNumberTooltip",
+							"default": 7,
+							"hidden": "data.MowerStateSeparate !== 'number'",
+							"xs": 12,
+							"sm": 1,
+							"md": 1,
+							"lg": 1,
+							"xl": 1
+						},
+						{
+							"type": "number",
+							"label": "IdleStateNumber",
+							"attr": "IdleStateNumber",
+							"tooltip": "IdleStateNumberTooltip",
+							"default": 0,
+							"hidden": "data.MowerStateSeparate !== 'number'",
+							"xs": 12,
+							"sm": 1,
+							"md": 1,
+							"lg": 1,
+							"xl": 1
+						},
+						{
+							"type": "number",
+							"label": "HomeStateNumber",
+							"attr": "HomeStateNumber",
+							"tooltip": "HomeStateNumberTooltip",
+							"default": 1,
+							"hidden": "data.MowerStateSeparate !== 'number'",
+							"xs": 12,
+							"sm": 1,
+							"md": 1,
+							"lg": 1,
+							"xl": 1
+						},
+						{
+							"type": "objectId",
+							"newLine": true,
+							"attr": "MowingStateId",
+							"label": "MowingStateText",
+							"customFilter": {"common": { "type": [ "boolean", "mixed" ] } },
+							"hidden": "data.MowerStateSeparate !== 'separate'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "IdleStateId",
+							"label": "IdleStateText",
+							"customFilter": {"common": { "type": [ "boolean", "mixed" ] } },
+							"hidden": "data.MowerStateSeparate !== 'separate'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						},
+						{
+							"type": "objectId",
+							"attr": "HomeStateId",
+							"label": "HomeStateText",
+							"customFilter": {"common": { "type": [ "boolean", "mixed" ] } },
+							"hidden": "data.MowerStateSeparate !== 'separate'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
+						}
+					]
+				}
 			}
 		}
 	}

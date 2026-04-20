@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) implements first commands and states of lawn mower
+
 ### 1.22.7 (2026-04-16)
 * (BenAhrdt) add more device_class entries to assign roles
 

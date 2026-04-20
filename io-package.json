@@ -465,7 +465,8 @@
     "HumidifierForeignConfig": [],
     "LightForeignConfig": [],
     "CoverForeignConfig": [],
-    "LockForeignConfig": []
+    "LockForeignConfig": [],
+    "MowerForeignConfig": []
   },
   "objects": [],
   "instanceObjects": [
