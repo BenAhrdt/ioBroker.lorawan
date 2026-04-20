@@ -2489,8 +2489,6 @@
 						}
 					]
 				},
-
-
 				"_MowerForeignHeader":{
 					"newLine": true,
 					"type": "header",
@@ -2567,6 +2565,17 @@
 							"md": 2,
 							"lg": 2,
 							"xl": 2
+						},
+						{
+							"type": "staticText",
+							"attr": "_statciTextMowerSeparate",
+							"label": "StatciTextMowerSeparate",
+							"hidden": "data.MowerSeparate !== 'number' && data.MowerStateSeparate !== 'number'",
+							"xs": 12,
+							"sm": 4,
+							"md": 4,
+							"lg": 4,
+							"xl": 4
 						},
 						{
 							"type": "objectId",
@@ -2661,7 +2670,7 @@
 							"type": "objectId",
 							"newLine": true,
 							"attr": "NumberStateId",
-							"label": "NumberText",
+							"label": "NumberStateText",
 							"customFilter": {"common": { "type": [ "number", "mixed" ] } },
 							"hidden": "data.MowerStateSeparate !== 'number'",
 							"xs": 12,

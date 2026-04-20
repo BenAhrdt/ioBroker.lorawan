@@ -304,5 +304,28 @@
 	"Base Ip for Bridge devices": "Base Ip for Bridge devices",
 	"Set the Base Ip for bride devices": "Set the Base Ip for bride devices",
 	"deviceObject": "Device Object",
-	"DeviceObject": "Device Object"
+	"DeviceObject": "Device Object",
+
+
+	"MowerHeader": "Define States for a Lawn-Mower Entity",
+	"MowerInformation": "Here you can define an array of Lawn-Mower definitions",
+	"MowerNameText": "Entityname",
+	"MowerSeparate": "sepaerate",
+	"MowerStateSeparate": "sepaerate",
+	"NumberId": "Id of Command-Number",
+	"StartNumber": "Start-Number",
+	"StopNumber": "Stop-Number",
+	"HomeNumber": "Home-Number",
+	"StartId": "StartId",
+	"StopId": "StopId",
+	"HomeId": "HomeId",
+	"NumberStateId": "Id of State-Number",
+	"MowingStateNumber": "Mowing-Number",
+	"IdleStateNumber": "Idle-Number",
+	"HomeStateNumber": "Home-Number",
+	"MowingStateId": "MowingStateId",
+	"IdleStateId": "IdleStateId",
+	"HomeStateId": "HomeStateId",
+	"NumberStateText": "State-Number Id",
+	"StatciTextMowerSeparate": "The default values are selected for the worx adapter"
 }
