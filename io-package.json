@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.9",
+    "version": "1.22.10",
     "news": {
+      "1.22.10": {
+        "en": "implements button in card",
+        "de": "implementiert knopf in der karte",
+        "ru": "реализует кнопку в карточке",
+        "pt": "implementa o botão no cartão",
+        "nl": "implementeert knop in kaart",
+        "fr": "implémente bouton dans la carte",
+        "it": "implementa il pulsante nella scheda",
+        "es": "implementa el botón en la tarjeta",
+        "pl": "implementuje przycisk w karcie",
+        "uk": "реалізується кнопка в картці",
+        "zh-cn": "执行卡中的按钮"
+      },
       "1.22.9": {
         "en": "error resolve git push",
         "de": "fehler beheben git push",
@@ -80,19 +93,6 @@
         "pl": "dodaj pierwszy test dla stanu podłączonych urządzeń pokazany w kartach menedżera urządzeń",
         "uk": "додати перший тест для станів настрочених пристроїв, відображених в картах диспетчера пристроїв",
         "zh-cn": "添加第一个设备管理卡中显示的配置设备状态测试"
-      },
-      "1.22.2": {
-        "en": "remove readOnly flag from jsonEditor",
-        "de": "readOnly flag von jsonEditor entfernen",
-        "ru": "удалить только флаг jsonEditor",
-        "pt": "remove readOnly flag do jsonEditor",
-        "nl": "readOnly-vlag verwijderen uit jsonEditor",
-        "fr": "supprimer readOnly drapeau de jsonEditor",
-        "it": "rimuovere readOnly flag da jsonEditor",
-        "es": "eliminar readOnly flag de jsonEditor",
-        "pl": "usuń flagę readOnly z jsonEditor",
-        "uk": "remove readOnly прапорець з jsonEditor",
-        "zh-cn": "从json编辑器中删除只读的旗"
       }
     },
     "titleLang": {
