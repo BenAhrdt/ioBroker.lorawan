@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.7",
+    "version": "1.22.8",
     "news": {
+      "1.22.8": {
+        "en": "implements first commands and states of lawn mower",
+        "de": "implementiert erste befehle und zustände des rasenmähers",
+        "ru": "реализует первые команды и состояния газонокосилки",
+        "pt": "implementa os primeiros comandos e estados do cortador de relva",
+        "nl": "implementeert eerste commando's en staten van grasmaaier",
+        "fr": "implémente les premières commandes et les états de tondeuse à gazon",
+        "it": "implementa i primi comandi e gli stati del tosaerba",
+        "es": "implementa los primeros comandos y estados de cortador de césped",
+        "pl": "wdraża pierwsze polecenia i stany kosiarki",
+        "uk": "реалізує перші команди та стани газонокосарки",
+        "zh-cn": "执行第一个命令和割草机状态"
+      },
       "1.22.7": {
         "en": "add more device_class entries to assign roles",
         "de": "mehr device class einträge hinzufügen, um rollen zuzuordnen",
@@ -80,19 +93,6 @@
         "pl": "usuń flagę readOnly z jsonEditor",
         "uk": "remove readOnly прапорець з jsonEditor",
         "zh-cn": "从json编辑器中删除只读的旗"
-      },
-      "1.22.1": {
-        "en": "add more roles to toIob devices",
-        "de": "weitere Rollen zu Iob-Geräten hinzufügen",
-        "ru": "добавьте больше ролей в устройства Iob",
-        "pt": "adicionar mais funções aos dispositivos toIob",
-        "nl": "meer rollen toevoegen aan Iob-apparaten",
-        "fr": "ajouter plus de rôles aux périphériques toIob",
-        "it": "aggiungere più ruoli ai dispositivi toIob",
-        "es": "añadir más roles a los dispositivos",
-        "pl": "dodaj więcej ról do urządzeń tolob",
-        "uk": "додати більше ролей до пристроїв",
-        "zh-cn": "向 toIob 设备添加更多角色"
       }
     },
     "titleLang": {
