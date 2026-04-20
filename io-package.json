@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.10",
+    "version": "1.22.11",
     "news": {
+      "1.22.11": {
+        "en": "correct default value for pause (worx)",
+        "de": "korrekter standardwert für pause (worx)",
+        "ru": "правильное значение по умолчанию для паузы (worx)",
+        "pt": "valor padrão correto para pausa (worx)",
+        "nl": "correcte standaard waarde voor pauze (worx)",
+        "fr": "corriger la valeur par défaut pour la pause (worx)",
+        "it": "corretto valore predefinito per pausa (worx)",
+        "es": "valor predeterminado correcto para la pausa (worx)",
+        "pl": "poprawna wartość domyślna dla pauzy (worx)",
+        "uk": "виправлено значення за замовчуванням для паузи (worx)",
+        "zh-cn": "校正暂停( worx) 的默认值"
+      },
       "1.22.10": {
         "en": "implements button in card",
         "de": "implementiert knopf in der karte",
@@ -80,19 +93,6 @@
         "pl": "element blokujący bugfix w karcie dM",
         "uk": "суб'єкт блокування помилок в картці dM",
         "zh-cn": "dM 卡中的bugfix锁实体"
-      },
-      "1.22.3": {
-        "en": "add first Test for states of configed devices shown in device Manager cards",
-        "de": "fügen Sie ersten Test für Zustände von konfiktiven Geräten in Device Manager-Karten",
-        "ru": "добавить первый Тест для состояний конфигурированных устройств, показанных в картах диспетчера устройств",
-        "pt": "adicionar primeiro Teste para estados de dispositivos configurados mostrados nas placas do Gerenciador de dispositivos",
-        "nl": "toe te voegen eerste Test voor toestanden van geconfigureerde apparaten weergegeven in apparaat Manager kaarten",
-        "fr": "ajouter le premier test pour les états des périphériques configurés affichés dans les cartes de gestionnaire de périphériques",
-        "it": "aggiungere il primo test per gli stati di dispositivi confidificati mostrati nelle schede Gestione dispositivi",
-        "es": "añadir el primer Test para estados de dispositivos conectados mostrados en tarjetas de administrador de dispositivos",
-        "pl": "dodaj pierwszy test dla stanu podłączonych urządzeń pokazany w kartach menedżera urządzeń",
-        "uk": "додати перший тест для станів настрочених пристроїв, відображених в картах диспетчера пристроїв",
-        "zh-cn": "添加第一个设备管理卡中显示的配置设备状态测试"
       }
     },
     "titleLang": {
