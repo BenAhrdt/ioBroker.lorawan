@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.8",
+    "version": "1.22.9",
     "news": {
+      "1.22.9": {
+        "en": "error resolve git push",
+        "de": "fehler beheben git push",
+        "ru": "решение ошибки git push",
+        "pt": "erro resolver git push",
+        "nl": "fout bij oplossen git push",
+        "fr": "erreur résoudre git push",
+        "it": "errore risolvere git push",
+        "es": "error resolver git push",
+        "pl": "błąd rozwiązać git push",
+        "uk": "виправлення помилок git push",
+        "zh-cn": "错误解析 git 推"
+      },
       "1.22.7": {
         "en": "add more device_class entries to assign roles",
         "de": "mehr device class einträge hinzufügen, um rollen zuzuordnen",
