@@ -162,6 +162,7 @@
 	"NumberStateText": "州号 ID",
 	"NumberText": "号码 ID",
 	"OneNumber": "一个数字用于命令",
+	"OneNumberState": "一个数字代表州",
 	"OneString": "一个命令字符串",
 	"OpenSignalId": "打开限位开关的 id",
 	"OpenSignalText": "打开限位开关的 id",

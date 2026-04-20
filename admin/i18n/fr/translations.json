@@ -162,6 +162,7 @@
 	"NumberStateText": "Identifiant du numéro d'état",
 	"NumberText": "Numéro d'identification",
 	"OneNumber": "un numéro pour la commande",
+	"OneNumberState": "un numéro pour l'état",
 	"OneString": "une chaîne pour la commande",
 	"OpenSignalId": "identifiant pour fin de course ouvert",
 	"OpenSignalText": "identifiant pour fin de course ouvert",

@@ -162,6 +162,7 @@
 	"NumberStateText": "Identificación del número de estado",
 	"NumberText": "Número de identificación",
 	"OneNumber": "un número para comando",
+	"OneNumberState": "un número para el estado",
 	"OneString": "una cadena para el comando",
 	"OpenSignalId": "ID para interruptor de límite abierto",
 	"OpenSignalText": "ID para interruptor de límite abierto",

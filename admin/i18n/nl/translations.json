@@ -162,6 +162,7 @@
 	"NumberStateText": "Staatsnummer-ID",
 	"NumberText": "Nummer-ID",
 	"OneNumber": "één nummer voor commando",
+	"OneNumberState": "één nummer voor staat",
 	"OneString": "één string voor commando",
 	"OpenSignalId": "ID voor open eindschakelaar",
 	"OpenSignalText": "ID voor open eindschakelaar",

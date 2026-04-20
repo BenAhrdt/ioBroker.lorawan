@@ -162,6 +162,7 @@
 	"NumberStateText": "ID numero stato",
 	"NumberText": "Numero identificativo",
 	"OneNumber": "un numero per comando",
+	"OneNumberState": "un numero per stato",
 	"OneString": "una stringa per il comando",
 	"OpenSignalId": "id per finecorsa aperto",
 	"OpenSignalText": "id per finecorsa aperto",

@@ -162,6 +162,7 @@
 	"NumberStateText": "Identyfikator numeru stanu",
 	"NumberText": "Numer identyfikacyjny",
 	"OneNumber": "jeden numer do polecenia",
+	"OneNumberState": "jedna liczba dla stanu",
 	"OneString": "jeden ciąg dla polecenia",
 	"OpenSignalId": "identyfikator otwartego wyłącznika krańcowego",
 	"OpenSignalText": "identyfikator otwartego wyłącznika krańcowego",

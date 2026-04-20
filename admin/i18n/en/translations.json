@@ -237,6 +237,7 @@
 	"SeparateIds": "separated ids for command",
 	"OneString": "one string for command",
 	"OneNumber": "one number for command",
+	"OneNumberState": "one number for state",
 	"no command": "no command id",
 	"CoverPosition": "position",
 	"CoverPositionTooltip": "selected: separate id for position",
