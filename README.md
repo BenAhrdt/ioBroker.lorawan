@@ -41,7 +41,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 * (BenAhrdt) implements first commands and states of lawn mower
 
 ### Older entries
-[here](OLD_CHANGELOG.md)
 
 [Older changelogs can be found there](CHANGELOG_OLD.md)
 
