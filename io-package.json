@@ -445,7 +445,7 @@
         "Application": "*",
         "Device": "*",
         "Folder": "uplink.decoded",
-        "State": "BatteryPercent",
+        "State": "*",
         "publish": true,
         "subscribe": false,
         "exclude": false
@@ -453,10 +453,10 @@
       {
         "Application": "*",
         "Device": "*",
-        "Folder": "uplink.decoded",
-        "State": "Opened",
+        "Folder": "downlink.control",
+        "State": "*",
         "publish": true,
-        "subscribe": false,
+        "subscribe": true,
         "exclude": false
       }
     ],
