@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.11",
+    "version": "1.22.12",
     "news": {
+      "1.22.12": {
+        "en": "Adapter requires node.js >= 22 now\nDefault Bridge all downlink.control and uplin.decoded to bridge",
+        "de": "Adapter benötigt node.js >= 22 jetzt\nDefault Bridge all downlink.control und uplin.decodiert zur Brücke",
+        "ru": "Адаптер требует node.js >= 22 сейчас\nDefault Bridge all downlink.control and uplin.decoded to Bridge скачать бесплатно",
+        "pt": "Adaptador requer nod.js >= 22 agora\nPonte padrão todos downlink.control e uplin.decoded para ponte",
+        "nl": "Voor de adapter zijn node.js < 22 nu nodig\nStandaard brug alle downlink.control en uplin.decodeerd naar brug",
+        "fr": "Adaptateur nécessite node.js >= 22 maintenant\nPar défaut Bridge all downlink.control et uplin.decoded to bridge",
+        "it": "Adattatore richiede node.js >= 22 ora\nDefault Bridge all downlink.control e uplin.decoded to bridge",
+        "es": "Adaptador requiere node.js ю= 22 ahora\nDefault Bridge all downlink.control y uplin.decoded to bridge",
+        "pl": "Adapter wymaga node.js > = 22\nDomyślny most wszystko downlink.control i uplin.decoded most",
+        "uk": "Адаптер вимагає node.js >= 22 тепер\nJavaScript licenses API Веб-сайт Go1.13.8",
+        "zh-cn": "适配器需要节点.js 现在22\n默认桥全部下行链路. control and uplin.decoded to bridge"
+      },
       "1.22.11": {
         "en": "correct default value for pause (worx)",
         "de": "korrekter standardwert für pause (worx)",
@@ -80,19 +93,6 @@
         "pl": "bugfix wyświetlanie przycisków w kartach dM",
         "uk": "кнопки відображення помилок в dM-картах",
         "zh-cn": "在 dM 纸卡中显示按钮"
-      },
-      "1.22.4": {
-        "en": "bugfix lock entity in dM card",
-        "de": "bugfix Schloss Entität in dM Karte",
-        "ru": "bugfix lock entity в карте dM",
-        "pt": "entidade de bloqueio de bugfix no cartão dM",
-        "nl": "bugfix slot entiteit in dM-kaart",
-        "fr": "bugfix lock entity dans la carte dM",
-        "it": "entità di blocco bugfix nella scheda dM",
-        "es": "bugfix entidad de bloqueo en tarjeta dM",
-        "pl": "element blokujący bugfix w karcie dM",
-        "uk": "суб'єкт блокування помилок в картці dM",
-        "zh-cn": "dM 卡中的bugfix锁实体"
       }
     },
     "titleLang": {

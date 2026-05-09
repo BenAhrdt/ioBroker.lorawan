@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.12 (2026-05-09)
 - (copilot) Adapter requires node.js >= 22 now
 * (BenAhrdt) Default Bridge all downlink.control and uplin.decoded to bridge
 
@@ -39,30 +39,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ### 1.22.8 (2026-04-20)
 * (BenAhrdt) implements first commands and states of lawn mower
-
-### 1.22.7 (2026-04-16)
-* (BenAhrdt) add more device_class entries to assign roles
-
-### 1.22.6 (2026-04-10)
-* (BenAhrdt) bugfix cover endposition open
-
-### 1.22.5 (2026-04-10)
-* (BenAhrdt) bugfix displaying buttons in dM cards
-
-### 1.22.4 (2026-04-10)
-* (BenAhrdt) bugfix lock entity in dM card
-
-### 1.22.3 (2026-04-10)
-* (BenAhrdt) add first Test for states of configed devices shown in device Manager cards
-
-### 1.22.2 (2026-04-07)
-* (BenAhrdt) remove readOnly flag from jsonEditor
-
-### 1.22.1 (2026-04-02)
-* (BenAhrdt) add more roles to toIob devices
-
-### 1.22.0 (2026-04-01)
-* (BenAhrdt) new Design in device Manager Cards
 
 ### Older entries
 [here](OLD_CHANGELOG.md)

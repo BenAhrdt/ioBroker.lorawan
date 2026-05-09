@@ -1240,3 +1240,26 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.7 (2026-04-16)
+* (BenAhrdt) add more device_class entries to assign roles
+
+## 1.22.6 (2026-04-10)
+* (BenAhrdt) bugfix cover endposition open
+
+## 1.22.5 (2026-04-10)
+* (BenAhrdt) bugfix displaying buttons in dM cards
+
+## 1.22.4 (2026-04-10)
+* (BenAhrdt) bugfix lock entity in dM card
+
+## 1.22.3 (2026-04-10)
+* (BenAhrdt) add first Test for states of configed devices shown in device Manager cards
+
+## 1.22.2 (2026-04-07)
+* (BenAhrdt) remove readOnly flag from jsonEditor
+
+## 1.22.1 (2026-04-02)
+* (BenAhrdt) add more roles to toIob devices
+
+## 1.22.0 (2026-04-01)
+* (BenAhrdt) new Design in device Manager Cards
