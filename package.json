@@ -22,7 +22,7 @@
     "url": "https://github.com/BenAhrdt/ioBroker.lorawan.git"
   },
   "engines": {
-    "node": ">= 22.x.x"
+    "node": ">= 22"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^3.3.2",
