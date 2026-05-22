@@ -44,6 +44,17 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 
 [Older changelogs can be found there](CHANGELOG_OLD.md)
 
+## DISCLAIMER
+The rights of the trademarks and company names,
+remain with their owners and have no relation to this adapter.
+The fairuse policy must continue to be adhered to by the operator of the adapter.
+If this repository is forked, it must be cited as the source.
+
+LoRa® is a registered trademark or service
+mark of Semtech Corporation or its affilantes.
+
+LoRaWAN® is a licensed mark.
+
 ## License
 MIT License
 
@@ -67,14 +78,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-## DISCLAIMER
-The rights of the trademarks and company names,
-remain with their owners and have no relation to this adapter.
-The fairuse policy must continue to be adhered to by the operator of the adapter.
-If this repository is forked, it must be cited as the source.
-
-LoRa® is a registered trademark or service
-mark of Semtech Corporation or its affilantes.
-
-LoRaWAN® is a licensed mark.
