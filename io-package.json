@@ -619,6 +619,7 @@
       "common": {
         "type": "string",
         "name": "message to bridge",
+        "role": "state",
         "read": true,
         "write": true,
         "def": ""
