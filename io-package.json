@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.12",
+    "version": "1.22.13",
     "news": {
+      "1.22.13": {
+        "en": "Changes in io-package.\nChanges in package.json",
+        "de": "Änderungen im io-Paket.\nÄnderungen im Paket.json",
+        "ru": "Изменения в io-пакете.\nИзменения в package.json",
+        "pt": "Alterações no pacote io.\nAlterações no package.json",
+        "nl": "Wijzigingen in de verpakking.\nWijzigingen in package.json",
+        "fr": "Changements dans l'emballage.\nChangements dans package.json",
+        "it": "Cambiamenti nel pacchetto io.\nModifiche nel pacchetto.json",
+        "es": "Cambios en io-paquete.\nCambios en package.json",
+        "pl": "Zmiany w pakiecie jo-.\nZmiany w package.json",
+        "uk": "Зміни в io-package.\nЗміни в package.json",
+        "zh-cn": "Io包装的变化.\n软件包的变化 json"
+      },
       "1.22.12": {
         "en": "Adapter requires node.js >= 22 now\nDefault Bridge all downlink.control and uplin.decoded to bridge",
         "de": "Adapter benötigt node.js >= 22 jetzt\nDefault Bridge all downlink.control und uplin.decodiert zur Brücke",
@@ -80,19 +93,6 @@
         "pl": "bugfix pokrywa końcowa otwarta",
         "uk": "відновлення пароля",
         "zh-cn": "bugfix 封面结束位置打开"
-      },
-      "1.22.5": {
-        "en": "bugfix displaying buttons in dM cards",
-        "de": "bugfix Anzeigetasten in dM-Karten",
-        "ru": "bugfix отображение кнопок в картах dM",
-        "pt": "correcção de erros a mostrar botões nas cartas dM",
-        "nl": "bugfix tonen van knoppen in dM-kaarten",
-        "fr": "bugfix affichant les boutons dans les cartes dM",
-        "it": "pulsanti di visualizzazione bugfix nelle schede dM",
-        "es": "botones de visualización de bugfix en tarjetas dM",
-        "pl": "bugfix wyświetlanie przycisków w kartach dM",
-        "uk": "кнопки відображення помилок в dM-картах",
-        "zh-cn": "在 dM 纸卡中显示按钮"
       }
     },
     "titleLang": {

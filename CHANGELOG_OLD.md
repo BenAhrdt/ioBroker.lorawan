@@ -1240,6 +1240,9 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.8 (2026-04-20)
+* (BenAhrdt) implements first commands and states of lawn mower
+
 ## 1.22.7 (2026-04-16)
 * (BenAhrdt) add more device_class entries to assign roles
 
