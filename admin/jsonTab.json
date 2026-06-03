@@ -1,114 +1,114 @@
 {
-	"i18n": true,
-	"type": "tabs",
-	"tabsStyle": {
-		"width": "calc(100% - 100px)"
-	},
-	"items":{
-		"_deviceManager": {
-			"type": "panel",
-			"label": "devices",
-			"items": {
-				"_dm": {
-					"type": "deviceManager",
-					"sm": 12,
-					"style": {
-						"width": "100%",
-						"height": "100%",
-						"overflow": "hidden"
-					}
-				}
-			},
-			"style": {
-				"width": "100%",
-				"height": "100%",
-				"overflow": "hidden"
-			},
-			"innerStyle": {
-				"width": "100%",
-				"height": "100%",
-				"overflow": "hidden"
-			}
-		},
-        "_DiscoveredIds":{
-			"hidden": "true",
+    "i18n": true,
+    "type": "tabs",
+    "tabsStyle": {
+        "width": "calc(100% - 100px)"
+    },
+    "items": {
+        "_deviceManager": {
+            "type": "panel",
+            "label": "devices",
+            "items": {
+                "_dm": {
+                    "type": "deviceManager",
+                    "sm": 12,
+                    "style": {
+                        "width": "100%",
+                        "height": "100%",
+                        "overflow": "hidden"
+                    }
+                }
+            },
+            "style": {
+                "width": "100%",
+                "height": "100%",
+                "overflow": "hidden"
+            },
+            "innerStyle": {
+                "width": "100%",
+                "height": "100%",
+                "overflow": "hidden"
+            }
+        },
+        "_DiscoveredIds": {
+            "hidden": "true",
             "type": "panel",
             "label": "_DiscoveredIds",
-			"items": {
-                "_DiscoveredIds":{
-					"type": "text",
-					"defaultSendTo": "getDiscoveredIds",
-					"minRows": 10,
-					"readOnly": true,
-					"trim": false,
-					"noClearButton": true,
-					"xs": 12,
-					"sm": 12,
-					"md": 12,
-					"lg": 12,
-					"xl": 12	
-				}
+            "items": {
+                "_DiscoveredIds": {
+                    "type": "text",
+                    "defaultSendTo": "getDiscoveredIds",
+                    "minRows": 10,
+                    "readOnly": true,
+                    "trim": false,
+                    "noClearButton": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12
+                }
             }
         },
-        "_PublishedIds":{
-			"hidden": "true",
+        "_PublishedIds": {
+            "hidden": "true",
             "type": "panel",
             "label": "_PublishedIds",
-			"items": {
-				"_PublishedIds":{
-					"newLine": true,
-					"type": "text",
-					"defaultSendTo": "getPublishedIds",
-					"minRows": 10,
-					"readOnly": true,
-					"trim": false,
-					"noClearButton": true,
-					"xs": 12,
-					"sm": 12,
-					"md": 12,
-					"lg": 12,
-					"xl": 12	
-				}
+            "items": {
+                "_PublishedIds": {
+                    "newLine": true,
+                    "type": "text",
+                    "defaultSendTo": "getPublishedIds",
+                    "minRows": 10,
+                    "readOnly": true,
+                    "trim": false,
+                    "noClearButton": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12
+                }
             }
         },
-		"_SubscribedTopics":{
-			"hidden": "true",
-			"type": "panel",
-			"label": "_SubscribedTopics",
-			"items": {
-				"_SubscribedTopics":{
-					"type": "text",
-					"defaultSendTo": "getSubscribedTopics",
-					"minRows": 10,
-					"readOnly": true,
-					"trim": false,
-					"noClearButton": true,
-					"xs": 12,
-					"sm": 12,
-					"md": 12,
-					"lg": 12,
-					"xl": 12	
-				}
-			}
-		},
-		"_Deviceinformations":{
-			"type": "panel",
-			"label": "_Deviceinformations",
-			"items": {
-				"_Deviceinformations":{
-					"type": "text",
-					"defaultSendTo": "getDeviceinformations",
-					"minRows": 10,
-					"readOnly": true,
-					"trim": false,
-					"noClearButton": true,
-					"xs": 12,
-					"sm": 12,
-					"md": 12,
-					"lg": 12,
-					"xl": 12	
-				}
-			}
-		}
+        "_SubscribedTopics": {
+            "hidden": "true",
+            "type": "panel",
+            "label": "_SubscribedTopics",
+            "items": {
+                "_SubscribedTopics": {
+                    "type": "text",
+                    "defaultSendTo": "getSubscribedTopics",
+                    "minRows": 10,
+                    "readOnly": true,
+                    "trim": false,
+                    "noClearButton": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12
+                }
+            }
+        },
+        "_Deviceinformations": {
+            "type": "panel",
+            "label": "_Deviceinformations",
+            "items": {
+                "_Deviceinformations": {
+                    "type": "text",
+                    "defaultSendTo": "getDeviceinformations",
+                    "minRows": 10,
+                    "readOnly": true,
+                    "trim": false,
+                    "noClearButton": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12
+                }
+            }
+        }
     }
 }
