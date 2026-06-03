@@ -105,7 +105,6 @@
 	"HumidifierOnOffText": "Marche/Arrêt",
 	"HumidifierTargetText": "Humidité cible",
 	"HumidifierTooltip": "humidificateur / déshumidificateur",
-	"IdleStateId": "ID d'état inactif",
 	"IdleStateNumber": "Numéro inactif",
 	"Info of this device": "Informations sur cet appareil",
 	"LastDiscover": "Last Discover",
