@@ -1267,3 +1267,5 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.9 (2026-04-20)
+* (BenAhrdt) error resolve git push

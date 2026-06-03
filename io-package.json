@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.13",
+    "version": "1.22.14",
     "news": {
+      "1.22.14": {
+        "en": "ToIob suports hs mode for color (light)\nissues from depandabot",
+        "de": "ToIob suports hs mode für color (light)\nfragen von depandabot",
+        "ru": "ToIob suports hs режим для цвета (свет)\nотзывы о depandabot",
+        "pt": "Modo de suporte do ToIob hs para cores (luz)\nquestões do depandabot",
+        "nl": "ToIob suports hs-modus voor kleur (licht)\nproblemen van depandabot",
+        "fr": "Mode TOIobs hs pour la couleur (lumière)\ndepandabot",
+        "it": "ToIob suports hs modalità per colore (luce)\nproblemi da depandabot",
+        "es": "ToIob suports hs modo para el color (light)\ncuestiones de depandabot",
+        "pl": "Tolob suports tryb hs dla koloru (światła)\nkwestie związane z depandabot",
+        "uk": "ToIob suports hs режим для кольору (світло)\nпитання від depandabot",
+        "zh-cn": "颜色的 ToIob suports hs 模式( 浅色)\n发件人的问题"
+      },
       "1.22.13": {
         "en": "Changes in io-package.\nChanges in package.json",
         "de": "Änderungen im io-Paket.\nÄnderungen im Paket.json",
@@ -80,19 +93,6 @@
         "pl": "dodaj więcej wpisów _ device _ class do przypisywania ról",
         "uk": "add more device class записів для позначення ролей",
         "zh-cn": "添加更多设备 类条目以指定角色"
-      },
-      "1.22.6": {
-        "en": "bugfix cover endposition open",
-        "de": "bugfix cover endposition offen",
-        "ru": "багфикс cover end end open",
-        "pt": "endposition de cobertura de bugfix aberta",
-        "nl": "bugfix cover endposition open",
-        "fr": "bugfix endposition de couverture ouverte",
-        "it": "bugfix cover endposition aperto",
-        "es": "tapa bugfix endposition open",
-        "pl": "bugfix pokrywa końcowa otwarta",
-        "uk": "відновлення пароля",
-        "zh-cn": "bugfix 封面结束位置打开"
       }
     },
     "titleLang": {

@@ -24,10 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.14 (2026-06-03)
 - (BenAhrdt) ToIob suports hs mode for color (light)
 - (BenAhrdt) issues from depandabot
-
 
 ### 1.22.13 (2026-05-25)
 - (BenAhrdt) Changes in io-package.
@@ -43,12 +42,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 ### 1.22.10 (2026-04-20)
 * (BenAhrdt) implements button in card
 
-### 1.22.9 (2026-04-20)
-* (BenAhrdt) error resolve git push
-
-[Older changelogs can be found there](CHANGELOG_OLD.md)
-
-## DISCLAIMER
+[Older changelogs can be found there](CHANGELOG_OLD.md)## DISCLAIMER
 The rights of the trademarks and company names,
 remain with their owners and have no relation to this adapter.
 The fairuse policy must continue to be adhered to by the operator of the adapter.
