@@ -176,7 +176,7 @@ class Lorawan extends utils.Adapter {
                 this.log.debug('nach Simulation');
             }, 5000);
             */
-            /* this.simulation.timeout = setTimeout(async () => {
+            /* this.simulation.timeout = this.setTimeout(async () => {
 				const topic = "application/d63c10b6-9263-4ab3-9299-4308fa19a2ad/device/f1c0ae0e-b4a2-4547-b360-7cfa15e85734/command/down";
 				const message = {devEui:"f1c0ae0e-b4a2-4547-b360-7cfa15e85734",confirmed:false,fPort:1,data:"AAA"};
 				await this.mqttClient?.publish(topic,JSON.stringify(message));
@@ -551,7 +551,7 @@ class Lorawan extends utils.Adapter {
             if (!lang) {
                 lang = 'en';
             }
-            const translationsPath = `./admin/i18n/${lang}/translations.json`;
+            const translationsPath = `./admin/i18n/${lang}.json`;
             return require(translationsPath);
         }
         return {};
