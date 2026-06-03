@@ -170,7 +170,7 @@ class Lorawan extends utils.Adapter {
             );
 
             /*
-            setTimeout(async () => {
+            this.setTimeout(async () => {
                 this.log.debug('vor Simulation');
                 await this.startSimulation();
                 this.log.debug('nach Simulation');
@@ -2161,7 +2161,7 @@ class Lorawan extends utils.Adapter {
                         testclient.on('connect', async () => {
                             connection = true;
                         });
-                        setTimeout(() => {
+                        this.setTimeout(() => {
                             testclient.end();
                             this.sendTo(
                                 obj.from,

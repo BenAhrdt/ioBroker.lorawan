@@ -2692,7 +2692,7 @@
                             "type": "objectId",
                             "newLine": true,
                             "attr": "MowingStateId",
-                            "label": "MowingState",
+                            "label": "MowingStateId",
                             "customFilter": { "common": { "type": ["boolean", "mixed"] } },
                             "hidden": "data.MowerStateSeparate !== 'separate'",
                             "xs": 12,
@@ -2704,7 +2704,7 @@
                         {
                             "type": "objectId",
                             "attr": "PauseStateId",
-                            "label": "PauseState",
+                            "label": "PauseStateId",
                             "customFilter": { "common": { "type": ["boolean", "mixed"] } },
                             "hidden": "data.MowerStateSeparate !== 'separate'",
                             "xs": 12,
@@ -2716,7 +2716,7 @@
                         {
                             "type": "objectId",
                             "attr": "HomeStateId",
-                            "label": "HomeState",
+                            "label": "HomeStateId",
                             "customFilter": { "common": { "type": ["boolean", "mixed"] } },
                             "hidden": "data.MowerStateSeparate !== 'separate'",
                             "xs": 12,

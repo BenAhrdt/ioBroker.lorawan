@@ -336,5 +336,8 @@
 
     "MowingStateNumberTooltip": "Number to indicate the mowing state",
     "PauseStateNumberTooltip": "Number to indicate the pause state",
-    "HomeStateNumberTooltip": "Number to indicate the home state"
+    "HomeStateNumberTooltip": "Number to indicate the home state",
+    "StartNumberTooltip": "Enter ther Number wich will be send to start",
+    "StopNumberTooltip": "Enter ther Number wich will be send to stop",
+    "HomeNumberTooltip": "Enter ther Number wich will be send to home"
 }
