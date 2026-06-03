@@ -1,4 +1,3 @@
-## Changelog history
 ### 1.21.31 (2026-04-01)
 * (BenAhrdt) Display more Infos and colors in Cards
 
