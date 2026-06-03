@@ -24,6 +24,11 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) ToIob suports hs mode for color (light)
+- (BenAhrdt) issues from depandabot
+
+
 ### 1.22.13 (2026-05-25)
 - (BenAhrdt) Changes in io-package.
 - (BenAhrdt) Changes in package.json
