@@ -17,7 +17,7 @@
 ### 1.22.3 (2026-04-10)
 * (BenAhrdt) add first Test for states of configed devices shown in device Manager cards
 
-## 1.22.2 (2026-04-07)
+### 1.22.2 (2026-04-07)
 * (BenAhrdt) remove readOnly flag from jsonEditor
 
 ### 1.22.1 (2026-04-02)
