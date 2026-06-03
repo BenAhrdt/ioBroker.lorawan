@@ -1221,7 +1221,8 @@
                             "label": "subscribe",
                             "hidden": "data.Folder !== 'downlink.control'",
                             "default": true,
-                            "width": "5%"
+                            "width": "5%",
+                            "noTranslation": true
                         },
                         {
                             "type": "checkbox",
@@ -1824,7 +1825,9 @@
                             "sm": 2,
                             "md": 2,
                             "lg": 2,
-                            "xl": 2
+                            "xl": 2,
+                            "noTranslation": true
+                            
                         },
                         {
                             "type": "checkbox",
@@ -2249,7 +2252,7 @@
                         {
                             "type": "objectId",
                             "attr": "ClosedSignalId",
-                            "label": "CoverClosedSignalText",
+                            "label": "CoverCloseText",
                             "customFilter": { "common": { "type": ["boolean", "mixed"] } },
                             "hidden": "data.CoverClosedSignal === false || data.CoverNumberSignal === true",
                             "xs": 12,

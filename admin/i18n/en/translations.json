@@ -97,6 +97,7 @@
     "BridgeInformation": "Main configuration for bridge via mqtt discovery",
     "MQTTInstance": "MQTT Instance",
     "DeviceIdentifiers": "Device Identifiers",
+    "DeviceIdentifier": "Device Identifier",
     "DeviceIdentifierTooltip": "Identifieres for the HA Device",
     "separator": "separator",
     "separatorTooltip": "choose a separator for the identifiers",
@@ -328,5 +329,10 @@
 	"PauseStateId": "PauseStateId",
 	"HomeStateId": "HomeStateId",
 	"NumberStateText": "State-Number Id",
-	"StatciTextMowerSeparate": "The default values are selected for the worx adapter"
+	"StatciTextMowerSeparate": "The default values are selected for the worx adapter",
+	"MowerSeparateTooltip": "select the desired comand type",
+	"MowerStateSeparateTooltip":  "select the desired state type",
+	"unlatch (Nuki)": "unlatch (Nuki)",
+	"open (Standard)": "open (Standard)",
+	"pull (Something else)": "pull (Something else)"
 }
