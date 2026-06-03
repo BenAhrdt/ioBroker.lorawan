@@ -174,7 +174,7 @@
 				"notificationActivation":{
 					"type": "select",
 					"label": "notificationActivation",
-					"tooltip": "notificationActivationTooltip",
+					"tooltip": "notificationTooltip",
 					"options": [
 						{"label":"notification","value":"notification"},
 						{"label":"no notification","value":"no notification"}
@@ -653,7 +653,7 @@
 					"newLine": true,
 					"type": "checkbox",
 					"label": "customDecodedJsonActive",
-					"tooltip": "customDecodedJsonActiveTooltip",
+					"tooltip": "customJsonActiveTooltip",
 					"default": false,
 					"xs": 12,
 					"sm": 2,
@@ -676,7 +676,7 @@
 					"newLine": true,
 					"type": "checkbox",
 					"label": "customConfigurationJsonActive",
-					"tooltip": "customConfigurationJsonActiveConfigurationTooltip",
+					"tooltip": "customConfigurationJsonActiveTooltip",
 					"hidden": "data.customDecodedJsonActive === false",
 					"default": false,
 					"xs": 12,
@@ -815,7 +815,7 @@
 					"type": "select",
 					"label": "BridgenotificationActivation",
 					"hidden": "data.BridgeType === 'off'",
-					"tooltip": "BridgenotificationActivationTooltip",
+					"tooltip": "BridgenotificationTooltip",
 					"options": [
 						{"label":"all notifications","value":"allNotifications, bridgeConnection, newDiscover, deviceState"},
 						{"label":"bridge connection","value":"bridgeConnection"},
@@ -1225,7 +1225,8 @@
 							"label": "publish",
 							"hidden": "data.Folder !== 'downlink.control'",
 							"default": true,
-							"width": "5%"
+							"width": "5%",
+    						"noTranslation": true
 						},
 						{
 							"type": "checkbox",
@@ -1240,7 +1241,8 @@
 							"attr": "exclude",
 							"label": "Exclude",
 							"default": false,
-							"width": "5%"
+							"width": "5%",
+    						"noTranslation": true
 						}
 					]
 				},
