@@ -2210,7 +2210,7 @@
                         {
                             "type": "objectId",
                             "attr": "OpenSignalId",
-                            "label": "CoverOpenSignalText",
+                            "label": "CoverOpenSignal",
                             "customFilter": { "common": { "type": ["boolean", "mixed"] } },
                             "hidden": "data.CoverOpenSignal === false || data.CoverNumberSignal === true",
                             "xs": 12,
