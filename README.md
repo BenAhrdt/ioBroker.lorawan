@@ -42,6 +42,8 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 ### 1.22.11 (2026-04-20)
 * (BenAhrdt) correct default value for pause (worx)
 
+[Older changes can be found there](OLD_CHANGELOG.md)
+
 ## License
 MIT License
 
