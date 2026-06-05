@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) Add roles for some new devices
+
 ### 1.22.14 (2026-06-03)
 - (BenAhrdt) ToIob suports hs mode for color (light)
 - (BenAhrdt) issues from depandabot
