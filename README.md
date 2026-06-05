@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.15 (2026-06-05)
 - (BenAhrdt) Add roles for some new devices
 
 ### 1.22.14 (2026-06-03)
@@ -41,20 +41,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ### 1.22.11 (2026-04-20)
 * (BenAhrdt) correct default value for pause (worx)
-
-### 1.22.10 (2026-04-20)
-* (BenAhrdt) implements button in card
-
-[Older changelogs can be found there](CHANGELOG_OLD.md)## DISCLAIMER
-The rights of the trademarks and company names,
-remain with their owners and have no relation to this adapter.
-The fairuse policy must continue to be adhered to by the operator of the adapter.
-If this repository is forked, it must be cited as the source.
-
-LoRa® is a registered trademark or service
-mark of Semtech Corporation or its affilantes.
-
-LoRaWAN® is a licensed mark.
 
 ## License
 MIT License

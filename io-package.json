@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.14",
+    "version": "1.22.15",
     "news": {
+      "1.22.15": {
+        "en": "Add roles for some new devices",
+        "de": "Rollen für einige neue Geräte hinzufügen",
+        "ru": "Добавить роли для некоторых новых устройств",
+        "pt": "Adicionar funções para alguns dispositivos novos",
+        "nl": "Rolletjes toevoegen voor sommige nieuwe apparaten",
+        "fr": "Ajouter des rôles pour certains nouveaux appareils",
+        "it": "Aggiungi ruoli per alcuni nuovi dispositivi",
+        "es": "Agregar roles para algunos nuevos dispositivos",
+        "pl": "Dodaj role dla niektórych nowych urządzeń",
+        "uk": "Додати ролі для деяких нових пристроїв",
+        "zh-cn": "为一些新设备添加角色"
+      },
       "1.22.14": {
         "en": "ToIob suports hs mode for color (light)\nissues from depandabot",
         "de": "ToIob suports hs mode für color (light)\nfragen von depandabot",
@@ -80,19 +93,6 @@
         "pl": "błąd rozwiązać git push",
         "uk": "виправлення помилок git push",
         "zh-cn": "错误解析 git 推"
-      },
-      "1.22.7": {
-        "en": "add more device_class entries to assign roles",
-        "de": "mehr device class einträge hinzufügen, um rollen zuzuordnen",
-        "ru": "добавить больше записей device class для назначения ролей",
-        "pt": "adicionar mais entradas de dispositivo  classe para atribuir funções",
-        "nl": "voeg meer apparaat klasse items toe om rollen toe te wijzen",
-        "fr": "ajouter plus d'entrées de classe de périphérique pour attribuer des rôles",
-        "it": "aggiungere più voci di device class per assegnare ruoli",
-        "es": "añadir más entradas de dispositivo clase para asignar roles",
-        "pl": "dodaj więcej wpisów _ device _ class do przypisywania ról",
-        "uk": "add more device class записів для позначення ролей",
-        "zh-cn": "添加更多设备 类条目以指定角色"
       }
     },
     "titleLang": {

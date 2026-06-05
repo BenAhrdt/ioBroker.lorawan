@@ -1267,5 +1267,19 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.10 (2026-04-20)
+* (BenAhrdt) implements button in card
+
+[Older changelogs can be found there](CHANGELOG_OLD.md)## DISCLAIMER
+The rights of the trademarks and company names,
+remain with their owners and have no relation to this adapter.
+The fairuse policy must continue to be adhered to by the operator of the adapter.
+If this repository is forked, it must be cited as the source.
+
+LoRa® is a registered trademark or service
+mark of Semtech Corporation or its affilantes.
+
+LoRaWAN® is a licensed mark.
+
 ## 1.22.9 (2026-04-20)
 * (BenAhrdt) error resolve git push
