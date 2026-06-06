@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.16 (2026-06-06)
 - (BenAhrdt) Bugfix COver in ToIob
 
 ### 1.22.15 (2026-06-05)
@@ -41,9 +41,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 ### 1.22.12 (2026-05-09)
 - (copilot) Adapter requires node.js >= 22 now
 * (BenAhrdt) Default Bridge all downlink.control and uplink.decoded to bridge
-
-### 1.22.11 (2026-04-20)
-* (BenAhrdt) correct default value for pause (worx)
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 

@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.15",
+    "version": "1.22.16",
     "news": {
+      "1.22.16": {
+        "en": "Bugfix COver in ToIob",
+        "de": "Bugfix COver in ToIob",
+        "ru": "Bugfix COver в ToIob",
+        "pt": "Correção de Erros no Tolob",
+        "nl": "Bugfix COver in Toiob",
+        "fr": "Bugfix Cover dans TOIob",
+        "it": "Bugfix COver in ToIob",
+        "es": "Bugfix COver en ToIob",
+        "pl": "Bugfix Cover w Tołobie",
+        "uk": "Бугфікс Ковер в Тойоб",
+        "zh-cn": "在 ToIob 中错误修正 Cover"
+      },
       "1.22.15": {
         "en": "Add roles for some new devices",
         "de": "Rollen für einige neue Geräte hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "implementuje przycisk w karcie",
         "uk": "реалізується кнопка в картці",
         "zh-cn": "执行卡中的按钮"
-      },
-      "1.22.9": {
-        "en": "error resolve git push",
-        "de": "fehler beheben git push",
-        "ru": "решение ошибки git push",
-        "pt": "erro resolver git push",
-        "nl": "fout bij oplossen git push",
-        "fr": "erreur résoudre git push",
-        "it": "errore risolvere git push",
-        "es": "error resolver git push",
-        "pl": "błąd rozwiązać git push",
-        "uk": "виправлення помилок git push",
-        "zh-cn": "错误解析 git 推"
       }
     },
     "titleLang": {
