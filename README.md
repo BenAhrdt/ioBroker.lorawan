@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.17 (2026-06-07)
 - (BenAhrdt) Fixed writing valid zero values from bridged Home Assistant entities to ioBroker states.
 
 ### 1.22.16 (2026-06-06)
@@ -40,10 +40,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 ### 1.22.13 (2026-05-25)
 - (BenAhrdt) Changes in io-package.
 - (BenAhrdt) Changes in package.json
-
-### 1.22.12 (2026-05-09)
-- (copilot) Adapter requires node.js >= 22 now
-* (BenAhrdt) Default Bridge all downlink.control and uplink.decoded to bridge
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 

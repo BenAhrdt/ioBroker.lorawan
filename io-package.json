@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.16",
+    "version": "1.22.17",
     "news": {
+      "1.22.17": {
+        "en": "Fixed writing valid zero values from bridged Home Assistant entities to ioBroker states.",
+        "de": "Behobenes Schreiben gültige Nullwerte von überbrückten Home Assistant-Einheiten zu ioBroker-Staaten.",
+        "ru": "Фиксированная запись действительных нулевых значений от подключенных объектов Home Assistant до штатов ioBroker.",
+        "pt": "Corrigido escrevendo valores zero válidos de entidades bridged Home Assistant para estados ioBroker.",
+        "nl": "Vaste schrijven geldig nul waarden van brugd Home Assistent entiteiten naar ioBroker staten.",
+        "fr": "Correction de l'écriture de valeurs nulles valides des entités d'aide à la maison pontées aux états ioBroker.",
+        "it": "Scrittura fissa valori zero validi da entità di Home Assistant colate a stati ioBroker.",
+        "es": "Escribir valores nulos válidos de las entidades auxiliares de casa puenteadas a los estados de yoBroker.",
+        "pl": "Naprawiono pisanie poprawnych wartości zerowych z zaokrąglonych jednostek Home Assistant do stanów jOBroker.",
+        "uk": "Фіксоване написання дійсних нульових значень з містованих домашніх помічників для ioBroker штатів.",
+        "zh-cn": "固定写入有效的零值,从桥接的家用助理实体到ioBroker状态."
+      },
       "1.22.16": {
         "en": "Bugfix COver in ToIob",
         "de": "Bugfix COver in ToIob",
@@ -80,19 +93,6 @@
         "pl": "poprawna wartość domyślna dla pauzy (worx)",
         "uk": "виправлено значення за замовчуванням для паузи (worx)",
         "zh-cn": "校正暂停( worx) 的默认值"
-      },
-      "1.22.10": {
-        "en": "implements button in card",
-        "de": "implementiert knopf in der karte",
-        "ru": "реализует кнопку в карточке",
-        "pt": "implementa o botão no cartão",
-        "nl": "implementeert knop in kaart",
-        "fr": "implémente bouton dans la carte",
-        "it": "implementa il pulsante nella scheda",
-        "es": "implementa el botón en la tarjeta",
-        "pl": "implementuje przycisk w karcie",
-        "uk": "реалізується кнопка в картці",
-        "zh-cn": "执行卡中的按钮"
       }
     },
     "titleLang": {
