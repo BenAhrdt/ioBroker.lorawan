@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) Fixed writing valid zero values from bridged Home Assistant entities to ioBroker states.
+
 ### 1.22.16 (2026-06-06)
 - (BenAhrdt) Bugfix COver in ToIob
 
