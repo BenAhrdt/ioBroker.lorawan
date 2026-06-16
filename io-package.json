@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.21",
+    "version": "1.22.22",
     "news": {
+      "1.22.22": {
+        "en": "Remove writing of the last 10 values at receive and public message",
+        "de": "Entfernen Sie das Schreiben der letzten 10 Werte bei Empfang und öffentliche Nachricht",
+        "ru": "Удалить написание последних 10 ценностей при получении и публичном сообщении",
+        "pt": "Remover a escrita dos últimos 10 valores na mensagem recebida e pública",
+        "nl": "Verwijder het schrijven van de laatste 10 waarden op ontvangen en openbaar bericht",
+        "fr": "Supprimer l'écriture des 10 dernières valeurs à réception et message public",
+        "it": "Rimuovere la scrittura degli ultimi 10 valori a ricezione e messaggio pubblico",
+        "es": "Eliminar la escritura de los últimos 10 valores al recibir y el mensaje público",
+        "pl": "Usuń zapis ostatnich 10 wartości przy odbieraniu i wiadomości publicznej",
+        "uk": "Видалити письмове повідомлення про останні 10",
+        "zh-cn": "删除最后 10 个值在接收时的写入和公开消息"
+      },
       "1.22.21": {
         "en": "Changed setTimeout to this.adapter.setTimeout",
         "de": "Geändert setTimeout zu this.adapter.setTimeout",
@@ -80,19 +93,6 @@
         "pl": "Bugfix Cover w Tołobie",
         "uk": "Бугфікс Ковер в Тойоб",
         "zh-cn": "在 ToIob 中错误修正 Cover"
-      },
-      "1.22.15": {
-        "en": "Add roles for some new devices",
-        "de": "Rollen für einige neue Geräte hinzufügen",
-        "ru": "Добавить роли для некоторых новых устройств",
-        "pt": "Adicionar funções para alguns dispositivos novos",
-        "nl": "Rolletjes toevoegen voor sommige nieuwe apparaten",
-        "fr": "Ajouter des rôles pour certains nouveaux appareils",
-        "it": "Aggiungi ruoli per alcuni nuovi dispositivi",
-        "es": "Agregar roles para algunos nuevos dispositivos",
-        "pl": "Dodaj role dla niektórych nowych urządzeń",
-        "uk": "Додати ролі для деяких нових пристроїв",
-        "zh-cn": "为一些新设备添加角色"
       }
     },
     "titleLang": {

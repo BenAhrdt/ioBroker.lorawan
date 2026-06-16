@@ -1267,6 +1267,9 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.17 (2026-06-07)
+- (BenAhrdt) Fixed writing valid zero values from bridged Home Assistant entities to ioBroker states.
+
 ## 1.22.16 (2026-06-06)
 - (BenAhrdt) Bugfix COver in ToIob
 

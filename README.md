@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.22 (2026-06-16)
 - (BenAhrdt) Remove writing of the last 10 values at receive and public message
 
 ### 1.22.21 (2026-06-16)
@@ -38,9 +38,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ### 1.22.18 (2026-06-16)
 - (BenAhrdt) Testversion, ohne info. schreiben
-
-### 1.22.17 (2026-06-07)
-- (BenAhrdt) Fixed writing valid zero values from bridged Home Assistant entities to ioBroker states.
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 
