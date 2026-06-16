@@ -425,7 +425,7 @@
     "Bridgepassword": "",
     "Bridgessl": false,
     "BridgeType": "off",
-    "EnableRefresh": true,
+    "EnableRefresh": false,
     "RefreshDiscoveryCronJob": "0 * * * *",
     "BridgeEnum": "*",
     "BridgenotificationActivation": "allNotifications, bridgeConnection, newDiscover, deviceState",

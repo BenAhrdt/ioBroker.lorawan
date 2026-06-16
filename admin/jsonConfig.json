@@ -790,7 +790,7 @@
                     "label": "EnableRefresh",
                     "tooltip": "EnableRefreshTooltip",
                     "hidden": "data.BridgeType === 'off'",
-                    "default": true,
+                    "default": false,
                     "xs": 12,
                     "sm": 2,
                     "md": 2,
