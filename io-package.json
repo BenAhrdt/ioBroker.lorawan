@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.19",
+    "version": "1.22.20",
     "news": {
+      "1.22.20": {
+        "en": "Write publishIds and subscribedTopics delayed",
+        "de": "Write publishIds und abonnierteTopics verzögert",
+        "ru": "Написать Ids и подписатьсяTopics задерживается",
+        "pt": "Escrever os IDs de publicação e os Topics subscritos atrasados",
+        "nl": "PublicerenIds en geabonneerdTopics vertraagd schrijven",
+        "fr": "Ecrire des Ids et s'abonnerSujets retardés",
+        "it": "Scrivere pubblicaIds e abbonati Argomenti ritardati",
+        "es": "Escribe publicacionesIds y suscritosTemas retrasados",
+        "pl": "Napisz publishIds i subskrybedTopics opóźnione",
+        "uk": "Напишіть відгукПрихильники та підписки",
+        "zh-cn": "写入 Publishing Ids 和订阅日期延迟"
+      },
       "1.22.19": {
         "en": "Test durch fehlerhaften git commit",
         "de": "Test durch fehlerhaften git commit",
@@ -80,19 +93,6 @@
         "pl": "Tolob suports tryb hs dla koloru (światła)\nkwestie związane z depandabot",
         "uk": "ToIob suports hs режим для кольору (світло)\nпитання від depandabot",
         "zh-cn": "颜色的 ToIob suports hs 模式( 浅色)\n发件人的问题"
-      },
-      "1.22.13": {
-        "en": "Changes in io-package.\nChanges in package.json",
-        "de": "Änderungen im io-Paket.\nÄnderungen im Paket.json",
-        "ru": "Изменения в io-пакете.\nИзменения в package.json",
-        "pt": "Alterações no pacote io.\nAlterações no package.json",
-        "nl": "Wijzigingen in de verpakking.\nWijzigingen in package.json",
-        "fr": "Changements dans l'emballage.\nChangements dans package.json",
-        "it": "Cambiamenti nel pacchetto io.\nModifiche nel pacchetto.json",
-        "es": "Cambios en io-paquete.\nCambios en package.json",
-        "pl": "Zmiany w pakiecie jo-.\nZmiany w package.json",
-        "uk": "Зміни в io-package.\nЗміни в package.json",
-        "zh-cn": "Io包装的变化.\n软件包的变化 json"
       }
     },
     "titleLang": {

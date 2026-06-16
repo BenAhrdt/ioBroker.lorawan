@@ -1267,6 +1267,9 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.15 (2026-06-05)
+- (BenAhrdt) Add roles for some new devices
+
 ## 1.22.14 (2026-06-03)
 - (BenAhrdt) ToIob suports hs mode for color (light)
 - (BenAhrdt) issues from depandabot

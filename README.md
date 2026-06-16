@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.20 (2026-06-16)
 - (BenAhrdt) Write publishIds and subscribedTopics delayed
 
 ### 1.22.19 (2026-06-16)
@@ -38,9 +38,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ### 1.22.16 (2026-06-06)
 - (BenAhrdt) Bugfix COver in ToIob
-
-### 1.22.15 (2026-06-05)
-- (BenAhrdt) Add roles for some new devices
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 
