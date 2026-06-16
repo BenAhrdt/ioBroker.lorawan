@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) Write publishIds and subscribedTopics delayed
+
 ### 1.22.19 (2026-06-16)
 - (BenAhrdt) Test durch fehlerhaften git commit
 
