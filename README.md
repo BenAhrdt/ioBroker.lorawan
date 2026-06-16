@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) Testversion, ohne info. schreiben
+
 ### 1.22.17 (2026-06-07)
 - (BenAhrdt) Fixed writing valid zero values from bridged Home Assistant entities to ioBroker states.
 
