@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.18",
+    "version": "1.22.19",
     "news": {
+      "1.22.19": {
+        "en": "Test durch fehlerhaften git commit",
+        "de": "Test durch fehlerhaften git commit",
+        "ru": "Тестирование durch fehlerhaften",
+        "pt": "Teste durch fehlerhaften git commit",
+        "nl": "Test durch fehlerhoften git commit",
+        "fr": "Tester l'engagement de fehlerhaften git",
+        "it": "Test durch fehlerhaften git commit",
+        "es": "Test durch fehlerhaften git commit",
+        "pl": "Test durch fehlerhaften git commit",
+        "uk": "Тест дюх fehlerhaften git commit",
+        "zh-cn": "测试 fehlerhaften git 执行"
+      },
       "1.22.18": {
         "en": "Testversion, ohne info. schreiben",
         "de": "Testversion, ohne Info. schreiben",
@@ -80,19 +93,6 @@
         "pl": "Zmiany w pakiecie jo-.\nZmiany w package.json",
         "uk": "Зміни в io-package.\nЗміни в package.json",
         "zh-cn": "Io包装的变化.\n软件包的变化 json"
-      },
-      "1.22.12": {
-        "en": "Adapter requires node.js >= 22 now\nDefault Bridge all downlink.control and uplin.decoded to bridge",
-        "de": "Adapter benötigt node.js >= 22 jetzt\nDefault Bridge all downlink.control und uplin.decodiert zur Brücke",
-        "ru": "Адаптер требует node.js >= 22 сейчас\nDefault Bridge all downlink.control and uplin.decoded to Bridge скачать бесплатно",
-        "pt": "Adaptador requer nod.js >= 22 agora\nPonte padrão todos downlink.control e uplin.decoded para ponte",
-        "nl": "Voor de adapter zijn node.js < 22 nu nodig\nStandaard brug alle downlink.control en uplin.decodeerd naar brug",
-        "fr": "Adaptateur nécessite node.js >= 22 maintenant\nPar défaut Bridge all downlink.control et uplin.decoded to bridge",
-        "it": "Adattatore richiede node.js >= 22 ora\nDefault Bridge all downlink.control e uplin.decoded to bridge",
-        "es": "Adaptador requiere node.js ю= 22 ahora\nDefault Bridge all downlink.control y uplin.decoded to bridge",
-        "pl": "Adapter wymaga node.js > = 22\nDomyślny most wszystko downlink.control i uplin.decoded most",
-        "uk": "Адаптер вимагає node.js >= 22 тепер\nJavaScript licenses API Веб-сайт Go1.13.8",
-        "zh-cn": "适配器需要节点.js 现在22\n默认桥全部下行链路. control and uplin.decoded to bridge"
       }
     },
     "titleLang": {

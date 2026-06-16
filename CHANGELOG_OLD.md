@@ -1267,6 +1267,10 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.14 (2026-06-03)
+- (BenAhrdt) ToIob suports hs mode for color (light)
+- (BenAhrdt) issues from depandabot
+
 ## 1.22.13 (2026-05-25)
 - (BenAhrdt) Changes in io-package.
 - (BenAhrdt) Changes in package.json
