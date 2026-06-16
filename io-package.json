@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.20",
+    "version": "1.22.21",
     "news": {
+      "1.22.21": {
+        "en": "Changed setTimeout to this.adapter.setTimeout",
+        "de": "Geändert setTimeout zu this.adapter.setTimeout",
+        "ru": "Изменить setTimeout на this.adapter.setTimeout",
+        "pt": "SetTimeout alterado para este.adapter.setTimeout",
+        "nl": "Veranderde setTimeout naar deze.adapter.setTimeout",
+        "fr": "Changed setTimeout to this.adapter.setTimeout",
+        "it": "Modificato il timeout a questo.adapter.setTimeout",
+        "es": "Cambio de configuraciónTiempo a este.adapter.setTimeout",
+        "pl": "Zmieniono timeout do tego. Adapter. setTimeout",
+        "uk": "Змінено setTimeout в this.adapter.setTimeout",
+        "zh-cn": "更改了设置 Timeout 到此. adapter. set Timeout"
+      },
       "1.22.20": {
         "en": "Write publishIds and subscribedTopics delayed",
         "de": "Write publishIds und abonnierteTopics verzögert",
@@ -80,19 +93,6 @@
         "pl": "Dodaj role dla niektórych nowych urządzeń",
         "uk": "Додати ролі для деяких нових пристроїв",
         "zh-cn": "为一些新设备添加角色"
-      },
-      "1.22.14": {
-        "en": "ToIob suports hs mode for color (light)\nissues from depandabot",
-        "de": "ToIob suports hs mode für color (light)\nfragen von depandabot",
-        "ru": "ToIob suports hs режим для цвета (свет)\nотзывы о depandabot",
-        "pt": "Modo de suporte do ToIob hs para cores (luz)\nquestões do depandabot",
-        "nl": "ToIob suports hs-modus voor kleur (licht)\nproblemen van depandabot",
-        "fr": "Mode TOIobs hs pour la couleur (lumière)\ndepandabot",
-        "it": "ToIob suports hs modalità per colore (luce)\nproblemi da depandabot",
-        "es": "ToIob suports hs modo para el color (light)\ncuestiones de depandabot",
-        "pl": "Tolob suports tryb hs dla koloru (światła)\nkwestie związane z depandabot",
-        "uk": "ToIob suports hs режим для кольору (світло)\nпитання від depandabot",
-        "zh-cn": "颜色的 ToIob suports hs 模式( 浅色)\n发件人的问题"
       }
     },
     "titleLang": {

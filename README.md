@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.21 (2026-06-16)
 - (BenAhrdt) Changed setTimeout to this.adapter.setTimeout
 
 ### 1.22.20 (2026-06-16)
@@ -38,9 +38,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ### 1.22.17 (2026-06-07)
 - (BenAhrdt) Fixed writing valid zero values from bridged Home Assistant entities to ioBroker states.
-
-### 1.22.16 (2026-06-06)
-- (BenAhrdt) Bugfix COver in ToIob
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 
