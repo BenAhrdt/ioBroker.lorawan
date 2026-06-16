@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.17",
+    "version": "1.22.18",
     "news": {
+      "1.22.18": {
+        "en": "Testversion, ohne info. schreiben",
+        "de": "Testversion, ohne Info. schreiben",
+        "ru": "Тестирование, ohne info. schreiben",
+        "pt": "Testversion, ohne info. schreiben",
+        "nl": "Testversie, ohne info. schreiben",
+        "fr": "Testversion, ohne info. schreiben",
+        "it": "Testversion, ohne info. schreiben",
+        "es": "Testversion, ohne info. schreiben",
+        "pl": "Testversion, ohne info. schreiben",
+        "uk": "Тестування, ohne info. schreiben",
+        "zh-cn": "Testversion, ohne info. schreiben (英语)"
+      },
       "1.22.17": {
         "en": "Fixed writing valid zero values from bridged Home Assistant entities to ioBroker states.",
         "de": "Behobenes Schreiben gültige Nullwerte von überbrückten Home Assistant-Einheiten zu ioBroker-Staaten.",
@@ -80,19 +93,6 @@
         "pl": "Adapter wymaga node.js > = 22\nDomyślny most wszystko downlink.control i uplin.decoded most",
         "uk": "Адаптер вимагає node.js >= 22 тепер\nJavaScript licenses API Веб-сайт Go1.13.8",
         "zh-cn": "适配器需要节点.js 现在22\n默认桥全部下行链路. control and uplin.decoded to bridge"
-      },
-      "1.22.11": {
-        "en": "correct default value for pause (worx)",
-        "de": "korrekter standardwert für pause (worx)",
-        "ru": "правильное значение по умолчанию для паузы (worx)",
-        "pt": "valor padrão correto para pausa (worx)",
-        "nl": "correcte standaard waarde voor pauze (worx)",
-        "fr": "corriger la valeur par défaut pour la pause (worx)",
-        "it": "corretto valore predefinito per pausa (worx)",
-        "es": "valor predeterminado correcto para la pausa (worx)",
-        "pl": "poprawna wartość domyślna dla pauzy (worx)",
-        "uk": "виправлено значення за замовчуванням для паузи (worx)",
-        "zh-cn": "校正暂停( worx) 的默认值"
       }
     },
     "titleLang": {

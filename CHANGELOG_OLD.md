@@ -1267,6 +1267,10 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.13 (2026-05-25)
+- (BenAhrdt) Changes in io-package.
+- (BenAhrdt) Changes in package.json
+
 ## 1.22.12 (2026-05-09)
 - (copilot) Adapter requires node.js >= 22 now
 * (BenAhrdt) Default Bridge all downlink.control and uplink.decoded to bridge
