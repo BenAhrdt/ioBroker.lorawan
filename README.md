@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.23 (2026-06-17)
 - (BenAhrdt) setTimeout changed into this.adapter.SetTimeout
 
 ### 1.22.22 (2026-06-16)
@@ -38,9 +38,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ### 1.22.19 (2026-06-16)
 - (BenAhrdt) Test durch fehlerhaften git commit
-
-### 1.22.18 (2026-06-16)
-- (BenAhrdt) Testversion, ohne info. schreiben
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 

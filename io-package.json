@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.22",
+    "version": "1.22.23",
     "news": {
+      "1.22.23": {
+        "en": "setTimeout changed into this.adapter.SetTimeout",
+        "de": "setTimeout wurde in this.adapter geändert. SetTimeout",
+        "ru": "setTimeout изменился на этот.adapter. Установить время",
+        "pt": "setTimeout mudou para este.adapter. SetTimeout",
+        "nl": "setTimeout is veranderd in deze.adapter. SetTimeout",
+        "fr": "setTimeout a changé en ceci.adaptateur. Réglage des délais",
+        "it": "setTimeout è cambiato in questo.adapter. SetTimes",
+        "es": "setTimeout cambió en este.adapter. SetTimeout",
+        "pl": "set Timeout zmienił się w to. Adapter. Ustawienie timeout",
+        "uk": "setTimeout змінився в this.adapter. Навігація",
+        "zh-cn": "timeout 已更改为此。 adapter。 设置超时"
+      },
       "1.22.22": {
         "en": "Remove writing of the last 10 values at receive and public message",
         "de": "Entfernen Sie das Schreiben der letzten 10 Werte bei Empfang und öffentliche Nachricht",
@@ -80,19 +93,6 @@
         "pl": "Naprawiono pisanie poprawnych wartości zerowych z zaokrąglonych jednostek Home Assistant do stanów jOBroker.",
         "uk": "Фіксоване написання дійсних нульових значень з містованих домашніх помічників для ioBroker штатів.",
         "zh-cn": "固定写入有效的零值,从桥接的家用助理实体到ioBroker状态."
-      },
-      "1.22.16": {
-        "en": "Bugfix COver in ToIob",
-        "de": "Bugfix COver in ToIob",
-        "ru": "Bugfix COver в ToIob",
-        "pt": "Correção de Erros no Tolob",
-        "nl": "Bugfix COver in Toiob",
-        "fr": "Bugfix Cover dans TOIob",
-        "it": "Bugfix COver in ToIob",
-        "es": "Bugfix COver en ToIob",
-        "pl": "Bugfix Cover w Tołobie",
-        "uk": "Бугфікс Ковер в Тойоб",
-        "zh-cn": "在 ToIob 中错误修正 Cover"
       }
     },
     "titleLang": {
