@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) setTimeout changed into this.adapter.SetTimeout
+
 ### 1.22.22 (2026-06-16)
 - (BenAhrdt) Remove writing of the last 10 values at receive and public message
 
