@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.23",
+    "version": "1.22.24",
     "news": {
+      "1.22.24": {
+        "en": "Add Absolute Humidity to device_class",
+        "de": "Füge der Geräteklasse die absolute Luftfeuchtigkeit hinzu.",
+        "ru": "Добавить абсолютную влажность в device_class",
+        "pt": "Adicionar umidade absoluta à classe do dispositivo",
+        "nl": "Voeg absolute luchtvochtigheid toe aan de device_class.",
+        "fr": "Ajouter l'humidité absolue à la classe de périphérique",
+        "it": "Aggiungi l'umidità assoluta alla classe di dispositivi",
+        "es": "Agregar humedad absoluta a device_class",
+        "pl": "Dodaj wilgotność bezwzględną do device_class",
+        "uk": "Додати абсолютну вологість до класу пристроїв",
+        "zh-cn": "将绝对湿度添加到设备类"
+      },
       "1.22.23": {
         "en": "setTimeout changed into this.adapter.SetTimeout",
         "de": "setTimeout wurde in this.adapter geändert. SetTimeout",
@@ -80,19 +93,6 @@
         "pl": "Testversion, ohne info. schreiben",
         "uk": "Тестування, ohne info. schreiben",
         "zh-cn": "Testversion, ohne info. schreiben (英语)"
-      },
-      "1.22.17": {
-        "en": "Fixed writing valid zero values from bridged Home Assistant entities to ioBroker states.",
-        "de": "Behobenes Schreiben gültige Nullwerte von überbrückten Home Assistant-Einheiten zu ioBroker-Staaten.",
-        "ru": "Фиксированная запись действительных нулевых значений от подключенных объектов Home Assistant до штатов ioBroker.",
-        "pt": "Corrigido escrevendo valores zero válidos de entidades bridged Home Assistant para estados ioBroker.",
-        "nl": "Vaste schrijven geldig nul waarden van brugd Home Assistent entiteiten naar ioBroker staten.",
-        "fr": "Correction de l'écriture de valeurs nulles valides des entités d'aide à la maison pontées aux états ioBroker.",
-        "it": "Scrittura fissa valori zero validi da entità di Home Assistant colate a stati ioBroker.",
-        "es": "Escribir valores nulos válidos de las entidades auxiliares de casa puenteadas a los estados de yoBroker.",
-        "pl": "Naprawiono pisanie poprawnych wartości zerowych z zaokrąglonych jednostek Home Assistant do stanów jOBroker.",
-        "uk": "Фіксоване написання дійсних нульових значень з містованих домашніх помічників для ioBroker штатів.",
-        "zh-cn": "固定写入有效的零值,从桥接的家用助理实体到ioBroker状态."
       }
     },
     "titleLang": {
