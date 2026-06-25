@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.24",
+    "version": "1.22.25",
     "news": {
+      "1.22.25": {
+        "en": "Change Assignhandler for case intensive Check\nAdd subAssign for a part of name",
+        "de": "Ändern Sie den Zuweisungshandler für die fallintensive Prüfung.\nFüge Unterzuweisung für einen Teil des Namens hinzu",
+        "ru": "Изменить обработчик назначений для проверки с интенсивным использованием регистров.\nДобавить подназначение для части имени",
+        "pt": "Alterar o Assignhandler para verificação que exige alta sensibilidade a maiúsculas e minúsculas.\nAdicionar subatribuição para uma parte do nome",
+        "nl": "Wijzig de Assignhandler voor case-intensieve controles.\nVoeg een subtoewijzing toe voor een deel van de naam.",
+        "fr": "Modifier le gestionnaire d'affectation pour la vérification intensive des cas\nAjouter une sous-affectation pour une partie du nom",
+        "it": "Cambia Assegnatore gestore per controllo intensivo dei casi\nAggiungi subAssegna per una parte del nome",
+        "es": "Modificar Assignhandler para comprobación intensiva de casos\nAgregar subAsignación para una parte del nombre",
+        "pl": "Zmień Assignhandler na kontrolę intensywnie wykorzystującą przypadek\nDodaj podprzypisanie dla części nazwy",
+        "uk": "Змінити обробник присвоєння для перевірки з інтенсивним виконанням регістрів\nДодати subAssign для частини імені",
+        "zh-cn": "更改案例密集型检查的分配处理程序\n为名称的一部分添加子分配"
+      },
       "1.22.24": {
         "en": "Add Absolute Humidity to device_class",
         "de": "Füge der Geräteklasse die absolute Luftfeuchtigkeit hinzu.",
@@ -80,19 +93,6 @@
         "pl": "Test durch fehlerhaften git commit",
         "uk": "Тест дюх fehlerhaften git commit",
         "zh-cn": "测试 fehlerhaften git 执行"
-      },
-      "1.22.18": {
-        "en": "Testversion, ohne info. schreiben",
-        "de": "Testversion, ohne Info. schreiben",
-        "ru": "Тестирование, ohne info. schreiben",
-        "pt": "Testversion, ohne info. schreiben",
-        "nl": "Testversie, ohne info. schreiben",
-        "fr": "Testversion, ohne info. schreiben",
-        "it": "Testversion, ohne info. schreiben",
-        "es": "Testversion, ohne info. schreiben",
-        "pl": "Testversion, ohne info. schreiben",
-        "uk": "Тестування, ohne info. schreiben",
-        "zh-cn": "Testversion, ohne info. schreiben (英语)"
       }
     },
     "titleLang": {

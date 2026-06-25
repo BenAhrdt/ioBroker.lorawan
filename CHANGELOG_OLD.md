@@ -1267,6 +1267,9 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.20 (2026-06-16)
+- (BenAhrdt) Write publishIds and subscribedTopics delayed
+
 ## 1.22.19 (2026-06-16)
 - (BenAhrdt) Test durch fehlerhaften git commit
 

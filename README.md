@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.25 (2026-06-25)
 - (BenAhrdt) Change Assignhandler for case intensive Check
 - (BenAhrdt) Add subAssign for a part of name
 
@@ -39,9 +39,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ### 1.22.21 (2026-06-16)
 - (BenAhrdt) Changed setTimeout to this.adapter.setTimeout
-
-### 1.22.20 (2026-06-16)
-- (BenAhrdt) Write publishIds and subscribedTopics delayed
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 
