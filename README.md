@@ -26,6 +26,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 -->
 ### **WORK IN PROGRESS**
 - (BenAhrdt) Change Assignhandler for case intensive Check
+- (BenAhrdt) Add subAssign for a part of name
 
 ### 1.22.24 (2026-06-24)
 - (BenAhrdt) Add Absolute Humidity to device_class
