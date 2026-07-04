@@ -82,7 +82,7 @@
         "zh-cn": "写入 Publishing Ids 和订阅日期延迟"
       },
       "1.22.19": {
-        "en": "Test durch fehlerhaften git commit",
+        "en": "Test with wrong git commit",
         "de": "Test durch fehlerhaften git commit",
         "ru": "Тестирование durch fehlerhaften",
         "pt": "Teste durch fehlerhaften git commit",
