@@ -232,7 +232,7 @@
     "customJson": "Objekt für den \"Custom\"-Bereich im \"Common\" Objekt",
     "customJsonActiveTooltip": "With this function it is possible to add your own custom entries to the decoded states",
     "customJsonInformation": "With this function it is possible to add your own custom entries to the decoded states. Just input the desired json content in active function.",
-    "customJsonTooltip": "Fügen Sie ein Objekt hinzu, welches in common.custom geschrieben wird.",
+    "customJsonTooltip": "Add a new Object, wich will be written into common.custom.",
     "decimalPlaces": "decimal places",
     "decimalPlacesTooltip": "select the desired numberof decimal places",
     "detectedRoles": "detected roles",
