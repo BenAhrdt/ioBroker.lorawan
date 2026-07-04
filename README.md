@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.27 (2026-07-04)
 - (BenAhrdt) Bugfix warning for wrong id
 - (BenAhrdt) Add Profile to downloadconfig
 
@@ -40,9 +40,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ### 1.22.23 (2026-06-17)
 - (BenAhrdt) setTimeout changed into this.adapter.SetTimeout
-
-### 1.22.22 (2026-06-16)
-- (BenAhrdt) Remove writing of the last 10 values at receive and public message
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 

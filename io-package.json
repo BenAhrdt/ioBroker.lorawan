@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.26",
+    "version": "1.22.27",
     "news": {
+      "1.22.27": {
+        "en": "Bugfix warning for wrong id\nAdd Profile to downloadconfig",
+        "de": "Bugfix-Warnung wegen falscher ID\nProfil zu downloadconfig hinzufügen",
+        "ru": "Исправлено предупреждение об ошибке, связанной с неверным идентификатором.\nДобавить профиль в downloadconfig",
+        "pt": "Aviso de correção de bug para ID incorreto\nAdicionar perfil ao downloadconfig",
+        "nl": "Bugfix-waarschuwing voor onjuiste ID\nVoeg profiel toe aan downloadconfig",
+        "fr": "Avertissement de correction de bug pour identifiant incorrect\nAjouter le profil à downloadconfig",
+        "it": "Avviso di correzione bug per ID errato\nAggiungi il profilo a downloadconfig",
+        "es": "Advertencia de corrección de errores por ID incorrecto\nAgregar perfil a downloadconfig",
+        "pl": "Ostrzeżenie o naprawie błędu dotyczącego nieprawidłowego identyfikatora\nDodaj profil do downloadconfig",
+        "uk": "Попередження про виправлення помилки для неправильного ідентифікатора\nДодати профіль до завантаженої конфігурації",
+        "zh-cn": "修复错误 ID 警告\n将配置文件添加到 downloadconfig"
+      },
       "1.22.26": {
         "en": "Add ststes into Lock entity for ToIob devices",
         "de": "Fügen Sie Statusmeldungen zur Sperrentität für ToIob-Geräte hinzu.",
@@ -80,19 +93,6 @@
         "pl": "Zmieniono timeout do tego. Adapter. setTimeout",
         "uk": "Змінено setTimeout в this.adapter.setTimeout",
         "zh-cn": "更改了设置 Timeout 到此. adapter. set Timeout"
-      },
-      "1.22.20": {
-        "en": "Write publishIds and subscribedTopics delayed",
-        "de": "Write publishIds und abonnierteTopics verzögert",
-        "ru": "Написать Ids и подписатьсяTopics задерживается",
-        "pt": "Escrever os IDs de publicação e os Topics subscritos atrasados",
-        "nl": "PublicerenIds en geabonneerdTopics vertraagd schrijven",
-        "fr": "Ecrire des Ids et s'abonnerSujets retardés",
-        "it": "Scrivere pubblicaIds e abbonati Argomenti ritardati",
-        "es": "Escribe publicacionesIds y suscritosTemas retrasados",
-        "pl": "Napisz publishIds i subskrybedTopics opóźnione",
-        "uk": "Напишіть відгукПрихильники та підписки",
-        "zh-cn": "写入 Publishing Ids 和订阅日期延迟"
       }
     },
     "titleLang": {
