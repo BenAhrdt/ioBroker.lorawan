@@ -1,0 +1,4 @@
+chore: release v1.22.27
+
+- (BenAhrdt) Bugfix warning for wrong id
+- (BenAhrdt) Add Profile to downloadconfig
