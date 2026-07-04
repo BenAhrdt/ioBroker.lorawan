@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) Add ststes into Lock entity for ToIob devices
+
 ### 1.22.25 (2026-06-25)
 - (BenAhrdt) Change Assignhandler for case intensive Check
 - (BenAhrdt) Add subAssign for a part of name
