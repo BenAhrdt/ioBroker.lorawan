@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.25",
+    "version": "1.22.26",
     "news": {
+      "1.22.26": {
+        "en": "Add ststes into Lock entity for ToIob devices",
+        "de": "Fügen Sie Statusmeldungen zur Sperrentität für ToIob-Geräte hinzu.",
+        "ru": "Добавьте sttes в сущность Lock для устройств ToIob.",
+        "pt": "Adicionar estados à entidade Lock para dispositivos ToIob",
+        "nl": "Voeg statussen toe aan de Lock-entiteit voor ToIob-apparaten.",
+        "fr": "Ajouter des ststes à l'entité Verrou pour les périphériques ToIob",
+        "it": "Aggiungi stati all'entità Blocco per i dispositivi ToIob",
+        "es": "Agregar estados a la entidad Bloqueo para dispositivos ToIob",
+        "pl": "Dodaj stacje do encji blokady dla urządzeń ToIob",
+        "uk": "Додати станції до сутності блокування для пристроїв ToIob",
+        "zh-cn": "将状态添加到锁定实体中，用于 ToIob 设备"
+      },
       "1.22.25": {
         "en": "Change Assignhandler for case intensive Check\nAdd subAssign for a part of name",
         "de": "Ändern Sie den Zuweisungshandler für die fallintensive Prüfung.\nFüge Unterzuweisung für einen Teil des Namens hinzu",
@@ -80,19 +93,6 @@
         "pl": "Napisz publishIds i subskrybedTopics opóźnione",
         "uk": "Напишіть відгукПрихильники та підписки",
         "zh-cn": "写入 Publishing Ids 和订阅日期延迟"
-      },
-      "1.22.19": {
-        "en": "Test with wrong git commit",
-        "de": "Test durch fehlerhaften git commit",
-        "ru": "Тестирование durch fehlerhaften",
-        "pt": "Teste durch fehlerhaften git commit",
-        "nl": "Test durch fehlerhoften git commit",
-        "fr": "Tester l'engagement de fehlerhaften git",
-        "it": "Test durch fehlerhaften git commit",
-        "es": "Test durch fehlerhaften git commit",
-        "pl": "Test durch fehlerhaften git commit",
-        "uk": "Тест дюх fehlerhaften git commit",
-        "zh-cn": "测试 fehlerhaften git 执行"
       }
     },
     "titleLang": {

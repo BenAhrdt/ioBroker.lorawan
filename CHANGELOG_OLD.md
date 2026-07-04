@@ -1267,6 +1267,9 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.21 (2026-06-16)
+- (BenAhrdt) Changed setTimeout to this.adapter.setTimeout
+
 ## 1.22.20 (2026-06-16)
 - (BenAhrdt) Write publishIds and subscribedTopics delayed
 

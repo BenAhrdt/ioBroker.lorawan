@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.26 (2026-07-04)
 - (BenAhrdt) Add ststes into Lock entity for ToIob devices
 
 ### 1.22.25 (2026-06-25)
@@ -39,9 +39,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ### 1.22.22 (2026-06-16)
 - (BenAhrdt) Remove writing of the last 10 values at receive and public message
-
-### 1.22.21 (2026-06-16)
-- (BenAhrdt) Changed setTimeout to this.adapter.setTimeout
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 
