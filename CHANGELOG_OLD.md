@@ -1267,6 +1267,9 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.23 (2026-06-17)
+- (BenAhrdt) setTimeout changed into this.adapter.SetTimeout
+
 ## 1.22.22 (2026-06-16)
 - (BenAhrdt) Remove writing of the last 10 values at receive and public message
 

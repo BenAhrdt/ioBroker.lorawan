@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.27",
+    "version": "1.22.28",
     "news": {
+      "1.22.28": {
+        "en": "Add DewPointTemperature to assignhandler",
+        "de": "Füge DewPointTemperature zum Zuweisungshandler hinzu.",
+        "ru": "Добавьте DewPointTemperature в assignhandler",
+        "pt": "Adicione DewPointTemperature ao assignhandler",
+        "nl": "Voeg DewPointTemperature toe aan assignhandler",
+        "fr": "Ajouter DewPointTemperature à assignhandler",
+        "it": "Aggiungi DewPointTemperature all'assignhandler",
+        "es": "Agregar DewPointTemperature a assignhandler",
+        "pl": "Dodaj DewPointTemperature do assignhandler",
+        "uk": "Додати DewPointTemperature до assignhandler",
+        "zh-cn": "将露点温度添加到赋值处理程序"
+      },
       "1.22.27": {
         "en": "Bugfix warning for wrong id\nAdd Profile to downloadconfig",
         "de": "Bugfix-Warnung wegen falscher ID\nProfil zu downloadconfig hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "Usuń zapis ostatnich 10 wartości przy odbieraniu i wiadomości publicznej",
         "uk": "Видалити письмове повідомлення про останні 10",
         "zh-cn": "删除最后 10 个值在接收时的写入和公开消息"
-      },
-      "1.22.21": {
-        "en": "Changed setTimeout to this.adapter.setTimeout",
-        "de": "Geändert setTimeout zu this.adapter.setTimeout",
-        "ru": "Изменить setTimeout на this.adapter.setTimeout",
-        "pt": "SetTimeout alterado para este.adapter.setTimeout",
-        "nl": "Veranderde setTimeout naar deze.adapter.setTimeout",
-        "fr": "Changed setTimeout to this.adapter.setTimeout",
-        "it": "Modificato il timeout a questo.adapter.setTimeout",
-        "es": "Cambio de configuraciónTiempo a este.adapter.setTimeout",
-        "pl": "Zmieniono timeout do tego. Adapter. setTimeout",
-        "uk": "Змінено setTimeout в this.adapter.setTimeout",
-        "zh-cn": "更改了设置 Timeout 到此. adapter. set Timeout"
       }
     },
     "titleLang": {

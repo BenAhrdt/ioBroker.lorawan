@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.28 (2026-07-05)
 - (BenAhrdt) Add DewPointTemperature to assignhandler
 
 ### 1.22.27 (2026-07-04)
@@ -40,9 +40,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ### 1.22.24 (2026-06-24)
 - (BenAhrdt) Add Absolute Humidity to device_class
-
-### 1.22.23 (2026-06-17)
-- (BenAhrdt) setTimeout changed into this.adapter.SetTimeout
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 
