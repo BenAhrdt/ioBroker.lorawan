@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.28",
+    "version": "1.22.29",
     "news": {
+      "1.22.29": {
+        "en": "Add some roles and units to assignhandler",
+        "de": "Fügen Sie dem Zuweisungshandler einige Rollen und Einheiten hinzu.",
+        "ru": "Добавьте несколько ролей и подразделений в обработчик назначений.",
+        "pt": "Adicione algumas funções e unidades ao assignhandler.",
+        "nl": "Voeg enkele rollen en eenheden toe aan de assignhandler.",
+        "fr": "Ajoutez des rôles et des unités à assignhandler",
+        "it": "Aggiungi alcuni ruoli e unità ad assignhandler",
+        "es": "Agregue algunos roles y unidades a assignhandler",
+        "pl": "Dodaj role i jednostki do assignhandler",
+        "uk": "Додати деякі ролі та юніти до assignhandler",
+        "zh-cn": "向 assignhandler 添加一些角色和单位"
+      },
       "1.22.28": {
         "en": "Add DewPointTemperature to assignhandler",
         "de": "Füge DewPointTemperature zum Zuweisungshandler hinzu.",
@@ -80,19 +93,6 @@
         "pl": "set Timeout zmienił się w to. Adapter. Ustawienie timeout",
         "uk": "setTimeout змінився в this.adapter. Навігація",
         "zh-cn": "timeout 已更改为此。 adapter。 设置超时"
-      },
-      "1.22.22": {
-        "en": "Remove writing of the last 10 values at receive and public message",
-        "de": "Entfernen Sie das Schreiben der letzten 10 Werte bei Empfang und öffentliche Nachricht",
-        "ru": "Удалить написание последних 10 ценностей при получении и публичном сообщении",
-        "pt": "Remover a escrita dos últimos 10 valores na mensagem recebida e pública",
-        "nl": "Verwijder het schrijven van de laatste 10 waarden op ontvangen en openbaar bericht",
-        "fr": "Supprimer l'écriture des 10 dernières valeurs à réception et message public",
-        "it": "Rimuovere la scrittura degli ultimi 10 valori a ricezione e messaggio pubblico",
-        "es": "Eliminar la escritura de los últimos 10 valores al recibir y el mensaje público",
-        "pl": "Usuń zapis ostatnich 10 wartości przy odbieraniu i wiadomości publicznej",
-        "uk": "Видалити письмове повідомлення про останні 10",
-        "zh-cn": "删除最后 10 个值在接收时的写入和公开消息"
       }
     },
     "titleLang": {

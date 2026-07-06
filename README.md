@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.29 (2026-07-06)
 - (BenAhrdt) Add some roles and units to assignhandler
 
 ### 1.22.28 (2026-07-05)
@@ -40,9 +40,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 ### 1.22.25 (2026-06-25)
 - (BenAhrdt) Change Assignhandler for case intensive Check
 - (BenAhrdt) Add subAssign for a part of name
-
-### 1.22.24 (2026-06-24)
-- (BenAhrdt) Add Absolute Humidity to device_class
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 

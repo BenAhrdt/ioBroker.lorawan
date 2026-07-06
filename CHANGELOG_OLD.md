@@ -1267,6 +1267,9 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.24 (2026-06-24)
+- (BenAhrdt) Add Absolute Humidity to device_class
+
 ## 1.22.23 (2026-06-17)
 - (BenAhrdt) setTimeout changed into this.adapter.SetTimeout
 
