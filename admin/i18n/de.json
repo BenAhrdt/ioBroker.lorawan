@@ -323,6 +323,8 @@
     "separatorTooltip": "Wählen Sie ein Trennzeichen zwischen den Kennungen",
     "space": "Leerzeichen",
     "sslTooltip": "Wenn Ihre Verbindung SSL verwendet, aktivieren Sie bitte dieses Kontrollkästchen (anstelle von mqtt wird mqtts verwendet).",
+    "statesValue": "JSON für den Wert der Enum (Sates)",
+    "statesValueTooltip": "Geben Sie einen JSON-String für die States im common bereich ein",
     "subscribeTooltip": "Abonnieren Sie den State von der Bridge",
     "subscribed": "Abonniert",
     "swap": "Little Endian (Bytereihenfolge tauschen)",
@@ -338,5 +340,7 @@
     "usedApplicationName": "Benutzter Applikationsname (common.name)",
     "usedDeviceId": "Benutzte Geräte Id (common.name)",
     "username": "Benutzername",
-    "usernameTooltip": "Geben Sie Ihren Benutzernamen ein"
+    "usernameTooltip": "Geben Sie Ihren Benutzernamen ein",
+    "withStates": "Mit Enum",
+    "withStatesTooltip": "Mit Enum zur Auswahl"
 }

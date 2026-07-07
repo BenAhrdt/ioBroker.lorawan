@@ -25,7 +25,9 @@
       "limitMax": true,
       "limitMaxValue": 1440,
       "swap": false,
-      "decimalPlaces": 0
+      "decimalPlaces": 0,
+      "withStates": false,
+      "statesValue": ""
     },
     {
       "name": "Reboot",
@@ -47,7 +49,9 @@
       "limitMinValue": 0,
       "limitMax": false,
       "limitMaxValue": 0,
-      "swap": false
+      "swap": false,
+      "withStates": false,
+      "statesValue": ""
     }
   ]
 }

@@ -339,5 +339,10 @@
     "HomeStateNumberTooltip": "Number to indicate the home state",
     "StartNumberTooltip": "Enter ther Number wich will be send to start",
     "StopNumberTooltip": "Enter ther Number wich will be send to stop",
-    "HomeNumberTooltip": "Enter ther Number wich will be send to home"
+    "HomeNumberTooltip": "Enter ther Number wich will be send to home",
+
+    "withStates": "With States",
+    "withStatesTooltip": "With States for selection",
+    "statesValue": "JSON for value of states",
+    "statesValueTooltip": "Enter a JSON for the states of this parameter"
 }

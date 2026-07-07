@@ -323,6 +323,8 @@
     "separatorTooltip": "选择标识符的分隔符",
     "space": "空间",
     "sslTooltip": "如果您的连接使用 ssl，请启用此复选框（使用 hpts 而不是 http）",
+    "statesValue": "状态值的 JSON",
+    "statesValueTooltip": "输入此参数状态的 JSON",
     "subscribeTooltip": "从 Bridge 订阅状态",
     "subscribed": "已订阅",
     "swap": "小尾数（sawp 字节顺序）",
@@ -338,5 +340,7 @@
     "usedApplicationName": "使用的应用程序名称（common.name）",
     "usedDeviceId": "使用的设备 ID（common.name）",
     "username": "用户名",
-    "usernameTooltip": "输入您的用户名"
+    "usernameTooltip": "输入您的用户名",
+    "withStates": "与国家",
+    "withStatesTooltip": "有可供选择的州"
 }

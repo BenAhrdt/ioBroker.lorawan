@@ -25,7 +25,9 @@
       "limitMin": false,
       "limitMinValue": 0,
       "limitMax": false,
-      "limitMaxValue": 0
+      "limitMaxValue": 0,
+      "withStates": false,
+      "statesValue": ""
     },
     {
       "name": "Get Value",
@@ -47,7 +49,9 @@
       "limitMin": false,
       "limitMinValue": 0,
       "limitMax": false,
-      "limitMaxValue": 0
+      "limitMaxValue": 0,
+      "withStates": false,
+      "statesValue": ""
     },
     {
       "name": "Set MeasureCron",
@@ -69,7 +73,9 @@
       "limitMin": false,
       "limitMinValue": 0,
       "limitMax": false,
-      "limitMaxValue": 0
+      "limitMaxValue": 0,
+      "withStates": false,
+      "statesValue": ""
     }
   ]
 }

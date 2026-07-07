@@ -617,6 +617,32 @@
                                     "md": 1,
                                     "lg": 1,
                                     "xl": 1
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "attr": "withStates",
+                                    "label": "withStates",
+                                    "tooltip": "withStatesTooltip",
+                                    "hidden": "data.type !== 'number'",
+                                    "default": false,
+                                    "xs": 12,
+                                    "sm": 1,
+                                    "md": 1,
+                                    "lg": 1,
+                                    "xl": 1
+                                },
+                                {
+                                    "type": "text",
+                                    "attr": "statesValue",
+                                    "label": "statesValue",
+                                    "tooltip": "statesValueTooltip",
+                                    "default": "",
+                                    "hidden": "data.type !== 'number' || data.withStates !== true",
+                                    "xs": 12,
+                                    "sm": 4,
+                                    "md": 4,
+                                    "lg": 4,
+                                    "xl": 4
                                 }
                             ]
                         }

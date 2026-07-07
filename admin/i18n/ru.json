@@ -323,6 +323,8 @@
     "separatorTooltip": "выбрать разделитель для идентификаторов",
     "space": "космос",
     "sslTooltip": "если ваше соединение использует SSL, установите этот флажок (вместо http используется hppts)",
+    "statesValue": "JSON для значений состояний",
+    "statesValueTooltip": "Введите JSON для состояний этого параметра.",
     "subscribeTooltip": "подписаться на состояние из Bridge",
     "subscribed": "подписался",
     "swap": "с прямым порядком байтов (порядок байтов Sawp)",
@@ -338,5 +340,7 @@
     "usedApplicationName": "Имя используемого приложения (common.name)",
     "usedDeviceId": "Идентификатор используемого устройства (common.name)",
     "username": "имя пользователя",
-    "usernameTooltip": "введите свое имя пользователя"
+    "usernameTooltip": "введите свое имя пользователя",
+    "withStates": "С государствами",
+    "withStatesTooltip": "С состояниями для выбора"
 }

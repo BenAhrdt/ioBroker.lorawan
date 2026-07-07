@@ -323,6 +323,8 @@
     "separatorTooltip": "choisir un séparateur pour les identifiants",
     "space": "espace",
     "sslTooltip": "si votre connexion utilise SSL, veuillez cocher cette case (hppts à la place de http est utilisé)",
+    "statesValue": "JSON pour la valeur des états",
+    "statesValueTooltip": "Entrez un JSON pour les états de ce paramètre",
     "subscribeTooltip": "abonnez-vous à l'état depuis Bridge",
     "subscribed": "abonné",
     "swap": "Little Endian (ordre des octets Sawp)",
@@ -338,5 +340,7 @@
     "usedApplicationName": "Nom de l'application utilisée (common.name)",
     "usedDeviceId": "Identifiant de l'appareil utilisé (common.name)",
     "username": "nom d'utilisateur",
-    "usernameTooltip": "saisissez votre nom d'utilisateur"
+    "usernameTooltip": "saisissez votre nom d'utilisateur",
+    "withStates": "Avec les États",
+    "withStatesTooltip": "Avec États pour la sélection"
 }

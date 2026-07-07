@@ -323,6 +323,8 @@
     "separatorTooltip": "вибрати роздільник для ідентифікаторів",
     "space": "простір",
     "sslTooltip": "якщо ваше з’єднання використовує ssl, установіть цей прапорець (замість http використовується hppts)",
+    "statesValue": "JSON для значення станів",
+    "statesValueTooltip": "Введіть JSON для стану цього параметра",
     "subscribeTooltip": "передплатити стан від Bridge",
     "subscribed": "підписаний",
     "swap": "маленький порядок байтів (sawp byteorder)",
@@ -338,5 +340,7 @@
     "usedApplicationName": "Використана назва програми (common.name)",
     "usedDeviceId": "Ідентифікатор використаного пристрою (common.name)",
     "username": "ім'я користувача",
-    "usernameTooltip": "введіть своє ім'я користувача"
+    "usernameTooltip": "введіть своє ім'я користувача",
+    "withStates": "З Штатами",
+    "withStatesTooltip": "Із Штатами на вибір"
 }

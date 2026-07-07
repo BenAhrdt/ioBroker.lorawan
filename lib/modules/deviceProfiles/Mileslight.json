@@ -25,7 +25,9 @@
       "limitMin":true,
       "limitMinValue":5,
       "limitMax":true,
-      "limitMaxValue":360
+      "limitMaxValue":360,
+      "withStates": false,
+      "statesValue": ""
     }
   ]
 }

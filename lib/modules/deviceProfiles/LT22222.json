@@ -27,7 +27,9 @@
       "limitMax":true,
       "limitMaxValue":360,
       "swap": false,
-      "decimalPlaces": 0
+      "decimalPlaces": 0,
+      "withStates": false,
+      "statesValue": ""
     },
     {
       "name": "Reboot",
@@ -49,7 +51,9 @@
       "limitMinValue": 0,
       "limitMax": false,
       "limitMaxValue": 0,
-      "swap": false
+      "swap": false,
+      "withStates": false,
+      "statesValue": ""
     },
     {
       "name": "RPC_Level_4",
@@ -71,7 +75,9 @@
       "limitMax": false,
       "limitMaxValue": 0,
       "swap": false,
-      "decimalPlaces": 0
+      "decimalPlaces": 0,
+      "withStates": false,
+      "statesValue": ""
     },
     {
       "name": "RO1_target",
@@ -93,7 +99,9 @@
       "limitMax": false,
       "limitMaxValue": 0,
       "swap": false,
-      "decimalPlaces": 0
+      "decimalPlaces": 0,
+      "withStates": false,
+      "statesValue": ""
     }, 
     {
       "name": "RO2_target",
@@ -115,7 +123,9 @@
       "limitMinValue": 0,
       "limitMaxValue": 0,
       "swap": false,
-      "decimalPlaces": 0
+      "decimalPlaces": 0,
+      "withStates": false,
+      "statesValue": ""
     },
     
     {
@@ -138,7 +148,9 @@
       "limitMax": false,
       "limitMaxValue": 0,
       "swap": false,
-      "decimalPlaces": 0
+      "decimalPlaces": 0,
+      "withStates": false,
+      "statesValue": ""
     },
     {
       "name": "DO2_target",
@@ -160,7 +172,9 @@
       "limitMax": false,
       "limitMaxValue": 0,
       "swap": false,
-      "decimalPlaces": 0
+      "decimalPlaces": 0,
+      "withStates": false,
+      "statesValue": ""
     },
     {
       "name": "RO1_NC_for_X_Sec",
@@ -182,7 +196,9 @@
       "limitMin": true,
       "limitMinValue": 0,
       "limitMax": true,
-      "limitMaxValue": 65
+      "limitMaxValue": 65,
+      "withStates": false,
+      "statesValue": ""
     },
     {
       "name": "RO2_NC_for_X_Sec",
@@ -204,7 +220,9 @@
       "limitMin": true,
       "limitMinValue": 0,
       "limitMax": true,
-      "limitMaxValue": 65
+      "limitMaxValue": 65,
+      "withStates": false,
+      "statesValue": ""
     },
     {
       "name": "DO1_L_FOR_X_SEC",
@@ -226,7 +244,9 @@
       "limitMin": true,
       "limitMinValue": 0,
       "limitMax": true,
-      "limitMaxValue": 65
+      "limitMaxValue": 65,
+      "withStates": false,
+      "statesValue": ""
     },
     {
       "name": "DO1_L_FOR_2_SEC",
@@ -248,7 +268,9 @@
       "limitMinValue": 0,
       "limitMax": false,
       "limitMaxValue": 0,
-      "decimalPlaces": 0
+      "decimalPlaces": 0,
+      "withStates": false,
+      "statesValue": ""
     }
   ]
 }    

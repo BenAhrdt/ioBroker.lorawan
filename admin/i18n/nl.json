@@ -323,6 +323,8 @@
     "separatorTooltip": "kies een scheidingsteken voor de ID's",
     "space": "ruimte",
     "sslTooltip": "Als uw verbinding SSL gebruikt, schakel dan dit selectievakje in (hppts in plaats van http wordt gebruikt)",
+    "statesValue": "JSON voor de waarde van staten",
+    "statesValueTooltip": "Voer een JSON in voor de status van deze parameter",
     "subscribeTooltip": "abonneer je op de staat van Bridge",
     "subscribed": "geabonneerd",
     "swap": "kleine endian (sawp-bytevolgorde)",
@@ -338,5 +340,7 @@
     "usedApplicationName": "Gebruikte applicatienaam (common.name)",
     "usedDeviceId": "Gebruikte apparaat-ID (common.name)",
     "username": "gebruikersnaam",
-    "usernameTooltip": "voer uw gebruikersnaam in"
+    "usernameTooltip": "voer uw gebruikersnaam in",
+    "withStates": "Met Staten",
+    "withStatesTooltip": "Met staten voor selectie"
 }
