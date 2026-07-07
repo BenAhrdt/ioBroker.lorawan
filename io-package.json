@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.29",
+    "version": "1.22.30",
     "news": {
+      "1.22.30": {
+        "en": "Add PIR Mini device Profile\nAdd possibillity to ad states to downlink numbers",
+        "de": "PIR-Mini-Geräteprofil hinzufügen\nFüge die Möglichkeit hinzu, Anzeigenstatus zu Downlink-Nummern hinzuzufügen",
+        "ru": "Добавить профиль мини-устройства PIR\nДобавьте возможность для штатов, где размещается реклама, передавать данные о количестве нисходящих ссылок.",
+        "pt": "Adicionar perfil de dispositivo PIR Mini\nAdicionar possibilidade aos estados de anúncios para baixar números",
+        "nl": "Voeg een PIR Mini-apparaatprofiel toe\nVoeg de mogelijkheid toe om advertentiestaten naar downlinknummers te verzenden",
+        "fr": "Ajouter le profil du périphérique PIR Mini\nAjouter la possibilité aux états publicitaires de recevoir des numéros de liaison descendante",
+        "it": "Aggiungi il profilo del dispositivo PIR Mini\nAggiungi possibilità agli stati degli annunci per i numeri di downlink",
+        "es": "Agregar perfil de dispositivo PIR Mini\nAgregar posibilidad de estados de anuncios a números de enlace descendente",
+        "pl": "Dodaj profil urządzenia PIR Mini\nDodanie możliwości do stanów reklam w numerach downlink",
+        "uk": "Додати профіль пристрою PIR Mini\nДодати до станів оголошень можливість пересилання номерів на низхідні посилання",
+        "zh-cn": "添加 PIR Mini 设备配置文件\n为广告状态添加下行链路号码的可能性"
+      },
       "1.22.29": {
         "en": "Add some roles and units to assignhandler",
         "de": "Fügen Sie dem Zuweisungshandler einige Rollen und Einheiten hinzu.",
@@ -80,19 +93,6 @@
         "pl": "Dodaj wilgotność bezwzględną do device_class",
         "uk": "Додати абсолютну вологість до класу пристроїв",
         "zh-cn": "将绝对湿度添加到设备类"
-      },
-      "1.22.23": {
-        "en": "setTimeout changed into this.adapter.SetTimeout",
-        "de": "setTimeout wurde in this.adapter geändert. SetTimeout",
-        "ru": "setTimeout изменился на этот.adapter. Установить время",
-        "pt": "setTimeout mudou para este.adapter. SetTimeout",
-        "nl": "setTimeout is veranderd in deze.adapter. SetTimeout",
-        "fr": "setTimeout a changé en ceci.adaptateur. Réglage des délais",
-        "it": "setTimeout è cambiato in questo.adapter. SetTimes",
-        "es": "setTimeout cambió en este.adapter. SetTimeout",
-        "pl": "set Timeout zmienił się w to. Adapter. Ustawienie timeout",
-        "uk": "setTimeout змінився в this.adapter. Навігація",
-        "zh-cn": "timeout 已更改为此。 adapter。 设置超时"
       }
     },
     "titleLang": {

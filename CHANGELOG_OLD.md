@@ -1267,6 +1267,10 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.25 (2026-06-25)
+- (BenAhrdt) Change Assignhandler for case intensive Check
+- (BenAhrdt) Add subAssign for a part of name
+
 ## 1.22.24 (2026-06-24)
 - (BenAhrdt) Add Absolute Humidity to device_class
 

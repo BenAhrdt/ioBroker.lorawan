@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.30 (2026-07-07)
 - (BenAhrdt) Add PIR Mini device Profile
 - (BenAhrdt) Add possibillity to ad states to downlink numbers
 
@@ -40,10 +40,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ### 1.22.26 (2026-07-04)
 - (BenAhrdt) Add ststes into Lock entity for ToIob devices
-
-### 1.22.25 (2026-06-25)
-- (BenAhrdt) Change Assignhandler for case intensive Check
-- (BenAhrdt) Add subAssign for a part of name
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 
