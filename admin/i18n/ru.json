@@ -28,6 +28,8 @@
     "BridgeTypeOff": "выключенный",
     "BridgeTypeSH": "Умный дом",
     "BridgeTypeTooltip": "Выберите тип сторонней системы",
+    "BridgeToIobIdSource": "Источник ID ToIob",
+    "BridgeToIobIdSourceTooltip": "Выберите, создают ли устройства ToIob ID состояния ioBroker из entity_id или unique_id",
     "BridgenotificationActivation": "активация уведомления",
     "BridgenotificationTooltip": "активировать или деактивировать уведомление",
     "ClimateActTemperatureText": "Целевая температура",

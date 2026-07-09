@@ -28,6 +28,8 @@
     "BridgeTypeOff": "вимкнено",
     "BridgeTypeSH": "Розумний будинок",
     "BridgeTypeTooltip": "Виберіть тип сторонньої системи",
+    "BridgeToIobIdSource": "Джерело ID ToIob",
+    "BridgeToIobIdSourceTooltip": "Виберіть, чи пристрої ToIob створюють ID стану ioBroker з entity_id або unique_id",
     "BridgenotificationActivation": "активація сповіщень",
     "BridgenotificationTooltip": "активувати або деактивувати сповіщення",
     "ClimateActTemperatureText": "Цільова температура",

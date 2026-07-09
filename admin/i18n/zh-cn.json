@@ -28,6 +28,8 @@
     "BridgeTypeOff": "离开",
     "BridgeTypeSH": "智能家居",
     "BridgeTypeTooltip": "选择外部系统类型",
+    "BridgeToIobIdSource": "ToIob ID 来源",
+    "BridgeToIobIdSourceTooltip": "选择 ToIob 设备从 entity_id 还是 unique_id 创建 ioBroker state ID",
     "BridgenotificationActivation": "通知激活",
     "BridgenotificationTooltip": "激活或停用通知",
     "ClimateActTemperatureText": "目标温度",

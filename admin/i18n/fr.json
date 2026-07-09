@@ -28,6 +28,8 @@
     "BridgeTypeOff": "désactivé",
     "BridgeTypeSH": "Maison intelligente",
     "BridgeTypeTooltip": "Sélectionnez le type du système étranger",
+    "BridgeToIobIdSource": "Source d'ID ToIob",
+    "BridgeToIobIdSourceTooltip": "Choisissez si les appareils ToIob créent leur ID d'état ioBroker à partir de entity_id ou unique_id",
     "BridgenotificationActivation": "activation des notifications",
     "BridgenotificationTooltip": "activer ou désactiver la notification",
     "ClimateActTemperatureText": "Température cible",

@@ -28,6 +28,8 @@
     "BridgeTypeOff": "uit",
     "BridgeTypeSH": "Slim huis",
     "BridgeTypeTooltip": "Selecteer het type van het buitenlandse systeem",
+    "BridgeToIobIdSource": "ToIob-ID-bron",
+    "BridgeToIobIdSourceTooltip": "Selecteer of ToIob-apparaten hun ioBroker-state-ID maken uit entity_id of unique_id",
     "BridgenotificationActivation": "melding activering",
     "BridgenotificationTooltip": "activeer of deactiveer de melding",
     "ClimateActTemperatureText": "Doeltemperatuur",

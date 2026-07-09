@@ -429,6 +429,7 @@
     "RefreshDiscoveryCronJob": "0 * * * *",
     "BridgeEnum": "*",
     "BridgenotificationActivation": "allNotifications, bridgeConnection, newDiscover, deviceState",
+    "BridgeToIobIdSource": "entity_id",
     "BridgeDevicesToGenerate": [
       "toIobDevices",
       "foreignDevices",

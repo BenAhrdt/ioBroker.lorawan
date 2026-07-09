@@ -24,6 +24,9 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) Add selection of ToIob source id
+
 ### 1.22.30 (2026-07-07)
 - (BenAhrdt) Add PIR Mini device Profile
 - (BenAhrdt) Add possibillity to ad states to downlink numbers
