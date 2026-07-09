@@ -24,7 +24,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.31 (2026-07-09)
 - (BenAhrdt) Add selection of ToIob source id
 
 ### 1.22.30 (2026-07-07)
@@ -40,9 +40,6 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 ### 1.22.27 (2026-07-04)
 - (BenAhrdt) Bugfix warning for wrong id
 - (BenAhrdt) Add Profile to downloadconfig
-
-### 1.22.26 (2026-07-04)
-- (BenAhrdt) Add ststes into Lock entity for ToIob devices
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 

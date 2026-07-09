@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.30",
+    "version": "1.22.31",
     "news": {
+      "1.22.31": {
+        "en": "Add selection of ToIob source id",
+        "de": "Auswahl der ToIob-Quell-ID hinzufügen",
+        "ru": "Добавить выборку идентификатора источника ToIob",
+        "pt": "Adicionar seleção de ID da fonte ToIob",
+        "nl": "Voeg een selectie van de ToIob-bron-ID toe.",
+        "fr": "Ajouter une sélection d'identifiants de source ToIob",
+        "it": "Aggiungi selezione ID sorgente ToIob",
+        "es": "Agregar selección de ID de origen ToIob",
+        "pl": "Dodaj wybór identyfikatora źródłowego obiektu ToIob",
+        "uk": "Додати вибір ідентифікатора джерела ToIob",
+        "zh-cn": "添加 ToIob 源 ID 的选择"
+      },
       "1.22.30": {
         "en": "Add PIR Mini device Profile\nAdd possibillity to ad states to downlink numbers",
         "de": "PIR-Mini-Geräteprofil hinzufügen\nFüge die Möglichkeit hinzu, Anzeigenstatus zu Downlink-Nummern hinzuzufügen",
@@ -80,19 +93,6 @@
         "pl": "Zmień Assignhandler na kontrolę intensywnie wykorzystującą przypadek\nDodaj podprzypisanie dla części nazwy",
         "uk": "Змінити обробник присвоєння для перевірки з інтенсивним виконанням регістрів\nДодати subAssign для частини імені",
         "zh-cn": "更改案例密集型检查的分配处理程序\n为名称的一部分添加子分配"
-      },
-      "1.22.24": {
-        "en": "Add Absolute Humidity to device_class",
-        "de": "Füge der Geräteklasse die absolute Luftfeuchtigkeit hinzu.",
-        "ru": "Добавить абсолютную влажность в device_class",
-        "pt": "Adicionar umidade absoluta à classe do dispositivo",
-        "nl": "Voeg absolute luchtvochtigheid toe aan de device_class.",
-        "fr": "Ajouter l'humidité absolue à la classe de périphérique",
-        "it": "Aggiungi l'umidità assoluta alla classe di dispositivi",
-        "es": "Agregar humedad absoluta a device_class",
-        "pl": "Dodaj wilgotność bezwzględną do device_class",
-        "uk": "Додати абсолютну вологість до класу пристроїв",
-        "zh-cn": "将绝对湿度添加到设备类"
       }
     },
     "titleLang": {
