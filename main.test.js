@@ -54,6 +54,30 @@ describe('Home Assistant sensor discovery attributes', () => {
         });
     });
 
+    it('classifies wind direction as an angle measurement', async () => {
+        expect(
+            await bridge.getStateAttributes({ role: 'value.direction.wind', unit: '°', type: 'number' }, 'sensor'),
+        ).to.include({
+            device_class: 'wind_direction',
+            state_class: 'measurement_angle',
+            unit_of_measurement: '°',
+        });
+    });
+
+    it('only adds the wind direction unit when none is defined', async () => {
+        const existingUnit = await bridge.getStateAttributes(
+            { role: 'value.direction.wind', unit: 'degree', type: 'number' },
+            'sensor',
+        );
+        const missingUnit = await bridge.getStateAttributes(
+            { role: 'value.direction.wind', type: 'number' },
+            'sensor',
+        );
+
+        expect(existingUnit.unit_of_measurement).to.equal('degree');
+        expect(missingUnit.unit_of_measurement).to.equal('°');
+    });
+
     it('treats litres as an increasing water counter', async () => {
         const attributes = await bridge.getStateAttributes({ role: 'value', unit: 'l', type: 'number' }, 'sensor');
         expect(attributes).to.include({

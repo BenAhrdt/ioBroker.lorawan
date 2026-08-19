@@ -21,7 +21,7 @@ For now there is documentation in English here: https://wiki.hafenmeister.de
 
 ### Home Assistant sensor discovery
 
-For numeric sensor entities, the bridge assigns Home Assistant `device_class` and `state_class` attributes according to the adapter's counter-first convention. Current measurements use `measurement`. Energy values in `Wh`, `kWh`, or `MWh`, as well as values identified by an ioBroker energy or consumption role, are treated as consumption counters and use `total_increasing` for Home Assistant energy statistics. If a quantity cannot be distinguished reliably from a consumption reading, the bridge prefers counter semantics: `m³` and `ft³` are published as `gas` with `total_increasing`, and `L` as `water` with `total_increasing`. `mL` and `gal` remain generic `volume` values. Ambiguous concentration units such as `ppm`, `ppb`, or `µg/m³` do not imply a specific substance. `L/min`, `L/s`, and `m³/h` use `volume_flow_rate`.
+For numeric sensor entities, the bridge assigns Home Assistant `device_class` and `state_class` attributes according to the adapter's counter-first convention. Current measurements use `measurement`. Wind direction states with the ioBroker role `value.direction.wind` use the device class `wind_direction` and state class `measurement_angle`; an existing unit is retained, while `°` is added if no unit is defined. Energy values in `Wh`, `kWh`, or `MWh`, as well as values identified by an ioBroker energy or consumption role, are treated as consumption counters and use `total_increasing` for Home Assistant energy statistics. If a quantity cannot be distinguished reliably from a consumption reading, the bridge prefers counter semantics: `m³` and `ft³` are published as `gas` with `total_increasing`, and `L` as `water` with `total_increasing`. `mL` and `gal` remain generic `volume` values. Ambiguous concentration units such as `ppm`, `ppb`, or `µg/m³` do not imply a specific substance. `L/min`, `L/s`, and `m³/h` use `volume_flow_rate`.
 
 ## Changelog
 <!--
@@ -30,6 +30,7 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 -->
 ### 1.22.32 (2026-08-19)
 - (BenAhrdt) Align Home Assistant sensor device classes, state classes, and units with the current specification
+- (BenAhrdt) Add Home Assistant wind direction and angle measurement classification
 
 ### 1.22.31 (2026-07-09)
 - (BenAhrdt) Add selection of ToIob source id
