@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.31",
+    "version": "1.22.32",
     "news": {
+      "1.22.32": {
+        "en": "Align Home Assistant sensor device classes, state classes, and units with the current specification",
+        "de": "Richten Sie die Sensorgeräteklassen, Statusklassen und Einheiten von Home Assistant an die aktuelle Spezifikation aus.",
+        "ru": "Приведите классы сенсорных устройств Home Assistant, классы состояний и единицы измерения в соответствие с текущими спецификациями.",
+        "pt": "Alinhe as classes de dispositivos de sensores, classes de estado e unidades do Home Assistant com a especificação atual.",
+        "nl": "Stem de apparaatklassen, statusklassen en eenheden van de Home Assistant-sensoren af op de huidige specificaties.",
+        "fr": "Alignez les classes de périphériques de capteurs, les classes d'état et les unités de Home Assistant avec les spécifications actuelles.",
+        "it": "Allineare le classi dei dispositivi sensore di Home Assistant, le classi di stato e le unità con le specifiche attuali",
+        "es": "Alinee las clases de dispositivos de sensores, las clases de estado y las unidades de Home Assistant con la especificación actual.",
+        "pl": "Dostosuj klasy urządzeń czujników Home Assistant, klasy stanów i jednostki do bieżącej specyfikacji",
+        "uk": "Узгодьте класи сенсорних пристроїв, класи станів та одиниці Home Assistant із поточною специфікацією",
+        "zh-cn": "将 Home Assistant 传感器设备类、状态类和单位与当前规范保持一致。"
+      },
       "1.22.31": {
         "en": "Add selection of ToIob source id",
         "de": "Auswahl der ToIob-Quell-ID hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "Dodaj stacje do encji blokady dla urządzeń ToIob",
         "uk": "Додати станції до сутності блокування для пристроїв ToIob",
         "zh-cn": "将状态添加到锁定实体中，用于 ToIob 设备"
-      },
-      "1.22.25": {
-        "en": "Change Assignhandler for case intensive Check\nAdd subAssign for a part of name",
-        "de": "Ändern Sie den Zuweisungshandler für die fallintensive Prüfung.\nFüge Unterzuweisung für einen Teil des Namens hinzu",
-        "ru": "Изменить обработчик назначений для проверки с интенсивным использованием регистров.\nДобавить подназначение для части имени",
-        "pt": "Alterar o Assignhandler para verificação que exige alta sensibilidade a maiúsculas e minúsculas.\nAdicionar subatribuição para uma parte do nome",
-        "nl": "Wijzig de Assignhandler voor case-intensieve controles.\nVoeg een subtoewijzing toe voor een deel van de naam.",
-        "fr": "Modifier le gestionnaire d'affectation pour la vérification intensive des cas\nAjouter une sous-affectation pour une partie du nom",
-        "it": "Cambia Assegnatore gestore per controllo intensivo dei casi\nAggiungi subAssegna per una parte del nome",
-        "es": "Modificar Assignhandler para comprobación intensiva de casos\nAgregar subAsignación para una parte del nombre",
-        "pl": "Zmień Assignhandler na kontrolę intensywnie wykorzystującą przypadek\nDodaj podprzypisanie dla części nazwy",
-        "uk": "Змінити обробник присвоєння для перевірки з інтенсивним виконанням регістрів\nДодати subAssign для частини імені",
-        "zh-cn": "更改案例密集型检查的分配处理程序\n为名称的一部分添加子分配"
       }
     },
     "titleLang": {

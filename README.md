@@ -28,7 +28,7 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.32 (2026-08-19)
 - (BenAhrdt) Align Home Assistant sensor device classes, state classes, and units with the current specification
 
 ### 1.22.31 (2026-07-09)
@@ -44,12 +44,7 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 ### 1.22.28 (2026-07-05)
 - (BenAhrdt) Add DewPointTemperature to assignhandler
 
-### 1.22.27 (2026-07-04)
-- (BenAhrdt) Bugfix warning for wrong id
-- (BenAhrdt) Add Profile to downloadconfig
-
 [Older changes can be found there](CHANGELOG_OLD.md)
-
 
 ## DISCLAIMER
 The rights of the trademarks and company names, remain with their owners and have no relation to this adapter. The fairuse policy must continue to be adhered to by the operator of the adapter. If this repository is forked, it must be cited as the source.

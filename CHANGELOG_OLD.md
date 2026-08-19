@@ -1267,6 +1267,10 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.27 (2026-07-04)
+- (BenAhrdt) Bugfix warning for wrong id
+- (BenAhrdt) Add Profile to downloadconfig
+
 ## 1.22.26 (2026-07-04)
 - (BenAhrdt) Add ststes into Lock entity for ToIob devices
 
