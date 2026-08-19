@@ -28,7 +28,7 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.33 (2026-08-19)
 - (BenAhrdt) Add Home Assistant wind direction and angle measurement classification
 
 ### 1.22.32 (2026-08-19)
@@ -43,9 +43,6 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 
 ### 1.22.29 (2026-07-06)
 - (BenAhrdt) Add some roles and units to assignhandler
-
-### 1.22.28 (2026-07-05)
-- (BenAhrdt) Add DewPointTemperature to assignhandler
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 

@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.32",
+    "version": "1.22.33",
     "news": {
+      "1.22.33": {
+        "en": "Add Home Assistant wind direction and angle measurement classification",
+        "de": "Klassifizierung der Windrichtungs- und Winkelmessung in Home Assistant hinzufügen",
+        "ru": "Добавить в Home Assistant классификацию измерения направления и угла ветра",
+        "pt": "Adicionar classificação de medição de direção e ângulo do vento ao Home Assistant",
+        "nl": "Voeg een classificatie voor windrichting en -hoekmeting toe aan Home Assistant.",
+        "fr": "Ajouter une classification aux mesures de direction et d'angle du vent dans Home Assistant",
+        "it": "Aggiungi la classificazione della misurazione della direzione e dell'angolo del vento in Home Assistant",
+        "es": "Agregar a Home Assistant la clasificación de medición de dirección y ángulo del viento",
+        "pl": "Dodaj klasyfikację pomiaru kierunku i kąta wiatru w Asystencie Domowym",
+        "uk": "Додайте класифікацію вимірювання напрямку та кута вітру для Home Assistant",
+        "zh-cn": "添加 Home Assistant 风向和风角测量分类"
+      },
       "1.22.32": {
         "en": "Align Home Assistant sensor device classes, state classes, and units with the current specification",
         "de": "Richten Sie die Sensorgeräteklassen, Statusklassen und Einheiten von Home Assistant an die aktuelle Spezifikation aus.",
@@ -80,19 +93,6 @@
         "pl": "Ostrzeżenie o naprawie błędu dotyczącego nieprawidłowego identyfikatora\nDodaj profil do downloadconfig",
         "uk": "Попередження про виправлення помилки для неправильного ідентифікатора\nДодати профіль до завантаженої конфігурації",
         "zh-cn": "修复错误 ID 警告\n将配置文件添加到 downloadconfig"
-      },
-      "1.22.26": {
-        "en": "Add ststes into Lock entity for ToIob devices",
-        "de": "Fügen Sie Statusmeldungen zur Sperrentität für ToIob-Geräte hinzu.",
-        "ru": "Добавьте sttes в сущность Lock для устройств ToIob.",
-        "pt": "Adicionar estados à entidade Lock para dispositivos ToIob",
-        "nl": "Voeg statussen toe aan de Lock-entiteit voor ToIob-apparaten.",
-        "fr": "Ajouter des ststes à l'entité Verrou pour les périphériques ToIob",
-        "it": "Aggiungi stati all'entità Blocco per i dispositivi ToIob",
-        "es": "Agregar estados a la entidad Bloqueo para dispositivos ToIob",
-        "pl": "Dodaj stacje do encji blokady dla urządzeń ToIob",
-        "uk": "Додати станції до сутності блокування для пристроїв ToIob",
-        "zh-cn": "将状态添加到锁定实体中，用于 ToIob 设备"
       }
     },
     "titleLang": {

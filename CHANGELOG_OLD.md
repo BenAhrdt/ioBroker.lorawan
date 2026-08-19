@@ -1267,6 +1267,9 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.28 (2026-07-05)
+- (BenAhrdt) Add DewPointTemperature to assignhandler
+
 ## 1.22.27 (2026-07-04)
 - (BenAhrdt) Bugfix warning for wrong id
 - (BenAhrdt) Add Profile to downloadconfig
