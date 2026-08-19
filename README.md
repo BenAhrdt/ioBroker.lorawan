@@ -28,9 +28,11 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) Add Home Assistant wind direction and angle measurement classification
+
 ### 1.22.32 (2026-08-19)
 - (BenAhrdt) Align Home Assistant sensor device classes, state classes, and units with the current specification
-- (BenAhrdt) Add Home Assistant wind direction and angle measurement classification
 
 ### 1.22.31 (2026-07-09)
 - (BenAhrdt) Add selection of ToIob source id
