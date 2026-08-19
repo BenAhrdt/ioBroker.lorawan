@@ -19,11 +19,18 @@ The documentation Wiki is here: https://github.com/BenAhrdt/ioBroker.lorawan/wik
 <br/>
 For now there is documentation in English here: https://wiki.hafenmeister.de
 
+### Home Assistant sensor discovery
+
+For numeric sensor entities, the bridge assigns Home Assistant `device_class` and `state_class` attributes according to the adapter's counter-first convention. Current measurements use `measurement`. Energy values in `Wh`, `kWh`, or `MWh`, as well as values identified by an ioBroker energy or consumption role, are treated as consumption counters and use `total_increasing` for Home Assistant energy statistics. If a quantity cannot be distinguished reliably from a consumption reading, the bridge prefers counter semantics: `m³` and `ft³` are published as `gas` with `total_increasing`, and `L` as `water` with `total_increasing`. `mL` and `gal` remain generic `volume` values. Ambiguous concentration units such as `ppm`, `ppb`, or `µg/m³` do not imply a specific substance. `L/min`, `L/s`, and `m³/h` use `volume_flow_rate`.
+
 ## Changelog
 <!--
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) Align Home Assistant sensor device classes, state classes, and units with the current specification
+
 ### 1.22.31 (2026-07-09)
 - (BenAhrdt) Add selection of ToIob source id
 

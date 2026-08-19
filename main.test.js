@@ -1,30 +1,109 @@
-"use strict";
+'use strict';
 
-/**
- * This is a dummy TypeScript test file using chai and mocha
- *
- * It's automatically excluded from npm and its build output is excluded from both git and npm.
- * It is advised to test all your modules with accompanying *.test.js-files
- */
+const { expect } = require('chai');
+const sinon = require('sinon');
 
-// tslint:disable:no-unused-expression
+function setCachedExport(modulePath, exportedValue) {
+    const cachedModule = require.cache[modulePath];
+    if (!cachedModule) {
+        throw new Error(`Module is not cached: ${modulePath}`);
+    }
+    cachedModule.exports = exportedValue;
+}
 
-const { expect } = require("chai");
-// import { functionToTest } from "./moduleToTest";
+describe('Home Assistant sensor discovery attributes', () => {
+    let Bridge;
+    let bridge;
+    let mqttClientPath;
+    let deviceHandlerPath;
+    let originalMqttClient;
+    let originalDeviceHandler;
 
-describe("module to test => function to test", () => {
-	// initializing logic
-	const expected = 5;
+    before(() => {
+        mqttClientPath = require.resolve('./lib/modules/bridgeMqttclient');
+        deviceHandlerPath = require.resolve('./lib/modules/bridgeDeviceHandler');
+        originalMqttClient = require(mqttClientPath);
+        originalDeviceHandler = require(deviceHandlerPath);
+        setCachedExport(mqttClientPath, class {});
+        setCachedExport(deviceHandlerPath, class {});
+        Bridge = require('./lib/modules/bridge');
+    });
 
-	it(`should return ${expected}`, () => {
-		const result = 5;
-		// assign result a value from functionToTest
-		expect(result).to.equal(expected);
-		// or using the should() syntax
-		result.should.equal(expected);
-	});
-	// ... more tests => it
+    beforeEach(() => {
+        const adapter = {
+            config: {},
+            namespace: 'lorawan.0',
+            extendObject: sinon.stub(),
+            log: { silly: sinon.stub(), error: sinon.stub() },
+        };
+        bridge = new Bridge(adapter);
+    });
 
+    after(() => {
+        setCachedExport(mqttClientPath, originalMqttClient);
+        setCachedExport(deviceHandlerPath, originalDeviceHandler);
+        sinon.restore();
+    });
+
+    it('normalizes and classifies volume flow units', async () => {
+        expect(bridge.normalizeUnit('l/min')).to.equal('L/min');
+        expect(await bridge.getStateAttributes({ role: 'value', unit: 'l/min', type: 'number' }, 'sensor')).to.include({
+            device_class: 'volume_flow_rate',
+            state_class: 'measurement',
+            unit_of_measurement: 'L/min',
+        });
+    });
+
+    it('treats litres as an increasing water counter', async () => {
+        const attributes = await bridge.getStateAttributes({ role: 'value', unit: 'l', type: 'number' }, 'sensor');
+        expect(attributes).to.include({
+            device_class: 'water',
+            state_class: 'total_increasing',
+            unit_of_measurement: 'L',
+        });
+    });
+
+    it('treats cubic metres as an increasing gas counter', async () => {
+        const attributes = await bridge.getStateAttributes({ role: 'value', unit: 'm3', type: 'number' }, 'sensor');
+        expect(attributes).to.include({
+            device_class: 'gas',
+            state_class: 'total_increasing',
+            unit_of_measurement: 'm³',
+        });
+    });
+
+    it('does not combine remaining generic volume units with measurement', async () => {
+        const attributes = await bridge.getStateAttributes({ role: 'value', unit: 'ml', type: 'number' }, 'sensor');
+        expect(attributes).to.include({ device_class: 'volume', unit_of_measurement: 'mL' });
+        expect(attributes).not.to.have.property('state_class');
+    });
+
+    it('uses total_increasing for an accumulated energy role', async () => {
+        expect(
+            await bridge.getStateAttributes({ role: 'value.energy', unit: 'kwh', type: 'number' }, 'sensor'),
+        ).to.include({ device_class: 'energy', state_class: 'total_increasing', unit_of_measurement: 'kWh' });
+    });
+
+    it('keeps total_increasing for energy units used by Home Assistant energy statistics', async () => {
+        const attributes = await bridge.getStateAttributes({ role: 'value', unit: 'kwh', type: 'number' }, 'sensor');
+        expect(attributes).to.include({
+            device_class: 'energy',
+            state_class: 'total_increasing',
+            unit_of_measurement: 'kWh',
+        });
+    });
+
+    it('does not infer a substance from a concentration unit', async () => {
+        const attributes = await bridge.getStateAttributes({ role: 'value', unit: 'ppm', type: 'number' }, 'sensor');
+        expect(attributes).to.include({ state_class: 'measurement', unit_of_measurement: 'ppm' });
+        expect(attributes).not.to.have.property('device_class');
+    });
+
+    it('never publishes state_class for a number entity', async () => {
+        const attributes = await bridge.getStateAttributes(
+            { role: 'value.energy', unit: 'kWh', type: 'number' },
+            'number',
+        );
+        expect(attributes).not.to.have.property('state_class');
+    });
 });
-
-// ... more test suites => describe
