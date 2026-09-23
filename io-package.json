@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.33",
+    "version": "1.22.34",
     "news": {
+      "1.22.34": {
+        "en": "Process Bridge entity availability on discovery and normal messages and keep existing state types for incompatible values.",
+        "de": "Verarbeitet Bridge-Entitäten in Discovery- und Normalnachrichten und behält bestehende Statustypen für inkompatible Werte bei.",
+        "ru": "Доступность объектов Process Bridge при обнаружении и обычных сообщениях и сохраняйте существующие типы состояний для несовместимых значений.",
+        "pt": "Use a entidade Process Bridge na descoberta e em mensagens normais e mantenha os tipos de estado incompatíveis.",
+        "nl": "Verwerk de beschikbaarheid van entiteiten bij detectie en normale berichten en behoud bestaande statussen voor incompatibele waarden.",
+        "fr": "Traitez la disponibilité des entités Bridge lors de leur découverte et des messages normaux et conservez les types d'état existants.",
+        "it": "Entità Process Bridge su discovery e messaggi normali e conserva i tipi di stato esistenti per valori incompatibili.",
+        "es": "Procese Bridge la disponibilidad de la entidad al detectar y los mensajes normales y conservar los tipos de estado existentes para valores incompatibles.",
+        "pl": "Przetwarzaj dostępność jednostek programu Bridge w wiadomościach wykrywania i zwykłych komunikatów i zachowaj istniejące typy stanów dla niekompatybilnych wartości.",
+        "uk": "Обробляйте доступність сутності Bridge при виявленні та звичайних повідомленнях та збережіть існуючі типи станів для несумісних значень.",
+        "zh-cn": "处理 Bridge 实体在发现和普通消息中的可用性，并保留现有状态类型以防不兼容的值。"
+      },
       "1.22.33": {
         "en": "Add Home Assistant wind direction and angle measurement classification",
         "de": "Klassifizierung der Windrichtungs- und Winkelmessung in Home Assistant hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "Dodaj DewPointTemperature do assignhandler",
         "uk": "Додати DewPointTemperature до assignhandler",
         "zh-cn": "将露点温度添加到赋值处理程序"
-      },
-      "1.22.27": {
-        "en": "Bugfix warning for wrong id\nAdd Profile to downloadconfig",
-        "de": "Bugfix-Warnung wegen falscher ID\nProfil zu downloadconfig hinzufügen",
-        "ru": "Исправлено предупреждение об ошибке, связанной с неверным идентификатором.\nДобавить профиль в downloadconfig",
-        "pt": "Aviso de correção de bug para ID incorreto\nAdicionar perfil ao downloadconfig",
-        "nl": "Bugfix-waarschuwing voor onjuiste ID\nVoeg profiel toe aan downloadconfig",
-        "fr": "Avertissement de correction de bug pour identifiant incorrect\nAjouter le profil à downloadconfig",
-        "it": "Avviso di correzione bug per ID errato\nAggiungi il profilo a downloadconfig",
-        "es": "Advertencia de corrección de errores por ID incorrecto\nAgregar perfil a downloadconfig",
-        "pl": "Ostrzeżenie o naprawie błędu dotyczącego nieprawidłowego identyfikatora\nDodaj profil do downloadconfig",
-        "uk": "Попередження про виправлення помилки для неправильного ідентифікатора\nДодати профіль до завантаженої конфігурації",
-        "zh-cn": "修复错误 ID 警告\n将配置文件添加到 downloadconfig"
       }
     },
     "titleLang": {

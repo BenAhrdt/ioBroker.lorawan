@@ -28,7 +28,7 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.34 (2026-09-23)
 - (BenAhrdt) Process Bridge entity availability on discovery and normal messages and keep existing state types for incompatible values.
 
 ### 1.22.33 (2026-08-19)
@@ -43,9 +43,6 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 ### 1.22.30 (2026-07-07)
 - (BenAhrdt) Add PIR Mini device Profile
 - (BenAhrdt) Add possibillity to ad states to downlink numbers
-
-### 1.22.29 (2026-07-06)
-- (BenAhrdt) Add some roles and units to assignhandler
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 
