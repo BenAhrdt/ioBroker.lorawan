@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.34",
+    "version": "1.22.35",
     "news": {
+      "1.22.35": {
+        "en": "Update adapter-core and test dependencies to the current recommended versions.",
+        "de": "Aktualisiere Adaptercore und teste Abhängigkeiten auf die empfohlene Version.",
+        "ru": "Обновите зависимости ядра адаптера и тестирования до текущих рекомендуемых версий.",
+        "pt": "Atualize adapter-core e test dependências para as versões atuais.",
+        "nl": "Update de kern van de adapter en test de afhankelijkheden naar de huidige aanbevolen versies.",
+        "fr": "Passez à jour Adapter-Core et testez les dépendances aux versions recommandées.",
+        "it": "Aggiorna adapter-core e test le dipendenze alle versioni consigliate.",
+        "es": "Actualice el núcleo del adaptador y las dependencias de prueba a las versiones recomendadas.",
+        "pl": "Zaktualizuj zależności rdzenia adaptera i testów do aktualnych zalecanych wersji.",
+        "uk": "Оновіть адаптер-ядра та тестові залежності до поточних рекомендованих версій.",
+        "zh-cn": "将适配器核心和测试依赖项更新到当前推荐版本。"
+      },
       "1.22.34": {
         "en": "Process Bridge entity availability on discovery and normal messages and keep existing state types for incompatible values.",
         "de": "Verarbeitet Bridge-Entitäten in Discovery- und Normalnachrichten und behält bestehende Statustypen für inkompatible Werte bei.",
@@ -80,19 +93,6 @@
         "pl": "Dodaj role i jednostki do assignhandler",
         "uk": "Додати деякі ролі та юніти до assignhandler",
         "zh-cn": "向 assignhandler 添加一些角色和单位"
-      },
-      "1.22.28": {
-        "en": "Add DewPointTemperature to assignhandler",
-        "de": "Füge DewPointTemperature zum Zuweisungshandler hinzu.",
-        "ru": "Добавьте DewPointTemperature в assignhandler",
-        "pt": "Adicione DewPointTemperature ao assignhandler",
-        "nl": "Voeg DewPointTemperature toe aan assignhandler",
-        "fr": "Ajouter DewPointTemperature à assignhandler",
-        "it": "Aggiungi DewPointTemperature all'assignhandler",
-        "es": "Agregar DewPointTemperature a assignhandler",
-        "pl": "Dodaj DewPointTemperature do assignhandler",
-        "uk": "Додати DewPointTemperature до assignhandler",
-        "zh-cn": "将露点温度添加到赋值处理程序"
       }
     },
     "titleLang": {

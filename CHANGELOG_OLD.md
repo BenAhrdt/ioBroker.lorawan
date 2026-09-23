@@ -1267,6 +1267,10 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.30 (2026-07-07)
+- (BenAhrdt) Add PIR Mini device Profile
+- (BenAhrdt) Add possibillity to ad states to downlink numbers
+
 ## 1.22.29 (2026-07-06)
 - (BenAhrdt) Add some roles and units to assignhandler
 
