@@ -25,7 +25,7 @@
     "node": ">= 22"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^3.4.1",
+    "@iobroker/adapter-core": "^3.4.3",
     "@iobroker/dm-utils": "^3.2.0",
     "easy-crc": "^1.1.0",
     "lodash": "^4.18.1",
@@ -39,7 +39,7 @@
     "@alcalzone/release-script-plugin-manual-review": "^5.2.0",
     "@iobroker/adapter-dev": "^1.5.0",
     "@iobroker/eslint-config": "^2.2.0",
-    "@iobroker/testing": "^5.3.0",
+    "@iobroker/testing": "^6.2.2",
     "@tsconfig/node22": "^22.0.6",
     "@types/lodash": "^4.17.25",
     "@types/node": "^22.20.1",
