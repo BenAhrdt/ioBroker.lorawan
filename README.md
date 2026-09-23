@@ -28,6 +28,9 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) Process Bridge entity availability on discovery and normal messages and keep existing state types for incompatible values.
+
 ### 1.22.33 (2026-08-19)
 - (BenAhrdt) Add Home Assistant wind direction and angle measurement classification
 
