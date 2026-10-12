@@ -28,7 +28,7 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.36 (2026-10-12)
 - (BenAhrdt) Add the Home Assistant `json_attributes_topic` discovery attribute for states with the ioBroker role `json`.
 
 ### 1.22.35 (2026-09-23)
@@ -42,9 +42,6 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 
 ### 1.22.32 (2026-08-19)
 - (BenAhrdt) Align Home Assistant sensor device classes, state classes, and units with the current specification
-
-### 1.22.31 (2026-07-09)
-- (BenAhrdt) Add selection of ToIob source id
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 

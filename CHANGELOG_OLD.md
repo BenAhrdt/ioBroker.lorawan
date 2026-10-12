@@ -1267,6 +1267,9 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.31 (2026-07-09)
+- (BenAhrdt) Add selection of ToIob source id
+
 ## 1.22.30 (2026-07-07)
 - (BenAhrdt) Add PIR Mini device Profile
 - (BenAhrdt) Add possibillity to ad states to downlink numbers

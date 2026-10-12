@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.35",
+    "version": "1.22.36",
     "news": {
+      "1.22.36": {
+        "en": "Add the Home Assistant `json_attributes_topic` discovery attribute for states with the ioBroker role `json`.",
+        "de": "Fügen Sie das Suchattribut `json_attributes_topic` für Staaten mit der ioBroker-Rolle `json` hinzu.",
+        "ru": "Добавьте атрибут обнаружения Home Assistant `json_attributes_topic` для состояний с ролью IOBroker `json`.",
+        "pt": "Adicione o atributo `json_attributes_topic` do Home Assistant para estados com a função IOBroker `json`.",
+        "nl": "Voeg het 'json_attributes_topic'-ontdekkingskenmerk van Home Assistant toe voor staten met de IOBroker-rol `json`.",
+        "fr": "Ajoutez l'attribut de découverte « json_attributes_topic » du Home Assistant pour les états ayant le rôle « json » dans IOBroker.",
+        "it": "Aggiungi l'attributo di rilevamento «json_attributes_topic» di Home Assistant per gli stati con il ruolo «json».",
+        "es": "Añada el atributo de descubrimiento `json_attributes_topic` de Home Assistant para los estados con el rol `json` de IOBroker.",
+        "pl": "Dodaj atrybut wykrywania „json_attributes_topic` asystenta głównego dla stanów z rolą ioBroker `json`.",
+        "uk": "Додайте атрибут виявлення домашнього помічника `json_attributes_topic` для станів з роллю ioBroker `json`.",
+        "zh-cn": "为 IOBroker 角色为 “json” 的州添加家庭助理 “json_attributes_topic” 发现属性。"
+      },
       "1.22.35": {
         "en": "Update adapter-core and test dependencies to the current recommended versions.",
         "de": "Aktualisiere Adaptercore und teste Abhängigkeiten auf die empfohlene Version.",
@@ -80,19 +93,6 @@
         "pl": "Dodaj profil urządzenia PIR Mini\nDodanie możliwości do stanów reklam w numerach downlink",
         "uk": "Додати профіль пристрою PIR Mini\nДодати до станів оголошень можливість пересилання номерів на низхідні посилання",
         "zh-cn": "添加 PIR Mini 设备配置文件\n为广告状态添加下行链路号码的可能性"
-      },
-      "1.22.29": {
-        "en": "Add some roles and units to assignhandler",
-        "de": "Fügen Sie dem Zuweisungshandler einige Rollen und Einheiten hinzu.",
-        "ru": "Добавьте несколько ролей и подразделений в обработчик назначений.",
-        "pt": "Adicione algumas funções e unidades ao assignhandler.",
-        "nl": "Voeg enkele rollen en eenheden toe aan de assignhandler.",
-        "fr": "Ajoutez des rôles et des unités à assignhandler",
-        "it": "Aggiungi alcuni ruoli e unità ad assignhandler",
-        "es": "Agregue algunos roles y unidades a assignhandler",
-        "pl": "Dodaj role i jednostki do assignhandler",
-        "uk": "Додати деякі ролі та юніти до assignhandler",
-        "zh-cn": "向 assignhandler 添加一些角色和单位"
       }
     },
     "titleLang": {
