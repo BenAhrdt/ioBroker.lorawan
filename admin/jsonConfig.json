@@ -34,6 +34,86 @@
             "type": "panel",
             "label": "mainSettings",
             "items": {
+                "DockerHeader": {
+                    "newLine": true,
+                    "type": "header",
+                    "text": "DockerHeader",
+                    "size": 3,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12
+                },
+                "DockerInformation": {
+                    "newLine": true,
+                    "type": "staticText",
+                    "label": "DockerInformation",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12
+                },
+                "chirpstackDockerEnabled": {
+                    "newLine": true,
+                    "type": "select",
+                    "label": "DockerLns",
+                    "tooltip": "DockerLnsTooltip",
+                    "options": [
+                        { "label": "DockerLnsOff", "value": false },
+                        { "label": "DockerLnsChirpstack", "value": true }
+                    ],
+                    "default": false,
+                    "defaultFunc": "data.chirpstackDockerEnabled === true || data.chirpstackDockerEnabled === false ? data.chirpstackDockerEnabled : false",
+                    "onChange": {
+                        "alsoDependsOn": [],
+                        "calculateFunc": "if (data.chirpstackDockerEnabled === true) { if (data._dockerLnsPrevious !== true) { data.dockerLnsBackupIpUrl = data.ipUrl; data.dockerLnsBackupPort = data.port; data.dockerLnsBackupSsl = data.ssl; data.dockerLnsBackupUsername = data.username; data.dockerLnsBackupPassword = data.password; data.dockerLnsBackupOrigin = data.origin; data._dockerLnsPrevious = true; } data.ipUrl = 'localhost'; data.ssl = false; data.username = ''; data.password = ''; data.origin = 'chirpstack'; } else { if (data.dockerLnsBackupIpUrl !== undefined) data.ipUrl = data.dockerLnsBackupIpUrl; if (data.dockerLnsBackupPort !== undefined) data.port = data.dockerLnsBackupPort; if (data.dockerLnsBackupSsl !== undefined) data.ssl = data.dockerLnsBackupSsl; if (data.dockerLnsBackupUsername !== undefined) data.username = data.dockerLnsBackupUsername; if (data.dockerLnsBackupPassword !== undefined) data.password = data.dockerLnsBackupPassword; if (data.dockerLnsBackupOrigin !== undefined) data.origin = data.dockerLnsBackupOrigin; data._dockerLnsPrevious = false; } return data.chirpstackDockerEnabled;"
+                    },
+                    "xs": 12,
+                    "sm": 4,
+                    "md": 4,
+                    "lg": 4,
+                    "xl": 4
+                },
+                "chirpstackDockerWebPort": {
+                    "type": "number",
+                    "label": "ChirpstackDockerWebPort",
+                    "tooltip": "ChirpstackDockerWebPortTooltip",
+                    "hidden": "data.chirpstackDockerEnabled !== true",
+                    "default": 8080,
+                    "min": 1,
+                    "max": 65535,
+                    "xs": 12,
+                    "sm": 3,
+                    "md": 3,
+                    "lg": 3,
+                    "xl": 3
+                },
+                "chirpstackDockerPostgresPassword": {
+                    "type": "password",
+                    "label": "ChirpstackDockerPostgresPassword",
+                    "tooltip": "ChirpstackDockerPostgresPasswordTooltip",
+                    "hidden": "data.chirpstackDockerEnabled !== true",
+                    "default": "",
+                    "xs": 12,
+                    "sm": 4,
+                    "md": 4,
+                    "lg": 4,
+                    "xl": 4
+                },
+                "chirpstackDockerApiSecret": {
+                    "type": "password",
+                    "label": "ChirpstackDockerApiSecret",
+                    "tooltip": "ChirpstackDockerApiSecretTooltip",
+                    "hidden": "data.chirpstackDockerEnabled !== true",
+                    "default": "",
+                    "xs": 12,
+                    "sm": 4,
+                    "md": 4,
+                    "lg": 4,
+                    "xl": 4
+                },
                 "ServersettingsHeader": {
                     "newLine": true,
                     "type": "header",
@@ -60,6 +140,7 @@
                     "type": "text",
                     "label": "ipUrl",
                     "tooltip": "ipUrlTooltip",
+                    "disabled": "data.chirpstackDockerEnabled === true",
                     "default": "",
                     "xs": 12,
                     "sm": 4,
@@ -82,6 +163,7 @@
                     "type": "checkbox",
                     "label": "SSL",
                     "tooltip": "sslTooltip",
+                    "disabled": "data.chirpstackDockerEnabled === true",
                     "default": true,
                     "xs": 12,
                     "sm": 1,
@@ -115,6 +197,7 @@
                     "type": "text",
                     "label": "username",
                     "tooltip": "usernameTooltip",
+                    "disabled": "data.chirpstackDockerEnabled === true",
                     "default": "",
                     "xs": 12,
                     "sm": 4,
@@ -126,6 +209,7 @@
                     "type": "password",
                     "label": "password",
                     "tooltip": "passwordTooltip",
+                    "disabled": "data.chirpstackDockerEnabled === true",
                     "default": "",
                     "xs": 12,
                     "sm": 3,
@@ -159,6 +243,7 @@
                     "type": "select",
                     "label": "origin",
                     "tooltip": "originTooltip",
+                    "disabled": "data.chirpstackDockerEnabled === true",
                     "options": [
                         { "label": "LorawanOff", "value": "off" },
                         { "label": "TTN / TTI", "value": "ttn" },
@@ -185,6 +270,41 @@
                     "md": 3,
                     "lg": 3,
                     "xl": 3
+                },
+                "dockerLnsBackupIpUrl": {
+                    "type": "text",
+                    "hidden": true,
+                    "default": ""
+                },
+                "dockerLnsBackupPort": {
+                    "type": "number",
+                    "hidden": true,
+                    "default": 8883
+                },
+                "dockerLnsBackupSsl": {
+                    "type": "checkbox",
+                    "hidden": true,
+                    "default": true
+                },
+                "dockerLnsBackupUsername": {
+                    "type": "text",
+                    "hidden": true,
+                    "default": ""
+                },
+                "dockerLnsBackupPassword": {
+                    "type": "password",
+                    "hidden": true,
+                    "default": ""
+                },
+                "dockerLnsBackupOrigin": {
+                    "type": "text",
+                    "hidden": true,
+                    "default": "off"
+                },
+                "_dockerLnsNormalize": {
+                    "type": "checkbox",
+                    "hidden": true,
+                    "defaultFunc": "if (data.chirpstackDockerEnabled === true) { data.ipUrl = 'localhost'; data.ssl = false; data.username = ''; data.password = ''; data.origin = 'chirpstack'; } return true;"
                 }
             }
         },

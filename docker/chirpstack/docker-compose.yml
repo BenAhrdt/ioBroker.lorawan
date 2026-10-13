@@ -1,0 +1,150 @@
+services:
+  chirpstack:
+    image: chirpstack/chirpstack:4
+    command: ["-c", "/etc/chirpstack"]
+    restart: unless-stopped
+    labels:
+      - "iobEnabled=${config.chirpstackDockerEnabled:-false}"
+      - "iobStopOnUnload=true"
+      - "iobMonitoringEnabled=true"
+      - "iobCopyVolumes=./docker/chirpstack/configuration/chirpstack=>chirpstack_config"
+    volumes:
+      - chirpstack_config:/etc/chirpstack:ro
+    depends_on:
+      - postgres
+      - mosquitto
+      - redis
+    environment:
+      - MQTT_BROKER_HOST=mosquitto
+      - REDIS_HOST=redis
+      - POSTGRESQL_HOST=postgres
+      - POSTGRESQL_PASSWORD=${config.chirpstackDockerPostgresPassword}
+      - CHIRPSTACK_API_SECRET=${config.chirpstackDockerApiSecret}
+    networks:
+      "true":
+        aliases:
+          - chirpstack
+    ports:
+      - "${config.chirpstackDockerWebPort:-8080}:8080"
+
+  chirpstack-gateway-bridge:
+    image: chirpstack/chirpstack-gateway-bridge:4
+    restart: unless-stopped
+    labels:
+      - "iobEnabled=${config.chirpstackDockerEnabled:-false}"
+      - "iobStopOnUnload=true"
+      - "iobMonitoringEnabled=true"
+      - "iobCopyVolumes=./docker/chirpstack/configuration/chirpstack-gateway-bridge=>gateway_bridge_config"
+    ports:
+      - "1700:1700/udp"
+    volumes:
+      - gateway_bridge_config:/etc/chirpstack-gateway-bridge:ro
+    depends_on:
+      - mosquitto
+    networks:
+      "true":
+        aliases:
+          - chirpstack-gateway-bridge
+
+  chirpstack-gateway-bridge-basicstation:
+    image: chirpstack/chirpstack-gateway-bridge:4
+    command: ["-c", "/etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge-basicstation-eu868.toml"]
+    restart: unless-stopped
+    labels:
+      - "iobEnabled=${config.chirpstackDockerEnabled:-false}"
+      - "iobStopOnUnload=true"
+      - "iobMonitoringEnabled=true"
+      - "iobCopyVolumes=./docker/chirpstack/configuration/chirpstack-gateway-bridge=>gateway_bridge_config"
+    ports:
+      - "3001:3001"
+    volumes:
+      - gateway_bridge_config:/etc/chirpstack-gateway-bridge:ro
+    depends_on:
+      - mosquitto
+    networks:
+      "true":
+        aliases:
+          - chirpstack-gateway-bridge-basicstation
+
+  chirpstack-rest-api:
+    image: chirpstack/chirpstack-rest-api:4
+    command: ["--server", "chirpstack:8080", "--bind", "0.0.0.0:8090", "--insecure"]
+    restart: unless-stopped
+    labels:
+      - "iobEnabled=${config.chirpstackDockerEnabled:-false}"
+      - "iobStopOnUnload=true"
+      - "iobMonitoringEnabled=true"
+    ports:
+      - "8090:8090"
+    depends_on:
+      - chirpstack
+    networks:
+      "true":
+        aliases:
+          - chirpstack-rest-api
+
+  postgres:
+    image: postgres:14-alpine
+    restart: unless-stopped
+    labels:
+      - "iobEnabled=${config.chirpstackDockerEnabled:-false}"
+      - "iobStopOnUnload=true"
+      - "iobMonitoringEnabled=true"
+      - "iobBackup=postgresqldata"
+      - "iobCopyVolumes=./docker/chirpstack/configuration/postgresql/initdb=>postgres_initdb"
+    volumes:
+      - postgres_initdb:/docker-entrypoint-initdb.d:ro
+      - postgresqldata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=chirpstack
+      - POSTGRES_PASSWORD=${config.chirpstackDockerPostgresPassword}
+      - POSTGRES_DB=chirpstack
+    networks:
+      "true":
+        aliases:
+          - postgres
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--save", "300", "1", "--save", "60", "100", "--appendonly", "no"]
+    restart: unless-stopped
+    labels:
+      - "iobEnabled=${config.chirpstackDockerEnabled:-false}"
+      - "iobStopOnUnload=true"
+      - "iobMonitoringEnabled=true"
+      - "iobBackup=redisdata"
+    volumes:
+      - redisdata:/data
+    networks:
+      "true":
+        aliases:
+          - redis
+
+  mosquitto:
+    image: eclipse-mosquitto:2
+    restart: unless-stopped
+    labels:
+      - "iobEnabled=${config.chirpstackDockerEnabled:-false}"
+      - "iobStopOnUnload=true"
+      - "iobMonitoringEnabled=true"
+      - "iobCopyVolumes=./docker/chirpstack/configuration/mosquitto/config=>mosquitto_config"
+    ports:
+      - "${config.port:-1883}:1883"
+    volumes:
+      - mosquitto_config:/mosquitto/config:ro
+    networks:
+      "true":
+        aliases:
+          - mosquitto
+
+volumes:
+  chirpstack_config:
+  gateway_bridge_config:
+  postgres_initdb:
+  mosquitto_config:
+  postgresqldata:
+  redisdata:
+
+networks:
+  "true":
+    driver: bridge

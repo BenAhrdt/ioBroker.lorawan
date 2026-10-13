@@ -1,0 +1,36 @@
+# Logging.
+[logging]
+  level="info"
+
+# PostgreSQL configuration.
+[postgresql]
+  dsn="postgres://chirpstack:$POSTGRESQL_PASSWORD@$POSTGRESQL_HOST/chirpstack?sslmode=disable"
+  max_open_connections=10
+  min_idle_connections=0
+
+# Redis configuration.
+[redis]
+  servers=[
+    "redis://$REDIS_HOST/",
+  ]
+  tls_enabled=false
+  cluster=false
+
+# Network related configuration.
+[network]
+  net_id="000000"
+  enabled_regions=[
+    "eu868",
+  ]
+
+# API interface configuration.
+[api]
+  bind="0.0.0.0:8080"
+  secret="$CHIRPSTACK_API_SECRET"
+
+[integration]
+  enabled=["mqtt"]
+
+  [integration.mqtt]
+    server="tcp://$MQTT_BROKER_HOST:1883/"
+    json=true

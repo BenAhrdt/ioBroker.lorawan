@@ -160,6 +160,12 @@
         "de": "LoRaWAN"
       }
     },
+    "plugins": {
+      "docker": {
+        "iobDockerComposeFiles": ["docker/chirpstack/docker-compose.yml"]
+      }
+    },
+    "stopTimeout": 15000,
     "dependencies": [
       {
         "js-controller": ">=7.0.6"
@@ -398,11 +404,17 @@
   ],
   "encryptedNative": [
     "password",
-    "Bridgepassword"
+    "Bridgepassword",
+    "chirpstackDockerPostgresPassword",
+    "chirpstackDockerApiSecret",
+    "dockerLnsBackupPassword"
   ],
   "protectedNative": [
     "password",
-    "Bridgepassword"
+    "Bridgepassword",
+    "chirpstackDockerPostgresPassword",
+    "chirpstackDockerApiSecret",
+    "dockerLnsBackupPassword"
   ],
   "native": {
     "TopicToSend": "lora",
@@ -413,6 +425,16 @@
     "password": "",
     "ssl": true,
     "origin": "off",
+    "chirpstackDockerEnabled": false,
+    "chirpstackDockerWebPort": 8080,
+    "chirpstackDockerPostgresPassword": "",
+    "chirpstackDockerApiSecret": "",
+    "dockerLnsBackupIpUrl": "",
+    "dockerLnsBackupPort": 8883,
+    "dockerLnsBackupSsl": true,
+    "dockerLnsBackupUsername": "",
+    "dockerLnsBackupPassword": "",
+    "dockerLnsBackupOrigin": "off",
     "notificationActivation": "notification",
     "downlinkConfig": [],
     "customDecodedJsonActive": false,
