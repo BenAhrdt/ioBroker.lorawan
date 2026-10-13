@@ -92,7 +92,6 @@ class Lorawan extends utils.Adapter {
                 this.config.username = '';
                 this.config.password = '';
                 this.config.origin = this.origin.chirpstack;
-                await this.startChirpStackDocker();
             }
 
             // Generate States wich are not in io-package.json
@@ -133,7 +132,17 @@ class Lorawan extends utils.Adapter {
             this.downlinkConfighandler = new downlinkConfigHandlerClass(this);
 
             // Merge the configed and standard profile of downlinks
-            await this.downlinkConfighandler.addAndMergeDownlinkConfigs();
+            const downlinkConfigChanged = await this.downlinkConfighandler.addAndMergeDownlinkConfigs();
+            if (downlinkConfigChanged) {
+                // js-controller will restart the adapter because the native configuration was
+                // updated. Do not start Docker before that restart, otherwise onUnload stops the
+                // freshly created stack again.
+                return;
+            }
+
+            if (this.config.chirpstackDockerEnabled === true) {
+                await this.startChirpStackDocker();
+            }
 
             // create new message handler
             this.messagehandler = new messagehandlerClass(this);
