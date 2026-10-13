@@ -269,7 +269,7 @@
                         { "label": "Chirpstack", "value": "chirpstack" }
                     ],
                     "default": "off",
-                    "defaultFunc": "if (data.chirpstackDockerEnabled === true) { data.origin = undefined; return 'chirpstack'; } return data.origin === undefined ? 'off' : data.origin",
+                    "defaultFunc": "if (data.chirpstackDockerEnabled === true) { if (data.origin !== 'chirpstack') data.origin = undefined; return 'chirpstack'; } return data.origin === undefined ? 'off' : data.origin",
                     "onChange": {
                         "alsoDependsOn": ["chirpstackDockerEnabled"],
                         "calculateFunc": "if (data.chirpstackDockerEnabled === true) { if (data._dockerLnsPrevious !== true) data.dockerLnsBackupOrigin = data.origin; return 'chirpstack'; } if (data._dockerLnsPrevious === true && data.dockerLnsBackupOrigin !== undefined) return data.dockerLnsBackupOrigin; return data.origin;"

@@ -2,6 +2,8 @@
 
 const mqtt = require('mqtt');
 const crypto = require('node:crypto');
+const fs = require('node:fs/promises');
+const path = require('node:path');
 const lodash = require('lodash');
 
 /*
@@ -90,6 +92,7 @@ class Lorawan extends utils.Adapter {
                 this.config.username = '';
                 this.config.password = '';
                 this.config.origin = this.origin.chirpstack;
+                await this.startChirpStackDocker();
             }
 
             // Generate States wich are not in io-package.json
@@ -204,6 +207,52 @@ class Lorawan extends utils.Adapter {
             this.log.error(`Dauer: ${Date.now() - ts}`);*/
         } catch (error) {
             this.log.error(`error at ${activeFunction}: ${error}`);
+        }
+    }
+
+    /**
+     * Start the optional local ChirpStack stack with decrypted secrets.
+     *
+     * The Docker plugin renders compose templates from the stored native values. Protected native
+     * values are still encrypted at this point, so passing them directly to a container would use
+     * the ioBroker ciphertext as the password. The plugin supports delaying the container start;
+     * use that window to provide a short-lived env file containing the decrypted values.
+     */
+    async startChirpStackDocker() {
+        const dockerPlugin = this.getPluginInstance('docker');
+        if (!dockerPlugin || typeof dockerPlugin.instanceIsReady !== 'function') {
+            this.log.warn('ChirpStack Docker stack requested, but the Docker plugin is not available');
+            return;
+        }
+
+        const secretFile = path.join(this.adapterDir, 'docker', 'chirpstack', '.secrets.env');
+        // The adapter config is already decrypted by js-controller. Only the Docker plugin sees
+        // the encrypted native representation while it renders the Compose file.
+        const postgresPassword = this.config.chirpstackDockerPostgresPassword || '';
+        const apiSecret = this.config.chirpstackDockerApiSecret || '';
+        const postgresPasswordUrlEncoded = encodeURIComponent(postgresPassword).replace(
+            /[!'()*]/g,
+            char => `%${char.charCodeAt(0).toString(16).toUpperCase()}`,
+        );
+        const secretContent = [
+            `POSTGRES_PASSWORD=${postgresPassword}`,
+            `POSTGRESQL_PASSWORD=${postgresPasswordUrlEncoded}`,
+            `CHIRPSTACK_API_SECRET=${apiSecret}`,
+            '',
+        ].join('\n');
+
+        try {
+            await fs.writeFile(secretFile, secretContent, { mode: 0o600 });
+            await fs.chmod(secretFile, 0o600);
+            await dockerPlugin.instanceIsReady();
+        } catch (error) {
+            this.log.error(`Cannot start ChirpStack Docker stack: ${error}`);
+        } finally {
+            try {
+                await fs.rm(secretFile, { force: true });
+            } catch (error) {
+                this.log.warn(`Cannot remove temporary ChirpStack secret file: ${error}`);
+            }
         }
     }
 

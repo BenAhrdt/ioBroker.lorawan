@@ -4,6 +4,8 @@
 
 # PostgreSQL configuration.
 [postgresql]
+  # POSTGRESQL_PASSWORD is URL-encoded at runtime. This supports passwords containing
+  # URL separators such as ':' or '/' without passing the encrypted ioBroker value.
   dsn="postgres://chirpstack:$POSTGRESQL_PASSWORD@$POSTGRESQL_HOST/chirpstack?sslmode=disable"
   max_open_connections=10
   min_idle_connections=0

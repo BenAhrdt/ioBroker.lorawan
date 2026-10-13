@@ -7,6 +7,7 @@ services:
       - "iobEnabled=${config.chirpstackDockerEnabled:-false}"
       - "iobStopOnUnload=true"
       - "iobMonitoringEnabled=true"
+      - "iobWaitForReady=true"
       - "iobCopyVolumes=./docker/chirpstack/configuration/chirpstack=>chirpstack_config"
     volumes:
       - chirpstack_config:/etc/chirpstack:ro
@@ -18,8 +19,8 @@ services:
       - MQTT_BROKER_HOST=mosquitto
       - REDIS_HOST=redis
       - POSTGRESQL_HOST=postgres
-      - POSTGRESQL_PASSWORD=${config.chirpstackDockerPostgresPassword}
-      - CHIRPSTACK_API_SECRET=${config.chirpstackDockerApiSecret}
+    env_file:
+      - ./docker/chirpstack/.secrets.env
     networks:
       "true":
         aliases:
@@ -90,6 +91,7 @@ services:
       - "iobEnabled=${config.chirpstackDockerEnabled:-false}"
       - "iobStopOnUnload=true"
       - "iobMonitoringEnabled=true"
+      - "iobWaitForReady=true"
       - "iobBackup=postgresqldata"
       - "iobCopyVolumes=./docker/chirpstack/configuration/postgresql/initdb=>postgres_initdb"
     volumes:
@@ -97,8 +99,9 @@ services:
       - postgresqldata:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=chirpstack
-      - POSTGRES_PASSWORD=${config.chirpstackDockerPostgresPassword}
       - POSTGRES_DB=chirpstack
+    env_file:
+      - ./docker/chirpstack/.secrets.env
     networks:
       "true":
         aliases:
