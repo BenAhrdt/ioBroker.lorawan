@@ -81,6 +81,17 @@ class Lorawan extends utils.Adapter {
     async onReady() {
         const activeFunction = 'onReady';
         try {
+            // A locally managed ChirpStack always uses the local MQTT broker without
+            // adapter authentication. This also repairs older configurations that
+            // were saved while the Docker-LNS UI synchronization was incomplete.
+            if (this.config.chirpstackDockerEnabled === true) {
+                this.config.ipUrl = 'localhost';
+                this.config.ssl = false;
+                this.config.username = '';
+                this.config.password = '';
+                this.config.origin = this.origin.chirpstack;
+            }
+
             // Generate States wich are not in io-package.json
             await this.generateStates();
 
