@@ -67,8 +67,7 @@
                     "default": false,
                     "defaultFunc": "data.chirpstackDockerEnabled === true || data.chirpstackDockerEnabled === false ? data.chirpstackDockerEnabled : false",
                     "onChange": {
-                        "alsoDependsOn": [],
-                        "calculateFunc": "if (data.chirpstackDockerEnabled === true) { if (data._dockerLnsPrevious !== true) { data.dockerLnsBackupIpUrl = data.ipUrl; data.dockerLnsBackupPort = data.port; data.dockerLnsBackupSsl = data.ssl; data.dockerLnsBackupUsername = data.username; data.dockerLnsBackupPassword = data.password; data.dockerLnsBackupOrigin = data.origin; data._dockerLnsPrevious = true; } data.ipUrl = 'localhost'; data.ssl = false; data.username = ''; data.password = ''; data.origin = 'chirpstack'; } else { if (data.dockerLnsBackupIpUrl !== undefined) data.ipUrl = data.dockerLnsBackupIpUrl; if (data.dockerLnsBackupPort !== undefined) data.port = data.dockerLnsBackupPort; if (data.dockerLnsBackupSsl !== undefined) data.ssl = data.dockerLnsBackupSsl; if (data.dockerLnsBackupUsername !== undefined) data.username = data.dockerLnsBackupUsername; if (data.dockerLnsBackupPassword !== undefined) data.password = data.dockerLnsBackupPassword; if (data.dockerLnsBackupOrigin !== undefined) data.origin = data.dockerLnsBackupOrigin; data._dockerLnsPrevious = false; } return data.chirpstackDockerEnabled;"
+                        "calculateFunc": "if (data.chirpstackDockerEnabled === true) { data._dockerLnsPrevious = true; data.ipUrl = 'localhost'; data.ssl = false; data.username = ''; data.password = ''; data.origin = 'chirpstack'; } else { if (data.dockerLnsBackupIpUrl !== undefined) data.ipUrl = data.dockerLnsBackupIpUrl; if (data.dockerLnsBackupPort !== undefined) data.port = data.dockerLnsBackupPort; if (data.dockerLnsBackupSsl !== undefined) data.ssl = data.dockerLnsBackupSsl; if (data.dockerLnsBackupUsername !== undefined) data.username = data.dockerLnsBackupUsername; if (data.dockerLnsBackupPassword !== undefined) data.password = data.dockerLnsBackupPassword; if (data.dockerLnsBackupOrigin !== undefined) data.origin = data.dockerLnsBackupOrigin; data._dockerLnsPrevious = false; } return data.chirpstackDockerEnabled;"
                     },
                     "xs": 12,
                     "sm": 4,
@@ -142,6 +141,10 @@
                     "tooltip": "ipUrlTooltip",
                     "disabled": "data.chirpstackDockerEnabled === true",
                     "default": "",
+                    "onChange": {
+                        "alsoDependsOn": ["chirpstackDockerEnabled"],
+                        "calculateFunc": "if (data.chirpstackDockerEnabled === true) { if (data._dockerLnsPrevious !== true) data.dockerLnsBackupIpUrl = data.ipUrl; return 'localhost'; } if (data._dockerLnsPrevious === true && data.dockerLnsBackupIpUrl !== undefined) return data.dockerLnsBackupIpUrl; return data.ipUrl;"
+                    },
                     "xs": 12,
                     "sm": 4,
                     "md": 4,
@@ -153,6 +156,10 @@
                     "label": "port",
                     "tooltip": "portTooltip",
                     "default": 8883,
+                    "onChange": {
+                        "alsoDependsOn": ["chirpstackDockerEnabled"],
+                        "calculateFunc": "if (data.chirpstackDockerEnabled === true) { if (data._dockerLnsPrevious !== true) data.dockerLnsBackupPort = data.port; return data.port; } if (data._dockerLnsPrevious === true && data.dockerLnsBackupPort !== undefined) return data.dockerLnsBackupPort; return data.port;"
+                    },
                     "xs": 12,
                     "sm": 1,
                     "md": 1,
@@ -165,6 +172,10 @@
                     "tooltip": "sslTooltip",
                     "disabled": "data.chirpstackDockerEnabled === true",
                     "default": true,
+                    "onChange": {
+                        "alsoDependsOn": ["chirpstackDockerEnabled"],
+                        "calculateFunc": "if (data.chirpstackDockerEnabled === true) { if (data._dockerLnsPrevious !== true) data.dockerLnsBackupSsl = data.ssl; return false; } if (data._dockerLnsPrevious === true && data.dockerLnsBackupSsl !== undefined) return data.dockerLnsBackupSsl; return data.ssl;"
+                    },
                     "xs": 12,
                     "sm": 1,
                     "md": 1,
@@ -199,6 +210,10 @@
                     "tooltip": "usernameTooltip",
                     "disabled": "data.chirpstackDockerEnabled === true",
                     "default": "",
+                    "onChange": {
+                        "alsoDependsOn": ["chirpstackDockerEnabled"],
+                        "calculateFunc": "if (data.chirpstackDockerEnabled === true) { if (data._dockerLnsPrevious !== true) data.dockerLnsBackupUsername = data.username; return ''; } if (data._dockerLnsPrevious === true && data.dockerLnsBackupUsername !== undefined) return data.dockerLnsBackupUsername; return data.username;"
+                    },
                     "xs": 12,
                     "sm": 4,
                     "md": 4,
@@ -211,6 +226,10 @@
                     "tooltip": "passwordTooltip",
                     "disabled": "data.chirpstackDockerEnabled === true",
                     "default": "",
+                    "onChange": {
+                        "alsoDependsOn": ["chirpstackDockerEnabled"],
+                        "calculateFunc": "if (data.chirpstackDockerEnabled === true) { if (data._dockerLnsPrevious !== true) data.dockerLnsBackupPassword = data.password; return ''; } if (data._dockerLnsPrevious === true && data.dockerLnsBackupPassword !== undefined) return data.dockerLnsBackupPassword; return data.password;"
+                    },
                     "xs": 12,
                     "sm": 3,
                     "md": 3,
@@ -250,6 +269,11 @@
                         { "label": "Chirpstack", "value": "chirpstack" }
                     ],
                     "default": "off",
+                    "defaultFunc": "if (data.chirpstackDockerEnabled === true) { data.origin = undefined; return 'chirpstack'; } return data.origin === undefined ? 'off' : data.origin",
+                    "onChange": {
+                        "alsoDependsOn": ["chirpstackDockerEnabled"],
+                        "calculateFunc": "if (data.chirpstackDockerEnabled === true) { if (data._dockerLnsPrevious !== true) data.dockerLnsBackupOrigin = data.origin; return 'chirpstack'; } if (data._dockerLnsPrevious === true && data.dockerLnsBackupOrigin !== undefined) return data.dockerLnsBackupOrigin; return data.origin;"
+                    },
                     "xs": 12,
                     "sm": 2,
                     "md": 2,
@@ -300,11 +324,6 @@
                     "type": "text",
                     "hidden": true,
                     "default": "off"
-                },
-                "_dockerLnsNormalize": {
-                    "type": "checkbox",
-                    "hidden": true,
-                    "defaultFunc": "if (data.chirpstackDockerEnabled === true) { data.ipUrl = 'localhost'; data.ssl = false; data.username = ''; data.password = ''; data.origin = 'chirpstack'; } return true;"
                 }
             }
         },
