@@ -82,6 +82,32 @@ describe('Bridge Home Assistant discovery attributes', () => {
         expect(missing).to.deep.equal([{ id: missingId, attributes: ['brightness'] }]);
     });
 
+    it('ignores adapter-owned and generated virtual bridge IDs', () => {
+        const missingId = 'alias.0.living_room.light_brightness';
+        const bridgeDevices = new BridgeDevices({ namespace: 'lorawan.1' });
+
+        const missing = bridgeDevices.getMissingForeignObjects({
+            ids: {
+                [missingId]: { object: null },
+                'alias.0.Garage.Garagentor.SET.virtual_position': { object: null },
+                'lorawan.1.application.devices.device.downlink.control.virtual_mode': { object: null },
+                'lorawan.1.notification.general': { object: null },
+            },
+            discovery: [
+                {
+                    ids: {
+                        brightness: missingId,
+                        simulatePosition: 'alias.0.Garage.Garagentor.SET.virtual_position',
+                        mode: 'lorawan.1.application.devices.device.downlink.control.virtual_mode',
+                        notification: 'lorawan.1.notification.general',
+                    },
+                },
+            ],
+        });
+
+        expect(missing).to.deep.equal([{ id: missingId, attributes: ['brightness'] }]);
+    });
+
     it('keeps a bridge device visible when a configured object is missing', async () => {
         const missingId = 'alias.0.living_room.light_brightness';
         const warnings = [];
