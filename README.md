@@ -28,6 +28,9 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) Keep bridge configurations when referenced foreign objects are deleted and report missing IDs with device and attribute context.
+
 ### 1.22.36 (2026-10-12)
 - (BenAhrdt) Add the Home Assistant `json_attributes_topic` discovery attribute for states with the ioBroker role `json`.
 

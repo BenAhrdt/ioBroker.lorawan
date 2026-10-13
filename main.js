@@ -960,6 +960,11 @@ class Lorawan extends utils.Adapter {
                 // External States
             } else {
                 if (this.bridge && this.objectStore?.bridge.currentIds[id]) {
+                    if (obj === null) {
+                        this.log.warn(
+                            `A foreign object used by the bridge was deleted: "${id}". The bridge configuration remains unchanged.`,
+                        );
+                    }
                     await this.objectStore.updateBridgeObject(id, { payload: { object: obj } });
                 }
                 // Only work if bridge is activ
