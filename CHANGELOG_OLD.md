@@ -1267,6 +1267,9 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.32 (2026-08-19)
+- (BenAhrdt) Align Home Assistant sensor device classes, state classes, and units with the current specification
+
 ## 1.22.31 (2026-07-09)
 - (BenAhrdt) Add selection of ToIob source id
 

@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.36",
+    "version": "1.22.37",
     "news": {
+      "1.22.37": {
+        "en": "Keep bridge configurations when referenced foreign objects are deleted and report missing IDs with device and attribute context.",
+        "de": "Bridge-Konfigurationen beim Löschen referenzierter Fremdkörper beibehalten und fehlende IDs im Geräte- und Attributkontext melden.",
+        "ru": "Сохраняйте конфигурации моста при удалении посторонних объектов, на которые есть ссылки, и сообщайте об отсутствующих идентификаторах в контексте устройств и атрибутов.",
+        "pt": "Mantenha as configurações da ponte ao excluir objetos estranhos e relate IDs ausentes com o contexto do dispositivo e do atributo.",
+        "nl": "Bewaar de bridge-configuraties wanneer vreemde objecten waarnaar wordt verwezen, worden verwijderd en meld ontbrekende ID's met de context van het apparaat en het kenmerk.",
+        "fr": "Conservez la configuration des ponts lorsque des objets étrangers sont supprimés et signalez les ID manquants avec le contexte de l'appareil et de l'attribut.",
+        "it": "Mantieni le configurazioni bridge quando si eliminano oggetti esterni e segnala gli ID mancanti con device e attributi.",
+        "es": "Mantenga las configuraciones del puente cuando se eliminen objetos extraños e informe los ID faltantes en el contexto del dispositivo y el atributo.",
+        "pl": "Zachowaj konfiguracje mostka po usunięciu obiektów obcych, do których odwołuje się, i zgłaszaj brakujące identyfikatory z kontekstem urządzenia i atrybutu.",
+        "uk": "Зберігайте конфігурації мосту, коли видаляються сторонні об'єкти, на які посилаються, і повідомляйте про відсутні ідентифікатори з контекстом",
+        "zh-cn": "删除引用的异物时保留桥接配置，并使用设备和属性上下文报告缺失的 ID。"
+      },
       "1.22.36": {
         "en": "Add the Home Assistant `json_attributes_topic` discovery attribute for states with the ioBroker role `json`.",
         "de": "Fügen Sie das Suchattribut `json_attributes_topic` für Staaten mit der ioBroker-Rolle `json` hinzu.",
@@ -80,19 +93,6 @@
         "pl": "Dodaj wybór identyfikatora źródłowego obiektu ToIob",
         "uk": "Додати вибір ідентифікатора джерела ToIob",
         "zh-cn": "添加 ToIob 源 ID 的选择"
-      },
-      "1.22.30": {
-        "en": "Add PIR Mini device Profile\nAdd possibillity to ad states to downlink numbers",
-        "de": "PIR-Mini-Geräteprofil hinzufügen\nFüge die Möglichkeit hinzu, Anzeigenstatus zu Downlink-Nummern hinzuzufügen",
-        "ru": "Добавить профиль мини-устройства PIR\nДобавьте возможность для штатов, где размещается реклама, передавать данные о количестве нисходящих ссылок.",
-        "pt": "Adicionar perfil de dispositivo PIR Mini\nAdicionar possibilidade aos estados de anúncios para baixar números",
-        "nl": "Voeg een PIR Mini-apparaatprofiel toe\nVoeg de mogelijkheid toe om advertentiestaten naar downlinknummers te verzenden",
-        "fr": "Ajouter le profil du périphérique PIR Mini\nAjouter la possibilité aux états publicitaires de recevoir des numéros de liaison descendante",
-        "it": "Aggiungi il profilo del dispositivo PIR Mini\nAggiungi possibilità agli stati degli annunci per i numeri di downlink",
-        "es": "Agregar perfil de dispositivo PIR Mini\nAgregar posibilidad de estados de anuncios a números de enlace descendente",
-        "pl": "Dodaj profil urządzenia PIR Mini\nDodanie możliwości do stanów reklam w numerach downlink",
-        "uk": "Додати профіль пристрою PIR Mini\nДодати до станів оголошень можливість пересилання номерів на низхідні посилання",
-        "zh-cn": "添加 PIR Mini 设备配置文件\n为广告状态添加下行链路号码的可能性"
       }
     },
     "titleLang": {
