@@ -1267,6 +1267,9 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.33 (2026-08-19)
+- (BenAhrdt) Add Home Assistant wind direction and angle measurement classification
+
 ## 1.22.32 (2026-08-19)
 - (BenAhrdt) Align Home Assistant sensor device classes, state classes, and units with the current specification
 

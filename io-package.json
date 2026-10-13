@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.37",
+    "version": "1.22.38",
     "news": {
+      "1.22.38": {
+        "en": "Ignore adapter-internal and generated virtual bridge IDs when reporting missing foreign objects.",
+        "de": "Ignoriere adapterinterne und generierte VBridge-IDs, wenn du fehlende Fremdkörper meldest.",
+        "ru": "Не обращайте внимания на внутренние идентификаторы адаптера и созданные виртуальные мосты при сообщении об отсутствии посторонних объектов.",
+        "pt": "Ignore IDs de ponte virtual gerados e internos do adaptador ao relatar a falta de objetos.",
+        "nl": "Negeer interne en gegenereerde virtuele bridge-ID's van de adapter wanneer u ontbrekende vreemde voorwerpen meldt.",
+        "fr": "Ignorez les ID de pont virtuels internes à l'adaptateur et générés lorsque vous signalez la perte d'un objet.",
+        "it": "Ignora gli ID bridge virtuali interni all'adattatore e generati quando segnala oggetti esterni mancanti.",
+        "es": "Ignore los ID de puente virtuales internos y generados del adaptador al denunciar la falta de objetos extraños.",
+        "pl": "Ignoruj wewnętrzne i wygenerowane wirtualne identyfikatory mostów adapterowych podczas zgłaszania brakujących obiektów obcych.",
+        "uk": "Ігноруйте внутрішні та згенеровані ідентифікатори віртуального мосту адаптера під час повідомлення про відсутні сторонні об'єкти.",
+        "zh-cn": "报告缺失的异物时，忽略适配器内部和生成的虚拟网桥 ID。"
+      },
       "1.22.37": {
         "en": "Keep bridge configurations when referenced foreign objects are deleted and report missing IDs with device and attribute context.",
         "de": "Bridge-Konfigurationen beim Löschen referenzierter Fremdkörper beibehalten und fehlende IDs im Geräte- und Attributkontext melden.",
@@ -80,19 +93,6 @@
         "pl": "Dostosuj klasy urządzeń czujników Home Assistant, klasy stanów i jednostki do bieżącej specyfikacji",
         "uk": "Узгодьте класи сенсорних пристроїв, класи станів та одиниці Home Assistant із поточною специфікацією",
         "zh-cn": "将 Home Assistant 传感器设备类、状态类和单位与当前规范保持一致。"
-      },
-      "1.22.31": {
-        "en": "Add selection of ToIob source id",
-        "de": "Auswahl der ToIob-Quell-ID hinzufügen",
-        "ru": "Добавить выборку идентификатора источника ToIob",
-        "pt": "Adicionar seleção de ID da fonte ToIob",
-        "nl": "Voeg een selectie van de ToIob-bron-ID toe.",
-        "fr": "Ajouter une sélection d'identifiants de source ToIob",
-        "it": "Aggiungi selezione ID sorgente ToIob",
-        "es": "Agregar selección de ID de origen ToIob",
-        "pl": "Dodaj wybór identyfikatora źródłowego obiektu ToIob",
-        "uk": "Додати вибір ідентифікатора джерела ToIob",
-        "zh-cn": "添加 ToIob 源 ID 的选择"
       }
     },
     "titleLang": {

@@ -28,7 +28,7 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.38 (2026-10-13)
 - (BenAhrdt) Ignore adapter-internal and generated virtual bridge IDs when reporting missing foreign objects.
 
 ### 1.22.37 (2026-10-13)
@@ -42,9 +42,6 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 
 ### 1.22.34 (2026-09-23)
 - (BenAhrdt) Process Bridge entity availability on discovery and normal messages and keep existing state types for incompatible values.
-
-### 1.22.33 (2026-08-19)
-- (BenAhrdt) Add Home Assistant wind direction and angle measurement classification
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 
