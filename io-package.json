@@ -405,15 +405,11 @@
   "encryptedNative": [
     "password",
     "Bridgepassword",
-    "chirpstackDockerPostgresPassword",
-    "chirpstackDockerApiSecret",
     "dockerLnsBackupPassword"
   ],
   "protectedNative": [
     "password",
     "Bridgepassword",
-    "chirpstackDockerPostgresPassword",
-    "chirpstackDockerApiSecret",
     "dockerLnsBackupPassword"
   ],
   "native": {
@@ -427,8 +423,6 @@
     "origin": "off",
     "chirpstackDockerEnabled": false,
     "chirpstackDockerWebPort": 8080,
-    "chirpstackDockerPostgresPassword": "",
-    "chirpstackDockerApiSecret": "",
     "dockerLnsBackupIpUrl": "",
     "dockerLnsBackupPort": 8883,
     "dockerLnsBackupSsl": true,

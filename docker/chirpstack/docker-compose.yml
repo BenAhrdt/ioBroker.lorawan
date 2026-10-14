@@ -19,8 +19,6 @@ services:
       - MQTT_BROKER_HOST=mosquitto
       - REDIS_HOST=redis
       - POSTGRESQL_HOST=postgres
-    env_file:
-      - ./docker/chirpstack/.secrets.env
     networks:
       "true":
         aliases:
@@ -99,9 +97,8 @@ services:
       - postgresqldata:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=chirpstack
+      - POSTGRES_PASSWORD=chirpstack
       - POSTGRES_DB=chirpstack
-    env_file:
-      - ./docker/chirpstack/.secrets.env
     networks:
       "true":
         aliases:
