@@ -28,6 +28,9 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) Update the development test framework dependency `@iobroker/testing` to version `6.3.1`.
+
 ### 1.22.38 (2026-10-13)
 - (BenAhrdt) Ignore adapter-internal and generated virtual bridge IDs when reporting missing foreign objects.
 
