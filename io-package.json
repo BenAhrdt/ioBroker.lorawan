@@ -2,6 +2,7 @@
   "common": {
     "name": "lorawan",
     "version": "1.22.38",
+    "declareUsedResources": true,
     "news": {
       "1.22.38": {
         "en": "Ignore adapter-internal and generated virtual bridge IDs when reporting missing foreign objects.",

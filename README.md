@@ -29,6 +29,7 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+- (BenAhrdt) declareUsedResources added in io-package.json
 - (BenAhrdt) Update the development test framework dependency `@iobroker/testing` to version `6.3.1`.
 
 ### 1.22.38 (2026-10-13)
