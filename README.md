@@ -29,6 +29,7 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+- (BenAhrdt) Add the `button.mode.getInfo` role for `GetInfos` downlink states and display them as buttons in device manager cards.
 - (BenAhrdt) declareUsedResources added in io-package.json
 - (BenAhrdt) Update the development test framework dependency `@iobroker/testing` to version `6.3.1`.
 

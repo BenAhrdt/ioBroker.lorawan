@@ -214,6 +214,7 @@ class Lorawan extends utils.Adapter {
         cardRolesObject = {
             lorawan: {
                 'button.mode.card': [{ subfolder: 'downlink.control', card: { control: 'button' } }],
+                'button.mode.getInfo': [{ subfolder: 'downlink.control', card: { control: 'button' } }],
                 'button.mode.startMotorcalibration': [{ subfolder: 'downlink.control', card: { control: 'button' } }],
 
                 'sensor.contact': [
@@ -315,6 +316,7 @@ class Lorawan extends utils.Adapter {
             },
             bridge: {
                 'button.mode.card': [{ card: { control: 'button' } }],
+                'button.mode.getInfo': [{ card: { control: 'button' } }],
                 'button.mode.startMotorcalibration': [{ card: { control: 'button' } }],
 
                 'sensor.contact': [
@@ -399,6 +401,7 @@ class Lorawan extends utils.Adapter {
             },
             toIob: {
                 'button.mode.card': [{ card: { control: 'button' } }],
+                'button.mode.getInfo': [{ card: { control: 'button' } }],
                 'button.mode.startMotorcalibration': [{ card: { control: 'button' } }],
 
                 'sensor.contact': [
