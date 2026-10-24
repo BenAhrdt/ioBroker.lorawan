@@ -29,6 +29,7 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+- (BenAhrdt) Add the `button.mode.getInfo` role for `GetInfos` downlink states and display them as buttons in device manager cards.
 - (BenAhrdt) declareUsedResources added in io-package.json
 - (BenAhrdt) Optional EU868 ChirpStack Docker Compose stack through the ioBroker Docker plugin. Select `ChirpStack` in the `Docker-LNS` setting; the stack uses the standard ChirpStack example credentials and configuration for PostgreSQL and the API. Use the adapter MQTT port for the host-side Mosquitto port, and choose a free `chirpstackDockerWebPort` before starting it (default `8080`). The normal server settings are backed up while the local stack is active and restored when Docker-LNS is set to `Aus`.
 - (BenAhrdt) Update the development test framework dependency `@iobroker/testing` to version `6.3.1`.
