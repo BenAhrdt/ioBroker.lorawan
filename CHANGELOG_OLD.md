@@ -1267,6 +1267,9 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.34 (2026-09-23)
+- (BenAhrdt) Process Bridge entity availability on discovery and normal messages and keep existing state types for incompatible values.
+
 ## 1.22.33 (2026-08-19)
 - (BenAhrdt) Add Home Assistant wind direction and angle measurement classification
 

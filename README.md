@@ -28,7 +28,7 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.22.39 (2026-10-24)
 - (BenAhrdt) Add the `button.mode.getInfo` role for `GetInfos` downlink states and display them as buttons in device manager cards.
 - (BenAhrdt) declareUsedResources added in io-package.json
 - (BenAhrdt) Update the development test framework dependency `@iobroker/testing` to version `6.3.1`.
@@ -44,9 +44,6 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 
 ### 1.22.35 (2026-09-23)
 - (codex) Update adapter-core and test dependencies to the current recommended versions.
-
-### 1.22.34 (2026-09-23)
-- (BenAhrdt) Process Bridge entity availability on discovery and normal messages and keep existing state types for incompatible values.
 
 [Older changes can be found there](CHANGELOG_OLD.md)
 

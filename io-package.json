@@ -1,9 +1,22 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.38",
+    "version": "1.22.39",
     "declareUsedResources": true,
     "news": {
+      "1.22.39": {
+        "en": "Add the `button.mode.getInfo` role for `GetInfos` downlink states and display them as buttons in device manager cards.\ndeclareUsedResources added in io-package.json\nUpdate the development test framework dependency `@iobroker/testing` to version `6.3.1`.",
+        "de": "Fügen Sie die Rolle `Button.Mode.GetInfo` für `GetInfos` Downlinkstatus hinzu und zeigen Sie sie als Buttons an.\nDeclareUsedResources in io-package.json\nAktualisieren Sie die TFRAME-Abhängigkeit `@iobroker /testing` auf Version `6.3.1`.",
+        "ru": "Добавьте роль `Button.mode.getInfo` для состояний нисходящей линии связи «GetInfos» и отображайте их в виде кнопок на карточках диспетчера устройств.\nОбъявление используемых ресурсов добавлено в io-package.json\nОбновите зависимость фреймворка тестирования для разработки `@iobroker /testing` до версии `6.3.1`.",
+        "pt": "Adicione a função `button.mode.getInfo` aos estados de downlink e exiba-os como botões nos cartões do Device Manager.\nDeclareUsedResources em io-package.json\nAtualize a dependência do framework de teste `@iobroker /testing` para a versão `6.3.1`.",
+        "nl": "Voeg de rol `Button.mode.getInfo` toe voor de downlinkstatussen van `GetInfoS` en geef deze weer als knoppen op kaarten voor apparaatbeheer.\nDeclareUsedResources toegevoegd in io-package.json\nUpdate de afhankelijkheid van het ontwikkelingstestkader `@iobroker /testing` naar versie `6.3.1`.",
+        "fr": "Ajoutez le rôle « Button.Mode.getInfo » pour les états de liaison descendante de « GetInfo » et affichez-les sur les cartes Device Manager.\nDeclarUsedResources ajouté dans io-package.json\nMettez à jour la dépendance du framework de test de développement `@iobroker /testing` vers la version 6.3.1.",
+        "it": "Aggiunga il ruolo `button.mode.getInfo` per gli stati dei downlink `getInfos` e li mostri come pulsanti.\nDeclareUsedResources aggiunto in io-package.json\nAggiorna la dipendenza del framework di sviluppo @iobroker /testing alla versione 6.3.1.",
+        "es": "Añada el rol `Button.Mode.GetInfo` a los estados de enlace descendente de «GetInfos» y muéstrelos como botones en las tarjetas de gestión.\ndeclareUsedResources añadido en io-package.json\nActualice la dependencia del marco de pruebas de desarrollo `@iobroker /testing` a la versión 6.3.1",
+        "pl": "Dodaj rolę `button.mode.getInfo` dla stanów łącza w dół `GetInfo` i wyświetl je jako przyciski na kartach menedżera urządzeń.\nDeclareUsedResources dodane w io-package.json\nZaktualizuj zależność frameworka testów rozwojowych `@iobroker /testing` do wersji `6.3.1`.",
+        "uk": "Додайте роль `button.mode.getInfo` для станів спадного посилання `GetInfoS` та відображайте їх у вигляді кнопок на картках диспетчера пристроїв.\nОголошеніРесурси додані в io-package.json\nОновіть залежність тестової фреймворку розробки `@iobroker /testing` до версії `6.3.1`.",
+        "zh-cn": "为 `getInfos`下行链路状态添加 `button.mode.getInfo`角色并将其显示为设备管理器卡中的按钮。\n在 io-package.json 中添加了声明使用资源\n将开发测试框架依赖项 @iobroker /testing 更新到版本 6.3.1。"
+      },
       "1.22.38": {
         "en": "Ignore adapter-internal and generated virtual bridge IDs when reporting missing foreign objects.",
         "de": "Ignoriere adapterinterne und generierte VBridge-IDs, wenn du fehlende Fremdkörper meldest.",
@@ -81,19 +94,6 @@
         "pl": "Dodaj klasyfikację pomiaru kierunku i kąta wiatru w Asystencie Domowym",
         "uk": "Додайте класифікацію вимірювання напрямку та кута вітру для Home Assistant",
         "zh-cn": "添加 Home Assistant 风向和风角测量分类"
-      },
-      "1.22.32": {
-        "en": "Align Home Assistant sensor device classes, state classes, and units with the current specification",
-        "de": "Richten Sie die Sensorgeräteklassen, Statusklassen und Einheiten von Home Assistant an die aktuelle Spezifikation aus.",
-        "ru": "Приведите классы сенсорных устройств Home Assistant, классы состояний и единицы измерения в соответствие с текущими спецификациями.",
-        "pt": "Alinhe as classes de dispositivos de sensores, classes de estado e unidades do Home Assistant com a especificação atual.",
-        "nl": "Stem de apparaatklassen, statusklassen en eenheden van de Home Assistant-sensoren af op de huidige specificaties.",
-        "fr": "Alignez les classes de périphériques de capteurs, les classes d'état et les unités de Home Assistant avec les spécifications actuelles.",
-        "it": "Allineare le classi dei dispositivi sensore di Home Assistant, le classi di stato e le unità con le specifiche attuali",
-        "es": "Alinee las clases de dispositivos de sensores, las clases de estado y las unidades de Home Assistant con la especificación actual.",
-        "pl": "Dostosuj klasy urządzeń czujników Home Assistant, klasy stanów i jednostki do bieżącej specyfikacji",
-        "uk": "Узгодьте класи сенсорних пристроїв, класи станів та одиниці Home Assistant із поточною специфікацією",
-        "zh-cn": "将 Home Assistant 传感器设备类、状态类和单位与当前规范保持一致。"
       }
     },
     "titleLang": {
