@@ -1267,6 +1267,9 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.35 (2026-09-23)
+- (codex) Update adapter-core and test dependencies to the current recommended versions.
+
 ## 1.22.34 (2026-09-23)
 - (BenAhrdt) Process Bridge entity availability on discovery and normal messages and keep existing state types for incompatible values.
 

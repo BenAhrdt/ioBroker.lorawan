@@ -1,9 +1,22 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.39",
+    "version": "1.22.40",
     "declareUsedResources": true,
     "news": {
+      "1.22.40": {
+        "en": "Do not add a self-referencing `via_device` to the internal bridge device when its identifier equals the adapter namespace.",
+        "de": "Fügen Sie dem internen Bridge-Gerät kein selbstverweisendes `via_device` hinzu, wenn es dem Adapter-Namespace entspricht.",
+        "ru": "Не добавляйте самоссылающееся `via_device` во внутреннее мостовое устройство, если его идентификатор равен пространству имен адаптера.",
+        "pt": "Não adicione um `via_device` autorreferente ao bridge interno se o identificador for igual ao namespace do adaptador.",
+        "nl": "Voeg geen zelfverwijzende `via_device` toe aan het interne bridge-apparaat wanneer de identifier gelijk is aan de naamruimte van de adapter.",
+        "fr": "N'ajoutez pas de « via_device » autoréférencé au pont interne dont l'identifiant est égal à l'espace de noms de l'adaptateur.",
+        "it": "Non aggiunga un `via_device` autoreferenziale al bridge interno quando è uguale al namespace dell'adattatore.",
+        "es": "No añada un «dispositivo» autorreferenciado al dispositivo puente interno cuando su identificador sea igual al espacio de nombres del adaptador.",
+        "pl": "Nie dodawaj autoodwołującego się „via_device” do wewnętrznego urządzenia mostkowego, gdy jego identyfikator jest równy przestrzeni nazw adaptera.",
+        "uk": "Не додавайте `via_device`, що самопосилається, до внутрішнього пристрою мосту, якщо його ідентифікатор дорівнює простору імен адаптера.",
+        "zh-cn": "当内部桥接设备的标识符等于适配器命名空间时，不要向其添加自引用 “via_device”。"
+      },
       "1.22.39": {
         "en": "Add the `button.mode.getInfo` role for `GetInfos` downlink states and display them as buttons in device manager cards.\ndeclareUsedResources added in io-package.json\nUpdate the development test framework dependency `@iobroker/testing` to version `6.3.1`.",
         "de": "Fügen Sie die Rolle `Button.Mode.GetInfo` für `GetInfos` Downlinkstatus hinzu und zeigen Sie sie als Buttons an.\nDeclareUsedResources in io-package.json\nAktualisieren Sie die TFRAME-Abhängigkeit `@iobroker /testing` auf Version `6.3.1`.",
@@ -81,19 +94,6 @@
         "pl": "Przetwarzaj dostępność jednostek programu Bridge w wiadomościach wykrywania i zwykłych komunikatów i zachowaj istniejące typy stanów dla niekompatybilnych wartości.",
         "uk": "Обробляйте доступність сутності Bridge при виявленні та звичайних повідомленнях та збережіть існуючі типи станів для несумісних значень.",
         "zh-cn": "处理 Bridge 实体在发现和普通消息中的可用性，并保留现有状态类型以防不兼容的值。"
-      },
-      "1.22.33": {
-        "en": "Add Home Assistant wind direction and angle measurement classification",
-        "de": "Klassifizierung der Windrichtungs- und Winkelmessung in Home Assistant hinzufügen",
-        "ru": "Добавить в Home Assistant классификацию измерения направления и угла ветра",
-        "pt": "Adicionar classificação de medição de direção e ângulo do vento ao Home Assistant",
-        "nl": "Voeg een classificatie voor windrichting en -hoekmeting toe aan Home Assistant.",
-        "fr": "Ajouter une classification aux mesures de direction et d'angle du vent dans Home Assistant",
-        "it": "Aggiungi la classificazione della misurazione della direzione e dell'angolo del vento in Home Assistant",
-        "es": "Agregar a Home Assistant la clasificación de medición de dirección y ángulo del viento",
-        "pl": "Dodaj klasyfikację pomiaru kierunku i kąta wiatru w Asystencie Domowym",
-        "uk": "Додайте класифікацію вимірювання напрямку та кута вітру для Home Assistant",
-        "zh-cn": "添加 Home Assistant 风向和风角测量分类"
       }
     },
     "titleLang": {
