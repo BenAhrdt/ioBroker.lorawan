@@ -28,6 +28,9 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) Do not add a self-referencing `via_device` to the internal bridge device when its identifier equals the adapter namespace.
+
 ### 1.22.39 (2026-10-24)
 - (BenAhrdt) Add the `button.mode.getInfo` role for `GetInfos` downlink states and display them as buttons in device manager cards.
 - (BenAhrdt) declareUsedResources added in io-package.json

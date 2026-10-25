@@ -21,6 +21,82 @@ function createBridgeForStateAttributes() {
 }
 
 describe('Bridge Home Assistant discovery attributes', () => {
+    it('does not add via_device when the device is the adapter bridge itself', async () => {
+        const bridge = {
+            adapter: {
+                namespace: 'lorawan.0',
+                version: '1.0.0',
+                config: { BridgeDevicesToGenerate: [] },
+                logtypes: { bridgeDiscovery: 'bridgeDiscovery' },
+                log: { silly: () => {}, bridgeDiscovery: () => {}, error: () => {} },
+            },
+            normalizeString: Bridge.prototype.normalizeString,
+            Timeoutput: {
+                Argument: 'de-DE',
+                Format: { year: 'numeric', month: '2-digit', day: '2-digit' },
+            },
+            discoveredDevices: { lorawan_0: {} },
+            oldDiscoveredDevices: {},
+            DiscoveredIds: {},
+            DiscoveredUniqueId: {},
+            bridgeMqttClient: { publish: async () => {} },
+            scheduleDiscoveredIdsWrite: () => {},
+            schedulePublishedIdsWrite: () => {},
+            scheduleSubscribedTopicsWrite: () => {},
+            emit: () => {},
+        };
+        const discoveryObject = {
+            topic: 'homeassistant/sensor/lorawan_0/config',
+            payload: {
+                unique_id: 'lorawan_0_state',
+                device: { identifiers: ['lorawan_0'], name: 'lorawan.0' },
+            },
+            informations: {},
+        };
+
+        await Bridge.prototype.publishDiscovery.call(bridge, 'lorawan.0.state', discoveryObject);
+
+        expect(discoveryObject.payload.device).not.to.have.property('via_device');
+    });
+
+    it('adds the adapter namespace as via_device for other devices', async () => {
+        const bridge = {
+            adapter: {
+                namespace: 'lorawan.0',
+                version: '1.0.0',
+                config: { BridgeDevicesToGenerate: [] },
+                logtypes: { bridgeDiscovery: 'bridgeDiscovery' },
+                log: { silly: () => {}, bridgeDiscovery: () => {}, error: () => {} },
+            },
+            normalizeString: Bridge.prototype.normalizeString,
+            Timeoutput: {
+                Argument: 'de-DE',
+                Format: { year: 'numeric', month: '2-digit', day: '2-digit' },
+            },
+            discoveredDevices: { sensor_1: {} },
+            oldDiscoveredDevices: {},
+            DiscoveredIds: {},
+            DiscoveredUniqueId: {},
+            bridgeMqttClient: { publish: async () => {} },
+            scheduleDiscoveredIdsWrite: () => {},
+            schedulePublishedIdsWrite: () => {},
+            scheduleSubscribedTopicsWrite: () => {},
+            emit: () => {},
+        };
+        const discoveryObject = {
+            topic: 'homeassistant/sensor/sensor_1/config',
+            payload: {
+                unique_id: 'sensor_1_state',
+                device: { identifiers: ['sensor_1'], name: 'sensor.1' },
+            },
+            informations: {},
+        };
+
+        await Bridge.prototype.publishDiscovery.call(bridge, 'sensor.1.state', discoveryObject);
+
+        expect(discoveryObject.payload.device).to.include({ via_device: 'lorawan_0' });
+    });
+
     it('adds the state topic as json attributes topic for json states', async () => {
         const bridge = createBridgeForStateAttributes();
         const stateTopic = 'lorawan_1/geburtstag/alias_0_allgemein_geburtstag_json/state';
