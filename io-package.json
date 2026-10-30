@@ -1,9 +1,22 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.40",
+    "version": "1.22.41",
     "declareUsedResources": true,
     "news": {
+      "1.22.41": {
+        "en": "Tolerate foreign bridge states without an existing discovery entry when removing a bridged channel.\nAutomatically discover newly created states below already bridged channels.",
+        "de": "Tolerieren Sie ausländische Bridgestates ohne Discovery-Eintrag beim Löschen eines Bridge-Kanals.\nErkennt automatisch neue Staaten unter überbrückten Kanälen.",
+        "ru": "При демонтаже мостового канала допускайте, чтобы иностранные государства мостов не имели существующей записи об обнаружении.\nАвтоматически обнаруживайте вновь созданные состояния под уже подключенными каналами.",
+        "pt": "Tolere estados de ponte externos sem uma entrada de descoberta ao remover um canal.\nDescubra automaticamente novos estados abaixo de canais já conectados.",
+        "nl": "Tolereer buitenlandse brugstaten zonder een bestaande ontdekkingsvermelding wanneer u een overbrugd kanaal verwijdert.\nOntdek automatisch nieuwe staten onder reeds overbrugde kanalen.",
+        "fr": "Tolérez des états de pont étrangers sans entrée Discovery lorsque vous supprimez un canal ponté.\nDécouvrez automatiquement les nouveaux états sous les chaînes déjà reliées.",
+        "it": "Tollera gli Stati ponte esteri senza una voce scoperta quando rimuove un canale a ponte.\nScopra automaticamente i nuovi stati creati sotto i canali già collegati.",
+        "es": "Tolerar estados puente extranjeros sin una entrada de descubrimiento existente al eliminar un canal puenteado.\nDescubra automáticamente los estados recién creados por debajo de los canales ya unidos.",
+        "pl": "Toleruj obce stany mostowe bez istniejącego wpisu odkrycia podczas usuwania mostkowego kanału.\nAutomatycznie odkrywaj nowo utworzone stany poniżej już mostkowanych kanałów.",
+        "uk": "Дотримуйтесь іноземних станів мосту без існуючого запису відкриття під час видалення мостового каналу.\nАвтоматично виявляти новостворені стани під уже мостованими каналами.",
+        "zh-cn": "移除桥接信道时，在没有现有发现条目的情况下容忍外部桥接状态。\n在已桥接的频道下自动发现新创建的状态。"
+      },
       "1.22.40": {
         "en": "Do not add a self-referencing `via_device` to the internal bridge device when its identifier equals the adapter namespace.",
         "de": "Fügen Sie dem internen Bridge-Gerät kein selbstverweisendes `via_device` hinzu, wenn es dem Adapter-Namespace entspricht.",
@@ -81,19 +94,6 @@
         "pl": "Zaktualizuj zależności rdzenia adaptera i testów do aktualnych zalecanych wersji.",
         "uk": "Оновіть адаптер-ядра та тестові залежності до поточних рекомендованих версій.",
         "zh-cn": "将适配器核心和测试依赖项更新到当前推荐版本。"
-      },
-      "1.22.34": {
-        "en": "Process Bridge entity availability on discovery and normal messages and keep existing state types for incompatible values.",
-        "de": "Verarbeitet Bridge-Entitäten in Discovery- und Normalnachrichten und behält bestehende Statustypen für inkompatible Werte bei.",
-        "ru": "Доступность объектов Process Bridge при обнаружении и обычных сообщениях и сохраняйте существующие типы состояний для несовместимых значений.",
-        "pt": "Use a entidade Process Bridge na descoberta e em mensagens normais e mantenha os tipos de estado incompatíveis.",
-        "nl": "Verwerk de beschikbaarheid van entiteiten bij detectie en normale berichten en behoud bestaande statussen voor incompatibele waarden.",
-        "fr": "Traitez la disponibilité des entités Bridge lors de leur découverte et des messages normaux et conservez les types d'état existants.",
-        "it": "Entità Process Bridge su discovery e messaggi normali e conserva i tipi di stato esistenti per valori incompatibili.",
-        "es": "Procese Bridge la disponibilidad de la entidad al detectar y los mensajes normales y conservar los tipos de estado existentes para valores incompatibles.",
-        "pl": "Przetwarzaj dostępność jednostek programu Bridge w wiadomościach wykrywania i zwykłych komunikatów i zachowaj istniejące typy stanów dla niekompatybilnych wartości.",
-        "uk": "Обробляйте доступність сутності Bridge при виявленні та звичайних повідомленнях та збережіть існуючі типи станів для несумісних значень.",
-        "zh-cn": "处理 Bridge 实体在发现和普通消息中的可用性，并保留现有状态类型以防不兼容的值。"
       }
     },
     "titleLang": {
