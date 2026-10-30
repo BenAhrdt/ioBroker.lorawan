@@ -21,6 +21,90 @@ function createBridgeForStateAttributes() {
 }
 
 describe('Bridge Home Assistant discovery attributes', () => {
+    it('discovers a new state below a bridged channel only once', async () => {
+        const memberId = '0_userdata.0.Lueften';
+        const stateId = `${memberId}.Information_ausgeben`;
+        const calls = [];
+        const bridge = {
+            adapter: {
+                namespace: 'lorawan.0',
+                log: { silly: () => {}, error: () => {} },
+            },
+            ForeignBridgeMembers: { [memberId]: memberId },
+            ForeignBridgeDiscoveryInProgress: new Set(),
+            DiscoveredIds: {},
+            discoverForeignStandardEntity: async (id, options) => {
+                calls.push({ id, options });
+                bridge.DiscoveredIds[id] = {};
+            },
+        };
+        const object = { type: 'state', common: { name: 'Information ausgeben', write: true } };
+
+        expect(await Bridge.prototype.discoverForeignState.call(bridge, stateId, object)).to.equal(true);
+        expect(await Bridge.prototype.discoverForeignState.call(bridge, stateId, object)).to.equal(false);
+        expect(await Bridge.prototype.discoverForeignState.call(bridge, `${memberId}.Nested.Channel`, object)).to.equal(
+            true,
+        );
+        expect(await Bridge.prototype.discoverForeignState.call(bridge, '0_userdata.0.Other.state', object)).to.equal(
+            false,
+        );
+        expect(await Bridge.prototype.discoverForeignState.call(bridge, `${memberId}.Other`, { type: 'channel' })).to.equal(
+            false,
+        );
+
+        expect(calls).to.deep.equal([
+            { id: stateId, options: { common: object.common } },
+            { id: `${memberId}.Nested.Channel`, options: { common: object.common } },
+        ]);
+    });
+
+    it('clears foreign states without an existing discovery entry', async () => {
+        const memberId = '0_userdata.0.Lueften';
+        const missingDiscoveryId = `${memberId}.Information_ausgeben`;
+        const existingDiscoveryId = `${memberId}.GenugGelueftet`;
+        const errors = [];
+        const unsubscribed = [];
+        const deleted = [];
+        const published = [];
+        const bridge = {
+            adapter: {
+                getObjectViewAsync: async () => ({
+                    rows: [{ id: missingDiscoveryId }, { id: existingDiscoveryId }],
+                }),
+                unsubscribeForeignStatesAsync: async id => unsubscribed.push(id),
+                objectStore: {
+                    deleteBridgeObject: async id => deleted.push(id),
+                },
+                log: { silly: () => {}, error: message => errors.push(message) },
+            },
+            ForeignBridgeMembers: { [memberId]: memberId },
+            DiscoveredIds: {
+                [existingDiscoveryId]: { payload: { command_topic: 'bridge/existing/set' } },
+            },
+            PublishedIds: {
+                [missingDiscoveryId]: {},
+                [existingDiscoveryId]: {},
+            },
+            SubscribedTopics: { 'bridge/existing/set': {} },
+            scheduleDiscoveredIdsWrite: () => {},
+            schedulePublishedIdsWrite: () => {},
+            scheduleSubscribedTopicsWrite: () => {},
+            publishDiscovery: async (id, discovery) => published.push({ id, discovery }),
+        };
+
+        await Bridge.prototype.discoverForeignRange.call(bridge, memberId, true);
+
+        expect(errors).to.deep.equal([]);
+        expect(unsubscribed).to.deep.equal([missingDiscoveryId, existingDiscoveryId]);
+        expect(deleted).to.deep.equal([missingDiscoveryId, existingDiscoveryId]);
+        expect(published).to.have.lengthOf(1);
+        expect(published[0].id).to.equal(existingDiscoveryId);
+        expect(published[0].discovery.payload).to.equal('');
+        expect(bridge.PublishedIds).to.deep.equal({});
+        expect(bridge.SubscribedTopics).to.deep.equal({});
+        expect(bridge.DiscoveredIds).to.deep.equal({});
+    });
+
     it('does not add via_device when the device is the adapter bridge itself', async () => {
         const bridge = {
             adapter: {

@@ -970,6 +970,7 @@ class Lorawan extends utils.Adapter {
                     }
                     await this.objectStore.updateBridgeObject(id, { payload: { object: obj } });
                 }
+                await this.bridge?.discoverForeignState(id, obj);
                 // Only work if bridge is activ
                 if (this.bridge && id === this.config.BridgeEnum) {
                     // Erzeugen der HA Bridged für Control

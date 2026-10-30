@@ -28,6 +28,10 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) Tolerate foreign bridge states without an existing discovery entry when removing a bridged channel.
+- (BenAhrdt) Automatically discover newly created states below already bridged channels.
+
 ### 1.22.40 (2026-10-25)
 - (BenAhrdt) Do not add a self-referencing `via_device` to the internal bridge device when its identifier equals the adapter namespace.
 
