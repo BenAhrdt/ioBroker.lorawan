@@ -30,6 +30,7 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 -->
 ### **WORK IN PROGRESS**
 - (BenAhrdt) Append `3F` to the Vicki `ExternalTemperature` downlink payload.
+- (BenAhrdt) Update the development test framework dependency `@iobroker/testing` to version `6.3.2`.
 
 ### 1.22.41 (2026-10-30)
 - (BenAhrdt) Tolerate foreign bridge states without an existing discovery entry when removing a bridged channel.
