@@ -1,9 +1,22 @@
 {
   "common": {
     "name": "lorawan",
-    "version": "1.22.41",
+    "version": "1.22.42",
     "declareUsedResources": true,
     "news": {
+      "1.22.42": {
+        "en": "Restrict namespace checks to complete ioBroker ID segments so instance `lorawan.1` does not process objects or states from `lorawan.10` and higher instances.\nAppend `3F` to the Vicki `ExternalTemperature` downlink payload.\nUpdate the development test framework dependency `@iobroker/testing` to version `6.3.2`.",
+        "de": "Beschränken Sie Namespace-Checks auf komplette IOBroker-ID-Segmente, sodass Instanz `lorawan.1` keine Objekte oder Status ab `lorawan.10` verarbeitet.\nHängen Sie `3F` an den Vicki `ExternalTemperature`-Downlink an.\nAktualisieren Sie die TFRAME-Abhängigkeit `@iobroker /testing` auf Version `6.3.2`.",
+        "ru": "Ограничьте проверку пространства имен полными сегментами IOBroker ID, чтобы экземпляр `lorawan.1 `не обрабатывал объекты или состояния из экземпляров `lorawan.10` и выше.\nДобавьте `3F` к полезной нагрузке Vicki `ExternalTemperature` по нисходящей линии связи.\nОбновите зависимость фреймворка тестирования для разработки `@iobroker /testing` до версии `6.3.2`.",
+        "pt": "Limite as verificações de namespace a segmentos de ID do IOBroker para que a instância `lorawan.1` não processe objetos ou estados de `lorawan.10` e superiores.\nAnexe `3F` à carga de downlink Vicki `ExternalTemperature`.\nAtualize a dependência do framework de teste `@iobroker /testing` para a versão `6.3.2`.",
+        "nl": "Beperk de naamruimtecontroles tot volledige IOBroker ID-segmenten, zodat instantie `lorawan.1` geen objecten of staten van `lorawan.10` en hogere instanties verwerkt.\n„Voeg „\" 3F \"” toe aan de downlink-payload „\" ExternalTemperature \"” van Vicki.”\nUpdate de afhankelijkheid van het ontwikkelingstestkader `@iobroker /testing` naar versie `6.3.2`.",
+        "fr": "Limitez la vérification de l'espace de noms aux segments d'ID IOBroker afin que l'instance lorawan.1 ne traite pas les objets ou les états de lorawan.10 et plus.\nAjoutez « 3F » à la charge descendante Vicki « ExternalTemperature ».\nMettez à jour la dépendance du framework de test de développement `@iobroker /testing` vers la version 6.3.2.",
+        "it": "Limita i controlli dei namespace ai segmenti ID IOBroker in modo che l'istanza lorawan.1 non elabori oggetti o stati da istanze successive.\nAggiungi «3F» al payload downlink Vicki `ExternalTemperature`.\nAggiorna la dipendenza del framework di sviluppo @iobroker /testing alla versione 6.3.2.",
+        "es": "Restrinja las comprobaciones del espacio de nombres a los segmentos de ID de IOBroker para que la instancia `lorawan.1 no procese objetos o estados de `lorawan.10» y superiores.\nAñada 3F a la carga descendente de Vicki «ExternalTemperature».\nActualice la dependencia del marco de pruebas de desarrollo `@iobroker /testing` a la versión 6.3.2",
+        "pl": "Ogranicz sprawdzanie przestrzeni nazw do kompletnych segmentów identyfikatora ioBroker, aby instancja „lorawan.1” nie przetwarzała obiektów ani stanów z instancji `lorawan.10` i wyższych.\nDołącz „3F” do ładunku Downlink Vicki `ExternalTemperature`.\nZaktualizuj zależność frameworka testów rozwojowych `@iobroker /testing` do wersji `6.3.2`.",
+        "uk": "Обмежити перевірку простору імен для завершення сегментів ідентифікатора IObroker, щоб екземпляр `lorawan.1` не обробляв об'єкти або стани з `lorawan.10` і вищих екземплярів.\nДодайте `3F` до корисного навантаження посилання «Зовнішня температура» Vicki.\nОновіть залежність тестової фреймворку розробки `@iobroker /testing` до версії `6.3.2`.",
+        "zh-cn": "将命名空间检查限制为完成 IOBroker ID 分段，因此实例 “lorawan.1” 不处理来自 “lorawan.10” 及更高版本实例的对象或状态。\n将 3F 附加到 Vicki 的 ExternalTemperature 下行链路负载中。\n将开发测试框架依赖项 @iobroker /testing 更新到版本 6.3.2。"
+      },
       "1.22.41": {
         "en": "Tolerate foreign bridge states without an existing discovery entry when removing a bridged channel.\nAutomatically discover newly created states below already bridged channels.",
         "de": "Tolerieren Sie ausländische Bridgestates ohne Discovery-Eintrag beim Löschen eines Bridge-Kanals.\nErkennt automatisch neue Staaten unter überbrückten Kanälen.",
@@ -81,19 +94,6 @@
         "pl": "Dodaj atrybut wykrywania „json_attributes_topic` asystenta głównego dla stanów z rolą ioBroker `json`.",
         "uk": "Додайте атрибут виявлення домашнього помічника `json_attributes_topic` для станів з роллю ioBroker `json`.",
         "zh-cn": "为 IOBroker 角色为 “json” 的州添加家庭助理 “json_attributes_topic” 发现属性。"
-      },
-      "1.22.35": {
-        "en": "Update adapter-core and test dependencies to the current recommended versions.",
-        "de": "Aktualisiere Adaptercore und teste Abhängigkeiten auf die empfohlene Version.",
-        "ru": "Обновите зависимости ядра адаптера и тестирования до текущих рекомендуемых версий.",
-        "pt": "Atualize adapter-core e test dependências para as versões atuais.",
-        "nl": "Update de kern van de adapter en test de afhankelijkheden naar de huidige aanbevolen versies.",
-        "fr": "Passez à jour Adapter-Core et testez les dépendances aux versions recommandées.",
-        "it": "Aggiorna adapter-core e test le dipendenze alle versioni consigliate.",
-        "es": "Actualice el núcleo del adaptador y las dependencias de prueba a las versiones recomendadas.",
-        "pl": "Zaktualizuj zależności rdzenia adaptera i testów do aktualnych zalecanych wersji.",
-        "uk": "Оновіть адаптер-ядра та тестові залежності до поточних рекомендованих версій.",
-        "zh-cn": "将适配器核心和测试依赖项更新到当前推荐版本。"
       }
     },
     "titleLang": {

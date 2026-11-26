@@ -1267,6 +1267,9 @@
 
 ### 0.0.2 (2024-01-12)
 * (BenAhrdt) initial release
+## 1.22.37 (2026-10-13)
+- (BenAhrdt) Keep bridge configurations when referenced foreign objects are deleted and report missing IDs with device and attribute context.
+
 ## 1.22.36 (2026-10-12)
 - (BenAhrdt) Add the Home Assistant `json_attributes_topic` discovery attribute for states with the ioBroker role `json`.
 
