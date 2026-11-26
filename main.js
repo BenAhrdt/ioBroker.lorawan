@@ -944,7 +944,7 @@ class Lorawan extends utils.Adapter {
                 this.channelMap.set(id, obj);
             }
             // Internal Objects => Assign to objectStore
-            if (id.startsWith(this.namespace)) {
+            if (id.startsWith(`${this.namespace}.`)) {
                 // Update State in objectStore
                 if (!id.startsWith(`${this.namespace}.info`) && !id.startsWith(`${this.namespace}.bridge`)) {
                     await this.objectStore?.updateLoraWanObject(id, { payload: { object: obj } });
@@ -978,7 +978,7 @@ class Lorawan extends utils.Adapter {
                     const members = obj.common.members;
                     for (const member of members) {
                         if (!this.bridge.ForeignBridgeMembers[member]) {
-                            if (!member.startsWith(this.namespace)) {
+                            if (!member.startsWith(`${this.namespace}.`)) {
                                 await this.bridge?.discoverForeignRange(member);
                             } else {
                                 this.log.warn(
@@ -1017,7 +1017,7 @@ class Lorawan extends utils.Adapter {
                     `the state ${id} has changed to ${state.val !== '' ? state.val : '""'} with ack = ${state.ack}.`,
                 );
                 // Update State in objectStore
-                if (id.startsWith(this.namespace)) {
+                if (id.startsWith(`${this.namespace}.`)) {
                     if (!id.startsWith(`${this.namespace}.info`) && !id.startsWith(`${this.namespace}.bridge`)) {
                         // Configuration and Downlink is updated with ack = false / true
                         // Other folders only in case of true
@@ -1041,7 +1041,7 @@ class Lorawan extends utils.Adapter {
                     }
                 }
                 if (!state.ack) {
-                    if (id.startsWith(this.namespace)) {
+                    if (id.startsWith(`${this.namespace}.`)) {
                         // Check for downlink in id
                         if (id.indexOf('.downlink.control.') !== -1) {
                             // get information of the changing state
@@ -1469,7 +1469,7 @@ class Lorawan extends utils.Adapter {
                     }
                 } else {
                     // Query for Namespace => Just publish foreign States with ack = true
-                    if (!id.startsWith(this.namespace)) {
+                    if (!id.startsWith(`${this.namespace}.`)) {
                         await this.bridge?.publishId(id, state.val, {});
                     }
                 }
@@ -1694,9 +1694,10 @@ class Lorawan extends utils.Adapter {
     }
 
     removeNamespace(id) {
-        if (id.indexOf(this.namespace) !== -1) {
+        const namespacePrefix = `${this.namespace}.`;
+        if (id.startsWith(namespacePrefix)) {
             this.log.silly(`namespace will be removed from id ${id}.`);
-            id = id.substring(this.namespace.length + 1, id.length);
+            id = id.substring(namespacePrefix.length);
         }
         return id;
     }

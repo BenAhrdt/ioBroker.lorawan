@@ -29,6 +29,7 @@ For numeric sensor entities, the bridge assigns Home Assistant `device_class` an
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+- (BenAhrdt) Restrict namespace checks to complete ioBroker ID segments so instance `lorawan.1` does not process objects or states from `lorawan.10` and higher instances.
 - (BenAhrdt) Append `3F` to the Vicki `ExternalTemperature` downlink payload.
 - (BenAhrdt) Update the development test framework dependency `@iobroker/testing` to version `6.3.2`.
 
